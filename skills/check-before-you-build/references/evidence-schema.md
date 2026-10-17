@@ -17,7 +17,10 @@
     "target_user": "…",
     "search_terms": ["extract design system website", "design tokens url"],
     "components": ["headless browser automation"],
-    "categories": ["agent-skills", "browser-automation"]
+    "categories": ["agent-skills", "browser-automation"],
+    "layers": [{ "layer": "frontend framework", "category": "web-frameworks" }],
+    "look_and_feel": null,                  // the user's words, e.g. "fancy scroll animations", or null
+    "references": []                        // apps the user named as a model, e.g. ["Notion"]
   },
   "competitors": [                          // ✱ array (may be empty)
     {
@@ -59,7 +62,8 @@
       "id": "github:microsoft/playwright",
       "name": "Playwright",
       "url": "https://github.com/microsoft/playwright",
-      "component": "headless browser automation",
+      "component": "headless browser automation",   // or "layer": "frontend framework"
+      "role": "pick",                       // pick | alternative
       "type": "use",                        // use | fork | learn | contribute
       "license_class": "permissive",        // permissive | copyleft | none | other
       "signals": { "stars": 70000, "pushed_at": "…", "license": "Apache-2.0" },

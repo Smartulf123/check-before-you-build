@@ -28,7 +28,7 @@ By default the catalog uses the weekly stats snapshot shipped with the skill (`s
 ```
 github.mjs search <keywords...> [--limit 20] [--min-stars 20]
 github.mjs repo <owner/repo>        → found:false on 404, renamed:true if moved
-github.mjs issues <owner/repo> [--limit 10]   → open issues sorted by 👍
+github.mjs issues <owner/repo> [--limit 10]   → open issues sorted by thumbs-up
 ```
 Limits: 30 searches/min with a token (from `gh auth token` or `GITHUB_TOKEN`), 10/min without. `authenticated` in the output tells you which applies. If it's `false`, suggest `gh auth login` in the report.
 

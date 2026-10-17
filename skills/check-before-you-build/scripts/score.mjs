@@ -10,12 +10,12 @@ const MATCH_WEIGHT = { direct: 1.0, partial: 0.5, adjacent: 0.1 };
 const round1 = (x) => Math.round(x * 10) / 10;
 
 export const LABELS = {
-  BUILD: '✅ Open space: go build it',
-  BUILD_WITH_ANGLE: '🔀 Build it with an angle',
-  CONTRIBUTE: '🤝 You could join an existing project',
-  FORK: '🍴 Revive an abandoned project',
-  DROP: '📚 Already well covered',
-  UNCLEAR: '❔ Mixed signals',
+  BUILD: 'Verdict: open space, worth building',
+  BUILD_WITH_ANGLE: 'Verdict: build it with a clear angle',
+  CONTRIBUTE: 'Verdict: consider joining an existing project',
+  FORK: 'Verdict: consider reviving an abandoned project',
+  DROP: 'Verdict: already well covered',
+  UNCLEAR: 'Verdict: mixed signals',
 };
 
 const POPULARITY_SCALE = { stars: 4, installs: 4.5, downloads_weekly: 5, uses: 4 };
@@ -163,10 +163,10 @@ export function confidence(evidence) {
 
 /** What the user sees, by purpose (SPEC §4.1, §9.7). */
 export function display(code, purpose, satScore) {
-  if (purpose === 'fun') return { headline: "🎓 Building for fun: great! Here's what helps.", show_verdict: false };
+  if (purpose === 'fun') return { headline: 'Building for fun: projects to learn from and what to build with', show_verdict: false };
   if (purpose === 'me') {
     return {
-      headline: '🛠️ Building for yourself.',
+      headline: 'Building for yourself: tools that already exist and what to build with',
       hint: satScore >= 7
         ? 'Existing tools might save you time. Building your own is still a fine choice.'
         : 'Not much exists, so building your own makes sense.',

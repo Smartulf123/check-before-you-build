@@ -2,6 +2,17 @@
 
 All notable changes, including weekly catalog updates, are recorded here.
 
+## v1.1.0: 2026-10-17
+
+Changes from the first real-world test (a personal health tracker website).
+
+- **The report is the deliverable and a full build guide.** New sections: a recommended stack with a top pick and an alternative for every layer the project type needs (taken from the catalog's domain map), building blocks per feature, and a numbered build plan from setup to going online. The verdict card (`card.mjs`, `card.html`) was removed.
+- **Parallel research.** Starting the supply, demand and building-block sub-agents is now an explicit workflow step in Claude Code.
+- **Plain language.** No emojis in reports, labels or the README. Writing rules adapted from Humanizer (MIT): no dashes as connectors, no staged openers, no sales words.
+- **Better coverage for personal and learning projects.** Mainstream apps and the most popular self-hosted option are always listed; tables are ordered by match, then popularity. Search terms include related words (a health tracker is also a fitness and nutrition tracker), which would have found wger.
+- **Look and feel.** Requests for a fancy, premium or animated result add picks from animation, creative coding and 3D (for example Scrollcraft).
+- **Study the competition.** When the closest competitor is closed or the user names a reference app, the report suggests REA and the design extractors for studying it.
+
 ## v1.0.0: 2026-10-17
 
 ### Catalog refresh

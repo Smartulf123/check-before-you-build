@@ -32,6 +32,10 @@ Produce the `idea` object:
   Example for "a CLI that turns time logs into invoices": `invoice generator cli`, `time tracking invoice`, `billing cli freelancers`, `invoicing open source`, `time tracker`, `topic:invoice`. Search terms are discovery hints only; never cite a project because you remember it.
 - `components`: 2–6 technical building blocks ("headless browser automation", "computed CSS extraction", "markdown generation").
 - `categories`: catalog category slugs for the idea and its components (`node scripts/catalog.mjs categories`).
+- **Related words.** Add search terms for the neighbouring words people use for the same domain, not only the user's own: a "health tracker" is also a fitness, workout, nutrition, weight, sleep and habit tracker; a "budget app" is also expense, finance and money tracking. Competitors are often filed under the neighbour word.
+- `layers`: the stack layers this project type needs. Run `catalog.mjs domains`, pick the domain(s) that match the form factor (a website or web app → `websites`, a mobile app → `mobile-apps`, an agent skill → `agent-tools`), and keep the 5–8 categories this idea actually needs (a personal tracker needs no payments). Record each as `{ "layer": "frontend framework", "category": "web-frameworks" }`.
+- `look_and_feel`: when the user asks for a fancy, premium, beautiful, animated, scroll-driven, 3D or "wow" result, add a look-and-feel layer that searches `animation`, `creative-coding` and `3d-graphics`. Record the user's words.
+- `references`: apps or sites the user names as a model ("like Notion", "a Strava for…"). Used in phase 5 to suggest tools for studying them.
 
 Ask one clarifying question only if no meaningful keywords can be derived (e.g. "an app"). Otherwise continue without asking.
 
@@ -52,16 +56,17 @@ Ask one clarifying question only if no meaningful keywords can be derived (e.g. 
    - `partial`: big overlap but differs in form, scope or audience
    - `adjacent`: related, a building block or neighbour
    Give `match_reason` (one line) for every direct/partial match. Estimate `coverage_pct` (0–100) for direct matches: list the idea's 3–6 core features (from `summary` and `components`), check each against the README, and set coverage to the share it delivers. Write the covered and missing features in `match_reason`. Rule 3 (CONTRIBUTE) needs ≥ 80, so only go that high when the README shows nearly every core feature.
-7. Keep **every direct match**, even if there are more than 15, plus partial and adjacent matches up to 15 entries in total, ranked by relevance × popularity. Set `candidates_evaluated` to the number of distinct projects whose description or README you actually judged (not raw search hits), and `readme_read: true` on each competitor whose README you read. Products without a public repo (commercial sites) don't need `readme_read`; read their site instead.
+7. For `me` and `fun`, always include the mainstream options a person would otherwise use: the best-known free or built-in apps (for a health tracker: Apple Health, Google Fit, Samsung Health) and the most popular self-hosted project in the space, even when they only partly match. They are often the real time-saver.
+8. Keep **every direct match**, even if there are more than 15, plus partial and adjacent matches up to 15 entries in total, ranked by relevance × popularity. In the report, order the table by match (direct, partial, adjacent) and within each match by popularity, so the established projects are easy to spot. Set `candidates_evaluated` to the number of distinct projects whose description or README you actually judged (not raw search hits), and `readme_read: true` on each competitor whose README you read. Products without a public repo (commercial sites) don't need `readme_read`; read their site instead.
 
 **Judge relevance yourself.** npm and skills.sh rank by popularity, and GitHub search returns spam. Read descriptions. Fetch a README with web fetch when unsure.
 
 ## Phase 3: Demand (launch only)
 
 1. `hn.mjs search <keywords>` for the concept, and `--tags show_hn` for similar launches (points show how launches performed). Count a launch as demand only when it is the same concept; a launch of a broader tool (a general research agent for a social-research idea) is context, not demand.
-2. `github.mjs issues <owner/repo>` for the top 3 (standard) or 5 (deep) direct/partial competitors. Feature requests and complaints are unmet demand. Titles matter even with few 👍.
+2. `github.mjs issues <owner/repo>` for the top 3 (standard) or 5 (deep) direct/partial competitors. Feature requests and complaints are unmet demand. Titles matter even with few thumbs-up reactions.
 3. Web search: "how do I …", "is there a tool that …", forum and blog posts asking for this. A demand item must show people wanting, asking for or complaining about something. Background pages (laws, statistics, news about a market) are context: mention them in the report, but don't add them to `demand`.
-4. Each item: `type` (`hn_story` for anything on HN, including Ask HN | `github_issue` | `request` | `forum` | `web`), `date` (items over 3 years old count a third), `title`, `url`, `date`, engagement (`points`, `reactions_plus1`, `comments`; leave a field out when it's unknown, don't guess), and a verbatim `quote` of at most 25 words when there is one. An issue with no 👍 counts for little; prefer evidence that several people want the thing.
+4. Each item: `type` (`hn_story` for anything on HN, including Ask HN | `github_issue` | `request` | `forum` | `web`), `date` (items over 3 years old count a third), `title`, `url`, engagement (`points`, `reactions_plus1`, `comments`; leave a field out when it's unknown, don't guess), and a verbatim `quote` of at most 25 words when there is one. An issue with no thumbs-up counts for little; prefer evidence that several people want the thing.
 
 Competitor adoption is added automatically by `score.mjs`. Don't list it as a demand item.
 
@@ -77,14 +82,17 @@ Competitor adoption is added automatically by `score.mjs`. Don't list it as a de
 
 ## Phase 5: Building blocks
 
-1. Catalog first: `catalog.mjs search <component keywords> --categories <slug>`. Catalog entries come with stats from the weekly snapshot (`stats_source`) and are already quality-checked, so **don't spend GitHub calls on them**. Prefer `featured` entries.
-2. Live search only for components the catalog doesn't cover well: `github.mjs search`, `npm.mjs search`.
-3. Get live stats only for candidates **outside** the catalog (`github.mjs repo`, `npm.mjs info`).
-4. **Read the README of every shortlisted candidate** (top 5 / 10 / 15 per component by mode, catalog entries included): `readme.mjs get a/b c/d …`. Use the catalog's `summary`, `best_for` and `not_for` fields to build the shortlist, and the README to confirm the fit: does it do what this idea needs, in the user's stack, and without the limitation that would rule it out? Drop candidates the README shows don't fit, even if they're featured. Set `readme_read: true` on each block you recommend.
-5. Rank by fit → maintenance → adoption → license.
-6. One recommendation type per block: `use` 🧱 · `fork` 🍴 · `learn` 💡 · `contribute` 🤝.
-7. License classes: permissive (MIT, Apache-2.0, BSD, ISC, MPL-2.0, Unlicense, CC0-1.0, 0BSD, Zlib) → any type. Copyleft (GPL/AGPL/LGPL) → use/learn/contribute; fork only with a warning. None → learn only ("no license: you have no right to copy this code"). Other → learn only.
-8. 2–4 blocks per component, at most 12 in total. For `fun`, include more 💡 learn examples (well-documented projects worth reading).
+The report should work as a build guide, so cover the whole stack, not only the features that make the idea special.
+
+1. **Layers.** For every layer from phase 1 (frontend framework, UI components, styling, forms, database, auth, hosting and deploy, testing, …), find a **top pick** and **one alternative**. Search the catalog by category: `catalog.mjs search <layer keywords> --categories <slug>`. Catalog entries come with stats from the weekly snapshot and are already quality-checked, so **don't spend GitHub calls on them**. Choose picks that work together (one framework, then UI and styling that fit it).
+2. **Components.** For each idea-specific component (charts, device sync, scraping, …), find 2–3 candidates the same way. Live search (`github.mjs search`, `npm.mjs search`) only where the catalog is thin, and live stats (`github.mjs repo`, `npm.mjs info`) only for candidates **outside** the catalog.
+3. **Look and feel.** If phase 1 found a look-and-feel layer, add 2–3 picks from `animation`, `creative-coding` and `3d-graphics` that match the words the user used (scroll-driven sites, motion, 3D scenes).
+4. **Study the competition.** If the user names a reference app, or the closest competitors are closed-source products, add tools for studying how they work: `morluto/rea` for apps and binaries, and the design extractors (`Manavarya09/design-extract`, `dembrandt/dembrandt`) for a website's look. Frame it as studying, not copying: code and designs stay under their owners' licenses. Skip this when nothing closed is worth studying.
+5. **Read the README of every shortlisted candidate** (per layer or component: top 2 / 3 / 5 by mode, catalog entries included): `readme.mjs get a/b c/d …`. Use the catalog's `summary`, `best_for` and `not_for` to build the shortlist and the README to confirm the fit. Drop candidates the README shows don't fit, even if they're featured. Set `readme_read: true` on each block you recommend.
+6. Rank by fit → maintenance → adoption → license.
+7. One recommendation type per block: `use`, `fork`, `learn` or `contribute`. Record `layer` (or `component`) and `role` (`pick` or `alternative`).
+8. License classes: permissive (MIT, Apache-2.0, BSD, ISC, MPL-2.0, Unlicense, CC0-1.0, 0BSD, Zlib) → any type. Copyleft (GPL/AGPL/LGPL) → use/learn/contribute; fork only with a warning. None → learn only ("no license: you have no right to copy this code"). Other → learn only.
+9. At most 25 blocks in total. For `fun`, add well-documented projects worth reading as `learn`.
 
 ## Phase 6: Check facts, then score
 
@@ -107,6 +115,5 @@ What `verify.mjs` (run in phase 6) does:
 - lists `readme_missing` for shortlisted items that have a README you haven't read
 
 Then:
-1. Write `report.md` from `report-template.md`, using only items with `verified !== false`. Mention any corrections or dropped items in "Method and coverage". If your environment doesn't let you write files, print the full report in the chat instead.
-2. Run `node <skill-dir>/scripts/card.mjs check-reports/<dir>/evidence.json` to write `card.html`.
-3. Print the chat summary, including the report and card paths.
+1. Write `report.md` from `report-template.md`, following `writing.md`, using only items with `verified !== false`. Mention any corrections or dropped items in "Method and coverage". If your environment doesn't let you write files, print the full report in the chat instead.
+2. Print the chat summary from the template, with the path to the report.

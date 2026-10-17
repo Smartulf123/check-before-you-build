@@ -1,6 +1,7 @@
 # check-before-you-build — Specification
 
 > **Status:** Draft v0.7 · 2026-10-17 · for review
+> **v1.1 (shipped):** the verdict card was removed; `report.md` is the one deliverable and works as a build guide (recommended stack per layer, build plan). Parallel sub-agents are an explicit workflow step. Reports follow plain-language writing rules adapted from Humanizer, with no emojis. Sections on `card.html` below are historical.
 > **v0.7:** ceiling raised to 50 per category (not a target); rate-limit pausing for long checks; maintainer-pick exceptions; big-repo safety net in scout (§8.2, §8.5)
 > **v0.6:** up to 20 entries per category with up to 5 `featured`; `license_verified` for hand-checked licenses (§8.2)
 > **v0.5:** catalog quality rules decided (tiers, freshness, alternative signals, contributors, fake-star check; §8.2–8.3); 20 domains + 50 building-block categories (§8.4)

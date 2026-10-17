@@ -1,23 +1,19 @@
 # check-before-you-build
 
-**Is this worth building, and what can I build it with?**
+Is this worth building, and what can I build it with?
 
-An open-source agent skill that checks your idea against GitHub, skills.sh, Claude plugin marketplaces, MCP registries, npm, PyPI and Hacker News. It gives you a cited verdict and the best existing repos to build on.
-
-![Verdict card](docs/assets/card.png)
-
----
+check-before-you-build is an open-source agent skill. Describe an idea and it searches GitHub, skills.sh, Claude plugin marketplaces, MCP registries, npm, PyPI and Hacker News, then writes a report: what already exists, whether people want it, where the gap is, and a recommended stack with a step-by-step build plan.
 
 ## Why
 
-Building is cheap now. The expensive mistake is spending a weekend, or a month, on something that already exists or that nobody wants.
+Building is cheap now. Spending a weekend or a month on something that already exists, or that nobody wants, is still expensive.
 
-Most idea validators give you an opinion about market size. This one shows you **evidence**:
+Most idea validators give an opinion about market size. This one collects evidence and links every claim:
 
-- **Does it already exist?** Real repos, skills, MCP servers and packages, with live stars, last-commit dates and licenses. The agent reads their READMEs before judging them.
-- **Does anyone want it?** Hacker News threads, feature requests on competitors' issue trackers and questions on the web, each with a link.
-- **Where's the gap?** What existing projects lack, backed by evidence.
-- **What should I build it with?** A curated catalog of 1,907 quality-checked repos tells you what to 🧱 use, 🍴 fork, 💡 learn from or 🤝 contribute to.
+- **Existing projects.** Repos, skills, MCP servers, packages and apps, with live stars, last-commit dates and licenses. The agent reads each README before judging it.
+- **Demand.** Hacker News threads, feature requests on competitors' issue trackers and questions on the web.
+- **Gaps.** What the existing projects lack, with a link for each gap.
+- **What to build it with.** A catalog of 1,907 quality-checked repos supplies a top pick and an alternative for every layer of the stack, plus repos to fork, learn from or contribute to.
 
 ## Install
 
@@ -34,118 +30,110 @@ Or as a Claude Code plugin:
 /plugin install check-before-you-build@check-before-you-build
 ```
 
-Requirements: Node 20 or newer. An authenticated [`gh`](https://cli.github.com/) CLI is strongly recommended (GitHub allows 10 searches a minute without it, 30 with it). No paid API keys.
+You need Node 20 or newer. An authenticated [`gh`](https://cli.github.com/) CLI is strongly recommended: GitHub allows 10 searches a minute without it and 30 with it. No paid API keys.
 
 ## Use
 
-Just describe what you're about to build:
+Describe what you're about to build:
 
 ```
 Does this already exist? A CLI that turns my time logs into invoices.
 ```
 
 ```
-/check-before-you-build A skill that extracts a website's design into DESIGN.md --deep
+/check-before-you-build A fancy portfolio website with scroll animations --for me
 ```
 
-Modes: `--quick` (catalog and GitHub only), standard (default) and `--deep` (more queries and issue mining). Purpose: `--for fun`, `--for me` or `--for launch`.
+Modes are `--quick` (catalog and GitHub only), standard (the default) and `--deep` (more queries and issue mining). Set the purpose with `--for fun`, `--for me` or `--for launch`, or let the skill infer it from your wording. In Claude Code, a standard check starts three sub-agents in parallel and takes a few minutes.
 
 ## What you get
 
-A real run, for *"A Spotify Wrapped style yearly recap for AI coding agents like Claude Code and Codex, made from local session logs, to share on social media"*:
+Each run writes two files to `check-reports/<date>-<slug>/`:
 
-```
-🤝 YOU COULD JOIN AN EXISTING PROJECT   (confidence: high)
-Saturation 9.8/10 · Demand 6.9/10 · Gap 5/10
+- `report.md`, the full report and build guide
+- `evidence.json`, everything collected, with scores and the fact-check log
 
-Closest existing: tokscale (5.7k ⭐, updated today, MIT) already has a
-`wrapped` command for Claude Code and Codex logs, but its card is about tokens and cost.
-Also: coding-wrapped, cc-wrapped, claude-code-wrapped, a /wrapped skill (all small)
-Open gap: storytelling recaps (archetypes, habits, what you built) exist only in tiny,
-mostly Claude-only projects; the PNG ones haven't been updated since December 2025.
-Building blocks: 🧱 Satori · 🧱 resvg-js · 🧱 Ink · 🤝 tokscale · 💡 ccusage, cc-wrapped
-Fact-check: 34/34 items verified · 32 candidates evaluated
+The report has these sections:
 
-Next step: propose a story-mode Wrapped to tokscale, or build your own
-local-only, Codex-first version before December.
-```
+1. **Summary.** The verdict (for launches) or a short hint (for personal and learning projects), the closest existing project and the recommended path.
+2. **What already exists.** A table ordered by how closely each project matches, then by popularity.
+3. **Demand and gaps,** each item with a link.
+4. **Recommended stack.** One row per layer (framework, UI, styling, database, auth, hosting and so on) with a top pick, an alternative and why it fits.
+5. **Building blocks for the features** that make the idea special, plus look-and-feel picks when you ask for something fancy, and tools for studying a closed competitor.
+6. **Build plan.** Numbered steps from setup to going online, each tied to the stack above.
+7. **Method and sources.** What was searched, what was fact-checked and every link used.
 
-Every run writes three files to `check-reports/<date>-<slug>/`:
+The report is written in your language, in plain prose.
 
-- `report.md`: the full report with every source linked
-- `evidence.json`: machine-readable evidence, scores and verification log
-- `card.html`: a shareable 1200×630 verdict card
+### Building for fun or for yourself
 
-### Building for fun? It won't stop you.
+Building something that already exists is how most people learn, so the skill never tells you not to build. Tell it why you're building and the report adapts:
 
-Building something that already exists is how most people learn. The tool informs, it never forbids. Tell it why you're building and the report adapts:
-
-| | Purpose | What you get |
-|---|---|---|
-| 🎓 | `--for fun`: fun or learning | No verdict. Projects worth learning from, plus the right building blocks. |
-| 🛠️ | `--for me`: a tool for yourself | A short "these might save you time" hint, plus building blocks. |
-| 🚀 | `--for launch`: publishing for users | The full verdict, always with a way forward. |
-
-If you don't say, it works out the purpose from how you describe the idea.
+| Purpose | What you get |
+|---|---|
+| `--for fun` | No verdict. Projects worth learning from, the stack and a learning path. |
+| `--for me` | No verdict. Existing tools that might save you time, including the mainstream apps, then the stack and a build plan. |
+| `--for launch` | The full verdict with demand, gaps and how to stand out. |
 
 ## How it works
 
-1. **Understand** the idea: summary, form factor, search terms from five angles (your words, developer jargon, business words, the problem, bigger tools that might include it), components.
-2. **Supply**: search the catalog, GitHub, skills.sh, plugin marketplaces, MCP registries, npm and PyPI, and read the READMEs of the closest matches.
-3. **Demand**: Hacker News, competitors' GitHub issues weighted by 👍, the web.
-4. **Gaps**: what existing projects lack, each with evidence. The gap score is capped by how much evidence there is.
-5. **Building blocks**: catalog first, then live search. Every recommended repo's README is read first, and recommendations respect licenses.
-6. **Fact-check, then score**: every cited repo, package and link is re-checked before scoring. Fake or renamed repos are dropped or fixed. Then fixed rules compute the verdict from the evidence; the model never writes it.
-7. **Write**: report, evidence file and card.
+1. **Understand** the idea: summary, project type, search terms from several angles (your words, related words, developer jargon, the problem, bigger tools that might include it), the stack layers the project type needs, and any style or reference apps you mention.
+2. **Research** in parallel: existing projects, demand, and building blocks for every layer and feature.
+3. **Gaps**: what existing projects lack, each with evidence.
+4. **Fact-check, then score.** Every cited repo, package and link is checked again; fake or renamed repos are dropped or fixed. Fixed rules then compute the verdict from the evidence. The model never writes it.
+5. **Write** the report.
 
 The agent does the reasoning. Small, dependency-free Node scripts fetch the facts, so numbers come from APIs, not from model memory.
 
 ### Verdicts
 
-| Verdict | Means |
+| Verdict | Meaning |
 |---|---|
-| ✅ Open space | Little supply, real demand: go build it |
-| 🔀 Build with an angle | It exists, but there's an evidenced gap |
-| 🤝 Join an existing project | An active, adopted, permissive project already does most of it |
-| 🍴 Revive an abandoned project | The leader is archived or inactive and forkable |
-| 📚 Already well covered | Saturated with no gap, or no sign of demand |
-| ❔ Mixed signals | The evidence doesn't point one way |
+| Open space, worth building | Little supply and real demand |
+| Build it with a clear angle | It exists, but there is an evidenced gap |
+| Consider joining an existing project | An active, adopted, permissive project already does most of it |
+| Consider reviving an abandoned project | The leader is archived or inactive and can be forked |
+| Already well covered | Saturated with no gap, or no sign of demand |
+| Mixed signals | The evidence doesn't point one way |
 
 Rules and formulas: [scoring.md](skills/check-before-you-build/references/scoring.md).
 
 ## The catalog
 
-1,907 repos in 62 building-block categories across 20 domains, from web frameworks to audio, 3D printing and games, with fine-grained categories for the 2026 agent wave: coding agents, agent workbenches, agent memory, personal assistants and skills by domain. Every entry:
+1,907 repos in 62 building-block categories across 20 domains, from web frameworks to audio, 3D printing and games, with separate categories for coding agents, agent workbenches, agent memory, personal assistants and agent skills by topic. Every entry:
 
 - passes one quality gate: adoption (for example 1,000+ stars), a commit in the last 6 months (18 for stable, widely used projects), a real license, 3+ contributors and a fake-star check
-- has a summary, best-for and not-for written from its README, and checked against it
-- costs you no GitHub API calls: stats come from a weekly snapshot
+- has a summary, best-for and not-for written from its README and checked against it
+- costs you no GitHub API calls, because stats come from a weekly snapshot
 
-The catalog is updated weekly. Suggest a repo with an issue.
+Suggest a missing repo by opening an issue.
 
 ## Evaluation
 
-The skill is tested end to end by fresh agents on a fixed set of ideas, graded on whether it finds known competitors and lands on a sensible verdict. Results: [evals/RESULTS.md](evals/RESULTS.md).
+Fresh agents run the skill end to end on a fixed set of ideas. A run is graded on whether it finds the known competitors and lands on a sensible verdict. Results are in [evals/RESULTS.md](evals/RESULTS.md).
 
 ## Principles
 
-- **Evidence over opinion**: every claim links to a source.
-- **Free**: no paid API keys.
-- **Local and read-only**: no telemetry, no posting, no scraping of login-walled platforms. Your idea is only sent to the public search APIs listed above.
-- **Portable**: the open Agent Skills format, so it runs in Claude Code, Codex, OpenCode and other agents.
+- **Evidence over opinion.** Every claim links to a source.
+- **Free.** No paid API keys.
+- **Local and read-only.** No telemetry, no posting, no scraping of login-walled platforms. Your idea is sent only to the public search APIs listed above.
+- **Portable.** Uses the open Agent Skills format, so it runs in Claude Code, Codex, OpenCode and other agents.
+
+The writing rules for reports are adapted from [Humanizer](https://github.com/blader/humanizer) (MIT).
 
 ## Roadmap
 
-- [x] Fact scripts, rule-based scoring, fact-checking, verdict card
-- [x] Catalog: 1,907 repos with README-based descriptions, including every qualifying repo with 3,000+ stars created since September 2025
+- [x] Fact scripts, rule-based scoring and fact-checking
+- [x] Catalog of 1,907 repos with README-based descriptions
 - [x] v1.0.0
+- [x] v1.1: reports as full build guides, parallel research, plain-language writing
 - [ ] Weekly catalog updates in CI
 - [ ] More sources (Product Hunt, VS Code marketplace, crates.io)
-- [ ] Watch mode: re-check an idea later and show what changed
+- [ ] Watch mode: re-check an idea later and see what changed
 
 ## Contributing
 
-Issues and PRs are welcome: missing repos for the catalog, sources that should be searched, or a verdict you think was wrong (attach the `evidence.json`). Run the tests with `npm test`.
+Issues and pull requests are welcome: missing repos for the catalog, sources that should be searched, or a verdict you think was wrong (attach the `evidence.json`). Run the tests with `npm test`.
 
 ## License
 
