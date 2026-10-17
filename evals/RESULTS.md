@@ -46,7 +46,6 @@ Wave 2 (cases 2, 4–8, after tuning):
 ## Known limits
 
 - **The catalog under-covers 2026's agent wave.** A check of repos with 15k+ stars created since September 2025 found most of them missing from the catalog. Live GitHub search still finds them, but the catalog-first step does not. A catalog refresh for recent repos is the top follow-up.
-
 - `coverage_pct` and `gap_score` are still the agent's judgement. The rules cap them by evidence, but a borderline coverage estimate (around 80 %) can still decide between CONTRIBUTE and BUILD_WITH_ANGLE.
 - The catalog holds building blocks, not end-user apps. For app ideas, competitors come from GitHub and web search.
 - GitHub's search limit is shared across everything using the same token. Parallel runs can hit it; the scripts wait for the reset.
