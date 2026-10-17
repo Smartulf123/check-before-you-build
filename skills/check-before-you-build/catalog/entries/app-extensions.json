@@ -2,6 +2,114 @@
   "category": "app-extensions",
   "entries": [
     {
+      "id": "microsoft/AI-Engineering-Coach",
+      "name": "AI Engineer Coach",
+      "category": "app-extensions",
+      "kinds": [
+        "plugin",
+        "app"
+      ],
+      "tags": [
+        "vscode",
+        "copilot",
+        "analytics",
+        "session-logs",
+        "anti-patterns"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "See how you use AI coding assistants and get tips from local session logs.",
+      "why": "Reads local logs from many harnesses and checks them against 45 anti-pattern rules.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A VS Code extension and GitHub Copilot canvas that reads local AI session logs. It shows practice scores, trends, anti-patterns, generated code volume and repeated prompts that could become skills. No data leaves your machine.",
+      "best_for": "Developers or teams who want to improve how they use coding agents.",
+      "not_for": "Built from source as a VSIX per the README. It analyzes usage and does not help build products.",
+      "keywords": [
+        "ai coding analytics",
+        "copilot usage dashboard",
+        "session log analysis",
+        "prompt quality",
+        "agentic engineering",
+        "vscode extension",
+        "context health"
+      ]
+    },
+    {
+      "id": "zhukunpenglinyutong/jetbrains-cc-gui",
+      "name": "CC GUI",
+      "category": "app-extensions",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "jetbrains",
+        "intellij",
+        "claude-code",
+        "codex",
+        "gui"
+      ],
+      "ecosystems": [
+        "kotlin",
+        "jetbrains"
+      ],
+      "use_for": "Use Claude Code and Codex from a visual chat panel inside JetBrains IDEs.",
+      "why": "Adds @file context, image input, conversation rewind, skills slash commands and MCP support.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An IntelliJ IDEA plugin that wraps Claude Code, OpenAI Codex and other AI coding CLIs in a graphical interface. It has an agent system, slash commands and MCP server support.",
+      "best_for": "JetBrains users who want a GUI instead of the terminal for coding agents.",
+      "not_for": "Renamed from Claude Code GUI over trademark concerns and under active change. macOS may scroll slowly unless GPU acceleration is disabled.",
+      "keywords": [
+        "jetbrains claude code plugin",
+        "intellij claude gui",
+        "codex jetbrains",
+        "cc gui",
+        "claude code ide plugin",
+        "jetbrains ai chat"
+      ]
+    },
+    {
+      "id": "breaking-brake/cc-wf-studio",
+      "name": "CC Workflow Studio",
+      "category": "app-extensions",
+      "kinds": [
+        "plugin",
+        "cli",
+        "mcp"
+      ],
+      "tags": [
+        "workflow-editor",
+        "claude-code",
+        "vscode",
+        "sub-agents",
+        "mcp"
+      ],
+      "ecosystems": [
+        "typescript",
+        "vscode"
+      ],
+      "use_for": "Design AI agent workflows on a visual canvas and export them as Markdown your agent can run.",
+      "why": "One workflow.json drives a VS Code editor, a CLI and an MCP server.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A VS Code extension with a drag-and-drop canvas for multi-agent workflows with sub-agents, skills and MCP tools. The same file works with the ccwf CLI (render, validate, export, run) and an MCP server.",
+      "best_for": "Designing and sharing Claude Code agent workflows visually instead of writing prompts by hand.",
+      "not_for": "Anyone who does not use VS Code or Claude Code style agents. Usage examples are marked as coming soon, and the licence is not clearly stated.",
+      "keywords": [
+        "visual workflow editor claude code",
+        "agent workflow designer",
+        "vscode extension agents",
+        "sub-agent orchestration",
+        "workflow json mcp",
+        "cc workflow studio"
+      ]
+    },
+    {
       "id": "GoogleChrome/chrome-extensions-samples",
       "name": "Chrome Extensions Samples",
       "category": "app-extensions",
@@ -33,6 +141,43 @@
         "side panel",
         "extension samples",
         "mv3"
+      ]
+    },
+    {
+      "id": "YishenTu/claudian",
+      "name": "Claudian",
+      "category": "app-extensions",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "obsidian",
+        "claude-code",
+        "codex",
+        "vault",
+        "agents"
+      ],
+      "ecosystems": [
+        "typescript",
+        "obsidian"
+      ],
+      "use_for": "Use Claude Code, Codex and other coding agents inside an Obsidian vault.",
+      "why": "The vault becomes the agent's working directory, with inline edit, @mentions and MCP support.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Claudian is an Obsidian plugin that embeds AI coding agents (Claude Code, Codex, Grok Build, OpenCode, Pi, DeepSeek Harness) in your vault. Agents can read, write, edit, search and run commands there. It adds inline edit with diff preview, slash commands, skills, @mentions and MCP servers.",
+      "best_for": "Obsidian users who want an agent to work directly on their notes.",
+      "not_for": "Mobile or non-Obsidian use. It is desktop only and needs at least one agent harness plus a subscription or API provider.",
+      "keywords": [
+        "obsidian claude code",
+        "obsidian ai plugin",
+        "obsidian agent",
+        "claude in obsidian",
+        "obsidian codex",
+        "vault ai assistant",
+        "obsidian copilot alternative",
+        "obsidian mcp"
       ]
     },
     {
@@ -69,6 +214,41 @@
         "crxjs",
         "extension build",
         "web extension"
+      ]
+    },
+    {
+      "id": "omdsh-dev/DSH-better-sidebar",
+      "name": "DSH Better Sidebar",
+      "category": "app-extensions",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "sidebar",
+        "plugin",
+        "git",
+        "terminal",
+        "file-editor"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Add a file, Git, terminal and side-chat workbench to DSH and let other plugins add pages.",
+      "why": "Exposes a sidebar service so third-party plugins can register new pages.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A plugin for DSH that adds a right sidebar and bottom panel. It includes a file tree and editor, Git source control with a read-only commit graph, terminals, side chat threads and subagent task views.",
+      "best_for": "DSH users who want a richer workbench, or plugin authors who want sidebar hooks.",
+      "not_for": "Only useful with the DSH host app, which the README does not describe. Side chat is marked beta.",
+      "keywords": [
+        "dsh plugin",
+        "sidebar plugin",
+        "git graph sidebar",
+        "agent side chat",
+        "subagent topology",
+        "terminal workbench",
+        "plugin sidebar api"
       ]
     },
     {
@@ -139,6 +319,41 @@
         "plugin template",
         "kotlin plugin",
         "intellij platform"
+      ]
+    },
+    {
+      "id": "yilewang/llm-for-zotero",
+      "name": "llm-for-zotero",
+      "category": "app-extensions",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "zotero",
+        "research",
+        "llm",
+        "agent",
+        "plugin"
+      ],
+      "ecosystems": [
+        "typescript",
+        "zotero"
+      ],
+      "use_for": "Chat with, summarize and compare papers inside Zotero, with an agent mode that uses your library.",
+      "why": "Works with API providers, local OpenAI-compatible models, Codex App Server and Claude Code, with custom skills.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Zotero plugin that adds an LLM assistant to the reader and library. It can answer questions, inspect figures, compare papers and save notes as Zotero or Markdown files. An agent mode has built-in skills and web search.",
+      "best_for": "Researchers who want LLM help inside Zotero, or developers learning how to build a Zotero plugin with an agent.",
+      "not_for": "Only works inside Zotero. The Claude Code mode is experimental and lacks native Zotero API operations. AGPL-3.0 licensed.",
+      "keywords": [
+        "zotero llm plugin",
+        "zotero ai assistant",
+        "chat with pdf in zotero",
+        "research agent zotero",
+        "zotero codex",
+        "zotero claude code"
       ]
     },
     {

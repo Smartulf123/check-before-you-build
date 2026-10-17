@@ -39,6 +39,42 @@
       ]
     },
     {
+      "id": "antvis/Infographic",
+      "name": "AntV Infographic",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "infographic",
+        "svg",
+        "declarative",
+        "ai-generated",
+        "visualization"
+      ],
+      "ecosystems": [
+        "typescript",
+        "javascript"
+      ],
+      "use_for": "Render infographics from a short declarative syntax, including syntax streamed from an LLM.",
+      "why": "Ships about 200 templates and an editor, with a syntax tuned for AI generation and streaming.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A declarative infographic engine from AntV. You describe an infographic in a concise syntax and it renders SVG, with themes, built-in templates and an editor. It also offers skills for AI agents.",
+      "best_for": "Apps that turn text or LLM output into infographics, with a fault-tolerant syntax for streaming.",
+      "not_for": "General charting such as bar or line plots from datasets; it targets infographic layouts, not data charts.",
+      "keywords": [
+        "infographic generator",
+        "antv",
+        "ai infographic",
+        "svg infographic",
+        "text to infographic",
+        "declarative visualization"
+      ]
+    },
+    {
       "id": "apache/echarts",
       "name": "Apache ECharts",
       "category": "charts-dataviz",
@@ -112,6 +148,41 @@
       ]
     },
     {
+      "id": "lukilabs/beautiful-mermaid",
+      "name": "beautiful-mermaid",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "mermaid",
+        "svg",
+        "ascii",
+        "diagrams",
+        "theming"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Render Mermaid diagrams as themed SVG or terminal ASCII with no DOM needed.",
+      "why": "Synchronous, fast, 15 themes plus Shiki theme support, and works in terminals.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A pure TypeScript renderer for Mermaid text. It handles flowcharts, state, sequence, class, ER and XY charts, outputs SVG or ASCII/Unicode, and themes through CSS custom properties. The ASCII engine is ported from mermaid-ascii.",
+      "best_for": "Showing diagrams in CLIs, chat UIs or React apps with better looks than the default Mermaid renderer.",
+      "not_for": "Mermaid diagram types beyond the six listed.",
+      "keywords": [
+        "mermaid renderer",
+        "mermaid to svg",
+        "mermaid ascii",
+        "terminal diagrams",
+        "themeable mermaid",
+        "diagrams without dom",
+        "beautiful mermaid"
+      ]
+    },
+    {
       "id": "bokeh/bokeh",
       "name": "Bokeh",
       "category": "charts-dataviz",
@@ -180,6 +251,77 @@
         "line chart",
         "bar chart",
         "frontend"
+      ]
+    },
+    {
+      "id": "ChartGPU/ChartGPU",
+      "name": "ChartGPU",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "webgpu",
+        "charts",
+        "streaming",
+        "dashboards",
+        "3d"
+      ],
+      "ecosystems": [
+        "typescript",
+        "webgpu"
+      ],
+      "use_for": "Draw multi-million-point and real-time streaming charts in the browser using WebGPU.",
+      "why": "WebGPU rendering with zero runtime dependencies, shared-device multi-chart dashboards and 3D series.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A charting library that renders with WebGPU rather than Canvas or WebGL. It supports line, area, bar, scatter, pie, candlestick, heatmap and 3D series, streaming updates with ring buffers, and zoom and pan.",
+      "best_for": "Dense time series, trading charts and live dashboards where Canvas-based chart libraries get slow.",
+      "not_for": "There is no WebGL or Canvas fallback, so browsers without WebGPU need gating by your app.",
+      "keywords": [
+        "webgpu charts",
+        "large dataset chart library",
+        "real time streaming chart",
+        "candlestick webgpu",
+        "fast time series chart",
+        "3d surface chart js"
+      ]
+    },
+    {
+      "id": "calesthio/Crucix",
+      "name": "Crucix",
+      "category": "charts-dataviz",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "osint",
+        "dashboard",
+        "data-aggregation",
+        "self-hosted",
+        "monitoring"
+      ],
+      "ecosystems": [
+        "javascript",
+        "node"
+      ],
+      "use_for": "Self-host a dashboard that pulls 27 open data sources and alerts you when something changes.",
+      "why": "Express is the only runtime dependency; each source runs standalone.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted intelligence terminal that polls 27 public sources such as satellite fire, flights, radiation and markets every 15 minutes and cross-correlates them. It is pure ESM, with optional LLM and Discord alerts.",
+      "best_for": "Forking a ready-made multi-source monitoring dashboard, or reusing its standalone source fetchers.",
+      "not_for": "A reusable library or framework. It is an end-user app under AGPL-3.0, and some sources need API keys.",
+      "keywords": [
+        "osint dashboard",
+        "world monitoring",
+        "self hosted intelligence",
+        "open data aggregator",
+        "alerting agent",
+        "flight tracking dashboard",
+        "crucix"
       ]
     },
     {
@@ -284,6 +426,42 @@
         "react",
         "data science",
         "callbacks"
+      ]
+    },
+    {
+      "id": "microsoft/flint-chart",
+      "name": "Flint",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library",
+        "mcp"
+      ],
+      "tags": [
+        "charts",
+        "visualization",
+        "vega-lite",
+        "echarts",
+        "mcp"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Let agents write short chart specs that compile to Vega-Lite, ECharts, Chart.js, Plotly or Excel.",
+      "why": "Layout, axes and themes are derived from semantic field types, so agents write less.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A visualization intermediate language with an npm library and an MCP server. A compact spec with semantic field types compiles to several chart backends, with automatic layout and formal visual themes.",
+      "best_for": "Apps or agents that generate many charts and need consistent, good-looking output across backends.",
+      "not_for": "Adds its own spec layer on top of existing chart libraries. If you only use one library by hand, use it directly.",
+      "keywords": [
+        "chart spec",
+        "visualization language",
+        "agent charts",
+        "vega-lite generator",
+        "chart mcp",
+        "echarts plotly chartjs",
+        "chart themes"
       ]
     },
     {

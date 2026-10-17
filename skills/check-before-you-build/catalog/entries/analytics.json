@@ -261,6 +261,41 @@
       ]
     },
     {
+      "id": "Albert-Weasker/niubigeo",
+      "name": "NiubiGEO",
+      "category": "analytics",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "geo",
+        "ai-visibility",
+        "brand-monitoring",
+        "self-hosted",
+        "competitors"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Track how AI models describe your brand and which competitors and sources they cite.",
+      "why": "Keeps every original model answer and citation, so results can be checked and rerun.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted GEO research tool. Enter a domain to compare model answers, see which competitors they name, test keywords and inspect citations. It stores historical runs for repeat tests. You supply your own model API keys.",
+      "best_for": "Teams who want evidence-based AI search visibility checks without a paid SaaS dashboard.",
+      "not_for": "Model API and hosting costs are separate. The authors also sell paid services such as human testing and optimization.",
+      "keywords": [
+        "geo tool",
+        "ai visibility tracker",
+        "generative engine optimization",
+        "brand mentions in chatgpt",
+        "ai search monitoring",
+        "competitor citations ai"
+      ]
+    },
+    {
       "id": "Openpanel-dev/openpanel",
       "name": "OpenPanel",
       "category": "analytics",

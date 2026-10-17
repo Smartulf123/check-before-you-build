@@ -2,6 +2,43 @@
   "category": "dev-tooling",
   "entries": [
     {
+      "id": "dmmulroy/anti-slop",
+      "name": "anti-slop",
+      "category": "dev-tooling",
+      "kinds": [
+        "library",
+        "plugin"
+      ],
+      "tags": [
+        "oxlint",
+        "lint-rules",
+        "typescript",
+        "code-quality",
+        "ai-code"
+      ],
+      "ecosystems": [
+        "typescript",
+        "javascript"
+      ],
+      "use_for": "Add opinionated Oxlint rules that reject low-evidence TypeScript and JavaScript patterns in your repo.",
+      "why": "Rules aimed at sloppy patterns, plus optional Effect rules and a bundled agent skill that copies them in.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A set of Oxlint rules, such as no chained type assertions and no adjacent filter/map passes. It is meant to be vendored: you copy the rules into your repo and edit them. An optional plugin adds Effect-specific rules.",
+      "best_for": "Teams using Oxlint who want strict rules against sloppy or AI-generated TypeScript and are happy to own a copy of the rules.",
+      "not_for": "Anyone wanting a normal npm dependency: there is no official package. The author says it reflects personal taste, not a universal standard.",
+      "keywords": [
+        "oxlint rules",
+        "anti slop",
+        "lint ai code",
+        "typescript lint",
+        "oxlint plugin",
+        "eslint alternative rules",
+        "effect lint"
+      ]
+    },
+    {
       "id": "ast-grep/ast-grep",
       "name": "ast-grep",
       "category": "dev-tooling",
@@ -187,6 +224,41 @@
       ]
     },
     {
+      "id": "braedonsaunders/codeflow",
+      "name": "CodeFlow",
+      "category": "dev-tooling",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "architecture",
+        "dependency-graph",
+        "visualization",
+        "codebase",
+        "browser"
+      ],
+      "ecosystems": [
+        "javascript"
+      ],
+      "use_for": "Paste a GitHub URL or pick local files and see an interactive map of how the code connects.",
+      "why": "Runs entirely in the browser with no install, accounts or backend.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "CodeFlow turns a GitHub repo or local codebase into a dependency graph in your browser. It calls the GitHub API directly, and local files can be analysed offline. You can click nodes to see dependencies and open files as cards.",
+      "best_for": "Getting oriented in an unfamiliar codebase and seeing what a change might affect.",
+      "not_for": "Exact analysis: the README says dependency detection is heuristic and may miss dynamic imports. GitHub analysis is slow without a token.",
+      "keywords": [
+        "visualize codebase",
+        "github repo architecture map",
+        "dependency graph viewer",
+        "code map",
+        "understand new codebase",
+        "browser code analysis"
+      ]
+    },
+    {
       "id": "conventional-changelog/commitlint",
       "name": "commitlint",
       "category": "dev-tooling",
@@ -297,6 +369,46 @@
         "code quality",
         "static analysis",
         "espree"
+      ]
+    },
+    {
+      "id": "fallow-rs/fallow",
+      "name": "fallow",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli",
+        "plugin"
+      ],
+      "tags": [
+        "code-quality",
+        "dead-code",
+        "duplication",
+        "architecture",
+        "lsp",
+        "github-action"
+      ],
+      "ecosystems": [
+        "typescript",
+        "javascript",
+        "rust"
+      ],
+      "use_for": "Find unused code, duplication, circular dependencies and complexity hotspots in a JS or TS repo.",
+      "why": "One Rust binary builds a single repo graph and runs all checks, with a PR gate that only fails on changed files.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "fallow builds a graph of modules, exports, dependencies and functions in a JS/TS repository. It reports health, duplication, architecture boundary violations, styling drift and unused code. It runs as a CLI, GitHub Action, editor extension or LSP, and agent integration.",
+      "best_for": "Teams that want a fast pull request gate and codebase health report for TypeScript or JavaScript without setting up a compiler or config.",
+      "not_for": "Not for other languages. It targets JS and TS projects only.",
+      "keywords": [
+        "unused code",
+        "dead code detection",
+        "knip alternative",
+        "circular dependencies",
+        "code duplication",
+        "typescript code health",
+        "architecture boundaries",
+        "pr gate"
       ]
     },
     {
@@ -508,6 +620,42 @@
       ]
     },
     {
+      "id": "EpicGames/lore",
+      "name": "Lore",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli",
+        "engine"
+      ],
+      "tags": [
+        "version-control",
+        "large-files",
+        "game-dev",
+        "content-addressed",
+        "branching"
+      ],
+      "ecosystems": [
+        "c++",
+        "rust"
+      ],
+      "use_for": "Version code plus large binary assets, such as game projects, with a scalable open source VCS.",
+      "why": "Content-addressed chunked storage and sparse workspaces suit big binary repositories.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open source version control system for projects that mix code with large binary assets. It uses a Merkle tree, chunked storage, an immutable revision chain and on-demand hydration. It has a CLI and APIs for C/C++, C#, Rust, Go, Python and JavaScript.",
+      "best_for": "Game and media teams where artists and developers share huge files and git or Perforce struggle.",
+      "not_for": "Pre-1.0, so interfaces and on-disk formats may change. Open source tooling cannot yet talk to the UEFN build.",
+      "keywords": [
+        "git alternative",
+        "perforce alternative",
+        "game version control",
+        "large binary version control",
+        "epic games vcs",
+        "unreal source control"
+      ]
+    },
+    {
       "id": "python/mypy",
       "name": "mypy",
       "category": "dev-tooling",
@@ -541,6 +689,41 @@
         "type hints",
         "typeshed",
         "static analysis"
+      ]
+    },
+    {
+      "id": "kunchenguid/no-mistakes",
+      "name": "no-mistakes",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "git",
+        "code-review",
+        "ai-validation",
+        "pull-requests",
+        "ci"
+      ],
+      "ecosystems": [
+        "go",
+        "git"
+      ],
+      "use_for": "Push to a local git proxy that checks your branch with AI, then opens a clean PR.",
+      "why": "Runs review, tests, lint and docs in a disposable worktree before anything reaches your remote.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local git proxy placed in front of your real remote. `git push no-mistakes` starts an AI validation pipeline in an isolated worktree, forwards the branch only after checks pass, opens a PR, watches CI and can repair failures. Works with many agents.",
+      "best_for": "Developers using coding agents who want a gate that catches slop before a PR is opened.",
+      "not_for": "Needs at least one configured agent CLI for the gates, and AI checks take time and tokens. It is a workflow tool, not a replacement for human review.",
+      "keywords": [
+        "ai code review before push",
+        "git push gate",
+        "pre-push validation",
+        "auto pull request",
+        "ci auto fix",
+        "clean pr agent"
       ]
     },
     {
@@ -579,6 +762,41 @@
         "ci",
         "polyglot",
         "affected"
+      ]
+    },
+    {
+      "id": "alibaba/open-code-review",
+      "name": "Open Code Review",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "code-review",
+        "llm",
+        "cli",
+        "git-diff",
+        "rules"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Review Git diffs from the command line with an LLM agent and get line-level comments.",
+      "why": "Combines deterministic file selection and rule matching with an agent, from Alibaba's internal tool.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Open Code Review is a CLI that reads Git diffs and sends changed files to a configurable LLM through a tool-using agent. Deterministic steps pick files, bundle related ones and match rules. It outputs line-level comments, and ocr scan reviews whole files.",
+      "best_for": "You want AI code review in CI or locally with your own model endpoint and built-in rulesets.",
+      "not_for": "You must configure an LLM endpoint first, unless you use Delegation Mode. LLM review can miss or invent issues.",
+      "keywords": [
+        "open code review",
+        "ocr cli",
+        "alibaba code review",
+        "ai code review tool",
+        "llm pull request review",
+        "line-level review comments",
+        "git diff review"
       ]
     },
     {
@@ -654,6 +872,116 @@
       ]
     },
     {
+      "id": "PerryTS/perry",
+      "name": "Perry",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli",
+        "engine"
+      ],
+      "tags": [
+        "compiler",
+        "native",
+        "typescript",
+        "llvm",
+        "cross-platform"
+      ],
+      "ecosystems": [
+        "typescript",
+        "rust",
+        "llvm"
+      ],
+      "use_for": "Compile TypeScript into standalone native executables and native apps for desktop and mobile.",
+      "why": "Produces small native binaries with no Node.js or Electron, plus a SwiftUI-like UI API for many platforms.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A TypeScript and JavaScript compiler written in Rust that uses SWC and LLVM to produce machine-code binaries. It implements many Node modules and popular npm packages, offers native threads, and a UI API that maps to real platform widgets on macOS, iOS, Android, Windows, Linux and more.",
+      "best_for": "Shipping small, fast native apps or CLIs from TypeScript without bundling a runtime.",
+      "not_for": "Node compatibility is about 97% on Node's own tests, not complete, so some packages may not work.",
+      "keywords": [
+        "typescript to native binary",
+        "compile typescript executable",
+        "typescript compiler llvm",
+        "no electron",
+        "native ui typescript",
+        "pkg alternative",
+        "bun compile alternative"
+      ]
+    },
+    {
+      "id": "productdevbook/port-killer",
+      "name": "PortKiller",
+      "category": "dev-tooling",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "ports",
+        "kubernetes",
+        "port-forward",
+        "cloudflare-tunnel",
+        "menu-bar"
+      ],
+      "ecosystems": [
+        "macos",
+        "windows"
+      ],
+      "use_for": "See which processes hold local ports and kill them, with kubectl port-forward management.",
+      "why": "Combines port monitoring, kubectl port-forward sessions and Cloudflare Tunnel status in one tray app.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop app that finds all listening TCP ports, lets you stop processes gracefully or by force, and supports search, favorites and watched ports. It also manages kubectl port-forward sessions with auto-reconnect and shows Cloudflare Tunnel connections.",
+      "best_for": "Developers who keep hitting 'port already in use' or juggle many Kubernetes port forwards.",
+      "not_for": "A ready-made app, not a library. Releases cover macOS and Windows only.",
+      "keywords": [
+        "kill process on port",
+        "port already in use",
+        "kubectl port-forward manager",
+        "cloudflare tunnel",
+        "port monitor",
+        "menu bar app",
+        "localhost ports"
+      ]
+    },
+    {
+      "id": "vercel-labs/portless",
+      "name": "portless",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "local-dev",
+        "proxy",
+        "localhost",
+        "https",
+        "dev-server"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Give local dev servers stable named URLs like myapp.localhost instead of port numbers.",
+      "why": "One prefix on your dev command gives each app its own HTTPS name, for people and agents.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI that runs a loopback proxy and assigns each app a free port behind a named .localhost URL. You wrap your dev command with portless run. It can sync /etc/hosts and use a custom TLD, plus a LAN mode.",
+      "best_for": "Running several local apps or worktrees at once without remembering ports, or giving agents predictable URLs.",
+      "not_for": "Reaching apps from other devices with a custom TLD. LAN mode uses .local and ignores a custom --tld.",
+      "keywords": [
+        "localhost named urls",
+        "local dev proxy",
+        "stop using port numbers",
+        "myapp.localhost",
+        "local https dev",
+        "multiple dev servers",
+        "portless"
+      ]
+    },
+    {
       "id": "pre-commit/pre-commit",
       "name": "pre-commit",
       "category": "dev-tooling",
@@ -723,6 +1051,80 @@
         "markdown",
         "opinionated",
         "pre-commit"
+      ]
+    },
+    {
+      "id": "millionco/react-doctor",
+      "name": "React Doctor",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "react",
+        "linter",
+        "ci",
+        "performance",
+        "accessibility",
+        "agents"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react"
+      ],
+      "use_for": "Scan a React project for bad state and effects, performance, security and accessibility issues.",
+      "why": "Deterministic checks aimed at catching what coding agents get wrong in React, with CI and runtime traces.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "React Doctor runs deterministic checks on your code and reports issues in state and effects, performance, architecture, security, accessibility and maintainability. It supports Next.js, Vite, Astro, TanStack, React Native and Expo. It runs with npx, installs into CI, and can record a Chrome performance trace.",
+      "best_for": "React teams using AI agents who want a repeatable check on every pull request.",
+      "not_for": "Non-React code. The CLI collects crash reports and anonymous usage data unless you opt out with a flag.",
+      "keywords": [
+        "react linter",
+        "react code scanner",
+        "react best practices check",
+        "agent react mistakes",
+        "react performance audit",
+        "react ci check",
+        "next.js lint",
+        "react compiler rules"
+      ]
+    },
+    {
+      "id": "aidenybai/react-grab",
+      "name": "React Grab",
+      "category": "dev-tooling",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "react",
+        "devtools",
+        "agent-context",
+        "source-mapping",
+        "browser"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react"
+      ],
+      "use_for": "Copy any UI element in your React app with its component stack and file location to paste to an agent.",
+      "why": "Hover an element, press Cmd or Ctrl+C, and the agent gets the source file and line.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "React Grab turns a browser selection into source context an agent can use. The copied text holds the element plus its component stack with file locations. Setup is one npx command, with guides for Next.js, Vite and Webpack.",
+      "best_for": "Developers who tell a coding agent which UI element to change in a React app.",
+      "not_for": "Aimed at React apps in development mode. It copies context for you to paste. It does not edit code itself.",
+      "keywords": [
+        "react grab",
+        "copy ui element for ai",
+        "component source location",
+        "agent ui context",
+        "react devtools agent",
+        "click to source"
       ]
     },
     {
@@ -901,6 +1303,42 @@
         "flake8",
         "black",
         "isort"
+      ]
+    },
+    {
+      "id": "vercel-labs/scriptc",
+      "name": "scriptc",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "compiler",
+        "native",
+        "webassembly",
+        "typescript",
+        "no-node"
+      ],
+      "ecosystems": [
+        "typescript",
+        "javascript"
+      ],
+      "use_for": "Compile TypeScript and JavaScript programs into native executables or WebAssembly.",
+      "why": "Uses TypeScript types to generate machine code that runs without Node.js.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "scriptc compiles TypeScript and JavaScript to native executables and WebAssembly using the types checked by the TypeScript compiler. Imported npm packages compile with the program. A coverage command shows how much of an existing program compiles.",
+      "best_for": "Trying to ship a small standalone binary from TypeScript without bundling a runtime.",
+      "not_for": "Experimental. It supports only a subset of JavaScript, TypeScript and Node.js APIs, so many programs will not compile yet.",
+      "keywords": [
+        "typescript to native",
+        "compile typescript binary",
+        "typescript to wasm",
+        "standalone executable node",
+        "ts compiler native",
+        "javascript to native code",
+        "no node runtime"
       ]
     },
     {
@@ -1257,6 +1695,43 @@
         "frontend",
         "es modules",
         "plugins"
+      ]
+    },
+    {
+      "id": "mitchellh/vouch",
+      "name": "Vouch",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli",
+        "plugin"
+      ],
+      "tags": [
+        "open-source",
+        "contributions",
+        "trust",
+        "github-actions",
+        "moderation"
+      ],
+      "ecosystems": [
+        "github",
+        "cli"
+      ],
+      "use_for": "Require maintainers to vouch for contributors before they can open issues or PRs.",
+      "why": "Simple flat-file vouch list with GitHub Actions and CLI support, used by Ghostty to filter low-quality AI contributions.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A community trust system where people must be vouched for before interacting with chosen parts of a project, and can be denounced to block them. The list is one flat file parseable with standard POSIX tools. It ships GitHub integration through Actions and a CLI.",
+      "best_for": "Open source maintainers swamped by low-quality or AI-generated issues and pull requests.",
+      "not_for": "The README calls it experimental. It adds friction for new contributors by design.",
+      "keywords": [
+        "vouch contributors",
+        "block ai pull requests",
+        "github contributor trust",
+        "open source moderation",
+        "denounce",
+        "maintainer tools",
+        "spam pull requests"
       ]
     },
     {

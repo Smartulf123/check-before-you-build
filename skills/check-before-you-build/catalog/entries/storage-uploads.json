@@ -40,6 +40,44 @@
       ]
     },
     {
+      "id": "alam00000/bentopdf",
+      "name": "BentoPDF",
+      "category": "storage-uploads",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "pdf",
+        "privacy",
+        "self-hosted",
+        "client-side",
+        "toolkit"
+      ],
+      "ecosystems": [
+        "typescript",
+        "docker"
+      ],
+      "use_for": "Self-host a PDF toolkit that merges, edits and processes files entirely in the browser.",
+      "why": "All processing happens client-side, so files never reach a server.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "BentoPDF is a privacy-first PDF toolkit you can self-host. It lets you manipulate, edit, merge and process PDFs in the browser with no server processing and no limits. It runs from a single Docker image, with a self-hosted build and a commercial build with marketing pages.",
+      "best_for": "Teams that want an internal PDF tool without uploading documents anywhere.",
+      "not_for": "Embedding as a library in your own app, or proprietary products. It is AGPL-3.0, and a commercial licence applies to public-facing deployments.",
+      "keywords": [
+        "pdf toolkit",
+        "self hosted pdf tools",
+        "merge pdf",
+        "client side pdf",
+        "stirling pdf alternative",
+        "privacy pdf editor",
+        "pdf in browser",
+        "docker pdf"
+      ]
+    },
+    {
       "id": "ceph/ceph",
       "name": "Ceph",
       "category": "storage-uploads",
@@ -354,6 +392,44 @@
         "busboy",
         "node.js",
         "form-data"
+      ]
+    },
+    {
+      "id": "PDFCraftTool/pdfcraft",
+      "name": "PDFCraft",
+      "category": "storage-uploads",
+      "kinds": [
+        "app",
+        "template"
+      ],
+      "tags": [
+        "pdf",
+        "client-side",
+        "privacy",
+        "nextjs",
+        "wasm"
+      ],
+      "ecosystems": [
+        "typescript",
+        "nextjs",
+        "webassembly"
+      ],
+      "use_for": "Self-host or fork a browser-based PDF toolkit that merges, splits, converts and edits without uploads.",
+      "why": "Over 80 tools run client-side in WebAssembly, so files never leave the device.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Next.js and Tailwind web app with 80+ PDF tools that process files in the browser using WebAssembly. It is exported as static files you can deploy to Vercel, Netlify, GitHub Pages, Cloudflare Pages or Docker. A beta visual workflow editor chains tools together.",
+      "best_for": "Offering private PDF tools on your own site, or learning client-side PDF processing.",
+      "not_for": "Server-side PDF processing or embedding as a library. It is AGPL-3.0, and the workflow editor is early beta.",
+      "keywords": [
+        "pdf tools self hosted",
+        "merge split pdf browser",
+        "client side pdf",
+        "stirling pdf alternative",
+        "pdf wasm",
+        "private pdf editor",
+        "pdfcraft"
       ]
     },
     {

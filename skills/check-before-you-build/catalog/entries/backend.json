@@ -112,6 +112,41 @@
       ]
     },
     {
+      "id": "butterbase-ai/butterbase",
+      "name": "Butterbase",
+      "category": "backend",
+      "kinds": [
+        "service",
+        "framework"
+      ],
+      "tags": [
+        "backend-as-a-service",
+        "postgres",
+        "mcp-server",
+        "ai-gateway",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Self-hosting a Postgres-backed backend with auth, storage, functions, realtime, an AI gateway and an MCP server.",
+      "why": "Ships a full Apache-2.0 runtime data plane with no feature-gated community edition.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Butterbase is an open-source, AI-native backend-as-a-service. Every app gets its own Postgres database with declarative schema, row-level security and auto-generated REST, plus serverless Deno functions, realtime subscriptions, file storage, RAG, durable per-key actors, and a built-in MCP server so agents can operate the backend with tools.",
+      "best_for": "Developers building AI-driven apps who want a self-hostable Postgres backend with no vendor lock-in.",
+      "not_for": "Not for teams needing a mature, battle-tested BaaS; this is a newer project still adding features.",
+      "keywords": [
+        "open source baas",
+        "postgres backend as a service",
+        "self hosted supabase alternative",
+        "ai gateway backend",
+        "mcp server backend",
+        "butterbase"
+      ]
+    },
+    {
       "id": "vitalik/django-ninja",
       "name": "Django Ninja",
       "category": "backend",

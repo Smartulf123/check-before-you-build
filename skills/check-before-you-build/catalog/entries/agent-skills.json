@@ -2,6 +2,79 @@
   "category": "agent-skills",
   "entries": [
     {
+      "id": "UditAkhourii/adhd",
+      "name": "ADHD",
+      "category": "agent-skills",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "tree-of-thought",
+        "ideation",
+        "claude-code",
+        "codex",
+        "brainstorming"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Get several different solution ideas from isolated agents, then score and prune them.",
+      "why": "Isolated reasoning with no shared context during divergence, then a separate critic pass.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill that spawns several isolated reasoning runs under different cognitive frames, then runs a critic pass to score, cluster, prune weak ideas and deepen the best. It targets design decisions, naming, strategy and fuzzy debugging.",
+      "best_for": "Open-ended problems where you want options and named traps, not one quick answer.",
+      "not_for": "Costs more tokens than a single answer, and the gains shown come from the authors' own eval.",
+      "keywords": [
+        "tree of thought",
+        "brainstorming skill",
+        "parallel ideation",
+        "divergent thinking agent",
+        "claude code skill",
+        "design decisions agent",
+        "critic pass"
+      ]
+    },
+    {
+      "id": "vudovn/ag-kit",
+      "name": "AG Kit",
+      "category": "agent-skills",
+      "kinds": [
+        "template",
+        "skill"
+      ],
+      "tags": [
+        "antigravity",
+        "agent-skills",
+        "workflows",
+        "safety-hook",
+        "memory"
+      ],
+      "ecosystems": [
+        "antigravity",
+        "nodejs",
+        "python"
+      ],
+      "use_for": "Install an Antigravity workspace with rules, skills, specialist agents, workflows and a safety hook.",
+      "why": "Bundles 20 roles, slash-command workflows, persistent memory and a destructive-command blocker.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A kit that installs a `.agents/` workspace contract for Google Antigravity: rules, skills, workflows such as /plan and /coordinate, 20 specialist roles, memory, MCP guidance and a hook that blocks dangerous commands. Python and Node validators check the setup.",
+      "best_for": "Antigravity users who want a ready agent workspace layout with guardrails.",
+      "not_for": "Only Antigravity is supported in production. Other tools may read the files but get no guarantee.",
+      "keywords": [
+        "antigravity kit",
+        "google antigravity skills",
+        "agents folder template",
+        "agent rules and workflows",
+        "ag-kit",
+        "agent safety hook"
+      ]
+    },
+    {
       "id": "addyosmani/agent-skills",
       "name": "Agent Skills (Addy Osmani)",
       "category": "agent-skills",
@@ -39,155 +112,110 @@
       ]
     },
     {
-      "id": "anthropics/skills",
-      "name": "Anthropic Agent Skills",
+      "id": "awslabs/aidlc-workflows",
+      "name": "AI-DLC Workflows",
       "category": "agent-skills",
       "kinds": [
-        "skill"
+        "skill",
+        "cli"
       ],
       "tags": [
-        "claude",
-        "agent-skills",
-        "official",
-        "document-skills"
+        "workflow",
+        "agents",
+        "sdlc",
+        "claude-code",
+        "kiro"
       ],
       "ecosystems": [
-        "any"
+        "python",
+        "markdown"
       ],
-      "use_for": "Official Anthropic skill collection: frontend design, skill creation, MCP building, document handling and more.",
-      "why": "The reference implementation of the Agent Skills format, maintained by Anthropic and among the most-installed skills.",
-      "official": true,
-      "license_verified": {
-        "license": "Apache-2.0",
-        "note": "Per-skill licenses: most skills are Apache-2.0; the docx, pdf, pptx and xlsx skills are source-available (read-only, do not fork).",
-        "date": "2026-10-17"
-      },
+      "use_for": "Add a structured, auditable development workflow to Claude Code, Kiro, Codex, Cursor or Copilot.",
+      "why": "One harness-neutral core with phases, agents, human approval gates and an audit trail.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true,
-      "summary": "Anthropic's repository of example skills for Claude: folders with a SKILL.md plus scripts and resources. Covers creative, technical and enterprise tasks, and includes the docx, pdf, pptx and xlsx document skills; many are Apache 2.0.",
-      "best_for": "Learning the Agent Skills format, copying patterns for your own skills, or using Anthropic's document and frontend skills.",
-      "not_for": "A set of examples and reference skills, not a full workflow framework. Document skills are source-available rather than all open source.",
+      "featured": false,
+      "summary": "AI-DLC turns AI coding assistants into structured delivery workflows: 5 phases, 33 stages, 14 agents and 11 workflow profiles. It keeps state and an audit trail, and an aidlc CLI configures it per harness.",
+      "best_for": "Teams wanting a repeatable, reviewable process around AI-assisted software delivery.",
+      "not_for": "Quick ad-hoc coding; the process is heavy by design. The README warns to review generated output and costs.",
       "keywords": [
-        "agent skills",
-        "skill.md",
-        "claude skills",
-        "pptx",
-        "docx",
-        "pdf",
-        "xlsx",
-        "mcp builder",
-        "skill creator"
+        "ai-dlc",
+        "ai driven development lifecycle",
+        "agent workflow rules",
+        "kiro workflow",
+        "claude code process",
+        "structured ai coding",
+        "aws agent workflow"
       ]
     },
     {
-      "id": "tt-a1i/archify",
-      "name": "archify",
+      "id": "jherrodthomas/automotive-skills-suite",
+      "name": "Automotive Engineering Suite",
       "category": "agent-skills",
       "kinds": [
         "skill"
       ],
       "tags": [
-        "diagrams",
-        "architecture",
-        "visualization"
+        "automotive",
+        "iso-26262",
+        "cybersecurity",
+        "autosar",
+        "safety"
+      ],
+      "ecosystems": [
+        "claude",
+        "xlsx"
+      ],
+      "use_for": "Generate automotive engineering deliverables such as HARA, TARA, FMEA and AUTOSAR files with Claude skills.",
+      "why": "Every builder skill is paired with a reviewer skill that checks the output and produces a dashboard.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "152 Claude skills: 76 builders and 76 matching reviewers. They produce structured xlsx deliverables for ISO 26262, ISO/SAE 21434, SOTIF, AIAG-VDA quality, Automotive SPICE, communication protocols, diagnostics, AUTOSAR, calibration, MBSE and V&V.",
+      "best_for": "Automotive safety, security and quality engineers who want a consistent, reviewable draft of standards-based artifacts.",
+      "not_for": "Narrow to automotive. Output is AI-generated and must be reviewed by qualified engineers before use in a safety case.",
+      "keywords": [
+        "iso 26262 skills",
+        "automotive claude skills",
+        "hara tara fmea generator",
+        "autosar skills",
+        "automotive spice",
+        "functional safety ai"
+      ]
+    },
+    {
+      "id": "BuilderIO/skills",
+      "name": "Builder.io Skills",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "pr-review",
+        "automation",
+        "feedback",
+        "delivery"
       ],
       "ecosystems": [
         "markdown"
       ],
-      "use_for": "Turn an idea, plan or codebase into an interactive architecture diagram",
-      "why": "About 158k skills.sh installs; works across Claude Code, Codex and Cursor with a companion review skill.",
-      "skill": "tt-a1i/archify/archify",
-      "added": "2026-10-17",
-      "last_reviewed": "2026-10-17",
-      "summary": "Agent skill that turns an idea, plan or codebase into an interactive HTML architecture diagram with explorable nodes, path highlighting and shareable links. Keeps an editable JSON source; ships example scenarios and validation receipts.",
-      "best_for": "Producing explorable architecture or workflow diagrams from code or a description via Claude Code, Codex or Cursor.",
-      "not_for": "Output is an interactive HTML artifact, not a Mermaid or draw.io file. Third-party hosted services mentioned are not part of the open-source project.",
-      "keywords": [
-        "architecture diagram",
-        "interactive diagram",
-        "agent skill",
-        "codebase visualization",
-        "html diagram",
-        "system design",
-        "workflow diagram",
-        "skills.sh"
-      ]
-    },
-    {
-      "id": "github/awesome-copilot",
-      "name": "Awesome GitHub Copilot",
-      "category": "agent-skills",
-      "kinds": [
-        "skill"
-      ],
-      "tags": [
-        "agent-skills",
-        "copilot",
-        "prompts",
-        "instructions"
-      ],
-      "ecosystems": [
-        "multi"
-      ],
-      "use_for": "Official GitHub collection of skills, prompts, instructions and custom agents usable across coding agents",
-      "why": "GitHub-maintained, community-contributed library of hundreds of skills and agents; widely installed via skills.sh",
-      "skill": "github/awesome-copilot/git-commit",
-      "official": true,
+      "use_for": "Add skills that collect feedback and errors and review or ship PRs under set policies.",
+      "why": "Separate policies for fixing, replying, reviewing, approving and merging.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
       "featured": false,
-      "summary": "Community-contributed collection of custom agents, instructions, skills, hooks, workflows and plugins for GitHub Copilot, with a searchable website and llms.txt. Skills are self-contained folders usable across coding agents.",
-      "best_for": "Finding ready-made Copilot agents, instruction files and skills to adopt, or sourcing patterns for your own.",
-      "not_for": "A catalog of varying community quality rather than one cohesive product; many items are Copilot-specific.",
+      "summary": "A set of small agent skills, led by an experimental Factory skill. Factory turns feedback, telemetry and errors into policy-gated changes, with modules for collecting, babysitting PRs, reviewing queues and shipping.",
+      "best_for": "Teams who want agents to triage feedback and handle PR flow with explicit approval rules.",
+      "not_for": "Factory is marked experimental. It does not install integrations or create schedules for you.",
       "keywords": [
-        "github copilot",
-        "custom agents",
-        "instructions",
-        "skills",
-        "prompts",
-        "plugins",
-        "cookbook",
-        "awesome list",
-        "copilot agents"
-      ]
-    },
-    {
-      "id": "microsoft/azure-skills",
-      "name": "Azure skills",
-      "category": "agent-skills",
-      "kinds": [
-        "skill"
-      ],
-      "tags": [
-        "agent-skills",
-        "azure",
-        "cloud",
-        "deploy"
-      ],
-      "ecosystems": [
-        "multi"
-      ],
-      "use_for": "Official Microsoft skills for preparing, deploying, diagnosing and securing apps on Azure",
-      "why": "Official vendor pack with ~560k installs per core skill on skills.sh; covers Foundry, deploy, diagnostics and storage",
-      "skill": "microsoft/azure-skills/microsoft-foundry",
-      "official": true,
-      "added": "2026-10-17",
-      "last_reviewed": "2026-10-17",
-      "featured": false,
-      "summary": "Plugin bundling curated Azure skills (prepare, validate, deploy, diagnose, cost, RBAC, storage, AI/Foundry) with the Azure MCP Server so agents can perform real Azure operations. Includes decision trees and guardrails for each scenario.",
-      "best_for": "Agent-assisted Azure deployment, diagnostics, cost analysis and governance for teams already on Azure.",
-      "not_for": "Azure-specific; useless for AWS, GCP or other clouds. Real actions go through the Azure MCP server, so credentials and permissions need care.",
-      "keywords": [
-        "azure",
-        "deploy to azure",
-        "azure mcp",
-        "azure diagnostics",
-        "azure cost",
-        "entra",
-        "app insights",
-        "kubernetes",
-        "foundry"
+        "agent skills",
+        "pr review agent",
+        "babysit pr",
+        "feedback triage",
+        "claude code skills",
+        "factory skill",
+        "automated shipping"
       ]
     },
     {
@@ -225,180 +253,185 @@
       ]
     },
     {
-      "id": "anthropics/claude-plugins-official",
-      "name": "Claude Code official plugins",
-      "category": "agent-skills",
-      "kinds": [
-        "plugin"
-      ],
-      "tags": [
-        "claude-code",
-        "marketplace",
-        "plugins",
-        "official"
-      ],
-      "ecosystems": [
-        "any"
-      ],
-      "use_for": "Install vetted Claude Code plugins from Anthropic's official marketplace directory.",
-      "why": "Anthropic-managed directory of curated plugins; the default trusted source for Claude Code.",
-      "official": true,
-      "added": "2026-10-17",
-      "last_reviewed": "2026-10-17",
-      "featured": false,
-      "summary": "Anthropic-managed directory of Claude Code plugins, split into internal plugins by Anthropic and external third-party plugins approved against quality and security standards. Each plugin follows a standard structure with plugin.json metadata.",
-      "best_for": "Discovering and installing vetted Claude Code plugins, or submitting a plugin to the official marketplace.",
-      "not_for": "A directory, not a tool itself. Anthropic states it cannot verify what included MCP servers or files do, so review plugins before trusting them.",
-      "keywords": [
-        "claude code plugins",
-        "plugin marketplace",
-        "claude plugins",
-        "plugin directory",
-        "mcp servers",
-        "marketplace",
-        "plugin.json"
-      ]
-    },
-    {
-      "id": "jarrodwatts/claude-hud",
-      "name": "claude-hud",
-      "category": "agent-skills",
-      "kinds": [
-        "plugin"
-      ],
-      "tags": [
-        "claude-code",
-        "statusline",
-        "context",
-        "observability"
-      ],
-      "ecosystems": [
-        "ts"
-      ],
-      "use_for": "See context usage, active tools, subagents and todo progress in Claude Code",
-      "why": "Popular Claude Code plugin (135 contributors) that adds a live HUD without leaving the terminal.",
-      "added": "2026-10-17",
-      "last_reviewed": "2026-10-17",
-      "summary": "Claude Code status line plugin showing model, project and git branch, plus context usage and subscriber rate limits; optional lines show active tools, running subagents and todo progress. It runs as a status line command reading session data from stdin.",
-      "best_for": "Keeping live context-window and usage visibility in Claude Code without a separate window or tmux.",
-      "not_for": "Claude Code only. Usage limits appear only for subscriber sessions, and are hidden for API-key, Bedrock and Vertex sessions.",
-      "keywords": [
-        "claude code",
-        "status line",
-        "statusline",
-        "context usage",
-        "rate limits",
-        "hud",
-        "subagents",
-        "todo progress",
-        "plugin"
-      ]
-    },
-    {
-      "id": "thedotmack/claude-mem",
-      "name": "claude-mem",
-      "category": "agent-skills",
-      "kinds": [
-        "plugin"
-      ],
-      "tags": [
-        "memory",
-        "context",
-        "sessions",
-        "claude-code"
-      ],
-      "ecosystems": [
-        "ts"
-      ],
-      "use_for": "Persist and recall context across agent sessions by capturing and compressing what the agent did.",
-      "why": "The most popular persistent-memory plugin for Claude Code; Apache-2.0.",
-      "added": "2026-10-17",
-      "last_reviewed": "2026-10-17",
-      "featured": false,
-      "summary": "Persistent memory plugin for Claude Code that captures tool usage observations, generates semantic summaries and surfaces them in later sessions. Installed with npx claude-mem install, with support for other IDE hosts.",
-      "best_for": "Carrying project knowledge across Claude Code sessions automatically.",
-      "not_for": "The default flow involves signing in and a hosted memory service with a free trial; the local observer is opt-in. Fits only if you accept captured session data being processed.",
-      "keywords": [
-        "persistent memory",
-        "claude code memory",
-        "session context",
-        "observations",
-        "summaries",
-        "long-term memory",
-        "agent memory",
-        "plugin"
-      ]
-    },
-    {
-      "id": "cloudflare/skills",
-      "name": "Cloudflare skills",
+      "id": "uditgoenka/autoresearch",
+      "name": "Claude Autoresearch",
       "category": "agent-skills",
       "kinds": [
         "skill"
       ],
       "tags": [
-        "agent-skills",
-        "cloudflare",
-        "workers",
-        "durable-objects"
+        "autoresearch",
+        "iteration-loop",
+        "claude-code",
+        "metrics",
+        "git-ratchet"
       ],
       "ecosystems": [
-        "ts"
+        "agent-skills",
+        "claude-code",
+        "codex"
       ],
-      "use_for": "Official skills for Workers, Wrangler, Durable Objects, Agents SDK and other Cloudflare products",
-      "why": "Official Cloudflare pack; cloudflare, wrangler and workers-best-practices each have 100k+ installs on skills.sh",
-      "skill": "cloudflare/skills/cloudflare",
-      "official": true,
+      "use_for": "Have a coding agent iterate toward a measurable goal in a modify, verify, keep-or-revert loop.",
+      "why": "Generalizes Karpathy's autoresearch loop to any task with a metric, using git as memory.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
       "featured": false,
-      "summary": "Official Cloudflare agent skills for Workers, Wrangler, Durable Objects, the Agents SDK and the wider Developer Platform. Installable via Claude Code marketplace, Codex, Cursor, VS Code or npx skills.",
-      "best_for": "Building and deploying on Cloudflare with agent guidance on Workers best practices and platform products.",
-      "not_for": "Cloudflare-specific; not useful for other hosts. Skills guide the agent, they do not replace Wrangler or account setup.",
+      "summary": "A skill for Claude Code, OpenCode and Codex. You set a goal and a metric; the agent makes one change, commits, verifies, and keeps or reverts it, repeating. Twelve command files keep token use low.",
+      "best_for": "Optimizing anything with a number you can measure, such as tests, performance or content scores.",
+      "not_for": "Goals with no mechanical metric. Hook guardrails work in Claude Code only.",
       "keywords": [
-        "cloudflare",
-        "workers",
-        "wrangler",
-        "durable objects",
-        "agents sdk",
-        "edge",
-        "agent skills",
-        "serverless"
+        "autoresearch skill",
+        "karpathy autoresearch",
+        "autonomous iteration claude code",
+        "agent improvement loop",
+        "metric driven agent",
+        "claude code loop"
       ]
     },
     {
-      "id": "openai/codex-plugin-cc",
-      "name": "Codex plugin for Claude Code",
+      "id": "alirezarezvani/claude-skills",
+      "name": "Claude Code Skills & Plugins",
       "category": "agent-skills",
       "kinds": [
+        "skill",
         "plugin"
       ],
       "tags": [
-        "codex",
-        "claude-code",
-        "code-review",
-        "delegation"
+        "skills",
+        "plugins",
+        "multi-agent",
+        "engineering",
+        "marketing"
       ],
       "ecosystems": [
-        "js"
+        "markdown",
+        "python"
       ],
-      "use_for": "Call Codex from inside Claude Code to review code or delegate tasks",
-      "why": "Official OpenAI plugin bridging Codex and Claude Code for second-opinion reviews and background tasks.",
-      "official": true,
+      "use_for": "Pick from nearly 400 ready-made skills for engineering, marketing, compliance and more across 13 coding agents.",
+      "why": "Each skill bundles instructions, stdlib-only Python tools and reference docs, with converters for other agents.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "summary": "Claude Code plugin that calls OpenAI Codex from inside Claude Code. Adds /codex:review, /codex:adversarial-review, /codex:rescue, /codex:status, /codex:result and /codex:cancel to run reviews or delegate tasks as background jobs.",
-      "best_for": "Getting a second-opinion review from Codex or delegating tasks to it while staying in Claude Code.",
-      "not_for": "Needs a ChatGPT subscription or OpenAI API key and Node 18.18+; usage counts against Codex limits. Multi-file reviews can be slow.",
+      "featured": false,
+      "summary": "A large library of skills, agents and personas, installable as Claude Code plugins or converted for Codex, Gemini CLI, Cursor and others. Skills cover engineering, DevOps, marketing, security, compliance, C-level advice and research. Python tools use only the standard library.",
+      "best_for": "Starting a skill collection quickly, or borrowing patterns for your own skills.",
+      "not_for": "Broad and uneven by nature; review each skill before trusting it. Some agents need a local sync step.",
       "keywords": [
-        "codex",
-        "claude code plugin",
-        "code review",
-        "second opinion",
-        "delegate tasks",
-        "adversarial review",
-        "background jobs",
-        "openai"
+        "claude code skills",
+        "agent skills library",
+        "skills collection",
+        "claude plugins marketplace",
+        "codex skills",
+        "skills for marketing and engineering",
+        "cursor skills"
+      ]
+    },
+    {
+      "id": "Jeffallan/claude-skills",
+      "name": "Claude Skills (Fullstack Dev Skills)",
+      "category": "agent-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "claude-code",
+        "full-stack",
+        "skills-pack",
+        "workflows",
+        "jira"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Install 67 developer skills for languages, frameworks, DevOps, security and testing in Claude Code.",
+      "why": "Skills activate on context and combine into workflows; includes a /common-ground command.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Claude Code plugin marketplace with 67 skills in 12 categories. It adds nine workflow commands that manage epics through Jira and Confluence, and /common-ground to surface the agent's assumptions about your project.",
+      "best_for": "Full-stack developers who want a broad, ready skill set for Claude Code in one install.",
+      "not_for": "Narrow needs, or workflow commands without an Atlassian MCP server, which they require.",
+      "keywords": [
+        "claude code skills",
+        "fullstack skills pack",
+        "claude plugin marketplace",
+        "developer skills bundle",
+        "jira workflow commands",
+        "pair programmer skills",
+        "fullstack dev skills"
+      ]
+    },
+    {
+      "id": "HKUDS/CLI-Anything",
+      "name": "CLI-Anything",
+      "category": "agent-skills",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "agent-native-cli",
+        "cli-hub",
+        "harness-generator",
+        "claude-code",
+        "automation"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate or install command-line harnesses so AI agents can drive existing software.",
+      "why": "Comes with CLI-Hub, a registry of community-built agent-ready CLIs, plus a 7-phase generator.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "CLI-Anything makes software usable by agents through structured CLIs with JSON output. You can install ready-made CLIs with cli-hub, or add the plugin and run the 7-phase generator to build a new harness for an app.",
+      "best_for": "You want agents to operate desktop or other software that has no agent-friendly interface.",
+      "not_for": "Quality depends on each generated or community CLI. It targets apps that can be wrapped by a command line.",
+      "keywords": [
+        "cli-anything",
+        "agent native cli",
+        "cli-hub",
+        "make software agent ready",
+        "generate cli for app",
+        "agent harness generator",
+        "hkuds cli anything"
+      ]
+    },
+    {
+      "id": "rpamis/comet",
+      "name": "Comet",
+      "category": "agent-skills",
+      "kinds": [
+        "skill",
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "skills",
+        "workflow",
+        "evaluation",
+        "openspec",
+        "coding-agents"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Run long, resumable coding tasks through a requirements-to-archive workflow, and create, evaluate and release skills.",
+      "why": "Offers a Native workflow for strong models and a Classic OpenSpec plus Superpowers flow, with Pass@k skill scoring.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A resumable long-running task workflow and Skill platform for coding. It has two requirements workflows, Native and Classic, plus a toolchain to create, distribute and score skills with rubrics, Pass@k and Pass^k.",
+      "best_for": "Teams building and measuring their own agent skills and wanting governed phases from requirements to archive.",
+      "not_for": "A heavy process aimed at power users of coding agents. Native mode is meant for strong models.",
+      "keywords": [
+        "skill evaluation",
+        "agent workflow framework",
+        "openspec superpowers",
+        "pass@k skills",
+        "long running coding task",
+        "comet skills"
       ]
     },
     {
@@ -439,38 +472,149 @@
       ]
     },
     {
-      "id": "cathrynlavery/diagram-design",
-      "name": "diagram-design",
+      "id": "gemini-cli-extensions/conductor",
+      "name": "Conductor",
       "category": "agent-skills",
       "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "spec-driven",
+        "planning",
+        "claude-code",
+        "workflow",
+        "context"
+      ],
+      "ecosystems": [
+        "markdown",
+        "claude-code"
+      ],
+      "use_for": "Make a coding agent write a spec and plan and get your review before it writes code.",
+      "why": "Keeps project context in the repo and has a git-aware revert for tracks, phases and tasks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A plugin for agents like Antigravity and Claude Code that enforces a Context, Spec and Plan, then Implement lifecycle. Work is grouped into tracks, and project style and tech choices persist as shared context.",
+      "best_for": "Teams that want plan review and persistent project context for agent-written features and fixes.",
+      "not_for": "The README warns that it uses more tokens, especially on large projects. It adds process overhead for tiny changes.",
+      "keywords": [
+        "spec driven development",
+        "claude code plugin",
+        "gemini cli extension",
+        "agent planning",
+        "track spec plan",
+        "antigravity",
+        "conductor"
+      ]
+    },
+    {
+      "id": "andrewyng/context-hub",
+      "name": "Context Hub",
+      "category": "agent-skills",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "docs",
+        "api-docs",
+        "coding-agents",
+        "chub",
+        "annotations"
+      ],
+      "ecosystems": [
+        "nodejs",
+        "markdown"
+      ],
+      "use_for": "Give coding agents current, versioned API docs through a CLI, so they stop inventing APIs.",
+      "why": "Open Markdown docs that you can inspect, with local agent notes and up/down feedback to authors.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Context Hub (chub) is a CLI that your coding agent uses to search and fetch curated, versioned, language-specific docs, such as OpenAI or Stripe APIs. Agents can add local annotations about gaps and vote docs up or down. All content is Markdown in the repo.",
+      "best_for": "Reducing API hallucinations in coding agents with up-to-date docs.",
+      "not_for": "Humans reading docs by hand. The README says it is designed for agents, and only API docs exist today, with skills on the roadmap.",
+      "keywords": [
+        "api docs for agents",
+        "reduce llm hallucination apis",
+        "context7 alternative",
+        "chub cli",
+        "up to date docs for coding agents",
+        "andrew ng context hub",
+        "versioned docs agent",
+        "agent documentation"
+      ]
+    },
+    {
+      "id": "0xNyk/council-of-high-intelligence",
+      "name": "Council of High Intelligence",
+      "category": "agent-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "decision-making",
+        "multi-perspective",
+        "personas",
+        "deliberation",
+        "skill"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "codex",
+        "gemini-cli",
+        "opencode"
+      ],
+      "use_for": "Run a panel of distinct analytical personas to debate a hard decision and return a verdict.",
+      "why": "Forces independent first positions, cross-examination and dissent, and labels claims as fact, inference or assumption.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill that assigns a hard question to different analytical personas, keeps their first views independent, makes them disagree, and returns a verdict with unresolved questions, kill criteria and a next step. It offers full, quick and duo modes across four agent tools.",
+      "best_for": "High-stakes or ambiguous choices where one reasoning path is not enough.",
+      "not_for": "Slow and token-heavy. The README says to skip it for simple facts or cheap, reversible decisions.",
+      "keywords": [
+        "multi-agent debate",
+        "decision council",
+        "second opinion llm",
+        "structured deliberation",
+        "devil's advocate agents",
+        "persona panel skill"
+      ]
+    },
+    {
+      "id": "peteromallet/desloppify",
+      "name": "Desloppify",
+      "category": "agent-skills",
+      "kinds": [
+        "cli",
         "skill"
       ],
       "tags": [
-        "diagrams",
-        "design",
-        "svg"
+        "code-quality",
+        "agent-harness",
+        "refactoring",
+        "dead-code",
+        "linting"
       ],
       "ecosystems": [
-        "markdown"
+        "python"
       ],
-      "use_for": "Have an agent produce editorial-quality diagrams across 44 diagram types",
-      "why": "About 14k skills.sh installs; supports Claude Code, Codex, Copilot, Cursor and more.",
-      "skill": "cathrynlavery/diagram-design/diagram-design",
+      "use_for": "Give a coding agent a scan, score, review and fix loop to improve codebase quality over many sessions.",
+      "why": "Mixes mechanical detectors with LLM review, persists state across scans, and uses scoring built to resist gaming.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "summary": "Agent skill that draws diagrams as a single self-contained HTML + SVG file in your brand style, covering 45 diagram types. Places elements on a 4px grid with CI checks for overlap and clipping, can onboard to a site's palette and fonts, and exports SVG or PNG.",
-      "best_for": "Brand-consistent architecture, sequence, quadrant and other diagrams generated by an agent from plain-language requests.",
-      "not_for": "Not a text-to-diagram DSL like Mermaid or an editable canvas like draw.io. Output is one opinionated editorial style.",
+      "featured": false,
+      "summary": "An agent harness that finds dead code, duplication and complexity, then adds LLM review of naming and module boundaries. It triages issues into a queue, has the agent fix them, rescans, and produces a score and badge. Covers 29 languages.",
+      "best_for": "Cleaning up a messy or AI-written codebase step by step with an agent.",
+      "not_for": "License is not clearly stated. It depends on an LLM agent doing the fixing, and full plugin depth is for only 8 languages.",
       "keywords": [
-        "diagram",
-        "svg",
-        "architecture diagram",
-        "sequence diagram",
-        "agent skill",
-        "brand style",
-        "html diagram",
-        "quadrant",
-        "png export"
+        "clean up ai slop code",
+        "code quality agent",
+        "dead code detection",
+        "codebase health score",
+        "refactor with claude code",
+        "desloppify"
       ]
     },
     {
@@ -511,184 +655,365 @@
       ]
     },
     {
-      "id": "expo/skills",
-      "name": "Expo Skills",
+      "id": "Gentleman-Programming/gentle-ai",
+      "name": "Gentle-AI",
+      "category": "agent-skills",
+      "kinds": [
+        "cli",
+        "plugin"
+      ],
+      "tags": [
+        "agent-config",
+        "memory",
+        "workflow",
+        "mcp",
+        "skills"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Set up memory, a workflow and review evidence for the AI coding agent you already use.",
+      "why": "One setup works across 17 agents, including Claude Code, Cursor, Codex and OpenCode.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Gentle-AI configures coding agents with persistent memory, curated skills, MCP servers and a deterministic workflow. A binary tracks the valid next step and ties review evidence to the candidate change.",
+      "best_for": "Teams that use one or more coding agents and want shared memory, a fixed workflow and checkable review evidence.",
+      "not_for": "Not a standalone agent. It needs an existing agent such as Claude Code or Cursor. The README says its benchmarks are single runs (n=1).",
+      "keywords": [
+        "gentle-ai",
+        "agent memory",
+        "claude code setup",
+        "coding agent workflow",
+        "agent configuration",
+        "cursor opencode codex",
+        "deterministic agent"
+      ]
+    },
+    {
+      "id": "htdt/godogen",
+      "name": "Godogen",
+      "category": "agent-skills",
+      "kinds": [
+        "skill",
+        "template"
+      ],
+      "tags": [
+        "game-dev",
+        "godot",
+        "bevy",
+        "babylonjs",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "godot",
+        "rust",
+        "typescript"
+      ],
+      "use_for": "Have an agent build a game in Godot, Bevy, Babylon.js or three.js and prove it from the running game.",
+      "why": "Judges results from the running game or a recorded clip, not from a clean compile.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A generator that publishes into a fresh game repo, where Claude Code or Codex builds the game. It generates assets locally by default (images, 3D models, rigged characters, sound) and uses paid APIs for the rest. You can watch and steer or get a proof recording.",
+      "best_for": "Prototyping games with an agent across several engines.",
+      "not_for": "The repo is a generator, not a game. Some assets need paid APIs. Output quality depends on the agent.",
+      "keywords": [
+        "godogen",
+        "ai game development",
+        "godot claude code",
+        "bevy agent",
+        "babylon.js game generator",
+        "autonomous game dev"
+      ]
+    },
+    {
+      "id": "open-gsd/gsd-core",
+      "name": "GSD Core",
+      "category": "agent-skills",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "spec-driven",
+        "context-engineering",
+        "subagents",
+        "claude-code",
+        "workflow"
+      ],
+      "ecosystems": [
+        "typescript",
+        "nodejs"
+      ],
+      "use_for": "Drive AI coding agents through a discuss, plan, execute, verify, ship loop that avoids context rot.",
+      "why": "Runs heavy work in fresh-context subagents so the main session stays lean.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A meta-prompting and spec-driven development system for Claude Code, Codex, Cursor, Copilot and others. It installs with npx and repeats a five-step loop per phase, keeping state in files like STATE.md and CONTEXT.md.",
+      "best_for": "Larger projects where long AI sessions lose quality and you want a repeatable plan-and-verify process.",
+      "not_for": "Quick one-off edits. It adds a heavy process, and the README says the installer is required, so do not copy files by hand.",
+      "keywords": [
+        "spec driven development",
+        "context rot",
+        "claude code workflow",
+        "get shit done",
+        "gsd",
+        "ai coding planning",
+        "subagent orchestration"
+      ]
+    },
+    {
+      "id": "garrytan/gstack",
+      "name": "gstack",
+      "category": "agent-skills",
       "kinds": [
         "skill",
         "plugin"
       ],
       "tags": [
-        "expo",
-        "react-native",
-        "eas",
-        "mobile",
-        "official"
+        "claude-code",
+        "slash-commands",
+        "workflow",
+        "code-review",
+        "qa"
       ],
       "ecosystems": [
-        "ts"
+        "claude-code",
+        "markdown"
       ],
-      "official": true,
-      "use_for": "Official Expo skills for building, deploying, upgrading and debugging Expo and React Native apps with an agent.",
-      "why": "Maintained by the Expo team and listed in the official Claude and Codex plugin marketplaces.",
-      "category": "agent-skills",
+      "use_for": "Add a set of slash commands that act as planner, reviewer and QA inside Claude Code.",
+      "why": "Packages one builder's whole Claude Code workflow as ready-to-run commands.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
       "featured": false,
-      "summary": "Official Expo agent skills for building, deploying, upgrading and debugging Expo and React Native apps, teaching agents when to use Expo APIs and EAS workflows. Installed via the skills CLI; telemetry is off by default.",
-      "best_for": "Using coding agents on Expo or React Native projects with accurate Expo/EAS guidance.",
-      "not_for": "Only relevant to Expo and React Native. Expo docs and CLIs remain the source of truth; the skills are guidance.",
+      "summary": "gstack is Garry Tan's Claude Code setup: opinionated tools that play roles like CEO, designer, engineering manager and QA. Commands include /office-hours, /plan-ceo-review, /review and /qa. Setup takes about 30 seconds.",
+      "best_for": "You want a ready-made, opinionated plan-review-QA workflow for Claude Code.",
+      "not_for": "It is one person's workflow, so expect opinions you may want to change. The README is long on personal story and productivity claims.",
       "keywords": [
-        "expo",
-        "react native",
-        "eas",
-        "mobile app",
-        "agent skills",
-        "upgrade expo",
-        "debug",
-        "ios android"
+        "gstack",
+        "garry tan claude code",
+        "claude code workflow",
+        "office-hours",
+        "plan ceo review",
+        "claude code qa skill",
+        "claude code setup"
       ]
     },
     {
-      "id": "Nutlope/hallmark",
-      "name": "hallmark",
+      "id": "humanlayer/skills",
+      "name": "HumanLayer Skills",
       "category": "agent-skills",
       "kinds": [
         "skill"
       ],
       "tags": [
-        "design",
-        "frontend",
-        "anti-slop"
+        "claude-code",
+        "skills",
+        "research-plan-implement",
+        "pull-requests",
+        "agent-loops"
       ],
       "ecosystems": [
         "markdown"
       ],
-      "use_for": "Steer Claude Code, Cursor or Codex away from generic AI-looking UI",
-      "why": "About 63k skills.sh installs; opinionated design rules from Hassan El Mghari (Together AI).",
-      "skill": "nutlope/hallmark/hallmark",
-      "added": "2026-10-17",
-      "last_reviewed": "2026-10-17",
-      "summary": "Design skill for Claude Code, Cursor and Codex that picks a page macrostructure, applies one of 21 themes, runs 57 slop-test gates plus a self-critique, and avoids default AI-looking UI. Verbs: build, audit, redesign and study.",
-      "best_for": "Generating or auditing frontends so they do not look like generic AI output.",
-      "not_for": "Opinionated design rules and themes; not a component library or design system. Output quality still depends on the underlying agent.",
-      "keywords": [
-        "ui design",
-        "frontend design",
-        "ai slop",
-        "design skill",
-        "redesign",
-        "audit ui",
-        "themes",
-        "landing page",
-        "claude code"
-      ]
-    },
-    {
-      "id": "blader/humanizer",
-      "name": "Humanizer",
-      "category": "agent-skills",
-      "kinds": [
-        "skill"
-      ],
-      "tags": [
-        "writing",
-        "editing",
-        "ai-text",
-        "style"
-      ],
-      "ecosystems": [
-        "any"
-      ],
-      "use_for": "Rewrite text to remove common signs of AI-generated writing.",
-      "why": "Focused, widely used writing skill (~58k stars), MIT.",
+      "use_for": "Install Claude Code skills for research-plan-implement flows, visual PRs, CLAUDE.md rewrites and agent loops.",
+      "why": "Practical workflow skills from HumanLayer, installed one at a time with npx skills.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
       "featured": false,
-      "summary": "Skill that rewrites AI-sounding text into more natural writing without changing meaning, based on Wikipedia's Signs of AI writing guide. Works in Claude Code, Codex and other skill-compatible agents.",
-      "best_for": "Cleaning up drafts that show typical AI phrasing (inflated claims, stock phrases, emoji, rhetorical patterns).",
-      "not_for": "Edits for human readers, not to evade AI detectors, which may still flag the result. Not a fact-checker or translator.",
+      "summary": "A set of skills including rpi (research, design, then implement), design-control-loop, visual-pr, show-me, improve-claude-md, narrow-react-prop-types and build-iterated-agentic-loop. Each installs with npx skills add.",
+      "best_for": "Claude Code or Codex users who want structured research-then-implement workflows.",
+      "not_for": "Agents that do not read skills. The skills are tied to specific workflows, so read each one before adopting.",
       "keywords": [
-        "humanize text",
-        "ai writing",
-        "rewrite",
-        "remove ai tone",
-        "editing",
-        "wikipedia signs of ai writing",
-        "copyediting",
-        "skill"
+        "claude code skills",
+        "rpi research plan implement",
+        "humanlayer",
+        "improve claude.md",
+        "visual pull request",
+        "agentic loop github actions",
+        "npx skills add"
       ]
     },
     {
-      "id": "mvanhorn/last30days-skill",
-      "name": "last30days",
+      "id": "ayghri/i-have-adhd",
+      "name": "i-have-adhd",
+      "category": "agent-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "output-style",
+        "adhd",
+        "concise",
+        "claude-code",
+        "skill"
+      ],
+      "ecosystems": [
+        "markdown",
+        "claude-code"
+      ],
+      "use_for": "Make your coding agent answer action-first, with numbered steps and no filler.",
+      "why": "A short skill of 10 rules that you can fork and tune in one SKILL.md.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill that stops a coding assistant from burying the answer. Its 10 rules lead with the next action, number steps, cap lists at 5 items, give specific time estimates and drop preambles and closers. Fork SKILL.md to tune it.",
+      "best_for": "You want shorter, clearer, action-first responses from Claude Code or similar assistants.",
+      "not_for": "It only changes response style. It adds no tools or capabilities, and the rules are fixed unless you edit them.",
+      "keywords": [
+        "i have adhd",
+        "adhd friendly ai output",
+        "claude code output style",
+        "concise agent responses",
+        "action first skill",
+        "no preamble skill",
+        "skill md"
+      ]
+    },
+    {
+      "id": "shadcn/improve",
+      "name": "improve",
       "category": "agent-skills",
       "kinds": [
         "skill"
       ],
       "tags": [
-        "research",
-        "reddit",
-        "hacker-news",
-        "web-search"
+        "code-audit",
+        "planning",
+        "agent-skill",
+        "cost-saving",
+        "refactoring"
       ],
       "ecosystems": [
+        "claude-code"
+      ],
+      "use_for": "Have your best model audit a codebase and write plans that cheaper models execute.",
+      "why": "The skill never edits code; the self-contained plan is the product.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An agent skill with modes like quick, deep, security, perf, branch and next. It maps the repo, finds issues, rejects false ones with reasons, and writes numbered plan files with test and lint gates and STOP conditions. It can dispatch a cheaper executor and review the work.",
+      "best_for": "Cutting cost by splitting expensive thinking from cheap implementation.",
+      "not_for": "Direct code changes by the skill itself. It only plans, so you need another agent to implement.",
+      "keywords": [
+        "codebase audit skill",
+        "plan for cheaper models",
+        "agent planning skill",
+        "shadcn improve",
+        "refactor plans agent",
+        "claude code audit",
+        "spec writing skill"
+      ]
+    },
+    {
+      "id": "NomaDamas/k-skill",
+      "name": "k-skill",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "korean",
+        "agent-skills",
+        "travel",
+        "government",
+        "daily-life"
+      ],
+      "ecosystems": [
+        "nodejs",
         "python"
       ],
-      "use_for": "Research what people said about a topic in the last 30 days across Reddit, X, HN and the web",
-      "why": "About 48k skills.sh installs; synthesizes recent community discussion into a cited brief.",
-      "skill": "mvanhorn/last30days-skill/last30days",
-      "added": "2026-10-17",
-      "last_reviewed": "2026-10-17",
-      "summary": "Agent skill that searches Reddit, Hacker News, Polymarket and GitHub (plus X, YouTube, TikTok, arXiv, Techmeme and more after setup) in parallel, scores results by engagement, and synthesizes a cited brief of the last 30 days.",
-      "best_for": "Researching what communities are currently saying about a topic, tool or trend.",
-      "not_for": "Window is recent activity only. Some sources need setup or credentials, and results reflect engagement, not accuracy.",
-      "keywords": [
-        "research",
-        "reddit",
-        "hacker news",
-        "polymarket",
-        "social search",
-        "last 30 days",
-        "trend research",
-        "agent skill",
-        "cited brief"
-      ]
-    },
-    {
-      "id": "coreyhaines31/marketingskills",
-      "name": "Marketing Skills",
-      "category": "agent-skills",
-      "kinds": [
-        "skill"
-      ],
-      "tags": [
-        "marketing",
-        "seo",
-        "copywriting",
-        "cro"
-      ],
-      "ecosystems": [
-        "any"
-      ],
-      "use_for": "Give agents marketing skills for SEO audits, CRO, copywriting, analytics and growth.",
-      "why": "Most-installed marketing skill pack (~230k installs for seo-audit); MIT.",
-      "skill": "coreyhaines31/marketingskills/seo-audit",
+      "use_for": "Give coding agents 125 skills for everyday Korean services such as KTX, buses, tax and shopping.",
+      "why": "Large Korea-specific skill set that installs with one npx command across many agents.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
       "featured": false,
-      "summary": "Collection of marketing skills for coding agents: SEO audits, conversion optimization, copywriting, analytics and growth engineering. Works with Claude Code, Codex, Cursor, Windsurf and other Agent Skills hosts.",
-      "best_for": "Technical marketers and founders using agents for SEO, CRO, copy and growth tasks.",
-      "not_for": "Guidance prompts, not analytics software; connecting marketing accounts requires separate scoped credentials. Author promotes related paid services.",
+      "summary": "A collection of 125 agent skills grouped by area of Korean daily life, including rail timetables, bus booking, flights, travel safety and government services. Works with Claude Code, Codex, OpenCode and OpenClaw. Some skills use a public proxy server.",
+      "best_for": "Developers and users in Korea who want agents to handle local services and lookups.",
+      "not_for": "Mostly useful only for Korean services, and the README is in Korean. Some skills are lookup-only and cannot book or pay.",
       "keywords": [
-        "seo audit",
-        "conversion optimization",
-        "copywriting",
-        "marketing",
-        "growth",
-        "analytics",
-        "landing page",
-        "agent skills",
-        "cro"
+        "korean agent skills",
+        "ktx timetable skill",
+        "korea ai skills",
+        "홈택스 에이전트",
+        "korean services claude code",
+        "k-skill"
+      ]
+    },
+    {
+      "id": "cobusgreyling/loop-engineering",
+      "name": "Loop Engineering",
+      "category": "agent-skills",
+      "kinds": [
+        "cli",
+        "template"
+      ],
+      "tags": [
+        "agent-loops",
+        "patterns",
+        "cli",
+        "github-actions",
+        "automation"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Set up and score recurring agent loops (triage, PR babysitting, refactors) with ready patterns.",
+      "why": "A CLI to init, doctor and cost a loop, with a staged L1 report to L3 unattended rollout.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A pattern library and CLI for designing loops where agents find work, act, verify and persist state. Commands include init, doctor and cost. Works with Claude, Codex, Grok and Opencode, including thin GitHub Action loops.",
+      "best_for": "Teams moving from one-off prompting to scheduled, verified agent workflows around a codebase.",
+      "not_for": "One-shot rewrites. The README says it is a pattern library, not a rewrite the module button, and advises starting report-only.",
+      "keywords": [
+        "agent loop patterns",
+        "automate coding agents",
+        "claude code loops",
+        "agent triage github actions",
+        "loop engineering cli",
+        "agent state md",
+        "loop audit"
+      ]
+    },
+    {
+      "id": "Forward-Future/loopy",
+      "name": "Loopy / Loop Library",
+      "category": "agent-skills",
+      "kinds": [
+        "skill",
+        "app"
+      ],
+      "tags": [
+        "agent-loops",
+        "skills",
+        "prompts",
+        "workflows",
+        "catalog"
+      ],
+      "ecosystems": [
+        "markdown",
+        "typescript"
+      ],
+      "use_for": "Find, adapt and design repeatable agent loops with built-in checks and stop rules.",
+      "why": "A public catalog of loops plus an installable skill that helps an agent audit, craft, run and publish them.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Two parts: a Loop Library website with published loops anyone can copy, and an optional Loopy skill that guides an agent to find, audit, repair, craft, run and save loops. A loop says what to do, how to check, and when to stop.",
+      "best_for": "Turning one-off agent prompts into repeatable workflows with feedback, such as fixing errors or raising test coverage.",
+      "not_for": "A catalog of prompt playbooks and a guide skill, not a runtime or agent framework. The skill relies on the live website catalog.",
+      "keywords": [
+        "agent loops",
+        "loop library",
+        "repeatable agent workflows",
+        "prompt loops",
+        "ralph loop alternative",
+        "loopy skill"
       ]
     },
     {
@@ -728,76 +1053,75 @@
       ]
     },
     {
-      "id": "NVIDIA/skills",
-      "name": "NVIDIA skills",
+      "id": "vinvcn/mattpocock-skills-zh-CN",
+      "name": "mattpocock-skills-zh-CN",
       "category": "agent-skills",
       "kinds": [
-        "skill"
+        "skill",
+        "plugin"
       ],
       "tags": [
-        "nvidia",
-        "cuda",
-        "gpu",
-        "official"
+        "skills",
+        "chinese",
+        "localization",
+        "claude-code",
+        "engineering"
       ],
       "ecosystems": [
-        "any"
+        "claude-code",
+        "codex"
       ],
-      "use_for": "Install agent skills for NVIDIA products and SDKs into Claude Code, Codex and others.",
-      "why": "Official NVIDIA-maintained skills for its developer stack.",
-      "official": true,
+      "use_for": "Use Matt Pocock's engineering agent skills with Simplified Chinese instructions.",
+      "why": "Full Chinese translation of a popular small, editable skill set, keeping skill names and commands unchanged.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
       "featured": false,
-      "summary": "Catalog of NVIDIA-verified agent skills for its software: physical AI and robotics, simulation, CUDA-X libraries, RAG and blueprints. Skills live in product repos and are mirrored here daily; installed with npx skills add nvidia/skills.",
-      "best_for": "Agents working with NVIDIA SDKs, CUDA-X, robotics and AI blueprints.",
-      "not_for": "NVIDIA-stack specific. It is a mirror catalog, and needs a recent skills CLI (v1.5.16+) to appear in Claude Code.",
+      "summary": "A Simplified Chinese localization of mattpocock/skills. Only natural-language text is translated; directory names, skill names, commands and code stay as they are. Install through the skills CLI or as a Claude Code plugin, then run the setup skill in each repo.",
+      "best_for": "Chinese-speaking developers, or teams working with Chinese-tuned models, who want those skills in their own language.",
+      "not_for": "A translated copy that tracks the upstream repo. Use the original if you work in English.",
       "keywords": [
-        "nvidia",
-        "cuda",
-        "robotics",
-        "simulation",
-        "rag",
-        "agent skills",
-        "blueprints",
-        "gpu",
-        "skills cli"
+        "中文 skills",
+        "mattpocock skills",
+        "chinese claude code skills",
+        "agent skills 中文",
+        "skills.sh",
+        "localized skills"
       ]
     },
     {
-      "id": "kepano/obsidian-skills",
-      "name": "obsidian-skills",
+      "id": "davebcn87/pi-autoresearch",
+      "name": "pi-autoresearch",
       "category": "agent-skills",
       "kinds": [
+        "plugin",
         "skill"
       ],
       "tags": [
-        "obsidian",
-        "markdown",
-        "bases",
-        "json-canvas"
+        "autoresearch",
+        "optimization-loop",
+        "pi",
+        "benchmarks",
+        "experiments"
       ],
       "ecosystems": [
-        "markdown"
+        "typescript",
+        "pi"
       ],
-      "use_for": "Teach an agent Obsidian Flavored Markdown, Bases, JSON Canvas and the Obsidian CLI",
-      "why": "By Obsidian CEO Steph Ango; ~90k installs for obsidian-markdown on skills.sh, with cli and bases skills close behind.",
-      "skill": "kepano/obsidian-skills/obsidian-markdown",
+      "use_for": "Let the pi coding agent run autonomous benchmark-and-keep experiment loops on any metric.",
+      "why": "Splits a generic extension from per-domain skills, with session files that survive restarts.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "summary": "Agent skills that teach agents Obsidian Flavored Markdown, Bases, JSON Canvas and the Obsidian CLI, by Obsidian's CEO. Follows the Agent Skills spec for Claude Code, Codex and OpenCode.",
-      "best_for": "Having an agent read and write Obsidian vault content correctly, including bases and canvases.",
-      "not_for": "Obsidian-specific; no effect outside a vault workflow. Install layout differs per agent (OpenCode needs the full repo).",
+      "featured": false,
+      "summary": "An extension and skill for the pi terminal coding agent. It runs an optimization loop: try an idea, benchmark it, keep wins, revert regressions. Examples include test speed, bundle size and Lighthouse score. Progress lives in `.auto/log.jsonl` and a prompt file.",
+      "best_for": "Optimizing a measurable number, such as build time or bundle size, with an agent that works unattended.",
+      "not_for": "Works only inside the pi agent. You must have a command that yields a reliable metric.",
       "keywords": [
-        "obsidian",
-        "markdown",
-        "json canvas",
-        "bases",
-        "vault",
-        "agent skills",
-        "obsidian cli",
-        "notes",
-        "pkm"
+        "autoresearch",
+        "karpathy autoresearch",
+        "agent optimization loop",
+        "pi extension",
+        "benchmark loop agent",
+        "autonomous experiments"
       ]
     },
     {
@@ -837,41 +1161,6 @@
       ]
     },
     {
-      "id": "phuryn/pm-skills",
-      "name": "PM Skills",
-      "category": "agent-skills",
-      "kinds": [
-        "skill",
-        "plugin"
-      ],
-      "tags": [
-        "product-management",
-        "prd",
-        "roadmap"
-      ],
-      "ecosystems": [
-        "markdown"
-      ],
-      "use_for": "Give an agent product-management workflows: PRDs, pre-mortems, prioritization, roadmaps",
-      "why": "100+ PM skills and commands; top skills each around 10k installs on skills.sh.",
-      "added": "2026-10-17",
-      "last_reviewed": "2026-10-17",
-      "summary": "Marketplace of 69 product-management skills and 42 chained workflows across 9 plugins covering discovery, strategy, prioritization, PRDs, launch and growth. Built for Claude Code and Cowork, compatible with other assistants.",
-      "best_for": "Product managers wanting structured, framework-driven AI workflows for discovery, prioritization and roadmaps.",
-      "not_for": "PM-specific; not for engineering tasks. Frameworks are opinionated and output still needs your own judgment.",
-      "keywords": [
-        "product management",
-        "prd",
-        "roadmap",
-        "prioritization",
-        "pre-mortem",
-        "discovery",
-        "pm skills",
-        "claude code",
-        "strategy"
-      ]
-    },
-    {
       "id": "DietrichGebert/ponytail",
       "name": "ponytail",
       "category": "agent-skills",
@@ -905,151 +1194,144 @@
       ]
     },
     {
-      "id": "K-Dense-AI/scientific-agent-skills",
-      "name": "Scientific Agent Skills",
+      "id": "nidhinjs/prompt-master",
+      "name": "Prompt Master",
       "category": "agent-skills",
       "kinds": [
         "skill"
       ],
       "tags": [
-        "science",
-        "research",
-        "bioinformatics",
-        "data-analysis"
-      ],
-      "ecosystems": [
-        "any"
-      ],
-      "use_for": "Equip agents with scientific skills for bioinformatics, chemistry, data analysis and literature work.",
-      "why": "Largest science-focused skill library; ~52k stars, MIT.",
-      "added": "2026-10-17",
-      "last_reviewed": "2026-10-17",
-      "featured": false,
-      "summary": "Library of 177 scientific skills for agents covering bioinformatics, chemistry, data analysis and literature, including documentation of 80+ databases such as PubChem, ChEMBL, UniProt and ClinicalTrials.gov. Works with any Agent Skills-compatible agent.",
-      "best_for": "Research workflows in life sciences, chemistry and data science that benefit from database lookup and domain procedures.",
-      "not_for": "Skills guide access; some databases need registration or licenses. Not a replacement for lab validation or domain experts.",
-      "keywords": [
-        "bioinformatics",
-        "chemistry",
-        "scientific research",
-        "pubchem",
-        "uniprot",
-        "chembl",
-        "literature review",
-        "agent skills",
-        "databases"
-      ]
-    },
-    {
-      "id": "cloudflare/security-audit-skill",
-      "name": "security-audit-skill",
-      "category": "agent-skills",
-      "kinds": [
-        "skill"
-      ],
-      "tags": [
-        "security",
-        "audit",
-        "code-review"
+        "prompting",
+        "claude-skill",
+        "prompt-engineering",
+        "midjourney",
+        "cursor"
       ],
       "ecosystems": [
         "markdown"
       ],
-      "use_for": "Run a multi-phase security audit of a codebase with a coding agent",
-      "why": "Official Cloudflare skill; findings are independently verified and emitted as machine-readable output.",
-      "official": true,
+      "use_for": "Have Claude write or fix prompts for any AI tool, from coding agents to image models.",
+      "why": "A fixed pipeline: detect the target tool, extract intent, ask at most three questions, then trim tokens.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "summary": "Coding-agent skill that runs a six-phase security audit: recon, coverage-led hunting with isolated agents, validation by fresh verifiers, structured findings.json output, independent verification and report generation. Seeded Cloudflare's vulnerability harness.",
-      "best_for": "Single-repo agent-driven vulnerability audits with verified, machine-readable findings.",
-      "not_for": "Single-repository starting point, not a fleet-scale system. Uses many isolated agents, so token cost and time can be significant; findings still need review.",
+      "featured": false,
+      "summary": "Prompt Master is a Claude skill that writes prompts for other AI tools such as Cursor, Claude Code, Midjourney or Stable Diffusion. It detects the target tool, extracts nine dimensions of intent, asks up to three questions, applies safe techniques and returns one copyable prompt block.",
+      "best_for": "Getting a good first prompt for a coding agent or image model.",
+      "not_for": "Running tasks itself. It only writes prompts, and quality depends on the tool-specific guidance it carries.",
       "keywords": [
-        "security audit",
-        "vulnerability",
-        "code audit",
-        "agent skill",
-        "findings json",
-        "coverage ledger",
-        "appsec",
-        "verification",
-        "report"
+        "prompt generator skill",
+        "prompt engineering claude",
+        "improve my prompt",
+        "midjourney prompt writer",
+        "cursor prompt helper",
+        "prompt optimizer",
+        "claude skill prompts",
+        "rewrite prompt"
       ]
     },
     {
-      "id": "vercel-labs/skills",
-      "name": "skills CLI (find-skills)",
+      "id": "HughYau/qiushi-skill",
+      "name": "Qiushi Skill",
       "category": "agent-skills",
       "kinds": [
-        "cli",
         "skill"
       ],
       "tags": [
         "agent-skills",
-        "cli",
-        "skills-sh",
-        "installer"
+        "methodology",
+        "planning",
+        "prompting",
+        "chinese"
       ],
       "ecosystems": [
-        "ts"
+        "markdown"
       ],
-      "use_for": "Install and discover agent skills for Claude Code, Codex, Cursor and others with npx skills add",
-      "why": "The open skills installer behind skills.sh; its find-skills skill is the most-installed skill on skills.sh (~3.9M installs)",
-      "skill": "vercel-labs/skills/find-skills",
-      "official": true,
+      "use_for": "Add a set of problem-solving method skills so an agent investigates first and focuses on the main issue.",
+      "why": "Turns nine named methods into executable skills, plus a workflow layer to chain them.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true,
-      "summary": "CLI for the open agent skills ecosystem: npx skills add installs SKILL.md-based skills from GitHub, URLs, paths or private repos into 75+ agents. Behind skills.sh discovery and the find-skills skill.",
-      "best_for": "Installing, discovering and managing agent skills across Claude Code, Codex, Cursor and others.",
-      "not_for": "An installer and discovery tool, not a skill library. Private repos rely on your existing git credentials.",
+      "featured": false,
+      "summary": "A collection of AI agent skills built on classic dialectical and practice-based philosophy. It has one overall principle and nine method tools, such as contradiction analysis and investigation before judgment, plus a workflows layer that orders them.",
+      "best_for": "Users who want an agent to investigate before answering and review its own work.",
+      "not_for": "Methodology prompts, not code tooling. The README is in Chinese and the framing is political in origin.",
       "keywords": [
-        "skills cli",
-        "npx skills",
         "agent skills",
-        "skills.sh",
-        "install skills",
-        "skill.md",
-        "claude code",
-        "codex",
-        "cursor"
+        "methodology skills",
+        "investigate first",
+        "agent reasoning",
+        "claude skills",
+        "qiushi",
+        "problem solving prompts"
       ]
     },
     {
-      "id": "supabase/agent-skills",
-      "name": "Supabase agent skills",
+      "id": "QwenLM/Qwen-MM-Plugins",
+      "name": "Qwen-MM-Plugins",
+      "category": "agent-skills",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "multimodal",
+        "qwen",
+        "agent-plugins",
+        "vision",
+        "skill-creator"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Adding native multimodal capabilities (vision, video, hardware control) to any coding-agent harness.",
+      "why": "Includes an omni-skill-creator that turns demonstration videos into reusable Agent Skills.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Qwen-MM-Plugins is a set of native multimodal plugins for Qwen models that make any agent harness multimodal-native. A guided installer wires the plugins into Claude Code, Codex, Qwen Code, Gemini CLI and other harnesses, adding capabilities like 3D spatial reasoning, hardware operation, and video-to-skill conversion.",
+      "best_for": "Teams adding multimodal (image, video, hardware) capabilities to an existing agent harness without building plugins from scratch.",
+      "not_for": "Built around Qwen models specifically, so it may not suit a harness locked to a different model family.",
+      "keywords": [
+        "qwen multimodal plugins",
+        "agent harness vision",
+        "multimodal agent skills",
+        "omni-skill-creator",
+        "qwen agent tools",
+        "video to skill"
+      ]
+    },
+    {
+      "id": "sanyuan0704/sanyuan-skills",
+      "name": "sanyuan-skills",
       "category": "agent-skills",
       "kinds": [
         "skill"
       ],
       "tags": [
-        "supabase",
-        "postgres",
-        "database",
-        "official"
+        "code-review",
+        "skills",
+        "tutoring",
+        "skill-authoring",
+        "wiki"
       ],
       "ecosystems": [
-        "any"
+        "markdown"
       ],
-      "use_for": "Teach coding agents Supabase and Postgres best practices for schema, RLS and queries.",
-      "why": "Official Supabase skills; ~448k installs on skills.sh for the Postgres best-practices skill.",
-      "skill": "supabase/agent-skills/supabase-postgres-best-practices",
-      "official": true,
+      "use_for": "Install agent skills for code review, tutoring, skill auditing and knowledge-base building.",
+      "why": "Includes a senior-style code review skill covering SOLID, security, performance and error handling.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
       "featured": false,
-      "summary": "Official Supabase skills for agents: a broad Supabase development skill (database, auth, edge functions, realtime, storage, vectors, cron, queues) and Postgres best practices for schema, RLS, indexes and queries. Compatible with 18+ agents.",
-      "best_for": "Agents working on Supabase projects, especially Postgres performance, RLS and auth setup.",
-      "not_for": "Supabase/Postgres specific. Guidance only; does not connect to your project.",
+      "summary": "A collection of skills for Claude Code and other agent terminals. They include Code Review Expert, Sigma (a Socratic tutor), Skill Review, Skill Forge for creating skills, wiki-ingest and a guided book-study skill. Each installs with npx skills add and a path.",
+      "best_for": "You want a ready code-review skill or examples of well-structured skills to copy.",
+      "not_for": "A mixed bag, so check each skill before installing. Not a framework, only prompt-based skills.",
       "keywords": [
-        "supabase",
-        "postgres",
-        "rls",
-        "row level security",
-        "auth",
-        "edge functions",
-        "query optimization",
-        "indexes",
-        "agent skills"
+        "code review skill",
+        "claude code skills",
+        "socratic tutor agent",
+        "skill review",
+        "skill forge",
+        "npx skills add",
+        "code-review-expert"
       ]
     },
     {
@@ -1091,119 +1373,182 @@
       ]
     },
     {
-      "id": "Leonxlnx/taste-skill",
-      "name": "Taste Skill",
+      "id": "jnMetaCode/superpowers-zh",
+      "name": "superpowers-zh",
       "category": "agent-skills",
       "kinds": [
         "skill"
       ],
       "tags": [
+        "superpowers",
+        "chinese",
         "agent-skills",
-        "design",
-        "frontend",
-        "ui"
+        "tdd",
+        "code-review"
       ],
       "ecosystems": [
-        "ts"
+        "markdown",
+        "nodejs"
       ],
-      "use_for": "Design-taste skills that steer agents away from generic AI-looking frontends",
-      "why": "Very widely installed design skill pack on skills.sh (~625k installs for design-taste-frontend)",
-      "skill": "leonxlnx/taste-skill/design-taste-frontend",
+      "use_for": "Install a Chinese translation of the superpowers skill set, plus four China-specific skills.",
+      "why": "Covers 26 coding tools, from Claude Code to Cursor, Gemini CLI and Qoder.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
       "featured": false,
-      "summary": "Set of agent skills that make coding agents design distinctive sites: picks an art direction from researched options, finds credited real images, builds, then checks in a real browser at three widths and fixes top problems over several rounds.",
-      "best_for": "Producing frontends with real art direction instead of generic landing pages.",
-      "not_for": "A build takes roughly 30 to 45 minutes and substantial tokens. A paid companion app (TasteCode) is promoted.",
+      "summary": "A Chinese community edition of the superpowers skill collection: translated workflow skills for brainstorming, TDD, debugging and code review, plus four original skills for Chinese development. It supports 26 AI coding tools and installs with npm.",
+      "best_for": "Chinese-speaking developers who want proven agent workflows in their own language.",
+      "not_for": "A translation of an upstream project. If you read English, use upstream superpowers directly. The README includes sponsor and course promotion.",
       "keywords": [
-        "frontend design",
-        "ui taste",
-        "landing page",
-        "design skill",
-        "art direction",
-        "anti ai slop",
-        "browser check",
-        "claude code"
+        "superpowers chinese",
+        "superpowers 中文",
+        "claude code skills chinese",
+        "tdd agent skills",
+        "agent workflow skills",
+        "cursor windsurf skills"
       ]
     },
     {
-      "id": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "name": "UI UX Pro Max",
+      "id": "msitarzewski/agency-agents",
+      "name": "The Agency (agency-agents)",
       "category": "agent-skills",
       "kinds": [
-        "skill"
+        "skill",
+        "plugin"
       ],
       "tags": [
-        "ui",
-        "ux",
-        "design-system",
-        "frontend"
+        "agent-personas",
+        "subagents",
+        "claude-code",
+        "cursor",
+        "roster"
+      ],
+      "ecosystems": [
+        "markdown",
+        "claude-code"
+      ],
+      "use_for": "Install a roster of specialist agent personas (design, engineering, marketing and more) into your coding agent.",
+      "why": "Each agent has a defined role, process and deliverables instead of a generic prompt.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A growing collection of specialist AI agent definitions grouped into divisions such as Design. Each has a personality, a process and expected deliverables. A companion desktop app installs the roster into Claude Code, Cursor, Codex, Gemini and others.",
+      "best_for": "You want ready-made role-based sub-agents for Claude Code, Cursor or Codex rather than writing your own prompts.",
+      "not_for": "It is a set of prompt-style agent files, not a runtime or framework. Quality varies by agent, so review the ones you install.",
+      "keywords": [
+        "agency agents",
+        "claude code subagents",
+        "agent personas",
+        "ai specialist agents",
+        "ui designer agent",
+        "cursor agents pack",
+        "agent roster"
+      ]
+    },
+    {
+      "id": "rehan-remade/universal-modder",
+      "name": "Universal Modder",
+      "category": "agent-skills",
+      "kinds": [
+        "skill",
+        "mcp"
+      ],
+      "tags": [
+        "game-modding",
+        "reverse-engineering",
+        "agent-skills",
+        "fal",
+        "claude-code"
       ],
       "ecosystems": [
         "markdown",
         "python"
       ],
-      "use_for": "Give a coding agent design intelligence: styles, palettes, font pairings and UX rules",
-      "why": "About 400k skills.sh installs; searchable database of UI styles, color palettes and stack-specific guidelines.",
-      "skill": "nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max",
+      "use_for": "Let a coding agent research, mod and test almost any PC game you own.",
+      "why": "Covers recon, reverse engineering, fal-made art, 3D and audio, in-game testing and video.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "summary": "Design-intelligence skill with a searchable database of UI styles, color palettes, font pairings and UX rules, plus a design system generator that recommends a pattern, style and palette from a project description.",
-      "best_for": "Getting a complete, tailored design system and stack-specific UI guidance from an agent.",
-      "not_for": "Recommendation-driven guidance, not a component library. Output depends on the matched rules and the agent.",
+      "featured": false,
+      "summary": "A set of agent skills, tools and a shared knowledge base for modding PC games. The mod-any-game skill has playbooks for Unity, Unreal, Godot, .NET and many other engines. Other skills handle recon, research, reverse engineering and asset generation with fal.",
+      "best_for": "Modding games you own with an agent, including finding the engine and generating new assets.",
+      "not_for": "For games you own. Asset generation uses the fal service, and reverse engineering tools must be installed separately.",
       "keywords": [
-        "ui ux",
-        "design system",
-        "color palette",
-        "font pairing",
-        "landing page",
-        "styles",
-        "ux guidelines",
-        "agent skill",
-        "design generator"
+        "game modding agent",
+        "mod any game",
+        "claude code game mod",
+        "unity mod skill",
+        "game reverse engineering skills",
+        "fal mcp assets"
       ]
     },
     {
-      "id": "vercel-labs/agent-skills",
-      "name": "Vercel Agent Skills",
+      "id": "Leonxlnx/unlazy",
+      "name": "unlazy",
+      "category": "agent-skills",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "completion-gates",
+        "verification",
+        "agent-discipline",
+        "acceptance-ledger",
+        "orchestration"
+      ],
+      "ecosystems": [
+        "node",
+        "markdown"
+      ],
+      "use_for": "Make an agent write acceptance checks first, run them, and only report what the evidence supports.",
+      "why": "A runnable gate checker that re-verifies finished work instead of trusting the agent's claim.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "unlazy is a completion-discipline skill for large agent tasks. You write an acceptance ledger of checks, a Node script approves and runs them, and reverify re-runs gates already marked done. It adds a Depth Tree method for splitting work, plus orchestration and security guidance.",
+      "best_for": "Your agent stops early or claims it is done, and you want checks that run and can be audited.",
+      "not_for": "Gate CHECK lines are shell code, so you must read them before approving. Version 2.1.0 is unreleased source, so pin a commit. Overkill for small tasks.",
+      "keywords": [
+        "anti laziness agent",
+        "agent completion checks",
+        "premature completion",
+        "acceptance ledger",
+        "verify agent work",
+        "depth tree",
+        "gate-check"
+      ]
+    },
+    {
+      "id": "tw93/Waza",
+      "name": "Waza",
       "category": "agent-skills",
       "kinds": [
         "skill"
       ],
       "tags": [
-        "vercel",
-        "react",
-        "nextjs",
-        "agent-skills",
-        "official"
+        "engineering-habits",
+        "skills",
+        "claude-code",
+        "codex",
+        "statusline"
       ],
       "ecosystems": [
-        "ts"
+        "markdown"
       ],
-      "use_for": "Vercel skills for coding agents: React and Next.js best practices, web design guidelines and deployment.",
-      "why": "Official Vercel skill pack with some of the highest install counts on skills.sh.",
-      "official": true,
-      "license_verified": {
-        "license": "MIT",
-        "note": "License stated as MIT in the README; no LICENSE file in the repo.",
-        "date": "2026-10-17"
-      },
+      "use_for": "Add eight small skills for engineering habits (think, debug to root cause, review, read sources) to your agent.",
+      "why": "Stays small on purpose, one job and one trigger per skill, built from real project failures.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true,
-      "summary": "Vercel's skill pack for coding agents, including web-design-guidelines (100+ rules on accessibility, forms, animation, typography, performance, i18n), plus React/Next.js best practices and deployment skills.",
-      "best_for": "Auditing UI code against web interface best practices and applying Vercel/Next.js guidance.",
-      "not_for": "Biased toward React, Next.js and Vercel; less useful for other stacks.",
+      "featured": false,
+      "summary": "Waza turns one engineer's habits into skills for Claude Code, Codex and Cursor. Each skill states the outcome, the red lines and how the result is verified, then lets the model pick the path. It also ships a minimal Claude Code statusline.",
+      "best_for": "Developers who want a light skill set, not a heavy framework.",
+      "not_for": "Opinionated and small by design. Not a full workflow framework like Superpowers or gstack.",
       "keywords": [
-        "web design guidelines",
-        "accessibility",
-        "react best practices",
-        "nextjs",
-        "vercel",
-        "deploy",
-        "ui review",
-        "performance",
-        "agent skills"
+        "waza skills",
+        "tw93 waza",
+        "engineering habits skills",
+        "claude code skills small",
+        "statusline claude code",
+        "superpowers alternative"
       ]
     },
     {

@@ -2,6 +2,151 @@
   "category": "security",
   "entries": [
     {
+      "id": "awarexone/Agentic-Bug-Hunter",
+      "name": "Agentic Bug Hunter",
+      "category": "security",
+      "kinds": [
+        "cli",
+        "plugin"
+      ],
+      "tags": [
+        "bug-bounty",
+        "recon",
+        "pentest",
+        "claude-code",
+        "reporting"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run AI-assisted recon, vulnerability testing and report writing for bug bounty targets.",
+      "why": "Covers recon to report, remembers findings across targets, and runs standalone or as a Claude Code plugin.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A toolkit that runs recon, tests for 26 web vulnerability classes, validates findings against a gate, and drafts reports for HackerOne, Bugcrowd, Intigriti and Immunefi. Installs from PyPI or as a plugin and uses external tools like nuclei and subfinder.",
+      "best_for": "Bug bounty hunters who want an agent to drive their usual recon tooling.",
+      "not_for": "Testing targets you have no permission for. Needs extra CLI tools installed, and the README includes partner sign-up promotions.",
+      "keywords": [
+        "bug bounty automation",
+        "ai pentest agent",
+        "recon tool",
+        "hackerone report generator",
+        "vulnerability hunting agent",
+        "claude code security plugin",
+        "bughunter"
+      ]
+    },
+    {
+      "id": "SimoneAvogadro/android-reverse-engineering-skill",
+      "name": "Android Reverse Engineering Skill",
+      "category": "security",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "android",
+        "reverse-engineering",
+        "apk",
+        "api-extraction",
+        "jadx"
+      ],
+      "ecosystems": [
+        "android",
+        "bash",
+        "powershell"
+      ],
+      "use_for": "Decompile Android APK, XAPK, JAR and AAR files and extract the HTTP APIs they use.",
+      "why": "Recovers Kotlin class names under R8 and handles Retrofit, Ktor, Apollo and Koin.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Claude Code skill that decompiles Android packages with jadx and Fernflower and pulls out endpoints, auth headers and tokens. It fingerprints the framework first, traces call flows from activities to HTTP, and rebuilds names from Kotlin metadata.",
+      "best_for": "Documenting or reproducing the API of an app when you lack the source, for apps you are allowed to analyze.",
+      "not_for": "Windows PowerShell scripts are experimental. Heavily native or non-Android-native apps give less to extract.",
+      "keywords": [
+        "apk decompile skill",
+        "android api extraction",
+        "reverse engineer android app",
+        "jadx claude",
+        "retrofit endpoints",
+        "kotlin deobfuscation"
+      ]
+    },
+    {
+      "id": "mukul975/Anthropic-Cybersecurity-Skills",
+      "name": "Anthropic Cybersecurity Skills",
+      "category": "security",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "cybersecurity",
+        "agent-skills",
+        "mitre-attack",
+        "nist",
+        "forensics"
+      ],
+      "ecosystems": [
+        "markdown",
+        "python"
+      ],
+      "use_for": "Give coding agents 800+ structured security playbooks mapped to MITRE ATT&CK, NIST and more.",
+      "why": "Skills use agentskills.io frontmatter with when-to-use, prerequisites and step-by-step verification.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A library of cybersecurity skills for AI agents in the agentskills.io format. Each has YAML frontmatter for discovery, step-by-step Markdown workflows and reference files, covering areas like digital forensics and incident response, mapped to six security frameworks.",
+      "best_for": "Security teams who want agents following analyst-style workflows with framework references.",
+      "not_for": "Despite the name, it is a community project and the README does not say Anthropic made it. Review skills before running them against real systems.",
+      "keywords": [
+        "cybersecurity skills",
+        "security agent skills",
+        "mitre attack skills",
+        "dfir skill",
+        "incident response agent",
+        "pentest skills claude",
+        "security playbooks for ai"
+      ]
+    },
+    {
+      "id": "Mouseww/anything-analyzer",
+      "name": "Anything Analyzer",
+      "category": "security",
+      "kinds": [
+        "app",
+        "mcp"
+      ],
+      "tags": [
+        "traffic-capture",
+        "mitm-proxy",
+        "reverse-engineering",
+        "mcp",
+        "electron"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Capture web, app and CLI traffic in one place and have an AI analyze the API and crypto flow.",
+      "why": "Browser capture, a MITM proxy and JS hooks feed one AI analysis session, exposed over MCP.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An Electron app with a built-in browser and a MITM proxy. It records traffic from web pages, desktop apps, scripts and phones into one session. AI then filters and analyzes it for API reverse engineering, security audits or JS crypto. A built-in MCP server lets Claude Desktop or Cursor use it.",
+      "best_for": "Reverse engineering an API or protocol, or auditing an app, where you want captured traffic explained by an LLM.",
+      "not_for": "Only use on traffic you are allowed to inspect. Needs an LLM API for analysis. The README is mainly Chinese.",
+      "keywords": [
+        "packet capture",
+        "mitm proxy",
+        "api reverse engineering",
+        "charles alternative",
+        "fiddler alternative",
+        "js crypto reverse",
+        "mcp traffic analysis",
+        "fingerprint spoofing"
+      ]
+    },
+    {
       "id": "PyCQA/bandit",
       "name": "Bandit",
       "category": "security",
@@ -34,6 +179,40 @@
         "pycqa",
         "ci",
         "vulnerabilities"
+      ]
+    },
+    {
+      "id": "perplexityai/bumblebee",
+      "name": "Bumblebee",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "supply-chain",
+        "inventory",
+        "endpoint",
+        "incident-response",
+        "mcp-config"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Check which developer machines have a package or extension named in a supply-chain advisory.",
+      "why": "Read-only single Go binary that reads lockfiles and tool metadata without running package managers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A read-only inventory collector for package, extension and developer-tool metadata on macOS and Linux endpoints. It reads lockfiles, install metadata, extension manifests and supported MCP configs, and emits NDJSON records. With an exposure catalog it flags exact matches.",
+      "best_for": "Security teams responding to a named compromised package or extension who need to find affected developer machines fast.",
+      "not_for": "Not a vulnerability scanner or EDR. It only matches known names and versions, and only on macOS and Linux.",
+      "keywords": [
+        "supply chain compromise check",
+        "find installed npm package",
+        "developer endpoint inventory",
+        "malicious extension scan",
+        "lockfile scanner",
+        "incident response dev machines"
       ]
     },
     {
@@ -73,6 +252,80 @@
       ]
     },
     {
+      "id": "elementalsouls/Claude-BugHunter",
+      "name": "claude-bughunter",
+      "category": "security",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "bug-bounty",
+        "red-team",
+        "security",
+        "pentest",
+        "skills"
+      ],
+      "ecosystems": [
+        "claude-code"
+      ],
+      "use_for": "Give Claude Code bug bounty and external red-team methods, payloads and reporting rules.",
+      "why": "A large skill bundle with per-vulnerability-class hunting skills built from disclosed reports, plus reporting and triage skills.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A bundle of Claude Code skills and slash commands for web bug hunting and external red-team work. Skills load by topic. It covers vulnerability classes, enterprise identity and perimeter attack chains, triage, and evidence hygiene. It installs as a Claude Code plugin or by copying files.",
+      "best_for": "Security researchers doing authorized bug bounty or external red-team work who want Claude Code to follow a structured methodology.",
+      "not_for": "Only for authorized testing. It covers the external attack surface and leaves out internal Active Directory attacks.",
+      "keywords": [
+        "bug bounty",
+        "bug hunting",
+        "red team",
+        "pentest skills",
+        "claude code security",
+        "hackerone",
+        "vulnerability hunting",
+        "offensive security"
+      ]
+    },
+    {
+      "id": "openai/codex-security",
+      "name": "Codex Security",
+      "category": "security",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "vulnerability-scanning",
+        "sarif",
+        "code-security",
+        "ci",
+        "sdk"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Scan a repo for security flaws, validate findings and generate fixes from a CLI or TypeScript SDK.",
+      "why": "Goes from discovery to validated findings and patches, with SARIF export and CI use.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI (cs) and TypeScript SDK that scans repositories, paths or Git changes, validates candidate findings, drafts patches and SECURITY.md policies, imports GitHub alerts, and exports SARIF, JSON or CSV. It can publish to Linear.",
+      "best_for": "Adding AI-assisted vulnerability finding and fixing to a repo or CI pipeline.",
+      "not_for": "Offline or login-free use. It requires signing in, Node.js 22.13+ and Python 3.10+.",
+      "keywords": [
+        "ai security scanner",
+        "vulnerability finder",
+        "sarif export",
+        "code security cli",
+        "openai codex security",
+        "auto fix vulnerabilities",
+        "codex security"
+      ]
+    },
+    {
       "id": "crowdsecurity/crowdsec",
       "name": "CrowdSec",
       "category": "security",
@@ -106,6 +359,252 @@
         "log parsing",
         "brute force",
         "nginx"
+      ]
+    },
+    {
+      "id": "ljagiello/ctf-skills",
+      "name": "ctf-skills",
+      "category": "security",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "ctf",
+        "security",
+        "pwn",
+        "forensics",
+        "agent-skills"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Give an agent playbooks for solving CTF challenges across web, pwn, crypto, reversing, forensics and OSINT.",
+      "why": "One skill per category plus a /solve-challenge orchestrator, each listing only the tools it needs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A set of Agent Skills for capture-the-flag work, covering areas like web exploitation, binary pwn, crypto, reverse engineering, forensics, OSINT and AI/ML attacks. Skills load by context, or you start the orchestrator with /solve-challenge.",
+      "best_for": "CTF players using Claude Code or other Agent Skills tools who want technique checklists on demand.",
+      "not_for": "Non-CTF security work or real-world engagements without authorization. Tools you need must be installed separately.",
+      "keywords": [
+        "ctf agent skills",
+        "ctf claude code",
+        "solve ctf with ai",
+        "pwn skill",
+        "web exploitation skill",
+        "security challenge skills",
+        "solve-challenge"
+      ]
+    },
+    {
+      "id": "CyberStrikeus/CyberStrike",
+      "name": "CyberStrike",
+      "category": "security",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "pentesting",
+        "red-team",
+        "security-agent",
+        "owasp",
+        "llm"
+      ],
+      "ecosystems": [
+        "javascript"
+      ],
+      "use_for": "Running autonomous penetration tests from a terminal using your own LLM provider subscription.",
+      "why": "Ships 13+ specialized security agents with built-in OWASP methodology instead of being a thin LLM wrapper.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "CyberStrike is a terminal-based AI agent for offensive security testing. It installs as an npm package, asks for an LLM provider and API key, then handles reconnaissance, vulnerability discovery, exploitation and reporting autonomously using agents that follow OWASP WSTG, CIS benchmarks or MASTG/MASVS depending on the target.",
+      "best_for": "Security teams who want an autonomous, methodology-driven pentest agent that works with any of 150+ LLM providers.",
+      "not_for": "Not for testing systems you do not own or lack written authorization to test; unauthorized use is illegal.",
+      "keywords": [
+        "ai pentest agent",
+        "automated penetration testing",
+        "owasp testing agent",
+        "red team ai",
+        "security testing cli",
+        "cyberstrike"
+      ]
+    },
+    {
+      "id": "AIPentest/CyberStrikeAI",
+      "name": "CyberStrikeAI",
+      "category": "security",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "pentest",
+        "security-ops",
+        "mcp",
+        "agents",
+        "attack-chain"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Run AI-assisted authorized security testing with agents, 100+ tools, RAG knowledge and attack-chain views.",
+      "why": "Combines Eino agents, MCP tools, workflows and audit/replay in one Go workspace.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Go platform for authorized security operations that combines Eino-powered agents, MCP-native tools, RAG knowledge, visual workflows and attack-chain modeling. It ships 100+ tools for scanning, exploitation, forensics and cloud security.",
+      "best_for": "Security teams that want a governed, auditable AI workspace around their existing pentest tools.",
+      "not_for": "Only for systems you own or are authorized to test. The README warns to review hardening before enabling high-risk tools such as WebShell or C2.",
+      "keywords": [
+        "ai pentest platform",
+        "security agent mcp",
+        "automated penetration testing",
+        "attack chain analysis",
+        "red team ai tool",
+        "ai security operations"
+      ]
+    },
+    {
+      "id": "Dicklesworthstone/destructive_command_guard",
+      "name": "dcg (Destructive Command Guard)",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "agent-safety",
+        "hooks",
+        "git",
+        "shell",
+        "guardrails"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Block dangerous git and shell commands before AI coding agents run them.",
+      "why": "Works as a hook for many agents, with 50+ packs and context-aware matching.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "dcg is a fast hook that checks commands from AI coding agents and blocks destructive ones such as rm -rf or force pushes. It works with Claude Code, Codex CLI, Gemini CLI, Cursor and others. It has packs for databases, Kubernetes, cloud tools and Terraform.",
+      "best_for": "Protecting a repo or machine from accidental deletion by coding agents, with little setup.",
+      "not_for": "Not a sandbox. It only inspects commands via agent hooks, and some tools are only partly supported. License is non-standard.",
+      "keywords": [
+        "block rm -rf agent",
+        "claude code hook safety",
+        "prevent force push ai",
+        "agent command guard",
+        "destructive command blocker",
+        "codex cli safety",
+        "ai agent guardrails"
+      ]
+    },
+    {
+      "id": "lintsinghua/DeepAudit",
+      "name": "DeepAudit",
+      "category": "security",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "code-audit",
+        "multi-agent",
+        "sast",
+        "sandbox",
+        "reports"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Audit a code project with cooperating AI agents, check findings in a sandbox and export a report.",
+      "why": "Uses Orchestrator, Recon, Analysis and Verification agents, and can run on private Ollama models.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A multi-agent code security audit platform with a FastAPI backend and React UI. You import a project; it identifies the stack, analyses risks, verifies findings in a sandbox and exports PDF, Markdown or JSON reports. It aims to cut false positives of classic SAST.",
+      "best_for": "Teams who want an AI-assisted code audit they can self-host.",
+      "not_for": "AGPL-3.0 licence. README is Chinese-first. Findings still need human review.",
+      "keywords": [
+        "deepaudit",
+        "ai code audit",
+        "multi-agent security audit",
+        "sast ai",
+        "代码审计",
+        "ollama private audit"
+      ]
+    },
+    {
+      "id": "vercel-labs/deepsec",
+      "name": "deepsec",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "vulnerability-scanner",
+        "ai-security",
+        "code-review",
+        "sast",
+        "agents"
+      ],
+      "ecosystems": [
+        "typescript",
+        "nodejs"
+      ],
+      "use_for": "Scan large codebases for hard-to-find vulnerabilities with coding agents running in your infrastructure.",
+      "why": "Fans work out across workers and resumes interrupted runs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An agent-powered vulnerability scanner you run on your own infrastructure. `npx deepsec init` picks a model, studies the repo, scans and reviews it, keeping state in a `.deepsec/` folder. Large scans fan out to workers and resume where they stopped.",
+      "best_for": "On-demand security review of big, long-lived repos where deep findings matter more than cost.",
+      "not_for": "The README warns scans can cost thousands or tens of thousands of dollars on large codebases. Needs a model API key or Vercel AI Gateway.",
+      "keywords": [
+        "ai vulnerability scanner",
+        "agent security audit",
+        "sast with llm",
+        "codebase security review",
+        "vercel security",
+        "find vulnerabilities with claude"
+      ]
+    },
+    {
+      "id": "anthropics/defending-code-reference-harness",
+      "name": "Defending Code Reference Harness",
+      "category": "security",
+      "kinds": [
+        "skill",
+        "template"
+      ],
+      "tags": [
+        "code-security",
+        "triage",
+        "patching",
+        "claude",
+        "reference"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Learn from or fork a Claude-based pipeline that scans code for defects, triages them and proposes fixes.",
+      "why": "A reference from Anthropic covering recon, find, triage, report and patch, with skills you can customise.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A reference implementation of an autonomous find-and-fix pipeline for code vulnerabilities with Claude. It includes skills for threat modelling, scanning, triage and patching, plus a scanning harness. It works with any Claude API access, including Bedrock, Vertex or Azure.",
+      "best_for": "Building your own code-security pipeline and seeing how Anthropic structures one.",
+      "not_for": "The README says it is not maintained and not accepting contributions. Autonomous triage and patching are open issues. Follow its sandboxing guidance.",
+      "keywords": [
+        "code security with claude",
+        "ai security audit",
+        "threat modeling skill",
+        "claude security harness",
+        "automated patching",
+        "security triage"
       ]
     },
     {
@@ -364,6 +863,42 @@
       ]
     },
     {
+      "id": "nolabs-ai/nono",
+      "name": "nono",
+      "category": "security",
+      "kinds": [
+        "cli",
+        "engine"
+      ],
+      "tags": [
+        "sandbox",
+        "agent-security",
+        "sigstore",
+        "audit",
+        "credentials"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Run coding agents in a kernel-enforced sandbox with credential and network controls.",
+      "why": "A single unprivileged binary with audit, rollback and signed skill checks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An agent runtime security tool. It sandboxes agents and their tools with kernel enforcement, keeps API keys outside the sandbox via proxy injection, filters network access, verifies skills with Sigstore, and records tamper-evident audit logs.",
+      "best_for": "Running Claude Code, Codex or your own agents on real machines or CI with strict limits.",
+      "not_for": "Pre-1.0, so APIs may change. Windows is supported only through WSL2.",
+      "keywords": [
+        "agent sandbox",
+        "sandbox claude code",
+        "agent security",
+        "zero trust agents",
+        "credential proxy",
+        "sigstore skills",
+        "kernel sandbox"
+      ]
+    },
+    {
       "id": "projectdiscovery/nuclei",
       "name": "Nuclei",
       "category": "security",
@@ -398,6 +933,47 @@
         "pentest",
         "ci security",
         "misconfiguration"
+      ]
+    },
+    {
+      "id": "NVIDIA/OpenShell",
+      "name": "OpenShell",
+      "category": "security",
+      "kinds": [
+        "cli",
+        "service",
+        "engine"
+      ],
+      "tags": [
+        "sandbox",
+        "agents",
+        "policy",
+        "isolation",
+        "runtime",
+        "credentials"
+      ],
+      "ecosystems": [
+        "python",
+        "rust",
+        "docker"
+      ],
+      "use_for": "Run autonomous AI agents in policy-controlled sandboxes with kernel-level limits on files, syscalls and network.",
+      "why": "Agents never see real credentials, and risky policy changes are formally checked before human review.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenShell is a runtime for fleets of autonomous agents. Each agent runs in an isolated sandbox. Kernel controls limit file and system call access, every network connection passes a policy check, and credentials are added only to approved requests. It installs with one script.",
+      "best_for": "Letting agents install packages, call APIs and use credentials while you control exactly what they can touch.",
+      "not_for": "Windows without WSL 2 (experimental). It needs Linux, Apple Silicon macOS, and Docker, Podman or virtualization. Version 0.1.x.",
+      "keywords": [
+        "ai agent sandbox",
+        "agent runtime security",
+        "nvidia openshell",
+        "sandbox for coding agents",
+        "agent policy enforcement",
+        "safe agent execution",
+        "credential isolation",
+        "kernel sandbox agents"
       ]
     },
     {
@@ -474,6 +1050,186 @@
       ]
     },
     {
+      "id": "gadievron/raptor",
+      "name": "RAPTOR",
+      "category": "security",
+      "kinds": [
+        "framework",
+        "skill"
+      ],
+      "tags": [
+        "security-research",
+        "vulnerability-scanning",
+        "exploit-generation",
+        "semgrep",
+        "codeql"
+      ],
+      "ecosystems": [
+        "python",
+        "claude-code"
+      ],
+      "use_for": "Run an autonomous security research workflow on a codebase or binary using Claude Code.",
+      "why": "Chains static analysis, LLM vulnerability validation, exploit generation and patch writing in one workflow.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "RAPTOR is a security research framework built on Claude Code. It runs Semgrep, optional Coccinelle and CodeQL, deduplicates findings into SARIF, then sends findings through staged LLM validation, exploit generation and patching. Commands like /scan and /agentic run it, with a cost cap per run.",
+      "best_for": "You do vulnerability research or defensive review and want an agent-driven pipeline you can modify.",
+      "not_for": "The authors call it not polished software. LLM analysis costs real money. CodeQL has its own license that does not allow commercial use. Powerful offensive tooling, so use only where authorized.",
+      "keywords": [
+        "ai security agent",
+        "claude code security",
+        "vulnerability validation llm",
+        "exploit generation",
+        "semgrep codeql agent",
+        "pentest agent",
+        "raptor"
+      ]
+    },
+    {
+      "id": "samugit83/redamon",
+      "name": "RedAmon",
+      "category": "security",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "pentesting",
+        "autonomous-security",
+        "mcp",
+        "docker",
+        "bug-bounty"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Running an autonomous, human-approved pentest pipeline that triages findings and opens pull requests with fixes.",
+      "why": "Solves 97.1% of the XBOW web-security benchmark fully black-box, with every solve auditable tool call by tool call.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "RedAmon is a self-hosted, Docker-based framework that chains reconnaissance, exploitation and post-exploitation into one pipeline with human approval gates, then triages findings, writes code fixes and opens pull requests. It exposes and consumes MCP servers, so you can plug in extra tools or drive it from Claude Code.",
+      "best_for": "Teams wanting an autonomous pentest-to-PR pipeline for authorized security testing of their own repositories.",
+      "not_for": "Never use it to scan or attack systems you do not own or have explicit written permission to test.",
+      "keywords": [
+        "autonomous pentest framework",
+        "ai penetration testing",
+        "redamon",
+        "security agent mcp",
+        "bug bounty automation",
+        "pentest to pull request"
+      ]
+    },
+    {
+      "id": "zhaoxuya520/reverse-skill",
+      "name": "reverse-skill",
+      "category": "security",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "reverse-engineering",
+        "pentest",
+        "ctf",
+        "routing",
+        "security"
+      ],
+      "ecosystems": [
+        "markdown",
+        "powershell",
+        "python"
+      ],
+      "use_for": "Route an agent's reverse-engineering, pentest or CTF task to the right method and toolchain.",
+      "why": "Routing rules and regression cases pick between jadx, Frida, IDA and others instead of guessing.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill pack for coding agents that sends APK, binary, JS encryption, PCAP and CTF tasks to a matching playbook. It checks available tools, runs a repeatable workflow, and records evidence and findings. It lists 44 routing rules and 175 benchmark cases.",
+      "best_for": "You use an AI client for authorized security research and want consistent playbooks and tool bootstrapping.",
+      "not_for": "For authorized testing only. It needs tools such as Java, Node and Python, and the README is dense and partly aimed at AI agents.",
+      "keywords": [
+        "reverse skill",
+        "reverse engineering skill",
+        "ai pentest skill router",
+        "apk analysis agent",
+        "frida jadx ida agent",
+        "ctf agent skills",
+        "security skills pack"
+      ]
+    },
+    {
+      "id": "anthropics/sandbox-runtime",
+      "name": "Sandbox Runtime (srt)",
+      "category": "security",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "sandbox",
+        "agents",
+        "filesystem",
+        "network-filtering",
+        "mcp"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run agents, MCP servers or any process with filesystem and network limits, without a container.",
+      "why": "Uses native OS sandboxing (sandbox-exec, bubblewrap) plus proxy network filtering, secure by default.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI and library that restricts what a process can read, write and reach on the network. It uses sandbox-exec on macOS and bubblewrap on Linux, with proxy-based domain filtering. Config goes in a settings JSON file.",
+      "best_for": "Sandboxing local MCP servers, coding agents and shell commands quickly, with no container setup.",
+      "not_for": "Strong isolation needs like untrusted multi-tenant code. It is a beta research preview, so APIs and config may change.",
+      "keywords": [
+        "sandbox agents",
+        "sandbox mcp server",
+        "bubblewrap",
+        "sandbox-exec",
+        "restrict network access process",
+        "srt",
+        "claude code sandbox"
+      ]
+    },
+    {
+      "id": "cloudflare/security-audit-skill",
+      "name": "security-audit-skill",
+      "category": "security",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "security",
+        "audit",
+        "code-review"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Run a multi-phase security audit of a codebase with a coding agent",
+      "why": "Official Cloudflare skill; findings are independently verified and emitted as machine-readable output.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Coding-agent skill that runs a six-phase security audit: recon, coverage-led hunting with isolated agents, validation by fresh verifiers, structured findings.json output, independent verification and report generation. Seeded Cloudflare's vulnerability harness.",
+      "best_for": "Single-repo agent-driven vulnerability audits with verified, machine-readable findings.",
+      "not_for": "Single-repository starting point, not a fleet-scale system. Uses many isolated agents, so token cost and time can be significant; findings still need review.",
+      "keywords": [
+        "security audit",
+        "vulnerability",
+        "code audit",
+        "agent skill",
+        "findings json",
+        "coverage ledger",
+        "appsec",
+        "verification",
+        "report"
+      ]
+    },
+    {
       "id": "semgrep/semgrep",
       "name": "Semgrep",
       "category": "security",
@@ -507,6 +1263,43 @@
         "ci",
         "custom rules",
         "vulnerability detection"
+      ]
+    },
+    {
+      "id": "KeygraphHQ/shannon",
+      "name": "Shannon",
+      "category": "security",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "pentest",
+        "ai-pentester",
+        "web-security",
+        "exploits",
+        "ci"
+      ],
+      "ecosystems": [
+        "typescript",
+        "docker"
+      ],
+      "use_for": "Run an AI pentester that reads your source, attacks a running app and reports proven exploits.",
+      "why": "Only reports vulnerabilities that have a working proof-of-concept.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Shannon is an autonomous pentester for web apps and APIs. It analyzes source code for attack vectors, then uses browser automation and CLI tools to run real exploits against the running app. The final report includes only vulnerabilities it proved.",
+      "best_for": "You want on-demand, code-informed pentesting in dev or CI against staging or local apps.",
+      "not_for": "AGPL-3.0. It changes target state, so use sandboxed data only and never systems you do not own. Findings need human review.",
+      "keywords": [
+        "shannon",
+        "keygraph shannon",
+        "ai pentester",
+        "automated penetration testing",
+        "web app exploit agent",
+        "llm security testing",
+        "pentest in ci"
       ]
     },
     {
@@ -581,6 +1374,43 @@
       ]
     },
     {
+      "id": "elder-plinius/T3MP3ST",
+      "name": "T3MP3ST",
+      "category": "security",
+      "kinds": [
+        "framework",
+        "app"
+      ],
+      "tags": [
+        "red-teaming",
+        "offensive-security",
+        "multi-agent",
+        "pentest",
+        "ctf"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Run a multi-agent offensive security workflow, from recon to exploit to report, with your own coding agent.",
+      "why": "Reuses the agent you already run, or local models, and publishes benchmark results it says you can recompute.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A multi-agent offensive-security framework with a browser War Room and a CLI. It drives Claude Code, Codex or local models against authorized targets across web apps, CTFs, source code and OSS vulnerability hunting.",
+      "best_for": "Authorized security testing and research where you want an agent swarm doing recon and exploitation.",
+      "not_for": "Unauthorized targets or production systems. AGPL-3.0, and some areas such as smart contracts are reproduction, not novel discovery.",
+      "keywords": [
+        "ai pentest",
+        "autonomous red team",
+        "offensive security agents",
+        "xbow alternative",
+        "ctf agent",
+        "bug bounty ai",
+        "vulnerability hunting"
+      ]
+    },
+    {
       "id": "aquasecurity/trivy",
       "name": "Trivy",
       "category": "security",
@@ -650,6 +1480,153 @@
         "devsecops",
         "secrets verification",
         "pre-commit"
+      ]
+    },
+    {
+      "id": "TrustTunnel/TrustTunnel",
+      "name": "TrustTunnel",
+      "category": "security",
+      "kinds": [
+        "service",
+        "library"
+      ],
+      "tags": [
+        "vpn",
+        "protocol",
+        "quic",
+        "http2",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "linux",
+        "macos"
+      ],
+      "use_for": "Self-host a VPN endpoint whose traffic looks like normal HTTPS, with ready-made clients.",
+      "why": "Born in AdGuard VPN, it tunnels TCP, UDP and ICMP over HTTP/1.1, HTTP/2 or QUIC.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source VPN protocol and server, with a client library, CLI and GUI apps in sister repos. It mimics ordinary web traffic to resist throttling and deep-packet inspection. The server runs on Linux and macOS and can serve per-user config over HTTPS.",
+      "best_for": "Running your own VPN server, or embedding the client library, where plain VPN traffic gets blocked.",
+      "not_for": "A turnkey consumer VPN service. You host and manage the server yourself, and clients are separate repositories.",
+      "keywords": [
+        "self hosted vpn",
+        "obfuscated vpn",
+        "adguard vpn protocol",
+        "vpn over https",
+        "vpn quic",
+        "bypass dpi",
+        "trusttunnel"
+      ]
+    },
+    {
+      "id": "kaifcodec/user-scanner",
+      "name": "User Scanner",
+      "category": "security",
+      "kinds": [
+        "cli",
+        "mcp",
+        "library"
+      ],
+      "tags": [
+        "osint",
+        "username-search",
+        "email-lookup",
+        "mcp",
+        "recon"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Check where an email or username is registered across thousands of sites for OSINT work.",
+      "why": "Covers 2700+ scan vectors with reports in JSON, CSV and PDF, and has a built-in MCP server.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Python OSINT tool that checks emails on 210+ sites and usernames on 2500+ platforms, scrapes profile metadata, generates alias permutations, and pivots on found handles. Uses httpx and curl_cffi, and can run as an MCP server.",
+      "best_for": "Security research, investigations and checking your own digital footprint.",
+      "not_for": "Anything involving people who have not agreed to be searched. Site checks break when sites change, and some scans use TLS fingerprint impersonation.",
+      "keywords": [
+        "osint tool",
+        "username search",
+        "email osint",
+        "sherlock alternative",
+        "digital footprint",
+        "account lookup",
+        "osint mcp server"
+      ]
+    },
+    {
+      "id": "Lakr233/vphone-cli",
+      "name": "vphone-cli",
+      "category": "security",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "ios",
+        "virtualization",
+        "reverse-engineering",
+        "apple-silicon",
+        "research"
+      ],
+      "ecosystems": [
+        "swift",
+        "macos"
+      ],
+      "use_for": "Run a virtual iPhone on an Apple Silicon Mac for security research and debugging.",
+      "why": "Uses Apple's Virtualization.framework with a GUI, cloning, backups and a local automation API.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "vphone-cli runs iOS in a virtual machine using Apple's Virtualization.framework and PCC research VMs. It gives a graphical window, patched firmware, VM export, import and cloning, and an optional local HTTP and WebSocket automation API. It needs no Xcode, Python or Homebrew at runtime.",
+      "best_for": "iOS security researchers and reverse engineers who want a local virtual device.",
+      "not_for": "General app testing. It needs a physical Apple Silicon Mac on macOS 15+, relaxed debugging security settings, and about 64 GB disk per VM.",
+      "keywords": [
+        "virtual iphone",
+        "ios virtual machine",
+        "ios emulator mac",
+        "ios reverse engineering",
+        "ios security research",
+        "apple virtualization framework",
+        "pcc vm",
+        "iphone vm apple silicon"
+      ]
+    },
+    {
+      "id": "Netw0rkNoob/VulnClaw",
+      "name": "VulnClaw",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "pentest",
+        "ai-agent",
+        "mcp",
+        "security",
+        "ctf"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run an AI agent that does penetration testing from a natural-language request and writes a report.",
+      "why": "A model-led agent loop with MCP tools and a gate that rejects invented flags.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Python CLI agent that goes from recon to vuln discovery, exploitation and report generation. It stores tool output as evidence, checks claimed findings against real output, and works with 13 LLM providers and MCP tool servers.",
+      "best_for": "Authorized pentests, CTFs, security teaching and red-team exercises.",
+      "not_for": "Only for systems you are allowed to test. Needs an LLM API. Automated exploitation can be unsafe on production targets.",
+      "keywords": [
+        "ai pentest agent",
+        "penetration testing llm",
+        "ctf agent",
+        "vulnerability scanner ai",
+        "red team automation",
+        "mcp security tools",
+        "vulnclaw"
       ]
     },
     {

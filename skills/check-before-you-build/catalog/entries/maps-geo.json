@@ -117,6 +117,44 @@
       ]
     },
     {
+      "id": "opengeos/GeoLibre",
+      "name": "GeoLibre",
+      "category": "maps-geo",
+      "kinds": [
+        "app",
+        "library"
+      ],
+      "tags": [
+        "gis",
+        "geospatial",
+        "webassembly",
+        "jupyter",
+        "tauri"
+      ],
+      "ecosystems": [
+        "typescript",
+        "python",
+        "tauri"
+      ],
+      "use_for": "Explore and analyze geospatial data in the browser, on desktop, mobile or in Jupyter.",
+      "why": "Offers 1,000+ geoprocessing tools that run in WebAssembly with data kept on your machine.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A free, cloud-native GIS platform built with Tauri v2 and React. It runs in the browser, on desktop and mobile, and inside Jupyter via a Python package. Over 1,000 tools for terrain, hydrology, LiDAR, remote sensing and vector analysis run in WebAssembly.",
+      "best_for": "A private, install-free GIS, or embedding map analysis into notebooks and apps.",
+      "not_for": "A full GIS app, not a mapping SDK for custom tile rendering. The README excerpt gives little detail on extending it.",
+      "keywords": [
+        "qgis alternative",
+        "web gis",
+        "geospatial wasm",
+        "gis in jupyter",
+        "browser geoprocessing",
+        "open source gis app",
+        "lidar analysis browser"
+      ]
+    },
+    {
       "id": "geopandas/geopandas",
       "name": "GeoPandas",
       "category": "maps-geo",
@@ -149,6 +187,42 @@
         "crs",
         "gis",
         "python"
+      ]
+    },
+    {
+      "id": "bilawalsidhu/gods-eye-view",
+      "name": "God's Eye View",
+      "category": "maps-geo",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "3d-globe",
+        "cesium",
+        "osint",
+        "live-data",
+        "visualization"
+      ],
+      "ecosystems": [
+        "typescript",
+        "webgl"
+      ],
+      "use_for": "Fork a browser-based 3D globe that shows live flights, ships, satellites, quakes and public cameras.",
+      "why": "Each data layer is a separate module, so you can add your own feeds.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "God's Eye View puts public signals on one explorable photorealistic globe: flight transponders, ship beacons, orbital elements, seismographs and cameras. Features include click-to-track, cockpit view and sensor looks like thermal or night vision. It runs locally in the browser.",
+      "best_for": "You want a starting point or inspiration for a live geospatial visualization.",
+      "not_for": "License is unspecified (NOASSERTION). Some data is simulated or estimated, and photorealistic 3D needs a Cesium key.",
+      "keywords": [
+        "gods eye view",
+        "3d globe live data",
+        "flight tracking globe",
+        "satellite tracker browser",
+        "cesium globe demo",
+        "osint map",
+        "spy satellite simulator"
       ]
     },
     {
@@ -295,6 +369,43 @@
       ]
     },
     {
+      "id": "AnmolSaini16/mapcn",
+      "name": "mapcn",
+      "category": "maps-geo",
+      "kinds": [
+        "library",
+        "template"
+      ],
+      "tags": [
+        "maps",
+        "maplibre",
+        "shadcn",
+        "tailwind",
+        "react-components"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react"
+      ],
+      "use_for": "Add themeable map components to a React app with one install command.",
+      "why": "Follows shadcn/ui patterns, adapts to dark mode and includes an agent skill.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Customisable React map components built on MapLibre GL and styled with Tailwind. It has markers, popups, routes and zoom, compass, locate and fullscreen controls. An agent skill teaches coding agents how to use it.",
+      "best_for": "React and shadcn/ui projects that need a clean map quickly.",
+      "not_for": "Commercial use on the default CARTO basemap, which needs a CARTO Enterprise licence. Switch to OpenStreetMap or another tile provider.",
+      "keywords": [
+        "react map component",
+        "maplibre react",
+        "shadcn map",
+        "map components tailwind",
+        "interactive map react",
+        "markers popups routes",
+        "mapcn"
+      ]
+    },
+    {
       "id": "maplibre/maplibre-gl-js",
       "name": "MapLibre GL JS",
       "category": "maps-geo",
@@ -328,6 +439,44 @@
         "web maps",
         "3d terrain",
         "map styles"
+      ]
+    },
+    {
+      "id": "originalankur/maptoposter",
+      "name": "MapToPoster",
+      "category": "maps-geo",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "maps",
+        "poster",
+        "openstreetmap",
+        "matplotlib",
+        "osmnx",
+        "themes"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate minimalist map posters of any city from OpenStreetMap data with a Python script.",
+      "why": "One command makes a styled poster, with many colour themes and non-Latin city names supported.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "MapToPoster is a Python script that makes minimalist map posters for any city. It geocodes the place with Nominatim, fetches streets with OSMnx and draws the result with matplotlib. You choose a theme and options from the command line, and can add new map layers in code.",
+      "best_for": "Printable city art and quick map graphics from code.",
+      "not_for": "Interactive web maps or routing. It outputs static images and depends on OpenStreetMap data and Nominatim rate limits.",
+      "keywords": [
+        "city map poster",
+        "map art generator",
+        "openstreetmap poster",
+        "osmnx poster",
+        "minimalist city map",
+        "map print generator",
+        "python map poster",
+        "custom map poster"
       ]
     },
     {
@@ -550,6 +699,42 @@
       ]
     },
     {
+      "id": "BigBodyCobain/Shadowbroker",
+      "name": "ShadowBroker",
+      "category": "maps-geo",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "osint",
+        "map",
+        "geospatial",
+        "real-time",
+        "docker"
+      ],
+      "ecosystems": [
+        "typescript",
+        "python"
+      ],
+      "use_for": "Self-host a real-time map that combines 60+ public feeds: aircraft, ships, satellites and events.",
+      "why": "40+ toggleable layers, a recon toolkit and no accounts or product telemetry.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted map dashboard built with Next.js, MapLibre GL and FastAPI. It merges aircraft, ships, satellites, conflict, cyber-threat and other feeds, with country dossiers and entity-graph expansion. Run with Docker Compose.",
+      "best_for": "Forking or studying a multi-feed geospatial OSINT interface.",
+      "not_for": "A library to embed. It is an application under AGPL-3.0, and some feeds depend on third-party data and keys.",
+      "keywords": [
+        "osint map",
+        "flight tracker dashboard",
+        "geospatial intelligence",
+        "satellite tracking",
+        "real time world map",
+        "maplibre dashboard",
+        "shadowbroker"
+      ]
+    },
+    {
       "id": "shapely/shapely",
       "name": "Shapely",
       "category": "maps-geo",
@@ -617,6 +802,42 @@
         "leaflet",
         "maplibre",
         "javascript"
+      ]
+    },
+    {
+      "id": "yousifamanuel/terraink",
+      "name": "Terraink",
+      "category": "maps-geo",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "map-poster",
+        "openstreetmap",
+        "maplibre",
+        "print",
+        "export"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react"
+      ],
+      "use_for": "Generate printable city map posters from OpenStreetMap data, or study how such a poster tool is built.",
+      "why": "Themes, layer styling and typography controls with PNG, PDF and layered SVG export.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Terraink makes custom city map posters for any location using OpenStreetMap data. You search a place, pick or build a color theme, style roads, water, parks and buildings, then export a print-ready PNG, PDF or layered SVG. It is a React, Vite and MapLibre web app.",
+      "best_for": "You want to fork or learn from a map-poster web app built on OpenStreetMap and MapLibre.",
+      "not_for": "Still in development. AGPL-3.0 with trademark protections, so forks must rename and follow copyleft. A finished app, not a reusable library.",
+      "keywords": [
+        "map poster generator",
+        "city map print",
+        "openstreetmap poster",
+        "maplibre app",
+        "custom map art",
+        "svg map export",
+        "terraink"
       ]
     },
     {
@@ -766,6 +987,41 @@
         "openstreetmap",
         "transit",
         "costing"
+      ]
+    },
+    {
+      "id": "koala73/worldmonitor",
+      "name": "World Monitor",
+      "category": "maps-geo",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "dashboard",
+        "globe",
+        "news",
+        "deckgl",
+        "tauri"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Fork or self-host a real-time world dashboard with news briefs, a 3D globe and live data layers.",
+      "why": "Dual map engine (globe.gl and deck.gl), many data panels and a Tauri desktop build from one codebase.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "World Monitor is a TypeScript dashboard that combines curated news feeds, AI-written briefs, a 3D globe and flat WebGL map, and panels for markets and disasters. It runs locally with no environment variables and can use Ollama. Self-hosting uses Vercel, Docker or static builds.",
+      "best_for": "You want a starting point for a situational-awareness or monitoring dashboard with maps and feeds.",
+      "not_for": "AGPL-3.0, so modified hosted versions must share source. It is a finished app, not a charting or map library. Some data sources need keys.",
+      "keywords": [
+        "world monitor",
+        "worldmonitor",
+        "global intelligence dashboard",
+        "geopolitical dashboard",
+        "news aggregation map",
+        "globe.gl deck.gl dashboard",
+        "situational awareness"
       ]
     }
   ]

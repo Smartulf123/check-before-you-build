@@ -76,6 +76,42 @@
       ]
     },
     {
+      "id": "ByteDance-Seed/Depth-Anything-3",
+      "name": "Depth Anything 3",
+      "category": "3d-graphics",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "depth-estimation",
+        "3d-reconstruction",
+        "camera-pose",
+        "computer-vision",
+        "gaussian-splatting"
+      ],
+      "ecosystems": [
+        "python",
+        "pytorch"
+      ],
+      "use_for": "Predict depth and camera poses from one or many images and export 3D results.",
+      "why": "A single plain transformer with a depth-ray output that beats DA2 and VGGT on its reported benchmarks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A model that predicts spatially consistent geometry from arbitrary views, with or without known poses. The repo has a Python API, CLI, Gradio gallery, and exports to glb, ply, npz and 3DGS videos.",
+      "best_for": "Monocular or multi-view depth, pose estimation and turning photos into 3D data.",
+      "not_for": "CPU-only use or real-time mobile; the API example uses CUDA and large checkpoints. Metric depth needs the metric model or focal-length scaling.",
+      "keywords": [
+        "monocular depth estimation",
+        "depth anything",
+        "image to 3d",
+        "camera pose estimation",
+        "multi view depth",
+        "3d gaussian splatting from images"
+      ]
+    },
+    {
       "id": "pmndrs/drei",
       "name": "drei",
       "category": "3d-graphics",
@@ -222,6 +258,43 @@
       ]
     },
     {
+      "id": "img2threejs/img2threejs",
+      "name": "img2threejs",
+      "category": "3d-graphics",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "threejs",
+        "image-to-3d",
+        "procedural",
+        "agent-skill",
+        "code-only"
+      ],
+      "ecosystems": [
+        "typescript",
+        "python",
+        "threejs"
+      ],
+      "use_for": "Have an agent rebuild an object from one reference image as a procedural, animation-ready Three.js model.",
+      "why": "Scripts handle gating and validation so model tokens go only to visual judgment.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill that turns one reference image into a TypeScript THREE.Group factory made from primitives and procedural shaders, with pivots, sockets and colliders. A staged pipeline from blockout to optimization is reviewed visually at each pass. Works under Claude Code, Codex or OpenCode.",
+      "best_for": "Getting a small, code-only 3D model for a web scene that you can animate.",
+      "not_for": "Photo-real scans or mesh extraction. The README says it is reconstruction by code, not photogrammetry.",
+      "keywords": [
+        "image to threejs",
+        "image to 3d code",
+        "procedural 3d model",
+        "three.js model generator",
+        "reference image to 3d",
+        "animation ready 3d",
+        "agent 3d skill"
+      ]
+    },
+    {
       "id": "konvajs/konva",
       "name": "Konva",
       "category": "3d-graphics",
@@ -298,6 +371,43 @@
       ]
     },
     {
+      "id": "facebookresearch/map-anything",
+      "name": "MapAnything",
+      "category": "3d-graphics",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "3d-reconstruction",
+        "sfm",
+        "depth-estimation",
+        "transformer",
+        "pytorch"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Reconstruct metric 3D scenes from images, with optional camera calibration, poses or depth.",
+      "why": "One feed-forward model covers many 3D tasks and other models plug in through one interface.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A research framework from Meta and CMU. A single transformer predicts metric 3D geometry from images and optional extra inputs. It covers data processing, training, inference and profiling, and can swap in models like VGGT and DUSt3R.",
+      "best_for": "Researchers and engineers who need multi-view 3D reconstruction, depth estimation or model comparison in one codebase.",
+      "not_for": "A research codebase that needs a GPU and Python ML setup. Not a real-time or browser 3D library.",
+      "keywords": [
+        "3d reconstruction",
+        "structure from motion",
+        "multi-view stereo",
+        "metric depth estimation",
+        "feed-forward 3d",
+        "vggt",
+        "dust3r",
+        "mapanything"
+      ]
+    },
+    {
       "id": "google/model-viewer",
       "name": "model-viewer",
       "category": "3d-graphics",
@@ -332,6 +442,43 @@
         "product viewer",
         "webxr",
         "3d on web page"
+      ]
+    },
+    {
+      "id": "lightningpixel/modly",
+      "name": "Modly",
+      "category": "3d-graphics",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "image-to-3d",
+        "local-ai",
+        "desktop-app",
+        "extensions",
+        "mesh-generation"
+      ],
+      "ecosystems": [
+        "typescript",
+        "python",
+        "electron"
+      ],
+      "use_for": "Generate 3D meshes from photos on your own GPU, with model extensions you can add.",
+      "why": "Runs image-to-3D models locally and lets each model ship as a GitHub-hosted extension.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An Electron desktop app with a Python backend that turns an image into a 3D mesh using local open models. Model and process extensions are GitHub repos with a manifest.json. Official ones cover Hunyuan3D 2 Mini and TripoSG. Runs on Windows, Linux and Apple Silicon.",
+      "best_for": "Private, offline image-to-3D work, or writing an extension for a new 3D model.",
+      "not_for": "Needs a capable GPU (AMD works via ROCm). The license is not stated as a standard one. It is an app, not a library.",
+      "keywords": [
+        "image to 3d local",
+        "hunyuan3d desktop",
+        "photo to 3d model",
+        "local 3d generation",
+        "triposg app",
+        "ai mesh generator"
       ]
     },
     {
@@ -518,6 +665,76 @@
       ]
     },
     {
+      "id": "facebookresearch/sam-3d-objects",
+      "name": "SAM 3D Objects",
+      "category": "3d-graphics",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "3d-reconstruction",
+        "image-to-3d",
+        "foundation-model",
+        "meta",
+        "vision"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Reconstruct a textured 3D model with pose and layout from a single image.",
+      "why": "Meta model that copes with occlusion and clutter in real photos; code, weights and a benchmark are released.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A foundation model that reconstructs 3D shape, texture and layout from one image. It converts masked objects into 3D models and supports single or multi-object scenes. Python inference code and notebooks are included.",
+      "best_for": "Turning photos into 3D assets, or researching single-image 3D generation.",
+      "not_for": "Research code with checkpoints to download and GPU needs. Licence is listed as NOASSERTION, so read it before commercial use.",
+      "keywords": [
+        "sam 3d",
+        "image to 3d",
+        "single image 3d reconstruction",
+        "meta sam 3d objects",
+        "3d from photo",
+        "3d generation model"
+      ]
+    },
+    {
+      "id": "apple-aiml-research/ml-sharp",
+      "name": "SHARP (ml-sharp)",
+      "category": "3d-graphics",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "view-synthesis",
+        "gaussian-splatting",
+        "single-image",
+        "3d",
+        "research"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Turn one photo into a 3D Gaussian scene you can render from nearby viewpoints in real time.",
+      "why": "Predicts a metric 3D Gaussian scene from one image in under a second on a GPU.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Reference code for the SHARP paper. A single feedforward pass regresses 3D Gaussian parameters from one photograph. The result renders in real time for nearby camera moves and has absolute scale. A `sharp` CLI is installed with pip.",
+      "best_for": "Fast single-image novel view synthesis, 3D photo effects, or research that builds on 3D Gaussian scenes.",
+      "not_for": "Research code, and the license is not stated as a standard open license. It handles nearby views only, not full 360-degree reconstruction.",
+      "keywords": [
+        "single image to 3d",
+        "gaussian splatting from one photo",
+        "monocular view synthesis",
+        "apple sharp",
+        "3d photo",
+        "novel view synthesis"
+      ]
+    },
+    {
       "id": "gkjohnson/three-mesh-bvh",
       "name": "three-mesh-bvh",
       "category": "3d-graphics",
@@ -625,6 +842,41 @@
         "gltf",
         "sveltekit",
         "webxr"
+      ]
+    },
+    {
+      "id": "microsoft/TRELLIS.2",
+      "name": "TRELLIS.2",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "3d-generation",
+        "image-to-3d",
+        "pbr",
+        "glb",
+        "diffusion"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate PBR-textured 3D assets, exported as GLB, from a single image.",
+      "why": "4B-parameter model with sharp features and complex topology; training code is released.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A large 3D generative model using a sparse voxel structure called O-Voxel. A Python pipeline turns an image into a 3D asset and writes a preview video and a GLB file. Texture generation from a given shape is also supported.",
+      "best_for": "Adding image-to-3D to a pipeline, or researching 3D generation, with open weights and training code.",
+      "not_for": "CPU-only machines. Python and a capable CUDA GPU are expected, and GLB output is opaque until you wire up alpha.",
+      "keywords": [
+        "image to 3d",
+        "3d generation model",
+        "glb generator",
+        "pbr textures ai",
+        "microsoft trellis",
+        "3d asset generation",
+        "trellis 2"
       ]
     },
     {

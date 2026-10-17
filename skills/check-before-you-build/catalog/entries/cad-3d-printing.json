@@ -2,6 +2,43 @@
   "category": "cad-3d-printing",
   "entries": [
     {
+      "id": "amagine-ai/Amagine3D",
+      "name": "Amagine3D",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "app",
+        "engine"
+      ],
+      "tags": [
+        "cad",
+        "3d-printing",
+        "enclosures",
+        "build123d",
+        "step-export"
+      ],
+      "ecosystems": [
+        "python",
+        "build123d"
+      ],
+      "use_for": "Generate editable parametric 3D enclosure designs from a product description, images and key dimensions.",
+      "why": "Outputs editable build123d source plus real STEP, STL and 3MF files with manufacturing checks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An AI-driven CAD workbench for printable hardware enclosures. An agent lays out mounts and interfaces, splits parts, and writes parametric source; changing parameters rebuilds the geometry.",
+      "best_for": "Designing printable enclosures and assembly structures around internal electronics.",
+      "not_for": "Smooth Class-A surfaces or general mechanical CAD; surface continuity can stay coarse. Tested in desktop Chrome and Edge only.",
+      "keywords": [
+        "ai cad",
+        "text to cad",
+        "enclosure generator",
+        "build123d",
+        "3d printable enclosure",
+        "parametric hardware design",
+        "step export ai"
+      ]
+    },
+    {
       "id": "BelfrySCAD/BOSL2",
       "name": "BOSL2",
       "category": "cad-3d-printing",
@@ -69,6 +106,42 @@
         "3d printing",
         "cnc",
         "cad-as-code"
+      ]
+    },
+    {
+      "id": "Adam-CAD/CADAM",
+      "name": "CADAM",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "text-to-cad",
+        "openscad",
+        "parametric",
+        "webassembly",
+        "three-js"
+      ],
+      "ecosystems": [
+        "typescript",
+        "openscad"
+      ],
+      "use_for": "Generate parametric 3D models from text or images and export STL, SCAD or DXF.",
+      "why": "Browser-based, with sliders for dimensions and OpenSCAD output you can edit.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A web app that turns plain-language descriptions or images into parametric OpenSCAD models. It runs OpenSCAD in the browser with WebAssembly, previews with Three.js, extracts adjustable parameters, and includes BOSL, BOSL2 and MCAD libraries.",
+      "best_for": "Fast parametric 3D-printable parts from a description, or a base for a text-to-CAD product.",
+      "not_for": "Precision engineering CAD (it outputs OpenSCAD). Needs an AI model backend and Supabase; GPL-3.0 licence.",
+      "keywords": [
+        "text to cad",
+        "ai cad generator",
+        "openscad ai",
+        "generate stl from text",
+        "parametric 3d model ai",
+        "3d printing ai",
+        "adam cad"
       ]
     },
     {
@@ -425,6 +498,41 @@
       ]
     },
     {
+      "id": "HakanSeven12/OpenCADStudio",
+      "name": "Open CAD Studio",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "app",
+        "engine"
+      ],
+      "tags": [
+        "cad",
+        "dwg",
+        "dxf",
+        "3d-modeling",
+        "gpu-rendering"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Technical 2D drafting and 3D solid modeling that reads and writes native DWG and DXF files.",
+      "why": "Shares one editing core across a desktop app and a browser app, with GPU-accelerated viewports via wgpu.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Open CAD Studio is a cross-platform CAD application for 2D drafting and 3D solid modeling, written in Rust. It reads and writes DWG and DXF natively, supports kernel-backed solid modeling (extrusion, sweep, loft, booleans), and offers native plugins, command scripts and a headless JSON automation API.",
+      "best_for": "Teams wanting an open, scriptable CAD alternative that works with existing DWG/DXF files on desktop or web.",
+      "not_for": "The project is under active development, so keep backups of production drawings and expect rough edges.",
+      "keywords": [
+        "open source cad",
+        "dwg dxf editor",
+        "rust cad application",
+        "2d drafting tool",
+        "3d solid modeling",
+        "cad automation api"
+      ]
+    },
+    {
       "id": "Open-Cascade-SAS/OCCT",
       "name": "Open CASCADE Technology",
       "category": "cad-3d-printing",
@@ -530,6 +638,44 @@
       ]
     },
     {
+      "id": "pascalorg/editor",
+      "name": "Pascal Editor",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "app",
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "3d-editor",
+        "architecture",
+        "webgpu",
+        "react-three-fiber",
+        "mcp"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react"
+      ],
+      "use_for": "Edit 3D building models in the browser or CLI and let AI agents drive the editor through MCP.",
+      "why": "Local-first editor with published npm packages for core, viewer and CLI, and an MCP service.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Pascal is a local-first 3D building editor built with React Three Fiber and WebGPU. Run it with one npx command; it starts the editor and an authenticated MCP service. Projects live in a local database.",
+      "best_for": "Building or experimenting with architectural 3D tools that agents can control.",
+      "not_for": "Engineering CAD or 3D printing. The README says the Pascal Next preview shown is not yet in the open-source release.",
+      "keywords": [
+        "3d building editor",
+        "architectural editor",
+        "floor plan 3d",
+        "react three fiber editor",
+        "webgpu editor",
+        "mcp 3d",
+        "home design tool"
+      ]
+    },
+    {
       "id": "prusa3d/PrusaSlicer",
       "name": "PrusaSlicer",
       "category": "cad-3d-printing",
@@ -600,6 +746,43 @@
       ]
     },
     {
+      "id": "tangency-labs/solidcraft",
+      "name": "SolidCraft",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "app",
+        "engine"
+      ],
+      "tags": [
+        "cad",
+        "parametric",
+        "rust",
+        "mcp",
+        "3d-modeling"
+      ],
+      "ecosystems": [
+        "rust",
+        "wasm"
+      ],
+      "use_for": "Do parametric 3D CAD on desktop or web, or let agents model through the built-in MCP server.",
+      "why": "Pure Rust CAD with a constraint solver, feature timeline and an MCP server for automation.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "SolidCraft is an open-source parametric 3D CAD application in pure Rust. You sketch, constrain and extrude with a feature timeline, and changing a dimension rebuilds the model. It has its own constraint solver and kernel, runs on Windows, macOS, Linux and in the browser, and exposes an MCP server for AI agents.",
+      "best_for": "You want an open CAD tool to use, extend or automate with agents.",
+      "not_for": "A full application rather than a small library. A young CAD app, so check that the features you need are listed.",
+      "keywords": [
+        "parametric cad",
+        "open source cad rust",
+        "freecad alternative",
+        "cad mcp",
+        "3d modeling web",
+        "solidworks alternative",
+        "cad with ai agent"
+      ]
+    },
+    {
       "id": "solvespace/solvespace",
       "name": "SolveSpace",
       "category": "cad-3d-printing",
@@ -629,6 +812,43 @@
         "desktop app",
         "open source",
         "constraints"
+      ]
+    },
+    {
+      "id": "earthtojake/text-to-cad",
+      "name": "text-to-cad",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "plugin",
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "cad",
+        "build123d",
+        "step",
+        "3d-printing",
+        "agent-plugin"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Let your coding agent generate 3D models as STEP, GLB, STL or 3MF and check them for manufacturing.",
+      "why": "Local CAD workflows built on build123d, with DFM checks and drawings.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A plugin that gives agents local workflows to generate 3D models as STEP, GLB, STL or 3MF files. It also runs design-for-manufacturing checks, makes engineering drawings, and links to print, sheet metal and CNC services. Works with Claude Code, Codex, Cursor and others.",
+      "best_for": "Describing a part to an agent and getting a file you can print or machine.",
+      "not_for": "Fine hand-modelling in a CAD GUI. It sends usage stats and crash reports by default (can be turned off).",
+      "keywords": [
+        "text to cad",
+        "ai cad",
+        "build123d agent",
+        "generate step file",
+        "agent 3d printing",
+        "cadgen",
+        "cnc design agent"
       ]
     }
   ]

@@ -2,6 +2,45 @@
   "category": "testing",
   "entries": [
     {
+      "id": "callstack/agent-device",
+      "name": "agent-device",
+      "category": "testing",
+      "kinds": [
+        "cli",
+        "mcp",
+        "library"
+      ],
+      "tags": [
+        "mobile-testing",
+        "ai-agents",
+        "mcp",
+        "accessibility",
+        "automation"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node",
+        "ios",
+        "android"
+      ],
+      "use_for": "Let coding agents run, inspect and verify mobile and other apps on simulators and real devices.",
+      "why": "Agents read compact accessibility snapshots instead of screenshots, across iOS, Android, TV, web, macOS and Linux.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI, built-in MCP server and typed Node.js API that lets coding agents tap, type, scroll and assert in running apps. It captures screenshots, video, logs, traces and React Native profiles, saves steps as replayable scripts, and can export Maestro YAML.",
+      "best_for": "Teams using coding agents on mobile apps who want the agent to check its own changes in the running app.",
+      "not_for": "Needs Node 22.12 or newer and platform tooling for each target. Not a general unit test framework.",
+      "keywords": [
+        "mobile app automation for agents",
+        "ios simulator agent",
+        "android emulator mcp",
+        "react native testing agent",
+        "maestro alternative",
+        "agent e2e mobile"
+      ]
+    },
+    {
       "id": "appium/appium",
       "name": "Appium",
       "category": "testing",
@@ -35,6 +74,44 @@
         "test automation",
         "native app",
         "desktop automation"
+      ]
+    },
+    {
+      "id": "google/artemis",
+      "name": "ARTEMIS",
+      "category": "testing",
+      "kinds": [
+        "cli",
+        "mcp",
+        "app"
+      ],
+      "tags": [
+        "android",
+        "mobile-testing",
+        "mcp",
+        "ui-automation",
+        "adb"
+      ],
+      "ecosystems": [
+        "python",
+        "android"
+      ],
+      "use_for": "Drive real Android phones from natural language for testing and automation, including from AI IDEs.",
+      "why": "Reports 99%+ task completion on the AndroidWorld benchmark and exposes an MCP server.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Turns natural-language instructions into Android automation. It targets elements by index with coordinate and visual fallbacks, collects Logcat and screenshots, and offers a web console, CLI and MCP server for Claude Code and other clients.",
+      "best_for": "Reproducing bugs and running exploratory or end-to-end tests on real Android devices or emulators through an AI agent.",
+      "not_for": "iOS or web testing. It needs an Android device with USB debugging, or an emulator, and model access for its agents.",
+      "keywords": [
+        "android ui automation",
+        "ai mobile testing",
+        "androidworld",
+        "adb agent",
+        "mcp android",
+        "natural language test",
+        "artemis"
       ]
     },
     {
@@ -239,6 +316,78 @@
       ]
     },
     {
+      "id": "tester-army/e2e",
+      "name": "e2e",
+      "category": "testing",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "e2e-testing",
+        "ai-agent",
+        "web",
+        "mobile",
+        "playwright"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Write end-to-end tests for web and mobile apps using natural-language goals plus normal assertions.",
+      "why": "Agent steps are recorded and replayed with no model calls until the app changes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An end-to-end testing framework where an agent drives the app toward a goal you describe, and you check results with locators and assertions in the same test. Recorded agent steps replay without a model. Web uses Playwright; mobile uses simulators and emulators.",
+      "best_for": "Teams who want e2e tests across web and mobile that are cheap to rerun and easy to write in plain language.",
+      "not_for": "Production-critical suites that need stable APIs today. The README says it is pre-1.0 and APIs and config can still change between minor releases.",
+      "keywords": [
+        "e2e testing",
+        "end to end tests",
+        "ai testing agent",
+        "playwright alternative",
+        "mobile app testing",
+        "natural language tests",
+        "test automation"
+      ]
+    },
+    {
+      "id": "millionco/expect",
+      "name": "Expect",
+      "category": "testing",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "browser-testing",
+        "playwright",
+        "agent-skill",
+        "qa",
+        "ci"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Have a coding agent test its own changes in a real browser by generating a test plan from the git diff.",
+      "why": "No test scripts or selectors to maintain: it reads your code changes and drives Playwright for you.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill for Claude Code, Codex and Cursor. It reads your git changes, writes a test plan, and runs it in a real browser with Playwright on your machine. It checks performance, security, design and app completeness, and can run in CI.",
+      "best_for": "Teams using coding agents who want quick browser checks and regression catches on every change or pull request.",
+      "not_for": "Replacing a hand-written Playwright or Cypress suite you need to control exactly. The license is NOASSERTION and the hosted version is not out yet.",
+      "keywords": [
+        "agent browser testing",
+        "playwright agent",
+        "test my agent's code",
+        "expect-cli",
+        "ai qa",
+        "claude code testing skill",
+        "github action browser test"
+      ]
+    },
+    {
       "id": "dubzzz/fast-check",
       "name": "fast-check",
       "category": "testing",
@@ -344,6 +493,42 @@
         "pytest",
         "edge cases",
         "shrinking"
+      ]
+    },
+    {
+      "id": "ifixai-ai/iFixAi",
+      "name": "iFixAi",
+      "category": "testing",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "agent-evaluation",
+        "red-teaming",
+        "audit",
+        "llm-judge",
+        "policy"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Audit whether an AI agent does its intended job against business policy, with graded reports.",
+      "why": "Mixes red-teaming and operational checks, with a second vendor's model as the judge for citable grades.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "iFixAi runs a set of inspections against an agent or model: 10 by default, 60 with a full run. A judge from a different provider grades it, and reports land as JSON and Markdown. A Policy Lab finds harmful sequences of permitted actions.",
+      "best_for": "Teams checking agents against business rules and permissions before shipping.",
+      "not_for": "A citable grade needs two keys from different vendors. A single-key run is only a smoke test and is flagged self-judged.",
+      "keywords": [
+        "ai agent audit",
+        "agent evaluation",
+        "llm red teaming",
+        "agent policy testing",
+        "eval tool for agents",
+        "llm as judge",
+        "agent safety check"
       ]
     },
     {
@@ -1088,6 +1273,41 @@
         "assert",
         "unit tests",
         "tdd"
+      ]
+    },
+    {
+      "id": "TestSprite/testsprite-cli",
+      "name": "TestSprite CLI",
+      "category": "testing",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "ai-testing",
+        "e2e",
+        "coding-agents",
+        "cloud",
+        "verification"
+      ],
+      "ecosystems": [
+        "node",
+        "typescript"
+      ],
+      "use_for": "Have a coding agent run AI-driven tests against your live app and get failures back as one bundle.",
+      "why": "Official CLI that installs a verification-loop skill for eight coding agents and returns agent-shaped failure output.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "The CLI for the TestSprite cloud testing platform. It opens your live app or API like a real user, finds what broke, and returns a single bundle of failure details an agent can act on. 'testsprite setup' stores your API key and installs a skill for Claude, Cursor, Codex and others.",
+      "best_for": "Closing the loop so coding agents verify their own changes against a running app, also in CI.",
+      "not_for": "Needs a TestSprite account and API key and runs in their cloud. It is not a self-contained local test runner.",
+      "keywords": [
+        "ai e2e testing",
+        "agent verifies app",
+        "testsprite",
+        "cloud browser testing",
+        "claude code testing loop",
+        "automated qa agent"
       ]
     },
     {

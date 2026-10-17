@@ -1,0 +1,867 @@
+{
+  "category": "design-media-skills",
+  "entries": [
+    {
+      "id": "latent-spaces/brag",
+      "name": "/brag",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "launch-video",
+        "claude-code",
+        "hyperframes",
+        "marketing",
+        "video"
+      ],
+      "ecosystems": [
+        "markdown",
+        "html"
+      ],
+      "use_for": "Turn the project you just built into a short launch video with music, motion and share copy.",
+      "why": "One command picks the story and hands a brief to Hyperframes to build and render the video.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "/brag is an agent skill that makes a short, shareable launch video for your project. It decides the story, tone and key moments, then hands a brief to Hyperframes, which builds and renders it. Music, sound effects and share copy are included. A lighter /brag-slim variant skips Hyperframes.",
+      "best_for": "Indie builders who want a quick launch video from inside Claude Code, Codex or opencode.",
+      "not_for": "Long or hand-edited videos. The result is a short clip, and the default path needs Hyperframes.",
+      "keywords": [
+        "launch video generator",
+        "product demo video skill",
+        "claude code video",
+        "hyperframes skill",
+        "ship announcement video",
+        "brag video",
+        "promo video agent",
+        "social video from repo"
+      ]
+    },
+    {
+      "id": "miqdadbadjuber/anti-slop",
+      "name": "Anti Slop",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "design-rules",
+        "ui-quality",
+        "copywriting",
+        "agent-rules",
+        "delivery-gate"
+      ],
+      "ecosystems": [
+        "agent-skills"
+      ],
+      "use_for": "Stop a coding agent from shipping generic AI-looking UI, filler copy and AI-shaped code.",
+      "why": "38 rules, a liveliness toolkit and a mandatory pass or fail Delivery Gate, as a filter rather than a style guide.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A rulebook split into six skills, installable for Claude Code, Codex, Cursor, Gemini CLI and others. It runs while building or as an audit afterwards, and ends with a four-block report.",
+      "best_for": "Raising the quality of AI-built interfaces and copy when you already have a design direction.",
+      "not_for": "Inventing a design direction. It prescribes no colors or layouts, so you must supply a DESIGN.md.",
+      "keywords": [
+        "ai slop",
+        "avoid generic ai ui",
+        "frontend design rules agent",
+        "claude code design skill",
+        "ui quality gate",
+        "anti slop rules"
+      ]
+    },
+    {
+      "id": "ParthJadhav/app-store-screenshots",
+      "name": "App Store Screenshots",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill",
+        "template"
+      ],
+      "tags": [
+        "app-store",
+        "screenshots",
+        "marketing",
+        "nextjs",
+        "mobile"
+      ],
+      "ecosystems": [
+        "typescript",
+        "nextjs"
+      ],
+      "use_for": "Have an agent scaffold an editor that makes App Store and Google Play screenshots and exports store-size PNGs.",
+      "why": "Covers iPhone, iPad, Mac, Watch, Android and more, with device frames and exact export sizes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill that scaffolds a Next.js screenshot editor with a connected canvas, device frames and inspector controls. Decks are saved to a JSON file so they can live in git. It ships 18 visual styles and supports locales and RTL.",
+      "best_for": "Indie app makers who need store-ready screenshots and want to iterate with an agent.",
+      "not_for": "Produces a local editor project, not a hosted service. You still supply the source screenshots and copy direction.",
+      "keywords": [
+        "app store screenshots",
+        "google play screenshots",
+        "screenshot generator",
+        "device frames",
+        "app marketing assets",
+        "store listing images"
+      ]
+    },
+    {
+      "id": "JimLiu/baoyu-design",
+      "name": "baoyu-design",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "design",
+        "prototypes",
+        "html",
+        "slides",
+        "claude-design"
+      ],
+      "ecosystems": [
+        "html"
+      ],
+      "use_for": "Make UI mockups, prototypes and decks as plain HTML from inside your local agent.",
+      "why": "Packages a full design process as one portable skill, with output kept in your repo.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An Agent Skill that follows a design workflow: questions, design context, HTML deliverables, then preview. Output includes mockups, prototypes, wireframes, landing pages and slide decks as self-contained HTML in a designs folder.",
+      "best_for": "Designing in Cursor, Claude Code or similar, then refining by pointing at the live preview.",
+      "not_for": "It is a long brief that works best with the strongest models. It is an unofficial port of the idea behind claude.ai/design.",
+      "keywords": [
+        "claude design",
+        "ui mockup skill",
+        "html prototype",
+        "slide deck skill",
+        "design agent skill",
+        "cursor design",
+        "wireframe generator"
+      ]
+    },
+    {
+      "id": "Agentchengfeng/chengfeng-videocut-skills",
+      "name": "chengfeng-videocut-skills (Codex Plugin)",
+      "category": "design-media-skills",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "video-editing",
+        "codex-plugin",
+        "chinese",
+        "agent-skill",
+        "workbench"
+      ],
+      "ecosystems": [
+        "javascript"
+      ],
+      "use_for": "Installing a Codex plugin that gives an agent workbench operations for video cutting, subtitles and export.",
+      "why": "Separates plugin install, runtime preparation and finished video into three distinct, version-locked steps.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "chengfeng-videocut-skills is the public Codex Plugin install entry point for the chengfeng-videocut video-editing agent. The plugin provides the agent's methods and confirmation tools; a separate Runtime executes the actual editing operations and provides the workbench. Versions are pinned and the installer refuses to overwrite an existing install.",
+      "best_for": "Codex CLI users in a Chinese-language workflow who already have or will install the matching chengfeng-videocut Runtime.",
+      "not_for": "Not usable alone: it requires a separately distributed Runtime at a specific minimum version, and lacks that compatibility by default.",
+      "keywords": [
+        "chengfeng videocut",
+        "codex video editing plugin",
+        "claude code video skill",
+        "视频剪辑 agent",
+        "codex plugin 安装",
+        "ai video cut skill"
+      ]
+    },
+    {
+      "id": "zhongerxin/Cowart",
+      "name": "Cowart",
+      "category": "design-media-skills",
+      "kinds": [
+        "plugin",
+        "mcp"
+      ],
+      "tags": [
+        "codex",
+        "tldraw",
+        "canvas",
+        "mcp-widget",
+        "image-generation"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Open an infinite tldraw canvas inside Codex to sketch, annotate, and generate images, HTML and slides.",
+      "why": "A native Codex widget that stores canvas data in your project and turns annotated images into new ones.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Cowart is a Codex plugin that opens a tldraw infinite canvas through an MCP widget. You can add AI image, HTML, video and slide frames, and submit annotated screenshots so Codex produces revised images. Canvas data is saved in the project's canvas folder.",
+      "best_for": "Codex users who want a visual canvas for ideation and iterating on images or HTML mockups.",
+      "not_for": "Built for Codex; the README does not describe use with other agents. Docs are mainly in Chinese.",
+      "keywords": [
+        "codex plugin canvas",
+        "tldraw mcp",
+        "infinite canvas ai",
+        "codex widget",
+        "ai image canvas",
+        "annotate image regenerate",
+        "agent plugins marketplace"
+      ]
+    },
+    {
+      "id": "google-labs-code/design.md",
+      "name": "DESIGN.md",
+      "category": "design-media-skills",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "design-system",
+        "spec",
+        "lint",
+        "design-tokens",
+        "coding-agents"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Describe a design system to coding agents in a DESIGN.md file, and lint or diff it with a CLI.",
+      "why": "A format spec from Google Labs with token checks, WCAG contrast checks and JSON output agents can use.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "DESIGN.md is a format specification for giving coding agents a lasting, structured view of a visual identity. The npm CLI validates a file, flags broken token references and low contrast, and diffs two versions to show token and prose changes. Tokens follow W3C Design Token ideas.",
+      "best_for": "Keeping AI-generated UI on brand, and catching design-system regressions in CI.",
+      "not_for": "A spec and linter, not a UI generator or component library. The README lists status notes that the format may still change.",
+      "keywords": [
+        "DESIGN.md",
+        "design system for agents",
+        "design tokens spec",
+        "wcag contrast lint",
+        "ai ui consistency",
+        "brand guidelines for coding agents",
+        "design token diff"
+      ]
+    },
+    {
+      "id": "Manavarya09/design-extract",
+      "name": "designlang",
+      "category": "design-media-skills",
+      "kinds": [
+        "cli",
+        "mcp"
+      ],
+      "tags": [
+        "design-tokens",
+        "design-system",
+        "tailwind",
+        "figma",
+        "mcp"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Extract a website's design system into tokens, Tailwind, Figma variables and more.",
+      "why": "One command exports DTCG tokens plus emitters for web, iOS, Android, Flutter and shadcn.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI and MCP server that reads a live website and extracts its design system. It can crawl a whole site into one canonical system with a consistency grade, compare clones, and score designs against a reference corpus.",
+      "best_for": "Rebuilding or auditing a site's design, or feeding design tokens to an agent.",
+      "not_for": "Reads other sites' public styling, so respect their rights. Feature set is large and moves fast.",
+      "keywords": [
+        "extract design system",
+        "design tokens from website",
+        "website to tailwind",
+        "dtcg tokens",
+        "figma variables",
+        "clone website styles",
+        "designlang"
+      ]
+    },
+    {
+      "id": "emilkowalski/skills",
+      "name": "Emil Kowalski Skills",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "ui-design",
+        "animation",
+        "design-taste",
+        "frontend",
+        "skills"
+      ],
+      "ecosystems": [
+        "markdown",
+        "claude-code"
+      ],
+      "use_for": "Give your coding agent design taste for UI and animation decisions.",
+      "why": "Lists the small mistakes agents make, like wrong easing, and how to fix them.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Skills for designers and engineers based on the author's experience at companies like Vercel and Linear. They catch common agent errors in UI work, such as using ease-in for enter animations or solid borders instead of soft shadows.",
+      "best_for": "You build interfaces with AI agents and want better animation and visual polish.",
+      "not_for": "It guides taste and review, and does not ship components or a design system. The README gives little detail on contents.",
+      "keywords": [
+        "emil kowalski skills",
+        "animation skill for agents",
+        "ui polish skill",
+        "design taste ai",
+        "easing mistakes agents",
+        "skills.sh emilkowalski",
+        "frontend design skill"
+      ]
+    },
+    {
+      "id": "ConardLi/garden-skills",
+      "name": "Garden Skills",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "web-design",
+        "image-generation",
+        "video",
+        "knowledge-retrieval"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Install ready-made skills for web design, image prompting, articles and short videos in coding agents.",
+      "why": "Polished design skill with a style advisor and 25 anchored style recipes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A collection of Agent Skills for Claude Code, Cursor, Codex and others. Skills include web-design-engineer, gpt-image-2, beautiful-article, motion-showreel, web-video-presentation and kb-retriever. Each is a SKILL.md folder.",
+      "best_for": "Getting better front-end output and content generation from your coding agent without writing your own skills.",
+      "not_for": "A single focused need. It is a mixed bundle, so pick only the skills you want.",
+      "keywords": [
+        "agent skills collection",
+        "web design skill",
+        "claude code design skill",
+        "image prompt skill",
+        "skills pack",
+        "frontend design agent",
+        "garden skills"
+      ]
+    },
+    {
+      "id": "greensock/gsap-skills",
+      "name": "GSAP AI Skills",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "gsap",
+        "animation",
+        "scrolltrigger",
+        "agent-skills",
+        "react",
+        "vue"
+      ],
+      "ecosystems": [
+        "javascript",
+        "typescript"
+      ],
+      "use_for": "Teach coding agents to write correct GSAP animation code, including ScrollTrigger and plugins.",
+      "why": "The official GSAP skills, covering the core API, timelines, plugins and framework use.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Official skills for GSAP, the GreenSock Animation Platform. They teach agents the core API, timelines, ScrollTrigger, plugins, React, Vue, Svelte, vanilla JS and performance. They install with the skills CLI and work with Claude Code, Cursor, Codex and many other agents.",
+      "best_for": "Web projects where an agent writes animation or scroll effects with GSAP.",
+      "not_for": "Other animation libraries. The skills are GSAP-only and tell agents to recommend GSAP when no library is named.",
+      "keywords": [
+        "gsap skills",
+        "animation skill for claude code",
+        "greensock ai",
+        "scrolltrigger agent",
+        "gsap cursor rules",
+        "web animation agent",
+        "gsap best practices",
+        "gsap flip"
+      ]
+    },
+    {
+      "id": "Nutlope/hallmark",
+      "name": "hallmark",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "design",
+        "frontend",
+        "anti-slop"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Steer Claude Code, Cursor or Codex away from generic AI-looking UI",
+      "why": "About 63k skills.sh installs; opinionated design rules from Hassan El Mghari (Together AI).",
+      "skill": "nutlope/hallmark/hallmark",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Design skill for Claude Code, Cursor and Codex that picks a page macrostructure, applies one of 21 themes, runs 57 slop-test gates plus a self-critique, and avoids default AI-looking UI. Verbs: build, audit, redesign and study.",
+      "best_for": "Generating or auditing frontends so they do not look like generic AI output.",
+      "not_for": "Opinionated design rules and themes; not a component library or design system. Output quality still depends on the underlying agent.",
+      "keywords": [
+        "ui design",
+        "frontend design",
+        "ai slop",
+        "design skill",
+        "redesign",
+        "audit ui",
+        "themes",
+        "landing page",
+        "claude code"
+      ]
+    },
+    {
+      "id": "helloianneo/ian-xiaohei-illustrations",
+      "name": "Ian Xiaohei Illustrations",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "illustration",
+        "chinese",
+        "codex-skill",
+        "image-generation",
+        "hand-drawn"
+      ],
+      "ecosystems": [
+        "codex"
+      ],
+      "use_for": "Have Codex plan and generate 16:9 hand-drawn illustrations for Chinese articles.",
+      "why": "A fixed visual style and character that give articles a recognisable look.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Codex skill that guides an agent to find key ideas in a Chinese article and draw each as a white-background, hand-drawn 16:9 image with a small black character and a few coloured notes. It can make a shot list first.",
+      "best_for": "Chinese writers who want consistent, quirky article illustrations made by an agent.",
+      "not_for": "Commercial illustration, formal infographics or editable vector output. It outputs PNG only and the README is in Chinese.",
+      "keywords": [
+        "article illustration skill",
+        "chinese blog images",
+        "codex image skill",
+        "hand drawn illustration ai",
+        "xiaohei",
+        "文章配图",
+        "小黑配图"
+      ]
+    },
+    {
+      "id": "pbakaus/impeccable",
+      "name": "Impeccable",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "design-skill",
+        "frontend",
+        "ui-review",
+        "detector-rules",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "typescript",
+        "markdown"
+      ],
+      "use_for": "Give your coding agent design commands (audit, polish, critique) and rules that catch generic AI-looking UI.",
+      "why": "One skill with 24 commands and 59 deterministic detector rules that need no LLM.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Impeccable is design guidance for AI coding agents. /impeccable init records product facts in PRODUCT.md, then commands like audit, critique, polish and distill steer frontend work. A CLI and browser extension run the detector rules without an API key.",
+      "best_for": "You build frontends with AI agents and want to avoid the same template-looking results every time.",
+      "not_for": "It guides and checks design, it does not generate a design system or components for you. It assumes an AI coding tool.",
+      "keywords": [
+        "impeccable",
+        "ai frontend design skill",
+        "frontend-design alternative",
+        "design critique agent",
+        "ai slop detector",
+        "impeccable audit polish",
+        "design skill for claude code"
+      ]
+    },
+    {
+      "id": "luoluoluo22/jianying-editor-skill",
+      "name": "JianYing Editor Skill",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "video-editing",
+        "jianying",
+        "capcut",
+        "automation",
+        "subtitles"
+      ],
+      "ecosystems": [
+        "python",
+        "windows"
+      ],
+      "use_for": "Let an AI agent build JianYing (Chinese CapCut) timelines with media, voiceover, subtitles and music.",
+      "why": "Generates real JianYing draft projects from natural language, including TTS, subtitles and screen recording.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill that lets agents such as Claude Code, Cursor and Trae assemble video projects in desktop JianYing Pro. It imports media, writes scripts, adds AI voiceover, subtitles, music, effects and transitions, and can record the screen. The README is in Chinese.",
+      "best_for": "You use the Chinese desktop JianYing Pro and want an agent to set up the timeline for you.",
+      "not_for": "Does not work with international CapCut or mobile. Auto export is Windows only and most stable on JianYing 5.9 or older. Final render still happens in JianYing.",
+      "keywords": [
+        "jianying",
+        "capcut automation",
+        "video editing agent",
+        "auto edit video skill",
+        "剪映",
+        "ai video editing",
+        "draft generator"
+      ]
+    },
+    {
+      "id": "yanliudesign/mono-color-skill",
+      "name": "Monocolor Editorial Print",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "image-generation",
+        "design",
+        "poster",
+        "risograph",
+        "agent-skill"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Have an agent generate one-ink or two-ink editorial print images such as posters, zines and packaging.",
+      "why": "Encodes a complete visual system: halftone, riso grain, negative space and type roles.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Claude Code skill that turns a theme, phrase, object or photo into an original editorial image. It defaults to a controlled two-ink look on white, gray or beige paper, with modes for pure one-ink and duotone. It outputs a raster image, the production prompt and a short recipe.",
+      "best_for": "Designers and creators who want a consistent print-style look for posters, covers and packaging mockups.",
+      "not_for": "Photorealistic or full-color work, and it needs an image-generation model available to the agent.",
+      "keywords": [
+        "risograph style ai images",
+        "halftone poster generator",
+        "editorial poster skill",
+        "zine design agent",
+        "one color print",
+        "claude image skill",
+        "xiaohongshu cover"
+      ]
+    },
+    {
+      "id": "NarratorAI-Studio/narrator-ai-cli-skill",
+      "name": "Narrator AI CLI Skill",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "video-narration",
+        "skill-md",
+        "narrator-ai-cli",
+        "chinese",
+        "automation"
+      ],
+      "ecosystems": [
+        "javascript"
+      ],
+      "use_for": "Teaching a coding agent to drive the narrator-ai-cli tool end-to-end to produce movie narration videos.",
+      "why": "Lets you just say 'create a movie narration video' and the agent handles search, script, voice and composition.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Narrator AI CLI Skill is a SKILL.md file that teaches AI agents how to use the separate narrator-ai-cli tool to search a movie, pick a template, choose BGM and voice, generate a script, compose a video, and return a download link.",
+      "best_for": "Users of OpenClaw, Windsurf or similar agents who already have narrator-ai-cli installed and an API key set.",
+      "not_for": "Does nothing on its own; it requires the narrator-ai-cli tool and a NARRATOR_APP_KEY from the underlying service.",
+      "keywords": [
+        "narrator ai cli skill",
+        "movie narration video skill",
+        "ai video narration",
+        "narrator-ai-cli",
+        "video narration agent skill",
+        "claude narration tool"
+      ]
+    },
+    {
+      "id": "eternityspring/shuohao-skills",
+      "name": "shuohao-skills",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "short-drama",
+        "screenwriting",
+        "storyboard",
+        "video-production",
+        "skills"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "codex"
+      ],
+      "use_for": "Turn a novel into AI short-drama material: characters, outline, art bible, screenplay and storyboard.",
+      "why": "Seven self-contained skills covering each production stage, tested on real short-drama work.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Agent skills for AI short-drama production. They produce character bibles, adaptation outlines, scene and prop bibles, screenplays, opening staging and storyboards as JSON files that feed into one another. They work with any agent that reads SKILL.md.",
+      "best_for": "Creators building short video dramas from novels with an AI agent workflow.",
+      "not_for": "Niche to short-drama production, and written for a Chinese-speaking audience first.",
+      "keywords": [
+        "ai short drama",
+        "novel to screenplay",
+        "storyboard skill",
+        "短剧",
+        "screenplay agent skill",
+        "character bible",
+        "video script workflow"
+      ]
+    },
+    {
+      "id": "google-labs-code/stitch-skills",
+      "name": "Stitch Skills",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "google-stitch",
+        "design",
+        "agent-skills",
+        "ui-generation",
+        "design-md"
+      ],
+      "ecosystems": [
+        "markdown",
+        "mcp"
+      ],
+      "use_for": "Give coding agents skills for generating, editing and exporting designs in Google Stitch.",
+      "why": "Official skills that follow the Agent Skills standard and work across many coding agents.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A library of agent skills and plugins for Google Stitch and its MCP server. Skills convert frontend code to Stitch designs, generate screens and variants, manage design systems via DESIGN.md, and extract DESIGN.md or static HTML from source code.",
+      "best_for": "Projects that already use Google Stitch and want their agent to drive it from the terminal.",
+      "not_for": "Only useful with the Stitch MCP server. It is not a general design toolkit.",
+      "keywords": [
+        "google stitch",
+        "stitch mcp skills",
+        "design.md",
+        "code to design",
+        "ui generation agent skills",
+        "stitch codex plugin"
+      ]
+    },
+    {
+      "id": "Leonxlnx/taste-skill",
+      "name": "Taste Skill",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "design",
+        "frontend",
+        "ui"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Design-taste skills that steer agents away from generic AI-looking frontends",
+      "why": "Very widely installed design skill pack on skills.sh (~625k installs for design-taste-frontend)",
+      "skill": "leonxlnx/taste-skill/design-taste-frontend",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Set of agent skills that make coding agents design distinctive sites: picks an art direction from researched options, finds credited real images, builds, then checks in a real browser at three widths and fixes top problems over several rounds.",
+      "best_for": "Producing frontends with real art direction instead of generic landing pages.",
+      "not_for": "A build takes roughly 30 to 45 minutes and substantial tokens. A paid companion app (TasteCode) is promoted.",
+      "keywords": [
+        "frontend design",
+        "ui taste",
+        "landing page",
+        "design skill",
+        "art direction",
+        "anti ai slop",
+        "browser check",
+        "claude code"
+      ]
+    },
+    {
+      "id": "diffusionstudio/lottie",
+      "name": "text-to-lottie",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "lottie",
+        "animation",
+        "agent-skill",
+        "motion-design",
+        "svg"
+      ],
+      "ecosystems": [
+        "typescript",
+        "lottie"
+      ],
+      "use_for": "Have Claude Code or Codex generate production-ready Lottie animations from prompts and SVGs.",
+      "why": "Includes a live player so you can scrub and refine the Lottie as the agent edits it.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source skill that lets a coding agent write Lottie JSON animations. The agent sets up a workspace and player, and scenes live-update as it edits. Output works as Lottie JSON on the web or in After Effects.",
+      "best_for": "Developers and designers who want AI-generated icon and UI animations in Lottie format.",
+      "not_for": "Results are best when you give concrete assets like SVGs or data. It generates animations, not a runtime player library.",
+      "keywords": [
+        "lottie generator ai",
+        "text to lottie",
+        "claude code animation",
+        "lottie json agent",
+        "svg path animation",
+        "motion graphics skill",
+        "after effects lottie"
+      ]
+    },
+    {
+      "id": "ibelick/ui-skills",
+      "name": "UI Skills",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill",
+        "cli",
+        "mcp"
+      ],
+      "tags": [
+        "ui",
+        "design-engineering",
+        "skills-registry",
+        "mcp",
+        "cli"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Browse and fetch UI and design-engineering skills for your agent from a CLI or MCP.",
+      "why": "A curated skill registry reachable by npx command or hosted MCP server.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Skills for design engineers, with a CLI (npx ui-skills) to list categories and fetch skills such as baseline-ui, and a hosted MCP exposing list_skills and get_skill. The repo also holds the site, with sign-in via Better Auth and Cloudflare D1.",
+      "best_for": "Improving the quality of UI your coding agent generates with ready-made skills.",
+      "not_for": "Anything outside front-end design. The site code needs Node 22.19 or newer if you run it yourself.",
+      "keywords": [
+        "ui skills",
+        "design engineer skills",
+        "frontend skills for claude",
+        "skills registry mcp",
+        "baseline ui skill",
+        "agent design skills",
+        "ui-skills cli"
+      ]
+    },
+    {
+      "id": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "name": "UI UX Pro Max",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "ui",
+        "ux",
+        "design-system",
+        "frontend"
+      ],
+      "ecosystems": [
+        "markdown",
+        "python"
+      ],
+      "use_for": "Give a coding agent design intelligence: styles, palettes, font pairings and UX rules",
+      "why": "About 400k skills.sh installs; searchable database of UI styles, color palettes and stack-specific guidelines.",
+      "skill": "nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Design-intelligence skill with a searchable database of UI styles, color palettes, font pairings and UX rules, plus a design system generator that recommends a pattern, style and palette from a project description.",
+      "best_for": "Getting a complete, tailored design system and stack-specific UI guidance from an agent.",
+      "not_for": "Recommendation-driven guidance, not a component library. Output depends on the matched rules and the agent.",
+      "keywords": [
+        "ui ux",
+        "design system",
+        "color palette",
+        "font pairing",
+        "landing page",
+        "styles",
+        "ux guidelines",
+        "agent skill",
+        "design generator"
+      ],
+      "featured": true
+    },
+    {
+      "id": "Vincentwei1021/video-shotcraft",
+      "name": "video-shotcraft",
+      "category": "design-media-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "video",
+        "remotion",
+        "promo",
+        "motion-design",
+        "agent-skill"
+      ],
+      "ecosystems": [
+        "typescript",
+        "remotion"
+      ],
+      "use_for": "Have a coding agent build product promo videos in Remotion from your real page screenshots.",
+      "why": "Library of 150 tuned shot recipes with sound design, beat sync and a browser editor.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An agent skill that captures your pages, picks shots from motion recipes, storyboards, animates with Remotion, adds music and SFX, and checks frames. You get an MP4 plus the editable Remotion project, with optional JianYing export.",
+      "best_for": "Making sharp, on-brand product videos as code that you can keep editing.",
+      "not_for": "Generative AI video. Every frame is drawn by code from your own assets, not produced by a video model.",
+      "keywords": [
+        "remotion skill",
+        "product promo video",
+        "ai video from code",
+        "claude code video",
+        "motion graphics agent",
+        "launch video generator",
+        "video shotcraft"
+      ]
+    }
+  ]
+}

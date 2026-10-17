@@ -2,88 +2,970 @@
   "version": 2,
   "notes": "Two levels (SPEC §8.4). Domains are what people build, in their own words; each maps to the building-block categories it typically needs. Catalog entries live in building-block categories only, so a repo appears once. `queries` are GitHub search terms used by scripts/scout.mjs (quality filters are added automatically).",
   "categories": [
-    { "slug": "web-frameworks", "group": "frontend", "name": "Web frameworks", "description": "Full-stack and frontend frameworks for websites and web apps.", "queries": ["topic:web-framework", "topic:react-framework", "topic:ssr framework"] },
-    { "slug": "ui-components", "group": "frontend", "name": "UI components", "description": "Component libraries and design systems.", "queries": ["topic:ui-components", "topic:component-library", "topic:design-system react"] },
-    { "slug": "styling", "group": "frontend", "name": "Styling", "description": "CSS frameworks and styling tools.", "queries": ["topic:css-framework", "topic:tailwindcss plugin", "topic:css-in-js"] },
-    { "slug": "animation", "group": "frontend", "name": "Animation", "description": "Animation, motion and scroll effects.", "queries": ["topic:animation javascript", "topic:motion react", "topic:scroll-animation"] },
-    { "slug": "3d-graphics", "group": "frontend", "name": "3D graphics", "description": "3D, WebGL, WebGPU and canvas rendering.", "queries": ["topic:webgl", "topic:threejs", "topic:webgpu"] },
-    { "slug": "forms-validation", "group": "frontend", "name": "Forms and validation", "description": "Form handling and schema validation.", "queries": ["topic:form-validation", "topic:schema-validation typescript", "topic:react-forms"] },
-    { "slug": "state-data", "group": "frontend", "name": "State and data fetching", "description": "State management and client-side data fetching.", "queries": ["topic:state-management", "topic:data-fetching", "topic:react-query"] },
-    { "slug": "charts-dataviz", "group": "frontend", "name": "Charts and data viz", "description": "Charts and data visualization.", "queries": ["topic:charts javascript", "topic:data-visualization", "topic:dashboard charts"] },
-
-    { "slug": "backend", "group": "backend-data", "name": "Backend frameworks", "description": "Backend frameworks and API layers.", "queries": ["topic:backend-framework", "topic:rest-api framework", "topic:graphql server"] },
-    { "slug": "databases", "group": "backend-data", "name": "Databases and ORMs", "description": "Databases, ORMs and query builders.", "queries": ["topic:orm typescript", "topic:database", "topic:postgres"] },
-    { "slug": "realtime", "group": "backend-data", "name": "Realtime", "description": "Realtime messaging, websockets, sync and local-first.", "queries": ["topic:websocket", "topic:realtime", "topic:local-first"] },
-    { "slug": "auth", "group": "backend-data", "name": "Authentication", "description": "Authentication, sessions and identity.", "queries": ["topic:authentication", "topic:oauth2 library", "topic:auth nextjs"] },
-    { "slug": "payments", "group": "backend-data", "name": "Payments", "description": "Payments, billing and subscriptions.", "queries": ["topic:payments", "topic:billing subscriptions", "topic:stripe"] },
-    { "slug": "ecommerce", "group": "backend-data", "name": "E-commerce", "description": "Headless commerce engines and shop building blocks.", "queries": ["topic:ecommerce headless", "topic:headless-commerce", "topic:ecommerce-platform"] },
-    { "slug": "email", "group": "backend-data", "name": "Email", "description": "Sending email and building email templates.", "queries": ["topic:email-templates", "topic:email react", "topic:smtp"] },
-    { "slug": "storage-uploads", "group": "backend-data", "name": "Storage and uploads", "description": "File storage and upload handling.", "queries": ["topic:file-upload", "topic:object-storage", "topic:s3 upload"] },
-    { "slug": "search", "group": "backend-data", "name": "Search", "description": "Search engines and search libraries.", "queries": ["topic:search-engine", "topic:full-text-search", "topic:fuzzy-search"] },
-
-    { "slug": "ai-sdks", "group": "ai", "name": "AI SDKs", "description": "LLM SDKs and model access.", "queries": ["topic:llm sdk", "topic:openai typescript", "topic:llm-inference"] },
-    { "slug": "agents", "group": "ai", "name": "Agent frameworks", "description": "Agent frameworks and orchestration.", "queries": ["topic:ai-agents framework", "topic:multi-agent", "topic:agent-framework"] },
-    { "slug": "rag-vector", "group": "ai", "name": "RAG and vectors", "description": "Retrieval, embeddings and vector databases.", "queries": ["topic:rag", "topic:vector-database", "topic:embeddings"] },
-    { "slug": "mcp-servers", "group": "ai", "name": "MCP servers", "description": "Notable Model Context Protocol servers.", "queries": ["topic:mcp-server", "topic:model-context-protocol"] },
-    { "slug": "agent-skills", "group": "ai", "name": "Agent skills and plugins", "description": "Notable skills and plugins for coding agents.", "queries": ["topic:agent-skills", "topic:claude-code skills", "topic:claude-code-plugin"] },
-
-    { "slug": "game-engines", "group": "games", "name": "Game engines", "description": "Game engines and full game frameworks.", "queries": ["topic:game-engine", "topic:html5-game-engine", "topic:2d-game-engine"] },
-    { "slug": "game-libraries", "group": "games", "name": "Game libraries", "description": "Physics, rendering, ECS and other game building blocks.", "queries": ["topic:physics-engine", "topic:game-development library", "topic:ecs"] },
-    { "slug": "multiplayer", "group": "games", "name": "Multiplayer and networking", "description": "Multiplayer servers and game networking.", "queries": ["topic:multiplayer", "topic:game-server", "topic:netcode"] },
-
-    { "slug": "mobile", "group": "platforms", "name": "Mobile", "description": "Mobile app frameworks and tooling.", "queries": ["topic:react-native", "topic:mobile-app framework", "topic:expo"] },
-    { "slug": "desktop", "group": "platforms", "name": "Desktop", "description": "Desktop app frameworks.", "queries": ["topic:desktop-app framework", "topic:electron", "topic:tauri"] },
-    { "slug": "app-extensions", "group": "platforms", "name": "App extensions", "description": "Building extensions for browsers, VS Code, Obsidian, Raycast and Figma.", "queries": ["topic:browser-extension framework", "topic:vscode-extension template", "topic:obsidian-plugin"] },
-    { "slug": "bots", "group": "platforms", "name": "Bots", "description": "Frameworks for Discord, Slack, Telegram and WhatsApp bots.", "queries": ["topic:discord-bot framework", "topic:telegram-bot", "topic:slack-bot"] },
-    { "slug": "cli-tooling", "group": "platforms", "name": "CLI tooling", "description": "Building command-line tools and terminal UIs.", "queries": ["topic:cli-framework", "topic:tui", "topic:command-line-parser"] },
-
-    { "slug": "browser-automation", "group": "automation", "name": "Browser automation and scraping", "description": "Browser automation, crawling and scraping.", "queries": ["topic:browser-automation", "topic:web-scraping", "topic:crawler"] },
-    { "slug": "workflow-automation", "group": "automation", "name": "Workflow automation", "description": "Workflow engines, integrations and job queues.", "queries": ["topic:workflow-automation", "topic:job-queue", "topic:workflow-engine"] },
-
-    { "slug": "video-media", "group": "media", "name": "Video and media", "description": "Video generation, editing and processing.", "queries": ["topic:video-editing", "topic:video-generation", "topic:ffmpeg"] },
-    { "slug": "music-audio", "group": "media", "name": "Music and audio", "description": "Audio engines, synths, music live coding and audio processing.", "queries": ["topic:web-audio", "topic:music live-coding", "topic:audio-processing"] },
-    { "slug": "images", "group": "media", "name": "Images", "description": "Image processing, optimization and generation.", "queries": ["topic:image-processing", "topic:image-optimization", "topic:stable-diffusion ui"] },
-    { "slug": "maps-geo", "group": "media", "name": "Maps and geo", "description": "Maps and geospatial tools.", "queries": ["topic:maps javascript", "topic:geospatial", "topic:mapbox"] },
-
-    { "slug": "creative-coding", "group": "making", "name": "Creative coding", "description": "Generative art, shaders and creative coding.", "queries": ["topic:creative-coding", "topic:generative-art", "topic:shaders"] },
-    { "slug": "cad-3d-printing", "group": "making", "name": "CAD and 3D printing", "description": "Code-based CAD, slicers and 3D printing tools.", "queries": ["topic:cad parametric", "topic:3d-printing", "topic:openscad"] },
-    { "slug": "embedded-iot", "group": "making", "name": "Embedded and IoT", "description": "Microcontrollers, firmware and smart-home platforms.", "queries": ["topic:esp32", "topic:home-automation", "topic:embedded firmware"] },
-
-    { "slug": "data-science-ml", "group": "data", "name": "Data science and ML", "description": "Dataframes, notebooks, ML training and data pipelines.", "queries": ["topic:dataframe", "topic:machine-learning library", "topic:data-pipeline"] },
-
-    { "slug": "testing", "group": "quality-ops", "name": "Testing", "description": "Unit, integration and end-to-end testing tools.", "queries": ["topic:testing-framework", "topic:e2e-testing", "topic:unit-testing javascript"] },
-    { "slug": "deploy-infra", "group": "quality-ops", "name": "Deploy and infrastructure", "description": "Deployment, self-hosting and infrastructure as code.", "queries": ["topic:self-hosted paas", "topic:infrastructure-as-code", "topic:deployment"] },
-    { "slug": "observability", "group": "quality-ops", "name": "Observability", "description": "Logging, monitoring and error tracking.", "queries": ["topic:observability", "topic:error-tracking", "topic:logging"] },
-    { "slug": "analytics", "group": "quality-ops", "name": "Analytics", "description": "Product and web analytics.", "queries": ["topic:web-analytics", "topic:product-analytics", "topic:privacy-friendly analytics"] },
-    { "slug": "security", "group": "quality-ops", "name": "Security", "description": "Security scanning and hardening.", "queries": ["topic:security-scanner", "topic:secret-scanning", "topic:vulnerability-scanner"] },
-    { "slug": "dev-tooling", "group": "quality-ops", "name": "Developer tooling", "description": "Linting, formatting, bundling, monorepos and build tools.", "queries": ["topic:linter", "topic:bundler", "topic:monorepo"] },
-    { "slug": "i18n", "group": "quality-ops", "name": "Internationalization", "description": "Translation and localization.", "queries": ["topic:i18n", "topic:localization", "topic:internationalization"] },
-
-    { "slug": "cms-content", "group": "content", "name": "CMS and content", "description": "Content management systems and content tooling.", "queries": ["topic:headless-cms", "topic:cms", "topic:markdown editor"] },
-    { "slug": "docs-sites", "group": "content", "name": "Documentation sites", "description": "Documentation site generators.", "queries": ["topic:documentation-generator", "topic:static-site-generator docs", "topic:docs"] },
-
-    { "slug": "starters", "group": "starters", "name": "Starters", "description": "Templates, boilerplates and starter kits, tagged by domain.", "queries": ["topic:boilerplate", "topic:starter-kit", "topic:template saas"] }
+    {
+      "slug": "web-frameworks",
+      "group": "frontend",
+      "name": "Web frameworks",
+      "description": "Full-stack and frontend frameworks for websites and web apps.",
+      "queries": [
+        "topic:web-framework",
+        "topic:react-framework",
+        "topic:ssr framework"
+      ]
+    },
+    {
+      "slug": "ui-components",
+      "group": "frontend",
+      "name": "UI components",
+      "description": "Component libraries and design systems.",
+      "queries": [
+        "topic:ui-components",
+        "topic:component-library",
+        "topic:design-system react"
+      ]
+    },
+    {
+      "slug": "styling",
+      "group": "frontend",
+      "name": "Styling",
+      "description": "CSS frameworks and styling tools.",
+      "queries": [
+        "topic:css-framework",
+        "topic:tailwindcss plugin",
+        "topic:css-in-js"
+      ]
+    },
+    {
+      "slug": "animation",
+      "group": "frontend",
+      "name": "Animation",
+      "description": "Animation, motion and scroll effects.",
+      "queries": [
+        "topic:animation javascript",
+        "topic:motion react",
+        "topic:scroll-animation"
+      ]
+    },
+    {
+      "slug": "3d-graphics",
+      "group": "frontend",
+      "name": "3D graphics",
+      "description": "3D, WebGL, WebGPU and canvas rendering.",
+      "queries": [
+        "topic:webgl",
+        "topic:threejs",
+        "topic:webgpu"
+      ]
+    },
+    {
+      "slug": "forms-validation",
+      "group": "frontend",
+      "name": "Forms and validation",
+      "description": "Form handling and schema validation.",
+      "queries": [
+        "topic:form-validation",
+        "topic:schema-validation typescript",
+        "topic:react-forms"
+      ]
+    },
+    {
+      "slug": "state-data",
+      "group": "frontend",
+      "name": "State and data fetching",
+      "description": "State management and client-side data fetching.",
+      "queries": [
+        "topic:state-management",
+        "topic:data-fetching",
+        "topic:react-query"
+      ]
+    },
+    {
+      "slug": "charts-dataviz",
+      "group": "frontend",
+      "name": "Charts and data viz",
+      "description": "Charts and data visualization.",
+      "queries": [
+        "topic:charts javascript",
+        "topic:data-visualization",
+        "topic:dashboard charts"
+      ]
+    },
+    {
+      "slug": "backend",
+      "group": "backend-data",
+      "name": "Backend frameworks",
+      "description": "Backend frameworks and API layers.",
+      "queries": [
+        "topic:backend-framework",
+        "topic:rest-api framework",
+        "topic:graphql server"
+      ]
+    },
+    {
+      "slug": "databases",
+      "group": "backend-data",
+      "name": "Databases and ORMs",
+      "description": "Databases, ORMs and query builders.",
+      "queries": [
+        "topic:orm typescript",
+        "topic:database",
+        "topic:postgres"
+      ]
+    },
+    {
+      "slug": "realtime",
+      "group": "backend-data",
+      "name": "Realtime",
+      "description": "Realtime messaging, websockets, sync and local-first.",
+      "queries": [
+        "topic:websocket",
+        "topic:realtime",
+        "topic:local-first"
+      ]
+    },
+    {
+      "slug": "auth",
+      "group": "backend-data",
+      "name": "Authentication",
+      "description": "Authentication, sessions and identity.",
+      "queries": [
+        "topic:authentication",
+        "topic:oauth2 library",
+        "topic:auth nextjs"
+      ]
+    },
+    {
+      "slug": "payments",
+      "group": "backend-data",
+      "name": "Payments",
+      "description": "Payments, billing and subscriptions.",
+      "queries": [
+        "topic:payments",
+        "topic:billing subscriptions",
+        "topic:stripe"
+      ]
+    },
+    {
+      "slug": "ecommerce",
+      "group": "backend-data",
+      "name": "E-commerce",
+      "description": "Headless commerce engines and shop building blocks.",
+      "queries": [
+        "topic:ecommerce headless",
+        "topic:headless-commerce",
+        "topic:ecommerce-platform"
+      ]
+    },
+    {
+      "slug": "email",
+      "group": "backend-data",
+      "name": "Email",
+      "description": "Sending email and building email templates.",
+      "queries": [
+        "topic:email-templates",
+        "topic:email react",
+        "topic:smtp"
+      ]
+    },
+    {
+      "slug": "storage-uploads",
+      "group": "backend-data",
+      "name": "Storage and uploads",
+      "description": "File storage and upload handling.",
+      "queries": [
+        "topic:file-upload",
+        "topic:object-storage",
+        "topic:s3 upload"
+      ]
+    },
+    {
+      "slug": "search",
+      "group": "backend-data",
+      "name": "Search",
+      "description": "Search engines and search libraries.",
+      "queries": [
+        "topic:search-engine",
+        "topic:full-text-search",
+        "topic:fuzzy-search"
+      ]
+    },
+    {
+      "slug": "ai-sdks",
+      "group": "ai",
+      "name": "AI SDKs",
+      "description": "LLM SDKs and model access.",
+      "queries": [
+        "topic:llm sdk",
+        "topic:openai typescript",
+        "topic:llm-inference"
+      ]
+    },
+    {
+      "slug": "agents",
+      "group": "ai",
+      "name": "Agent frameworks",
+      "description": "Frameworks and SDKs for building agents and multi-agent systems.",
+      "queries": [
+        "topic:ai-agents framework",
+        "topic:multi-agent",
+        "topic:agent-framework"
+      ]
+    },
+    {
+      "slug": "coding-agents",
+      "group": "ai",
+      "name": "Coding agents and harnesses",
+      "description": "Coding agents themselves, agent harnesses and add-ons that extend one agent (orchestration layers, subagent delegation).",
+      "queries": [
+        "topic:coding-agent",
+        "topic:claude-code",
+        "topic:agent-harness"
+      ]
+    },
+    {
+      "slug": "agent-workbenches",
+      "group": "ai",
+      "name": "Agent workbenches",
+      "description": "Terminals, desktop apps, dashboards and task boards for running and managing several coding agents (sessions, worktrees, notifications).",
+      "queries": [
+        "topic:claude-code gui",
+        "topic:coding-agents terminal",
+        "topic:agent-orchestration desktop"
+      ]
+    },
+    {
+      "slug": "personal-assistants",
+      "group": "ai",
+      "name": "Personal AI assistants",
+      "description": "Self-hosted personal assistants and computer-use agents that act across chat apps, desktops and devices.",
+      "queries": [
+        "topic:personal-assistant ai",
+        "topic:computer-use",
+        "topic:openclaw"
+      ]
+    },
+    {
+      "slug": "agent-memory",
+      "group": "ai",
+      "name": "Agent memory and context",
+      "description": "Memory, context and knowledge layers for agents: long-term memory, code knowledge graphs, context compression.",
+      "queries": [
+        "topic:agent-memory",
+        "topic:llm-memory",
+        "topic:context-engineering"
+      ]
+    },
+    {
+      "slug": "agent-infra",
+      "group": "ai",
+      "name": "Agent sandboxes, runtimes and evals",
+      "description": "Sandboxes, runtimes, gateways, governance and evaluation for running agents safely.",
+      "queries": [
+        "topic:agent-sandbox",
+        "topic:llm-evaluation agents",
+        "topic:agent-runtime"
+      ]
+    },
+    {
+      "slug": "agent-apps",
+      "group": "ai",
+      "name": "Agent apps",
+      "description": "Ready-made agent applications to self-host, fork or learn from: research agents, domain agents and shared agent workspaces.",
+      "queries": [
+        "topic:research-agent",
+        "topic:ai-agent self-hosted",
+        "topic:autonomous-agents app"
+      ]
+    },
+    {
+      "slug": "rag-vector",
+      "group": "ai",
+      "name": "RAG and vectors",
+      "description": "Retrieval, embeddings and vector databases.",
+      "queries": [
+        "topic:rag",
+        "topic:vector-database",
+        "topic:embeddings"
+      ]
+    },
+    {
+      "slug": "mcp-servers",
+      "group": "ai",
+      "name": "MCP servers",
+      "description": "Notable Model Context Protocol servers.",
+      "queries": [
+        "topic:mcp-server",
+        "topic:model-context-protocol"
+      ]
+    },
+    {
+      "slug": "agent-skills",
+      "group": "ai",
+      "name": "Dev workflow skills",
+      "description": "Skills, plugins and hooks that improve how coding agents plan, write, review and ship code.",
+      "queries": [
+        "topic:agent-skills",
+        "topic:claude-code skills",
+        "topic:claude-code-plugin"
+      ]
+    },
+    {
+      "slug": "framework-skills",
+      "group": "ai",
+      "name": "Framework and platform skills",
+      "description": "Official or expert skills that teach coding agents one framework, platform, cloud or language.",
+      "queries": [
+        "topic:agent-skills official",
+        "topic:claude-skills framework",
+        "topic:agent-skills best-practices"
+      ]
+    },
+    {
+      "slug": "skill-tooling",
+      "group": "ai",
+      "name": "Skill tooling",
+      "description": "Registries, installers, managers, generators and optimizers for agent skills and plugins.",
+      "queries": [
+        "topic:agent-skills registry",
+        "topic:skill-md",
+        "topic:agent-skills cli"
+      ]
+    },
+    {
+      "slug": "docs-skills",
+      "group": "ai",
+      "name": "Docs and slides skills",
+      "description": "Agent skills that write documents, slides, diagrams and HTML pages.",
+      "queries": [
+        "topic:agent-skills slides",
+        "topic:claude-skills pptx",
+        "topic:agent-skills diagram"
+      ]
+    },
+    {
+      "slug": "design-media-skills",
+      "group": "ai",
+      "name": "Design and media skills",
+      "description": "Agent skills for UI design, images, video and animation.",
+      "queries": [
+        "topic:agent-skills design",
+        "topic:claude-skills image",
+        "topic:agent-skills video"
+      ]
+    },
+    {
+      "slug": "business-skills",
+      "group": "ai",
+      "name": "Business and marketing skills",
+      "description": "Agent skills for marketing, SEO, sales, finance, careers and other business work.",
+      "queries": [
+        "topic:agent-skills marketing",
+        "topic:claude-skills seo",
+        "topic:agent-skills finance"
+      ]
+    },
+    {
+      "slug": "research-skills",
+      "group": "ai",
+      "name": "Research and knowledge skills",
+      "description": "Agent skills for research, note-taking and personal knowledge bases.",
+      "queries": [
+        "topic:agent-skills research",
+        "topic:claude-skills obsidian",
+        "topic:agent-skills knowledge-base"
+      ]
+    },
+    {
+      "slug": "game-engines",
+      "group": "games",
+      "name": "Game engines",
+      "description": "Game engines and full game frameworks.",
+      "queries": [
+        "topic:game-engine",
+        "topic:html5-game-engine",
+        "topic:2d-game-engine"
+      ]
+    },
+    {
+      "slug": "game-libraries",
+      "group": "games",
+      "name": "Game libraries",
+      "description": "Physics, rendering, ECS and other game building blocks.",
+      "queries": [
+        "topic:physics-engine",
+        "topic:game-development library",
+        "topic:ecs"
+      ]
+    },
+    {
+      "slug": "multiplayer",
+      "group": "games",
+      "name": "Multiplayer and networking",
+      "description": "Multiplayer servers and game networking.",
+      "queries": [
+        "topic:multiplayer",
+        "topic:game-server",
+        "topic:netcode"
+      ]
+    },
+    {
+      "slug": "mobile",
+      "group": "platforms",
+      "name": "Mobile",
+      "description": "Mobile app frameworks and tooling.",
+      "queries": [
+        "topic:react-native",
+        "topic:mobile-app framework",
+        "topic:expo"
+      ]
+    },
+    {
+      "slug": "desktop",
+      "group": "platforms",
+      "name": "Desktop",
+      "description": "Desktop app frameworks.",
+      "queries": [
+        "topic:desktop-app framework",
+        "topic:electron",
+        "topic:tauri"
+      ]
+    },
+    {
+      "slug": "app-extensions",
+      "group": "platforms",
+      "name": "App extensions",
+      "description": "Building extensions for browsers, VS Code, Obsidian, Raycast and Figma.",
+      "queries": [
+        "topic:browser-extension framework",
+        "topic:vscode-extension template",
+        "topic:obsidian-plugin"
+      ]
+    },
+    {
+      "slug": "bots",
+      "group": "platforms",
+      "name": "Bots",
+      "description": "Frameworks for Discord, Slack, Telegram and WhatsApp bots.",
+      "queries": [
+        "topic:discord-bot framework",
+        "topic:telegram-bot",
+        "topic:slack-bot"
+      ]
+    },
+    {
+      "slug": "cli-tooling",
+      "group": "platforms",
+      "name": "CLI tooling",
+      "description": "Building command-line tools and terminal UIs.",
+      "queries": [
+        "topic:cli-framework",
+        "topic:tui",
+        "topic:command-line-parser"
+      ]
+    },
+    {
+      "slug": "browser-automation",
+      "group": "automation",
+      "name": "Browser automation and scraping",
+      "description": "Browser automation, crawling and scraping.",
+      "queries": [
+        "topic:browser-automation",
+        "topic:web-scraping",
+        "topic:crawler"
+      ]
+    },
+    {
+      "slug": "workflow-automation",
+      "group": "automation",
+      "name": "Workflow automation",
+      "description": "Workflow engines, integrations and job queues.",
+      "queries": [
+        "topic:workflow-automation",
+        "topic:job-queue",
+        "topic:workflow-engine"
+      ]
+    },
+    {
+      "slug": "video-media",
+      "group": "media",
+      "name": "Video and media",
+      "description": "Video generation, editing and processing.",
+      "queries": [
+        "topic:video-editing",
+        "topic:video-generation",
+        "topic:ffmpeg"
+      ]
+    },
+    {
+      "slug": "music-audio",
+      "group": "media",
+      "name": "Music and audio",
+      "description": "Audio engines, synths, music live coding and audio processing.",
+      "queries": [
+        "topic:web-audio",
+        "topic:music live-coding",
+        "topic:audio-processing"
+      ]
+    },
+    {
+      "slug": "images",
+      "group": "media",
+      "name": "Images",
+      "description": "Image processing, optimization and generation.",
+      "queries": [
+        "topic:image-processing",
+        "topic:image-optimization",
+        "topic:stable-diffusion ui"
+      ]
+    },
+    {
+      "slug": "maps-geo",
+      "group": "media",
+      "name": "Maps and geo",
+      "description": "Maps and geospatial tools.",
+      "queries": [
+        "topic:maps javascript",
+        "topic:geospatial",
+        "topic:mapbox"
+      ]
+    },
+    {
+      "slug": "creative-coding",
+      "group": "making",
+      "name": "Creative coding",
+      "description": "Generative art, shaders and creative coding.",
+      "queries": [
+        "topic:creative-coding",
+        "topic:generative-art",
+        "topic:shaders"
+      ]
+    },
+    {
+      "slug": "cad-3d-printing",
+      "group": "making",
+      "name": "CAD and 3D printing",
+      "description": "Code-based CAD, slicers and 3D printing tools.",
+      "queries": [
+        "topic:cad parametric",
+        "topic:3d-printing",
+        "topic:openscad"
+      ]
+    },
+    {
+      "slug": "embedded-iot",
+      "group": "making",
+      "name": "Embedded and IoT",
+      "description": "Microcontrollers, firmware and smart-home platforms.",
+      "queries": [
+        "topic:esp32",
+        "topic:home-automation",
+        "topic:embedded firmware"
+      ]
+    },
+    {
+      "slug": "data-science-ml",
+      "group": "data",
+      "name": "Data science and ML",
+      "description": "Dataframes, notebooks, ML training and data pipelines.",
+      "queries": [
+        "topic:dataframe",
+        "topic:machine-learning library",
+        "topic:data-pipeline"
+      ]
+    },
+    {
+      "slug": "testing",
+      "group": "quality-ops",
+      "name": "Testing",
+      "description": "Unit, integration and end-to-end testing tools.",
+      "queries": [
+        "topic:testing-framework",
+        "topic:e2e-testing",
+        "topic:unit-testing javascript"
+      ]
+    },
+    {
+      "slug": "deploy-infra",
+      "group": "quality-ops",
+      "name": "Deploy and infrastructure",
+      "description": "Deployment, self-hosting and infrastructure as code.",
+      "queries": [
+        "topic:self-hosted paas",
+        "topic:infrastructure-as-code",
+        "topic:deployment"
+      ]
+    },
+    {
+      "slug": "observability",
+      "group": "quality-ops",
+      "name": "Observability",
+      "description": "Logging, monitoring and error tracking.",
+      "queries": [
+        "topic:observability",
+        "topic:error-tracking",
+        "topic:logging"
+      ]
+    },
+    {
+      "slug": "analytics",
+      "group": "quality-ops",
+      "name": "Analytics",
+      "description": "Product and web analytics.",
+      "queries": [
+        "topic:web-analytics",
+        "topic:product-analytics",
+        "topic:privacy-friendly analytics"
+      ]
+    },
+    {
+      "slug": "security",
+      "group": "quality-ops",
+      "name": "Security",
+      "description": "Security scanning and hardening.",
+      "queries": [
+        "topic:security-scanner",
+        "topic:secret-scanning",
+        "topic:vulnerability-scanner"
+      ]
+    },
+    {
+      "slug": "dev-tooling",
+      "group": "quality-ops",
+      "name": "Developer tooling",
+      "description": "Linting, formatting, bundling, monorepos and build tools.",
+      "queries": [
+        "topic:linter",
+        "topic:bundler",
+        "topic:monorepo"
+      ]
+    },
+    {
+      "slug": "i18n",
+      "group": "quality-ops",
+      "name": "Internationalization",
+      "description": "Translation and localization.",
+      "queries": [
+        "topic:i18n",
+        "topic:localization",
+        "topic:internationalization"
+      ]
+    },
+    {
+      "slug": "cms-content",
+      "group": "content",
+      "name": "CMS and content",
+      "description": "Content management systems and content tooling.",
+      "queries": [
+        "topic:headless-cms",
+        "topic:cms",
+        "topic:markdown editor"
+      ]
+    },
+    {
+      "slug": "docs-sites",
+      "group": "content",
+      "name": "Documentation sites",
+      "description": "Documentation site generators.",
+      "queries": [
+        "topic:documentation-generator",
+        "topic:static-site-generator docs",
+        "topic:docs"
+      ]
+    },
+    {
+      "slug": "starters",
+      "group": "starters",
+      "name": "Starters",
+      "description": "Templates, boilerplates and starter kits, tagged by domain.",
+      "queries": [
+        "topic:boilerplate",
+        "topic:starter-kit",
+        "topic:template saas"
+      ]
+    }
   ],
   "domains": [
-    { "slug": "websites", "name": "Websites and web apps", "description": "Landing pages, SaaS, dashboards, portfolios.", "categories": ["web-frameworks", "ui-components", "styling", "animation", "forms-validation", "state-data", "auth", "databases", "backend", "payments", "email", "storage-uploads", "analytics", "maps-geo", "deploy-infra", "testing", "starters"] },
-    { "slug": "ecommerce", "name": "E-commerce", "description": "Web shops and marketplaces.", "categories": ["ecommerce", "payments", "web-frameworks", "ui-components", "search", "email", "auth", "databases", "starters"] },
-    { "slug": "mobile-apps", "name": "Mobile apps", "description": "iOS and Android apps.", "categories": ["mobile", "ui-components", "state-data", "auth", "databases", "payments", "maps-geo", "analytics", "testing", "starters"] },
-    { "slug": "desktop-apps", "name": "Desktop apps", "description": "Windows, macOS and Linux apps.", "categories": ["desktop", "ui-components", "state-data", "databases", "testing", "starters"] },
-    { "slug": "games", "name": "Games", "description": "2D, 3D, browser and multiplayer games.", "categories": ["game-engines", "game-libraries", "multiplayer", "3d-graphics", "music-audio", "starters"] },
-    { "slug": "ai-apps", "name": "AI apps and agents", "description": "Chatbots, RAG apps and autonomous agents.", "categories": ["ai-sdks", "agents", "rag-vector", "mcp-servers", "web-frameworks", "ui-components", "databases", "observability", "starters"] },
-    { "slug": "agent-tools", "name": "Tools for coding agents", "description": "Skills, plugins and MCP servers for Claude Code, Codex and others.", "categories": ["agent-skills", "mcp-servers", "ai-sdks", "cli-tooling", "browser-automation", "testing"] },
-    { "slug": "cli-tools", "name": "CLI and terminal tools", "description": "Command-line tools and terminal UIs.", "categories": ["cli-tooling", "testing", "dev-tooling"] },
-    { "slug": "app-extensions", "name": "Extensions for apps", "description": "Browser, VS Code, Obsidian, Raycast and Figma extensions.", "categories": ["app-extensions", "ui-components", "styling", "testing", "starters"] },
-    { "slug": "bots", "name": "Bots", "description": "Discord, Slack, Telegram and WhatsApp bots.", "categories": ["bots", "ai-sdks", "databases", "deploy-infra"] },
-    { "slug": "apis-backends", "name": "APIs and backends", "description": "REST and GraphQL services, microservices.", "categories": ["backend", "databases", "auth", "realtime", "workflow-automation", "observability", "testing", "deploy-infra", "security"] },
-    { "slug": "automation-scraping", "name": "Automation and scraping", "description": "Crawlers, workflows and integrations.", "categories": ["browser-automation", "workflow-automation", "ai-sdks", "databases"] },
-    { "slug": "data-ml", "name": "Data, analytics and ML", "description": "Analysis, dashboards, data pipelines and ML.", "categories": ["data-science-ml", "charts-dataviz", "maps-geo", "databases", "analytics", "workflow-automation"] },
-    { "slug": "video-media", "name": "Video and media", "description": "Video generation and editing, media apps.", "categories": ["video-media", "images", "music-audio", "animation", "storage-uploads"] },
-    { "slug": "music-audio", "name": "Music and audio", "description": "Synths, sequencers, audio apps and music live coding.", "categories": ["music-audio", "creative-coding", "ui-components"] },
-    { "slug": "content-docs", "name": "Content and docs", "description": "Blogs, documentation and CMS-based sites.", "categories": ["cms-content", "docs-sites", "web-frameworks", "search", "i18n", "analytics"] },
-    { "slug": "3d-xr", "name": "3D, VR and AR", "description": "3D experiences and WebXR.", "categories": ["3d-graphics", "game-engines", "creative-coding", "animation"] },
-    { "slug": "creative-coding", "name": "Creative coding and generative art", "description": "Generative visuals, shaders, interactive art.", "categories": ["creative-coding", "3d-graphics", "animation", "music-audio"] },
-    { "slug": "cad-3d-printing", "name": "CAD and 3D printing", "description": "Parametric models and printable designs.", "categories": ["cad-3d-printing", "3d-graphics"] },
-    { "slug": "hardware-iot", "name": "Hardware, IoT and smart home", "description": "Microcontrollers, sensors and home automation.", "categories": ["embedded-iot", "realtime", "databases", "charts-dataviz"] }
+    {
+      "slug": "websites",
+      "name": "Websites and web apps",
+      "description": "Landing pages, SaaS, dashboards, portfolios.",
+      "categories": [
+        "web-frameworks",
+        "ui-components",
+        "styling",
+        "animation",
+        "forms-validation",
+        "state-data",
+        "auth",
+        "databases",
+        "backend",
+        "payments",
+        "email",
+        "storage-uploads",
+        "analytics",
+        "maps-geo",
+        "deploy-infra",
+        "testing",
+        "starters"
+      ]
+    },
+    {
+      "slug": "ecommerce",
+      "name": "E-commerce",
+      "description": "Web shops and marketplaces.",
+      "categories": [
+        "ecommerce",
+        "payments",
+        "web-frameworks",
+        "ui-components",
+        "search",
+        "email",
+        "auth",
+        "databases",
+        "starters"
+      ]
+    },
+    {
+      "slug": "mobile-apps",
+      "name": "Mobile apps",
+      "description": "iOS and Android apps.",
+      "categories": [
+        "mobile",
+        "ui-components",
+        "state-data",
+        "auth",
+        "databases",
+        "payments",
+        "maps-geo",
+        "analytics",
+        "testing",
+        "starters"
+      ]
+    },
+    {
+      "slug": "desktop-apps",
+      "name": "Desktop apps",
+      "description": "Windows, macOS and Linux apps.",
+      "categories": [
+        "desktop",
+        "ui-components",
+        "state-data",
+        "databases",
+        "testing",
+        "starters"
+      ]
+    },
+    {
+      "slug": "games",
+      "name": "Games",
+      "description": "2D, 3D, browser and multiplayer games.",
+      "categories": [
+        "game-engines",
+        "game-libraries",
+        "multiplayer",
+        "3d-graphics",
+        "music-audio",
+        "starters"
+      ]
+    },
+    {
+      "slug": "ai-apps",
+      "name": "AI apps and agents",
+      "description": "Chatbots, RAG apps and autonomous agents.",
+      "categories": [
+        "ai-sdks",
+        "agents",
+        "rag-vector",
+        "mcp-servers",
+        "web-frameworks",
+        "ui-components",
+        "databases",
+        "observability",
+        "starters",
+        "coding-agents",
+        "personal-assistants",
+        "agent-memory",
+        "agent-infra",
+        "agent-apps"
+      ]
+    },
+    {
+      "slug": "agent-tools",
+      "name": "Tools for coding agents",
+      "description": "Skills, plugins and MCP servers for Claude Code, Codex and others.",
+      "categories": [
+        "agent-skills",
+        "mcp-servers",
+        "ai-sdks",
+        "cli-tooling",
+        "browser-automation",
+        "testing",
+        "coding-agents",
+        "agent-memory",
+        "agent-infra",
+        "docs-skills",
+        "design-media-skills",
+        "business-skills",
+        "research-skills",
+        "framework-skills",
+        "skill-tooling",
+        "agent-apps",
+        "agent-workbenches"
+      ]
+    },
+    {
+      "slug": "cli-tools",
+      "name": "CLI and terminal tools",
+      "description": "Command-line tools and terminal UIs.",
+      "categories": [
+        "cli-tooling",
+        "testing",
+        "dev-tooling"
+      ]
+    },
+    {
+      "slug": "app-extensions",
+      "name": "Extensions for apps",
+      "description": "Browser, VS Code, Obsidian, Raycast and Figma extensions.",
+      "categories": [
+        "app-extensions",
+        "ui-components",
+        "styling",
+        "testing",
+        "starters"
+      ]
+    },
+    {
+      "slug": "bots",
+      "name": "Bots",
+      "description": "Discord, Slack, Telegram and WhatsApp bots.",
+      "categories": [
+        "bots",
+        "ai-sdks",
+        "databases",
+        "deploy-infra",
+        "personal-assistants"
+      ]
+    },
+    {
+      "slug": "apis-backends",
+      "name": "APIs and backends",
+      "description": "REST and GraphQL services, microservices.",
+      "categories": [
+        "backend",
+        "databases",
+        "auth",
+        "realtime",
+        "workflow-automation",
+        "observability",
+        "testing",
+        "deploy-infra",
+        "security"
+      ]
+    },
+    {
+      "slug": "automation-scraping",
+      "name": "Automation and scraping",
+      "description": "Crawlers, workflows and integrations.",
+      "categories": [
+        "browser-automation",
+        "workflow-automation",
+        "ai-sdks",
+        "databases"
+      ]
+    },
+    {
+      "slug": "data-ml",
+      "name": "Data, analytics and ML",
+      "description": "Analysis, dashboards, data pipelines and ML.",
+      "categories": [
+        "data-science-ml",
+        "charts-dataviz",
+        "maps-geo",
+        "databases",
+        "analytics",
+        "workflow-automation"
+      ]
+    },
+    {
+      "slug": "video-media",
+      "name": "Video and media",
+      "description": "Video generation and editing, media apps.",
+      "categories": [
+        "video-media",
+        "images",
+        "music-audio",
+        "animation",
+        "storage-uploads",
+        "design-media-skills"
+      ]
+    },
+    {
+      "slug": "music-audio",
+      "name": "Music and audio",
+      "description": "Synths, sequencers, audio apps and music live coding.",
+      "categories": [
+        "music-audio",
+        "creative-coding",
+        "ui-components"
+      ]
+    },
+    {
+      "slug": "content-docs",
+      "name": "Content and docs",
+      "description": "Blogs, documentation and CMS-based sites.",
+      "categories": [
+        "cms-content",
+        "docs-sites",
+        "web-frameworks",
+        "search",
+        "i18n",
+        "analytics",
+        "docs-skills",
+        "research-skills"
+      ]
+    },
+    {
+      "slug": "3d-xr",
+      "name": "3D, VR and AR",
+      "description": "3D experiences and WebXR.",
+      "categories": [
+        "3d-graphics",
+        "game-engines",
+        "creative-coding",
+        "animation"
+      ]
+    },
+    {
+      "slug": "creative-coding",
+      "name": "Creative coding and generative art",
+      "description": "Generative visuals, shaders, interactive art.",
+      "categories": [
+        "creative-coding",
+        "3d-graphics",
+        "animation",
+        "music-audio"
+      ]
+    },
+    {
+      "slug": "cad-3d-printing",
+      "name": "CAD and 3D printing",
+      "description": "Parametric models and printable designs.",
+      "categories": [
+        "cad-3d-printing",
+        "3d-graphics"
+      ]
+    },
+    {
+      "slug": "hardware-iot",
+      "name": "Hardware, IoT and smart home",
+      "description": "Microcontrollers, sensors and home automation.",
+      "categories": [
+        "embedded-iot",
+        "realtime",
+        "databases",
+        "charts-dataviz"
+      ]
+    }
   ]
 }

@@ -1,0 +1,1700 @@
+{
+  "category": "coding-agents",
+  "entries": [
+    {
+      "id": "google/agents-cli",
+      "name": "agents-cli",
+      "category": "coding-agents",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "google-cloud",
+        "adk",
+        "coding-agents",
+        "deployment",
+        "evaluation"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Give your coding agent the skills and commands to build, evaluate and deploy ADK agents on Google Cloud.",
+      "why": "Official Google tool that works with Claude Code, Codex and other coding agents.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "agents-cli provides CLI commands and skills so a coding agent can scaffold, run, evaluate and deploy agents built with ADK. It also works standalone from the terminal. It can add deployment and CI/CD to an existing project.",
+      "best_for": "Teams building agents on Google Cloud and the ADK who want their coding assistant to handle the lifecycle.",
+      "not_for": "It is a tool for coding agents, not an agent framework itself. Deployment features need Google Cloud, and it is tied to ADK.",
+      "keywords": [
+        "google adk cli",
+        "deploy agents google cloud",
+        "gemini agents scaffold",
+        "adk agent evaluation",
+        "coding agent skills google",
+        "agent starter pack",
+        "vertex agent engine"
+      ]
+    },
+    {
+      "id": "SynkraAI/aiox-core",
+      "name": "AIOX Squad",
+      "category": "coding-agents",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "ai-orchestration",
+        "squads",
+        "cli-first",
+        "multi-agent",
+        "npm"
+      ],
+      "ecosystems": [
+        "javascript"
+      ],
+      "use_for": "Orchestrating specialized AI agent squads and workflows from a CLI-first npm package.",
+      "why": "Offers an L1-L4 layered configuration system with inheritance across projects.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "AIOX Squad (aiox-core) is an open-source AI orchestration framework distributed as the npm package @aiox-squads/core. It runs specialized agent squads and workflows through a CLI-first experience, with an optional paid Pro tier adding a persistent memory layer, analytics dashboard and enterprise integrations.",
+      "best_for": "Developers who want a CLI-driven, open-source multi-agent orchestration framework with optional paid extensions.",
+      "not_for": "The premium memory layer, analytics and enterprise connectors require a separate Pro license, not included in the open-source core.",
+      "keywords": [
+        "aiox squad",
+        "ai orchestration framework",
+        "aiox-core",
+        "multi-agent cli",
+        "squad based agents",
+        "ai orchestration npm"
+      ]
+    },
+    {
+      "id": "microsoft/amplifier",
+      "name": "Amplifier",
+      "category": "coding-agents",
+      "kinds": [
+        "cli",
+        "framework"
+      ],
+      "tags": [
+        "modular-agent",
+        "cli-assistant",
+        "research-demonstrator",
+        "bundles",
+        "session-persistence"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Running a modular command-line AI assistant that can generate code, debug, research and build its own modules.",
+      "why": "Swaps AI providers, tools and behaviors like LEGO bricks through composable bundle configuration packages.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Amplifier is a modular, extensible AI command-line assistant, currently an early research preview. It includes specialized agents for debugging, architecture design and research, persists sessions across projects, and can be used to build new Amplifier modules.",
+      "best_for": "Developers comfortable with an early-stage, actively changing research tool on macOS, Linux or WSL.",
+      "not_for": "Not production-ready: the project explicitly lacks built-in safety systems and native Windows shells have known issues.",
+      "keywords": [
+        "microsoft amplifier",
+        "modular ai cli",
+        "amplifier agent",
+        "bug-hunter agent",
+        "zen-architect agent",
+        "ai command line assistant"
+      ]
+    },
+    {
+      "id": "apache/maka",
+      "name": "Apache Maka",
+      "category": "coding-agents",
+      "kinds": [
+        "framework",
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "agent-harness",
+        "event-log",
+        "desktop",
+        "tui",
+        "evaluation"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run a coding agent workspace where every model message and tool call is kept in an append-only log.",
+      "why": "Publishes benchmark runs with per-task records and treats the event log as the runtime.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Apache Maka (Incubating) is an agent workspace. Every message, tool call and permission decision is an append-only event, and the UI, prompts and crash recovery are built from it. Desktop, TUI, CLI and eval are clients of one runtime host, and sessions stay on your machine.",
+      "best_for": "People who want an auditable, local agent harness that works with their own model.",
+      "not_for": "Incubating Apache project at an early release (0.2.0). Requires Node.js 22.19+ or 24+.",
+      "keywords": [
+        "agent harness",
+        "apache incubator agent",
+        "auditable coding agent",
+        "agent event log",
+        "local coding agent desktop",
+        "harness benchmark",
+        "terminal agent tui"
+      ]
+    },
+    {
+      "id": "AndyMik90/Aperant",
+      "name": "Aperant (Auto Claude)",
+      "category": "coding-agents",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "multi-agent",
+        "coding-agent",
+        "worktrees",
+        "qa-loop",
+        "desktop",
+        "claude"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Let a team of agents plan, build and validate software tasks in isolated git worktrees.",
+      "why": "A built-in QA loop, AI merge conflict handling and cross-session memory around parallel agent runs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Aperant, formerly Auto Claude, is an autonomous multi-agent coding framework with a desktop app. You describe a task and agents plan, implement and validate it, running up to 12 agent terminals in parallel. Changes stay in git worktrees, with a memory layer, GitHub and GitLab import and Linear sync.",
+      "best_for": "Developers who want to hand off whole features and review the result.",
+      "not_for": "Proprietary products without a licence check, since it is AGPL-3.0. It connects to Claude through OAuth.",
+      "keywords": [
+        "auto claude",
+        "autonomous coding agent",
+        "multi agent coding",
+        "claude code orchestrator",
+        "agent qa loop",
+        "parallel agents worktrees",
+        "ai pair programmer desktop",
+        "aperant"
+      ]
+    },
+    {
+      "id": "get-bb/bb",
+      "name": "bb",
+      "category": "coding-agents",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "agentic-ide",
+        "desktop",
+        "threads",
+        "http-api",
+        "self-modifying"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Use an agentic IDE you can drive from a desktop app, web app, CLI or HTTP API.",
+      "why": "Every surface is a first-class way to drive it, and work runs in steerable threads.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An agentic IDE that can control, customize and automate itself. Work runs in threads you can follow, steer or hand to another agent. Run it as a desktop app or with npx on localhost.",
+      "best_for": "Developers who want a scriptable agent IDE as a base for their own agent workflow.",
+      "not_for": "In active development with changing workflows. Windows and Linux desktop builds are alpha.",
+      "keywords": [
+        "agentic ide",
+        "agent ide",
+        "self-building ide",
+        "coding agent app",
+        "npx bb-app",
+        "agent threads",
+        "software factory"
+      ]
+    },
+    {
+      "id": "fengshao1227/ccg-workflow",
+      "name": "CCG Workflow",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin",
+        "cli"
+      ],
+      "tags": [
+        "claude-code",
+        "multi-model",
+        "orchestration",
+        "workflow",
+        "codex"
+      ],
+      "ecosystems": [
+        "typescript",
+        "go"
+      ],
+      "use_for": "Let Claude Code orchestrate Codex, Gemini and other models through one /ccg:go command.",
+      "why": "Classifies the task, picks a strategy and runs multi-model analysis with an approval step.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "CCG is a workflow engine for Claude Code. It keeps Claude in control and sends specialist work to Codex, Grok, Kimi and Antigravity through a Go bridge. One command reads project context, selects a strategy, makes a plan and waits for approval. It also installs optional skills.",
+      "best_for": "Claude Code users who want a ready multi-model collaboration workflow.",
+      "not_for": "Needs the other model CLIs and accounts to be useful. It is built around Claude Code.",
+      "keywords": [
+        "multi model claude code",
+        "claude codex gemini workflow",
+        "ccg-workflow",
+        "claude code orchestration",
+        "multi agent coding workflow",
+        "claude code plugin commands",
+        "dual model review"
+      ]
+    },
+    {
+      "id": "Chachamaru127/claude-code-harness",
+      "name": "Claude Code Harness",
+      "category": "coding-agents",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "claude-code",
+        "plan-work-review",
+        "autonomous-dev",
+        "progress-tracking",
+        "harness"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Delegating the plan, implementation and review cycle for a coding task to Claude Code or similar CLIs.",
+      "why": "Tracks task status and pending decisions in files you can inspect, like a Plan Brief and Acceptance view.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Claude Code Harness is a workflow for Claude Code, Codex CLI, Cursor or Grok that drafts a plan and spec file, works through recorded tasks, and reports which completion criteria passed, failed or remain unverified. A resume command recovers the recorded plan, changes and check results after an interruption.",
+      "best_for": "Developers who want a visible plan-work-review cycle with resumable progress tracking instead of an opaque single agent run.",
+      "not_for": "Progress percentage counts recorded tasks, not proven-working features, so it is not a substitute for real end-to-end testing.",
+      "keywords": [
+        "claude code harness",
+        "plan work review",
+        "autonomous dev cycle",
+        "harness-plan",
+        "harness-work resume",
+        "ai coding workflow"
+      ]
+    },
+    {
+      "id": "nyldn/claude-octopus",
+      "name": "Claude Octopus",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "multi-model",
+        "consensus",
+        "claude-code",
+        "review",
+        "workflows"
+      ],
+      "ecosystems": [
+        "markdown",
+        "shell"
+      ],
+      "use_for": "Run several AI models on one task and flag disagreements before you ship.",
+      "why": "A 75% consensus gate across twelve external providers catches blind spots.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Claude Code plugin that adds /octo commands for research, design, build and review. It sends work to providers like Codex, Copilot, Ollama and Perplexity, uses consensus gates, and can remember across sessions.",
+      "best_for": "High-stakes work where a second and third model opinion is worth the extra cost.",
+      "not_for": "Costs add up with several API providers. It is independent and not affiliated with Anthropic.",
+      "keywords": [
+        "multi-llm review",
+        "multi model consensus",
+        "claude code plugin",
+        "adversarial review",
+        "codex claude together",
+        "octo",
+        "multi-agent workflow"
+      ]
+    },
+    {
+      "id": "nicedreamzapp/claude-code-local",
+      "name": "claude-code-local",
+      "category": "coding-agents",
+      "kinds": [
+        "service",
+        "cli"
+      ],
+      "tags": [
+        "local-llm",
+        "apple-silicon",
+        "mlx",
+        "anthropic-api",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "python",
+        "mlx"
+      ],
+      "use_for": "Run Claude Code against local models on an Apple Silicon Mac through an MLX server that speaks the Anthropic API.",
+      "why": "No translation layer: the server speaks the Anthropic Messages API directly, with tool-call repair and prompt caching.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An MLX-based server that exposes the Anthropic Messages API with streaming and converts each local model's tool-call format into Claude Code tool calls. Install scripts pick a model that fits your Mac's memory. It also includes a small terminal agent and a resume helper.",
+      "best_for": "Mac users who want Claude Code to keep working offline or when out of cloud usage, with private local models.",
+      "not_for": "Windows or Linux, or Intel Macs: it needs Apple Silicon. Local models are less capable than hosted ones.",
+      "keywords": [
+        "claude code local model",
+        "claude code offline mac",
+        "mlx anthropic api server",
+        "run claude code with local llm",
+        "apple silicon coding agent",
+        "claude code usage limit workaround",
+        "gemma qwen claude code"
+      ]
+    },
+    {
+      "id": "chaseai-yt/claudex-loop",
+      "name": "Claudex Loop",
+      "category": "coding-agents",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "claude-code",
+        "codex",
+        "plan-review",
+        "adversarial-review",
+        "cross-model"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Running a cross-model workflow where Claude Code and Codex alternate between building and adversarially reviewing a plan.",
+      "why": "Records a SHA256 fingerprint of the approved plan and changed files so later edits invalidate the approval.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Claudex Loop is a set of Claude Code / Codex skills for requirements, plan review, implementation and final inspection using two models that swap builder and reviewer roles. Approvals are tied to a plan's SHA256 hash and a fingerprint of inspected changes, so later edits require another inspection.",
+      "best_for": "Developers who want an adversarial second model reviewing a plan and the resulting code before trusting it.",
+      "not_for": "A clean review result is not proof of correctness; zero findings is valid but not a guaranteed quality score.",
+      "keywords": [
+        "claudex loop",
+        "claude code codex workflow",
+        "cross model plan review",
+        "adversarial code review skill",
+        "codex review skill",
+        "codex build skill"
+      ]
+    },
+    {
+      "id": "Kuberwastaken/claurst",
+      "name": "Claurst",
+      "category": "coding-agents",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "coding-agent",
+        "tui",
+        "multi-provider",
+        "rust",
+        "terminal"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Use a terminal coding agent in Rust that works with many model providers.",
+      "why": "Fast Rust TUI agent with no telemetry, hooks, plugins and a macOS sandbox.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source terminal coding agent written in Rust. It began as a clean-room reimplementation of Claude Code's behavior and now has multi-provider routing, a plugin system, hooks, skills, AGENTS.md and CLAUDE.md loading, and a sandbox for Bash commands on macOS.",
+      "best_for": "Developers who want a Claude Code style agent they can run with any provider and fully control.",
+      "not_for": "Anyone who needs a stable tool. It is in beta (v0.2.0) with rough edges, it is GPL-3.0, and the README says experimental features are flagged.",
+      "keywords": [
+        "claude code alternative",
+        "open source coding agent",
+        "rust coding agent",
+        "terminal ai pair programmer",
+        "multi provider coding cli",
+        "opencode alternative",
+        "claurst"
+      ]
+    },
+    {
+      "id": "HKUDS/ClawTeam",
+      "name": "ClawTeam",
+      "category": "coding-agents",
+      "kinds": [
+        "cli",
+        "framework"
+      ],
+      "tags": [
+        "multi-agent",
+        "swarm",
+        "orchestration",
+        "cli-agents",
+        "automation"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Let a leader agent spawn sub-agents, split work, and coordinate them across CLI agents like Claude Code.",
+      "why": "Wraps existing CLI agents into swarms with task dependencies and inter-agent messaging.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "ClawTeam lets AI agents form swarms: a leader spawns specialised sub-agents with their own environments, assigns tasks with dependencies, passes messages between them and tracks progress. It works with Claude Code, Codex, OpenClaw, Cursor and other CLI agents.",
+      "best_for": "Running several coding or research agents in parallel under one coordinating agent.",
+      "not_for": "Simple single-agent jobs. The README is heavy on broad claims (research, hedge fund) and light on technical detail, so check the code before relying on it.",
+      "keywords": [
+        "agent swarm",
+        "multi-agent orchestration",
+        "claude code swarm",
+        "spawn sub-agents",
+        "agent team",
+        "clawteam",
+        "parallel coding agents"
+      ]
+    },
+    {
+      "id": "codewhale-hq/Codewhale",
+      "name": "Codewhale",
+      "category": "coding-agents",
+      "kinds": [
+        "cli",
+        "engine"
+      ],
+      "tags": [
+        "coding-agent",
+        "terminal",
+        "rust",
+        "multi-provider",
+        "mcp"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Run a terminal coding agent with any hosted or local model, with approvals and an undo log.",
+      "why": "Works with 40+ provider routes and local runtimes, with approval modes and receipts of every file and command.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Codewhale is an open-source Rust coding agent for the terminal. It reads your project, edits files, runs commands and checks its work. You pick the model, from hosted providers to Ollama or vLLM. It supports MCP servers, skills, plugins, hooks and sub-agents.",
+      "best_for": "A Claude Code style terminal agent that is not tied to one model vendor, with control over what it may run.",
+      "not_for": "Terminal-first tool, not a library for embedding agents in your own app. Account sign-in is optional but pushed in the quickstart.",
+      "keywords": [
+        "coding agent",
+        "terminal agent",
+        "any model",
+        "claude code alternative",
+        "ollama coding agent",
+        "rust agent engine",
+        "openai compatible agent"
+      ]
+    },
+    {
+      "id": "openai/codex-plugin-cc",
+      "name": "Codex plugin for Claude Code",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "codex",
+        "claude-code",
+        "code-review",
+        "delegation"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Call Codex from inside Claude Code to review code or delegate tasks",
+      "why": "Official OpenAI plugin bridging Codex and Claude Code for second-opinion reviews and background tasks.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Claude Code plugin that calls OpenAI Codex from inside Claude Code. Adds /codex:review, /codex:adversarial-review, /codex:rescue, /codex:status, /codex:result and /codex:cancel to run reviews or delegate tasks as background jobs.",
+      "best_for": "Getting a second-opinion review from Codex or delegating tasks to it while staying in Claude Code.",
+      "not_for": "Needs a ChatGPT subscription or OpenAI API key and Node 18.18+; usage counts against Codex limits. Multi-file reviews can be slow.",
+      "keywords": [
+        "codex",
+        "claude code plugin",
+        "code review",
+        "second opinion",
+        "delegate tasks",
+        "adversarial review",
+        "background jobs",
+        "openai"
+      ]
+    },
+    {
+      "id": "deepseek-ai/deepseek-harness",
+      "name": "DeepSeek Harness",
+      "category": "coding-agents",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "agent-harness",
+        "plugins",
+        "web-ui",
+        "deepseek",
+        "cordis"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Run and extend a plugin-based coding agent harness with a local web UI.",
+      "why": "Built on an everything-is-a-plugin design powered by Cordis.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "DeepSeek Harness (dsh) is an open-source agent harness from DeepSeek AI. Everything in it is a plugin. You start it with npx and it opens a local Web UI, or you can build it from source with pnpm.",
+      "best_for": "You want a hackable, plugin-first agent harness and can live with fast-changing code.",
+      "not_for": "It is in developer preview, and the README warns of compatibility-breaking changes. Read the safety notice before running it.",
+      "keywords": [
+        "deepseek harness",
+        "dsh",
+        "agent harness",
+        "plugin agent architecture",
+        "deepseek agent",
+        "cordis",
+        "coding agent harness"
+      ]
+    },
+    {
+      "id": "dataelement/dsh-desktop",
+      "name": "DSH Desktop",
+      "category": "coding-agents",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "desktop",
+        "deepseek",
+        "agent",
+        "presets",
+        "pptx",
+        "harness"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Run the DeepSeek Harness agent as an installed desktop app with presets, workspaces and PPTX output.",
+      "why": "Adds native desktop features to DeepSeek Harness: workspace picker, portable presets and phone continuation.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "DSH Desktop packages the local DeepSeek Harness as a desktop app. It starts Harness automatically, manages workspaces, models and plugins, and keeps settings across upgrades. It adds portable agent presets, a PPT mode, offline DOCX/PPTX/XLSX skills, Safe Mode and phone access over the local network.",
+      "best_for": "Using DeepSeek Harness without a terminal.",
+      "not_for": "Other agent runtimes. It is an early preview built on a release candidate of the DeepSeek Harness package.",
+      "keywords": [
+        "deepseek harness desktop",
+        "deepseek agent app",
+        "desktop agent app",
+        "agent presets",
+        "pptx generator agent",
+        "dsh desktop",
+        "deepseek coding agent",
+        "dataelem"
+      ]
+    },
+    {
+      "id": "yjh051108/dsh-routing-suite",
+      "name": "dsh-routing-suite",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "deepseek-harness",
+        "routing",
+        "injector",
+        "plugin",
+        "reasoning-modes"
+      ],
+      "ecosystems": [
+        "node",
+        "powershell"
+      ],
+      "use_for": "Add a runtime injector, task-aware reasoning-mode router and graded task protocol to DeepSeek Harness.",
+      "why": "Bundles three DSH plugins, with tooling to measure how well a protocol keeps agents diligent on long tasks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A bundle for the DSH agent harness: an injector that manages the runtime without restarts, router presets that pick a reasoning mode per task, and a graded two-level task protocol with red-team gates and audit endpoints.",
+      "best_for": "People already running DeepSeek Harness who want model routing and a stricter task protocol.",
+      "not_for": "Other agent hosts. It targets DSH versions >=0.1.0-rc.6 <0.2.0, a developer preview with breaking changes. README is mostly Chinese.",
+      "keywords": [
+        "deepseek harness plugin",
+        "dsh plugin",
+        "reasoning mode router",
+        "agent task protocol",
+        "runtime injector",
+        "model routing preset"
+      ]
+    },
+    {
+      "id": "ccch1mneyyy/dsh-TUI",
+      "name": "dsh-TUI",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin",
+        "cli"
+      ],
+      "tags": [
+        "tui",
+        "deepseek",
+        "plugin",
+        "terminal",
+        "notifications"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Add an interactive terminal UI with status, rewind and notifications to DeepSeek Harness.",
+      "why": "Uses only DSH's public exports, installs from npm and leaves no patches behind when removed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A terminal UI plugin for DeepSeek Harness with streaming Markdown, tool cards, command and file completion, a launchpad with first-run setup, double-Esc rewind, a context bar, a TPS gauge and task-complete notifications. It also has a pixel whale mascot.",
+      "best_for": "DeepSeek Harness users who want a richer terminal interface.",
+      "not_for": "Only works with DeepSeek Harness, and targets a specific DSH release.",
+      "keywords": [
+        "deepseek harness",
+        "dsh plugin",
+        "deepseek tui",
+        "terminal ui for coding agent",
+        "deepseek cli ui",
+        "agent tui plugin"
+      ]
+    },
+    {
+      "id": "zhu1090093659/dsh-web",
+      "name": "dsh-web",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "deepseek",
+        "plugins",
+        "web-gui",
+        "themes",
+        "task-automation"
+      ],
+      "ecosystems": [
+        "javascript",
+        "deepseek-harness"
+      ],
+      "use_for": "Add plugins and themes to the DeepSeek Harness Web GUI: task board, remote control, SSH, Git graph.",
+      "why": "Mounts through the official profile mechanism without changing DeepSeek Harness source.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A family of plugins and themes for DeepSeek Harness (DSH) Web and its desktop client. Plugins cover cron task automation, mobile remote access, web SSH, Git graph with worktrees, session archives and token cost tracking. Install all at once or one by one.",
+      "best_for": "DeepSeek Harness users who want more workflow and ops features, plus themes from the workshop.",
+      "not_for": "Only useful with DeepSeek Harness. The README is mostly in Chinese. It is not a general agent framework.",
+      "keywords": [
+        "deepseek harness plugins",
+        "dsh web",
+        "deepseek desktop plugins",
+        "agent web gui themes",
+        "token usage tracker",
+        "web ssh terminal"
+      ]
+    },
+    {
+      "id": "kunchenguid/firstmate",
+      "name": "firstmate",
+      "category": "coding-agents",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "agent-distro",
+        "multi-agent",
+        "git-worktrees",
+        "coding-agents",
+        "supervisor"
+      ],
+      "ecosystems": [
+        "markdown",
+        "tmux"
+      ],
+      "use_for": "Talk to one agent that runs a crew of coding agents in separate git worktrees.",
+      "why": "An agent distro: instructions, skills and policies in a repo, with no app to install.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A portable directory of instructions, skills, tooling and state conventions that turns a general agent into a crew manager. It spawns autonomous agents in tmux windows, gives each a clean worktree, supervises them and returns PRs or investigation reports.",
+      "best_for": "Running several coding tasks in parallel without juggling terminal tabs.",
+      "not_for": "Not a library or app, so you adapt a repo of instructions. Some backends, such as Zellij, cmux and Orca, are experimental.",
+      "keywords": [
+        "manage multiple coding agents",
+        "agent crew",
+        "parallel claude code",
+        "worktree agents",
+        "agent distro",
+        "tmux agents supervisor"
+      ]
+    },
+    {
+      "id": "vercel-labs/fx",
+      "name": "fx",
+      "category": "coding-agents",
+      "kinds": [
+        "cli",
+        "engine"
+      ],
+      "tags": [
+        "coding-agent",
+        "cli",
+        "embeddable",
+        "acp",
+        "native"
+      ],
+      "ecosystems": [
+        "zig"
+      ],
+      "use_for": "Run or embed a tiny native coding agent from the terminal, scripts, editors over ACP, or JavaScript via libfx.",
+      "why": "A single Zig binary with no runtime, and commands that start in a couple of milliseconds.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A minimal coding agent CLI with built-in file, shell, web and subagent tools. It prints into terminal scrollback like a normal command. Scripts call fx ask, editors connect over the Agent Client Protocol, and it supports skills, MCP servers and AGENTS.md.",
+      "best_for": "Developers who want a light, scriptable agent that fits CI and sandboxes, or an agent core to embed.",
+      "not_for": "Stable production use. The README marks it experimental and says to use it at your own risk.",
+      "keywords": [
+        "minimal coding agent",
+        "zig coding agent",
+        "embeddable agent",
+        "acp agent client protocol",
+        "vercel ai gateway cli",
+        "libfx",
+        "unix style agent"
+      ]
+    },
+    {
+      "id": "kunchenguid/gnhf",
+      "name": "gnhf",
+      "category": "coding-agents",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "autonomous-agent",
+        "overnight",
+        "git",
+        "orchestrator",
+        "coding-agent"
+      ],
+      "ecosystems": [
+        "typescript",
+        "git"
+      ],
+      "use_for": "Run a coding agent in a loop overnight so it makes small committed changes toward a goal.",
+      "why": "Each iteration is committed on success and rolled back on failure, so you wake up to a clean branch and a log.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "gnhf is an orchestrator that keeps coding agents running in a loop while you sleep. Each iteration makes one small, committed change toward your objective. Failed iterations are rolled back with retries, and it works with popular coding agent CLIs and any ACP target.",
+      "best_for": "You want a coding agent to grind on a long task such as reducing complexity, and you want a reviewable git history of each step.",
+      "not_for": "Needs a clean git repo and uses git reset --hard on failed iterations. Not a general agent framework. You must review the branch yourself.",
+      "keywords": [
+        "ralph loop",
+        "autonomous coding agent",
+        "overnight agent",
+        "autoresearch",
+        "agent loop git commits",
+        "run claude code while sleeping",
+        "good night have fun"
+      ]
+    },
+    {
+      "id": "revfactory/harness",
+      "name": "Harness",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "claude-code",
+        "meta-skill",
+        "agent-teams",
+        "orchestration",
+        "skill-generation"
+      ],
+      "ecosystems": [
+        "claude-code"
+      ],
+      "use_for": "Generate an agent team and the skills it needs for a project, from one plain-language request.",
+      "why": "Maps six team patterns to Claude Code's workflow, persistent-agent and sub-agent modes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Claude Code plugin that turns a domain description into an agent team plus the skills those agents use. It offers six architecture patterns, skill generation, orchestration protocols, verification and an evolve command.",
+      "best_for": "Claude Code users who want a multi-agent setup designed for their project instead of hand-writing agents and skills.",
+      "not_for": "Not for other agent tools; it targets the Claude Code multi-agent runtime. It generates configuration, not an agent runtime of its own.",
+      "keywords": [
+        "agent team",
+        "claude code multi-agent",
+        "generate skills",
+        "harness",
+        "subagents",
+        "orchestration pattern",
+        "meta skill"
+      ]
+    },
+    {
+      "id": "1jehuang/jcode",
+      "name": "jcode",
+      "category": "coding-agents",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "coding-agent",
+        "harness",
+        "multi-agent",
+        "swarm",
+        "performance"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Run a fast coding agent harness that can run many agents in parallel with little memory.",
+      "why": "Rust harness using about 3 MB of extra RAM per headless session, by its own benchmark.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "jcode is a high-performance coding agent harness written in Rust. Agents in the same repo are managed by a server that notifies them when files they read change and lets them message each other. It has an SDK and publishes its benchmarks.",
+      "best_for": "Heavy multi-agent workflows where memory use and start time matter.",
+      "not_for": "Treating benchmark claims as neutral: comparison numbers are the author's. Some other tools are listed as pending.",
+      "keywords": [
+        "rust coding agent",
+        "fast agent harness",
+        "claude code alternative",
+        "agent swarm",
+        "low memory agent",
+        "jcode",
+        "parallel agents cli"
+      ]
+    },
+    {
+      "id": "MoonshotAI/kimi-code",
+      "name": "Kimi Code CLI",
+      "category": "coding-agents",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "coding-agent",
+        "cli",
+        "mcp",
+        "subagents",
+        "hooks"
+      ],
+      "ecosystems": [
+        "terminal"
+      ],
+      "use_for": "Use a terminal AI coding agent that edits code, runs commands and extends through plugins and MCP.",
+      "why": "A single-binary TUI agent with video input, subagents, hooks and a plugin marketplace.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An AI coding agent for the terminal. It reads and edits code, runs shell commands, searches files and fetches web pages. It works with Moonshot's Kimi models and other compatible providers, and adds MCP setup, plugins, subagents and lifecycle hooks.",
+      "best_for": "Developers who want a fast, single-binary terminal coding agent, especially with Kimi models.",
+      "not_for": "Defaults to Moonshot's login and models. It is an end-user agent CLI, not a library for building your own agent.",
+      "keywords": [
+        "kimi cli",
+        "moonshot coding agent",
+        "terminal coding agent",
+        "claude code alternative",
+        "kimi code",
+        "cli agent with mcp"
+      ]
+    },
+    {
+      "id": "code-yeongyu/lazycodex",
+      "name": "LazyCodex",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin",
+        "cli"
+      ],
+      "tags": [
+        "codex",
+        "agent-harness",
+        "orchestration",
+        "multi-model",
+        "skills"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Install a ready-made multi-agent harness on top of OpenAI Codex for large codebases.",
+      "why": "Packages the OmO harness (planning, parallel agents, model routing) with little setup.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A packaging of the OmO agent harness for Codex. It adds named discipline agents, parallel execution, per-task model routing, a skills system and lifecycle hooks, installed with one npx command.",
+      "best_for": "Codex users who want planning, parallel agents and verified completion without wiring it themselves.",
+      "not_for": "Tied to Codex and the OmO design. It is built to spend tokens on hard tasks, so expect higher usage.",
+      "keywords": [
+        "codex harness",
+        "oh-my-openagent",
+        "omo",
+        "codex plugin",
+        "multi agent coding",
+        "agent orchestration codex",
+        "lazyvim for codex"
+      ]
+    },
+    {
+      "id": "letta-ai/letta-code",
+      "name": "Letta Code",
+      "category": "coding-agents",
+      "kinds": [
+        "cli",
+        "framework"
+      ],
+      "tags": [
+        "stateful-agents",
+        "memory",
+        "coding-agent",
+        "cli",
+        "skills"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Run coding and always-on agents that keep memory and improve over time.",
+      "why": "Agents rewrite their own memory, skills and prompts, with context tracked in git.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A stateful agent harness used from a CLI, a desktop app, a browser or messaging apps like Telegram, Slack and Discord. Agents keep memory blocks, load skills, search past messages, use subagents and sync context to a git repo.",
+      "best_for": "Long-running agents that should remember and learn across sessions.",
+      "not_for": "More than a simple coding CLI, so there is more to learn. Built around the Letta memory model.",
+      "keywords": [
+        "stateful agent",
+        "agent memory",
+        "letta",
+        "memgpt",
+        "coding agent cli",
+        "self improving agent",
+        "memory blocks"
+      ]
+    },
+    {
+      "id": "loopx-project/loopx",
+      "name": "LoopX",
+      "category": "coding-agents",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "control-plane",
+        "long-horizon",
+        "agent-state",
+        "codex",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Keep long-running agent work moving across sessions with durable goals, decisions and evidence.",
+      "why": "A local-first state layer with claims, leases and evidence, which reports gains on a 46-task benchmark.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A control plane that stores goals, todos and evidence outside the chat so agents resume across sessions. It runs with Codex, Claude Code and others, uses a heartbeat to continue work, and treats agents as peers.",
+      "best_for": "Long projects such as PR feedback loops or research that outlast a single agent session.",
+      "not_for": "A new agent framework: it governs state and does not run models itself. Benchmark numbers are the project's own.",
+      "keywords": [
+        "long running agents",
+        "agent state persistence",
+        "agent heartbeat",
+        "codex workflow skills",
+        "multi session agent memory",
+        "agent kanban"
+      ]
+    },
+    {
+      "id": "XiaomiMiMo/MiMo-Code",
+      "name": "MiMo Code",
+      "category": "coding-agents",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "coding-agent",
+        "terminal",
+        "tui",
+        "memory",
+        "multi-provider"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Use a terminal AI coding assistant with persistent project memory and many model providers.",
+      "why": "Can import Claude Code login, use OpenAI-compatible APIs, and attach to a remote server.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A terminal-native coding assistant that reads and writes code, runs commands and manages Git. It keeps persistent memory across sessions. It supports several providers and a serve/attach mode for remote hosts.",
+      "best_for": "Developers who want a Claude Code or Codex style terminal agent that works with Xiaomi MiMo or any OpenAI-compatible provider.",
+      "not_for": "Embedding as a library in your own app. It is a ready-made end-user tool, not an agent framework.",
+      "keywords": [
+        "terminal coding agent",
+        "ai coding cli",
+        "claude code alternative",
+        "mimo",
+        "open source coding assistant",
+        "tui agent",
+        "xiaomi mimo"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-vibe",
+      "name": "Mistral Vibe",
+      "category": "coding-agents",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "coding-agent",
+        "cli",
+        "mistral",
+        "mcp",
+        "subagents"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run a terminal coding agent on Mistral models that reads, edits and tests your project.",
+      "why": "Official open-source CLI from Mistral with file, shell, grep, todo and subagent tools and MCP support.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A command-line coding assistant powered by Mistral's models. You chat in natural language and it uses tools to read, write and patch files, run shell commands, search code with grep, keep a todo list and delegate to subagents. It adds project and git context automatically.",
+      "best_for": "Developers who want a Mistral-based alternative to Claude Code or Codex in the terminal.",
+      "not_for": "Built around Mistral's models and API key. Officially targets UNIX; Windows works but is not the main target.",
+      "keywords": [
+        "mistral cli",
+        "coding agent",
+        "terminal coding assistant",
+        "claude code alternative",
+        "vibe",
+        "mistral devstral",
+        "cli agent"
+      ]
+    },
+    {
+      "id": "Yeachan-Heo/oh-my-claudecode",
+      "name": "oh-my-claudecode",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin",
+        "cli"
+      ],
+      "tags": [
+        "claude-code",
+        "multi-agent",
+        "orchestration",
+        "plugin",
+        "workflows"
+      ],
+      "ecosystems": [
+        "typescript",
+        "claude"
+      ],
+      "use_for": "Add multi-agent team workflows and skills on top of Claude Code.",
+      "why": "Installs as a plugin or npm CLI and aims for no learning curve over plain Claude Code.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "A plugin and CLI that adds multi-agent orchestration to Claude Code. It offers in-session skills and an omc terminal command, installed through the plugin marketplace or npm. It is built around team-style parallel work.",
+      "best_for": "Claude Code users who want ready-made orchestration workflows without writing their own.",
+      "not_for": "Tied to Claude Code. The authors point to a lighter project, gajae-code, if this feels like too much.",
+      "keywords": [
+        "claude code plugin",
+        "multi-agent orchestration",
+        "oh my claude code",
+        "omc",
+        "claude code teams",
+        "agent workflow plugin",
+        "sisyphus"
+      ]
+    },
+    {
+      "id": "Yeachan-Heo/oh-my-codex",
+      "name": "oh-my-codex (OMX)",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin",
+        "cli"
+      ],
+      "tags": [
+        "codex",
+        "workflows",
+        "hooks",
+        "agent-teams",
+        "skills"
+      ],
+      "ecosystems": [
+        "typescript",
+        "codex"
+      ],
+      "use_for": "Add planning workflows, specialist roles, hooks and durable state around OpenAI Codex.",
+      "why": "A fixed plan-to-goal workflow with .omx state files, token usage reports and team mode.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OMX wraps Codex with extra prompts, skills and runtime help. It has a standard workflow from interview to plan to ultragoal, specialist roles, scoped AGENTS.md guidance and state under .omx/ for plans, logs and memory. A command also reports session token usage.",
+      "best_for": "Codex users who want structured multi-step work with saved plans and checkpoints.",
+      "not_for": "Only useful with Codex. The README says you probably do not need it if you want plain Codex.",
+      "keywords": [
+        "codex plugin",
+        "codex workflow",
+        "codex agent teams",
+        "oh my codex",
+        "omx",
+        "codex hooks",
+        "ultragoal"
+      ]
+    },
+    {
+      "id": "rlaope/oh-my-hermes",
+      "name": "oh-my-hermes",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "hermes-agent",
+        "plugin",
+        "workflows",
+        "memory",
+        "evidence"
+      ],
+      "ecosystems": [
+        "hermes"
+      ],
+      "use_for": "Add a governed workflow layer on top of Hermes Agent for planning, research, coding handoffs and project memory.",
+      "why": "Picks workflows and evidence gates, and keeps an honest record of what actually happened.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A plugin for Nous Research's Hermes Agent. It frames each request, chooses a workflow and evidence checks, and runs Hermes-native skills inside that path. It adds project memory and does not replace Hermes or hide a coding executor behind it.",
+      "best_for": "Hermes Agent users who want more structured, auditable workflows.",
+      "not_for": "Other agents; it targets Hermes only. The install script is piped from curl, so inspect it before running.",
+      "keywords": [
+        "hermes agent plugin",
+        "oh my hermes",
+        "nous hermes workflows",
+        "agent evidence gates",
+        "hermes memory",
+        "omh",
+        "hermes skills"
+      ]
+    },
+    {
+      "id": "alvinunreal/oh-my-opencode-slim",
+      "name": "oh-my-opencode-slim",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "opencode",
+        "multi-agent",
+        "orchestration",
+        "delegation",
+        "plugin"
+      ],
+      "ecosystems": [
+        "typescript",
+        "opencode"
+      ],
+      "use_for": "Add a team of specialist agents to OpenCode with one orchestrator that delegates tasks.",
+      "why": "Routes each job to the best model for quality, speed and cost.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An OpenCode plugin with six agents: Orchestrator, Explorer, Oracle, Council, Designer and Fixer. The Orchestrator dispatches background tasks and merges results. It includes bundled skills, preset switching, LSP and AST search tools, and tmux pane views.",
+      "best_for": "OpenCode users who want to mix models and run parallel specialist agents.",
+      "not_for": "Other agent harnesses; it is built for OpenCode only.",
+      "keywords": [
+        "opencode plugin",
+        "oh my opencode",
+        "multi agent opencode",
+        "agent orchestration plugin",
+        "mix models opencode",
+        "council agents",
+        "opencode subagents"
+      ]
+    },
+    {
+      "id": "can1357/oh-my-pi",
+      "name": "oh-my-pi (omp)",
+      "category": "coding-agents",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "coding-agent",
+        "lsp",
+        "debugger",
+        "terminal",
+        "multi-provider"
+      ],
+      "ecosystems": [
+        "rust",
+        "typescript"
+      ],
+      "use_for": "Use a terminal coding agent with built-in LSP, debugger, AST edit and 60+ model providers.",
+      "why": "Ships 31 built-in tools including LSP and DAP debugging, and reads config from Cursor, Cline and Codex.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "omp is a batteries-included coding agent forked from pi-mono, with a Rust core. Its tools cover file edits with hash anchors, structural AST rewrites, a shell, Python and JS cells, LSP and debugger control, and web search. It imports rule files from other agents as they are.",
+      "best_for": "Developers who want one coding agent with IDE-level code intelligence and many model providers.",
+      "not_for": "Large tool surface to learn. Pull requests are open to everyone only as a trial, so contribution rules may change.",
+      "keywords": [
+        "coding agent",
+        "lsp agent",
+        "debugger agent",
+        "pi-mono fork",
+        "terminal ai coding",
+        "ast grep agent",
+        "claude code alternative"
+      ]
+    },
+    {
+      "id": "code-yeongyu/oh-my-openagent",
+      "name": "OmO (oh-my-openagent)",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin",
+        "cli"
+      ],
+      "tags": [
+        "agent-harness",
+        "multi-model",
+        "memory",
+        "ultrawork",
+        "orchestration"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Add a keyword-driven multi-agent workflow and memory layer on top of your coding agent.",
+      "why": "Typing ultrawork or mass ulw turns a task into a graph of agents that each run on a suited model.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "OmO adds keywords such as ultrawork and mass ulw that make an agent read the codebase, plan and verify each step. It can fan a job out into parallel agents on different models. A cheap model keeps a git-based memory and nudges the main agent.",
+      "best_for": "You want opinionated, heavy-duty agent orchestration with multiple models and persistent memory.",
+      "not_for": "The license is not clearly stated (NOASSERTION), and the README reads as a news and sponsor page, so details here are thin. Verify setup in its docs.",
+      "keywords": [
+        "oh my openagent",
+        "omo",
+        "ultrawork",
+        "mass ulw",
+        "multi model coding agent",
+        "agent memory kibitzer",
+        "opencode plugin"
+      ]
+    },
+    {
+      "id": "ColeMurray/background-agents",
+      "name": "Open-Inspect",
+      "category": "coding-agents",
+      "kinds": [
+        "framework",
+        "service"
+      ],
+      "tags": [
+        "background-agents",
+        "coding-agent",
+        "sandbox",
+        "automation",
+        "multiplayer"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Self-host a background coding agent that works in sandboxes and is driven from web, Slack, GitHub, Linear or webhooks.",
+      "why": "Open take on Ramp's Inspect: parallel sub-tasks, multiplayer sessions and PRs attributed to the prompting user.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A hosted background coding agent system. Agents get full dev environments, can be triggered from several surfaces, run cron or event automations, spawn parallel sub-tasks, and open PRs. It supports Claude, Codex, Grok and OpenCode Zen models.",
+      "best_for": "A single trusted team that wants Ramp-style background coding agents it controls.",
+      "not_for": "Multi-tenant hosting. The README says it is single-tenant only and lists the extra isolation work needed.",
+      "keywords": [
+        "background coding agents",
+        "ramp inspect open source",
+        "self hosted coding agent",
+        "agent from slack github linear",
+        "sandboxed coding agent",
+        "open-inspect",
+        "async coding agents"
+      ]
+    },
+    {
+      "id": "Twigpine/openclaude",
+      "name": "OpenClaude",
+      "category": "coding-agents",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "coding-agent",
+        "multi-provider",
+        "mcp",
+        "terminal",
+        "ollama"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Use one terminal coding-agent CLI across OpenAI-compatible APIs, Gemini, GitHub Models and local Ollama.",
+      "why": "A single workflow with tools, agents, MCP and slash commands, plus saved provider profiles.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenClaude is an open-source coding-agent CLI for cloud and local model providers. It has bash and file tools, grep, glob, agents, tasks, MCP, web tools, streaming and image input. A /provider command handles guided setup, and a VS Code extension is included.",
+      "best_for": "Developers who want a Claude Code style terminal workflow on other models.",
+      "not_for": "License is listed as unclear (NOASSERTION) on GitHub; check before building on it. Features depend on what each provider supports.",
+      "keywords": [
+        "openclaude",
+        "coding agent cli",
+        "claude code alternative",
+        "ollama coding agent",
+        "gemini coding cli",
+        "openai compatible coding agent",
+        "mcp terminal agent"
+      ]
+    },
+    {
+      "id": "nexu-io/open-design",
+      "name": "OpenDesign",
+      "category": "coding-agents",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "design-agent",
+        "design-system",
+        "mcp",
+        "local-first",
+        "prototypes"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Let your coding agent produce prototypes, sites and decks that follow a design system, in a shared workspace.",
+      "why": "Uses the agent already on your PATH and ships 151 design-system packages plus 100+ skills.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenDesign is a local-first design workspace that drives your own coding agent (claude, codex, cursor-agent and others). Each render reads a DESIGN.md brand contract. It ships a stdio MCP server, skills, templates, design systems and plugins.",
+      "best_for": "You want AI-made prototypes and pages that stick to a design system and can be shared with a team.",
+      "not_for": "It does not ship its own agent, so you need one installed. Linux has no prebuilt desktop release yet, and some telemetry is always on.",
+      "keywords": [
+        "open design",
+        "ai design agent",
+        "design md",
+        "design system packages",
+        "ai prototype generator",
+        "design mcp server",
+        "collaborative design workspace"
+      ]
+    },
+    {
+      "id": "Q00/ouroboros",
+      "name": "Ouroboros",
+      "category": "coding-agents",
+      "kinds": [
+        "framework",
+        "mcp",
+        "cli"
+      ],
+      "tags": [
+        "spec-first",
+        "evaluation",
+        "agent-os",
+        "mcp",
+        "socratic-interview"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Turn a vague idea into a locked spec and a verified build with an interview, seed spec and staged evaluation.",
+      "why": "Locks intent in an immutable seed spec and gates results with a three-stage evaluation across many runtimes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A workflow layer for AI coding agents that works as an MCP server across about 14 runtimes. A Socratic interview exposes assumptions, the seed spec is frozen, the build runs, and mechanical, semantic and consensus checks verify it.",
+      "best_for": "Reducing rework from vague prompts by forcing a spec and verification before and after coding.",
+      "not_for": "Quick one-off edits, where the interview and evaluation steps add overhead.",
+      "keywords": [
+        "spec driven agent workflow",
+        "socratic interview ai",
+        "agent os",
+        "ooo ouroboros",
+        "evaluate agent output",
+        "claude code spec tool"
+      ]
+    },
+    {
+      "id": "nicobailon/pi-subagents",
+      "name": "pi-subagents",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "pi",
+        "subagents",
+        "delegation",
+        "code-review",
+        "background-jobs"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Let the Pi coding agent hand work to focused child agents for review, scouting and parallel audits.",
+      "why": "Foreground and background children, saved workflows and session sharing, started by plain-language requests.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "pi-subagents is an extension for the Pi agent that delegates tasks to child Pi sessions. Foreground children stream in the conversation; background ones run in a detached runner and can be checked later. You ask in plain language, like using a reviewer or running parallel reviewers, with no setup needed.",
+      "best_for": "You use Pi and want reviewer, scout or oracle style helpers and parallel jobs.",
+      "not_for": "Only works with Pi. Installing it does not start automatic reviewers; delegation needs your request or instructions.",
+      "keywords": [
+        "pi coding agent extension",
+        "subagents",
+        "agent delegation",
+        "parallel reviewers",
+        "background agents",
+        "pi agent plugin",
+        "second opinion agent"
+      ]
+    },
+    {
+      "id": "backnotprop/plannotator",
+      "name": "Plannotator",
+      "category": "coding-agents",
+      "kinds": [
+        "plugin",
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "plan-review",
+        "code-review",
+        "annotation",
+        "agent-feedback",
+        "hooks"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Annotate agent plans and review code diffs in the browser, then send feedback back to the agent.",
+      "why": "Works with ten agents and with Git, jj, Perforce, GitHub and GitLab.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local browser review surface for AI coding agents including Claude Code, Codex, Copilot CLI, Gemini CLI and OpenCode. It plugs in through hooks and commands, opens plans, markdown, HTML or diffs, and returns your comments to the agent. It can also run AI reviews.",
+      "best_for": "Teams who want to mark up plans and diffs before an agent acts.",
+      "not_for": "Automated pipelines with no human reviewer. It is an interactive review tool.",
+      "keywords": [
+        "review agent plans",
+        "annotate plan claude code",
+        "agent diff review",
+        "pr review agent feedback",
+        "plan mode annotate",
+        "code review browser",
+        "plannotator"
+      ]
+    },
+    {
+      "id": "PrimeIntellect-ai/prime-agent",
+      "name": "Prime Agent",
+      "category": "coding-agents",
+      "kinds": [
+        "cli",
+        "framework"
+      ],
+      "tags": [
+        "coding-agent",
+        "rlm",
+        "subagents",
+        "repl",
+        "self-improving"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run a coding and research agent that works through a persistent Python REPL and can spawn subagents.",
+      "why": "Everything is code in a REPL, and the harness can refine its own prompts and skills with rollback.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Prime Agent is built on a Recursive Language Model idea: context is held as variables and subagents are function calls in a persistent REPL. A continual harness stores memories, skills and subagent specs and can refine them. Sessions run in the background.",
+      "best_for": "Long-running coding or research tasks where you want programmable subagents and reusable skills.",
+      "not_for": "Running untrusted tasks. The README warns it executes model-written Python with your permissions and is not a sandbox.",
+      "keywords": [
+        "recursive language model",
+        "rlm agent",
+        "prime intellect agent",
+        "python repl agent",
+        "self improving agent",
+        "subagents",
+        "long running coding agent"
+      ]
+    },
+    {
+      "id": "mikeyobrien/ralph-orchestrator",
+      "name": "Ralph Orchestrator",
+      "category": "coding-agents",
+      "kinds": [
+        "cli",
+        "framework"
+      ],
+      "tags": [
+        "agent-loop",
+        "multi-backend",
+        "automation",
+        "claude-code",
+        "orchestration"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Running autonomous coding agents in a loop across multiple CLI backends until a task completes.",
+      "why": "Supports eleven different agent backends including Claude Code, Codex, Gemini CLI and Copilot CLI.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Ralph Orchestrator implements the Ralph Wiggum technique: it keeps an AI coding agent iterating on a task until it signals completion or hits an iteration limit. It adds a hat system of specialized personas, backpressure gates that reject incomplete work, and persistent memory across runs.",
+      "best_for": "Developers who want a CLI-driven loop that plans, implements and reviews a feature across multiple agent backends.",
+      "not_for": "Not for one-shot prompts; it is built around iterative, gated loops rather than a single request-response call.",
+      "keywords": [
+        "ralph wiggum technique",
+        "ai agent loop",
+        "claude code orchestrator",
+        "autonomous coding agent",
+        "agent backpressure",
+        "multi-backend agent runner"
+      ]
+    },
+    {
+      "id": "esengine/DeepSeek-Reasonix",
+      "name": "Reasonix",
+      "category": "coding-agents",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "coding-agent",
+        "deepseek",
+        "terminal",
+        "mcp",
+        "plugins"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run an open-source coding agent in terminal, desktop, browser or editor with DeepSeek or any OpenAI-compatible model.",
+      "why": "Config-driven in reasonix.toml, with permission levels, plan mode and file rewind.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Reasonix is a coding agent that runs on your computer. It reads code, edits files and runs commands and tests in a project folder you choose. Providers, tools and plugins are declared in reasonix.toml, with a DeepSeek preset and MCP and extension support.",
+      "best_for": "People who want a DeepSeek-friendly coding agent with approval controls and a desktop app.",
+      "not_for": "Rewind only covers files its edit tools changed, not what a shell command did. The model service you configure sees what it reads.",
+      "keywords": [
+        "deepseek coding agent",
+        "reasonix",
+        "terminal coding agent",
+        "openai compatible coding agent",
+        "claude code alternative",
+        "mcp coding agent",
+        "agent with rewind"
+      ]
+    },
+    {
+      "id": "mindfold-ai/Trellis",
+      "name": "Trellis",
+      "category": "coding-agents",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "agent-harness",
+        "specs",
+        "memory",
+        "tasks",
+        "claude-code",
+        "workflow"
+      ],
+      "ecosystems": [
+        "typescript",
+        "nodejs"
+      ],
+      "use_for": "Keep specs, tasks and memory in your repo so any coding agent follows your engineering standards.",
+      "why": "A four-phase plan, implement, verify, finish loop with auto-injected specs across 22 coding platforms.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Trellis stores conventions in .trellis/spec, tasks and PRDs in .trellis/tasks, and journals in .trellis/workspace. It injects the relevant context into each session. A four-phase loop uses skills and sub-agents to plan, implement, check and update specs. One setup works across 22 AI coding platforms.",
+      "best_for": "Teams who want shared, versioned standards and memory for coding agents.",
+      "not_for": "Quick one-off prompts. It adds files and a workflow to your repo, and it is AGPL-3.0.",
+      "keywords": [
+        "agent harness",
+        "coding agent specs",
+        "claude.md alternative",
+        "agents.md workflow",
+        "cursor rules manager",
+        "ai coding memory",
+        "spec driven agents",
+        "task prd agent"
+      ]
+    }
+  ]
+}

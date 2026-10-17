@@ -108,39 +108,6 @@
       ]
     },
     {
-      "id": "simular-ai/Agent-S",
-      "name": "Agent S",
-      "category": "agents",
-      "kinds": [
-        "framework"
-      ],
-      "tags": [
-        "computer-use",
-        "gui-agent",
-        "automation"
-      ],
-      "ecosystems": [
-        "python"
-      ],
-      "use_for": "Build computer-use agents that operate desktop GUIs like a human",
-      "why": "Open computer-use agent framework with state-of-the-art OSWorld results; Apache-2.0.",
-      "added": "2026-10-17",
-      "last_reviewed": "2026-10-17",
-      "summary": "Open-source computer-use agent framework that sees the screen and operates a real GUI with mouse and keyboard on macOS, Windows and Linux, with OpenAI, Anthropic and open-weight models. Agent S3 reports 72.60% on OSWorld.",
-      "best_for": "Research and prototypes of agents that automate arbitrary desktop and web apps without per-app APIs.",
-      "not_for": "Research framework: GUI automation is slow, costly and fragile versus API integration. A hosted product (Sai) is promoted for production use.",
-      "keywords": [
-        "computer use agent",
-        "gui automation",
-        "osworld",
-        "desktop agent",
-        "screen control",
-        "multimodal agent",
-        "automation",
-        "mouse keyboard"
-      ]
-    },
-    {
       "id": "agentscope-ai/agentscope",
       "name": "AgentScope",
       "category": "agents",
@@ -174,6 +141,41 @@
         "python",
         "observability",
         "alibaba"
+      ]
+    },
+    {
+      "id": "agentscope-ai/agentscope-java",
+      "name": "AgentScope Java",
+      "category": "agents",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "agents",
+        "java",
+        "multi-agent",
+        "sandbox",
+        "distributed"
+      ],
+      "ecosystems": [
+        "java"
+      ],
+      "use_for": "Build distributed, long-running AI agents in Java with permissions, middleware and sandboxes.",
+      "why": "Production-focused design with a typed event stream, tool-call permission gating and distributed sessions.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "AgentScope Java 2.0 is a framework for enterprise agents. It has an event system, tool permission rules, middleware hooks, sandboxed workspaces (local, Docker, Kubernetes), multi-agent orchestration and session storage in Redis, MySQL or PostgreSQL.",
+      "best_for": "Java teams that need production agents with human approval, isolation and cross-replica recovery.",
+      "not_for": "Java only. If you work in Python or TypeScript, pick a framework in that language.",
+      "keywords": [
+        "java agent framework",
+        "langchain4j alternative",
+        "spring ai agents",
+        "multi agent java",
+        "agent sandbox kubernetes",
+        "enterprise ai agents java",
+        "agentscope"
       ]
     },
     {
@@ -213,6 +215,42 @@
       ]
     },
     {
+      "id": "FareedKhan-dev/all-agentic-architectures",
+      "name": "All Agentic Architectures",
+      "category": "agents",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "agent-patterns",
+        "langgraph",
+        "reflexion",
+        "graphrag",
+        "benchmark"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Try 35 agent patterns behind one Python interface and swap them with one line.",
+      "why": "Every pattern shares the same .run(task) call and result type, with runnable notebooks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Python library that packages agentic AI patterns such as Reflection as an Architecture class with one contract. Built on LangGraph, works with nine LLM providers, and ships notebooks and a benchmark leaderboard.",
+      "best_for": "Learning agent patterns or comparing several on your own task before you commit to one.",
+      "not_for": "Not a general agent runtime. It is built around LangGraph and is closer to a textbook plus library than a deployment platform.",
+      "keywords": [
+        "agentic architectures",
+        "reflexion",
+        "LATS",
+        "graphrag",
+        "memgpt",
+        "agent patterns",
+        "langgraph patterns",
+        "agent benchmark"
+      ]
+    },
+    {
       "id": "OpenPipe/ART",
       "name": "ART",
       "category": "agents",
@@ -247,6 +285,44 @@
       ]
     },
     {
+      "id": "iflytek/astron-agent",
+      "name": "Astron Agent",
+      "category": "agents",
+      "kinds": [
+        "service",
+        "framework"
+      ],
+      "tags": [
+        "agent-platform",
+        "workflow",
+        "rpa",
+        "mcp",
+        "enterprise"
+      ],
+      "ecosystems": [
+        "docker",
+        "java",
+        "python"
+      ],
+      "use_for": "Self-host a platform for building agent workflows with model management, MCP tools and RPA.",
+      "why": "Open-sources the high-availability version, with RPA built in, under Apache 2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An enterprise agentic workflow platform that combines workflow orchestration, model management, AI and MCP tool integration, RPA automation and team collaboration. It deploys with Docker Compose and is based on the iFLYTEK Astron Agent Platform.",
+      "best_for": "Companies that want to run their own agent workflow platform and connect agents to internal systems through RPA.",
+      "not_for": "A full platform with many parts, so heavy for a single small agent. Much of the tool ecosystem comes from the iFLYTEK Open Platform.",
+      "keywords": [
+        "agent workflow platform",
+        "dify alternative",
+        "self-hosted agent builder",
+        "iflytek",
+        "rpa agents",
+        "enterprise ai agents",
+        "mcp workflow"
+      ]
+    },
+    {
       "id": "camel-ai/camel",
       "name": "CAMEL",
       "category": "agents",
@@ -278,6 +354,42 @@
         "workforce",
         "research",
         "chatagent"
+      ]
+    },
+    {
+      "id": "lemony-ai/cascadeflow",
+      "name": "cascadeflow",
+      "category": "agents",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "model-cascading",
+        "cost-optimization",
+        "agent-harness",
+        "langchain",
+        "budget"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Pick the cheapest good-enough model per step inside an agent loop and escalate when needed.",
+      "why": "Works in-process with per-step decisions and budget limits, not only at the HTTP proxy boundary.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "cascadeflow is a library and agent harness that chooses a model for each query or tool call through speculative execution, escalating to flagship models only when needed. It tracks cost, quality, latency, budget and compliance, can stop or deny tools, and has integrations for LangChain, OpenAI Agents, CrewAI, Vercel AI and n8n.",
+      "best_for": "You run agents with many LLM calls and want to cut cost while keeping quality, with per-step traces.",
+      "not_for": "Savings figures come from the project's own benchmarks. It is a runtime layer, not an agent framework by itself.",
+      "keywords": [
+        "llm cascade",
+        "model routing cost",
+        "reduce llm cost agent",
+        "speculative execution models",
+        "agent budget limits",
+        "langchain cost optimization",
+        "model router"
       ]
     },
     {
@@ -317,6 +429,46 @@
       ]
     },
     {
+      "id": "corsairdev/corsair",
+      "name": "Corsair",
+      "category": "agents",
+      "kinds": [
+        "framework",
+        "service",
+        "library"
+      ],
+      "tags": [
+        "integrations",
+        "oauth",
+        "agents",
+        "multi-tenant",
+        "rest-api",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "typescript",
+        "nodejs"
+      ],
+      "use_for": "Connect your users' third-party apps to your product or agents through one integration layer.",
+      "why": "Built on a REST API, not only MCP, with one syntax for every integration and open-source self-hosting.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Corsair is a product integration platform. It gives every integration the same syntax and maintains the adapters. The same layer serves agents, backend services and multi-tenant dashboards where your users connect their apps. You can self-host it, or use Hub for OAuth refresh and webhooks.",
+      "best_for": "SaaS products and agents that need many third-party app connections without per-API glue code.",
+      "not_for": "A full agent framework. It is an integration layer, and the README gives little detail on supported apps.",
+      "keywords": [
+        "product integrations",
+        "agent integrations",
+        "oauth token management",
+        "composio alternative",
+        "nango alternative",
+        "connect user apps",
+        "multi-tenant integrations",
+        "unified api"
+      ]
+    },
+    {
       "id": "crewAIInc/crewAI",
       "name": "CrewAI",
       "category": "agents",
@@ -349,6 +501,79 @@
         "orchestration",
         "automation",
         "agents"
+      ]
+    },
+    {
+      "id": "docker/docker-agent",
+      "name": "Docker Agent",
+      "category": "agents",
+      "kinds": [
+        "cli",
+        "framework"
+      ],
+      "tags": [
+        "agents",
+        "yaml",
+        "mcp",
+        "multi-agent",
+        "oci"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Define and run multi-agent teams from a YAML file with MCP tools.",
+      "why": "Agents are declarative YAML and can be pushed to and pulled from OCI registries.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A docker CLI plugin that runs AI agents defined in YAML. It supports multi-agent delegation, built-in tools and any MCP server, many model providers, pluggable RAG, and packaging agents as OCI artifacts.",
+      "best_for": "Teams who want configuration-driven agents they can version and share like container images.",
+      "not_for": "Config-first, so deep custom logic is harder than in a code framework. It collects anonymous telemetry.",
+      "keywords": [
+        "docker agent",
+        "cagent",
+        "yaml agents",
+        "multi-agent",
+        "mcp agent runtime",
+        "agent builder",
+        "oci agents"
+      ]
+    },
+    {
+      "id": "dograh-hq/dograh",
+      "name": "Dograh",
+      "category": "agents",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "voice-ai",
+        "voice-agents",
+        "self-hosted",
+        "telephony",
+        "mcp"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Build and self-host production voice agents with a visual workflow builder and your choice of LLM, STT and TTS.",
+      "why": "Open source alternative to Vapi and Retell that can run on your own infrastructure.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Dograh is an open-source voice AI platform. You design voice agents in a visual workflow builder, bring your own LLM, speech-to-text and text-to-speech providers, and can let coding assistants edit agents through MCP. It supports telephony and self-hosting with Docker.",
+      "best_for": "Teams that want control over voice agent code, data location and providers.",
+      "not_for": "A full platform to run, not a small library. The README's getting-started section is only contribution steps, so check the docs for setup.",
+      "keywords": [
+        "vapi alternative",
+        "retell alternative",
+        "open source voice agent",
+        "self-hosted voice ai",
+        "voice agent workflow builder",
+        "ai phone calls",
+        "telephony voice bot"
       ]
     },
     {
@@ -385,6 +610,185 @@
         "llm pipelines",
         "stanford",
         "modules"
+      ]
+    },
+    {
+      "id": "vercel/eve",
+      "name": "eve",
+      "category": "agents",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "agents",
+        "filesystem-first",
+        "durable",
+        "vercel",
+        "tools"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Build durable AI agents from files: instructions, tools, skills and channels in conventional folders.",
+      "why": "The filesystem is the authoring interface, so projects are easy to inspect and extend.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "eve is a filesystem-first framework for durable AI agents. A project has an agent folder with instructions.md, typed tools written with zod, skills and channels such as HTTP, Slack and Discord. You scaffold one with `npx eve@latest init`.",
+      "best_for": "TypeScript developers who want a convention-based agent framework with human-in-the-loop, subagents and schedules.",
+      "not_for": "TypeScript and AI Gateway model IDs by default. Check the docs for self-hosting and runtime requirements.",
+      "keywords": [
+        "vercel agent framework",
+        "typescript agent framework",
+        "durable agents",
+        "ai sdk agents",
+        "agent slack discord channels",
+        "filesystem agent",
+        "eve agent"
+      ]
+    },
+    {
+      "id": "withastro/flue",
+      "name": "Flue",
+      "category": "agents",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "agent-framework",
+        "sandbox",
+        "durable",
+        "skills",
+        "mcp"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Build autonomous TypeScript agents with sandboxes, subagents, tools, skills and durable recovery.",
+      "why": "Treats the agent as a programmable harness and recovers accepted work after failures.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A TypeScript agent harness framework. You compose a model, a sandbox, skills and tools inside one agent function. It adds subagents, MCP servers, observability through OpenTelemetry and channels that receive events from Slack, GitHub and more.",
+      "best_for": "Developers building autonomous agents that must take real actions safely and survive restarts.",
+      "not_for": "TypeScript only. It is a framework for building your own agents, not a ready-made coding agent.",
+      "keywords": [
+        "agent harness",
+        "sandbox agent framework",
+        "typescript agent framework",
+        "durable agents",
+        "astro agents",
+        "mcp agent runtime"
+      ]
+    },
+    {
+      "id": "github/copilot-sdk",
+      "name": "GitHub Copilot SDK",
+      "category": "agents",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "copilot",
+        "agent-runtime",
+        "sdk",
+        "multi-language",
+        "github"
+      ],
+      "ecosystems": [
+        "typescript",
+        "python",
+        "go",
+        "dotnet",
+        "java",
+        "rust"
+      ],
+      "use_for": "Embed the Copilot agent engine in your own app or service from six languages.",
+      "why": "Same production-tested engine as Copilot CLI, so you skip building orchestration.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "SDKs for Python, TypeScript, Go, .NET, Java and Rust that call the agent runtime behind Copilot CLI. You define agent behavior; Copilot handles planning, tool calls and file edits. A permission handler lets your app approve or deny tool calls.",
+      "best_for": "Adding agentic coding or task features to an app when you already use GitHub Copilot.",
+      "not_for": "Apps that need to avoid Copilot billing. Usage counts against Copilot allowance, and Go, Java and Rust need the CLI installed separately.",
+      "keywords": [
+        "copilot sdk",
+        "github copilot api",
+        "embed coding agent",
+        "copilot cli sdk",
+        "agent runtime sdk",
+        "copilot agent in my app",
+        "copilot typescript"
+      ]
+    },
+    {
+      "id": "google-antigravity/antigravity-sdk-python",
+      "name": "Google Antigravity SDK",
+      "category": "agents",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "agents",
+        "gemini",
+        "google",
+        "sdk",
+        "vertex-ai"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build AI agents in Python on Google Antigravity and Gemini, without writing the agent loop.",
+      "why": "Official Google SDK with stateful conversations, a tool runner and Vertex AI support.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Python SDK that handles the agentic loop for you. You configure an Agent, chat with it, and add tools through a tool runner. It works with a Gemini API key or with Vertex AI (Gemini Enterprise Agent Platform) using an API key or ADC.",
+      "best_for": "Python developers building agents on Gemini who want Google's own SDK.",
+      "not_for": "Built around Google's Antigravity and Gemini. Not a model-neutral framework.",
+      "keywords": [
+        "antigravity sdk",
+        "gemini agents python",
+        "google agent sdk",
+        "vertex ai agents",
+        "agent loop python",
+        "gemini tool calling"
+      ]
+    },
+    {
+      "id": "jjyaoao/HelloAgents",
+      "name": "HelloAgents",
+      "category": "agents",
+      "kinds": [
+        "framework",
+        "library"
+      ],
+      "tags": [
+        "agent-framework",
+        "function-calling",
+        "rag",
+        "memory",
+        "mcp"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build agents on native function calling with tools, context management, RAG, persistent memory and sub-agents.",
+      "why": "Components such as retrieval, memory and context can be used on their own, and the loop is configurable.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A componentized multi-agent framework built on native function calling. It adds a tool response protocol, context engineering, session persistence, sub-agents, skills, MCP tools, RAG and GraphRAG, and user profile memory. SimpleAgent is the quick start.",
+      "best_for": "Python developers who want a teaching-friendly but fairly full agent framework, especially Chinese-speaking learners following the Hello-Agents tutorial.",
+      "not_for": "Docs are mainly in Chinese. The current version differs from the tutorial, which needs the learn_version branch. Recommends Python 3.13 or 3.12.",
+      "keywords": [
+        "hello-agents",
+        "python agent framework",
+        "datawhale agents",
+        "function calling agent loop",
+        "graphrag agent",
+        "agent memory framework"
       ]
     },
     {
@@ -679,6 +1083,79 @@
       ]
     },
     {
+      "id": "monid-ai/monid",
+      "name": "Monid",
+      "category": "agents",
+      "kinds": [
+        "framework",
+        "service"
+      ],
+      "tags": [
+        "agent-tools",
+        "connectors",
+        "api-gateway",
+        "metering",
+        "catalog"
+      ],
+      "ecosystems": [
+        "typescript",
+        "deno"
+      ],
+      "use_for": "Describe third-party APIs as declarative connectors so agents can discover and call them with per-call metering.",
+      "why": "A generic connector framework where each endpoint declares its auth, schemas and usage pricing, with a searchable catalog.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "The connector layer behind Monid's 'OpenRouter for agent tools'. Each connector is declarative TypeScript on Deno that sets how an endpoint is called, what it accepts and returns, and how usage is counted. A catalog CLI browses providers and an engine runs endpoints with your own vendor key.",
+      "best_for": "Adding your API to an agent tool marketplace, or studying a clean declarative way to wrap many APIs.",
+      "not_for": "This repo is the connector layer, not the whole hosted gateway. Needs Deno 2.x.",
+      "keywords": [
+        "openrouter for tools",
+        "agent tool marketplace",
+        "api connector framework",
+        "metered api for agents",
+        "tool catalog",
+        "deno connectors"
+      ]
+    },
+    {
+      "id": "open-multi-agent/open-multi-agent",
+      "name": "OMA (Open Multi-Agent)",
+      "category": "agents",
+      "kinds": [
+        "framework",
+        "library"
+      ],
+      "tags": [
+        "agent-runtime",
+        "approvals",
+        "audit",
+        "self-hosted",
+        "multi-agent"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Run TypeScript agents with durable human approvals and run records you can verify offline.",
+      "why": "Risky actions pause for tamper-evident approvals, and every run leaves a journal that can be checked offline.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted TypeScript agent runtime. Plan, task and tool-call gates can suspend for approval and resume after a restart. A journal records what the model saw and did, and verifyRun() checks it.",
+      "best_for": "Teams that need governance, approvals and audit trails on agents, with no hosted control plane or telemetry.",
+      "not_for": "Quick prototypes that need no approvals. Needs Node.js 20+, and the journal proves lineage, not that a file was never edited.",
+      "keywords": [
+        "agent approvals",
+        "human in the loop",
+        "audit trail agents",
+        "typescript agent framework",
+        "self-hosted agents",
+        "multi agent orchestration",
+        "ollama agents"
+      ]
+    },
+    {
       "id": "openai/openai-agents-python",
       "name": "OpenAI Agents SDK",
       "category": "agents",
@@ -751,6 +1228,115 @@
         "tracing",
         "multi-agent",
         "sandbox agents"
+      ]
+    },
+    {
+      "id": "Gen-Verse/OpenClaw-RL",
+      "name": "OpenClaw-RL",
+      "category": "agents",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "reinforcement-learning",
+        "agents",
+        "openclaw",
+        "training",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Train a personalized agent with reinforcement learning from your own live conversations, on your own hardware.",
+      "why": "Fully asynchronous design: serving, rollouts, judging and training run in separate loops.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenClaw-RL wraps a self-hosted model as an OpenAI-compatible API, intercepts multi-turn conversations and keeps optimizing the policy in the background. It also supports large-scale RL for terminal, GUI, SWE and tool-call agents.",
+      "best_for": "Researchers and teams with GPUs who want RL-based agent personalization without third-party model APIs.",
+      "not_for": "Needs your own GPU infrastructure and a self-hosted model. Not for people using hosted APIs only.",
+      "keywords": [
+        "agentic rl",
+        "train agent from conversations",
+        "reinforcement learning llm agent",
+        "async rl framework",
+        "openclaw training",
+        "personalized agent rl",
+        "prm judge training"
+      ]
+    },
+    {
+      "id": "HKUDS/OpenHarness",
+      "name": "OpenHarness",
+      "category": "agents",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "agent-harness",
+        "tools",
+        "skills",
+        "memory",
+        "multi-agent",
+        "mcp"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build agents on an open Python harness with tools, skills, memory, permissions and sub-agents.",
+      "why": "A readable open-source version of what wraps a model: tool loop, context, memory and safety rules.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenHarness is a lightweight Python agent harness with a streaming tool-call loop, 43 tools, on-demand Markdown skills, plugins, CLAUDE.md discovery, persistent memory, permission modes, hooks and sub-agent coordination. It also includes ohmo, a personal agent reachable from Slack, Telegram, Discord and Feishu.",
+      "best_for": "Learning how production agents work, or building a custom agent on a compact base.",
+      "not_for": "A polished end-user product. The README says some features are unreleased and it is still evolving.",
+      "keywords": [
+        "agent harness",
+        "open source claude code alternative",
+        "python agent framework",
+        "tool use loop",
+        "ohmo agent",
+        "agent memory",
+        "subagent framework",
+        "claude code compatible plugins"
+      ]
+    },
+    {
+      "id": "tinyhumansai/openhuman",
+      "name": "OpenHuman",
+      "category": "agents",
+      "kinds": [
+        "library",
+        "app"
+      ],
+      "tags": [
+        "agent-harness",
+        "rust",
+        "fleet",
+        "desktop",
+        "embeddable"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Run many AI agents cheaply, from a desktop app or as a Rust library you call like a function.",
+      "why": "Built for large fleets: the README says it uses far less memory and fewer tokens than other harnesses.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenHuman is an open-source agent harness. It ships as a desktop app for people and a Rust library for developers. The README claims fast startup, low token use and about 500 agents on a $10 server, backed by its own benchmark.",
+      "best_for": "Embedding agents in a Rust program, or running a big fleet of agents on one small server where cost and memory matter.",
+      "not_for": "Early beta with rough edges, per the README. GPL-3.0 license limits use in closed-source products. Benchmarks come from the authors.",
+      "keywords": [
+        "agent harness",
+        "rust agent library",
+        "run many agents",
+        "cheap ai agents",
+        "agent fleet",
+        "claude code alternative",
+        "embed agent in rust"
       ]
     },
     {
@@ -857,6 +1443,77 @@
         "python",
         "opentelemetry",
         "agent framework"
+      ]
+    },
+    {
+      "id": "EverMind-AI/Raven",
+      "name": "Raven",
+      "category": "agents",
+      "kinds": [
+        "framework",
+        "app"
+      ],
+      "tags": [
+        "multi-agent",
+        "host-agent",
+        "orchestration",
+        "self-improving",
+        "memory"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Orchestrate several specialised agents, built-in or third-party, on complex tasks using generated DAGs.",
+      "why": "A host agent that plans work as DAGs and can propose and test changes to its own harness.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Raven is a host agent that brings built-in agents (research, code, design, oncall) and third-party agents together, with memory carried across sessions by EverOS. It aims to improve its own harness by evaluating changes.",
+      "best_for": "Experimenting with multi-agent orchestration and self-improving agent harnesses.",
+      "not_for": "Stable production use: the README says it is pre-alpha and interfaces may change quickly.",
+      "keywords": [
+        "harness of harnesses",
+        "multi-agent orchestrator",
+        "host agent",
+        "agent dag",
+        "recursive self-improvement",
+        "raven agent",
+        "evermind"
+      ]
+    },
+    {
+      "id": "Human-Agent-Society/reef",
+      "name": "Reef",
+      "category": "agents",
+      "kinds": [
+        "framework",
+        "library"
+      ],
+      "tags": [
+        "self-improving-agents",
+        "training",
+        "harness-optimization",
+        "feedback",
+        "versioning"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Let an agent improve over time from feedback, by training model weights or tuning its prompts, rules and skills.",
+      "why": "Covers serving, feedback matching, learning and versioned delivery in one pipeline.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Reef connects agent inference, feedback, learning and versioned delivery. It can train model weights with Slime and SGLang, or optimise an agent's harness: prompts, rules and skills. Recipes pick the learning path.",
+      "best_for": "Teams that want an agent to keep improving from real usage, with versioned and evaluated updates.",
+      "not_for": "Weight training needs a supported GPU stack. Harness tuning needs a model endpoint, sample tasks and an evaluator.",
+      "keywords": [
+        "self-improving agents",
+        "continual learning agent",
+        "reef-infra",
+        "agent harness optimization",
+        "agent feedback loop",
+        "slime sglang training"
       ]
     },
     {
@@ -969,6 +1626,77 @@
       ]
     },
     {
+      "id": "wang2122/sprix-sage-router",
+      "name": "Sprix SAGE Router",
+      "category": "agents",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "a2a",
+        "routing",
+        "multi-agent",
+        "orchestration",
+        "handoff"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Decide at runtime whether an agent works alone, collaborates, or hands a task off in an A2A agent network.",
+      "why": "Scores SELF, COLLABORATE and HANDOFF routes in one auditable objective, with no runtime dependencies.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "SAGE sits between Agent2Agent (A2A) discovery and task execution. It filters candidate agents, compares three routing modes, searches assignments and schedules, ranks feasible plans, and learns from execution results. The reference implementation is pure Python.",
+      "best_for": "Researching or prototyping routing logic for a network of cooperating agents that already speak A2A.",
+      "not_for": "Production use today: the roadmap still lists real A2A adapters for discovery, execution, streaming and cancellation as not done.",
+      "keywords": [
+        "a2a routing",
+        "agent2agent",
+        "agent handoff",
+        "multi-agent routing",
+        "agent collaboration",
+        "agent router",
+        "sage router"
+      ]
+    },
+    {
+      "id": "bradygaster/squad",
+      "name": "Squad",
+      "category": "agents",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "agent-teams",
+        "github-copilot",
+        "multi-agent",
+        "orchestration",
+        "cli"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Set up a team of specialist AI agents that live as files in your repo and work through GitHub Copilot.",
+      "why": "Agents persist across sessions, share decisions in a log, and keep a human in charge.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Describe what you are building and Squad creates specialists such as frontend, backend, tester and lead, stored as files in the repo. They run in separate contexts, work in parallel and log decisions to .squad/decisions.md.",
+      "best_for": "Copilot users who want a persistent, inspectable multi-agent team inside a repository.",
+      "not_for": "Built around GitHub Copilot. It is meant to support humans, not run unattended. Check CHANGELOG.md, since breaking changes happen.",
+      "keywords": [
+        "multi agent team copilot",
+        "ai dev team in repo",
+        "github copilot agents",
+        "agent team framework",
+        "squad ai",
+        "ralph issue watcher"
+      ]
+    },
+    {
       "id": "strands-agents/harness-sdk",
       "name": "Strands Agents SDK",
       "category": "agents",
@@ -1002,6 +1730,42 @@
         "python",
         "typescript",
         "multi-agent"
+      ]
+    },
+    {
+      "id": "truefoundry/trueforge",
+      "name": "TrueForge",
+      "category": "agents",
+      "kinds": [
+        "framework",
+        "service"
+      ],
+      "tags": [
+        "agent-harness",
+        "mcp",
+        "sandbox",
+        "approvals",
+        "chat-ui"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Run the agent loop for you with models, MCP tools, skills, sandboxing, approvals and a chat UI or SDK.",
+      "why": "Ships the whole harness: context engineering, sandbox as a tool, human checkpoints, UI and TypeScript SDK.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source agent harness exposed as a chat UI, HTTP API with a TypeScript SDK, and an embeddable UI SDK. It runs on SQLite locally or Postgres and Redis when hosted, and works with any model provider.",
+      "best_for": "Building your own agent product without writing the loop, sandbox and approvals yourself.",
+      "not_for": "Internet-facing local mode: it has no login by default. The only sandbox provider today is Daytona.",
+      "keywords": [
+        "agent harness",
+        "open source agent runtime",
+        "mcp agent platform",
+        "agent with sandbox",
+        "embeddable agent ui",
+        "truefoundry trueforge"
       ]
     },
     {

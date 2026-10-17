@@ -2,7 +2,21 @@
 
 All notable changes, including weekly catalog updates, are recorded here.
 
-## Unreleased
+## v1.0.0: 2026-10-17
+
+### Catalog refresh
+- **1,907 repos in 62 categories** (was 1,175 in 50). Every repo with 3,000+ stars created since September 2025 was triaged (1,257 candidates), live-checked against the quality rules, and described from its README with a verbatim quote that was verified automatically (766 of 768 passed). 732 were added.
+- Excluded on purpose: awesome lists, courses, prompt collections, consumer apps, tools that pool subscriptions or route around provider terms, non-commercial and source-available licenses, and abandoned projects.
+- The agent area was split so the 50-per-category ceiling still holds: agent frameworks, coding agents and harnesses, agent workbenches, personal assistants, agent memory and context, agent sandboxes and runtimes, agent apps; dev workflow skills, framework and platform skills, skill tooling, docs and slides skills, design and media skills, business and marketing skills, research and knowledge skills.
+- 17 lower-ranked repos did not fit in categories that were already full (dev tooling, data science, RAG, AI SDKs).
+
+### Skill and scoring (M6)
+- Eval set run end to end by fresh agents; results and tuning in `evals/RESULTS.md`.
+- Scoring: GitHub issues weighted by thumbs-up, demand older than 3 years counts a third, gap capped by evidence, CONTRIBUTE and FORK need an adopted project, extreme saturation with minor gaps is "already well covered".
+- Search: five-angle search terms with aliases, relevance-first catalog ranking, nested skill folders found through the repo tree, compact script output.
+- Plugin packaging (`.claude-plugin/`), README with a real example and verdict card.
+
+## Before v1.0.0
 
 ### 2026-10-17
 - Specification and implementation plan drafted (`docs/SPEC.md`, `docs/IMPLEMENTATION_PLAN.md`).

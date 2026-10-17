@@ -1,0 +1,1196 @@
+{
+  "category": "docs-skills",
+  "entries": [
+    {
+      "id": "wheresryan22/anatomy",
+      "name": "Anatomy",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "illustration",
+        "svg",
+        "isometric",
+        "explainer",
+        "webgl",
+        "claude-skill"
+      ],
+      "ecosystems": [
+        "javascript",
+        "svg",
+        "webgl"
+      ],
+      "use_for": "Have an agent build interactive isometric SVG figures that explain a technical idea as a working object.",
+      "why": "Invents a physical machine whose working matches the concept, with a live readout and WebGL effects.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Anatomy is a Claude skill that explains an idea by building it as a real, working object. It makes isometric figures from many small shaded parts in SVG, with optional WebGL shaders for fire, water or glow. Output can be a standalone HTML page, an SVG file, or React/Next.js components. It needs no API keys.",
+      "best_for": "Docs, blog posts and talks that need an interactive diagram with a strong visual metaphor.",
+      "not_for": "Plain charts or quick diagrams. Each figure is a detailed, custom build.",
+      "keywords": [
+        "interactive diagram skill",
+        "isometric svg generator",
+        "explain concept visually",
+        "technical illustration agent",
+        "svg animation skill",
+        "webgl shader illustration",
+        "claude skill diagrams",
+        "explorable explanation"
+      ]
+    },
+    {
+      "id": "QingYunA/answer-me-with-html",
+      "name": "Answer me with HTML",
+      "category": "docs-skills",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "html",
+        "explainer",
+        "token-saving",
+        "agent-skills",
+        "diagrams"
+      ],
+      "ecosystems": [
+        "node",
+        "markdown"
+      ],
+      "use_for": "Have an agent answer hard questions with a readable one-file HTML page, written cheaply.",
+      "why": "The model writes only a short Markdown draft; a CLI builds diagrams, CSS and HTML, so it uses far fewer tokens.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An agent skill with a bundled CLI. The agent writes a short Markdown draft and the CLI renders a self-contained offline HTML page with diagrams, tables and timelines in about 50 ms. The authors report about 8x fewer tokens than hand-written HTML.",
+      "best_for": "Getting visual explainers, comparisons and plans from a coding agent instead of walls of text.",
+      "not_for": "Speed and token numbers come from the authors' own small benchmark. Output is limited to what the CLI can render.",
+      "keywords": [
+        "agent skill html",
+        "explain with diagrams",
+        "markdown to html explainer",
+        "claude code skill html",
+        "token efficient html",
+        "one page answer"
+      ]
+    },
+    {
+      "id": "tt-a1i/archify",
+      "name": "archify",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "diagrams",
+        "architecture",
+        "visualization"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Turn an idea, plan or codebase into an interactive architecture diagram",
+      "why": "About 158k skills.sh installs; works across Claude Code, Codex and Cursor with a companion review skill.",
+      "skill": "tt-a1i/archify/archify",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Agent skill that turns an idea, plan or codebase into an interactive HTML architecture diagram with explorable nodes, path highlighting and shareable links. Keeps an editable JSON source; ships example scenarios and validation receipts.",
+      "best_for": "Producing explorable architecture or workflow diagrams from code or a description via Claude Code, Codex or Cursor.",
+      "not_for": "Output is an interactive HTML artifact, not a Mermaid or draw.io file. Third-party hosted services mentioned are not part of the open-source project.",
+      "keywords": [
+        "architecture diagram",
+        "interactive diagram",
+        "agent skill",
+        "codebase visualization",
+        "html diagram",
+        "system design",
+        "workflow diagram",
+        "skills.sh"
+      ],
+      "featured": true
+    },
+    {
+      "id": "danyuchn/asd-ste100-skill",
+      "name": "ASD-STE100 Skill",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "writing",
+        "technical-english",
+        "ste",
+        "tool-descriptions",
+        "skill"
+      ],
+      "ecosystems": [
+        "claude-code"
+      ],
+      "use_for": "Rewrite tool descriptions, errors and agent instructions in Simplified Technical English.",
+      "why": "Applies a proven aerospace controlled-language standard to cut ambiguity when one agent reads another's output.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Claude Code skill that rewrites ambiguous English into ASD-STE100 Simplified Technical English. It picks a strict or lighter mode, flags each rule violation, rewrites without dropping facts or qualifiers, and outputs only the new text. It can show a before and after table on request.",
+      "best_for": "Writing clear tool descriptions, error messages and inter-agent instructions that must not be misread.",
+      "not_for": "English only. It is not a full grammar checker, and strict mode limits vocabulary.",
+      "keywords": [
+        "simplified technical english",
+        "ste100",
+        "rewrite error messages",
+        "tool description clarity",
+        "agent prompts writing",
+        "controlled language",
+        "plain english skill"
+      ]
+    },
+    {
+      "id": "conorbronsdon/avoid-ai-writing",
+      "name": "avoid-ai-writing",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "writing",
+        "editing",
+        "ai-detection",
+        "skill",
+        "style"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "codex",
+        "node"
+      ],
+      "use_for": "Audit and rewrite text to remove common AI writing patterns.",
+      "why": "Rule-based with a word replacement table and detect, rewrite and edit-in-place modes, not just a prompt.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A portable agent skill that audits content for AI-sounding patterns and rewrites it. It has rewrite, detect-only and edit-in-place modes, voice profiles, a two-pass edit and a bundled detector. It works with Claude Code, Codex, OpenClaw, Hermes and other agentskills-compatible agents.",
+      "best_for": "Cleaning up drafts, posts and docs written with an LLM so they read as plain human writing.",
+      "not_for": "Tuned for English only. It does not guarantee text will pass AI detectors.",
+      "keywords": [
+        "remove ai writing",
+        "humanize text",
+        "ai-isms",
+        "writing skill",
+        "edit llm draft",
+        "stop sounding like chatgpt",
+        "ai text detector"
+      ]
+    },
+    {
+      "id": "JimLiu/baoyu-skills",
+      "name": "baoyu-skills",
+      "category": "docs-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "agent-skills",
+        "content",
+        "image-generation",
+        "markdown",
+        "plugin-marketplace"
+      ],
+      "ecosystems": [
+        "typescript",
+        "claude-code"
+      ],
+      "use_for": "Install a pack of content-creation and utility skills for Claude Code, Codex and similar agents.",
+      "why": "Installs as a Claude Code plugin marketplace, or per skill through ClawHub.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A collection of skills shared by Baoyu for daily work with AI agents. They are grouped into content, AI generation and utility skills, such as image generation and markdown to HTML. Skills need Node.js and can run via npx bun.",
+      "best_for": "Writers and creators who want ready-made skills for publishing and image work inside their coding agent.",
+      "not_for": "General coding tasks. The skills target content workflows and are partly aimed at Chinese-language publishing.",
+      "keywords": [
+        "baoyu",
+        "claude code skills",
+        "content skills",
+        "markdown to html skill",
+        "image gen skill",
+        "clawhub skills",
+        "plugin marketplace"
+      ]
+    },
+    {
+      "id": "ningzimu/codex-ppt-skill",
+      "name": "Codex PPT Skill",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "pptx",
+        "presentations",
+        "image-generation",
+        "codex",
+        "slides"
+      ],
+      "ecosystems": [
+        "python",
+        "agent-skills"
+      ],
+      "use_for": "Turn an article, report or notes into an image-based PowerPoint deck from inside a coding agent.",
+      "why": "Plans outline and style, generates each slide as an image, then assembles the .pptx with local scripts.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A SKILL.md skill for Codex that also works in Claude Code and other agents. It plans the outline and visual style, generates every slide as a picture, then builds a .pptx locally.",
+      "best_for": "Visual, poster-like decks made from existing text where slides do not need to be edited afterwards.",
+      "not_for": "Editable slides: elements are pictures. Outside Codex you need an image-generation API key or compatible endpoint.",
+      "keywords": [
+        "ppt generator",
+        "powerpoint skill",
+        "slides from article",
+        "codex skill",
+        "gpt-image slides",
+        "presentation agent",
+        "pptx generation"
+      ]
+    },
+    {
+      "id": "cathrynlavery/diagram-design",
+      "name": "diagram-design",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "diagrams",
+        "design",
+        "svg"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Have an agent produce editorial-quality diagrams across 44 diagram types",
+      "why": "About 14k skills.sh installs; supports Claude Code, Codex, Copilot, Cursor and more.",
+      "skill": "cathrynlavery/diagram-design/diagram-design",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Agent skill that draws diagrams as a single self-contained HTML + SVG file in your brand style, covering 45 diagram types. Places elements on a 4px grid with CI checks for overlap and clipping, can onboard to a site's palette and fonts, and exports SVG or PNG.",
+      "best_for": "Brand-consistent architecture, sequence, quadrant and other diagrams generated by an agent from plain-language requests.",
+      "not_for": "Not a text-to-diagram DSL like Mermaid or an editable canvas like draw.io. Output is one opinionated editorial style.",
+      "keywords": [
+        "diagram",
+        "svg",
+        "architecture diagram",
+        "sequence diagram",
+        "agent skill",
+        "brand style",
+        "html diagram",
+        "quadrant",
+        "png export"
+      ],
+      "featured": true
+    },
+    {
+      "id": "Agents365-ai/drawio-skill",
+      "name": "drawio-skill",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "drawio",
+        "diagrams",
+        "architecture",
+        "terraform",
+        "mermaid"
+      ],
+      "ecosystems": [
+        "python",
+        "claude-code"
+      ],
+      "use_for": "Have an agent make editable draw.io diagrams from prompts, code, Terraform, K8s, SQL and API specs.",
+      "why": "Keeps manual layout when syncing and can test architecture rules in CI.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill that turns natural language and real system sources into .drawio models. It exports and self-checks its own PNG, converts Mermaid, rebuilds whiteboard photos, and supports 11 diagram presets. Works with Claude Code, Cursor, Copilot, Codex and others.",
+      "best_for": "Architecture diagrams you want editable and kept in sync with code or infrastructure.",
+      "not_for": "Quick throwaway sketches. Export and some features need the draw.io desktop CLI, and Mermaid conversion needs draw.io 30 or later.",
+      "keywords": [
+        "drawio skill",
+        "diagram generator agent",
+        "terraform to diagram",
+        "architecture diagram as code",
+        "mermaid to drawio",
+        "kubernetes diagram",
+        "whiteboard to diagram"
+      ]
+    },
+    {
+      "id": "plannotator/effective-html",
+      "name": "Effective HTML",
+      "category": "docs-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "html",
+        "wireframes",
+        "prototypes",
+        "diagrams",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "markdown",
+        "html"
+      ],
+      "use_for": "Have an agent produce self-contained HTML artifacts such as wireframes, prototypes, plans and diagrams.",
+      "why": "Seven focused skills separate creative direction from reliability checks like browser verification.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A set of seven agent skills for useful HTML output, from low-fidelity wireframes to interactive prototypes, plans and diagrams. It installs as a Claude Code or Codex plugin, and can also be read as a guide without installing.",
+      "best_for": "Using HTML instead of long text to explain, plan or prototype with an agent.",
+      "not_for": "Prompt and skill content only, with no runtime library. Output is only as good as the agent and model.",
+      "keywords": [
+        "html artifacts",
+        "agent skill html",
+        "wireframe skill",
+        "interactive prototype agent",
+        "claude code plugin html",
+        "plannotator",
+        "html explainer"
+      ]
+    },
+    {
+      "id": "yizhiyanhua-ai/fireworks-tech-graph",
+      "name": "fireworks-tech-graph",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "diagrams",
+        "svg",
+        "uml",
+        "architecture",
+        "agent-skill"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate clean SVG and PNG technical diagrams from a text description inside Claude Code or Codex.",
+      "why": "12 styles, all 14 UML types and AI/agent patterns, with geometry checks on routing.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "One agent skill that turns descriptions into geometry-checked SVG diagrams, high-resolution PNGs, SVG-to-GIF motion and offline interactive HTML. It has built-in patterns for RAG, memory, multi-agent and tool-call diagrams.",
+      "best_for": "Architecture and UML diagrams that need to look polished without hand drawing or Mermaid styling.",
+      "not_for": "Live-editable diagram tools. The output is generated files, not a drawing editor.",
+      "keywords": [
+        "diagram generator skill",
+        "architecture diagram ai",
+        "svg diagram from text",
+        "uml generator",
+        "mermaid alternative",
+        "agent architecture diagram",
+        "tech graph"
+      ]
+    },
+    {
+      "id": "zarazhangrui/frontend-slides",
+      "name": "Frontend Slides",
+      "category": "docs-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "slides",
+        "html",
+        "presentations",
+        "agent-skill",
+        "design"
+      ],
+      "ecosystems": [
+        "html",
+        "claude"
+      ],
+      "use_for": "Have your coding agent make polished HTML slide decks, or convert PowerPoint files to web.",
+      "why": "Single HTML files with no dependencies, and visual style previews to pick from.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A coding-agent skill, packaged as a Claude Code plugin, that creates HTML presentations from scratch or from PowerPoint files. It shows generated style previews so you can choose by sight, and outputs one accessible 16:9 file with inline CSS and JS and no build step.",
+      "best_for": "Non-designers who want a good-looking deck as a portable web file.",
+      "not_for": "Output is HTML, not PPTX. Needs an agent with filesystem and shell access.",
+      "keywords": [
+        "html slides",
+        "ai presentation skill",
+        "powerpoint to web",
+        "claude code slides",
+        "reveal.js alternative",
+        "slide deck generator",
+        "pptx converter skill"
+      ]
+    },
+    {
+      "id": "genspark-ai/genoffice",
+      "name": "GenOffice",
+      "category": "docs-skills",
+      "kinds": [
+        "app",
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "office-suite",
+        "docx",
+        "xlsx",
+        "pptx",
+        "ai-editor"
+      ],
+      "ecosystems": [
+        "typescript",
+        "desktop"
+      ],
+      "use_for": "Edit real .docx, .xlsx and .pptx files with AI, locally, from a desktop app or agent CLI.",
+      "why": "Rewrites only what you edit, so other file content stays byte-for-byte.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source AI office suite for macOS, Windows and Linux with Docs, Sheets, Slides, PDF, Markdown and HTML editors. AI edits appear as tracked changes with rollback. A genoffice CLI and skill let Claude Code, Codex and Cursor edit Office files locally. Bring your own key.",
+      "best_for": "Agents or users who must produce and edit genuine Office files without cloud upload.",
+      "not_for": "A library to embed in your own app; it is a full desktop product. AI calls still go to the provider you choose.",
+      "keywords": [
+        "ai office suite",
+        "edit docx with agent",
+        "pptx generation cli",
+        "open source microsoft office alternative",
+        "xlsx agent skill",
+        "genoffice",
+        "local office ai"
+      ]
+    },
+    {
+      "id": "op7418/guizang-ppt-skill",
+      "name": "Guizang PPT Skill",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "slides",
+        "html",
+        "presentations",
+        "design",
+        "agent-skill"
+      ],
+      "ecosystems": [
+        "html",
+        "claude"
+      ],
+      "use_for": "Have an agent make single-file HTML slide decks, matching images and social covers in two fixed visual styles.",
+      "why": "Two locked design systems (magazine and Swiss), a validator, and a built-in presenter mode with rehearsal.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An agent skill for Claude Code, Codex and similar tools that outputs a horizontal paging HTML deck. Style A is editorial magazine, Style B is Swiss grid. A checklist and layout rules keep output stable, and presenter mode works locally with notes, timer and two windows. README is Chinese with an English version.",
+      "best_for": "Talks and shared decks where you want consistent, designed slides without choosing colors.",
+      "not_for": "Custom colors are not allowed on purpose. Core output is HTML, not PPTX. AGPL-3.0 license.",
+      "keywords": [
+        "html ppt skill",
+        "swiss style slides",
+        "magazine style presentation",
+        "claude code slides",
+        "网页 PPT",
+        "presenter mode html",
+        "slide deck skill"
+      ]
+    },
+    {
+      "id": "isjiamu/gzh-design-skill",
+      "name": "gzh-design-skill",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "wechat",
+        "markdown",
+        "html",
+        "typesetting",
+        "themes"
+      ],
+      "ecosystems": [
+        "python",
+        "html"
+      ],
+      "use_for": "Turn Markdown into paste-ready WeChat Official Account article HTML with an agent.",
+      "why": "Six themes plus a theme generator, with two validation scripts that enforce WeChat-safe inline styles.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill for Claude Code, Codex, Cursor and similar agents that converts Markdown into inline-styled HTML you can paste into the WeChat editor. It numbers sections, marks keywords, builds intro cards and tables of contents, and checks output with two scripts. The README is in Chinese.",
+      "best_for": "You write WeChat Official Account articles and want consistent, polished layout from an agent.",
+      "not_for": "Only targets WeChat article HTML. License is not clearly stated in the metadata. Docs are mostly Chinese.",
+      "keywords": [
+        "wechat article formatter",
+        "公众号排版",
+        "markdown to wechat html",
+        "weixin official account",
+        "agent skill wechat",
+        "wechat theme generator",
+        "gzh"
+      ]
+    },
+    {
+      "id": "nexu-io/html-anything",
+      "name": "HTML Anything",
+      "category": "docs-skills",
+      "kinds": [
+        "app",
+        "skill"
+      ],
+      "tags": [
+        "html",
+        "agentic-editor",
+        "slides",
+        "local-first",
+        "coding-agents"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Turn notes, data or Markdown into ship-ready single-file HTML using your own local coding agent.",
+      "why": "Reuses the agent CLI you are already logged into, so no extra API key is needed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local-first HTML editor that drives agent CLIs found on your PATH, such as Claude Code, Cursor Agent, Codex and Gemini CLI. 75 skill templates cover decks, posters, articles, reports and more, with one-click export to WeChat, X, Zhihu, HTML or PNG.",
+      "best_for": "Producing designed documents, decks and social cards without hand-writing CSS, using an agent CLI you already have.",
+      "not_for": "Needs a supported agent CLI installed and logged in. It is an editor app, not a library to embed.",
+      "keywords": [
+        "markdown to html",
+        "ai html editor",
+        "agent slides",
+        "single file html",
+        "wechat article export",
+        "tweet card generator",
+        "ai deck maker"
+      ]
+    },
+    {
+      "id": "lewislulu/html-ppt-skill",
+      "name": "html-ppt (HTML PPT Studio)",
+      "category": "docs-skills",
+      "kinds": [
+        "skill",
+        "template"
+      ],
+      "tags": [
+        "presentations",
+        "agent-skill",
+        "html-slides",
+        "themes",
+        "presenter-mode"
+      ],
+      "ecosystems": [
+        "html",
+        "javascript"
+      ],
+      "use_for": "Have an agent build HTML slide decks from themes, layouts, animations and a presenter mode.",
+      "why": "Ships 36 themes, 15 deck templates, 36 layouts and 47 animations with no build step.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An agent skill for making HTML presentations. It includes 36 themes, 15 full-deck templates, 36 page layouts, 27 CSS and 20 canvas animations, and a presenter mode with speaker notes and a timer. Everything is static HTML, CSS and JS.",
+      "best_for": "Producing good-looking, shareable slide decks from an agent with no PowerPoint or build tooling.",
+      "not_for": "Output is HTML, not PPTX. Webfonts, highlight.js and chart.js load from a CDN.",
+      "keywords": [
+        "html presentation skill",
+        "agent slide deck",
+        "reveal.js alternative",
+        "ai powerpoint",
+        "slides from claude",
+        "presenter mode html"
+      ]
+    },
+    {
+      "id": "epoko77-ai/im-not-ai",
+      "name": "Humanize KR (im-not-ai)",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "korean",
+        "humanizer",
+        "writing",
+        "agent-skill",
+        "editing"
+      ],
+      "ecosystems": [
+        "claude-code"
+      ],
+      "use_for": "Rewrite AI-written Korean text so it reads naturally, without changing facts or numbers.",
+      "why": "Detects Korean-specific AI patterns like translationese using a classified pattern list and 3 effort paths.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Claude skill that finds AI tells in Korean text across 10 categories and about 85 sub-patterns, then edits only the flagged spans. It picks a light, standard or heavy path based on a score. It keeps facts, claims and numbers unchanged and warns on over-editing.",
+      "best_for": "Editing Korean articles, reports and essays written with ChatGPT, Claude or Gemini.",
+      "not_for": "Korean only; it does not target English text. README is mainly Korean, with an English version separate.",
+      "keywords": [
+        "korean ai humanizer",
+        "ai text detector rewrite korean",
+        "translationese korean",
+        "humanize korean text",
+        "한글 윤문",
+        "ai 티 제거",
+        "claude skill korean writing"
+      ]
+    },
+    {
+      "id": "blader/humanizer",
+      "name": "Humanizer",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "writing",
+        "editing",
+        "ai-text",
+        "style"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Rewrite text to remove common signs of AI-generated writing.",
+      "why": "Focused, widely used writing skill (~58k stars), MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Skill that rewrites AI-sounding text into more natural writing without changing meaning, based on Wikipedia's Signs of AI writing guide. Works in Claude Code, Codex and other skill-compatible agents.",
+      "best_for": "Cleaning up drafts that show typical AI phrasing (inflated claims, stock phrases, emoji, rhetorical patterns).",
+      "not_for": "Edits for human readers, not to evade AI detectors, which may still flag the result. Not a fact-checker or translator.",
+      "keywords": [
+        "humanize text",
+        "ai writing",
+        "rewrite",
+        "remove ai tone",
+        "editing",
+        "wikipedia signs of ai writing",
+        "copyediting",
+        "skill"
+      ]
+    },
+    {
+      "id": "op7418/Humanizer-zh",
+      "name": "Humanizer-zh",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "writing",
+        "chinese",
+        "editing",
+        "skill",
+        "humanizer"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "chinese"
+      ],
+      "use_for": "Edit Chinese text to remove filler and template phrasing while keeping facts and the author's voice.",
+      "why": "Rules keep facts, hedges and style, and avoid mechanical rewriting.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Chinese-language skill for Claude Code that guides an agent to edit articles, comments and docs. It cuts filler and formulaic phrasing and keeps facts, certainty and tone. It lists 31 checks and gives before and after examples.",
+      "best_for": "Polishing Chinese drafts, including AI-assisted ones, in an agent.",
+      "not_for": "Beating AI detectors. The README says it is editing guidance, not a detector, and offers no guarantee against detection.",
+      "keywords": [
+        "humanizer",
+        "chinese text polish",
+        "remove ai writing",
+        "claude code writing skill",
+        "中文润色",
+        "去ai味",
+        "editing skill"
+      ]
+    },
+    {
+      "id": "tw93/Kami",
+      "name": "Kami",
+      "category": "docs-skills",
+      "kinds": [
+        "skill",
+        "template"
+      ],
+      "tags": [
+        "pdf",
+        "document-templates",
+        "pptx",
+        "layout",
+        "weasyprint"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Have AI agents produce well-typeset PDFs, PNGs and editable PowerPoint from templates.",
+      "why": "Eight document templates, 18 SVG diagram types and checks on structure before layout.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Layout rules and templates for agents: one-pager, long doc, letter, portfolio, resume, slides, equity report, changelog and a landing page. PDF comes via WeasyPrint, PPTX via python-pptx, with a Marp variant. Available in EN, CN and KO.",
+      "best_for": "Getting consistent, good-looking documents out of Claude Code or Codex instead of default styling.",
+      "not_for": "Heavy design control or web layout. The defaults are a warm parchment look with serif fonts, and code stays monochrome without Pygments.",
+      "keywords": [
+        "agent pdf generation",
+        "document templates ai",
+        "resume pdf skill",
+        "weasyprint templates",
+        "ai slides pptx",
+        "typeset documents",
+        "kami"
+      ]
+    },
+    {
+      "id": "kunchenguid/lavish-axi",
+      "name": "Lavish (lavish-axi)",
+      "category": "docs-skills",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "html-artifacts",
+        "agent-feedback",
+        "mermaid",
+        "review",
+        "skill"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Open agent-made HTML in a local editor, mark up elements, and send feedback back to the agent.",
+      "why": "Replaces screenshots and long replies with pinpoint annotations on the real HTML, run locally.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Lavish Editor opens HTML files an agent produced in a local browser. You can pick elements and text, edit Mermaid whiteboard diagrams, and send feedback to the agent. It installs as an agent skill, and the skill runs the CLI through npx on demand.",
+      "best_for": "Your agent makes HTML plans, designs or diagrams and you want a tighter review loop than screenshots.",
+      "not_for": "Only helps with HTML artifacts. Hosted sharing goes through a third-party service and is opt-in. Not a general editor or design tool.",
+      "keywords": [
+        "html artifact editor",
+        "annotate html for agent",
+        "agent feedback loop",
+        "mermaid whiteboard",
+        "claude code skill html",
+        "axi",
+        "review agent output"
+      ]
+    },
+    {
+      "id": "larashero3-dotcom/lieflat-charts",
+      "name": "Lieflat Charts",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "data-visualization",
+        "agent-skill",
+        "charts",
+        "slides",
+        "reports"
+      ],
+      "ecosystems": [
+        "html"
+      ],
+      "use_for": "Have an AI agent turn data into polished interactive HTML charts, slide decks and one-page reports.",
+      "why": "Offers a consistent visual style with several chart families and colour presets.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill in the Agent Skills format that makes interactive HTML charts, and on request HTML or PDF slide decks and full-page reports. It offers three visual styles and mono or colour palettes. It works with Claude Code, Codex and other SKILL.md agents.",
+      "best_for": "Getting good-looking charts and data reports from an agent without picking a charting library.",
+      "not_for": "Output is HTML charts, not a reusable chart library. The README is mostly Chinese, and the license is non-standard.",
+      "keywords": [
+        "chart generation skill",
+        "html charts agent",
+        "data visualization claude code",
+        "ai ppt generator",
+        "interactive charts skill",
+        "agent skills charts",
+        "report generator html"
+      ]
+    },
+    {
+      "id": "geekjourneyx/md2wechat-skill",
+      "name": "md2wechat",
+      "category": "docs-skills",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "wechat",
+        "markdown",
+        "publishing",
+        "cli",
+        "agent"
+      ],
+      "ecosystems": [
+        "go",
+        "node"
+      ],
+      "use_for": "Turn Markdown into WeChat Official Account articles, add images and push drafts, from an agent or CLI.",
+      "why": "JSON discovery commands let agents run the whole inspect, convert and draft flow.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI for the WeChat Official Account workflow: convert Markdown to WeChat HTML, preview, inspect draft readiness, make covers and images, and create drafts. It can also help an agent save drafts on Zhihu, CSDN and Toutiao via a logged-in browser.",
+      "best_for": "Chinese content teams who publish to WeChat Official Accounts and want agents to automate it.",
+      "not_for": "The best HTML output and themes need a paid API key. The free mode only builds prompts for an outside LLM. README is Chinese.",
+      "keywords": [
+        "wechat official account",
+        "markdown to wechat",
+        "weixin gongzhonghao",
+        "wechat draft api",
+        "wechat typesetting",
+        "md2wechat",
+        "公众号排版"
+      ]
+    },
+    {
+      "id": "zenstory-ai/oh-story-claudecode",
+      "name": "Oh Story",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "web-novel",
+        "writing",
+        "agent-skills",
+        "chinese",
+        "continuity"
+      ],
+      "ecosystems": [
+        "markdown",
+        "python"
+      ],
+      "use_for": "Write Chinese web novels with a coding agent: scan charts, break down hits, draft, remove AI tone, make covers.",
+      "why": "Keeps settings, outline and foreshadowing in files and runs checks before and after each chapter.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A pack of 13 skills for long and short web-novel writing. It stores setting, outline, text and tracking in separate files so the agent can resume after context loss. It runs checks for truncation and common AI phrasing, and works with 7 coding agents.",
+      "best_for": "Chinese web-novel authors who already use Claude Code, Codex or OpenCode.",
+      "not_for": "Chinese-language and tuned for Chinese platforms like Qidian and Fanqie. Not a story engine for other languages or for general code work.",
+      "keywords": [
+        "web novel writing",
+        "网文",
+        "novel writing skills",
+        "claude code fiction",
+        "长篇小说",
+        "remove ai tone",
+        "去AI味",
+        "story continuity"
+      ]
+    },
+    {
+      "id": "open-slide/open-slide",
+      "name": "open-slide",
+      "category": "docs-skills",
+      "kinds": [
+        "framework",
+        "cli",
+        "template"
+      ],
+      "tags": [
+        "slides",
+        "react",
+        "agent-native",
+        "presentation",
+        "vite"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react"
+      ],
+      "use_for": "Let a coding agent write slide decks as React components on a fixed 1920x1080 canvas.",
+      "why": "Includes agent skills and an in-browser comment mode to apply edits.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A slide framework where your agent writes React pages and open-slide handles canvas scaling, navigation, hot reload and present mode. Scaffold with npx @open-slide/cli init. Built-in /create-slide and /apply-comments skills turn comments into source edits.",
+      "best_for": "Developers who prefer code-based decks and use Claude Code, Codex or Cursor to write them.",
+      "not_for": "People who want a drag-and-drop editor or PowerPoint files. Slides are React code.",
+      "keywords": [
+        "ai slide deck generator",
+        "react presentation framework",
+        "slides as code",
+        "claude code slides",
+        "agent made presentations",
+        "reveal.js alternative",
+        "open slide"
+      ]
+    },
+    {
+      "id": "hugohe3/ppt-master",
+      "name": "PPT Master",
+      "category": "docs-skills",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "powerpoint",
+        "pptx",
+        "slides",
+        "document-to-deck",
+        "agent-skill"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Have an AI agent turn a document or topic into an editable, native PowerPoint deck.",
+      "why": "Outputs real PowerPoint shapes, charts, tables and masters rather than flat images.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "PPT Master generates .pptx files using PowerPoint's native object model: shapes with adjustment handles, data-backed charts and tables, transitions and animations. It can add narration from speaker notes and use your own .pptx templates with real slide masters.",
+      "best_for": "You want AI-made decks you can keep editing in PowerPoint, built from reports or source documents.",
+      "not_for": "It targets PowerPoint files, not Google Slides or HTML slides. The README also promotes unrelated personal sites.",
+      "keywords": [
+        "ppt master",
+        "ai powerpoint generator",
+        "pptx from document",
+        "native pptx editable",
+        "slide deck agent skill",
+        "powerpoint templates ai",
+        "speaker notes narration"
+      ]
+    },
+    {
+      "id": "OpenSenseNova/SenseNova-Skills",
+      "name": "SenseNova-Skills",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "office-skills",
+        "ppt-generation",
+        "excel-analysis",
+        "deep-research",
+        "sensenova"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Add office skills such as slide decks, Excel analysis, infographics and deep research to agent runtimes.",
+      "why": "Each skill is a self-contained SKILL.md directory, usable alone or combined into workflows.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A set of skills for the SenseNova models in agent runtimes like OpenClaw and hermes-agent. Skills cover image generation, slide decks, Excel analysis, deep research, HTML experiences, team collaboration and project tracking.",
+      "best_for": "Teams using SenseNova models who want ready-made office workflows.",
+      "not_for": "Designed around the SenseNova model family and its API, so other models may not work well.",
+      "keywords": [
+        "sensenova skills",
+        "ppt generation skill",
+        "excel analysis agent",
+        "infographic generation",
+        "office assistant skills",
+        "openclaw skills",
+        "hermes agent skills"
+      ]
+    },
+    {
+      "id": "Nanako0129/sepia",
+      "name": "sepia",
+      "category": "docs-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "writing",
+        "de-ai",
+        "agent-skill",
+        "fiction",
+        "editing"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Make AI-written fiction and professional prose read less like AI, using a three-pass repair protocol.",
+      "why": "Targets narrative structure, the layer research shows gives AI text away, before word-level style.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A portable Agent Skill with four operations: write, review, refactor and recreate. It repairs narrative architecture, then discourse flow, then surface style, with venue-matched rules for release notes, PR replies and tickets.",
+      "best_for": "Writers and teams who want an agent to revise fiction or technical prose so it sounds less machine-made.",
+      "not_for": "A prompt-based skill with no guarantee of fooling AI detectors. Most of its fiction method rests on one research paper.",
+      "keywords": [
+        "humanizer skill",
+        "de-ai writing",
+        "remove ai tells from writing",
+        "fiction editing agent skill",
+        "storyscope",
+        "ai writing detector avoid"
+      ]
+    },
+    {
+      "id": "AminBlg/SimpleEnglish",
+      "name": "SimpleEnglish",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "writing",
+        "technical-writing",
+        "ste",
+        "docs",
+        "style"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Make an agent write plain, unambiguous docs using ASD-STE100 Simplified Technical English.",
+      "why": "Turns vague AI prose into short, testable rules, with recomputable benchmarks and pressure tests.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An agent skill that makes LLMs write with the discipline of ASD-STE100, the controlled language used in aerospace manuals. It is plain English by default and strict STE on request. It is one folder with no dependencies and works in any agent that reads the Agent Skills standard.",
+      "best_for": "You want agent-written docs, READMEs or replies that are short, flat and hard to misread.",
+      "not_for": "Not STE-certified, since no tool is. Output sounds flat by design, so it is a poor fit for marketing or personal voice.",
+      "keywords": [
+        "simplified technical english",
+        "ste-100",
+        "plain english skill",
+        "stop ai writing tells",
+        "documentation style agent",
+        "agent skill writing",
+        "ASD-STE100"
+      ]
+    },
+    {
+      "id": "Fokkyp/SoftwareCopyright-Skill",
+      "name": "Software Copyright Materials Skill",
+      "category": "docs-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "software-copyright",
+        "china",
+        "docx",
+        "agent-skill",
+        "documentation"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate the full set of Chinese software copyright application documents (.docx) from a local project.",
+      "why": "Uses real source code only, applies the front/back 30 pages rule and writes manuals from the project.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill that reads your local project and, with your confirmation of key details, generates the materials for a Chinese software copyright filing: application form fields, an operation manual and code pages. It does not invent source code.",
+      "best_for": "Developers in China who want to prepare software copyright filings themselves with a coding agent.",
+      "not_for": "Specific to Chinese software copyright rules. You must check the output before submitting, and the README is in Chinese.",
+      "keywords": [
+        "软著申请",
+        "software copyright china",
+        "软件著作权 材料生成",
+        "generate docx application",
+        "claude code skill china",
+        "操作手册 生成",
+        "code pages 60"
+      ]
+    },
+    {
+      "id": "nicobailon/visual-explainer",
+      "name": "visual-explainer",
+      "category": "docs-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "html",
+        "diagrams",
+        "diff-review",
+        "agent-skill",
+        "visualization"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "typescript"
+      ],
+      "use_for": "Make your coding agent explain systems, diffs and plans as styled HTML pages instead of ASCII art.",
+      "why": "Turns terminal output into readable diagrams and tables with no build step.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An agent skill that generates a self-contained HTML page and opens it in your browser. It covers architecture diagrams, diff reviews, plan audits, data tables and project recaps, with slide decks too. Optional Pi and MCP integrations exist.",
+      "best_for": "Reviewing diffs and plans, or understanding a codebase, when terminal text is too hard to read.",
+      "not_for": "Headless or CI use with no browser. Output is HTML files saved locally, not an interactive app.",
+      "keywords": [
+        "agent diagrams",
+        "html diff review",
+        "claude code visualize",
+        "plan review skill",
+        "architecture diagram generator",
+        "slide deck from agent",
+        "visual explainer"
+      ]
+    },
+    {
+      "id": "lingfengQAQ/webnovel-writer",
+      "name": "Webnovel Writer",
+      "category": "docs-skills",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "web-novel",
+        "claude-code-plugin",
+        "long-form",
+        "consistency",
+        "chinese"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Write very long Chinese web novels with Claude Code while keeping setting, plot threads and outline consistent.",
+      "why": "Records facts after each chapter and checks them, so long serials keep their continuity.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Claude Code plugin for long serial fiction. It covers setup, volume outlines, chapter writing, review, memory and a read-only dashboard. Before writing it looks up the facts. After writing it stores new ones and checks consistency.",
+      "best_for": "Authors of long Chinese web novels who use Claude Code.",
+      "not_for": "This branch is the v6 Claude Code version and only gets fatal-bug fixes. The README points to a separate v8 for DeepSeek Harness. Chinese-focused.",
+      "keywords": [
+        "webnovel writer",
+        "网文创作",
+        "long novel ai",
+        "claude code novel plugin",
+        "foreshadowing tracking",
+        "serial fiction consistency"
+      ]
+    }
+  ]
+}

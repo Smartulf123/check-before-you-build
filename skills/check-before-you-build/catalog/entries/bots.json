@@ -393,6 +393,41 @@
       ]
     },
     {
+      "id": "nexu-io/nexu",
+      "name": "nexu",
+      "category": "bots",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "openclaw",
+        "wechat",
+        "feishu",
+        "slack",
+        "discord"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Connect an OpenClaw agent to WeChat, Feishu, Slack and Discord from a desktop app.",
+      "why": "One-click graphical setup, a WeChat plugin path, and bring-your-own-key with local-first data.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source desktop client that runs your OpenClaw agent inside chat apps such as WeChat, Feishu, Slack and Discord. It has graphical setup, built-in Feishu skills and multi-model support with your own API key.",
+      "best_for": "Putting an OpenClaw agent in your team chats quickly without writing bot code.",
+      "not_for": "A desktop client for macOS and Windows, not a bot framework or library. Tied to OpenClaw.",
+      "keywords": [
+        "openclaw desktop client",
+        "ai agent wechat",
+        "connect agent to feishu",
+        "agent in slack and discord",
+        "wechat ai bot",
+        "nexu"
+      ]
+    },
+    {
       "id": "nonebot/nonebot2",
       "name": "NoneBot2",
       "category": "bots",
@@ -425,6 +460,43 @@
         "plugins",
         "cross-platform",
         "adapters"
+      ]
+    },
+    {
+      "id": "rmyndharis/OpenWA",
+      "name": "OpenWA",
+      "category": "bots",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "whatsapp",
+        "api-gateway",
+        "self-hosted",
+        "webhooks",
+        "messaging"
+      ],
+      "ecosystems": [
+        "typescript",
+        "nodejs"
+      ],
+      "use_for": "Self-host a REST API gateway to send and receive WhatsApp messages.",
+      "why": "Pluggable storage and cache choices, plus a choice of whatsapp-web.js or Baileys engines.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenWA is a free, self-hosted WhatsApp API gateway. You choose SQLite or PostgreSQL, local or S3 media storage, and optional Redis through config. It supports two engines: whatsapp-web.js (headless Chromium) and Baileys (direct protocol, lower RAM).",
+      "best_for": "Developers who need a self-hosted unofficial WhatsApp API with webhooks.",
+      "not_for": "Anything needing account safety. The README warns of a non-zero ban risk and says to use a dedicated number you can afford to lose.",
+      "keywords": [
+        "whatsapp api",
+        "whatsapp gateway",
+        "self hosted whatsapp",
+        "baileys api",
+        "whatsapp-web.js server",
+        "whatsapp bot backend",
+        "whatsapp webhook",
+        "waha alternative"
       ]
     },
     {
@@ -665,6 +737,43 @@
         "bot api",
         "maven",
         "inline bot"
+      ]
+    },
+    {
+      "id": "codebymitch/TitanBot",
+      "name": "TitanBot",
+      "category": "bots",
+      "kinds": [
+        "app",
+        "template"
+      ],
+      "tags": [
+        "discord",
+        "moderation",
+        "economy",
+        "tickets",
+        "leveling"
+      ],
+      "ecosystems": [
+        "javascript",
+        "nodejs"
+      ],
+      "use_for": "Self-host or fork a Discord bot with moderation, economy, tickets, leveling and giveaways.",
+      "why": "One bot covers moderation, tickets, reaction roles, XP levels and giveaways.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A feature-rich Discord bot built on Discord.js v14 and PostgreSQL. It includes moderation tools, an economy with shop and gambling, tickets, server stat counters, reaction roles, leveling, giveaways and birthdays.",
+      "best_for": "Starting a community server bot from a ready feature set that you can run yourself and tweak.",
+      "not_for": "A finished bot, not a bot framework. Needs your own hosting and PostgreSQL. The README gives little detail on setup or extension.",
+      "keywords": [
+        "discord bot",
+        "discord moderation bot",
+        "discord ticket bot",
+        "discord economy bot",
+        "discord.js v14 bot",
+        "leveling bot",
+        "giveaway bot"
       ]
     },
     {

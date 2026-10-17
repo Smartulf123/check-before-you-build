@@ -1,0 +1,805 @@
+{
+  "category": "agent-memory",
+  "entries": [
+    {
+      "id": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "name": "Agent Skills for Context Engineering",
+      "category": "agent-memory",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "context-engineering",
+        "agent-skills",
+        "multi-agent",
+        "memory",
+        "evaluation"
+      ],
+      "ecosystems": [
+        "python",
+        "claude-code"
+      ],
+      "use_for": "Teach agents context management, memory, tool design, multi-agent patterns and evaluation through installable skills.",
+      "why": "Skill set plus worked example systems, installable as a Claude Code plugin marketplace.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open collection of Agent Skills on context engineering and harness design. Skills cover fundamentals, optimization, memory systems, tool design, multi-agent patterns and evaluation. Examples include an LLM-as-judge toolkit and a personal brain system, with pseudocode that works anywhere.",
+      "best_for": "Learning and applying context engineering when building or debugging agent systems.",
+      "not_for": "A runnable agent framework. Scripts are Python pseudocode to illustrate ideas.",
+      "keywords": [
+        "context engineering skills",
+        "agent context management",
+        "multi agent patterns skill",
+        "llm as judge",
+        "memory systems for agents",
+        "harness engineering",
+        "claude code plugin marketplace"
+      ]
+    },
+    {
+      "id": "tigerless-labs/agent-memory",
+      "name": "agent-memory",
+      "category": "agent-memory",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "agent-memory",
+        "markdown",
+        "bm25",
+        "claude-code",
+        "codex"
+      ],
+      "ecosystems": [
+        "typescript",
+        "markdown",
+        "sqlite"
+      ],
+      "use_for": "Give coding agents long-term memory stored as plain Markdown with local ranked search.",
+      "why": "Markdown is the source of truth and the SQLite index is a rebuildable cache, with no API key needed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "agent-memory is a memory runtime for AI agents. Memories live as Markdown files in one store shared by Claude Code, Codex CLI and others. Recall uses a local BM25 index with optional vectors, writes fire at conversation boundaries, and a sleep-time pass consolidates memory, with deletions only proposed for you to confirm.",
+      "best_for": "You want portable, greppable, git-friendly agent memory shared across several agent tools, fully local.",
+      "not_for": "Works through shell commands, so the agent must be able to run them. Not a hosted memory service or a graph database.",
+      "keywords": [
+        "agent memory",
+        "long-term memory claude code",
+        "markdown memory store",
+        "mem recall",
+        "shared memory codex claude",
+        "local memory fts5",
+        "sleep-time consolidation"
+      ]
+    },
+    {
+      "id": "gastownhall/beads",
+      "name": "Beads (bd)",
+      "category": "agent-memory",
+      "kinds": [
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "agent-memory",
+        "issue-tracker",
+        "dolt",
+        "task-graph",
+        "multi-agent"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Give coding agents a persistent, dependency-aware task graph instead of loose markdown plans.",
+      "why": "Hash-based IDs and a Dolt backend avoid merge collisions when many agents work at once.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "bd is a distributed graph issue tracker for AI agents, stored in Dolt. Agents create tasks, link dependencies, find ready work and close it. Output is JSON and old closed tasks can be summarised to save context.",
+      "best_for": "Long-running work with several agents or branches, where plans must survive restarts and sync between machines.",
+      "not_for": "Humans who want a normal issue tracker UI, or simple one-shot tasks that fit in a single chat context.",
+      "keywords": [
+        "agent memory",
+        "issue tracker for agents",
+        "beads",
+        "bd cli",
+        "dolt",
+        "task graph for ai",
+        "long-horizon agent tasks",
+        "multi-agent coordination"
+      ]
+    },
+    {
+      "id": "thedotmack/claude-mem",
+      "name": "claude-mem",
+      "category": "agent-memory",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "memory",
+        "context",
+        "sessions",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Persist and recall context across agent sessions by capturing and compressing what the agent did.",
+      "why": "The most popular persistent-memory plugin for Claude Code; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Persistent memory plugin for Claude Code that captures tool usage observations, generates semantic summaries and surfaces them in later sessions. Installed with npx claude-mem install, with support for other IDE hosts.",
+      "best_for": "Carrying project knowledge across Claude Code sessions automatically.",
+      "not_for": "The default flow involves signing in and a hosted memory service with a free trial; the local observer is opt-in. Fits only if you accept captured session data being processed.",
+      "keywords": [
+        "persistent memory",
+        "claude code memory",
+        "session context",
+        "observations",
+        "summaries",
+        "long-term memory",
+        "agent memory",
+        "plugin"
+      ]
+    },
+    {
+      "id": "colbymchenry/codegraph",
+      "name": "CodeGraph",
+      "category": "agent-memory",
+      "kinds": [
+        "cli",
+        "mcp",
+        "library"
+      ],
+      "tags": [
+        "code-graph",
+        "code-search",
+        "impact-analysis",
+        "local",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "typescript",
+        "rust"
+      ],
+      "use_for": "Give coding agents a pre-built code graph so they find symbols, callers and impact in one call.",
+      "why": "A native Rust parser covering 20+ languages with a file watcher that keeps the graph fresh.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "CodeGraph indexes every symbol, call edge and dependency in a repo into a local graph with full-text search. An agent asks one question and gets relevant code, call paths and the blast radius of a change. It auto-syncs on file changes.",
+      "best_for": "You want Claude Code, Codex, Cursor or similar agents to explore large codebases with fewer tool calls.",
+      "not_for": "It is for code navigation and analysis, not code generation. The cost and token savings quoted come from the authors' own benchmarks.",
+      "keywords": [
+        "codegraph",
+        "code knowledge graph",
+        "mcp code index",
+        "agent code context",
+        "impact analysis tool",
+        "call graph for ai agents",
+        "reduce tool calls claude code"
+      ]
+    },
+    {
+      "id": "mksglu/context-mode",
+      "name": "Context Mode",
+      "category": "agent-memory",
+      "kinds": [
+        "mcp",
+        "plugin"
+      ],
+      "tags": [
+        "context-window",
+        "mcp",
+        "hooks",
+        "session-memory",
+        "sqlite"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Keep raw tool output out of an agent's context and keep session state across compaction.",
+      "why": "Sandboxes tool output (315 KB to 5.4 KB in its example) and recalls events with FTS5 and BM25.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Context Mode is an MCP server plus hooks for coding agents. It runs tools in a sandbox so raw data stays out of the context window. It tracks edits, git operations, tasks and decisions in SQLite, then retrieves only what is relevant after the conversation compacts.",
+      "best_for": "Long coding sessions where MCP tools like Playwright or GitHub flood the context and compaction loses state.",
+      "not_for": "Adds hooks and routing to your agent setup. License is listed as unclear (NOASSERTION) on GitHub; check before building on it.",
+      "keywords": [
+        "reduce context usage",
+        "mcp context window",
+        "claude code memory",
+        "session continuity",
+        "token saving mcp",
+        "compaction recovery",
+        "tool output compression"
+      ]
+    },
+    {
+      "id": "EvoMap/evolver",
+      "name": "Evolver",
+      "category": "agent-memory",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "self-evolving-agents",
+        "gep",
+        "genes",
+        "agent-memory",
+        "hooks"
+      ],
+      "ecosystems": [
+        "javascript",
+        "nodejs"
+      ],
+      "use_for": "Add auditable self-improvement to coding agents through Genes, Capsules and Events.",
+      "why": "Hooks into Cursor, Claude Code and Codex lifecycles and logs each evolution step.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-evolving engine for AI agents based on the Genome Evolution Protocol. It records experience as Genes, Capsules and Events and reads session logs or memory files to learn. A CLI sets up hooks for several agent platforms.",
+      "best_for": "Experimenting with agents that learn from their own sessions, with an audit trail.",
+      "not_for": "License is GPL-3.0, and the README says future releases will become source-available. Codex lacks session transcripts, so review is limited there.",
+      "keywords": [
+        "self-evolving agent",
+        "agent self improvement",
+        "gep protocol",
+        "evolver npm",
+        "agent memory evolution",
+        "claude code hooks learning"
+      ]
+    },
+    {
+      "id": "Graphify-Labs/graphify",
+      "name": "Graphify",
+      "category": "agent-memory",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "knowledge-graph",
+        "tree-sitter",
+        "code-understanding",
+        "claude-code",
+        "local-first"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Turn a codebase and its docs into a queryable knowledge graph your coding agent can use instead of grepping.",
+      "why": "Parses code locally with tree-sitter, tags every edge as extracted or inferred, and uses no vector store.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Graphify adds a /graphify skill to assistants like Claude Code, Cursor and Codex. It maps code, docs, PDFs, images and video into a graph you can query, trace paths in, or ask to explain a concept. Code parsing is deterministic and local.",
+      "best_for": "You want an agent to navigate a large repo by structure and call paths rather than file-by-file search.",
+      "not_for": "Docs, PDFs and media need a model for the semantic pass. The README also pushes a paid Graphify Cloud for always-on use.",
+      "keywords": [
+        "graphify",
+        "codebase knowledge graph",
+        "code graph for claude code",
+        "tree-sitter graph",
+        "query codebase",
+        "god nodes",
+        "agent code map"
+      ]
+    },
+    {
+      "id": "headroomlabs-ai/headroom",
+      "name": "Headroom",
+      "category": "agent-memory",
+      "kinds": [
+        "library",
+        "service",
+        "mcp"
+      ],
+      "tags": [
+        "context-compression",
+        "tokens",
+        "proxy",
+        "mcp",
+        "rag"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Compress tool outputs, logs, files and RAG chunks before they reach the LLM to cut tokens.",
+      "why": "Offered as a library, a proxy, a one-command agent wrapper and an MCP server, with reversible compression.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Headroom compresses what your agent reads using a content router and compressors for JSON, code and prose. Use compress(messages) in Python or TypeScript, run a proxy, or wrap agents like Claude, Codex and Cursor. Originals are cached so the model can retrieve them.",
+      "best_for": "You run coding agents or RAG apps daily and want smaller context with no code changes, or a drop-in library.",
+      "not_for": "The README says to skip it if you use only one provider's own caching or compaction. Compression is lossy unless retrieved from the cache.",
+      "keywords": [
+        "headroom",
+        "compress llm context",
+        "reduce tokens",
+        "tool output compression",
+        "rag chunk compression",
+        "agent memory shared",
+        "context proxy"
+      ]
+    },
+    {
+      "id": "Ontos-AI/knowhere",
+      "name": "Knowhere",
+      "category": "agent-memory",
+      "kinds": [
+        "service",
+        "library"
+      ],
+      "tags": [
+        "document-parsing",
+        "rag",
+        "agent-memory",
+        "pdf",
+        "knowledge-graph"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Parse messy documents into structured, linked chunks and memory for AI agents and RAG.",
+      "why": "Keeps each result tied to its document, section and pages, with text and vision tracks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A document parsing and retrieval system that rebuilds hierarchy, structures multi-modal content and builds a graph in one pipeline. Version 2 can read complex PDFs and slides as pages with vision models. A managed cloud API is also offered.",
+      "best_for": "Agentic or vector RAG over complex local documents where citations and structure matter.",
+      "not_for": "Self-hosting is more involved than the managed cloud API. It is a parsing and memory layer, not an LLM framework.",
+      "keywords": [
+        "document parsing",
+        "pdf to chunks",
+        "agentic rag",
+        "mineru alternative",
+        "agent memory documents",
+        "pptx parsing",
+        "knowledge graph from documents"
+      ]
+    },
+    {
+      "id": "yvgude/lean-ctx",
+      "name": "LeanCTX",
+      "category": "agent-memory",
+      "kinds": [
+        "cli",
+        "mcp",
+        "library"
+      ],
+      "tags": [
+        "context-management",
+        "mcp",
+        "token-savings",
+        "proxy",
+        "audit"
+      ],
+      "ecosystems": [
+        "rust",
+        "typescript"
+      ],
+      "use_for": "Control what files and output an AI agent sees, cut repeated reads, and log context use.",
+      "why": "Runs locally as CLI, MCP, shell hook and proxy, with access controls and exportable evidence.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "LeanCTX sits between AI tools and the information they read. It selects task-relevant context, applies configured access and content controls, and records operations. It runs locally through CLI, MCP tools, shell hooks and a model proxy, with budgets, a dashboard and an SDK. Setup is lean-ctx setup.",
+      "best_for": "You want to reduce token waste and set boundaries for what coding agents can read.",
+      "not_for": "Savings depend on your setup and are estimates. Controls apply only to supported, configured integrations. It does not replace your agent or model.",
+      "keywords": [
+        "context window savings",
+        "reduce tokens claude code",
+        "mcp context server",
+        "agent file access control",
+        "context proxy",
+        "token tracking",
+        "lean ctx"
+      ]
+    },
+    {
+      "id": "Martian-Engineering/lossless-claw",
+      "name": "lossless-claw",
+      "category": "agent-memory",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "context-management",
+        "memory",
+        "summarization",
+        "sqlite",
+        "openclaw"
+      ],
+      "ecosystems": [
+        "typescript",
+        "openclaw"
+      ],
+      "use_for": "Keep full agent conversation history searchable instead of truncating it when context fills up.",
+      "why": "Stores every message in SQLite and builds a DAG of summaries agents can expand back to the original detail.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An OpenClaw plugin that replaces sliding-window compaction with Lossless Context Management. It saves all messages in SQLite, summarizes older chunks into a graph, assembles context from summaries plus recent messages, and offers grep, describe and expand tools plus an lcm CLI.",
+      "best_for": "Long-running OpenClaw agents that must recall details from far back in a session.",
+      "not_for": "Built for OpenClaw specifically. Summaries use your configured LLM, which adds model calls.",
+      "keywords": [
+        "lossless context management",
+        "agent long term memory",
+        "context compaction alternative",
+        "openclaw plugin",
+        "conversation summarization dag",
+        "lcm"
+      ]
+    },
+    {
+      "id": "aiming-lab/MetaClaw",
+      "name": "MetaClaw",
+      "category": "agent-memory",
+      "kinds": [
+        "service",
+        "library"
+      ],
+      "tags": [
+        "agent-learning",
+        "proxy",
+        "memory",
+        "skills",
+        "lora"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Put a proxy in front of your agent's model so it learns skills and memory from live conversations.",
+      "why": "Works with any OpenAI-compatible client, with optional RL weight updates deferred to idle time.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A proxy between a personal agent (OpenClaw, NanoClaw and similar) and its model. It injects relevant skills each turn, summarizes sessions into new skills, stores memory locally, and can run LoRA training in the background. It also exposes an Anthropic-style endpoint.",
+      "best_for": "Anyone running a personal agent who wants it to improve from use without retraining offline.",
+      "not_for": "One-shot apps with no ongoing conversations. The RL mode needs a Tinker-compatible training backend.",
+      "keywords": [
+        "self improving agent",
+        "agent meta learning",
+        "openclaw learning proxy",
+        "agent memory proxy",
+        "continual learning llm agent",
+        "skill injection",
+        "metaclaw"
+      ]
+    },
+    {
+      "id": "mnemosyne-oss/mnemosyne",
+      "name": "Mnemosyne",
+      "category": "agent-memory",
+      "kinds": [
+        "library",
+        "mcp"
+      ],
+      "tags": [
+        "agent-memory",
+        "sqlite",
+        "mcp",
+        "local-first",
+        "embeddings"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Add persistent, local memory to any agent with a Python SDK or MCP server backed by one SQLite file.",
+      "why": "Zero cloud services and a single pip install, with built-in MCP and many integration targets.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A memory layer for agent frameworks such as Claude Code, Cursor, Codex and OpenWebUI. It stores memories in SQLite with optional vector search and an MCP server. The README compares it to mem0, Letta and others, using its own benchmark figures.",
+      "best_for": "Developers who want agent memory that stays on one machine without Postgres or a hosted service.",
+      "not_for": "Multi-user or large shared deployments that need a networked database. Benchmark claims are the author's own.",
+      "keywords": [
+        "agent memory sqlite",
+        "local ai memory",
+        "mem0 alternative",
+        "letta alternative",
+        "mcp memory server",
+        "long term memory llm",
+        "mnemosyne memory"
+      ]
+    },
+    {
+      "id": "Tarquinen/opencode-dynamic-context-pruning",
+      "name": "OpenCode Dynamic Context Pruning",
+      "category": "agent-memory",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "opencode",
+        "context",
+        "token-usage",
+        "compression",
+        "plugin"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Cut token use in OpenCode sessions by compressing and pruning stale context.",
+      "why": "The model picks what to compress, and history on disk is never modified.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An OpenCode plugin that adds a compress tool and automatic cleanup. It replaces closed, stale conversation parts with summaries, drops duplicate tool calls and prunes inputs of failed calls.",
+      "best_for": "OpenCode users with long sessions who want lower token cost.",
+      "not_for": "Development has slowed, and new work moved to the author's Sleev project. AGPL-3.0. OpenCode only.",
+      "keywords": [
+        "context pruning",
+        "opencode plugin",
+        "reduce tokens",
+        "context compression",
+        "conversation summarization",
+        "sleev",
+        "token optimization"
+      ]
+    },
+    {
+      "id": "langchain-ai/openwiki",
+      "name": "OpenWiki",
+      "category": "agent-memory",
+      "kinds": [
+        "cli",
+        "mcp"
+      ],
+      "tags": [
+        "documentation",
+        "wiki",
+        "agents",
+        "codebase",
+        "mcp",
+        "markdown"
+      ],
+      "ecosystems": [
+        "typescript",
+        "nodejs"
+      ],
+      "use_for": "Generate and keep updated a linked Markdown wiki of your codebase that coding agents can read.",
+      "why": "Wiki facts link back to source evidence, so updates only redo what changed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenWiki turns a codebase and other knowledge sources into a linked Markdown wiki that you own. It tracks facts to source evidence so updates focus on changes. It can run inside your coding agent or as a standalone CLI, and it can search across linked repository wikis over MCP.",
+      "best_for": "Giving coding agents durable, up-to-date documentation for one repo or a group of related repos.",
+      "not_for": "Hand-written docs sites or public product documentation. It needs a model provider or a coding agent session to write pages.",
+      "keywords": [
+        "codebase wiki",
+        "agent documentation generator",
+        "repo docs for ai",
+        "deepwiki alternative",
+        "auto documentation",
+        "markdown wiki",
+        "langchain openwiki",
+        "code knowledge graph"
+      ]
+    },
+    {
+      "id": "teamchong/pxpipe",
+      "name": "pxpipe",
+      "category": "agent-memory",
+      "kinds": [
+        "service",
+        "cli"
+      ],
+      "tags": [
+        "proxy",
+        "token-saving",
+        "claude-code",
+        "context-compression",
+        "images"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run a local proxy that renders bulky prompt context as images to cut input tokens.",
+      "why": "Logs per-request token savings against a count_tokens baseline.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local proxy that rewrites the bulky parts of each request into compact PNGs before it leaves your machine. An image costs tokens by pixels, not text length, so dense code and tool output get cheaper. It handles Anthropic Messages, OpenAI and Google formats and keeps the prompt-cache prefix.",
+      "best_for": "Heavy Claude Code users who want a lower bill and can accept an image-based context channel.",
+      "not_for": "Savings depend on workload and prices. Sparse prose stays as text. Output tokens are not compressed. Models read images less exactly than text.",
+      "keywords": [
+        "pxpipe",
+        "reduce claude code tokens",
+        "context as images",
+        "token compression proxy",
+        "claude code cost",
+        "llm input token saving"
+      ]
+    },
+    {
+      "id": "rtk-ai/rtk",
+      "name": "RTK",
+      "category": "agent-memory",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "token-saving",
+        "cli-proxy",
+        "llm-context",
+        "output-filtering",
+        "single-binary"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Compress shell command output before your coding agent reads it, to save LLM tokens.",
+      "why": "A single Rust binary with 100+ command filters and under 10ms overhead.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "RTK sits between your agent and the shell and rewrites noisy output for commands like git, grep, ls, pytest, cargo test and docker. It uses filtering, grouping, truncation and deduplication. The README says it does not break prompt caching.",
+      "best_for": "You use Claude Code or similar agents and want smaller tool outputs without changing your workflow.",
+      "not_for": "It only helps with shell command output, not prompts, files or RAG content. Compression can hide detail the model might have needed.",
+      "keywords": [
+        "rtk",
+        "rtk-ai",
+        "reduce llm tokens",
+        "cli output compression",
+        "claude code token saver",
+        "shell output filter",
+        "token optimization proxy"
+      ]
+    },
+    {
+      "id": "aiming-lab/SimpleMem",
+      "name": "SimpleMem",
+      "category": "agent-memory",
+      "kinds": [
+        "library",
+        "mcp"
+      ],
+      "tags": [
+        "agent-memory",
+        "llm",
+        "mcp",
+        "multimodal",
+        "retrieval"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Give an LLM agent long-term memory that is stored compactly and retrieved with fewer tokens.",
+      "why": "Compresses memories without losing meaning, and supports text, image, audio and video.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Python package for agent memory. You add dialogue or media, it compresses and stores it, and you query it later with hybrid retrieval. It also ships an MCP server for Claude Desktop, Cursor and other MCP clients.",
+      "best_for": "Agents that need memory across long conversations, with a simple Python API or an MCP server.",
+      "not_for": "The MCP server covers text memory only. Multimodal and optimize() are Python-only for now. Needs an LLM backend for memory building.",
+      "keywords": [
+        "agent memory",
+        "long term memory llm",
+        "mcp memory server",
+        "lifelong memory",
+        "memory compression",
+        "multimodal memory",
+        "simplemem"
+      ]
+    },
+    {
+      "id": "NVlabs/SoL-Pi",
+      "name": "SoL-Pi",
+      "category": "agent-memory",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "pi",
+        "agent-harness",
+        "token-efficiency",
+        "extension",
+        "context"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Cut tokens and turns in the Pi coding agent with action fusion, observation handles, log reducers and context compaction.",
+      "why": "Efficiency gains that keep evidence: original outputs stay available and failures leave results unchanged.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A standalone NVIDIA extension for the Pi agent with four opt-in mechanisms. Action Fusion runs validation in the same tool call as an edit. ObservationPack turns repeated big outputs into handles. A reducer shrinks logs to checked receipts, and online compaction trims finished steps.",
+      "best_for": "Pi users running long coding sessions who want lower token cost without patching Pi.",
+      "not_for": "Other agents; it only works through Pi's extension APIs. The README says it is still under active development.",
+      "keywords": [
+        "pi coding agent extension",
+        "reduce agent tokens",
+        "agent harness efficiency",
+        "context compaction",
+        "nvidia sol-pi",
+        "tool result caching",
+        "auto research loops"
+      ]
+    },
+    {
+      "id": "trailhq/Trail-Code",
+      "name": "Trail-code",
+      "category": "agent-memory",
+      "kinds": [
+        "cli",
+        "plugin"
+      ],
+      "tags": [
+        "code-map",
+        "agent-memory",
+        "context",
+        "tree-sitter",
+        "team-learnings"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Give coding agents a code map and shared team learnings so they find the right files faster.",
+      "why": "Reports 33 vs 27 of 50 SWE-bench Verified issues solved with its map.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local context layer for Claude Code, Cursor, Codex and others. It parses your repo with tree-sitter into a map of functions and callers, and saves learnings from your conversations as readable files. It can flag changes that undo a teammate's decision.",
+      "best_for": "Teams whose agents keep re-exploring the same code or forgetting past decisions.",
+      "not_for": "People who want no extra files or hooks in their agent setup. Benefits in the README come from its own benchmarks.",
+      "keywords": [
+        "codebase map for agents",
+        "agent memory team",
+        "claude code context",
+        "tree-sitter code index",
+        "reduce agent tokens",
+        "trail code",
+        "graft code map"
+      ]
+    },
+    {
+      "id": "Egonex-AI/Understand-Anything",
+      "name": "Understand Anything",
+      "category": "agent-memory",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "knowledge-graph",
+        "codebase-onboarding",
+        "claude-code",
+        "dashboard",
+        "guided-tours"
+      ],
+      "ecosystems": [
+        "typescript",
+        "claude-code"
+      ],
+      "use_for": "Build an interactive knowledge graph of a codebase or docs and ask questions about it.",
+      "why": "Multi-agent pipeline plus a visual dashboard, guided tours and a business-logic view.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Claude Code plugin that analyzes a project and builds a graph of files, functions, classes and dependencies, then shows it in an interactive dashboard. It adds fuzzy and semantic search, guided tours and /understand-chat for questions. It also maps LLM wikis.",
+      "best_for": "You are onboarding onto a large unfamiliar codebase and want to see and explore its structure.",
+      "not_for": "It uses LLM agents to build the graph, so it costs model usage. It is for understanding code, not for editing or generating it.",
+      "keywords": [
+        "understand anything",
+        "codebase knowledge graph",
+        "code onboarding tool",
+        "claude code plugin graph",
+        "understand-chat",
+        "explore large codebase",
+        "copilot plugin graph"
+      ]
+    }
+  ]
+}

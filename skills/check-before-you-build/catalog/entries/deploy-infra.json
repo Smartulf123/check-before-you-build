@@ -2,6 +2,80 @@
   "category": "deploy-infra",
   "entries": [
     {
+      "id": "agent-substrate/substrate",
+      "name": "Agent Substrate",
+      "category": "deploy-infra",
+      "kinds": [
+        "service",
+        "engine"
+      ],
+      "tags": [
+        "sandbox",
+        "kubernetes",
+        "agents",
+        "microvm",
+        "gvisor"
+      ],
+      "ecosystems": [
+        "go",
+        "kubernetes"
+      ],
+      "use_for": "Run large numbers of sandboxed agents on Kubernetes with isolation, snapshots and fast resume.",
+      "why": "Snapshots idle agents out of memory and restores them in under 400ms, with several sandbox types.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A zero-trust runtime that maps many stateful actors onto a smaller pool of workers on standard Kubernetes. It supports microVMs and gVisor, keeps credentials away from untrusted code, and is a runtime rather than an agent SDK.",
+      "best_for": "Platform teams hosting many untrusted or mostly idle agents on Kubernetes.",
+      "not_for": "Small or single-machine setups, or looking for an agent framework. It is pre-1.0 with no backward compatibility promise.",
+      "keywords": [
+        "sandbox agents kubernetes",
+        "agent runtime",
+        "gvisor microvm agents",
+        "isolated agent execution",
+        "scale agents",
+        "agent substrate",
+        "kagent"
+      ]
+    },
+    {
+      "id": "kvcache-ai/AgentENV",
+      "name": "AgentENV",
+      "category": "deploy-infra",
+      "kinds": [
+        "service",
+        "cli"
+      ],
+      "tags": [
+        "sandbox",
+        "firecracker",
+        "snapshots",
+        "agent-rl",
+        "infrastructure"
+      ],
+      "ecosystems": [
+        "linux",
+        "firecracker"
+      ],
+      "use_for": "Run huge numbers of isolated agent sandboxes with fast start, snapshot and fork.",
+      "why": "Firecracker microVMs resume in under 50 ms and fork from snapshots, used for Kimi K3 training.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A distributed platform that runs Firecracker environments from OCI images loaded on demand. Environments boot or resume in under 50 ms, snapshot memory and disk incrementally, and can fork into independent sandboxes. An aenv CLI and server are provided.",
+      "best_for": "Agentic RL training and agent platforms that need many cheap, resumable sandboxes.",
+      "not_for": "Needs Linux hosts with Firecracker and privileged access. The API authenticates but does not encrypt traffic, so use a trusted network or HTTPS proxy.",
+      "keywords": [
+        "agent sandbox",
+        "firecracker microvm",
+        "sandbox snapshot fork",
+        "rl environments at scale",
+        "e2b alternative",
+        "agent environment platform",
+        "agentenv aenv"
+      ]
+    },
+    {
       "id": "ansible/ansible",
       "name": "Ansible",
       "category": "deploy-infra",
@@ -36,6 +110,43 @@
         "provisioning",
         "deployment",
         "idempotent"
+      ]
+    },
+    {
+      "id": "arcboxlabs/arcbox",
+      "name": "ArcBox",
+      "category": "deploy-infra",
+      "kinds": [
+        "engine",
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "containers",
+        "microvm",
+        "macos",
+        "docker",
+        "sandbox"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Run Docker-compatible containers, agent sandboxes, Linux VMs and macOS VMs on a Mac.",
+      "why": "An open-source, from-scratch Rust runtime with its own VMM aimed at OrbStack-level speed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A container and VM runtime for macOS written in Rust. One daemon and CLI cover a drop-in Docker engine, native Kubernetes, disposable microVM sandboxes for agents, full Linux machines and macOS guests, all local.",
+      "best_for": "Mac developers who want a fast open-source Docker Desktop alternative or isolated agent sandboxes.",
+      "not_for": "In public beta and macOS focused. Sandbox SDK general availability and wider Docker API coverage are still listed as next steps.",
+      "keywords": [
+        "docker desktop alternative",
+        "orbstack alternative",
+        "macos containers",
+        "microvm sandbox",
+        "agent sandbox",
+        "rust vmm",
+        "run macos vm"
       ]
     },
     {
@@ -291,6 +402,43 @@
       ]
     },
     {
+      "id": "TencentCloud/CubeSandbox",
+      "name": "Cube Sandbox",
+      "category": "deploy-infra",
+      "kinds": [
+        "service",
+        "engine"
+      ],
+      "tags": [
+        "sandbox",
+        "microvm",
+        "kvm",
+        "e2b-compatible",
+        "ai-agents"
+      ],
+      "ecosystems": [
+        "rust",
+        "linux"
+      ],
+      "use_for": "Self-host fast, hardware-isolated sandboxes where AI agents run untrusted code.",
+      "why": "Under 60ms startup and under 5MB overhead per sandbox, and it works with the E2B SDK.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A sandbox service built on RustVMM and KVM. Each sandbox runs its own kernel in a MicroVM. It supports snapshots, rollback, eBPF network isolation and an L7 proxy that injects credentials. Single node or multi-node clusters.",
+      "best_for": "Running agent code execution yourself at high density, or replacing E2B Cloud by changing one environment variable.",
+      "not_for": "Non-Linux or non-KVM hosts. It needs x86_64 Linux with KVM, and bare metal is the fallback path.",
+      "keywords": [
+        "ai agent sandbox",
+        "e2b alternative",
+        "self hosted code sandbox",
+        "microvm sandbox",
+        "firecracker alternative",
+        "secure code execution",
+        "cube sandbox"
+      ]
+    },
+    {
       "id": "deployphp/deployer",
       "name": "Deployer",
       "category": "deploy-infra",
@@ -470,6 +618,43 @@
       ]
     },
     {
+      "id": "floci-io/floci",
+      "name": "Floci",
+      "category": "deploy-infra",
+      "kinds": [
+        "service",
+        "cli"
+      ],
+      "tags": [
+        "aws",
+        "emulator",
+        "localstack-alternative",
+        "testing",
+        "ci"
+      ],
+      "ecosystems": [
+        "docker",
+        "java"
+      ],
+      "use_for": "Run AWS-style services locally for development, tests and CI without an AWS account.",
+      "why": "A free drop-in LocalStack replacement with real Docker-backed Lambda, RDS and more.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Floci is a local AWS emulator. Point your AWS SDK, CLI, Terraform or CDK at localhost port 4566. Services like Lambda, RDS and ECS run in real Docker containers. It starts fast and offers several storage modes.",
+      "best_for": "Teams who need local AWS for tests and CI and want no account, token or feature gates.",
+      "not_for": "Checking real AWS behaviour such as exact IAM or limits; an emulator will not match every detail.",
+      "keywords": [
+        "localstack alternative",
+        "aws emulator",
+        "local aws",
+        "mock aws services",
+        "aws for ci",
+        "terraform local aws",
+        "s3 dynamodb local"
+      ]
+    },
+    {
       "id": "helm/helm",
       "name": "Helm",
       "category": "deploy-infra",
@@ -643,6 +828,199 @@
       ]
     },
     {
+      "id": "ministackorg/ministack",
+      "name": "MiniStack",
+      "category": "deploy-infra",
+      "kinds": [
+        "service",
+        "cli"
+      ],
+      "tags": [
+        "aws",
+        "emulator",
+        "localstack-alternative",
+        "terraform",
+        "testing"
+      ],
+      "ecosystems": [
+        "docker",
+        "aws",
+        "python"
+      ],
+      "use_for": "Run 60+ AWS services locally for development and CI on one port.",
+      "why": "Small, fast, MIT licensed, and starts real Postgres, MySQL, Redis and Docker containers for RDS, ElastiCache and ECS.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local AWS emulator that serves over 60 services on port 4566. It works with boto3, the AWS CLI, Terraform, CDK and Pulumi, supports multiple accounts and regions, and uses real database containers for services like RDS and ElastiCache. The image is about 270MB.",
+      "best_for": "Teams that used LocalStack Community and want a free MIT-licensed local AWS for tests and CI.",
+      "not_for": "An emulator, so behavior can differ from real AWS. Some features need the full image.",
+      "keywords": [
+        "localstack alternative",
+        "local aws emulator",
+        "mock aws services",
+        "aws for ci",
+        "terraform local aws",
+        "dynamodb local",
+        "s3 sqs local"
+      ]
+    },
+    {
+      "id": "cloudflare/moltworker",
+      "name": "Moltworker",
+      "category": "deploy-infra",
+      "kinds": [
+        "template",
+        "service"
+      ],
+      "tags": [
+        "openclaw",
+        "cloudflare-sandbox",
+        "self-hosting",
+        "workers",
+        "ai-assistant"
+      ],
+      "ecosystems": [
+        "typescript",
+        "cloudflare-workers"
+      ],
+      "use_for": "Deploy the OpenClaw personal AI assistant on Cloudflare Workers inside a Sandbox container.",
+      "why": "One-click deploy with optional R2 backup and Cloudflare Access protection.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Packages OpenClaw (formerly Moltbot and Clawdbot) to run in a Cloudflare Sandbox. It gives a managed, always-on gateway with a control UI and Telegram, Discord and Slack channels. R2 storage backs up config every five minutes.",
+      "best_for": "Running OpenClaw without your own server, if you are on the Workers Paid plan.",
+      "not_for": "Production use. The README calls it an experimental proof of concept, not officially supported, and it may break without notice.",
+      "keywords": [
+        "openclaw cloudflare",
+        "moltbot deploy",
+        "clawdbot cloudflare workers",
+        "cloudflare sandbox ai assistant",
+        "self host ai assistant",
+        "workers container",
+        "moltworker"
+      ]
+    },
+    {
+      "id": "Osmantic/ODS",
+      "name": "ODS (Osmantic Deployment System)",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "self-hosted",
+        "local-ai",
+        "docker",
+        "homelab",
+        "llm"
+      ],
+      "ecosystems": [
+        "docker",
+        "linux"
+      ],
+      "use_for": "Install a private local AI stack (models, chat UI, dashboard, agents, RAG, image tools) with one command.",
+      "why": "Detects your GPU, picks a model, makes credentials and launches the whole stack.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "ODS installs and wires together tools like Ollama, Open WebUI, n8n and ComfyUI on your own PC, Mac or Linux box. One command detects the GPU, picks a model and starts the services. It adds a control dashboard and says it collects no telemetry.",
+      "best_for": "Setting up a self-hosted AI server or homelab without assembling each project by hand.",
+      "not_for": "This is a V3 pre-release for public testing. It is a stack installer, not a library for your own code.",
+      "keywords": [
+        "local ai server",
+        "self-hosted ai stack",
+        "ollama open webui installer",
+        "homelab ai",
+        "private ai",
+        "ods osmantic"
+      ]
+    },
+    {
+      "id": "opensandbox-group/OpenSandbox",
+      "name": "OpenSandbox",
+      "category": "deploy-infra",
+      "kinds": [
+        "service",
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "sandbox",
+        "agents",
+        "kubernetes",
+        "code-execution",
+        "sdk",
+        "mcp"
+      ],
+      "ecosystems": [
+        "python",
+        "go",
+        "kubernetes",
+        "docker"
+      ],
+      "use_for": "Run AI agent code, commands and browsers in isolated sandboxes on your own Docker or Kubernetes.",
+      "why": "One lifecycle API from local Docker to Kubernetes, with SDKs in five languages and network egress policies.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenSandbox gives AI applications isolated environments to execute code, run commands, manage files and operate browsers or desktops. It has a fast Firecracker runtime, ingress and egress controls, a credential vault, and SDKs, a CLI and MCP.",
+      "best_for": "Platforms that run untrusted agent-written code or evaluate agents in per-trial sandboxes.",
+      "not_for": "Light needs with no container setup. It needs Docker locally, or Kubernetes for scale.",
+      "keywords": [
+        "agent sandbox",
+        "code interpreter sandbox",
+        "e2b alternative",
+        "self hosted sandbox",
+        "firecracker sandbox",
+        "kubernetes agent sandbox",
+        "run coding agents safely",
+        "sandbox sdk"
+      ]
+    },
+    {
+      "id": "oblien/openship",
+      "name": "Openship",
+      "category": "deploy-infra",
+      "kinds": [
+        "service",
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "paas",
+        "ci-cd",
+        "self-hosted",
+        "deployment",
+        "tls",
+        "docker"
+      ],
+      "ecosystems": [
+        "typescript",
+        "docker"
+      ],
+      "use_for": "Self-host a deployment platform that builds, ships, routes and secures apps from a Git repo.",
+      "why": "Detects your stack, builds a Docker image, adds a domain and Let's Encrypt TLS, with push-to-deploy.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Openship is a self-hostable deployment platform with built-in CI/CD. Point it at a GitHub repo, local folder or prebuilt artifact and it detects the stack, builds, runs the container, then routes and issues TLS through an OpenResty edge. It supports preview environments and rollbacks, from a desktop app, web dashboard or CLI.",
+      "best_for": "Developers wanting a Vercel or Coolify style PaaS on their own server.",
+      "not_for": "Large multi-node clusters. Push-to-deploy needs an always-on server install.",
+      "keywords": [
+        "self hosted paas",
+        "vercel alternative",
+        "coolify alternative",
+        "heroku alternative",
+        "push to deploy",
+        "docker deployment platform",
+        "self host deployments",
+        "ci cd self hosted"
+      ]
+    },
+    {
       "id": "opentofu/opentofu",
       "name": "OpenTofu",
       "category": "deploy-infra",
@@ -675,6 +1053,43 @@
         "iac",
         "opentofu",
         "state"
+      ]
+    },
+    {
+      "id": "PatchMon/PatchMon",
+      "name": "PatchMon",
+      "category": "deploy-infra",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "patch-management",
+        "linux",
+        "self-hosted",
+        "monitoring",
+        "compliance"
+      ],
+      "ecosystems": [
+        "go",
+        "react"
+      ],
+      "use_for": "Self-host a dashboard that tracks package updates and patch status across a Linux, FreeBSD and Windows fleet.",
+      "why": "Agents connect outbound only, so no inbound ports or SSH exposure are needed on monitored hosts.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A patch management platform with a lightweight agent and a single Go binary with the React UI embedded. It supports apt, dnf, yum, apk, pacman and FreeBSD pkg, plus Windows. Docker is the quickest install, and a managed cloud is available.",
+      "best_for": "Ops teams and homelab users who want one view of pending updates and compliance across many servers.",
+      "not_for": "Closed-source embedding, since it is AGPL-3.0. It reports and manages patching but is not a full config-management tool like Ansible.",
+      "keywords": [
+        "linux patch management",
+        "self hosted update dashboard",
+        "server fleet monitoring",
+        "apt dnf patch status",
+        "outbound only agent",
+        "patchmon",
+        "vulnerability patch tracker"
       ]
     },
     {
@@ -718,6 +1133,45 @@
       ]
     },
     {
+      "id": "skyhook-io/radar",
+      "name": "Radar",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli",
+        "app",
+        "mcp"
+      ],
+      "tags": [
+        "kubernetes",
+        "dashboard",
+        "helm",
+        "gitops",
+        "mcp"
+      ],
+      "ecosystems": [
+        "go",
+        "kubernetes"
+      ],
+      "use_for": "Browse and debug a Kubernetes cluster from one binary, with a built-in MCP server for AI agents.",
+      "why": "Runs on your laptop with no install on the cluster, and has topology, Helm, GitOps and audit views.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Go binary that talks to the Kubernetes API and serves a web UI with topology, resources, event timeline, Helm, GitOps, traffic and audits. It can also run in-cluster via Helm and exposes an MCP server.",
+      "best_for": "Teams who want a lightweight Kubernetes UI with no agents or CRDs, and want AI agents to inspect clusters.",
+      "not_for": "Not a deployment or IaC tool. It is a viewer and operator UI, not a replacement for kubectl automation or full monitoring stacks.",
+      "keywords": [
+        "kubernetes ui",
+        "k8s dashboard",
+        "kubectl plugin",
+        "kubernetes mcp server",
+        "helm viewer",
+        "cluster topology",
+        "lens alternative",
+        "k9s alternative"
+      ]
+    },
+    {
       "id": "saltstack/salt",
       "name": "Salt",
       "category": "deploy-infra",
@@ -748,6 +1202,41 @@
         "infrastructure automation",
         "states",
         "python"
+      ]
+    },
+    {
+      "id": "smol-machines/smolvm",
+      "name": "smolvm",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli",
+        "engine"
+      ],
+      "tags": [
+        "microvm",
+        "sandbox",
+        "agents",
+        "oci",
+        "virtual-machine"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Run AI agents or dev environments in fast, branchable microVMs on your own machine.",
+      "why": "Real VMs with their own kernel that boot in under a second and run any OCI image.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI and embeddable engine for lightweight virtual machines. Machines persist, use elastic memory, run OCI images and are declared in a Smolfile. Docs include a SKILL.md per task for agents.",
+      "best_for": "Sandboxing agent-run code locally with stronger isolation than containers.",
+      "not_for": "Intel Macs are not supported by the Mac builds mentioned, and Windows needs the Windows Hypervisor Platform. Not a container orchestrator.",
+      "keywords": [
+        "microvm sandbox",
+        "agent sandbox local",
+        "lightweight vm",
+        "firecracker alternative",
+        "run untrusted code vm",
+        "embeddable virtual machine"
       ]
     },
     {

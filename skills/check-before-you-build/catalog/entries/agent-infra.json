@@ -1,0 +1,950 @@
+{
+  "category": "agent-infra",
+  "entries": [
+    {
+      "id": "microsoft/agent-governance-toolkit",
+      "name": "Agent Governance Toolkit",
+      "category": "agent-infra",
+      "kinds": [
+        "library",
+        "framework"
+      ],
+      "tags": [
+        "governance",
+        "policy",
+        "zero-trust",
+        "audit",
+        "owasp"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Enforce policy, identity and audit logging on autonomous agents' tool calls.",
+      "why": "Covers the OWASP Agentic Top 10, with adapters for OpenAI Agents SDK, CrewAI, smolagents and more.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Python toolkit that puts a policy engine (YAML, OPA or Cedar), identity (SPIFFE, DID, mTLS) and tamper-evident audit logging between an agent and its tools. Every layer is optional; start with govern().",
+      "best_for": "Teams putting agents into production who need allow or deny policy and an audit trail.",
+      "not_for": "A small prototype that needs no controls. Install the [full] extra; the base wheel is only a compliance CLI, and older agent_os APIs are deprecated.",
+      "keywords": [
+        "agent governance",
+        "agent policy enforcement",
+        "owasp agentic top 10",
+        "zero trust agents",
+        "agent audit log",
+        "guardrails tool calls",
+        "cedar opa agents"
+      ]
+    },
+    {
+      "id": "unicity-aos/aos-ce",
+      "name": "AOS Community Edition",
+      "category": "agent-infra",
+      "kinds": [
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "agent-os",
+        "mcp",
+        "wasm",
+        "permissions",
+        "audit"
+      ],
+      "ecosystems": [
+        "rust",
+        "webassembly"
+      ],
+      "use_for": "Give agents a shared local environment where tools run as permissioned WebAssembly capsules.",
+      "why": "Capabilities run as isolated Wasm capsules with explicit permissions and an audit trail.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local agent operating system. Plugins connect Claude, Codex and Grok, and it also exposes MCP. Capabilities run as isolated WebAssembly capsules on the Astrid runtime, with approvals in a Command Center. It includes the `aos` CLI and first-party capsules.",
+      "best_for": "People who want to control what local agents can access, and to build tools as sandboxed capsules.",
+      "not_for": "A new runtime with its own model, so expect a learning curve. It governs agent access, it is not an agent itself.",
+      "keywords": [
+        "agent operating system",
+        "wasm capsules agents",
+        "mcp permissions",
+        "agent access control",
+        "astrid runtime",
+        "local agent sandbox"
+      ]
+    },
+    {
+      "id": "astrid-runtime/astrid",
+      "name": "Astrid",
+      "category": "agent-infra",
+      "kinds": [
+        "engine",
+        "framework"
+      ],
+      "tags": [
+        "capability-security",
+        "wasm",
+        "sandbox",
+        "runtime",
+        "capsules"
+      ],
+      "ecosystems": [
+        "rust",
+        "webassembly"
+      ],
+      "use_for": "Build agent systems or services from sandboxed WebAssembly components with explicit permissions.",
+      "why": "Puts trust in the runtime, not the prompt, so agents get only granted authority.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A portable user-space runtime for macOS and Linux that runs software as WebAssembly capsules. Capsules talk over typed interfaces and an event bus, and each principal gets its own capabilities and state. Capsules can be installed or removed while it runs.",
+      "best_for": "Agent platforms where untrusted model-driven code needs strict, auditable permissions.",
+      "not_for": "Ready-made agents. It does not pick a model, agent loop or UI for you, and it is not yet a bootable OS.",
+      "keywords": [
+        "capability security agents",
+        "wasm agent sandbox",
+        "agent runtime",
+        "sandboxed plugins",
+        "secure agent platform",
+        "webassembly capsules",
+        "astrid os"
+      ]
+    },
+    {
+      "id": "google/ax",
+      "name": "AX",
+      "category": "agent-infra",
+      "kinds": [
+        "engine",
+        "cli"
+      ],
+      "tags": [
+        "orchestrator",
+        "sandbox",
+        "kubernetes",
+        "agent-runtime",
+        "declarative"
+      ],
+      "ecosystems": [
+        "go",
+        "kubernetes"
+      ],
+      "use_for": "Run large numbers of sandboxed agent tasks from declarative YAML manifests, in a cluster.",
+      "why": "Kubernetes-style apply/watch/ssh workflow for agents, with suspend and resume.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "AX is a declarative orchestrator for autonomous agent workloads. You describe Task, Workspace and Model objects in YAML and apply them with the ax CLI. It runs on Agent Substrate for sandboxed execution.",
+      "best_for": "Teams that already think in Kubernetes terms and need to run many isolated agent jobs with pre-wired repos, MCP servers and skills.",
+      "not_for": "Small projects or anyone needing stability today. The README warns of heavy development and likely breaking changes before a stable release.",
+      "keywords": [
+        "agent orchestrator",
+        "run agents at scale",
+        "kubernetes for agents",
+        "sandboxed agent tasks",
+        "agent workspace",
+        "declarative agents",
+        "google ax"
+      ]
+    },
+    {
+      "id": "looplj/axonhub",
+      "name": "AxonHub",
+      "category": "agent-infra",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "llm-gateway",
+        "failover",
+        "load-balancing",
+        "cost-tracking",
+        "rbac"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Self-host an AI gateway so any SDK can call 100+ models with failover, tracing and cost tracking.",
+      "why": "Translates between SDK formats, for example the OpenAI SDK calling Claude, with no code changes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "AxonHub is an AI gateway that converts requests to each provider's format, fails over automatically, balances load, traces requests and tracks cost per request. It adds RBAC, quotas and data isolation, and is set up through a web admin.",
+      "best_for": "Teams that want one endpoint for many LLM providers with usage control and observability.",
+      "not_for": "A lightweight library inside one app. The README is mostly in Chinese and has several sponsor ads.",
+      "keywords": [
+        "llm gateway",
+        "ai gateway",
+        "openai compatible proxy",
+        "litellm alternative",
+        "model failover",
+        "llm cost tracking",
+        "use openai sdk with claude"
+      ]
+    },
+    {
+      "id": "BenedictKing/ccx",
+      "name": "CCX",
+      "category": "agent-infra",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "api-proxy",
+        "llm-gateway",
+        "failover",
+        "protocol-translation",
+        "admin-ui"
+      ],
+      "ecosystems": [
+        "go",
+        "vue"
+      ],
+      "use_for": "Run one gateway in front of Claude, OpenAI, Codex Responses and Gemini APIs with failover and key rotation.",
+      "why": "Translates between provider protocols and adds channel priorities, health checks and a web admin console.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "CCX is an AI API proxy and protocol translation gateway. One port serves Claude Messages, OpenAI Chat, Images, Embeddings, Codex Responses and Gemini endpoints, plus a web admin. It schedules channels by priority and health, rotates keys, routes by model and context window, and tracks traffic.",
+      "best_for": "You have several upstream model providers or keys and want one endpoint with failover and monitoring.",
+      "not_for": "You must supply the upstream keys. A gateway only, not an SDK. The README is mixed English and Chinese.",
+      "keywords": [
+        "llm api proxy",
+        "claude openai gemini gateway",
+        "api failover",
+        "key rotation proxy",
+        "protocol translation",
+        "codex responses proxy",
+        "ccx"
+      ]
+    },
+    {
+      "id": "BlockRunAI/ClawRouter",
+      "name": "ClawRouter",
+      "category": "agent-infra",
+      "kinds": [
+        "library",
+        "service"
+      ],
+      "tags": [
+        "llm-router",
+        "x402",
+        "usdc",
+        "agents",
+        "cost-saving"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Route each LLM request to the cheapest capable model, with wallet or API key billing for agents.",
+      "why": "Scores requests across 15 dimensions locally in under 1ms and lets agents pay by USDC wallet signature.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source LLM router covering 88 models. It picks a model per request locally, and agents can pay with USDC over x402 on Base or Solana, or humans can use a credit card and API key. Some models are free.",
+      "best_for": "Agents that must buy model access without accounts, or anyone cutting API cost with automatic model selection.",
+      "not_for": "Plain single-provider use. Most models go through BlockRun's paid gateway, and the savings figure is the project's own claim.",
+      "keywords": [
+        "llm router",
+        "cheapest model routing",
+        "x402 payments",
+        "agent wallet llm",
+        "openrouter alternative",
+        "usdc llm api",
+        "model routing"
+      ]
+    },
+    {
+      "id": "cloudflare/computer",
+      "name": "Cloudflare Computer",
+      "category": "agent-infra",
+      "kinds": [
+        "library",
+        "service"
+      ],
+      "tags": [
+        "virtual-filesystem",
+        "durable-objects",
+        "sandbox",
+        "agent-workspace",
+        "sqlite"
+      ],
+      "ecosystems": [
+        "typescript",
+        "cloudflare-workers"
+      ],
+      "use_for": "Give an agent a persistent filesystem and shell or JS execution inside a Durable Object.",
+      "why": "One workspace API over container, isolate shell and isolate JavaScript backends.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A virtual filesystem whose authoritative state lives in a Durable Object's SQLite. Execution is pluggable: a container with a FUSE mount, just-bash in a Dynamic Worker, or an ECMAScript module in a Dynamic Worker. Runnable examples are included.",
+      "best_for": "Agent apps on Cloudflare that need durable files and sandboxed command execution.",
+      "not_for": "Non-Cloudflare stacks. The README warns parts are work-in-progress or experimental, and a legacy container backend is deprecated.",
+      "keywords": [
+        "agent filesystem",
+        "cloudflare durable object workspace",
+        "give agent a computer",
+        "sandboxed shell for agents",
+        "just-bash worker",
+        "dynamic workers",
+        "cloudflare agents"
+      ]
+    },
+    {
+      "id": "duolahypercho/codex-router",
+      "name": "Codex Router",
+      "category": "agent-infra",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "codex",
+        "model-router",
+        "failover",
+        "kimi",
+        "deepseek"
+      ],
+      "ecosystems": [
+        "node",
+        "shell"
+      ],
+      "use_for": "Use Anthropic, Kimi, DeepSeek, xAI and other models inside the Codex app and CLI with your own credentials.",
+      "why": "Guided install and rollback, with failover to the next enabled model when a provider runs out of quota.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Codex Router routes the Codex app and CLI to external model providers. A guided installer handles setup and credential entry in local prompts, and one install can also serve DeepSeek Harness, Gemini CLI, Cursor, Claude Code and OpenClaw. Failover rebuilds the turn for the next eligible model on balance or rate-limit errors.",
+      "best_for": "You use Codex but want other providers' models, and want sessions to survive a quota limit.",
+      "not_for": "Edits your Codex setup (it has rollback), and installs through a piped curl or PowerShell script. Only models you have enabled and credentialed are used.",
+      "keywords": [
+        "codex custom models",
+        "codex kimi deepseek",
+        "use claude in codex",
+        "model failover",
+        "codex provider router",
+        "codex cli external models",
+        "quota failover"
+      ]
+    },
+    {
+      "id": "withcoral/coral",
+      "name": "Coral",
+      "category": "agent-infra",
+      "kinds": [
+        "service",
+        "mcp"
+      ],
+      "tags": [
+        "mcp",
+        "agent-tools",
+        "sandbox",
+        "credentials",
+        "policy"
+      ],
+      "ecosystems": [
+        "typescript",
+        "rust"
+      ],
+      "use_for": "Give agents one MCP server for many services, with stored credentials and per-operation approval rules.",
+      "why": "Agents send short TypeScript programs that run in a secretless sandbox, so they never hold your tokens.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "One MCP server that fronts many service providers. Agents search for operations, write short TypeScript programs, and Coral runs them in an isolated sandbox, adds credentials and checks each call against your policy. Working programs can be saved as reusable functions, and every run is logged.",
+      "best_for": "Teams connecting agents to many APIs who want central credentials, approvals and an audit trail.",
+      "not_for": "You host and configure it. Overkill when an agent only needs one or two MCP servers.",
+      "keywords": [
+        "mcp gateway",
+        "agent credentials",
+        "mcp tool sprawl",
+        "agent sandbox typescript",
+        "approval policy for agents",
+        "openapi to mcp",
+        "execution layer for agents"
+      ]
+    },
+    {
+      "id": "tashfeenahmed/freellmapi",
+      "name": "FreeLLMAPI",
+      "category": "agent-infra",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "llm-gateway",
+        "openai-compatible",
+        "free-tier",
+        "router",
+        "failover"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Put many free LLM tiers behind one OpenAI-compatible /v1 endpoint with routing and failover.",
+      "why": "Stacks 34 free providers, rotates on rate limits, and tracks per-key usage for you.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted server that exposes one OpenAI-compatible API, including chat, responses, images and audio. A router picks a model per request, fails over when a provider is rate-limited, stores keys encrypted and tracks usage against free-tier caps.",
+      "best_for": "Experiments, prototypes and personal tools that need lots of cheap LLM calls through any OpenAI client.",
+      "not_for": "Personal experimentation only, per its description. Free installs get catalog updates 30 days late; faster updates need the paid plan.",
+      "keywords": [
+        "free llm api",
+        "openai compatible proxy",
+        "llm router",
+        "llm gateway",
+        "free tier aggregator",
+        "model failover",
+        "litellm alternative"
+      ]
+    },
+    {
+      "id": "nextlevelbuilder/goclaw",
+      "name": "GoClaw",
+      "category": "agent-infra",
+      "kinds": [
+        "service",
+        "framework"
+      ],
+      "tags": [
+        "agent-gateway",
+        "multi-tenant",
+        "postgresql",
+        "multi-agent",
+        "llm"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Host many AI agents and teams for many users from one Go gateway with channels and tenant isolation.",
+      "why": "Single binary with multi-tenant PostgreSQL, 20+ providers, teams and messaging channels.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Go multi-agent gateway with an 8-stage agent pipeline, three-tier memory, a knowledge vault and agent teams. It supports 20+ LLM providers and channels like Telegram, Discord and Slack. A lite desktop edition uses SQLite.",
+      "best_for": "Teams who want to self-host a multi-tenant agent platform with encrypted keys and RBAC.",
+      "not_for": "The full version needs PostgreSQL with pgvector. The lite desktop edition is limited to 5 agents and has no channels. License is not clearly stated.",
+      "keywords": [
+        "openclaw alternative go",
+        "multi tenant ai agents",
+        "agent gateway",
+        "self hosted agent platform",
+        "telegram discord agent",
+        "agent teams",
+        "goclaw"
+      ]
+    },
+    {
+      "id": "HarnessRouter/harnessrouter",
+      "name": "HarnessRouter Community Edition",
+      "category": "agent-infra",
+      "kinds": [
+        "service",
+        "framework"
+      ],
+      "tags": [
+        "agent-harness",
+        "self-hosted",
+        "openai-compatible",
+        "sessions",
+        "multi-backend"
+      ],
+      "ecosystems": [
+        "javascript"
+      ],
+      "use_for": "Running Codex, Claude Code, Hermes, PI and other agent harnesses behind one self-hosted, OpenAI Responses-compatible API.",
+      "why": "Implements the Unified Harness Protocol with persistent sessions, streaming, files, cancellation and structured failures.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "HarnessRouter Community Edition is the self-hosted, Apache-2.0 edition of a unified interface for agent harnesses. It turns CLIs like Codex and Claude Code into plug-and-play backends behind one API, handling sessions, streaming progress, artifacts and failures, deployable with a single Docker command.",
+      "best_for": "Teams building an agent product who want to switch harnesses and models without rewriting harness integration code.",
+      "not_for": "You still need your own model provider API key; there is no bundled model or trial key.",
+      "keywords": [
+        "unified harness protocol",
+        "agent harness router",
+        "claude code api backend",
+        "codex api wrapper",
+        "self hosted agent backend",
+        "harnessrouter"
+      ]
+    },
+    {
+      "id": "llm-as-a-verifier/llm-as-a-verifier",
+      "name": "LLM-as-a-Verifier",
+      "category": "agent-infra",
+      "kinds": [
+        "library",
+        "framework"
+      ],
+      "tags": [
+        "verification",
+        "best-of-n",
+        "agent-eval",
+        "reward",
+        "logprobs"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Score and pick the best of several agent attempts using fine-grained LLM judging, with no extra training.",
+      "why": "Uses the full logprob distribution of score tokens, which gives finer feedback than a single pass or fail.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A framework that gives fine-grained feedback for any agent. It scores trajectories by taking the expectation over score-token logprobs and repeating evaluation across criteria. Use it for best-of-N, progress tracking or RL.",
+      "best_for": "Picking the best of N agent runs on coding or other agent tasks, or building a reward signal without training a model.",
+      "not_for": "Needs an LLM endpoint that returns logprobs. You must supply your own trajectories and criteria.",
+      "keywords": [
+        "llm as a judge",
+        "best of n selection",
+        "agent trajectory verifier",
+        "test-time scaling",
+        "reward model alternative",
+        "swe-bench verifier"
+      ]
+    },
+    {
+      "id": "ulab-uiuc/LLMRouter",
+      "name": "LLMRouter",
+      "category": "agent-infra",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "llm-routing",
+        "model-selection",
+        "cost-optimization",
+        "benchmarks",
+        "cli"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Dynamically routing each query to the cheapest or best-performing LLM instead of hardcoding one model.",
+      "why": "Supports over 16 routing models across five categories, from KNN and SVM to graph-based and BERT-based routers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "LLMRouter is an open-source library for LLM routing that picks the most suitable model per query based on task complexity, cost and performance. It includes a unified CLI for training, inference and interactive chat, plus a data generation pipeline that builds training data from 11 benchmark datasets.",
+      "best_for": "Teams running many LLM calls who want to cut cost and latency by routing simple queries to cheaper models.",
+      "not_for": "Requires generating or sourcing routing training data first, so it's not a zero-setup drop-in for a single API call.",
+      "keywords": [
+        "llm routing library",
+        "multi model router",
+        "llm cost optimization",
+        "model routing cli",
+        "smart llm routing",
+        "llmrouter"
+      ]
+    },
+    {
+      "id": "yetone/magpie",
+      "name": "magpie",
+      "category": "agent-infra",
+      "kinds": [
+        "app",
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "gateway",
+        "llm",
+        "claude-code",
+        "codex",
+        "quota",
+        "model-routing"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Point Claude Code, Codex, Gemini CLI and OpenCode at any model through one local gateway.",
+      "why": "Switch each agent's model from the menu bar, with failover across accounts and usage and cost tracking.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "magpie runs a local gateway that serves coding agents. You add providers by preset and key or by subscription sign-in, then pick a model per agent. It supports routing groups that fail over between accounts, saved profiles, quota views, token and cost tracking, and OTLP export.",
+      "best_for": "Developers who use several coding agents and many model providers or subscriptions.",
+      "not_for": "Embedding LLM calls in your own app. It is a tool for CLI agents. The README does not state the licence terms beyond a MIT badge.",
+      "keywords": [
+        "claude code other models",
+        "codex deepseek",
+        "llm gateway local",
+        "model switcher",
+        "quota tracker",
+        "provider failover",
+        "agent model router",
+        "claude code kimi"
+      ]
+    },
+    {
+      "id": "strukto-ai/mirage",
+      "name": "Mirage",
+      "category": "agent-infra",
+      "kinds": [
+        "library",
+        "framework"
+      ],
+      "tags": [
+        "virtual-filesystem",
+        "agent-tools",
+        "sandbox",
+        "terminal",
+        "mcp-alternative"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Give an agent one virtual terminal over S3, Slack, Gmail, Redis and more, with permission control.",
+      "why": "Mounts many services as files so agents use ls, grep and jq instead of many SDKs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A virtual terminal for agents. Backends mount side by side in one virtual filesystem. CLIs like git and slack are answered by Mirage itself, and Python or JavaScript is routed to configured runtimes. Profiles set allow, ask or deny rules.",
+      "best_for": "Agent builders who want one consistent, controllable tool surface across many data sources.",
+      "not_for": "A new abstraction layer. If you only need one or two API tools, direct tools or MCP servers are simpler.",
+      "keywords": [
+        "virtual filesystem for agents",
+        "agent terminal",
+        "agent sandbox",
+        "unix tools for agents",
+        "alternative to mcp",
+        "mount slack s3 as files",
+        "agent permissions"
+      ]
+    },
+    {
+      "id": "Nasiko-Labs/nasiko",
+      "name": "Nasiko",
+      "category": "agent-infra",
+      "kinds": [
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "agent-discovery",
+        "cost-tracking",
+        "model-routing",
+        "coding-harness",
+        "governance"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Find the coding agents your team runs, track their spend, and route them to chosen models.",
+      "why": "Discovery is read-only and needs no changes to your app code.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open runtime for coding harnesses such as Claude Code, Codex, Cursor and OpenCode. The nasiko CLI detects installed harnesses, reports cost by harness and model, and can route to models you pick. Reporting and routing are opt-in hooks or setting changes.",
+      "best_for": "Engineering leads who need visibility and control over coding-agent costs.",
+      "not_for": "Building your own agents. The license is not clearly stated (NOASSERTION), and routing edits harness settings.",
+      "keywords": [
+        "coding agent cost tracking",
+        "claude code spend",
+        "agent discovery",
+        "llm model routing",
+        "harness governance",
+        "ai coding usage dashboard",
+        "nasiko"
+      ]
+    },
+    {
+      "id": "NVIDIA/NemoClaw",
+      "name": "NemoClaw",
+      "category": "agent-infra",
+      "kinds": [
+        "cli",
+        "framework"
+      ],
+      "tags": [
+        "sandbox",
+        "openshell",
+        "security",
+        "openclaw",
+        "hermes"
+      ],
+      "ecosystems": [
+        "typescript",
+        "docker"
+      ],
+      "use_for": "Run supported AI agents inside NVIDIA OpenShell sandboxes with managed inference and network policy.",
+      "why": "A reference stack for safer agent runs with guided onboarding and policy controls.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "NemoClaw is an open source reference stack for running agents such as OpenClaw, Hermes and LangChain Deep Agents Code inside OpenShell sandboxes. A CLI handles onboarding, managed inference, network policy, integrations and lifecycle.",
+      "best_for": "Teams that want to run autonomous agents with sandboxing and network controls.",
+      "not_for": "Building your own agent. It wraps a short list of supported agents, and it is a reference stack, not a general framework.",
+      "keywords": [
+        "nemoclaw",
+        "nvidia openshell",
+        "sandbox ai agents",
+        "secure openclaw",
+        "agent sandbox",
+        "hermes agent sandbox",
+        "managed inference"
+      ]
+    },
+    {
+      "id": "NVIDIA-NeMo/Switchyard",
+      "name": "NVIDIA NeMo Switchyard",
+      "category": "agent-infra",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "model-routing",
+        "llm",
+        "openai-compatible",
+        "anthropic",
+        "cost-optimization"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Route each agent request to the best model in your pool to balance success, cost and latency.",
+      "why": "Keeps native OpenAI and Anthropic API compatibility, and plugs into OpenRouter, LiteLLM or NeMo Relay.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source library for choosing which model handles each request. You define the model pool and pick a routing algorithm that inspects the request or recent tool activity. Use it through a gateway, a local proxy, or embedded in your own harness.",
+      "best_for": "Teams running agents that mix cheap and strong models and want to measure savings against a single-model baseline.",
+      "not_for": "A full gateway service: your gateway or app owns the rest. The LiteLLM plugin is experimental and cannot run classifier or escalation algorithms.",
+      "keywords": [
+        "llm router",
+        "model routing agents",
+        "route between models",
+        "cheap vs strong model routing",
+        "openrouter nvidia switchyard",
+        "litellm routing plugin",
+        "cost performance llm"
+      ]
+    },
+    {
+      "id": "onecli/onecli",
+      "name": "OneCLI",
+      "category": "agent-infra",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "agent-harness",
+        "sandbox",
+        "credentials",
+        "teams",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "typescript",
+        "rust"
+      ],
+      "use_for": "Run a sandboxed personal AI agent for each person on a team, with shared policy and credentials handled by a gateway.",
+      "why": "Agents only reach the outside world through a gateway that injects credentials and enforces team policy.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hostable platform for running AI agents as a team. Each person gets an agent in an isolated sandbox, reachable from a dashboard or Slack. A gateway injects credentials, applies one policy and can ask for human approval before risky actions.",
+      "best_for": "Companies that want every employee to have a controlled autonomous agent, with identity-provider login and approvals.",
+      "not_for": "A solo developer who just wants an agent library. It is a multi-user platform you host with pnpm or Helm.",
+      "keywords": [
+        "agent harness for teams",
+        "sandboxed agents",
+        "credential vault ai agents",
+        "multi-user ai agent",
+        "agent gateway policy",
+        "human in the loop approvals",
+        "onecli"
+      ]
+    },
+    {
+      "id": "open-webui/open-terminal",
+      "name": "Open Terminal",
+      "category": "agent-infra",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "sandbox",
+        "terminal",
+        "rest-api",
+        "ai-agents",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "python",
+        "docker"
+      ],
+      "use_for": "Give an AI agent a self-hosted shell it can drive over a REST API to run commands, manage files and execute code.",
+      "why": "Ships as a Docker sandbox with a full toolkit, or installs with pip to run on your own machine.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A lightweight self-hosted terminal for AI agents and automation. It exposes a REST API for running commands, managing files and searching. Run it in Docker for a sandbox, or with pip on bare metal with access to your real files.",
+      "best_for": "Building an agent that needs somewhere safe to run code, with a simple API and an isolated Docker environment.",
+      "not_for": "Bare-metal mode runs commands on your real machine, so it is not a sandbox. The full Docker image is about 4 GB.",
+      "keywords": [
+        "agent sandbox",
+        "remote shell api",
+        "run code for ai agent",
+        "open webui terminal",
+        "code execution environment",
+        "self-hosted terminal",
+        "docker sandbox"
+      ]
+    },
+    {
+      "id": "lidge-jun/opencodex",
+      "name": "OpenCodex",
+      "category": "agent-infra",
+      "kinds": [
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "proxy",
+        "llm",
+        "codex",
+        "claude-code",
+        "provider-routing",
+        "failover"
+      ],
+      "ecosystems": [
+        "typescript",
+        "nodejs"
+      ],
+      "use_for": "Run Codex, Claude Code and similar tools against any LLM provider through a local translating proxy.",
+      "why": "One local proxy gives 40+ providers to Codex and Claude Code, with failover combos and account pooling.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenCodex is a lightweight local proxy that translates Codex's Responses API into whatever your provider speaks. It supports streaming, tool calls, reasoning tokens and images. It adds combos with failover, sub-agents on any model, and an optional ChatGPT account pool.",
+      "best_for": "Using Claude, Gemini, DeepSeek, Kimi, Ollama and others inside Codex or Claude Code without changing the client.",
+      "not_for": "A general LLM SDK for your own app. The README warns that account pooling does not protect you from provider limits or terms.",
+      "keywords": [
+        "codex proxy",
+        "use any llm with codex",
+        "claude code other models",
+        "llm gateway",
+        "responses api proxy",
+        "deepseek with codex",
+        "ollama codex",
+        "provider failover"
+      ]
+    },
+    {
+      "id": "paperclipai/paperclip",
+      "name": "Paperclip",
+      "category": "agent-infra",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "agent-orchestration",
+        "org-chart",
+        "budgets",
+        "governance",
+        "dashboard"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node",
+        "react"
+      ],
+      "use_for": "Manage a team of AI agents with goals, org charts, budgets and approvals from one dashboard.",
+      "why": "Treats agents like staff: hierarchy, heartbeats, cost limits and review stages.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Paperclip is a Node.js server and React UI that orchestrates a team of AI agents. You bring your own agents (Claude Code, Codex, Cursor and others), assign goals, and track tasks and costs. It adds budgets, governance and multi-organization support.",
+      "best_for": "You run several agents and want a company-style control layer: tasks, budgets, approvals and history.",
+      "not_for": "It manages agents, it is not an agent framework or model SDK. A cloud version is on a waitlist, so you host it yourself.",
+      "keywords": [
+        "paperclip",
+        "agent orchestration",
+        "manage ai agents",
+        "ai company dashboard",
+        "agent budgets",
+        "multi agent org chart",
+        "bring your own agent"
+      ]
+    },
+    {
+      "id": "mattpocock/sandcastle",
+      "name": "Sandcastle",
+      "category": "agent-infra",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "coding-agents",
+        "sandbox",
+        "docker",
+        "orchestration",
+        "git-branches"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run AI coding agents in isolated Docker, Podman or Vercel sandboxes and merge their commits back.",
+      "why": "One `sandcastle.run()` call handles the sandbox and the branch strategy.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A TypeScript library that starts coding agents inside sandboxes with a configurable branch strategy, then merges the commits back. It ships Docker, Podman and Vercel providers and lets you add your own. Useful for parallel or unattended agents.",
+      "best_for": "Parallelizing coding agents or building review pipelines without letting agents touch your working tree.",
+      "not_for": "TypeScript only, and you need a sandbox provider such as Docker. It orchestrates existing agents, it is not an agent itself.",
+      "keywords": [
+        "sandboxed coding agents",
+        "run claude code in docker",
+        "parallel agents git",
+        "agent sandbox library",
+        "afk agents",
+        "agent branch strategy"
+      ]
+    },
+    {
+      "id": "weave-os/router",
+      "name": "Weave Router",
+      "category": "agent-infra",
+      "kinds": [
+        "service",
+        "cli"
+      ],
+      "tags": [
+        "llm-router",
+        "proxy",
+        "cost-reduction",
+        "otel",
+        "byok"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Point Claude Code, Codex or your app at one endpoint that picks the best model for each request.",
+      "why": "Uses a small on-box embedder to route each action, with provider keys staying on your machine.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A drop-in proxy for Anthropic, OpenAI and Gemini APIs that routes every request to a model chosen by a cluster scorer. It also reaches open models via OpenRouter, keeps provider keys encrypted locally, and exports OTLP traces. Run it hosted or self-hosted.",
+      "best_for": "Teams using coding agents or LLM apps who want to cut cost by routing to cheaper adequate models.",
+      "not_for": "Quality depends on the routing decisions, so test on your workload. The quickstart defaults to a hosted router unless you pick local.",
+      "keywords": [
+        "llm router",
+        "model routing proxy",
+        "reduce llm cost",
+        "claude code proxy",
+        "openrouter alternative routing",
+        "anthropic openai gemini gateway",
+        "model selection per request"
+      ]
+    }
+  ]
+}

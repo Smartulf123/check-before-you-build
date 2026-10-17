@@ -109,6 +109,43 @@
       ]
     },
     {
+      "id": "t8y2/dbx",
+      "name": "DBX",
+      "category": "databases",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "database-client",
+        "mcp",
+        "sql",
+        "multi-database",
+        "ai-assistant"
+      ],
+      "ecosystems": [
+        "desktop",
+        "docker"
+      ],
+      "use_for": "Browse and query 100+ databases from one small desktop, Docker or CLI client.",
+      "why": "A 25 MB binary with built-in AI SQL help and an MCP server for coding agents.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "DBX is a lightweight database client for MySQL, PostgreSQL, SQLite, Redis, MongoDB and many more. It also has consoles for message queues such as Kafka. It offers an AI assistant, an MCP server, signed plugins, and desktop, Docker and web versions.",
+      "best_for": "Developers who want one light tool for many databases and want agents to query them through MCP.",
+      "not_for": "Embedding in your own app as a library; it is a finished client, not a database toolkit.",
+      "keywords": [
+        "database client",
+        "dbeaver alternative",
+        "tableplus alternative",
+        "sql gui",
+        "mysql postgres redis client",
+        "database mcp server",
+        "dameng"
+      ]
+    },
+    {
       "id": "diesel-rs/diesel",
       "name": "Diesel",
       "category": "databases",
@@ -366,6 +403,76 @@
         "preload",
         "transactions",
         "sql"
+      ]
+    },
+    {
+      "id": "russellromney/honker",
+      "name": "honker",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "sqlite-extension",
+        "pubsub",
+        "task-queue",
+        "notify-listen",
+        "embedded-queue"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Adding durable pub/sub, task queues and event streams directly inside a SQLite database file, with no broker.",
+      "why": "Replaces queue-table polling with a single-digit-microsecond PRAGMA data_version read for push-like delivery.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "honker is a SQLite loadable extension with bindings for ten languages that adds Postgres-style NOTIFY/LISTEN semantics plus durable pub/sub, task queues, event streams and cron-style scheduling to SQLite, all inside one .db file with no separate daemon or broker.",
+      "best_for": "Projects already using SQLite as their primary datastore that need a queue or pub/sub without adding Redis and Celery.",
+      "not_for": "Deliberately excludes workflow DAGs, task chains, multi-writer replication and distributed locking across machines.",
+      "keywords": [
+        "sqlite pubsub extension",
+        "sqlite task queue",
+        "notify listen sqlite",
+        "honker sqlite",
+        "embedded job queue",
+        "sqlite event streams"
+      ]
+    },
+    {
+      "id": "hydra-db/hydradb",
+      "name": "HydraDB",
+      "category": "databases",
+      "kinds": [
+        "service",
+        "engine"
+      ],
+      "tags": [
+        "graph-database",
+        "opencypher",
+        "object-storage",
+        "bolt",
+        "slatedb"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Run a graph database on S3-compatible storage, queried with OpenCypher over Bolt or HTTPS.",
+      "why": "Stateless query nodes scale apart from storage, and Neo4j drivers work over Bolt.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An object-store-native distributed graph database in Rust. It stores graph data on SlateDB, runs snapshot-consistent OpenCypher queries with GraphBLAS traversal, and offers Bolt 5.x and an HTTPS JSON/NDJSON API.",
+      "best_for": "Graph workloads where cheap object storage and independently scaled compute matter, and Neo4j client compatibility helps.",
+      "not_for": "Anyone who cannot accept AGPL-3.0. Contributions also need an approved issue first.",
+      "keywords": [
+        "graph database",
+        "neo4j alternative",
+        "opencypher database",
+        "s3 graph database",
+        "bolt protocol",
+        "rust graph db",
+        "hydradb"
       ]
     },
     {
@@ -896,6 +1003,42 @@
       ]
     },
     {
+      "id": "oceanbase/seekdb",
+      "name": "seekdb",
+      "category": "databases",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "vector-search",
+        "full-text-search",
+        "mysql-compatible",
+        "agent-memory",
+        "sandbox"
+      ],
+      "ecosystems": [
+        "python",
+        "sql"
+      ],
+      "use_for": "Storing and querying agent memory with hybrid vector, full-text and relational search in one SQL engine.",
+      "why": "Supports FORK/MERGE copy-on-write sandboxes so agents can explore safely and roll back.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "seekdb is a MySQL-compatible database, embeddable or server-based, that unifies vector, full-text and structured search in one engine with full ACID guarantees. It targets agent state and memory: write an observation, retrieve it milliseconds later, fork a sandbox to explore, and merge or drop the result.",
+      "best_for": "Agent platforms and RAG applications that need hybrid vector plus full-text search without running separate systems.",
+      "not_for": "Not a general drop-in replacement for a mature relational database if you don't need vector or full-text search.",
+      "keywords": [
+        "ai agent memory database",
+        "vector plus full text search",
+        "mysql compatible vector db",
+        "agent state store",
+        "hybrid search database",
+        "seekdb"
+      ]
+    },
+    {
       "id": "sequelize/sequelize",
       "name": "Sequelize",
       "category": "databases",
@@ -971,6 +1114,42 @@
       ]
     },
     {
+      "id": "Maxteabag/sqlit",
+      "name": "sqlit",
+      "category": "databases",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "tui",
+        "sql",
+        "database-client",
+        "postgres",
+        "mysql"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Browse and query SQL databases from a simple terminal interface.",
+      "why": "Needs no setup or docs: keybindings show on screen, and missing drivers install on demand.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A terminal UI for SQL databases, described as the lazygit of SQL. It saves connections, supports PostgreSQL, MySQL, SQLite, SQL Server and 10+ more, tunnels over SSH, stores passwords in the OS keyring, and has autocomplete, query history and Vim-style editing. It also runs SQL from the command line.",
+      "best_for": "Developers who want a quick, intuitive terminal database client.",
+      "not_for": "Deliberately limited. The author says Harlequin and Lazysql offer more features.",
+      "keywords": [
+        "terminal sql client",
+        "database tui",
+        "lazygit for sql",
+        "postgres tui",
+        "mysql terminal client",
+        "harlequin alternative",
+        "lazysql alternative"
+      ]
+    },
+    {
       "id": "transact-rs/sqlx",
       "name": "SQLx",
       "category": "databases",
@@ -1043,6 +1222,77 @@
         "firebase alternative",
         "rest api",
         "pgvector"
+      ]
+    },
+    {
+      "id": "TableProApp/TablePro",
+      "name": "TablePro",
+      "category": "databases",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "database-client",
+        "sql",
+        "native",
+        "mcp",
+        "macos"
+      ],
+      "ecosystems": [
+        "swift",
+        "macos"
+      ],
+      "use_for": "Browse and edit SQL and NoSQL databases in a native Mac or iOS client, or fork it.",
+      "why": "Native, multi-database and open source, with an MCP server so Claude Desktop or Cursor can query databases.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A native database client with a SQL editor, data grid, SSH tunnels, query history and built-in AI chat. Drivers are native, and you can write a database driver plugin in Swift.",
+      "best_for": "macOS and iOS developers who want a TablePlus-style client that is open source.",
+      "not_for": "Windows or Linux: Windows is not supported and Linux is a prototype. It is AGPL-3.0, and some Mac extras need a paid license.",
+      "keywords": [
+        "tableplus alternative",
+        "database client mac",
+        "native sql client",
+        "open source db gui",
+        "mcp database client",
+        "sequel ace alternative"
+      ]
+    },
+    {
+      "id": "TabularisDB/tabularis",
+      "name": "Tabularis",
+      "category": "databases",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "sql-client",
+        "desktop",
+        "mcp",
+        "plugins",
+        "notebooks"
+      ],
+      "ecosystems": [
+        "rust",
+        "typescript"
+      ],
+      "use_for": "Use or extend a desktop SQL workspace with driver plugins, SQL notebooks and a built-in MCP server.",
+      "why": "Plugins can be written in any language over JSON-RPC, and agents can query through MCP.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop database client with 3 built-in drivers and 24 shipped plugins (DuckDB, ClickHouse, Redis, Firestore and more). It has SQL notebooks, visual EXPLAIN, optional text-to-SQL with hosted or local models, and an MCP server for Claude, Cursor and Devin.",
+      "best_for": "Developers who want a free DBeaver alternative that agents can use through MCP.",
+      "not_for": "Embedding in your own product: it is an end-user desktop app. Plugin drivers vary in maturity.",
+      "keywords": [
+        "sql client desktop",
+        "dbeaver alternative",
+        "database mcp server",
+        "sql notebook",
+        "text to sql local model",
+        "database gui plugins",
+        "tabularis"
       ]
     },
     {

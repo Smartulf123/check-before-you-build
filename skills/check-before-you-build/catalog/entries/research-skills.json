@@ -1,0 +1,768 @@
+{
+  "category": "research-skills",
+  "entries": [
+    {
+      "id": "Orchestra-Research/AI-Research-SKILLs",
+      "name": "AI Research Skills",
+      "category": "research-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "ml-research",
+        "fine-tuning",
+        "evaluation",
+        "paper-writing"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Give a coding agent skills for AI research, from training and evaluation to writing papers.",
+      "why": "Large library of focused skills across 23 categories, installable with one npm command.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A library of around 90 agent skills covering the AI research lifecycle: architecture, fine-tuning, post-training, distributed training, inference, RAG, evaluation, MLOps and paper writing. Works with Claude Code, Codex and Gemini agents.",
+      "best_for": "ML engineers and researchers who want their coding agent to follow tested workflows for training, evaluation and write-up.",
+      "not_for": "Non-ML work. The skills are narrow to AI research and engineering, and the README lists only one contributor.",
+      "keywords": [
+        "ai research skills",
+        "ml agent skills",
+        "claude code ml skills",
+        "fine tuning skills",
+        "llm training skills",
+        "research agent",
+        "paper writing skill"
+      ]
+    },
+    {
+      "id": "anysearch-ai/anysearch-skill",
+      "name": "AnySearch Skill",
+      "category": "research-skills",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "web-search",
+        "search",
+        "extraction",
+        "agent-skill",
+        "batch-search"
+      ],
+      "ecosystems": [
+        "python",
+        "agent-skills"
+      ],
+      "use_for": "Give an agent web search, vertical search, parallel batch search and page content extraction.",
+      "why": "One skill covers search, batch queries and Markdown extraction through a small dependency-free CLI.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A search skill for AI agents backed by the AnySearch service. It offers general and vertical search, batch search and URL extraction to Markdown through a CLI script. It needs an API key you register for.",
+      "best_for": "Agents that need live web search and page text without writing their own search integration.",
+      "not_for": "Offline use or binary files: extract does not handle PDF, Office files, images, audio or video. Depends on the AnySearch service.",
+      "keywords": [
+        "web search skill",
+        "agent search tool",
+        "anysearch",
+        "search api for agents",
+        "url to markdown",
+        "batch web search"
+      ]
+    },
+    {
+      "id": "wanshuiyin/Auto-claude-code-research-in-sleep",
+      "name": "ARIS (Auto-Research-In-Sleep)",
+      "category": "research-skills",
+      "kinds": [
+        "skill",
+        "plugin",
+        "cli"
+      ],
+      "tags": [
+        "research",
+        "ml",
+        "review-loop",
+        "claude-code",
+        "codex",
+        "experiments"
+      ],
+      "ecosystems": [
+        "markdown",
+        "python"
+      ],
+      "use_for": "Run autonomous ML research workflows from coding agents: idea discovery, experiments and cross-model review.",
+      "why": "A Markdown-only skill set where one model works and a second, independent model reviews it.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "ARIS is a set of Markdown skills for autonomous research. The executor agent does the work and an independent model (Codex MCP by default) reviews it. It works in Claude Code, Codex CLI, Cursor and other agent hosts, and also ships as a CLI and plugins.",
+      "best_for": "Researchers who want an agent to find ideas, run experiments and write up results with a second model checking the work.",
+      "not_for": "General coding help or non-research tasks. The default setup depends on Codex MCP as the reviewer, and the skill count is large.",
+      "keywords": [
+        "autonomous research",
+        "ml research agent",
+        "paper writing agent",
+        "cross-model review",
+        "claude code research skills",
+        "experiment automation",
+        "idea discovery",
+        "aris"
+      ]
+    },
+    {
+      "id": "Galaxy-Dawn/claude-scholar",
+      "name": "Claude Scholar",
+      "category": "research-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "research",
+        "academic",
+        "literature-review",
+        "experiments",
+        "writing"
+      ],
+      "ecosystems": [
+        "claude-code"
+      ],
+      "use_for": "Add skills and commands that help researchers with literature, experiments, reports and paper writing in a coding agent.",
+      "why": "Keeps the researcher in charge while automating notes, analysis and writing support.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A semi-automated research assistant for computer science and AI researchers. It covers literature review, coding, experiments, reporting, writing and project notes. The main branch targets Claude Code, with separate branches for Codex CLI, Kimi Code CLI and OpenCode.",
+      "best_for": "Academic and AI researchers who want structured agent help across the research workflow.",
+      "not_for": "Not a fully automated scientist. You choose the right branch for your agent, and it is aimed at research, not general software work.",
+      "keywords": [
+        "research assistant claude code",
+        "academic agent skills",
+        "literature review ai",
+        "paper writing skills",
+        "experiment analysis agent",
+        "obsidian research notes",
+        "ml researcher workflow"
+      ]
+    },
+    {
+      "id": "AgriciDaniel/claude-obsidian",
+      "name": "claude-obsidian",
+      "category": "research-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "obsidian",
+        "knowledge-base",
+        "second-brain",
+        "claude-code",
+        "pkm",
+        "markdown"
+      ],
+      "ecosystems": [
+        "markdown",
+        "obsidian"
+      ],
+      "use_for": "Build an Obsidian vault where Claude captures sources, links notes and answers from cited evidence.",
+      "why": "Local-first and source-cited, with parallel agents applying changes through one recoverable transaction.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "claude-obsidian is a local-first knowledge system for Claude Code and compatible Agent Skills hosts. It turns source material into linked, source-cited Obsidian pages, answers from what is already in the vault, and gives workflows for research, retrieval, maintenance and mapping. The vault stays ordinary files.",
+      "best_for": "People who want an AI-maintained, linked knowledge base they own as plain Markdown.",
+      "not_for": "Automatic transcript recording, cloud sync or a factual oracle. The README says it is none of these.",
+      "keywords": [
+        "obsidian second brain",
+        "llm wiki",
+        "claude code obsidian",
+        "ai note taking",
+        "pkm agent",
+        "notion alternative",
+        "karpathy llm wiki",
+        "knowledge graph markdown"
+      ]
+    },
+    {
+      "id": "garrytan/gbrain",
+      "name": "GBrain",
+      "category": "research-skills",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "agent-memory",
+        "knowledge-base",
+        "search",
+        "skills",
+        "personal-knowledge"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Give the agent you already use a long-term memory with sources, corrections and search.",
+      "why": "Returns answers with sources instead of page lists, and shares one memory across several agents.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "GBrain stores explicit facts with their sources and lets you correct or withdraw them. Memory is shared across agents. It starts with keyless keyword retrieval, then adds semantic search, synthesis and background enrichment. Pages are linked with typed edges and kept fresh by sync.",
+      "best_for": "OpenClaw, Hermes or Claude users who want a personal or team memory they control.",
+      "not_for": "Opinionated setup built around the author's own agents. A hosted version exists if you do not want to run it.",
+      "keywords": [
+        "agent memory",
+        "second brain for agents",
+        "personal knowledge base ai",
+        "openclaw memory",
+        "hermes agent brain",
+        "memory with sources",
+        "gbrain"
+      ]
+    },
+    {
+      "id": "Oldcircle/geo-sleuth",
+      "name": "geo-sleuth",
+      "category": "research-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "geolocation",
+        "agent-skill",
+        "osint",
+        "openstreetmap",
+        "satellite"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Find where a photo was taken using OpenStreetMap geometry, terrain, satellite imagery and street view.",
+      "why": "Every claim must point to a command and a file, and the answer comes with an error radius and a heading.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An Agent Skill, SKILL.md plus about twenty Python scripts. The agent runs intake, candidate ranking, sun and terrain analysis, OSM corridors and satellite or street-view matching, then reports position, heading and an evidence image.",
+      "best_for": "Photo geolocation with an agent, including photos with no text or landmarks.",
+      "not_for": "Needs a doctor.py setup check and external map and imagery services. Do not use it to locate private individuals.",
+      "keywords": [
+        "photo geolocation",
+        "where was this photo taken",
+        "geoguessr agent",
+        "osint image location",
+        "geolocate image skill",
+        "geo sleuth"
+      ]
+    },
+    {
+      "id": "jordan-gibbs/hyperresearch",
+      "name": "hyperresearch",
+      "category": "research-skills",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "deep-research",
+        "citations",
+        "wiki",
+        "subagents",
+        "codex"
+      ],
+      "ecosystems": [
+        "python",
+        "claude-code",
+        "codex"
+      ],
+      "use_for": "Turn Claude Code or Codex into a deep research agent that writes a cited report from many sources.",
+      "why": "A 16-step pipeline with citation checking, source independence audits and a persistent searchable vault.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Hyperresearch is a deep research skill for Claude Code and OpenAI Codex. A tier-adaptive pipeline gathers hundreds of sources, runs adversarial critics, checks that each citation supports its sentence, and ships a report with provenance. Sources are saved in a searchable vault, and a hosted version also exists.",
+      "best_for": "You need long, well-cited research reports and want each run to build on a reusable source vault.",
+      "not_for": "Benchmark claims are the author's own. Large runs read many sources, which costs time and tokens. Codex support needs the latest GitHub install until the next PyPI release.",
+      "keywords": [
+        "deep research agent",
+        "claude code deep research",
+        "research skill citations",
+        "open deep research",
+        "research wiki vault",
+        "draco benchmark",
+        "hpr scholar search"
+      ]
+    },
+    {
+      "id": "mvanhorn/last30days-skill",
+      "name": "last30days",
+      "category": "research-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "research",
+        "reddit",
+        "hacker-news",
+        "web-search"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Research what people said about a topic in the last 30 days across Reddit, X, HN and the web",
+      "why": "About 48k skills.sh installs; synthesizes recent community discussion into a cited brief.",
+      "skill": "mvanhorn/last30days-skill/last30days",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Agent skill that searches Reddit, Hacker News, Polymarket and GitHub (plus X, YouTube, TikTok, arXiv, Techmeme and more after setup) in parallel, scores results by engagement, and synthesizes a cited brief of the last 30 days.",
+      "best_for": "Researching what communities are currently saying about a topic, tool or trend.",
+      "not_for": "Window is recent activity only. Some sources need setup or credentials, and results reflect engagement, not accuracy.",
+      "keywords": [
+        "research",
+        "reddit",
+        "hacker news",
+        "polymarket",
+        "social search",
+        "last 30 days",
+        "trend research",
+        "agent skill",
+        "cited brief"
+      ],
+      "featured": true
+    },
+    {
+      "id": "lijigang/ljg-skills",
+      "name": "ljg-skills",
+      "category": "research-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "codex",
+        "skills",
+        "chinese",
+        "knowledge",
+        "cards"
+      ],
+      "ecosystems": [
+        "markdown",
+        "typescript"
+      ],
+      "use_for": "Install a set of Chinese-language Codex skills for reading, analogy, concept analysis and PNG card output.",
+      "why": "Installs with the skills CLI and ships org-mode and Markdown branches.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A personal skill set for Codex installed with bunx skills add. Skills include analogy, blind-spot scan, business model canvas, card rendering, classic text reading, concept analysis and paper reading. Note skills output org-mode by default, or Markdown from the md branch.",
+      "best_for": "Chinese-reading Codex users who want thinking, reading and card-making skills.",
+      "not_for": "Self-described as the author's own skill set, written in Chinese. The ljg-card skill needs Playwright and Chromium.",
+      "keywords": [
+        "ljg skills",
+        "codex skills chinese",
+        "concept analysis skill",
+        "ljg-card",
+        "skills cli install",
+        "org-mode skills"
+      ]
+    },
+    {
+      "id": "gnekt/My-Brain-Is-Full-Crew",
+      "name": "My Brain Is Full - Crew",
+      "category": "research-skills",
+      "kinds": [
+        "skill",
+        "template"
+      ],
+      "tags": [
+        "obsidian",
+        "agents",
+        "second-brain",
+        "dispatcher",
+        "skills"
+      ],
+      "ecosystems": [
+        "markdown",
+        "obsidian"
+      ],
+      "use_for": "Manage an Obsidian vault by chatting with a set of agents and skills for notes, search and email triage.",
+      "why": "A dispatcher coordinates 8+ agents and 14 skills, and a guided flow lets you create new agents.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A crew of AI agents and skills that run an Obsidian vault through conversation. You clone it into your vault and run a setup script. A dispatcher routes requests to skills first and then to agents that capture notes, search, transcribe, file and triage email, in any language, on four platforms.",
+      "best_for": "You use Obsidian and want to organize notes by talking to an agent instead of managing folders.",
+      "not_for": "Built around Obsidian and a supported agent platform. License is not clearly stated in the metadata. Personal-workflow oriented, so expect to adapt it.",
+      "keywords": [
+        "obsidian agents",
+        "second brain ai",
+        "obsidian claude code",
+        "vault organizer",
+        "note taking agents",
+        "obsidian skills",
+        "my brain is full"
+      ]
+    },
+    {
+      "id": "Yuan1z0825/nature-skills",
+      "name": "Nature Skills",
+      "category": "research-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "academic-writing",
+        "scientific-figures",
+        "paper-polishing",
+        "chinese",
+        "skills"
+      ],
+      "ecosystems": [
+        "markdown",
+        "claude-code"
+      ],
+      "use_for": "Polish papers in Nature-style academic language and make research figures with agent skills.",
+      "why": "Collects reusable research skills, with core Nature Polishing and Nature Figure functions.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A set of research skills that polish academic writing and produce scientific figures in the style of Nature papers. Each skill has Chinese and English docs and a SKILL.md. It installs via npx skills, Claude Code or Codex, and a web version exists.",
+      "best_for": "You write research papers, especially in Chinese or English, and want agent help with prose and figures.",
+      "not_for": "The README is mostly Chinese and mixes in promotion of paid account top-up services. Results for non-Nature venues may differ.",
+      "keywords": [
+        "nature skills",
+        "nature-skills",
+        "paper polishing skill",
+        "scientific figure skill",
+        "academic writing agent skill",
+        "科研绘图",
+        "论文润色"
+      ]
+    },
+    {
+      "id": "breferrari/obsidian-mind",
+      "name": "Obsidian Mind",
+      "category": "research-skills",
+      "kinds": [
+        "template",
+        "mcp",
+        "skill"
+      ],
+      "tags": [
+        "obsidian",
+        "memory",
+        "claude-code",
+        "knowledge-base",
+        "qmd"
+      ],
+      "ecosystems": [
+        "markdown",
+        "node"
+      ],
+      "use_for": "Give coding agents persistent memory using an Obsidian vault with local search.",
+      "why": "Works with Claude Code, Codex CLI and Gemini CLI, and searches locally with no API keys.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An Obsidian vault set up so an agent files notes, links and indexes as you talk. Search uses QMD with three small local models (keyword, vector and hybrid), and an MCP server exposes recall and search.",
+      "best_for": "Developers who already use Obsidian and want their agent to remember across sessions.",
+      "not_for": "Light setups: QMD downloads about 2GB of local models, and vector queries take a couple of seconds.",
+      "keywords": [
+        "agent memory obsidian",
+        "claude code memory",
+        "persistent memory vault",
+        "obsidian ai second brain",
+        "qmd search",
+        "obsidian mind",
+        "agent notes"
+      ]
+    },
+    {
+      "id": "eugeniughelbur/obsidian-second-brain",
+      "name": "obsidian-second-brain",
+      "category": "research-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "obsidian",
+        "memory",
+        "notes",
+        "second-brain",
+        "markdown"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "codex",
+        "obsidian"
+      ],
+      "use_for": "Give coding agents persistent memory stored as plain markdown in an Obsidian vault.",
+      "why": "One vault is shared across Claude Code, Codex, Cursor and others, with 48 commands and a shared logbook.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill pack that makes an Obsidian vault the memory for AI agents. It has commands to save, organize, ingest and reconcile notes, thinking tools, session loading, and web, X and YouTube research into the vault. A Crew logbook lets several agents see what each other did.",
+      "best_for": "Obsidian users who want agent memory they own and that survives switching tools.",
+      "not_for": "The calendar command works only in Claude Code. You need an Obsidian vault and an agent to drive it.",
+      "keywords": [
+        "obsidian claude code",
+        "agent memory markdown",
+        "second brain ai",
+        "persistent memory for agents",
+        "obsidian skill",
+        "shared agent logbook",
+        "ai notes vault"
+      ]
+    },
+    {
+      "id": "kepano/obsidian-skills",
+      "name": "obsidian-skills",
+      "category": "research-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "obsidian",
+        "markdown",
+        "bases",
+        "json-canvas"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Teach an agent Obsidian Flavored Markdown, Bases, JSON Canvas and the Obsidian CLI",
+      "why": "By Obsidian CEO Steph Ango; ~90k installs for obsidian-markdown on skills.sh, with cli and bases skills close behind.",
+      "skill": "kepano/obsidian-skills/obsidian-markdown",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Agent skills that teach agents Obsidian Flavored Markdown, Bases, JSON Canvas and the Obsidian CLI, by Obsidian's CEO. Follows the Agent Skills spec for Claude Code, Codex and OpenCode.",
+      "best_for": "Having an agent read and write Obsidian vault content correctly, including bases and canvases.",
+      "not_for": "Obsidian-specific; no effect outside a vault workflow. Install layout differs per agent (OpenCode needs the full repo).",
+      "keywords": [
+        "obsidian",
+        "markdown",
+        "json canvas",
+        "bases",
+        "vault",
+        "agent skills",
+        "obsidian cli",
+        "notes",
+        "pkm"
+      ],
+      "featured": true
+    },
+    {
+      "id": "Ar9av/obsidian-wiki",
+      "name": "obsidian-wiki",
+      "category": "research-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "obsidian",
+        "memory",
+        "knowledge-base",
+        "wiki",
+        "agent-skills"
+      ],
+      "ecosystems": [
+        "markdown",
+        "obsidian"
+      ],
+      "use_for": "Give a coding agent a long-term memory by compiling what you learn into a linked Obsidian markdown wiki.",
+      "why": "Plain markdown skills that work in any agent, with no runtime or API keys.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A set of markdown skills (about 39) that any agent can run to ingest docs, chats and repos into interlinked wiki pages. It tracks what it has already read, merges new facts into existing pages, flags contradictions, and answers questions with wikilink citations.",
+      "best_for": "Anyone who wants an agent to build and maintain a personal or project knowledge base inside an Obsidian vault.",
+      "not_for": "A hosted or multi-user knowledge system. It is a folder of markdown files plus agent skills, so quality depends on the agent you run.",
+      "keywords": [
+        "obsidian agent memory",
+        "llm wiki",
+        "second brain ai",
+        "claude code obsidian",
+        "agent knowledge base",
+        "karpathy llm wiki",
+        "markdown memory"
+      ]
+    },
+    {
+      "id": "Master-cai/Research-Paper-Writing-Skills",
+      "name": "Research Paper Writing Skills",
+      "category": "research-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "paper-writing",
+        "research",
+        "academic",
+        "codex",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Have an agent draft, rewrite and self-review ML, CV and NLP paper sections.",
+      "why": "Packages Prof. Peng Sida's open writing notes as one skill with per-section guides.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "One skill package, research-paper-writing, with a core SKILL.md workflow and section-specific references. It helps with abstract, introduction, method, experiments and conclusion, claim-evidence checks and a reviewer-style pre-submission pass. Install steps are given for Codex, Claude Code and Gemini.",
+      "best_for": "Researchers who want an agent to improve paper structure and flow.",
+      "not_for": "One skill, aimed at ML, CV and NLP papers. Most of the method is credited to Prof. Peng's notes, not original here.",
+      "keywords": [
+        "paper writing skill",
+        "academic writing agent",
+        "ml paper writing",
+        "abstract introduction rewrite",
+        "research paper claude code",
+        "peng sida notes"
+      ]
+    },
+    {
+      "id": "microsoft/ResearchStudio",
+      "name": "ResearchStudio",
+      "category": "research-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "research",
+        "agent-skills",
+        "papers",
+        "claude-code",
+        "codex"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Use agent skills that cover the research lifecycle, from a vague idea to a finished paper and presentation.",
+      "why": "From Microsoft, with skills for idea generation (IdeaSpark), slide reels and turning slides into narrated video.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A collection of skills for Claude Code and Codex that cover the entire research lifecycle, from an under-specified research direction to a published paper. Install with a script or an npx installer that writes your keys to .env.",
+      "best_for": "Researchers who want an agent to help ideate, write and present a paper.",
+      "not_for": "It recommends strong models, and it needs API keys and native tools. Generated research still needs human checking.",
+      "keywords": [
+        "research agent skills",
+        "ai co-author",
+        "paper writing skills",
+        "idea generation agent",
+        "pptx to video",
+        "microsoft researchstudio"
+      ]
+    },
+    {
+      "id": "google-deepmind/science-skills",
+      "name": "Science Skills",
+      "category": "research-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "science",
+        "genomics",
+        "bioinformatics",
+        "databases"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Add science skills for genomics, structural biology, cheminformatics and literature search to an AI agent.",
+      "why": "From Google DeepMind, with skills built on sources like AlphaGenome, AFDB, UniProt and 30+ other databases.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A collection of agent skills for scientific research. Each skill has a SKILL.md with instructions plus helper scripts and references. Install through Google Antigravity or with npx skills add.",
+      "best_for": "Giving a coding or research agent grounded access to scientific databases and tools.",
+      "not_for": "Some skills, such as AlphaGenome and OpenAlex, need API keys. Best experience is in Google Antigravity, and dependencies run through uv.",
+      "keywords": [
+        "science agent skills",
+        "alphagenome skill",
+        "uniprot skill",
+        "bioinformatics agent",
+        "scientific research skills",
+        "deepmind skills"
+      ]
+    },
+    {
+      "id": "K-Dense-AI/scientific-agent-skills",
+      "name": "Scientific Agent Skills",
+      "category": "research-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "science",
+        "research",
+        "bioinformatics",
+        "data-analysis"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Equip agents with scientific skills for bioinformatics, chemistry, data analysis and literature work.",
+      "why": "Largest science-focused skill library; ~52k stars, MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Library of 177 scientific skills for agents covering bioinformatics, chemistry, data analysis and literature, including documentation of 80+ databases such as PubChem, ChEMBL, UniProt and ClinicalTrials.gov. Works with any Agent Skills-compatible agent.",
+      "best_for": "Research workflows in life sciences, chemistry and data science that benefit from database lookup and domain procedures.",
+      "not_for": "Skills guide access; some databases need registration or licenses. Not a replacement for lab validation or domain experts.",
+      "keywords": [
+        "bioinformatics",
+        "chemistry",
+        "scientific research",
+        "pubchem",
+        "uniprot",
+        "chembl",
+        "literature review",
+        "agent skills",
+        "databases"
+      ]
+    },
+    {
+      "id": "HKUSTDial/Supervisor-Skills",
+      "name": "Supervisor-Skills",
+      "category": "research-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "research",
+        "paper-writing",
+        "peer-review",
+        "academic",
+        "agent-skills"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "codex"
+      ],
+      "use_for": "Add research-supervisor skills for idea evaluation, paper writing, polishing and literature review to your agent.",
+      "why": "Packages a professor's publishing and reviewing experience as runnable skills.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A set of AI skills plus a handbook for academic research, from idea to submission. Skills include paper-writer, paper-polish, deep-research, intro-drafter and drawio-reconstruction. Install by asking your agent to add it with the Skills CLI.",
+      "best_for": "Graduate students and researchers using Claude Code, Cursor or Codex for papers.",
+      "not_for": "Non-academic work. Docs are mainly Chinese and the license is not clearly stated (NOASSERTION).",
+      "keywords": [
+        "research agent skills",
+        "paper writing skill",
+        "academic ai supervisor",
+        "peer review skill",
+        "phd ai assistant",
+        "literature survey skill",
+        "supervisor skills"
+      ]
+    }
+  ]
+}

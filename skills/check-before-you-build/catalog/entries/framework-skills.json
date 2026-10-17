@@ -1,0 +1,781 @@
+{
+  "category": "framework-skills",
+  "entries": [
+    {
+      "id": "dotnet/skills",
+      "name": ".NET Agent Skills",
+      "category": "framework-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "dotnet",
+        "csharp",
+        "agent-skills",
+        "msbuild",
+        "nuget"
+      ],
+      "ecosystems": [
+        "dotnet",
+        "csharp"
+      ],
+      "use_for": "Give coding agents the .NET team's skills for builds, NuGet, EF, diagnostics, upgrades, MAUI and AI.",
+      "why": "Maintained by the .NET team, split into plugins with a dashboard comparing skill value.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "The .NET team's curated skills and Copilot-style custom agents for coding agents. Plugins cover general .NET work, data access, performance diagnosis, MSBuild, NuGet, upgrades, MAUI and AI. It can be installed as a marketplace in VS Code.",
+      "best_for": "C# and .NET developers using Copilot, Claude Code, Codex or other skill-aware agents.",
+      "not_for": "Agent files use GitHub Copilot conventions and are not installed as native Codex agents. Only useful for .NET work.",
+      "keywords": [
+        "dotnet agent skills",
+        "csharp claude code skills",
+        "msbuild troubleshooting skill",
+        "nuget skill",
+        ".net upgrade agent",
+        "maui skills",
+        "dotnet copilot plugin"
+      ]
+    },
+    {
+      "id": "microsoft/skills",
+      "name": "Agent Skills (microsoft/skills)",
+      "category": "framework-skills",
+      "kinds": [
+        "skill",
+        "mcp"
+      ],
+      "tags": [
+        "azure",
+        "mcp",
+        "agents-md",
+        "coding-agent",
+        "skills"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Installing domain-specific skills, custom agents and MCP server configs for Azure SDK and Microsoft AI Foundry development.",
+      "why": "Ships 174 skills plus a 1-click skill explorer to browse and install only what you need.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "microsoft/skills is a collection of skills, custom agents, AGENTS.md templates and MCP server configurations for AI coding agents working with Azure SDKs and Foundry. Skills install via `npx skills add microsoft/skills` into your chosen agent's directory, such as GitHub Copilot's `.github/skills/`.",
+      "best_for": "Teams building on Azure SDKs or Microsoft AI Foundry who want ready-made skills and MCP configs for their coding agent.",
+      "not_for": "Explicitly a work in progress, so some skills may lag behind the latest SDK patterns.",
+      "keywords": [
+        "microsoft agent skills",
+        "azure sdk skills",
+        "github copilot skills",
+        "foundry mcp",
+        "agents.md template",
+        "azure coding agent"
+      ]
+    },
+    {
+      "id": "android/skills",
+      "name": "Android Skills",
+      "category": "framework-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "android",
+        "agent-skills",
+        "official",
+        "jetpack",
+        "best-practices"
+      ],
+      "ecosystems": [
+        "android",
+        "kotlin"
+      ],
+      "use_for": "Ground coding agents in official Android patterns, using skills for tasks where LLMs underperform.",
+      "why": "Official Android skills built from developer.android.com guidance and targeted at weak spots.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A repository of modular SKILL.md instructions that help agents follow Android best practices. Development focuses on workflows where evaluations show models do poorly, not areas they already handle, such as basic Compose. Skills activate on matching tasks.",
+      "best_for": "Android developers using coding agents who want official guidance in the loop.",
+      "not_for": "Covers selected hard cases, not all of Android. The README does not list the skills, so check the repo for what exists.",
+      "keywords": [
+        "android agent skills",
+        "android claude code skills",
+        "edge to edge android",
+        "official android ai",
+        "android studio agent",
+        "kotlin skills"
+      ]
+    },
+    {
+      "id": "antfu/skills",
+      "name": "Anthony Fu's Skills",
+      "category": "framework-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "vue",
+        "vite",
+        "antfu",
+        "templates"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Add Anthony Fu's opinionated agent skills for his preferred tools and practices to your coding agent.",
+      "why": "Skills are generated from upstream docs via git submodules and can be reused as a template.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A collection of Agent Skills reflecting Anthony Fu's preferences and best practices, plus tool usage docs. Skills reference source documentation through git submodules so they can follow upstream changes. You can reuse the setup to build your own collection.",
+      "best_for": "Developers using Vue, Vite and related tooling, or anyone wanting a pattern for doc-synced skills.",
+      "not_for": "The author calls it a proof of concept and has not fully tested real-world performance. It is opinionated.",
+      "keywords": [
+        "antfu skills",
+        "vue agent skills",
+        "vite skills",
+        "claude code skills collection",
+        "generate skills from docs",
+        "skills template",
+        "unocss pnpm skills"
+      ]
+    },
+    {
+      "id": "anthropics/skills",
+      "name": "Anthropic Agent Skills",
+      "category": "framework-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "claude",
+        "agent-skills",
+        "official",
+        "document-skills"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Official Anthropic skill collection: frontend design, skill creation, MCP building, document handling and more.",
+      "why": "The reference implementation of the Agent Skills format, maintained by Anthropic and among the most-installed skills.",
+      "official": true,
+      "license_verified": {
+        "license": "Apache-2.0",
+        "note": "Per-skill licenses: most skills are Apache-2.0; the docx, pdf, pptx and xlsx skills are source-available (read-only, do not fork).",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Anthropic's repository of example skills for Claude: folders with a SKILL.md plus scripts and resources. Covers creative, technical and enterprise tasks, and includes the docx, pdf, pptx and xlsx document skills; many are Apache 2.0.",
+      "best_for": "Learning the Agent Skills format, copying patterns for your own skills, or using Anthropic's document and frontend skills.",
+      "not_for": "A set of examples and reference skills, not a full workflow framework. Document skills are source-available rather than all open source.",
+      "keywords": [
+        "agent skills",
+        "skill.md",
+        "claude skills",
+        "pptx",
+        "docx",
+        "pdf",
+        "xlsx",
+        "mcp builder",
+        "skill creator"
+      ]
+    },
+    {
+      "id": "github/awesome-copilot",
+      "name": "Awesome GitHub Copilot",
+      "category": "framework-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "copilot",
+        "prompts",
+        "instructions"
+      ],
+      "ecosystems": [
+        "multi"
+      ],
+      "use_for": "Official GitHub collection of skills, prompts, instructions and custom agents usable across coding agents",
+      "why": "GitHub-maintained, community-contributed library of hundreds of skills and agents; widely installed via skills.sh",
+      "skill": "github/awesome-copilot/git-commit",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Community-contributed collection of custom agents, instructions, skills, hooks, workflows and plugins for GitHub Copilot, with a searchable website and llms.txt. Skills are self-contained folders usable across coding agents.",
+      "best_for": "Finding ready-made Copilot agents, instruction files and skills to adopt, or sourcing patterns for your own.",
+      "not_for": "A catalog of varying community quality rather than one cohesive product; many items are Copilot-specific.",
+      "keywords": [
+        "github copilot",
+        "custom agents",
+        "instructions",
+        "skills",
+        "prompts",
+        "plugins",
+        "cookbook",
+        "awesome list",
+        "copilot agents"
+      ]
+    },
+    {
+      "id": "microsoft/azure-skills",
+      "name": "Azure skills",
+      "category": "framework-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "azure",
+        "cloud",
+        "deploy"
+      ],
+      "ecosystems": [
+        "multi"
+      ],
+      "use_for": "Official Microsoft skills for preparing, deploying, diagnosing and securing apps on Azure",
+      "why": "Official vendor pack with ~560k installs per core skill on skills.sh; covers Foundry, deploy, diagnostics and storage",
+      "skill": "microsoft/azure-skills/microsoft-foundry",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Plugin bundling curated Azure skills (prepare, validate, deploy, diagnose, cost, RBAC, storage, AI/Foundry) with the Azure MCP Server so agents can perform real Azure operations. Includes decision trees and guardrails for each scenario.",
+      "best_for": "Agent-assisted Azure deployment, diagnostics, cost analysis and governance for teams already on Azure.",
+      "not_for": "Azure-specific; useless for AWS, GCP or other clouds. Real actions go through the Azure MCP server, so credentials and permissions need care.",
+      "keywords": [
+        "azure",
+        "deploy to azure",
+        "azure mcp",
+        "azure diagnostics",
+        "azure cost",
+        "entra",
+        "app insights",
+        "kubernetes",
+        "foundry"
+      ]
+    },
+    {
+      "id": "samber/cc-skills-golang",
+      "name": "cc-skills-golang",
+      "category": "framework-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "golang",
+        "agent-skills",
+        "claude-code",
+        "best-practices",
+        "testing"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Give a coding agent Go-specific expertise: design patterns, testing, security, performance and observability.",
+      "why": "Hand-reviewed skills distilled from real Go commits, installable on many agents.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A collection of Agent Skills for production Go projects, such as golang-design-patterns and golang-performance. They load on demand so they do not bloat context. Install with the skills CLI, as a Claude Code plugin, or by cloning into Cursor, Gemini or OpenClaw.",
+      "best_for": "Teams writing Go with an AI coding assistant who want idiomatic, production-minded output.",
+      "not_for": "Non-Go work, and general workflow skills such as git or CI/CD, which the README says live in separate repos.",
+      "keywords": [
+        "golang agent skills",
+        "go claude code skills",
+        "go best practices ai",
+        "cc skills go",
+        "idiomatic go agent",
+        "skills.sh golang",
+        "go coding assistant"
+      ]
+    },
+    {
+      "id": "cloudflare/skills",
+      "name": "Cloudflare skills",
+      "category": "framework-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "cloudflare",
+        "workers",
+        "durable-objects"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Official skills for Workers, Wrangler, Durable Objects, Agents SDK and other Cloudflare products",
+      "why": "Official Cloudflare pack; cloudflare, wrangler and workers-best-practices each have 100k+ installs on skills.sh",
+      "skill": "cloudflare/skills/cloudflare",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Official Cloudflare agent skills for Workers, Wrangler, Durable Objects, the Agents SDK and the wider Developer Platform. Installable via Claude Code marketplace, Codex, Cursor, VS Code or npx skills.",
+      "best_for": "Building and deploying on Cloudflare with agent guidance on Workers best practices and platform products.",
+      "not_for": "Cloudflare-specific; not useful for other hosts. Skills guide the agent, they do not replace Wrangler or account setup.",
+      "keywords": [
+        "cloudflare",
+        "workers",
+        "wrangler",
+        "durable objects",
+        "agents sdk",
+        "edge",
+        "agent skills",
+        "serverless"
+      ]
+    },
+    {
+      "id": "expo/skills",
+      "name": "Expo Skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "expo",
+        "react-native",
+        "eas",
+        "mobile",
+        "official"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "official": true,
+      "use_for": "Official Expo skills for building, deploying, upgrading and debugging Expo and React Native apps with an agent.",
+      "why": "Maintained by the Expo team and listed in the official Claude and Codex plugin marketplaces.",
+      "category": "framework-skills",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Official Expo agent skills for building, deploying, upgrading and debugging Expo and React Native apps, teaching agents when to use Expo APIs and EAS workflows. Installed via the skills CLI; telemetry is off by default.",
+      "best_for": "Using coding agents on Expo or React Native projects with accurate Expo/EAS guidance.",
+      "not_for": "Only relevant to Expo and React Native. Expo docs and CLIs remain the source of truth; the skills are guidance.",
+      "keywords": [
+        "expo",
+        "react native",
+        "eas",
+        "mobile app",
+        "agent skills",
+        "upgrade expo",
+        "debug",
+        "ios android"
+      ]
+    },
+    {
+      "id": "flutter/agent-plugins",
+      "name": "Flutter Agent Plugins",
+      "category": "framework-skills",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "flutter",
+        "dart",
+        "agent-skills",
+        "mcp",
+        "integration-testing"
+      ],
+      "ecosystems": [
+        "dart"
+      ],
+      "use_for": "Giving a coding agent Flutter-specific skills, MCP server configuration and rules for common Flutter workflows.",
+      "why": "Maintained directly by the Flutter team, bundling skills, MCP config and rules together per workflow.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Flutter Agent Plugins is a collection of agent plugins maintained by the Flutter team that bundle Agent Skills, MCP server configuration and rules for Flutter development tasks, such as adding integration tests or widget previews, to reduce mistakes and ensure agents follow best practices.",
+      "best_for": "Flutter teams using a coding agent who want official, maintained skills instead of writing their own Flutter instructions.",
+      "not_for": "Specific to Flutter and Dart; not useful for projects in other frameworks.",
+      "keywords": [
+        "flutter agent skills",
+        "flutter mcp",
+        "flutter claude code",
+        "dart agent plugins",
+        "flutter integration test skill",
+        "flutter widget preview skill"
+      ]
+    },
+    {
+      "id": "google-gemini/gemini-skills",
+      "name": "Gemini API Skills",
+      "category": "framework-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "gemini",
+        "agent-skills",
+        "api",
+        "live-api",
+        "sdk"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Give your coding agent current knowledge of the Gemini API and SDKs.",
+      "why": "Official skills with measured gains in correct, best-practice Gemini code.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A library of skills for building with the Gemini API, from Google. It covers text, chat, streaming, function calling, structured output, image and speech generation, agents and the Live API, with Python and TypeScript SDKs.",
+      "best_for": "Anyone who builds Gemini apps with a coding agent and wants it to use current APIs.",
+      "not_for": "Only about Gemini. The vertex-ai-api-dev skill has moved to another path.",
+      "keywords": [
+        "gemini skills",
+        "gemini api skill",
+        "google ai skills",
+        "gemini live api",
+        "claude code gemini",
+        "gemini sdk agent",
+        "antigravity skills"
+      ]
+    },
+    {
+      "id": "google/skills",
+      "name": "Google Skills",
+      "category": "framework-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "google-cloud",
+        "agent-skills",
+        "gcp",
+        "flutter",
+        "firestore"
+      ],
+      "ecosystems": [
+        "google-cloud",
+        "claude-code",
+        "codex"
+      ],
+      "use_for": "Install official agent skills and plugins for Google Cloud and other Google products.",
+      "why": "Official, covers Cloud onboarding, IAM, Firestore, Flutter, Android and Maps.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Google's repo of Agent Skills for Google Cloud and other Google products. Skills cover getting started, multi-product solutions and areas like ADK, Android, Dart, Firestore and Flutter. It also bundles plugins with skills and MCP servers.",
+      "best_for": "Agents that build on Google Cloud or Google developer products.",
+      "not_for": "Work on non-Google stacks. Skills only apply to Google products.",
+      "keywords": [
+        "google cloud skills",
+        "gcp agent skills",
+        "firestore skill",
+        "flutter skill",
+        "adk skills",
+        "google maps platform skill",
+        "official google skills"
+      ]
+    },
+    {
+      "id": "huggingface/skills",
+      "name": "Hugging Face Skills",
+      "category": "framework-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "huggingface",
+        "agent-skills",
+        "model-training",
+        "datasets",
+        "hf-cli"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Give coding agents Hugging Face Hub abilities for datasets, training, evaluation and jobs.",
+      "why": "Official skills; hf-cli is generated from your installed CLI, so it stays current.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Skill definitions for AI and ML tasks in the standard Agent Skills format. Start with hf-cli, then add more with the hf skills add command. Works through plugin marketplaces for Claude Code, Cursor and Codex, with an AGENTS.md fallback.",
+      "best_for": "Anyone using a coding agent against the Hugging Face Hub who wants official instructions.",
+      "not_for": "Non-Hugging Face ML stacks. The skills assume the Hub and the hf CLI.",
+      "keywords": [
+        "hugging face skills",
+        "hf cli agent",
+        "claude code huggingface",
+        "model training skill",
+        "dataset creation agent",
+        "hub spaces jobs",
+        "hf skills"
+      ]
+    },
+    {
+      "id": "JetBrains/go-modern-guidelines",
+      "name": "Modern Go Guidelines",
+      "category": "framework-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "go",
+        "golang",
+        "coding-agents",
+        "guidelines",
+        "modernize"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Make coding agents write current Go instead of outdated idioms, based on the version in go.mod.",
+      "why": "Covers Go 1.0 through 1.27 and the modernize analyzer, from JetBrains.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill with guidelines that help code agents write modern Go. It detects the Go version in go.mod and uses language and stdlib features up to that version, such as max, slices.Contains, cmp.Or and range over int. It fixes outdated output caused by training data lag and frequency bias.",
+      "best_for": "You use Claude Code or similar agents on Go projects and keep getting older patterns.",
+      "not_for": "Go only. Needs the Go toolchain on PATH because a small CLI is installed with go install on first use.",
+      "keywords": [
+        "modern go",
+        "golang agent skill",
+        "go modernize",
+        "go 1.26 features",
+        "claude code go",
+        "jetbrains go skill",
+        "use-modern-go"
+      ]
+    },
+    {
+      "id": "czlonkowski/n8n-skills",
+      "name": "n8n-skills",
+      "category": "framework-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "n8n",
+        "workflow-automation",
+        "claude-code",
+        "skills",
+        "mcp"
+      ],
+      "ecosystems": [
+        "agent-skills",
+        "n8n"
+      ],
+      "use_for": "Teach Claude Code to build and validate n8n workflows correctly using the n8n-mcp server.",
+      "why": "14 skills plus a router and hooks cover expressions, node config, validation errors and workflow patterns.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A set of Claude Code skills that activate on n8n questions. They explain n8n expression syntax, how to use n8n-mcp tools, proven workflow patterns, Code node patterns and how to fix validation errors.",
+      "best_for": "Building n8n workflows with an agent through the n8n-mcp MCP server.",
+      "not_for": "Other automation tools. It assumes n8n and the n8n-mcp server.",
+      "keywords": [
+        "n8n claude skills",
+        "n8n workflow ai",
+        "n8n-mcp",
+        "build n8n workflows with claude",
+        "n8n expressions help",
+        "n8n code node patterns"
+      ]
+    },
+    {
+      "id": "NVIDIA/skills",
+      "name": "NVIDIA skills",
+      "category": "framework-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "nvidia",
+        "cuda",
+        "gpu",
+        "official"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Install agent skills for NVIDIA products and SDKs into Claude Code, Codex and others.",
+      "why": "Official NVIDIA-maintained skills for its developer stack.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Catalog of NVIDIA-verified agent skills for its software: physical AI and robotics, simulation, CUDA-X libraries, RAG and blueprints. Skills live in product repos and are mirrored here daily; installed with npx skills add nvidia/skills.",
+      "best_for": "Agents working with NVIDIA SDKs, CUDA-X, robotics and AI blueprints.",
+      "not_for": "NVIDIA-stack specific. It is a mirror catalog, and needs a recent skills CLI (v1.5.16+) to appear in Claude Code.",
+      "keywords": [
+        "nvidia",
+        "cuda",
+        "robotics",
+        "simulation",
+        "rag",
+        "agent skills",
+        "blueprints",
+        "gpu",
+        "skills cli"
+      ]
+    },
+    {
+      "id": "supabase/agent-skills",
+      "name": "Supabase agent skills",
+      "category": "framework-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "supabase",
+        "postgres",
+        "database",
+        "official"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Teach coding agents Supabase and Postgres best practices for schema, RLS and queries.",
+      "why": "Official Supabase skills; ~448k installs on skills.sh for the Postgres best-practices skill.",
+      "skill": "supabase/agent-skills/supabase-postgres-best-practices",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Official Supabase skills for agents: a broad Supabase development skill (database, auth, edge functions, realtime, storage, vectors, cron, queues) and Postgres best practices for schema, RLS, indexes and queries. Compatible with 18+ agents.",
+      "best_for": "Agents working on Supabase projects, especially Postgres performance, RLS and auth setup.",
+      "not_for": "Supabase/Postgres specific. Guidance only; does not connect to your project.",
+      "keywords": [
+        "supabase",
+        "postgres",
+        "rls",
+        "row level security",
+        "auth",
+        "edge functions",
+        "query optimization",
+        "indexes",
+        "agent skills"
+      ]
+    },
+    {
+      "id": "AvdLee/SwiftUI-Agent-Skill",
+      "name": "SwiftUI Expert Skill",
+      "category": "framework-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "swiftui",
+        "ios",
+        "agent-skills",
+        "best-practices",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "swift",
+        "markdown"
+      ],
+      "use_for": "Give an AI coding tool expert SwiftUI guidance on state, performance, animations and Liquid Glass.",
+      "why": "Written by experienced Swift developers, and reference files load only when needed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An Agent Skills package of concise SwiftUI references covering state management, view composition, performance, lists, navigation, Swift Charts, animations, macOS and Liquid Glass. It installs as a plugin for Claude Code, Cursor, Codex and others.",
+      "best_for": "Anyone writing or reviewing SwiftUI code with an AI agent.",
+      "not_for": "Guidance only, with no runtime code. Covers SwiftUI, not UIKit or general Swift.",
+      "keywords": [
+        "swiftui skill",
+        "swiftui best practices ai",
+        "ios agent skill",
+        "liquid glass",
+        "claude code swift",
+        "swiftui code review",
+        "observable state"
+      ]
+    },
+    {
+      "id": "twostraws/SwiftUI-Agent-Skill",
+      "name": "SwiftUI Pro",
+      "category": "framework-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "swiftui",
+        "agent-skill",
+        "ios",
+        "accessibility",
+        "code-review"
+      ],
+      "ecosystems": [
+        "swift"
+      ],
+      "use_for": "Make coding agents write more modern, accessible and faster SwiftUI code.",
+      "why": "Targets the specific SwiftUI mistakes LLMs make, like deprecated API and missing VoiceOver labels.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An agent skill with rules for SwiftUI covering API usage, design, performance and accessibility. It works with Claude Code, Codex, Gemini, Cursor and others using the Agent Skills format. You can run it fully or for a partial review.",
+      "best_for": "Swift developers who want their AI assistant to avoid deprecated API and common SwiftUI pitfalls.",
+      "not_for": "SwiftUI only. For SwiftData, concurrency or testing guidance you need the author's separate skills.",
+      "keywords": [
+        "swiftui agent skill",
+        "swiftui claude code",
+        "swiftui best practices llm",
+        "ios ai coding",
+        "swiftui codex",
+        "swiftui deprecated api",
+        "apple platform skills"
+      ]
+    },
+    {
+      "id": "vercel-labs/agent-skills",
+      "name": "Vercel Agent Skills",
+      "category": "framework-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "vercel",
+        "react",
+        "nextjs",
+        "agent-skills",
+        "official"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Vercel skills for coding agents: React and Next.js best practices, web design guidelines and deployment.",
+      "why": "Official Vercel skill pack with some of the highest install counts on skills.sh.",
+      "official": true,
+      "license_verified": {
+        "license": "MIT",
+        "note": "License stated as MIT in the README; no LICENSE file in the repo.",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Vercel's skill pack for coding agents, including web-design-guidelines (100+ rules on accessibility, forms, animation, typography, performance, i18n), plus React/Next.js best practices and deployment skills.",
+      "best_for": "Auditing UI code against web interface best practices and applying Vercel/Next.js guidance.",
+      "not_for": "Biased toward React, Next.js and Vercel; less useful for other stacks.",
+      "keywords": [
+        "web design guidelines",
+        "accessibility",
+        "react best practices",
+        "nextjs",
+        "vercel",
+        "deploy",
+        "ui review",
+        "performance",
+        "agent skills"
+      ]
+    }
+  ]
+}

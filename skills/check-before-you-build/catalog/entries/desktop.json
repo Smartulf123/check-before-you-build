@@ -38,6 +38,149 @@
       ]
     },
     {
+      "id": "ValueCell-ai/ClawX",
+      "name": "ClawX",
+      "category": "desktop",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "desktop",
+        "openclaw",
+        "agents",
+        "gui",
+        "electron"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Give OpenClaw AI agents a desktop GUI with setup wizard, chat, provider settings and skill management.",
+      "why": "Embeds the OpenClaw runtime, so there is no separate install and no terminal needed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop app built on the official OpenClaw core. It replaces CLI setup with a guided wizard, visual settings, a chat interface and automatic Gateway lifecycle management. It supports Windows and several languages.",
+      "best_for": "Using OpenClaw agents without the command line, or forking a desktop shell for an agent runtime.",
+      "not_for": "Tied to OpenClaw. It is an end-user app, not a library for building your own agents.",
+      "keywords": [
+        "clawx",
+        "openclaw gui",
+        "openclaw desktop",
+        "ai agent desktop app",
+        "agent gui no terminal",
+        "valuecell"
+      ]
+    },
+    {
+      "id": "storytold/deckcraft",
+      "name": "DeckCraft",
+      "category": "desktop",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "presentations",
+        "pptx",
+        "rust",
+        "mcp",
+        "desktop"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Open, edit and present PowerPoint files in a native Rust app that agents can also drive.",
+      "why": "Every UI action is also a command for the CLI and for AI agents through MCP.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A clean-room Rust reimplementation of a slide editor with themes, shapes, tables, charts, transitions and animations. It opens and saves PowerPoint files, runs on macOS, Windows, Linux and in the browser, and exposes a CLI and MCP.",
+      "best_for": "Rust developers who want an open slide editor or a scriptable way to build and render decks.",
+      "not_for": "The README says it is in alpha, heading for beta. Expect gaps against PowerPoint.",
+      "keywords": [
+        "open source powerpoint",
+        "pptx editor rust",
+        "slide editor",
+        "presentation app",
+        "powerpoint alternative",
+        "deck mcp",
+        "artcraft"
+      ]
+    },
+    {
+      "id": "storytold/designcraft",
+      "name": "DesignCraft",
+      "category": "desktop",
+      "kinds": [
+        "app",
+        "mcp"
+      ],
+      "tags": [
+        "layout",
+        "indesign",
+        "pdf",
+        "egui",
+        "wasm"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Use or fork an open page-layout editor with IDML import and PDF/X export.",
+      "why": "Clean-room Rust layout app with a Knuth-Plass composer and an MCP server.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A native and WebAssembly page-layout editor modeled on InDesign workflows. It has threaded frames, styles, parent pages, IDML and INDD import, PDF, EPUB and PNG export, a headless CLI, and a JSON control channel and MCP server.",
+      "best_for": "Building publishing tools or scripting page layout from agents and the command line.",
+      "not_for": "A large app with an egui frontend that needs a recent Rust toolchain. Not a drop-in for all InDesign files.",
+      "keywords": [
+        "indesign alternative",
+        "page layout editor",
+        "desktop publishing",
+        "idml import",
+        "rust layout",
+        "pdf/x export",
+        "dtp"
+      ]
+    },
+    {
+      "id": "deta/surf",
+      "name": "Deta Surf",
+      "category": "desktop",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "ai-notebook",
+        "local-first",
+        "desktop",
+        "research",
+        "notes"
+      ],
+      "ecosystems": [
+        "typescript",
+        "rust",
+        "svelte"
+      ],
+      "use_for": "Fork or study a local-first AI notebook that organizes files and web pages and writes notes from them.",
+      "why": "Stores data locally in open formats and lets you choose any model, including local ones.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop AI notebook built with Svelte, TypeScript and Rust for macOS, Windows and Linux. It keeps a local library of files and web content, generates notes with citations linked to sources, and can make small interactive apps.",
+      "best_for": "Researchers who want a local AI notebook, or developers who want a base for a similar app.",
+      "not_for": "A finished end-user app rather than a library. The excerpt does not say if development is active.",
+      "keywords": [
+        "ai notebook",
+        "local first notes",
+        "research assistant app",
+        "open source notion ai alternative",
+        "chat with pdf and web",
+        "deta surf"
+      ]
+    },
+    {
       "id": "eclipse-theia/theia",
       "name": "Eclipse Theia",
       "category": "desktop",
@@ -357,6 +500,77 @@
       ]
     },
     {
+      "id": "vercel-labs/native",
+      "name": "Native SDK",
+      "category": "desktop",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "desktop",
+        "native",
+        "typescript",
+        "markup",
+        "cli"
+      ],
+      "ecosystems": [
+        "typescript",
+        "zig"
+      ],
+      "use_for": "Build native desktop apps from TypeScript logic and Native markup, compiled to a native executable.",
+      "why": "Compiles app logic and views to a native binary and renders in OS windows, with live reload while developing.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A toolkit that compiles TypeScript app logic and Native markup into a native executable. The native CLI covers init, dev, check and build. Zig cores and optional embedded web content are also supported.",
+      "best_for": "Developers who know TypeScript and want a native desktop app instead of an Electron-style web shell.",
+      "not_for": "The README calls it experimental. Platform support varies and mobile is still evolving. Needs Node.js 24 or later and a Zig toolchain.",
+      "keywords": [
+        "native desktop apps typescript",
+        "electron alternative",
+        "tauri alternative",
+        "zig desktop",
+        "native sdk",
+        "vercel labs native"
+      ]
+    },
+    {
+      "id": "binaricat/Netcatty",
+      "name": "Netcatty",
+      "category": "desktop",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "ssh",
+        "sftp",
+        "terminal",
+        "electron",
+        "ssh-client"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Manage SSH, SFTP and terminal sessions in one workspace, or fork a modern SSH client.",
+      "why": "Combines split terminals, a dual-pane SFTP browser and a built-in AI agent in one Electron app.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An SSH client and terminal manager for macOS, Windows and Linux built with Electron, React and xterm.js. It supports SSH, Telnet, Mosh, serial and local terminals, with tabs, split panes, vault views and SFTP.",
+      "best_for": "Developers and sysadmins who want a PuTTY or Termius alternative they can read and modify.",
+      "not_for": "Use inside proprietary products: it is GPL-3.0. It is an end-user app, not a library, and not a shell replacement.",
+      "keywords": [
+        "ssh client",
+        "termius alternative",
+        "putty alternative",
+        "sftp client",
+        "electron terminal",
+        "ssh manager open source"
+      ]
+    },
+    {
       "id": "neutralinojs/neutralinojs",
       "name": "Neutralinojs",
       "category": "desktop",
@@ -428,6 +642,44 @@
         "html javascript",
         "dom node",
         "cross-platform"
+      ]
+    },
+    {
+      "id": "Open-Less/openless",
+      "name": "OpenLess",
+      "category": "desktop",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "voice-input",
+        "dictation",
+        "speech-to-text",
+        "style-packs",
+        "tauri"
+      ],
+      "ecosystems": [
+        "rust",
+        "typescript",
+        "macos",
+        "windows"
+      ],
+      "use_for": "Hold a hotkey, speak, and get AI-polished text inserted at your cursor in any app.",
+      "why": "Open source alternative to Wispr Flow-style tools, with custom style packs and a prompt-writing mode.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenLess is a voice input app for macOS, Windows and Linux. You press a global hotkey and speak; it transcribes, polishes the text in a chosen style, and inserts it at the cursor, or copies it if insertion is blocked. It has an AI-prompt mode, a learning dictionary, optional cursor context, and shareable style packs.",
+      "best_for": "You want a hackable dictation tool, or a base to fork for your own voice input app.",
+      "not_for": "AGPL-3.0, so modified network use must share source. Needs speech and polish models through its own settings. A finished desktop app, not an SDK.",
+      "keywords": [
+        "voice input app",
+        "wispr flow alternative",
+        "typeless alternative",
+        "superwhisper alternative",
+        "dictation open source",
+        "speech to text cursor",
+        "ai voice typing"
       ]
     },
     {
@@ -537,6 +789,41 @@
       ]
     },
     {
+      "id": "Sidenai/sidex",
+      "name": "SideX",
+      "category": "desktop",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "vscode-fork",
+        "tauri",
+        "lightweight-editor",
+        "built-in-ai",
+        "desktop-app"
+      ],
+      "ecosystems": [
+        "rust",
+        "typescript"
+      ],
+      "use_for": "Running a lighter-weight VS Code workbench without Electron's memory overhead, with a built-in bring-your-own-model AI agent.",
+      "why": "Targets under 200 MB at idle on macOS by using the OS's native webview instead of bundled Chromium.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "SideX ports the VS Code TypeScript workbench, editor, terminal and Git integration onto a Rust/Tauri backend instead of Electron. Core editing, terminal and Git are solid; the extension host and debugger are still in progress, and it ships a built-in AI agent that needs no account or sign-in.",
+      "best_for": "Developers wanting VS Code's familiar editing experience with lower memory use, especially on macOS.",
+      "not_for": "Not ready if you depend heavily on extensions or the debugger, since the extension host and debugger are still in progress.",
+      "keywords": [
+        "vscode without electron",
+        "tauri code editor",
+        "sidex editor",
+        "lightweight vscode fork",
+        "vscode tauri port",
+        "built in ai code editor"
+      ]
+    },
+    {
       "id": "slint-ui/slint",
       "name": "Slint",
       "category": "desktop",
@@ -581,6 +868,42 @@
       ]
     },
     {
+      "id": "SuperCmdLabs/SuperCmd",
+      "name": "SuperCmd",
+      "category": "desktop",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "launcher",
+        "raycast",
+        "macos",
+        "voice",
+        "electron"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron",
+        "macos"
+      ],
+      "use_for": "Use or fork an open-source macOS launcher that runs Raycast extensions and adds AI, dictation and read-aloud.",
+      "why": "Includes a @raycast/api and @raycast/utils compatibility layer, so existing Raycast extensions work.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An Electron and React launcher for macOS with native Swift and Objective-C parts. It offers AI chat, hold-to-speak dictation, text-to-speech, clipboard history, snippets, notes, a canvas, file search and window tiling.",
+      "best_for": "Raycast-style workflows on an open-source base, or a reference for Raycast API compatibility.",
+      "not_for": "macOS only. A user app more than a library, and compatibility with the Raycast API is a shim, not a guarantee for every extension.",
+      "keywords": [
+        "raycast alternative",
+        "open source macos launcher",
+        "raycast extension compatibility",
+        "wispr flow alternative",
+        "electron launcher",
+        "alfred alternative"
+      ]
+    },
+    {
       "id": "tauri-apps/tauri",
       "name": "Tauri",
       "category": "desktop",
@@ -619,6 +942,43 @@
       ]
     },
     {
+      "id": "crynta/terax-ai",
+      "name": "Terax",
+      "category": "desktop",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "terminal",
+        "ai-ide",
+        "tauri",
+        "local-models",
+        "editor"
+      ],
+      "ecosystems": [
+        "rust",
+        "typescript",
+        "tauri"
+      ],
+      "use_for": "Use or fork a small terminal-first AI dev environment with editor, git and web preview built in.",
+      "why": "About 7 to 8 MB, no telemetry or account, and works with your own keys or local models.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Tauri 2 and Rust desktop app with a GPU terminal, an agentic AI side panel, a CodeMirror editor with inline AI diffs, file explorer, source control with a git graph, and a web preview pane. It runs with your own keys or fully local models.",
+      "best_for": "Developers who want a light, private alternative to heavier AI IDEs.",
+      "not_for": "Stable dependency use. The README says a major v0.9.0 rewrite is in progress, including a switch from xterm.js to libghostty.",
+      "keywords": [
+        "ai terminal",
+        "lightweight ai ide",
+        "tauri terminal app",
+        "warp alternative",
+        "local model dev environment",
+        "agentic development environment",
+        "terax"
+      ]
+    },
+    {
       "id": "wailsapp/wails",
       "name": "Wails",
       "category": "desktop",
@@ -652,6 +1012,44 @@
         "bindings",
         "single binary",
         "tauri alternative"
+      ]
+    },
+    {
+      "id": "ZToolsCenter/ZTools",
+      "name": "ZTools",
+      "category": "desktop",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "launcher",
+        "plugin-platform",
+        "electron",
+        "clipboard",
+        "uTools"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron",
+        "vue"
+      ],
+      "use_for": "Run or extend an application launcher with plugins, clipboard history and pinyin search.",
+      "why": "Open source take on uTools with UI and headless plugins, LMDB storage and native clipboard and window modules.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "ZTools is an application launcher and plugin platform for macOS and Windows. It offers quick launch with pinyin and regex search, clipboard history, themes, isolated plugin data, a plugin market and TypeScript types for plugin authors. Built with Electron, Vue 3, LMDB and C++ native modules.",
+      "best_for": "You want a hackable launcher you can write plugins for, or a base to fork.",
+      "not_for": "Desktop only (macOS and Windows), no Linux. It is an independent reimplementation of uTools, so plugin compatibility is not promised in the README.",
+      "keywords": [
+        "utools alternative",
+        "open source launcher",
+        "electron launcher plugins",
+        "alfred alternative",
+        "raycast alternative windows",
+        "clipboard manager",
+        "ztools"
       ]
     }
   ]

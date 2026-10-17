@@ -1,0 +1,1264 @@
+{
+  "category": "personal-assistants",
+  "entries": [
+    {
+      "id": "simular-ai/Agent-S",
+      "name": "Agent S",
+      "category": "personal-assistants",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "computer-use",
+        "gui-agent",
+        "automation"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build computer-use agents that operate desktop GUIs like a human",
+      "why": "Open computer-use agent framework with state-of-the-art OSWorld results; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source computer-use agent framework that sees the screen and operates a real GUI with mouse and keyboard on macOS, Windows and Linux, with OpenAI, Anthropic and open-weight models. Agent S3 reports 72.60% on OSWorld.",
+      "best_for": "Research and prototypes of agents that automate arbitrary desktop and web apps without per-app APIs.",
+      "not_for": "Research framework: GUI automation is slow, costly and fragile versus API integration. A hosted product (Sai) is promoted for production use.",
+      "keywords": [
+        "computer use agent",
+        "gui automation",
+        "osworld",
+        "desktop agent",
+        "screen control",
+        "multimodal agent",
+        "automation",
+        "mouse keyboard"
+      ]
+    },
+    {
+      "id": "AtomicBot-ai/atomic-agent",
+      "name": "Atomic Agent",
+      "category": "personal-assistants",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "local-first",
+        "llama-cpp",
+        "browser-agent",
+        "approvals",
+        "memory"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run a local-first agent on open-weight models via llama.cpp that drives the browser, files and shell with approvals.",
+      "why": "All state stays on your disk as plain files and SQLite, and cloud models are opt-in.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local agent with browser control through Playwright, web search and fetch with SSRF guards, filesystem and shell tools, documents, desktop actions and Git. Dangerous actions go through approvals. Sessions, memory, traces and skills are inspectable files.",
+      "best_for": "Privacy-minded users who want a capable agent running on their own hardware with small quantized models.",
+      "not_for": "Heavy tasks that need frontier-model quality; small local models may struggle. Remote Git sync is off by default.",
+      "keywords": [
+        "local first ai agent",
+        "llama.cpp agent",
+        "run agent with local models",
+        "browser agent playwright local",
+        "private ai agent",
+        "open weight agent",
+        "atomic agent"
+      ]
+    },
+    {
+      "id": "makecindy/cindy",
+      "name": "Cindy",
+      "category": "personal-assistants",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "desktop-agent",
+        "multi-harness",
+        "electron",
+        "browser-control",
+        "monorepo"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Running a local AI agent across desktop and mobile that can drive your browser, computer and phone.",
+      "why": "Mixes harnesses and models freely mid-task, with one task planned, run in parallel and reviewed by different combos.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Cindy is an open-source client for an AI agent that runs locally using your own files and logged-in apps. It supports Claude Code and Codex as harnesses, is organized as a pnpm monorepo with Electron desktop and Expo mobile apps, and can switch models and harnesses mid-task while keeping memory and tools continuous.",
+      "best_for": "Developers who want one open-source client to drive multiple agent harnesses and models from desktop or mobile.",
+      "not_for": "The backend service is a separate, closed repository, so this repo alone does not give you the hosted service.",
+      "keywords": [
+        "cindy ai agent",
+        "desktop ai agent",
+        "claude code client",
+        "codex client",
+        "ai agent monorepo",
+        "browser-driving agent"
+      ]
+    },
+    {
+      "id": "op7418/CodePilot",
+      "name": "CodePilot",
+      "category": "personal-assistants",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "desktop-client",
+        "multi-model",
+        "mcp",
+        "skills",
+        "electron"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Use a desktop AI agent client that connects to many model providers, MCP servers and skills.",
+      "why": "Works with providers like OpenRouter, GLM and Ollama without the Claude Code CLI, and can be controlled from a phone.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An Electron and Next.js desktop app for AI agents. You connect any provider, extend with MCP and skills, and keep an assistant workspace of Markdown files. The Claude Code CLI is optional, for file and git actions.",
+      "best_for": "A GUI over multiple LLM providers with MCP and skills, or a base to fork for your own agent client.",
+      "not_for": "Embedding as a library. It is an end-user app, and the license is not clearly stated in the metadata.",
+      "keywords": [
+        "claude code gui",
+        "ai agent desktop client",
+        "multi provider chat app",
+        "mcp desktop client",
+        "electron ai client",
+        "codepilot"
+      ]
+    },
+    {
+      "id": "craft-ai-agents/craft-agents-oss",
+      "name": "Craft Agents",
+      "category": "personal-assistants",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "desktop",
+        "claude-agent-sdk",
+        "mcp",
+        "sessions",
+        "multi-provider"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Use or fork an agent desktop app with multi-session inbox, sources, permission modes and skills.",
+      "why": "Built with the Claude Agent SDK and Pi SDK side by side, and developed with itself.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop app for working with agents, from Craft. It has a session inbox, tool visualisation, multiple LLM providers, MCP and REST sources, permission modes, background tasks, skills and automations.",
+      "best_for": "Teams who want an open Apache-2.0 agent UI to customise, not a CLI.",
+      "not_for": "An app to run and remix rather than a library. Some features rely on Craft's own document tools.",
+      "keywords": [
+        "craft agents",
+        "agent desktop app",
+        "claude agent sdk app",
+        "multi-session agents",
+        "agent ui open source",
+        "craft.do"
+      ]
+    },
+    {
+      "id": "microsoft/CUAWright",
+      "name": "CUAWright",
+      "category": "personal-assistants",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "computer-use",
+        "browser-agent",
+        "desktop-agent",
+        "playwright",
+        "benchmark"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Turn coding models into browser and desktop agents that work through a terminal.",
+      "why": "A minimal SWE-style design that reports strong results on long-horizon computer-use tasks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "CUAWright gives coding models a terminal to automate browsers and desktop apps. Browser runs can produce a reusable Playwright script, while desktop tasks run in an Ubuntu VM that can reproduce OSWorld-V2 benchmarks. It can also be added as a plugin or skill for other agents.",
+      "best_for": "Building or benchmarking computer-use agents with a coding model and few moving parts.",
+      "not_for": "Desktop mode needs an Ubuntu VM setup. It is research-oriented, and the older Webwright name still appears in commands.",
+      "keywords": [
+        "computer use agent",
+        "webwright",
+        "browser agent framework",
+        "osworld benchmark",
+        "playwright script generation agent",
+        "desktop automation agent",
+        "cua agent"
+      ]
+    },
+    {
+      "id": "microsoft/fara",
+      "name": "Fara1.5",
+      "category": "personal-assistants",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "computer-use",
+        "web-agent",
+        "vision-model",
+        "small-model",
+        "browser-use"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run small open computer-use agent models (4B, 9B, 27B) that act on screenshots of a browser.",
+      "why": "Compact models that click on predicted coordinates without accessibility trees and report top results for their size.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A family of computer-use agent models built on Qwen3.5 and trained on FaraGen1.5 data. They observe a screenshot, think and output a mouse, keyboard or search action, and can ask for missing information or approval.",
+      "best_for": "Self-hosted browser agents where latency and privacy matter and a small model is enough.",
+      "not_for": "Production-critical or unattended use: the README calls it a research preview.",
+      "keywords": [
+        "computer use model",
+        "browser agent model",
+        "open source operator",
+        "small cua model",
+        "screenshot web agent",
+        "fara"
+      ]
+    },
+    {
+      "id": "lsdefine/GenericAgent",
+      "name": "GenericAgent",
+      "category": "personal-assistants",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "agent",
+        "self-evolving",
+        "computer-use",
+        "skills",
+        "minimal",
+        "browser"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Give any LLM control of a computer through a tiny agent loop that saves solved tasks as reusable skills.",
+      "why": "About 3K lines of seed code, 9 atomic tools and a roughly 100-line loop, with context under 30K tokens.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "GenericAgent is a minimal, self-evolving agent framework. Nine atomic tools and a short agent loop give an LLM control of the browser, terminal, filesystem, keyboard and mouse, screen vision and Android via ADB. Each solved task is saved as a reusable skill, so the skill tree grows with use.",
+      "best_for": "People who want a small, readable computer-control agent that learns skills over time.",
+      "not_for": "Locked-down environments. It has broad system control, and the README says to use Python 3.11 or 3.12, not 3.14.",
+      "keywords": [
+        "self evolving agent",
+        "minimal agent framework",
+        "computer use agent",
+        "agent loop python",
+        "openclaw alternative",
+        "browser control agent",
+        "adb agent",
+        "skill tree agent"
+      ]
+    },
+    {
+      "id": "fathah/hermes-desktop",
+      "name": "Hermes One (hermes-desktop)",
+      "category": "personal-assistants",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "desktop",
+        "hermes-agent",
+        "gui",
+        "chat",
+        "multi-provider"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Install, configure and chat with Hermes Agent through a native desktop app.",
+      "why": "Guided install plus chat, sessions, profiles, memory, skills and scheduling in one GUI.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Hermes One is a community desktop app for Hermes Agent. It runs the official install script, then gives a streaming chat UI, session search, profiles, memory, skills, tools, scheduling and messaging gateways. It can use a local Hermes or connect to a remote Hermes API server, with many providers.",
+      "best_for": "Using Hermes Agent without managing its CLI by hand.",
+      "not_for": "Other agents. It is a companion for Hermes Agent, and the README says it is in active development and may break.",
+      "keywords": [
+        "hermes agent gui",
+        "hermes agent desktop",
+        "nous hermes agent app",
+        "agent desktop client",
+        "electron agent ui",
+        "hermes one",
+        "chat ui for agent",
+        "local agent manager"
+      ]
+    },
+    {
+      "id": "nesquena/hermes-webui",
+      "name": "Hermes WebUI",
+      "category": "personal-assistants",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "webui",
+        "hermes-agent",
+        "self-hosted",
+        "chat-ui",
+        "vanilla-js"
+      ],
+      "ecosystems": [
+        "python",
+        "javascript"
+      ],
+      "use_for": "Use a Hermes Agent from a browser or phone with a three-panel chat and file browser UI.",
+      "why": "No build step or framework, just Python and vanilla JS, with near-CLI parity.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A lightweight web app for Hermes Agent. It has session lists, chat, a workspace file browser, model and profile controls, and a settings centre. It reuses your existing Hermes setup and is reached through an SSH tunnel.",
+      "best_for": "Hermes Agent users who want the CLI experience from a browser or phone.",
+      "not_for": "Anyone not running Hermes Agent. It is only a front end for that agent.",
+      "keywords": [
+        "hermes agent web ui",
+        "hermes webui",
+        "self hosted agent ui",
+        "agent chat interface",
+        "mobile agent ui",
+        "hermes agent browser"
+      ]
+    },
+    {
+      "id": "outsourc-e/hermes-workspace",
+      "name": "Hermes Workspace",
+      "category": "personal-assistants",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "hermes-agent",
+        "web-ui",
+        "chat",
+        "terminal",
+        "swarm"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Get a web workspace with chat, files, memory, skills, terminal and multi-agent views for Hermes Agent.",
+      "why": "Runs on vanilla hermes-agent with no fork, and adds a mission conductor and tmux-backed swarm workers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A web UI for Hermes Agent with streaming chat, memory and skills browsers, MCP management, a file browser with Monaco, a PTY terminal, an operations dashboard and swarm mode. Runs via Docker Compose or a one-line install.",
+      "best_for": "People already using NousResearch Hermes Agent who want a full interface over it.",
+      "not_for": "Other agent backends. It is built around Hermes Agent and its gateway for the full feature set.",
+      "keywords": [
+        "hermes agent ui",
+        "hermes workspace",
+        "agent web dashboard",
+        "nous hermes agent gui",
+        "multi agent swarm ui",
+        "agent command center"
+      ]
+    },
+    {
+      "id": "nearai/ironclaw",
+      "name": "IronClaw",
+      "category": "personal-assistants",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "personal-assistant",
+        "privacy",
+        "sandbox",
+        "wasm-channels",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Run a privacy-focused personal AI assistant with encrypted local storage, sandboxing and many channels.",
+      "why": "Local encrypted credentials, Docker sandbox jobs, and layers aimed at prompt injection.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted agent system with a web gateway, REPL, HTTP webhooks and WASM channels such as Telegram and Slack. It has routines, a heartbeat for background tasks, parallel jobs and a Docker sandbox with per-job tokens.",
+      "best_for": "People who want an always-on personal assistant they host themselves, with data kept local.",
+      "not_for": "A lightweight library. It is a full assistant with a service install, and you need an LLM provider key.",
+      "keywords": [
+        "personal ai assistant",
+        "self hosted agent",
+        "private ai assistant",
+        "agent os",
+        "openclaw alternative",
+        "secure agent",
+        "ironclaw"
+      ]
+    },
+    {
+      "id": "kirodotdev/KiroCrew",
+      "name": "Kiro Crew",
+      "category": "personal-assistants",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "agent-workspace",
+        "persistent",
+        "scheduling",
+        "memory",
+        "slack"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run a persistent local or remote agent workspace that keeps working between sessions.",
+      "why": "Sessions, memory and schedules survive restarts, with desktop, web, CLI, Slack and Discord access.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source workspace that runs on your hardware. It keeps sessions, memory and checkpoints, learns lessons from corrections, builds reusable skills, and runs scheduled or unattended tasks through one gateway.",
+      "best_for": "Developers who want a long-running agent they can reach from several surfaces.",
+      "not_for": "The default agent needs kiro-cli, installed and signed in separately.",
+      "keywords": [
+        "persistent agent",
+        "kiro",
+        "agent gateway",
+        "self-evolving agent",
+        "scheduled agent tasks",
+        "slack agent",
+        "agent workspace"
+      ]
+    },
+    {
+      "id": "danielmiessler/LifeOS",
+      "name": "LifeOS",
+      "category": "personal-assistants",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "ai-harness",
+        "personal-ai",
+        "hooks",
+        "skills",
+        "memory"
+      ],
+      "ecosystems": [
+        "typescript",
+        "claude-code"
+      ],
+      "use_for": "Set up a personal AI harness with hooks, skills, memory and a profile of your goals on top of Claude Code.",
+      "why": "Packages context files, skills and memory into an installable system that keeps your customizations.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "LifeOS is a general purpose AI harness that stores who you are and what you want, then uses that context for work and life tasks. It is built on hooks, skills, context files and agent routing. The code is TypeScript and Bash, best tested on Claude Code.",
+      "best_for": "People who want a ready-made personal context and memory setup for Claude Code.",
+      "not_for": "Neutral library use. It is one person's opinionated system, and other harnesses are listed as roadmap.",
+      "keywords": [
+        "lifeos",
+        "personal ai infrastructure",
+        "claude code harness",
+        "ai operating system",
+        "telos",
+        "daniel miessler",
+        "personal context system"
+      ]
+    },
+    {
+      "id": "netease-youdao/LobsterAI",
+      "name": "LobsterAI",
+      "category": "personal-assistants",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "desktop-agent",
+        "openclaw",
+        "electron",
+        "skills",
+        "im-channels"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Run a desktop AI agent that works with local files, terminal, browser, documents and chat apps.",
+      "why": "A full Electron app on OpenClaw with 28 built-in skills, multi-agent setup and IM bindings.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "LobsterAI is a desktop agent app for local files, terminal commands, browser workflows, documents, slides and IM channels. It uses OpenClaw as the runtime, asks approval for sensitive actions and lets you create custom agents and install Expert Kits.",
+      "best_for": "People who want a ready-made desktop agent, or a codebase to study or fork for one.",
+      "not_for": "A finished app, not a library. It depends on OpenClaw and its Electron architecture.",
+      "keywords": [
+        "desktop ai agent",
+        "openclaw app",
+        "cowork agent open source",
+        "electron agent",
+        "wechat feishu dingtalk agent",
+        "office assistant agent",
+        "local agent app"
+      ]
+    },
+    {
+      "id": "cosmicstack-labs/mercury-agent",
+      "name": "Mercury",
+      "category": "personal-assistants",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "personal-agent",
+        "permissions",
+        "memory",
+        "telegram",
+        "token-budget"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run a persistent personal agent that you reach from the terminal, Telegram, Discord, Slack or Signal, with permission checks.",
+      "why": "Every action is checked against rules you set, and a daily token budget is enforced.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source agent with a personality you write, memory stored in a local SQLite file, and a permission layer between the model and your machine. It reads and writes files, runs commands, uses git and the web, and keeps schedules. Mercury Code and Mercury Bots add pair programming and teams.",
+      "best_for": "Anyone who wants an always-on personal agent with approvals, budgets and chat-app access.",
+      "not_for": "A lightweight SDK for embedding in another app. It is a full runtime that owns its channels and background process.",
+      "keywords": [
+        "personal ai agent 24/7",
+        "telegram ai agent",
+        "agent permission system",
+        "token budget agent",
+        "self hosted agent",
+        "mercury agent",
+        "openclaw alternative"
+      ]
+    },
+    {
+      "id": "HKUDS/nanobot",
+      "name": "nanobot",
+      "category": "personal-assistants",
+      "kinds": [
+        "framework",
+        "app"
+      ],
+      "tags": [
+        "personal-agent",
+        "self-hosted",
+        "mcp",
+        "webui",
+        "chat-channels"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run a small self-hosted personal AI agent with a web UI, memory, tools and chat-app channels.",
+      "why": "A small readable core that still has MCP, scheduling, memory and a Python SDK.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "nanobot is a lightweight Python agent framework you use in a browser, terminal or chat app. It reads documents, runs shell and web tools, keeps long-term memory, schedules tasks, and does multi-agent delegation. It offers a Python SDK and an OpenAI-compatible API.",
+      "best_for": "You want an inspectable, hackable personal agent you can host yourself, instead of a giant platform.",
+      "not_for": "You must supply a model provider or local model server. It is aimed at personal and small-team agents, not large-scale orchestration.",
+      "keywords": [
+        "nanobot",
+        "hkuds nanobot",
+        "lightweight ai agent",
+        "self-hosted personal agent",
+        "python agent framework",
+        "openclaw alternative",
+        "agent webui"
+      ]
+    },
+    {
+      "id": "nanocoai/nanoclaw",
+      "name": "NanoClaw",
+      "category": "personal-assistants",
+      "kinds": [
+        "framework",
+        "app"
+      ],
+      "tags": [
+        "agent",
+        "containers",
+        "messaging",
+        "anthropic-sdk",
+        "lightweight"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run a small, understandable AI assistant whose agents live in isolated Linux containers.",
+      "why": "A codebase small enough to read, with real container isolation instead of permission checks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "NanoClaw is a lightweight personal assistant built on Anthropic's Agents SDK. Each agent runs in its own Linux container and sees only what you mount. It connects to Slack, Telegram, Discord, WhatsApp and more, with memory and scheduled jobs. A setup script handles install.",
+      "best_for": "People who want an OpenClaw-style assistant they can fully read, customize and sandbox.",
+      "not_for": "Built around Anthropic credentials and Docker. Meant to be forked and customized per user, not a configurable framework.",
+      "keywords": [
+        "openclaw alternative",
+        "containerized ai agent",
+        "whatsapp telegram ai assistant",
+        "agents sdk assistant",
+        "secure personal agent",
+        "nanoclaw",
+        "docker agent sandbox"
+      ]
+    },
+    {
+      "id": "nullclaw/nullclaw",
+      "name": "NullClaw",
+      "category": "personal-assistants",
+      "kinds": [
+        "engine",
+        "cli"
+      ],
+      "tags": [
+        "ai-assistant",
+        "zig",
+        "small-binary",
+        "sandbox",
+        "multi-channel"
+      ],
+      "ecosystems": [
+        "zig"
+      ],
+      "use_for": "Run an autonomous AI assistant as a tiny static Zig binary on cheap boards.",
+      "why": "A 678 KB binary using about 1 MB RAM, with 50+ providers and 19 channels.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A fully autonomous AI assistant runtime written in Zig. It ships as a static binary and works with 50+ model providers, 19 chat channels, 35+ tools, memory engines, MCP, subagents and sandboxing. Core systems are swappable interfaces.",
+      "best_for": "Edge and embedded hosts, or anyone who wants a lean self-hosted assistant with many integrations.",
+      "not_for": "Speed and size numbers come from the project's own benchmark. The Zig codebase is harder to extend than TypeScript or Python.",
+      "keywords": [
+        "zig ai assistant",
+        "tiny ai agent",
+        "openclaw alternative",
+        "lightweight agent runtime",
+        "edge ai assistant",
+        "single binary agent"
+      ]
+    },
+    {
+      "id": "TencentCloud/Octop",
+      "name": "Octop",
+      "category": "personal-assistants",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "self-hosted",
+        "multi-agent",
+        "multi-user",
+        "chat-channels",
+        "assistant"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Self-host a multi-user, multi-agent AI assistant reachable from web, CLI and chat apps.",
+      "why": "One process serves a web console, CLI and IM channels with per-user isolation.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted AI assistant platform for households and small teams. It connects to Feishu, DingTalk, QQ, WeChat, Telegram, Discord and WeCom. It has an expert library, MCP connectors, RAG knowledge bases, tool approval and workspace backends from local disk to S3.",
+      "best_for": "Teams wanting a private shared assistant in Chinese chat apps with admin controls.",
+      "not_for": "Embedding a framework in your own code, or large multi-tenant scale. AgentTeams is marked beta.",
+      "keywords": [
+        "self hosted ai assistant",
+        "multi agent assistant",
+        "feishu dingtalk bot ai",
+        "openclaw alternative",
+        "private ai assistant team",
+        "tencent octop",
+        "wechat ai assistant"
+      ]
+    },
+    {
+      "id": "odysseus-dev/odysseus",
+      "name": "Odysseus",
+      "category": "personal-assistants",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "self-hosted",
+        "ai-workspace",
+        "local-models",
+        "mcp",
+        "deep-research"
+      ],
+      "ecosystems": [
+        "python",
+        "docker"
+      ],
+      "use_for": "Self-host an AI workspace with chat, agents, research, documents, email and calendar in one place.",
+      "why": "Bundles chat, deep research, a document editor, email and CalDAV with local-model support.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Odysseus is a self-hosted AI workspace started with Docker Compose. It covers chat and agents (tools, MCP, files, shell, skills, memory), deep research, a document editor, email, notes, tasks and calendar. It also helps pick and serve local models.",
+      "best_for": "You want a private all-in-one AI workspace you control, or a base to fork.",
+      "not_for": "AGPL-3.0, so network use of a modified version must share source. It is a full app, not a small library. The dev branch moves fast.",
+      "keywords": [
+        "odysseus",
+        "self-hosted ai workspace",
+        "private chatgpt alternative",
+        "local llm workspace",
+        "ai email calendar notes",
+        "docker ai chat",
+        "deep research self hosted"
+      ]
+    },
+    {
+      "id": "composio-community/open-claude-cowork",
+      "name": "Open Claude Cowork",
+      "category": "personal-assistants",
+      "kinds": [
+        "app",
+        "template"
+      ],
+      "tags": [
+        "claude-agent-sdk",
+        "electron",
+        "composio",
+        "desktop",
+        "chat"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Start from a desktop agent chat app wired to 500+ SaaS tools.",
+      "why": "Working Electron app on the Claude Agent SDK with Composio tools and skills support.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An Electron desktop chat app on the Claude Agent SDK or Opencode, with a Node and Express backend and streaming. Tools come from Composio Tool Router and MCP. The repo also has a messaging-based assistant, Secure Clawdbot.",
+      "best_for": "A fork-ready base for a Cowork-style work assistant.",
+      "not_for": "Needs a Composio API key for the integrations. A starter app, not a hardened product. Unofficial relative to Anthropic's Cowork.",
+      "keywords": [
+        "claude cowork alternative",
+        "open source cowork",
+        "claude agent sdk app",
+        "composio",
+        "electron agent app",
+        "saas integrations agent",
+        "desktop ai assistant"
+      ]
+    },
+    {
+      "id": "SenteLabsAI/OpenExecutive",
+      "name": "Open Executive",
+      "category": "personal-assistants",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "executive-assistant",
+        "multi-agent",
+        "fastapi",
+        "nextjs",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Run a virtual executive team that answers with one consistent voice backed by specialist agents.",
+      "why": "Self-hostable, with memory of past decisions, spend approval limits and many chat and workspace integrations.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Open Executive gives a single executive voice backed by nine specialist agents covering strategy, finance, HR, legal, operations, marketing, product, sales and board communications. It remembers decisions across sessions, has a scheduler, and integrates with Slack, Google Workspace, Microsoft 365 and MCP tools.",
+      "best_for": "Founders and leaders who want a configurable AI executive staff they can host.",
+      "not_for": "An application, not a library, and it needs a capable tool-use model. Legal or financial answers are not professional advice.",
+      "keywords": [
+        "virtual executive ai",
+        "ai cfo agent",
+        "multi agent business assistant",
+        "digital twin email assistant",
+        "founder ai team",
+        "self-hosted executive assistant",
+        "fastapi nextjs agents"
+      ]
+    },
+    {
+      "id": "CopilotKit/OpenBot",
+      "name": "OpenBot",
+      "category": "personal-assistants",
+      "kinds": [
+        "template",
+        "app"
+      ],
+      "tags": [
+        "ag-ui",
+        "ai-coworkers",
+        "self-hosted",
+        "template",
+        "copilotkit"
+      ],
+      "ecosystems": [
+        "typescript",
+        "docker"
+      ],
+      "use_for": "Clone a self-hosted AI assistant platform where each agent gets its own browser, files and tools.",
+      "why": "Every coworker action is decided before it happens and recorded after, and any AG-UI agent plugs in.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A template for an in-house AI assistant that runs on Docker Compose with PostgreSQL. Each coworker has its own browser, files and granted tools, and you can watch and take over. No model ships in the box.",
+      "best_for": "Companies that want to own and customize an assistant platform built around AG-UI agents.",
+      "not_for": "Depending on as a package: the README says it is a template to clone and all workspaces are private. There is no hosted version.",
+      "keywords": [
+        "ai coworker platform",
+        "self-hosted chatgpt alternative",
+        "ag-ui agents",
+        "copilotkit openbot",
+        "agent platform template",
+        "enterprise ai assistant"
+      ]
+    },
+    {
+      "id": "openclaw/openclaw",
+      "name": "OpenClaw",
+      "category": "personal-assistants",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "personal-assistant",
+        "self-hosted",
+        "chat-channels",
+        "gateway",
+        "plugins"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Run a self-hosted AI assistant that answers in Discord, Slack, Telegram, WhatsApp and other chat apps.",
+      "why": "One Gateway serves a laptop or a team, and models and agent harnesses are swappable plugins.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "OpenClaw is an open-source AI assistant that runs on your own hardware. A single Gateway connects it to 20+ chat channels and native apps. State, memory and credentials stay local, and models are plugins.",
+      "best_for": "You want your own always-on assistant reachable from the chat apps you already use, with models you can swap.",
+      "not_for": "Not a library for embedding agents in your own product. Prompts still go to whichever model provider and chat platforms you configure.",
+      "keywords": [
+        "openclaw",
+        "personal ai assistant",
+        "self-hosted assistant",
+        "ai gateway chat apps",
+        "telegram whatsapp ai agent",
+        "discord ai assistant",
+        "open source assistant"
+      ]
+    },
+    {
+      "id": "RightNow-AI/openfang",
+      "name": "OpenFang",
+      "category": "personal-assistants",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "agent-os",
+        "rust",
+        "autonomous-agents",
+        "wasm-sandbox",
+        "channels"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Run scheduled, autonomous agents from a single Rust binary with sandboxing, memory and 40 channel adapters.",
+      "why": "One roughly 32 MB binary with a WASM sandbox, SQLite plus vector memory and a desktop app.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenFang is an agent operating system written in Rust. It runs autonomous agents on schedules and ships with built-in tools, MCP and A2A support, many channel adapters and an audit trail. The README says it is pre-1.0 with breaking changes expected.",
+      "best_for": "Always-on agents for monitoring, outreach or reporting, deployed as one binary.",
+      "not_for": "Production use pinned loosely: the README says to pin a commit until v1.0. Comparison tables are the authors' own claims.",
+      "keywords": [
+        "agent operating system",
+        "rust agent framework",
+        "autonomous agents 24/7",
+        "openfang",
+        "crewai alternative",
+        "langgraph alternative",
+        "wasm sandbox agents"
+      ]
+    },
+    {
+      "id": "open-jarvis/OpenJarvis",
+      "name": "OpenJarvis",
+      "category": "personal-assistants",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "local-first",
+        "personal-ai",
+        "on-device",
+        "evaluation",
+        "agents"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build personal AI agents that run on local models by default and call the cloud only when needed.",
+      "why": "Treats energy, latency and cost as first-class measures and learns from local traces.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A framework and CLI for local-first personal AI with shared primitives for on-device agents, evaluations of energy, FLOPs, latency and cost, and a learning loop. Presets include morning digest, deep research and code assistant.",
+      "best_for": "Developers who want private, on-device agents and a research base for efficiency.",
+      "not_for": "Cloud-first agent apps. The GUI needs Node.js 22+ from a source checkout, and it expects local models to be capable enough.",
+      "keywords": [
+        "local personal ai",
+        "on device agents",
+        "jarvis assistant",
+        "local llm agent framework",
+        "private ai assistant",
+        "energy efficient ai",
+        "openjarvis"
+      ]
+    },
+    {
+      "id": "different-ai/openwork",
+      "name": "OpenWork",
+      "category": "personal-assistants",
+      "kinds": [
+        "app",
+        "plugin"
+      ],
+      "tags": [
+        "desktop-agent",
+        "opencode",
+        "mcp",
+        "skills",
+        "claude-cowork-alternative"
+      ],
+      "ecosystems": [
+        "typescript",
+        "desktop"
+      ],
+      "use_for": "Give a desktop agent app that works on your files with any model and shares skills and MCP servers.",
+      "why": "Open alternative to Claude Cowork that works with 50+ model providers or local models.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenWork is a desktop app for macOS, Windows and Linux where agents work on your local files. It is built on OpenCode and supports your own keys or Ollama. Teams can share skills and MCP servers, and self-host the control plane.",
+      "best_for": "Teams who want a Cowork-style agent workspace on any model, with shared skills and connections.",
+      "not_for": "Pure library use; it is an app. The license is listed as non-standard, so check it before forking.",
+      "keywords": [
+        "claude cowork alternative",
+        "open source cowork",
+        "codex alternative",
+        "desktop ai agent",
+        "opencode app",
+        "share skills with team",
+        "local files agent"
+      ]
+    },
+    {
+      "id": "andrewyng/openworker",
+      "name": "OpenWorker",
+      "category": "personal-assistants",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "desktop-agent",
+        "security",
+        "coworker",
+        "ollama",
+        "governed"
+      ],
+      "ecosystems": [
+        "desktop"
+      ],
+      "use_for": "Run an open-source desktop AI coworker that does finished tasks, starting with security review.",
+      "why": "Governed and logged actions, any model including local Ollama, and optional OpenShell sandboxing.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenWorker is an AI coworker for your desktop that works across files and connected apps and checks in before consequential actions. Security coworkers ship first, covering code review, cloud posture and incident triage. You bring your own model key or run local.",
+      "best_for": "Teams who want an approval-gated desktop agent for security and everyday work.",
+      "not_for": "Embedding as a library. The README says it is in open beta.",
+      "keywords": [
+        "ai coworker",
+        "desktop ai agent",
+        "security review agent",
+        "andrew ng openworker",
+        "open source cowork",
+        "incident triage ai",
+        "ollama agent"
+      ]
+    },
+    {
+      "id": "ShawnPana/phone-harness",
+      "name": "phone-harness",
+      "category": "personal-assistants",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "phone-automation",
+        "android",
+        "iphone",
+        "adb",
+        "agent"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Let a coding agent see and control a real iPhone or Android phone.",
+      "why": "Needs no jailbreak or phone-side install, using iPhone Mirroring or adb.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI with Python helpers such as tap, type_text and screen. On iPhone it drives the Mac's iPhone Mirroring window and reads it with OCR. On Android it uses adb and the accessibility tree. Cloud phones are also supported.",
+      "best_for": "Agents that must use mobile apps, for testing or tasks that have no API.",
+      "not_for": "iPhone control needs a Mac with iPhone Mirroring. Cloud phones are a hosted option. Not for building mobile apps.",
+      "keywords": [
+        "control phone with ai",
+        "android adb agent",
+        "iphone mirroring automation",
+        "mobile agent",
+        "claude code phone",
+        "phone automation",
+        "mobile gui agent"
+      ]
+    },
+    {
+      "id": "sipeed/picoclaw",
+      "name": "PicoClaw",
+      "category": "personal-assistants",
+      "kinds": [
+        "engine",
+        "cli"
+      ],
+      "tags": [
+        "agent",
+        "go",
+        "lightweight",
+        "embedded",
+        "mcp"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Run a tiny personal AI assistant in Go on very cheap hardware.",
+      "why": "A single Go binary for RISC-V, ARM, MIPS and x86 with a claimed memory footprint under 10 MB.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "PicoClaw is an ultra-light personal AI assistant written in Go from scratch by Sipeed. It starts in under a second on low-power chips, supports MCP servers, image input and rule-based model routing so simple queries use cheaper models.",
+      "best_for": "Always-on assistants on low-cost boards and small servers.",
+      "not_for": "Early and fast-moving; the README says not to deploy to production before v1.0 and that recent builds use 10-20 MB.",
+      "keywords": [
+        "lightweight ai agent",
+        "go ai assistant",
+        "openclaw alternative",
+        "agent on raspberry pi",
+        "low memory agent",
+        "riscv ai agent",
+        "picoclaw"
+      ]
+    },
+    {
+      "id": "yc-software/qm",
+      "name": "QM",
+      "category": "personal-assistants",
+      "kinds": [
+        "framework",
+        "service",
+        "app"
+      ],
+      "tags": [
+        "agent-harness",
+        "slack",
+        "multi-user",
+        "sandbox",
+        "self-hosted",
+        "skills"
+      ],
+      "ecosystems": [
+        "typescript",
+        "postgres"
+      ],
+      "use_for": "Deploy a shared company agent in Slack and the web, with per-person and per-room scopes.",
+      "why": "Each person and room gets its own memory, files, permissions and durable sandbox.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "QM is a multiplayer agent harness for work. Each employee gets an isolated workspace, and the agent also works in channels and projects. Pi and Claude Code can drive the same core, so models are not locked in. It has shared skills, crons, webhooks, internal web apps, admin controls and a Postgres store.",
+      "best_for": "Startups that want one self-hosted agent for the whole team on their own cloud and keys.",
+      "not_for": "A single-user personal assistant. It is built for teams and needs your own cloud, Postgres and model keys.",
+      "keywords": [
+        "company ai agent",
+        "slack agent",
+        "multiplayer agent",
+        "team agent harness",
+        "self hosted agent platform",
+        "shared agent skills",
+        "internal apps agent",
+        "yc qm"
+      ]
+    },
+    {
+      "id": "agentscope-ai/QwenPaw",
+      "name": "QwenPaw",
+      "category": "personal-assistants",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "personal-assistant",
+        "chat-channels",
+        "memory",
+        "skills",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run a personal AI assistant on your machine or cloud that chats through apps like DingTalk, Lark and Discord.",
+      "why": "Three-layer memory, skills and plugins, cron jobs and multiple chat channels in one install.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "QwenPaw is a personal AI assistant you can deploy locally or in the cloud. It has layered memory, extendable Skills and Plugins, scheduled tasks and channels for several chat apps. A desktop build runs by double-click, and it can use local Qwen-based models.",
+      "best_for": "A self-hosted assistant for yourself or a small team, reachable from the chat apps you already use.",
+      "not_for": "The desktop app is in beta and covers Windows 10+ and macOS 14+ only. Not a minimal library.",
+      "keywords": [
+        "personal ai assistant",
+        "self-hosted assistant",
+        "dingtalk bot ai",
+        "agent with memory",
+        "qwen assistant",
+        "multi-channel agent",
+        "agentscope"
+      ]
+    },
+    {
+      "id": "elie222/rakazo",
+      "name": "Rakazo",
+      "category": "personal-assistants",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "agent",
+        "self-hosted",
+        "assistant",
+        "voice",
+        "sandbox"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Self-host persistent AI teammate bots with your own model and sandbox provider.",
+      "why": "Chat-first setup with web, desktop and mobile apps, and several sandbox backends.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source, self-hosted agent app. Bots keep conversations, memory and routines, can delegate to other bots, and use shared or private computers (Docker, E2B, Daytona and more). Tools come via Composio, Pipedream, MCP or OpenAPI.",
+      "best_for": "Running your own always-on assistant instead of a hosted one, and forking the stack.",
+      "not_for": "The README says it is in beta. It needs Docker and your own model credentials.",
+      "keywords": [
+        "grok bot alternative",
+        "self-hosted ai assistant",
+        "openclaw alternative",
+        "hermes agent alternative",
+        "persistent agent",
+        "agent sandbox",
+        "open source assistant"
+      ]
+    },
+    {
+      "id": "zeroclaw-labs/zeroclaw",
+      "name": "ZeroClaw",
+      "category": "personal-assistants",
+      "kinds": [
+        "engine",
+        "cli"
+      ],
+      "tags": [
+        "agent-runtime",
+        "rust",
+        "multi-channel",
+        "security",
+        "hardware"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Run a personal AI agent as one Rust binary that answers on Discord, Telegram, email and 30+ channels.",
+      "why": "Provider-agnostic with sandboxes, approval levels, signed tool receipts and GPIO hardware support.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "ZeroClaw is an agent runtime shipped as a single Rust binary. It connects to many LLM providers, reaches you over 30+ channels, and acts through tools like shell, browser, HTTP, hardware and MCP servers. It defaults to supervised autonomy with OS-level sandboxes.",
+      "best_for": "An always-on self-hosted assistant you fully control, including on small devices like a Raspberry Pi.",
+      "not_for": "YOLO mode skips safety gates and is meant only for trusted dev boxes. A runtime you configure, not a library API.",
+      "keywords": [
+        "personal ai assistant",
+        "rust agent runtime",
+        "openclaw alternative",
+        "self-hosted agent",
+        "telegram discord ai agent",
+        "raspberry pi agent",
+        "mcp agent runtime"
+      ]
+    }
+  ]
+}

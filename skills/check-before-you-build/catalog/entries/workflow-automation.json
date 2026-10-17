@@ -145,6 +145,44 @@
       ]
     },
     {
+      "id": "iflytek/astron-rpa",
+      "name": "AstronRPA",
+      "category": "workflow-automation",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "rpa",
+        "desktop-automation",
+        "low-code",
+        "agents",
+        "workflows"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript",
+        "java"
+      ],
+      "use_for": "Build and run desktop and web automation robots with a visual designer and 300+ components.",
+      "why": "RPA with enterprise features that can call, and be called by, an agent platform.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An RPA desktop app with a visual designer for automating Windows apps, Office/WPS, ERP systems and browsers. Has 300+ prebuilt components, scheduling and team sharing. Built with Vue and Electron, Java Spring Boot, and a Python engine.",
+      "best_for": "Teams automating desktop and web business processes with low-code flows plus agents.",
+      "not_for": "Linux or Mac-only automation: the README stresses Windows desktop and ERP coverage. It is a large multi-service stack deployed with Docker.",
+      "keywords": [
+        "rpa",
+        "robotic process automation open source",
+        "desktop automation",
+        "uipath alternative",
+        "low-code automation",
+        "agent rpa",
+        "astron rpa"
+      ]
+    },
+    {
       "id": "hibiken/asynq",
       "name": "Asynq",
       "category": "workflow-automation",
@@ -572,6 +610,44 @@
         "retries",
         "dynamic workflows",
         "airflow alternative"
+      ]
+    },
+    {
+      "id": "rocketride-org/rocketride-server",
+      "name": "RocketRide",
+      "category": "workflow-automation",
+      "kinds": [
+        "engine",
+        "framework"
+      ],
+      "tags": [
+        "ai-pipelines",
+        "vscode",
+        "llm-workflows",
+        "vector-databases",
+        "visual-builder"
+      ],
+      "ecosystems": [
+        "c++",
+        "python",
+        "typescript"
+      ],
+      "use_for": "Build and run AI pipelines visually in VS Code on a C++ runtime, then call them from Python or TypeScript.",
+      "why": "Portable JSON pipelines with 100+ nodes and built-in observability of tokens, calls and latency.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "RocketRide is an open source pipeline builder and runtime for AI and ML work. You compose nodes for LLM providers, vector databases, OCR and more on a canvas in VS Code. Pipelines are JSON and run on a multithreaded C++ engine on your own infrastructure.",
+      "best_for": "Teams who want visual, debuggable AI pipelines they host themselves.",
+      "not_for": "Pure code-first agent work. It centres on a visual builder and its own pipeline format.",
+      "keywords": [
+        "ai pipeline builder",
+        "visual llm workflow",
+        "vscode ai pipelines",
+        "langchain alternative visual",
+        "rag pipeline engine",
+        "rocketride",
+        "self hosted ai workflow"
       ]
     },
     {

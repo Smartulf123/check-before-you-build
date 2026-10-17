@@ -562,6 +562,42 @@
       ]
     },
     {
+      "id": "HailToDodongo/pyrite64",
+      "name": "Pyrite64",
+      "category": "game-engines",
+      "kinds": [
+        "engine",
+        "app"
+      ],
+      "tags": [
+        "n64",
+        "game-engine",
+        "editor",
+        "libdragon",
+        "retro"
+      ],
+      "ecosystems": [
+        "c++",
+        "n64"
+      ],
+      "use_for": "Make 3D games that run on a real Nintendo 64 or accurate emulators, using a visual editor and runtime.",
+      "why": "Uses open libdragon and tiny3d with no proprietary N64 SDK, plus glTF import and a node-graph scripting editor.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A visual editor and runtime engine for N64 games. It imports glTF models with fast64 materials, supports HDR and bloom, and has scene management, collision and audio. It installs the toolchain automatically on Windows.",
+      "best_for": "Homebrew developers who want an editor-based workflow for N64 games.",
+      "not_for": "Early development with missing features, unfinished docs and expected breaking changes. Needs accurate emulators such as Ares or gopher64.",
+      "keywords": [
+        "n64 game engine",
+        "nintendo 64 homebrew",
+        "libdragon editor",
+        "tiny3d",
+        "retro console game engine",
+        "n64 homebrew editor"
+      ]
+    },
+    {
       "id": "raysan5/raylib",
       "name": "raylib",
       "category": "game-engines",
@@ -635,6 +671,41 @@
         "interactive fiction",
         "vn",
         "narrative games"
+      ]
+    },
+    {
+      "id": "Facepunch/sbox-public",
+      "name": "s&box",
+      "category": "game-engines",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "game-engine",
+        "source-2",
+        "dotnet",
+        "editor",
+        "csharp"
+      ],
+      "ecosystems": [
+        "c#",
+        ".net"
+      ],
+      "use_for": "Build games in C# on a Source 2 based engine, or contribute to the engine itself.",
+      "why": "A modern .NET engine on Valve's Source 2 with an editor, with the C# engine source open.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Facepunch's game engine on Source 2 and the latest .NET. This repo holds the C# engine, editor and tooling; the native Source 2 core comes as prebuilt binaries downloaded by setup on Windows, Linux or Apple Silicon Macs.",
+      "best_for": "C# developers making Source-style games, or contributors to the engine.",
+      "not_for": "Starting a game: the README sends game makers to the Steam editor. Building here is for engine contributors, and the license is not standard.",
+      "keywords": [
+        "source 2 game engine",
+        "c# game engine",
+        "sbox",
+        "garrys mod successor",
+        "dotnet game engine",
+        "facepunch engine"
       ]
     },
     {

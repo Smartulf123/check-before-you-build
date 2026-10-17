@@ -1,0 +1,839 @@
+{
+  "category": "skill-tooling",
+  "entries": [
+    {
+      "id": "agentskills/agentskills",
+      "name": "Agent Skills",
+      "category": "skill-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "spec",
+        "agent-skills",
+        "skill-md",
+        "standard",
+        "documentation"
+      ],
+      "ecosystems": [
+        "markdown",
+        "agnostic"
+      ],
+      "use_for": "Read the open specification for SKILL.md skills so your agent or skills work across products.",
+      "why": "The reference spec and docs for the skill format many agents now share.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "This repo holds the specification and documentation for Agent Skills. A skill is a folder with a SKILL.md file of metadata and instructions, plus optional scripts and references. Agents load skills in three steps: discovery, activation and execution.",
+      "best_for": "Authors of skills and builders of agents who want to follow or support the standard format.",
+      "not_for": "Ready-made skills to install. It is the spec and docs, with only a few examples.",
+      "keywords": [
+        "agent skills spec",
+        "skill.md format",
+        "how to write a skill",
+        "skills standard",
+        "progressive disclosure skills",
+        "agentskills.io"
+      ]
+    },
+    {
+      "id": "sickn33/agentic-awesome-skills",
+      "name": "Agentic Awesome Skills (AAS Core)",
+      "category": "skill-tooling",
+      "kinds": [
+        "library",
+        "cli",
+        "mcp"
+      ],
+      "tags": [
+        "skills-catalog",
+        "skill-md",
+        "mcp",
+        "workbench",
+        "plugins"
+      ],
+      "ecosystems": [
+        "markdown",
+        "node"
+      ],
+      "use_for": "Search a large library of installable SKILL.md playbooks and keep a reviewable set for your agent.",
+      "why": "2,700+ skills plus a CLI, local MCP and Workbench for inspecting and planning installs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A library of 2,705+ installable SKILL.md playbooks. AAS Core lets Codex or Claude search the local catalog, record the skills the agent picks, validate the stack and preview a plan. Core does not rank or recommend skills.",
+      "best_for": "You want a big skill catalog with tooling to choose, inspect and pin the exact skills you use.",
+      "not_for": "Apply and recovery are still experimental. Core does not recommend skills, so the agent or you must choose. Skill quality varies.",
+      "keywords": [
+        "agentic awesome skills",
+        "aas core",
+        "skill.md library",
+        "claude skills collection",
+        "antigravity skills",
+        "agent skills catalog",
+        "install agent skills"
+      ]
+    },
+    {
+      "id": "microsoft/apm",
+      "name": "APM (Agent Package Manager)",
+      "category": "skill-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "package-manager",
+        "agent-config",
+        "skills",
+        "plugins",
+        "manifest"
+      ],
+      "ecosystems": [
+        "python",
+        "yaml"
+      ],
+      "use_for": "Declare agent skills, prompts and plugins in apm.yml and install the same setup on every machine.",
+      "why": "Works like npm for agent config, with transitive dependencies, org policy, and plugin export.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "APM is a dependency manager for AI agent configuration. You list skills, plugins and prompts in an apm.yml manifest, and apm install configures agents such as Copilot, Claude Code, Cursor, Codex and Gemini. It supports transitive resolution, policy controls, and exporting standard plugin.json packages.",
+      "best_for": "A team wants reproducible, shared agent context across tools and projects.",
+      "not_for": "It manages agent setup, not agents themselves. You still pick and write the skills. Only useful if your team standardizes on its manifest.",
+      "keywords": [
+        "agent package manager",
+        "apm install",
+        "manage claude code skills",
+        "agent dependencies",
+        "npx skills alternative",
+        "plugin manager",
+        "apm.yml"
+      ]
+    },
+    {
+      "id": "tigerless-labs/autoharness",
+      "name": "AutoHarness",
+      "category": "skill-tooling",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "self-learning",
+        "skill-distillation",
+        "claude-code",
+        "hooks",
+        "memory"
+      ],
+      "ecosystems": [
+        "claude-code"
+      ],
+      "use_for": "Let Claude Code learn, merge, update and prune its own skills from your real sessions.",
+      "why": "No daemon or benchmark, and it only touches skills it wrote itself.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Claude Code plugin that captures turns through hooks, reflects on each episode and decides to add, merge, patch or drop skills. Each session opens with an index of the skills it wrote.",
+      "best_for": "Claude Code users who want skills to build up from actual work without hand-writing them.",
+      "not_for": "Other agents; it targets Claude Code. Auto-generated skills still need review for quality and private data.",
+      "keywords": [
+        "self improving skills",
+        "claude code plugin learning",
+        "auto generate skills",
+        "skill pruning",
+        "agent harness",
+        "claude code memory skills",
+        "autoharness"
+      ]
+    },
+    {
+      "id": "midudev/autoskills",
+      "name": "autoskills",
+      "category": "skill-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "agent-skills",
+        "installer",
+        "stack-detection",
+        "cli",
+        "registry"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Detect a project's tech stack and install matching AI agent skills with one command.",
+      "why": "Zero config: scans package.json and config files, then picks skills from an audited registry.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Run npx autoskills in a project root. It reads package.json, Gradle and config files, picks matching skills from its audited registry, downloads and verifies only those files, and installs them for your IDE agents.",
+      "best_for": "Quickly equipping Claude Code, Cursor or similar agents with skills that fit your stack.",
+      "not_for": "Skills outside its registry. Needs Node.js 22.6 or newer. The repo license is not clearly stated.",
+      "keywords": [
+        "install agent skills",
+        "autoskills",
+        "skills for my stack",
+        "npx skills installer",
+        "claude code skills",
+        "cursor skills",
+        "skill registry"
+      ]
+    },
+    {
+      "id": "virgiliojr94/book-to-skill",
+      "name": "book-to-skill",
+      "category": "skill-tooling",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skill",
+        "pdf",
+        "books",
+        "knowledge",
+        "token-saving"
+      ],
+      "ecosystems": [
+        "markdown",
+        "python"
+      ],
+      "use_for": "Turn a technical book PDF or folder of documents into a skill your agent loads chapter by chapter.",
+      "why": "Reports 24x to 51x fewer tokens than dumping a book into context, measured on real books.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill that distills a book or set of sources into a structured agent skill with frameworks, decision rules, anti-patterns and per-chapter files. Your agent then loads the right chapter on demand. It works with any host that reads the SKILL.md format.",
+      "best_for": "Making a reference book usable inside Claude Code, Codex, Copilot CLI, Amp and similar agents.",
+      "not_for": "Output is a distilled structure, not the full text. Only use books you are allowed to process and keep.",
+      "keywords": [
+        "pdf to skill",
+        "book to claude skill",
+        "turn book into agent skill",
+        "ebook to SKILL.md",
+        "agent knowledge base from book",
+        "document to skill",
+        "reference skill generator"
+      ]
+    },
+    {
+      "id": "kangarooking/cangjie-skill",
+      "name": "Cangjie Skill",
+      "category": "skill-tooling",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "skill-generation",
+        "distillation",
+        "books",
+        "podcasts",
+        "agent-skills"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Turn books, long videos and podcasts into installable agent skills.",
+      "why": "A local toolchain handles compile, incremental update, repair, rollback and evaluation.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill that extracts methods from long content into capability cards, then compiles either one router Skill or a pack of standalone Skills. scripts/cangjie.py handles diagnostics, updates, repair and benchmarking.",
+      "best_for": "Capturing methods from content you consume so your agent can apply them.",
+      "not_for": "Copying a person's style or persona. It targets methodologies, and quality depends on the source you feed it.",
+      "keywords": [
+        "books to agent skills",
+        "distill podcast into skill",
+        "skill generator",
+        "knowledge to skill",
+        "video to skill",
+        "skill compiler",
+        "cangjie"
+      ]
+    },
+    {
+      "id": "anthropics/claude-plugins-official",
+      "name": "Claude Code official plugins",
+      "category": "skill-tooling",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "claude-code",
+        "marketplace",
+        "plugins",
+        "official"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Install vetted Claude Code plugins from Anthropic's official marketplace directory.",
+      "why": "Anthropic-managed directory of curated plugins; the default trusted source for Claude Code.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Anthropic-managed directory of Claude Code plugins, split into internal plugins by Anthropic and external third-party plugins approved against quality and security standards. Each plugin follows a standard structure with plugin.json metadata.",
+      "best_for": "Discovering and installing vetted Claude Code plugins, or submitting a plugin to the official marketplace.",
+      "not_for": "A directory, not a tool itself. Anthropic states it cannot verify what included MCP servers or files do, so review plugins before trusting them.",
+      "keywords": [
+        "claude code plugins",
+        "plugin marketplace",
+        "claude plugins",
+        "plugin directory",
+        "mcp servers",
+        "marketplace",
+        "plugin.json"
+      ]
+    },
+    {
+      "id": "openclaw/clawhub",
+      "name": "ClawHub",
+      "category": "skill-tooling",
+      "kinds": [
+        "service",
+        "cli"
+      ],
+      "tags": [
+        "skill-registry",
+        "openclaw",
+        "plugins",
+        "convex",
+        "vector-search"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Publish, version and search agent skills and plugins in a registry, or self-host one.",
+      "why": "Public OpenClaw skill registry with embedding search and a CLI.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A registry for text-based agent skills (a SKILL.md plus files) and OpenClaw code and bundle plugins. It offers versions, tags, stars, comments and moderation. Built with TanStack Start and Convex, and searched with OpenAI embeddings. The clawhub CLI installs, pins and publishes.",
+      "best_for": "OpenClaw users sharing skills, or teams building their own skill registry.",
+      "not_for": "Non-OpenClaw ecosystems. Running your own copy needs Convex, GitHub OAuth and OpenAI embeddings.",
+      "keywords": [
+        "skill registry",
+        "openclaw skills",
+        "agent skill marketplace",
+        "publish agent skills",
+        "clawhub cli",
+        "skills.sh alternative",
+        "plugin registry"
+      ]
+    },
+    {
+      "id": "alchaincyf/darwin-skill",
+      "name": "darwin-skill",
+      "category": "skill-tooling",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "skill-optimization",
+        "autoresearch",
+        "evaluation",
+        "ratchet",
+        "human-in-the-loop"
+      ],
+      "ecosystems": [
+        "agent-skills",
+        "claude-code"
+      ],
+      "use_for": "Score and improve your own agent skills in an evaluate, change, test, keep-or-revert loop.",
+      "why": "Scores structure and real output on a 9-point rubric and keeps only changes that help, with human checkpoints.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill that applies Karpathy's autoresearch idea to SKILL.md files. It scores a skill on nine weighted dimensions, edits one dimension at a time, uses independent judges, and keeps a change only if the score rises.",
+      "best_for": "Maintaining a large set of skills where you want measured improvement rather than guesswork.",
+      "not_for": "Full automation: it pauses for human confirmation by design. README is mostly in Chinese.",
+      "keywords": [
+        "optimize agent skills",
+        "skill evaluation",
+        "improve SKILL.md",
+        "autoresearch for skills",
+        "skill quality score",
+        "darwin skill",
+        "skill ratchet"
+      ]
+    },
+    {
+      "id": "titanwings/distilly",
+      "name": "Distilly",
+      "category": "skill-tooling",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "person-profile",
+        "persona",
+        "agent-skill",
+        "memory",
+        "distillation"
+      ],
+      "ecosystems": [
+        "python",
+        "claude-code"
+      ],
+      "use_for": "Turn messages, documents and interviews into a reusable profile of how a person works, packaged as a skill.",
+      "why": "Builds source-grounded profiles and can also set up your own owner profile for your agent.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Distilly creates a Person Profile from source material you give it and packages it as an Agent Skill. It can profile a colleague, a relationship or a public figure. It can also interview you and add a summary to the file your agent reads each session.",
+      "best_for": "Keeping a colleague's playbook or your own working style available to an agent.",
+      "not_for": "Cloning a person. The README says it does not claim to clone the person, and profiling others raises privacy questions.",
+      "keywords": [
+        "colleague skill",
+        "person profile",
+        "persona skill",
+        "distill a colleague",
+        "agent memory profile",
+        "digital twin skill",
+        "owner profile"
+      ]
+    },
+    {
+      "id": "dsh-market/dsh-market",
+      "name": "dsh-market",
+      "category": "skill-tooling",
+      "kinds": [
+        "plugin",
+        "app"
+      ],
+      "tags": [
+        "plugin-market",
+        "deepseek-harness",
+        "marketplace",
+        "plugins",
+        "themes"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Browse, search and one-click install community plugins inside DeepSeek Harness.",
+      "why": "A catalog of 4,200+ plugins with host-compatibility hints, screenshots and per-plugin discussion threads.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "The plugin market built into DeepSeek Harness. It lists the community catalog with category filters, sorting and bilingual descriptions, shows screenshots, and flags plugins that need a different host version.",
+      "best_for": "Finding extensions for DeepSeek Harness, or studying how a plugin marketplace UI is built.",
+      "not_for": "Anything outside DeepSeek Harness. It is a market for that host, not a general plugin manager.",
+      "keywords": [
+        "deepseek harness plugins",
+        "dsh plugin market",
+        "plugin marketplace",
+        "one-click plugin install",
+        "harness themes",
+        "dshmarket"
+      ]
+    },
+    {
+      "id": "alchaincyf/nuwa-skill",
+      "name": "Nuwa Skill",
+      "category": "skill-tooling",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skill",
+        "persona",
+        "mental-models",
+        "research",
+        "chinese"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Distill how a named person thinks into a skill, then ask your agent for advice in their style.",
+      "why": "One name in, and it researches, extracts and checks mental models and decision rules automatically.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Nuwa is an Agent Skills package that, given a person's name, researches them and produces a skill with their mental models, decision heuristics and way of speaking. It runs in Claude Code, Codex, Cursor, OpenClaw, Gemini CLI and 50+ other skills-compatible runtimes. README is in Chinese.",
+      "best_for": "Role-play style advisors built from public figures, for brainstorming and decision framing.",
+      "not_for": "Outputs are AI approximations of public figures, not their real views. Main docs are in Chinese, with a few translations linked.",
+      "keywords": [
+        "persona skill",
+        "distill person thinking",
+        "mental models skill",
+        "steve jobs skill",
+        "munger advisor agent",
+        "女娲 skill",
+        "agent skills persona"
+      ]
+    },
+    {
+      "id": "Observal/Observal",
+      "name": "Observal",
+      "category": "skill-tooling",
+      "kinds": [
+        "service",
+        "cli"
+      ],
+      "tags": [
+        "registry",
+        "skills",
+        "mcp",
+        "governance",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Run an internal registry for your team's skills, MCP clients, hooks and agent files.",
+      "why": "Adds review, version diffs and per-harness config rendering to shared agent resources.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted control plane for coding agent resources. It stores skills, MCP clients, hooks, prompts, agent files and sandboxes in one governed registry, renders config for each supported harness, and gives authors usage feedback.",
+      "best_for": "Organizations where many developers write and reuse skills and agent files and need discovery and approval.",
+      "not_for": "Needs hosting and admin work, so it is too heavy for a solo developer sharing a few skills.",
+      "keywords": [
+        "skills registry",
+        "mcp registry",
+        "internal agent marketplace",
+        "agent governance",
+        "coding agent resources",
+        "self-hosted registry",
+        "claude code team skills"
+      ]
+    },
+    {
+      "id": "microsoft/skill-recorder",
+      "name": "Skill Recorder",
+      "category": "skill-tooling",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "skill-generation",
+        "screen-recording",
+        "copilot",
+        "automation",
+        "desktop"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Record a task once and turn it into a reusable agent skill or scheduled automation.",
+      "why": "Rebuilds intent and ordered steps from your recording and prefers native tools to UI clicks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop app that records screen activity, app switches, pages, an optional terminal and narration. It uses the GitHub Copilot CLI to reconstruct intent and steps, then generates a SKILL.md or an automation. Capture stays local.",
+      "best_for": "Turning repeatable manual workflows into agent skills without writing them by hand.",
+      "not_for": "Needs the GitHub Copilot CLI for analysis. Generated skills should be reviewed, since the review view is not a security guarantee.",
+      "keywords": [
+        "record workflow to skill",
+        "generate skill from screen recording",
+        "copilot skill builder",
+        "automation from recording",
+        "skill.md generator",
+        "copilot cowork",
+        "scout"
+      ]
+    },
+    {
+      "id": "yusufkaraaslan/Skill_Seekers",
+      "name": "Skill Seekers",
+      "category": "skill-tooling",
+      "kinds": [
+        "cli",
+        "mcp",
+        "library"
+      ],
+      "tags": [
+        "skill-generation",
+        "docs-scraper",
+        "rag",
+        "claude-skills",
+        "mcp",
+        "knowledge"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Convert docs sites, GitHub repos and PDFs into agent skills or RAG-ready chunks.",
+      "why": "Prepares sources once and exports to 22 targets, including skills, vector databases and IDE assistants.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Skill Seekers turns documentation sites, GitHub repos, PDFs, videos and other sources (18 types) into structured knowledge. It scrapes, categorizes, uses AI to write a SKILL.md with references, and packages the result for Claude, Gemini, OpenAI, LangChain, LlamaIndex, vector stores and coding assistants. It also runs as an MCP server.",
+      "best_for": "Making a skill or RAG corpus for a library or product that agents handle badly.",
+      "not_for": "Hand-curated expert skills. The generated skills rely on scraped content and AI enhancement.",
+      "keywords": [
+        "docs to skill",
+        "generate claude skill",
+        "scrape documentation for llm",
+        "github repo to skill",
+        "pdf to skill",
+        "rag data prep",
+        "llms.txt scraper",
+        "skill generator"
+      ]
+    },
+    {
+      "id": "iflytek/skillhub",
+      "name": "SkillHub",
+      "category": "skill-tooling",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "skill-registry",
+        "self-hosted",
+        "rbac",
+        "audit",
+        "enterprise"
+      ],
+      "ecosystems": [
+        "java",
+        "typescript",
+        "docker"
+      ],
+      "use_for": "Host a private registry where teams publish, version, search and govern agent skill packages.",
+      "why": "Namespaces, review gates, RBAC and audit logs for company skill sharing, deployable on-premise.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted platform for agent skill packages with semantic versioning, tags, full-text search, team namespaces and roles, review and promotion flows, ratings, API tokens and a CLI install path. Built with Java and React, deployed with Docker or Kubernetes.",
+      "best_for": "Organizations that want a private skills registry behind their firewall.",
+      "not_for": "Individuals sharing a few skills: a git repo or public registry is simpler. It is a full service stack with a database.",
+      "keywords": [
+        "private skill registry",
+        "agent skills marketplace self-hosted",
+        "skills.sh alternative",
+        "enterprise skills hub",
+        "publish agent skills",
+        "skill versioning",
+        "skillhub"
+      ]
+    },
+    {
+      "id": "microsoft/SkillOpt",
+      "name": "SkillOpt",
+      "category": "skill-tooling",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "skill-optimization",
+        "llm-agents",
+        "prompt-optimization",
+        "evaluation",
+        "research"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Train a SKILL.md for a frozen LLM agent using scored rollouts and validation-gated edits.",
+      "why": "Treats the skill like trainable state, keeping an edit only if held-out scores improve.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "SkillOpt uses an optimizer model to turn scored agent runs into small add, delete or replace edits on one skill document. Edits are accepted only if validation improves. The result is a compact best_skill.md that adds no inference-time model calls.",
+      "best_for": "Improving a skill against a benchmark or task set with measured gains.",
+      "not_for": "Quick hand-written skills. You need scored tasks and a validation set, and it is research code.",
+      "keywords": [
+        "skill optimization",
+        "train agent skills",
+        "optimize skill.md",
+        "prompt optimizer for agents",
+        "self evolving skills",
+        "microsoft skillopt",
+        "best_skill.md"
+      ]
+    },
+    {
+      "id": "vercel-labs/skills",
+      "name": "skills CLI (find-skills)",
+      "category": "skill-tooling",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "cli",
+        "skills-sh",
+        "installer"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Install and discover agent skills for Claude Code, Codex, Cursor and others with npx skills add",
+      "why": "The open skills installer behind skills.sh; its find-skills skill is the most-installed skill on skills.sh (~3.9M installs)",
+      "skill": "vercel-labs/skills/find-skills",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "CLI for the open agent skills ecosystem: npx skills add installs SKILL.md-based skills from GitHub, URLs, paths or private repos into 75+ agents. Behind skills.sh discovery and the find-skills skill.",
+      "best_for": "Installing, discovering and managing agent skills across Claude Code, Codex, Cursor and others.",
+      "not_for": "An installer and discovery tool, not a skill library. Private repos rely on your existing git credentials.",
+      "keywords": [
+        "skills cli",
+        "npx skills",
+        "agent skills",
+        "skills.sh",
+        "install skills",
+        "skill.md",
+        "claude code",
+        "codex",
+        "cursor"
+      ]
+    },
+    {
+      "id": "xingkongliang/skills-manager",
+      "name": "Skills Manager",
+      "category": "skill-tooling",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "skills",
+        "desktop-app",
+        "sync",
+        "presets",
+        "multi-agent"
+      ],
+      "ecosystems": [
+        "typescript",
+        "rust"
+      ],
+      "use_for": "Manage and sync agent skills across Claude Code, Codex, Cursor and 50+ other coding tools.",
+      "why": "One central skill library with presets, per-agent toggles, project workspaces and backup sync.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop app that installs skills from Git, folders, archives or the skills.sh marketplace into one library. It then enables them per agent or project, groups them into presets, and backs them up across machines.",
+      "best_for": "Anyone juggling many skills across several coding agents who wants one place to organize them.",
+      "not_for": "Writing skills; it manages them. Presets are one-time copies, not live sync, and secrets are not backed up.",
+      "keywords": [
+        "manage agent skills",
+        "skills manager",
+        "sync skills claude code codex",
+        "skill presets",
+        "skills.sh marketplace",
+        "claude code skills gui"
+      ]
+    },
+    {
+      "id": "Tencent/teamai-cli",
+      "name": "TeamAI",
+      "category": "skill-tooling",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "team-sync",
+        "skills",
+        "mcp",
+        "rules",
+        "git"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Share a team's skills, rules, MCP servers and other AI assets through one git repo that syncs to every agent.",
+      "why": "Works across many agents (Claude Code, Codex, Cursor, Copilot CLI and more) from one shared repo.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "TeamAI keeps a team's agent assets in git and syncs them to each teammate's tools after a one-time setup. It covers skills, rules, env, agents, hooks, MCP and models, with beta layers for shared context and usage tracking.",
+      "best_for": "Teams where several people use different coding agents and want the same skills, rules and MCP setup for all.",
+      "not_for": "Solo use. The context and improvement layers are marked beta, and support differs per agent (see the README's table).",
+      "keywords": [
+        "share skills with team",
+        "sync claude code skills",
+        "team ai assets",
+        "shared mcp config",
+        "agent rules git",
+        "teamai",
+        "team agent config"
+      ]
+    },
+    {
+      "id": "tech-leads-club/agent-skills",
+      "name": "Tech Leads Club Agent Skills",
+      "category": "skill-tooling",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "skill-registry",
+        "security",
+        "cli",
+        "cursor",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "typescript",
+        "markdown"
+      ],
+      "use_for": "Browse and install validated agent skills through a CLI that fetches them on demand.",
+      "why": "A registry that positions itself as hardened and validated against risky marketplace skills.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A catalog of skills for coding agents such as Claude Code, Cursor, Copilot and Antigravity. The CLI fetches a small catalog from a CDN, lets you pick skills, downloads and caches them and installs them into the agent's config.",
+      "best_for": "Teams who want curated skills with a safer install path than open marketplaces.",
+      "not_for": "Licence is listed as NOASSERTION. The safety claims are the project's own, so review skills before use.",
+      "keywords": [
+        "agent skills registry",
+        "validated skills",
+        "skills cli",
+        "claude code skills catalog",
+        "secure skills",
+        "tlc spec driven"
+      ]
+    },
+    {
+      "id": "foryourhealth111-pixel/Vibe-Skills",
+      "name": "Vibe-Skills",
+      "category": "skill-tooling",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "skill-routing",
+        "orchestration",
+        "agent-skills",
+        "workflow",
+        "benchmark"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Help an agent pick and chain the right skills when many are installed.",
+      "why": "Reports better scores and fewer tokens on SkillsBench with 195 skills installed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Skill routing and workflow orchestration for AI agents. It aims to help an agent discover, select and combine skills from a large installed pool. The README reports a 21.12 point reward gain and 29.6% fewer tokens on SkillsBench with one model.",
+      "best_for": "Setups with many installed skills where the agent picks poorly or wastes tokens.",
+      "not_for": "Benchmark numbers come from the authors on one model setup. The excerpt gives little install detail, so check the full README.",
+      "keywords": [
+        "skill routing",
+        "agent skill orchestration",
+        "skillsbench",
+        "too many skills",
+        "skill selection agent",
+        "workflow orchestration skills",
+        "vibe skills"
+      ]
+    }
+  ]
+}

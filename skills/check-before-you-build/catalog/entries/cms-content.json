@@ -2,6 +2,43 @@
   "category": "cms-content",
   "entries": [
     {
+      "id": "KKKKhazix/AIHOT",
+      "name": "AIHOT",
+      "category": "cms-content",
+      "kinds": [
+        "template",
+        "app"
+      ],
+      "tags": [
+        "news-aggregator",
+        "llm-curation",
+        "daily-digest",
+        "self-hosted",
+        "clustering"
+      ],
+      "ecosystems": [
+        "typescript",
+        "docker"
+      ],
+      "use_for": "Run your own niche news site that collects sources, scores them with an LLM and writes daily reports.",
+      "why": "Includes the real engine, prompts and thresholds for scoring, clustering and daily digests.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "The engine behind the AIHOT site: a Docker-based framework that gathers items from RSS, web pages, JSON, X and WeChat, filters and scores them twice with an LLM, writes titles, groups items into events, ranks heat, and builds daily, weekly and monthly reports.",
+      "best_for": "Starting a hot-topic site for any industry by swapping in your own sources and curation prompts.",
+      "not_for": "Not a polished general framework. It is exported from the live site and the README is in Chinese. It needs an OpenAI-compatible API key.",
+      "keywords": [
+        "news curation site",
+        "ai hot topics site",
+        "llm news aggregator",
+        "daily digest generator",
+        "rss to daily report",
+        "热点网站",
+        "event clustering news"
+      ]
+    },
+    {
       "id": "decaporg/decap-cms",
       "name": "Decap CMS",
       "category": "cms-content",
@@ -146,6 +183,43 @@
       ]
     },
     {
+      "id": "yaojingang/GEOFlow",
+      "name": "GEOFlow",
+      "category": "cms-content",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "geo",
+        "content-ops",
+        "ai-writing",
+        "multi-site",
+        "admin"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Run an AI content pipeline for company websites, with quality checks, review and multi-site publishing.",
+      "why": "Puts AI quality gates, human review and publishing to several sites in one admin panel.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A PHP admin system that manages a knowledge base, AI article generation, AI quality checks, human review and publishing. It can publish to hosted sites, WordPress REST or a generic HTTP API, and has an API, CLI and signed updater.",
+      "best_for": "Teams that want a self-hosted system to produce and publish AI-assisted content for GEO (AI search visibility) across one or many sites.",
+      "not_for": "Not a general CMS or library. AGPL-3.0 license applies to hosted use. Docs are mainly Chinese. Version is labelled Beta.",
+      "keywords": [
+        "geo",
+        "generative engine optimization",
+        "ai content platform",
+        "multi-site publishing",
+        "ai seo",
+        "content quality gate",
+        "wordpress publishing",
+        "llms.txt"
+      ]
+    },
+    {
       "id": "TryGhost/Ghost",
       "name": "Ghost",
       "category": "cms-content",
@@ -249,6 +323,43 @@
         "plugins",
         "gplv3",
         "self-hosted"
+      ]
+    },
+    {
+      "id": "CoreBunch/Instatic",
+      "name": "Instatic",
+      "category": "cms-content",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "cms",
+        "visual-editor",
+        "static-site",
+        "self-hosted",
+        "design-tokens"
+      ],
+      "ecosystems": [
+        "typescript",
+        "bun"
+      ],
+      "use_for": "Self-host a visual site builder and CMS that publishes clean static HTML and CSS.",
+      "why": "One Bun server holds the editor, content, media, auth, forms, plugins and publisher.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted CMS with a canvas editor, content engine, media, auth, forms, plugins and a publisher, all in one Bun server backed by SQLite or Postgres. It outputs plain semantic HTML and compact CSS. Design tokens are built in.",
+      "best_for": "Replacing Webflow, Framer or WordPress with something you host, where page output must stay lightweight.",
+      "not_for": "Requires Bun 1.4.1 or newer. It is a full CMS product, not a headless API or a component library.",
+      "keywords": [
+        "webflow alternative",
+        "framer alternative",
+        "wordpress alternative",
+        "self-hosted visual cms",
+        "static site cms",
+        "open source site builder",
+        "bun cms"
       ]
     },
     {
@@ -467,6 +578,41 @@
       ]
     },
     {
+      "id": "inkeep/open-knowledge",
+      "name": "OpenKnowledge",
+      "category": "cms-content",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "markdown",
+        "wysiwyg",
+        "llm-wiki",
+        "mcp",
+        "knowledge-base"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Edit markdown knowledge bases and LLM wikis in a WYSIWYG app that agents can also use.",
+      "why": "Works on plain folders of markdown and ships MCP and skills for agent harnesses.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A markdown editor with a desktop app and web UI. It opens any folder of markdown or mdx, edits side by side with agents like Claude and Codex, and offers git-based sharing and sync.",
+      "best_for": "Teams keeping notes, specs or an LLM wiki as markdown files that both people and agents edit.",
+      "not_for": "GPL-3.0, so embedding it in closed-source products is a problem. It is an end-user editor, not a headless CMS library.",
+      "keywords": [
+        "markdown editor",
+        "llm wiki",
+        "second brain",
+        "obsidian alternative",
+        "knowledge base",
+        "wysiwyg markdown",
+        "notion alternative"
+      ]
+    },
+    {
       "id": "payloadcms/payload",
       "name": "Payload",
       "category": "cms-content",
@@ -501,6 +647,45 @@
         "access control",
         "app framework",
         "open source"
+      ]
+    },
+    {
+      "id": "edwardkim/rhwp",
+      "name": "rhwp",
+      "category": "cms-content",
+      "kinds": [
+        "library",
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "hwp",
+        "hwpx",
+        "document-parser",
+        "wasm",
+        "viewer"
+      ],
+      "ecosystems": [
+        "rust",
+        "wasm",
+        "typescript"
+      ],
+      "use_for": "Parse, render and edit Korean HWP and HWPX word-processor files in the browser or from a CLI.",
+      "why": "Open Rust and WebAssembly implementation of a closed format, with a web editor and SVG, PNG and PDF export.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "rhwp is an open-source HWP and HWPX viewer and editor written in Rust and WebAssembly. It parses HWP 5.0, HWPX and limited HML, renders paragraphs, tables, equations and charts, and exports SVG, PNG and PDF. It has a web editor with a hwpctl-compatible API, a VS Code extension, and 3,400+ tests. The README is in Korean.",
+      "best_for": "You need to read or generate Hancom Hangul documents without Hancom software.",
+      "not_for": "Pre-1.0 (v0.8.x), so layout fidelity is still being worked out. HML support is limited to verified structures and unsupported parts block lossy saves.",
+      "keywords": [
+        "hwp parser",
+        "hwpx",
+        "hangul word processor",
+        "한글 문서",
+        "hwp to pdf",
+        "hwp viewer web",
+        "korean document format"
       ]
     },
     {

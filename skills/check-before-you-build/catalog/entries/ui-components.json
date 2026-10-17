@@ -2,6 +2,45 @@
   "category": "ui-components",
   "entries": [
     {
+      "id": "a2ui-project/a2ui",
+      "name": "A2UI",
+      "category": "ui-components",
+      "kinds": [
+        "library",
+        "framework"
+      ],
+      "tags": [
+        "agent-ui",
+        "protocol",
+        "generative-ui",
+        "renderer",
+        "declarative"
+      ],
+      "ecosystems": [
+        "typescript",
+        "flutter",
+        "web"
+      ],
+      "use_for": "Let agents describe rich UIs as safe JSON that your own app renders with trusted components.",
+      "why": "A declarative format, not code: agents can only request components from a catalog your app approves.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A2UI (Agent-to-User Interface) is an open format and set of renderers for agent-generated UIs. The agent sends a flat list of components plus a data model, and the client maps them to native widgets. The format is easy for an LLM to build up step by step.",
+      "best_for": "Agents that need forms, dashboards or cards in a chat UI without running model-written code.",
+      "not_for": "Stable production use yet. The README calls it an early-stage public preview, and the specification is still changing.",
+      "keywords": [
+        "agent to user interface",
+        "generative ui",
+        "agent generated ui",
+        "llm ui protocol",
+        "declarative ui for agents",
+        "a2ui",
+        "agent forms",
+        "ai ui renderer"
+      ]
+    },
+    {
       "id": "angular/components",
       "name": "Angular Material & CDK",
       "category": "ui-components",
@@ -37,6 +76,41 @@
         "drag drop",
         "accessibility",
         "angular"
+      ]
+    },
+    {
+      "id": "guokaigdg/animal-island-ui",
+      "name": "Animal-Island-UI",
+      "category": "ui-components",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "component-library",
+        "kawaii",
+        "design-system",
+        "typescript"
+      ],
+      "ecosystems": [
+        "react",
+        "typescript"
+      ],
+      "use_for": "Add a cozy, cute island-themed component set to a React app.",
+      "why": "Original, playful visual style with custom icons and animations, in a lightweight TypeScript package.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A React and TypeScript component library with an island-style design language. You import components such as Button and Card plus a style file. A Vue version and an icon set are linked from the README.",
+      "best_for": "Playful, game-like or kids-friendly interfaces where a standard corporate design system feels wrong.",
+      "not_for": "Strong themed look. The README lists a small set of components, so check coverage for complex apps.",
+      "keywords": [
+        "cute react ui",
+        "animal crossing ui",
+        "kawaii components",
+        "react component library",
+        "cozy design system",
+        "island ui"
       ]
     },
     {
@@ -148,6 +222,43 @@
       ]
     },
     {
+      "id": "facebook/astryx",
+      "name": "Astryx",
+      "category": "ui-components",
+      "kinds": [
+        "library",
+        "framework"
+      ],
+      "tags": [
+        "design-system",
+        "react",
+        "stylex",
+        "components",
+        "theming"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react"
+      ],
+      "use_for": "Build React apps on a large, themeable design system with typed components and a CLI.",
+      "why": "Eight years of Meta use; no build plugin, and override styles with Tailwind or plain CSS.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A design system from Meta with 150+ accessible React components, theming through CSS custom properties, dark mode, templates and a CLI. Styles are authored in StyleX but consumers import pre-built CSS. A swizzle command ejects a component's source.",
+      "best_for": "React 19 teams that want a full component system they can restyle and, when needed, take ownership of the source.",
+      "not_for": "Non-React projects or React versions below 19. It is currently in beta.",
+      "keywords": [
+        "react design system",
+        "meta design system",
+        "stylex components",
+        "react component library",
+        "astryx",
+        "accessible components",
+        "themeable ui kit"
+      ]
+    },
+    {
       "id": "mui/base-ui",
       "name": "Base UI",
       "category": "ui-components",
@@ -217,6 +328,85 @@
         "tree",
         "date picker",
         "palantir"
+      ]
+    },
+    {
+      "id": "0xGF/boneyard",
+      "name": "boneyard",
+      "category": "ui-components",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "skeleton",
+        "loading",
+        "ui",
+        "react-native",
+        "cli"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react",
+        "vue",
+        "svelte",
+        "angular"
+      ],
+      "use_for": "Generate skeleton loading screens from your real UI instead of drawing placeholders by hand.",
+      "why": "A headless browser snapshots real layouts at several breakpoints and writes one shared .bones.json format.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "boneyard captures your rendered components and produces skeletons. A CLI or Vite plugin visits the app, finds each Skeleton, and records layout. It works with React, Preact, Vue, Svelte 5, Angular and React Native.",
+      "best_for": "Apps that want skeleton screens matching the real layout without manual measuring.",
+      "not_for": "A build step that must see the real UI. Dynamic content may need a fixture. It only does skeleton placeholders.",
+      "keywords": [
+        "skeleton loader",
+        "skeleton screen generator",
+        "loading placeholder",
+        "boneyard-js",
+        "react skeleton",
+        "auto skeleton"
+      ]
+    },
+    {
+      "id": "DavidHDev/canvas-ui",
+      "name": "Canvas UI",
+      "category": "ui-components",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "webgl",
+        "webgpu",
+        "shaders",
+        "effects",
+        "shadcn-registry"
+      ],
+      "ecosystems": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "webgl",
+        "webgpu"
+      ],
+      "use_for": "Wrap parts of a page in WebGL or WebGPU effects like liquid, glass and shatter while it stays interactive.",
+      "why": "Effects run over live DOM, with text still selectable and links clickable, and ship for six frameworks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A library of 35 canvas effect components that use the experimental HTML-in-canvas API to redraw your live page. Each ships for React, Solid, Preact, Vue, Svelte and vanilla in WebGL and WebGPU builds. You copy source into your repo through a shadcn registry.",
+      "best_for": "Marketing sites and creative pages that want eye-catching shader effects without rebuilding the UI.",
+      "not_for": "Depends on an experimental browser API, with GPU overlay fallback elsewhere. The license is not clearly stated, so check before commercial use.",
+      "keywords": [
+        "webgl effects react",
+        "liquid glass effect",
+        "shader components",
+        "html in canvas",
+        "webgpu components",
+        "shatter effect",
+        "shadcn registry effects"
       ]
     },
     {
@@ -411,6 +601,82 @@
       ]
     },
     {
+      "id": "vercel-labs/json-render",
+      "name": "json-render",
+      "category": "ui-components",
+      "kinds": [
+        "library",
+        "framework"
+      ],
+      "tags": [
+        "generative-ui",
+        "json",
+        "catalog",
+        "zod",
+        "shadcn"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react",
+        "vue",
+        "svelte",
+        "react-native"
+      ],
+      "use_for": "Let an AI generate UI as JSON limited to components you define, then render it in React, Vue, Svelte or React Native.",
+      "why": "Guardrailed output: the model can only use your catalog and your schema.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "json-render is a generative UI framework. You define a catalog of components and actions with Zod schemas, the model returns a JSON spec within it, and a renderer streams it to the screen. It includes 36 shadcn/ui components and targets web, mobile, video and PDF.",
+      "best_for": "Apps where an LLM builds interfaces on the fly but must stay inside safe, known components.",
+      "not_for": "Free-form code generation of arbitrary UI. It only renders what your catalog allows.",
+      "keywords": [
+        "generative ui",
+        "llm generated ui",
+        "json to ui",
+        "ai ui renderer",
+        "vercel json render",
+        "streaming ui spec",
+        "constrained ui generation"
+      ]
+    },
+    {
+      "id": "cloudflare/kumo",
+      "name": "Kumo",
+      "category": "ui-components",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "components",
+        "base-ui",
+        "accessibility",
+        "design-system"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react"
+      ],
+      "use_for": "Build React apps with Cloudflare's accessible, design-system-compliant UI components.",
+      "why": "Built on Base UI, so keyboard navigation, focus management and ARIA are handled for you.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Kumo is Cloudflare's React component library. It builds on Base UI, re-exports the Base UI primitives, supports granular tree-shakable imports, and ships a CLI to query component docs. It also has a Figma plugin and a docs site.",
+      "best_for": "You build a React app and want accessible components in Cloudflare's design language.",
+      "not_for": "React only, and it needs react, react-dom and Phosphor icons as peer dependencies. Styled to Cloudflare's design system, so it is less neutral than a generic kit.",
+      "keywords": [
+        "cloudflare ui",
+        "react component library",
+        "base ui components",
+        "accessible react components",
+        "design system react",
+        "kumo ui",
+        "cloudflare design system"
+      ]
+    },
+    {
       "id": "layui/layui",
       "name": "Layui",
       "category": "ui-components",
@@ -441,6 +707,42 @@
         "web ui",
         "admin panel",
         "html css"
+      ]
+    },
+    {
+      "id": "Jakubantalik/Libraries.dev",
+      "name": "Libraries.dev",
+      "category": "ui-components",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "ui-effects",
+        "ai-interface",
+        "webgl",
+        "npm"
+      ],
+      "ecosystems": [
+        "react",
+        "typescript"
+      ],
+      "use_for": "Add polished effects like border beams, thinking orbs and bot avatars to a React app.",
+      "why": "Seven standalone packages, each a single wrapper component tuned by props.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Seven React libraries for effects in AI interfaces: border beam, thinking orbs, bot avatars, gooey shapes, voice glow, liquid metal and an image loader. Each installs from npm and has zero runtime dependencies, except Image, which needs three.",
+      "best_for": "AI chat or agent UIs that need distinctive loading states and visual polish.",
+      "not_for": "Needs React 18+. A paid Pro plan unlocks the Studio and presets, so check the license before commercial use.",
+      "keywords": [
+        "border beam",
+        "thinking orbs",
+        "ai loading animation",
+        "bot avatar react",
+        "liquid metal button",
+        "voice glow",
+        "react effects library"
       ]
     },
     {
@@ -477,6 +779,41 @@
         "svelte icons",
         "shadcn icons",
         "feather fork"
+      ]
+    },
+    {
+      "id": "lnkiai/m3e-canvas",
+      "name": "M3E Canvas",
+      "category": "ui-components",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "material-3",
+        "prototyping",
+        "vibe-coding",
+        "design-tool",
+        "prompt-generator"
+      ],
+      "ecosystems": [
+        "web"
+      ],
+      "use_for": "Sketch Material 3 Expressive app screens and turn the design into a prompt for an AI coding tool.",
+      "why": "Runs fully in the browser with no account, then outputs a build-ready brief.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A free, open-source sketchpad with real Material 3 Expressive parts. You drag parts onto phone or desktop screens, link screens to try the flow, set a theme, and copy a short prompt for Claude Code, Codex, Gemini CLI or Cursor. Optional AI help uses your own key.",
+      "best_for": "Quickly planning an Android-style app UI before handing it to an AI coder.",
+      "not_for": "Production design handoff or non-Material designs. It outputs a prompt, not code or Figma files.",
+      "keywords": [
+        "material 3 expressive",
+        "ui sketch to prompt",
+        "vibe coding design",
+        "app screen prototyper",
+        "material you canvas",
+        "wireframe for ai coding",
+        "m3e"
       ]
     },
     {
@@ -655,6 +992,190 @@
         "component library",
         "vue admin",
         "css in js"
+      ]
+    },
+    {
+      "id": "knadh/oat",
+      "name": "Oat UI",
+      "category": "ui-components",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "css",
+        "semantic-html",
+        "web-components",
+        "zero-dependency",
+        "ui-kit"
+      ],
+      "ecosystems": [
+        "html",
+        "css",
+        "javascript"
+      ],
+      "use_for": "Style web apps with a tiny semantic HTML/CSS/JS component library that needs no build step.",
+      "why": "About 10KB, zero dependencies, styles plain semantic tags without class soup.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Oat is a UI library you use by including one CSS file and one JS file. Semantic tags and attributes are styled directly, and a few dynamic components are small Web Components. Demo and docs at oat.ink.",
+      "best_for": "Small projects, internal tools and server-rendered pages where you want decent looks with no framework or bundler.",
+      "not_for": "Large component ecosystems or React-style components. It is below v1 and the README warns of breaking changes.",
+      "keywords": [
+        "lightweight css framework",
+        "no dependency ui library",
+        "semantic html css",
+        "classless css",
+        "web components ui",
+        "oat ui",
+        "small css library"
+      ]
+    },
+    {
+      "id": "CopilotKit/OpenIntelligentUI",
+      "name": "Open Intelligent UI",
+      "category": "ui-components",
+      "kinds": [
+        "template",
+        "app"
+      ],
+      "tags": [
+        "generative-ui",
+        "copilotkit",
+        "agent",
+        "nextjs",
+        "a2ui"
+      ],
+      "ecosystems": [
+        "typescript",
+        "python"
+      ],
+      "use_for": "Study or start from a generative UI app where an agent answers with text, native components or sandboxed custom UI.",
+      "why": "Shows an agent choosing between text, native components and streamed HTML/CSS/JS in an isolated iframe.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CopilotKit reference app. A Python Deep Agent with focused skills streams to a Next.js frontend. Native components handle structured tasks, and generateSandboxedUi streams custom interactive HTML into a sandbox with a validated host bridge. An optional MCP server is included.",
+      "best_for": "Developers building chat apps where the agent should render charts, tables and small tools instead of only text.",
+      "not_for": "A drop-in component library. It is a full app with a Python agent and Next.js frontend, and sample data is only illustrative.",
+      "keywords": [
+        "generative ui framework",
+        "copilotkit generative ui",
+        "agent renders ui",
+        "sandboxed ai generated ui",
+        "a2ui",
+        "open generative ui",
+        "chat with interactive components"
+      ]
+    },
+    {
+      "id": "open-pencil/open-pencil",
+      "name": "OpenPencil",
+      "category": "ui-components",
+      "kinds": [
+        "app",
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "design-editor",
+        "figma",
+        "fig-files",
+        "mcp",
+        "design-tokens"
+      ],
+      "ecosystems": [
+        "typescript",
+        "vue"
+      ],
+      "use_for": "Open and edit .fig design files, script them from a CLI, or build custom editors on a headless Vue SDK.",
+      "why": "Reads and writes native Figma files and exposes an MCP server and AI design tools.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source design editor that opens `.fig` and `.pen` files and has built-in AI chat with 100+ tools that edit nodes. It ships a headless CLI, XPath queries, an MCP server, linting, token extraction and a headless Vue SDK.",
+      "best_for": "Automating or inspecting design files in code, or building your own design tool without Figma.",
+      "not_for": "The README says it is in active development with rough edges. Not a full replacement for every Figma feature.",
+      "keywords": [
+        "figma alternative",
+        "open source figma",
+        "fig file parser",
+        "figma cli",
+        "design mcp server",
+        "headless design editor",
+        "extract design tokens"
+      ]
+    },
+    {
+      "id": "ZSeven-W/openpencil",
+      "name": "OpenPencil",
+      "category": "ui-components",
+      "kinds": [
+        "app",
+        "mcp"
+      ],
+      "tags": [
+        "design-tool",
+        "ai-design",
+        "mcp",
+        "design-as-code",
+        "vector"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Generate and edit UI designs on a canvas from prompts, and export to React and Tailwind or HTML and CSS.",
+      "why": "Designs are plain JSON files that diff in Git, with a built-in MCP server and agent teams.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source AI-native vector design tool. You describe a page and it is generated on the canvas, with agent teams working in parallel. Designs are saved as JSON `.op` files and can be exported as code.",
+      "best_for": "Teams who want an open, scriptable alternative to Figma-style tools with AI generation and MCP access.",
+      "not_for": "A design app, not a component library. Needs an AI model provider, and the project is young.",
+      "keywords": [
+        "ai design tool",
+        "open source figma alternative",
+        "prompt to ui",
+        "design as code",
+        "pencil alternative",
+        "mcp design tool",
+        "text to design"
+      ]
+    },
+    {
+      "id": "chenglou/pretext",
+      "name": "Pretext",
+      "category": "ui-components",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "text-layout",
+        "text-measurement",
+        "canvas",
+        "svg",
+        "performance"
+      ],
+      "ecosystems": [
+        "typescript",
+        "javascript"
+      ],
+      "use_for": "Measure and lay out multiline text without DOM reads, then render to DOM, Canvas or SVG.",
+      "why": "Avoids layout reflow by using its own measurement logic, grounded in the browser font engine.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Pretext is a pure JS/TS library for fast multiline text measurement and layout across many languages. It skips getBoundingClientRect and offsetHeight, which cause reflow. You can render the result to the DOM, Canvas or SVG.",
+      "best_for": "You need accurate, fast text wrapping for canvas UIs, virtual lists or custom renderers.",
+      "not_for": "Not a full font rendering engine yet. It targets common CSS text setups and warns that system-ui fonts are unreliable on macOS.",
+      "keywords": [
+        "pretext",
+        "text measurement library",
+        "text layout without dom",
+        "multiline text canvas",
+        "avoid layout reflow",
+        "measure text height js",
+        "text wrapping library"
       ]
     },
     {
@@ -951,6 +1472,44 @@
         "design system",
         "cli",
         "customizable"
+      ]
+    },
+    {
+      "id": "signerlabs/ShipSwift",
+      "name": "ShipSwift",
+      "category": "ui-components",
+      "kinds": [
+        "library",
+        "mcp",
+        "template"
+      ],
+      "tags": [
+        "swiftui",
+        "ios",
+        "mcp",
+        "components",
+        "recipes"
+      ],
+      "ecosystems": [
+        "swift",
+        "swiftui",
+        "ios"
+      ],
+      "use_for": "Give your AI assistant production-ready SwiftUI components and full-stack recipes to build iOS apps.",
+      "why": "Components and recipes are served to AI assistants over MCP, with a live searchable catalog.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An AI-native SwiftUI component library. The iOS client code is MIT licensed, and an MCP connection lets assistants pull components and recipes. Paid Pro recipes add backend routes, integration guides and compliance templates.",
+      "best_for": "Building an iOS app with an AI coding assistant that needs reliable SwiftUI building blocks.",
+      "not_for": "Backend code, guides and compliance templates are in paid Pro recipes. The open-source part is the iOS client code only.",
+      "keywords": [
+        "swiftui component library",
+        "ios ai coding mcp",
+        "swiftui recipes",
+        "ios app starter",
+        "shipswift",
+        "swiftui for llm"
       ]
     },
     {

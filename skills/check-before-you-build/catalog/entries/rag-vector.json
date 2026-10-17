@@ -2,6 +2,78 @@
   "category": "rag-vector",
   "entries": [
     {
+      "id": "rohitg00/agentmemory",
+      "name": "agentmemory",
+      "category": "rag-vector",
+      "kinds": [
+        "mcp",
+        "service"
+      ],
+      "tags": [
+        "agent-memory",
+        "mcp",
+        "hybrid-search",
+        "knowledge-graph",
+        "hooks"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Add searchable long-term memory to Claude Code, Cursor, Codex and other MCP agents.",
+      "why": "Hybrid BM25, vector and graph search returns top results only, saving context versus loading a memory file.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "agentmemory captures session events through hooks, such as prompts, tool use and failures, and stores them for later search. It works with any MCP client plus a REST API, with a live viewer. It uses confidence scoring, lifecycle rules and a knowledge graph.",
+      "best_for": "Coding agents that forget context between sessions and need memory shared across tools.",
+      "not_for": "Default file storage suits one local user; several writers need Redis. On native Windows, only the Copilot CLI connect step is automated.",
+      "keywords": [
+        "agent memory",
+        "persistent memory claude code",
+        "mcp memory server",
+        "cross-agent memory",
+        "cursor memory",
+        "coding agent long-term memory",
+        "hybrid search memory"
+      ]
+    },
+    {
+      "id": "akitaonrails/ai-memory",
+      "name": "ai-memory",
+      "category": "rag-vector",
+      "kinds": [
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "agent-memory",
+        "handoff",
+        "hooks",
+        "wiki",
+        "coding-agents"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Share long-term memory across coding agents so you can switch from Claude Code to Codex mid-task.",
+      "why": "Works with more than twenty agent harnesses and passes typed handoffs between them.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Captures observations from agent lifecycle hooks, turns them into wiki pages at session end, and gives the next agent a short brief plus full-text, entity and optional vector search. Handoffs have an owner and are claimed once. A web console is optional.",
+      "best_for": "Developers using several coding agents who are tired of re-explaining the project.",
+      "not_for": "Single-agent users happy with built-in memory. It needs a server to run for cross-machine use and hook setup per agent.",
+      "keywords": [
+        "agent memory",
+        "claude code to codex handoff",
+        "cross agent memory",
+        "coding agent long term memory",
+        "session handoff",
+        "mcp memory server",
+        "ai-memory"
+      ]
+    },
+    {
       "id": "Mintplex-Labs/anything-llm",
       "name": "AnythingLLM",
       "category": "rag-vector",
@@ -145,6 +217,42 @@
         "ocr",
         "docx",
         "document ai"
+      ]
+    },
+    {
+      "id": "EverMind-AI/EverOS",
+      "name": "EverOS",
+      "category": "rag-vector",
+      "kinds": [
+        "library",
+        "service"
+      ],
+      "tags": [
+        "agent-memory",
+        "markdown",
+        "sqlite",
+        "lancedb",
+        "local-first"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Add a portable, local-first memory layer to agents, stored as readable Markdown.",
+      "why": "Markdown is the source of truth, with SQLite and LanceDB indexes and no extra servers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Python library and memory runtime that stores conversations, files and agent trajectories as Markdown, then syncs local SQLite and LanceDB indexes for retrieval. Search can be scoped by user, agent, app, project and session.",
+      "best_for": "Agent builders who want memory they can read, edit and Git-version, without running MongoDB, Redis or Elasticsearch.",
+      "not_for": "Setups without an LLM provider key. Vector search and reflection need an embedding provider, and richer features need rerank or multimodal providers.",
+      "keywords": [
+        "agent memory",
+        "long term memory for agents",
+        "markdown memory",
+        "mem0 alternative",
+        "local memory layer",
+        "lancedb memory",
+        "everos"
       ]
     },
     {
@@ -328,6 +436,43 @@
       ]
     },
     {
+      "id": "vectorize-io/hindsight",
+      "name": "Hindsight",
+      "category": "rag-vector",
+      "kinds": [
+        "service",
+        "library"
+      ],
+      "tags": [
+        "agent-memory",
+        "long-term-memory",
+        "retain-recall-reflect",
+        "mcp",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Add long-term memory to an agent so it learns from past work, not only recalls chat history.",
+      "why": "Retain, recall and reflect operations with Python and TypeScript clients and an LLM wrapper.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Hindsight is an agent memory system focused on agents that learn over time. It offers a server, clients, embedded mode and integrations, with memory types, observations, mental models and banks. It reports strong LongMemEval results.",
+      "best_for": "You are building autonomous or conversational agents that must adapt to feedback over time.",
+      "not_for": "The README says it may be overkill for simple workflows like n8n flows. Benchmark claims come from the authors.",
+      "keywords": [
+        "hindsight",
+        "vectorize hindsight",
+        "agent memory that learns",
+        "long term memory for agents",
+        "memory retain recall reflect",
+        "longmemeval",
+        "ai agent memory server"
+      ]
+    },
+    {
       "id": "nmslib/hnswlib",
       "name": "hnswlib",
       "category": "rag-vector",
@@ -360,6 +505,42 @@
         "python bindings",
         "similarity search",
         "embeddings"
+      ]
+    },
+    {
+      "id": "GoogleCloudPlatform/knowledge-catalog",
+      "name": "Knowledge Catalog samples",
+      "category": "rag-vector",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "data-catalog",
+        "metadata",
+        "knowledge-graph",
+        "google-cloud",
+        "agent-context"
+      ],
+      "ecosystems": [
+        "python",
+        "google-cloud"
+      ],
+      "use_for": "Learn from Google Cloud samples for building context and metadata retrieval for AI agents.",
+      "why": "Official-style samples for Knowledge Catalog (formerly Dataplex).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Tools, agents and samples that demonstrate Knowledge Catalog, an AI-powered data catalog and metadata platform that forms a knowledge graph of structured and unstructured data. The samples show context management, enrichment and retrieval.",
+      "best_for": "Google Cloud users adding business context to data for AI agents.",
+      "not_for": "Use without Google Cloud. It targets a paid Google service, and the README says it is not an official Google product.",
+      "keywords": [
+        "dataplex samples",
+        "google knowledge catalog",
+        "data catalog for agents",
+        "metadata knowledge graph",
+        "gcp context retrieval",
+        "bigquery agent context",
+        "knowledge catalog"
       ]
     },
     {
@@ -510,6 +691,116 @@
       ]
     },
     {
+      "id": "nashsu/llm_wiki",
+      "name": "LLM Wiki",
+      "category": "rag-vector",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "knowledge-base",
+        "wiki",
+        "karpathy",
+        "obsidian",
+        "ingest"
+      ],
+      "ecosystems": [
+        "typescript",
+        "desktop"
+      ],
+      "use_for": "Turn documents into a linked wiki that an LLM builds and keeps current, instead of re-running RAG each time.",
+      "why": "Implements Karpathy's LLM Wiki pattern as a full desktop app with a knowledge graph.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A cross-platform desktop app where an LLM reads your documents and builds an interlinked wiki. It follows an ingest, query and lint loop with index and log files, wikilinks and YAML frontmatter. It parses PDFs, Office files and images, and works as an Obsidian vault.",
+      "best_for": "Personal or team knowledge bases that you want compiled once and kept current.",
+      "not_for": "Embedding retrieval into your own app. It is a desktop app, and its license is not a standard one.",
+      "keywords": [
+        "llm wiki",
+        "karpathy wiki",
+        "rag alternative",
+        "personal knowledge base ai",
+        "obsidian llm",
+        "document to wiki",
+        "knowledge graph from documents"
+      ]
+    },
+    {
+      "id": "CaviraOSS/LongMemory",
+      "name": "LongMemory",
+      "category": "rag-vector",
+      "kinds": [
+        "library",
+        "mcp",
+        "service"
+      ],
+      "tags": [
+        "agent-memory",
+        "sqlite",
+        "temporal",
+        "mcp",
+        "local-first"
+      ],
+      "ecosystems": [
+        "typescript",
+        "python"
+      ],
+      "use_for": "Add durable, time-aware, governed memory to LLM apps and agents.",
+      "why": "Tracks what was true when, with provenance and scoped access, not just nearest vectors.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local-first memory engine on SQLite. It keeps immutable content with provenance and separate recorded and valid time, plus a typed graph, decay and scoped permissions. Offered via npm, CLI, HTTP, MCP, a dashboard and VS Code.",
+      "best_for": "Agents that need memory that handles changing facts, multiple users or projects, and explainable recall.",
+      "not_for": "More concept-heavy than a plain vector store. Overkill if you only need simple similarity search.",
+      "keywords": [
+        "agent memory",
+        "persistent memory llm",
+        "temporal memory",
+        "mcp memory server",
+        "claude desktop memory",
+        "sqlite memory",
+        "long term memory agents"
+      ]
+    },
+    {
+      "id": "FlowElement-xinliuyuansu/m_flow",
+      "name": "M-flow",
+      "category": "rag-vector",
+      "kinds": [
+        "library",
+        "mcp"
+      ],
+      "tags": [
+        "graph-rag",
+        "memory",
+        "knowledge-graph",
+        "retrieval",
+        "mcp"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build graph-based memory and retrieval that scores evidence paths, not just chunks.",
+      "why": "A four-level Cone Graph from episodes down to facts, with several retrieval modes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Python memory engine that organizes knowledge as Episodes, Facets, FacetPoints and Entities. It offers five retrieval modes, 50+ file formats, many vector and graph databases, many LLM providers, an MCP server, a CLI and a web UI.",
+      "best_for": "Agent or RAG apps where answers need linked context across documents, not isolated chunks.",
+      "not_for": "Summaries keep detail, so retrieved context is longer. Its benchmark claims are the authors' own.",
+      "keywords": [
+        "graph rag",
+        "cognitive memory",
+        "knowledge graph rag",
+        "agent memory",
+        "episodic memory",
+        "neo4j rag",
+        "cone graph"
+      ]
+    },
+    {
       "id": "mem0ai/mem0",
       "name": "Mem0",
       "category": "rag-vector",
@@ -544,6 +835,77 @@
         "vector store",
         "llm memory",
         "assistants"
+      ]
+    },
+    {
+      "id": "SuanmoSuanyangTechnology/MemoryBear",
+      "name": "MemoryBear",
+      "category": "rag-vector",
+      "kinds": [
+        "service",
+        "framework"
+      ],
+      "tags": [
+        "agent-memory",
+        "knowledge-graph",
+        "neo4j",
+        "fastapi",
+        "forgetting"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Give AI apps long-term memory that is extracted, linked in a graph and forgotten over time.",
+      "why": "Models memory as perceive, extract, associate and forget, instead of static retrieval.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An AI memory system from RedBear AI built on FastAPI and Neo4j. It follows a lifecycle of perception, extraction, association and forgetting, inspired by how brains encode and prune memory. It targets limits of context windows and static knowledge.",
+      "best_for": "Chat or agent products that need personalized memory across long conversations.",
+      "not_for": "Needs Neo4j and a multi-service Python deployment. The excerpt is research-heavy, so check benchmarks and fit before adopting.",
+      "keywords": [
+        "ai long term memory",
+        "agent memory system",
+        "mem0 alternative",
+        "neo4j memory graph",
+        "llm memory forgetting",
+        "memory for chatbots"
+      ]
+    },
+    {
+      "id": "MemPalace/mempalace",
+      "name": "MemPalace",
+      "category": "rag-vector",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "agent-memory",
+        "semantic-search",
+        "chromadb",
+        "local-first",
+        "verbatim"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Store your AI conversation history verbatim and search it later, fully on your machine.",
+      "why": "Keeps raw text instead of summaries, with a pluggable backend and no API calls.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "MemPalace stores conversations as verbatim text and retrieves them with semantic search. The index is organized into wings (people and projects), rooms (topics) and drawers (original content). ChromaDB is the default backend and others can be added.",
+      "best_for": "You want long-term memory for agents or chats that stays local and never rewrites what was said.",
+      "not_for": "The README warns that Claude Code sessions expire in 30 days unless auto-save hooks are set up. Its official sources are only the repo, PyPI and one docs site.",
+      "keywords": [
+        "mempalace",
+        "ai memory system",
+        "agent long term memory",
+        "local conversation memory",
+        "chromadb memory",
+        "longmemeval",
+        "verbatim memory"
       ]
     },
     {
@@ -582,6 +944,79 @@
         "milvus lite",
         "hybrid search",
         "embeddings"
+      ]
+    },
+    {
+      "id": "NateBJones-Projects/OB1",
+      "name": "Open Brain (OB1)",
+      "category": "rag-vector",
+      "kinds": [
+        "template",
+        "mcp"
+      ],
+      "tags": [
+        "memory",
+        "mcp",
+        "vector-search",
+        "supabase",
+        "personal-ai"
+      ],
+      "ecosystems": [
+        "typescript",
+        "supabase",
+        "postgres"
+      ],
+      "use_for": "Set up one shared database with vector search and MCP so all your AI tools use the same memory.",
+      "why": "A guided build of database, AI gateway, chat capture and MCP server, with extensions on top.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A setup guide and set of extensions for a personal memory layer: a database with vector search, an AI gateway and a chat channel such as Slack. Tools like Claude, ChatGPT, Cursor and Claude Code connect over MCP. It deploys as Supabase Edge Functions.",
+      "best_for": "People who want their own persistent AI memory shared across assistants without SaaS middleware.",
+      "not_for": "The license is not clearly identified in the metadata, so check the terms before commercial use. It is a guided setup, not a drop-in library.",
+      "keywords": [
+        "shared ai memory",
+        "personal knowledge mcp",
+        "supabase vector memory",
+        "second brain database",
+        "persistent memory for chatgpt and claude",
+        "open brain"
+      ]
+    },
+    {
+      "id": "VectifyAI/OpenKB",
+      "name": "OpenKB",
+      "category": "rag-vector",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "knowledge-base",
+        "wiki",
+        "rag",
+        "pageindex",
+        "obsidian"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Compile documents into a linked markdown wiki and query it without a vector database.",
+      "why": "Builds knowledge once into a maintained wiki, using PageIndex reasoning-based retrieval for long documents.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI that uses LLMs to turn PDFs, Office files, HTML, CSV and URLs into summaries, concept pages, entity pages and cross-links. Long documents use PageIndex tree indexing instead of vectors. You can query or chat, distill agent skills, and browse in Obsidian or a bundled web UI.",
+      "best_for": "Building a persistent knowledge base from long documents when classic RAG keeps rediscovering the same facts.",
+      "not_for": "LLM calls to compile and maintain the wiki cost tokens. Not a low-latency vector search service.",
+      "keywords": [
+        "vectorless rag",
+        "llm wiki",
+        "karpathy knowledge base",
+        "pageindex",
+        "document knowledge base",
+        "rag alternative",
+        "obsidian wiki generator"
       ]
     },
     {
@@ -725,6 +1160,43 @@
       ]
     },
     {
+      "id": "StarTrail-org/PixelRAG",
+      "name": "PixelRAG",
+      "category": "rag-vector",
+      "kinds": [
+        "library",
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "visual-rag",
+        "screenshots",
+        "embeddings",
+        "retrieval",
+        "vlm"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Do retrieval-augmented generation over page screenshots so tables and charts are not lost.",
+      "why": "Retrieves rendered page tiles with a fine-tuned vision embedding model.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Renders web pages, PDFs and images to screenshot tiles with the pixelshot command, then searches them with a Qwen3-VL-Embedding model tuned on screenshots. A Wikipedia index is prebuilt. It also ships a pixelbrowse skill so Claude can read pages as images.",
+      "best_for": "Documents where layout, tables and charts matter and text parsing breaks them.",
+      "not_for": "Plain-text corpora where normal chunking works fine. Image retrieval needs GPU-class embedding models and more storage.",
+      "keywords": [
+        "visual rag",
+        "screenshot retrieval",
+        "colpali alternative",
+        "pdf rag images",
+        "multimodal rag",
+        "web page screenshot cli",
+        "pixelbrowse"
+      ]
+    },
+    {
       "id": "zylon-ai/private-gpt",
       "name": "PrivateGPT",
       "category": "rag-vector",
@@ -831,6 +1303,42 @@
       ]
     },
     {
+      "id": "nageoffer/ragent",
+      "name": "Ragent",
+      "category": "rag-vector",
+      "kinds": [
+        "app",
+        "template"
+      ],
+      "tags": [
+        "agentic-rag",
+        "java",
+        "mcp",
+        "hybrid-search",
+        "chinese"
+      ],
+      "ecosystems": [
+        "java"
+      ],
+      "use_for": "Fork a Java agentic RAG platform with hybrid retrieval, memory, MCP tools and an admin UI.",
+      "why": "Covers ingestion to answers with tracing, queueing and feedback, in plain Java.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Production-style Java Agentic RAG platform. It has hybrid retrieval with RRF and rerank, query rewriting and intent routing, session memory, model fallback, Redis queueing, MCP tools via AgentScope, ingestion pipelines and a back office.",
+      "best_for": "Java teams who want a complete RAG and agent reference to study or adapt.",
+      "not_for": "README and docs are in Chinese, and it is partly framed as interview learning. Not a drop-in library.",
+      "keywords": [
+        "java rag",
+        "agentic rag",
+        "spring rag",
+        "enterprise rag platform",
+        "java ai agent",
+        "hybrid search rerank",
+        "mcp java"
+      ]
+    },
+    {
       "id": "infiniflow/ragflow",
       "name": "RAGFlow",
       "category": "rag-vector",
@@ -865,6 +1373,45 @@
         "agents",
         "self-hosted",
         "table extraction"
+      ]
+    },
+    {
+      "id": "ruvnet/RuVector",
+      "name": "RuVector",
+      "category": "rag-vector",
+      "kinds": [
+        "library",
+        "mcp",
+        "engine"
+      ],
+      "tags": [
+        "vector-search",
+        "agent-memory",
+        "graph",
+        "rust",
+        "wasm"
+      ],
+      "ecosystems": [
+        "rust",
+        "typescript",
+        "python"
+      ],
+      "use_for": "Give agents persistent local memory with vector search and graph links.",
+      "why": "One Rust core usable from Rust, Node, Python, the browser and MCP.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Rust-native store for agent memory and vector retrieval. It combines local embeddings, persistent vectors, graph relations and feedback learning, with npm, PyPI and crates.io packages and an MCP server.",
+      "best_for": "Local-first agent memory or vector search that must run in Node, Rust, Python or the browser.",
+      "not_for": "A large sprawling project with many sub-packages. Check which package fits before you adopt it.",
+      "keywords": [
+        "vector database",
+        "agent memory",
+        "rust vector db",
+        "graph rag",
+        "mcp memory",
+        "embeddings store",
+        "wasm vector search"
       ]
     },
     {
@@ -904,6 +1451,41 @@
       ]
     },
     {
+      "id": "ssrajadh/sentrysearch",
+      "name": "SentrySearch",
+      "category": "rag-vector",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "video-search",
+        "embeddings",
+        "chromadb",
+        "gemini",
+        "qwen"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Search hours of video by text or image and get a trimmed clip back.",
+      "why": "Embeds video chunks directly, with cloud or fully local model options.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI that splits video into overlapping chunks, embeds them with Gemini, Qwen cloud or a local Qwen3-VL model, and stores vectors in local ChromaDB. A text or image query returns the best match trimmed from the file.",
+      "best_for": "Finding moments in dashcam, security or other long footage without writing your own pipeline.",
+      "not_for": "Needs Python 3.11 or 3.12 and ffmpeg. The default backend needs a Gemini API key. A CLI, not a hosted service.",
+      "keywords": [
+        "video semantic search",
+        "search video footage",
+        "dashcam search",
+        "video embeddings",
+        "gemini embedding",
+        "qwen3-vl",
+        "clip search"
+      ]
+    },
+    {
       "id": "asg017/sqlite-vec",
       "name": "sqlite-vec",
       "category": "rag-vector",
@@ -939,6 +1521,42 @@
         "vec0",
         "mobile",
         "edge"
+      ]
+    },
+    {
+      "id": "TencentCloud/TencentDB-Agent-Memory",
+      "name": "TencentDB Agent Memory",
+      "category": "rag-vector",
+      "kinds": [
+        "plugin",
+        "service"
+      ],
+      "tags": [
+        "agent-memory",
+        "team-memory",
+        "wiki",
+        "code-graph",
+        "openclaw"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Share team memory across agents as chat memory, skills, an LLM wiki and a code graph.",
+      "why": "Turns conversations, docs and code into four reusable memory assets that are governed and shared.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A memory hub for AI agents that stores chat memory, skills, an LLM-built wiki and a code graph, and makes them available to several agents and frameworks such as OpenClaw and Hermes. It is installed from npm and includes a migration tool for older versions.",
+      "best_for": "Teams running several agents that keep repeating the same context and work.",
+      "not_for": "Team Memory is in beta and moving fast. License is listed as unclear (NOASSERTION) on GitHub; check before building on it.",
+      "keywords": [
+        "agent memory",
+        "team memory for agents",
+        "llm wiki",
+        "code graph memory",
+        "openclaw memory plugin",
+        "hermes agent memory",
+        "shared agent knowledge"
       ]
     },
     {
@@ -1047,6 +1665,40 @@
         "html",
         "office documents",
         "langchain"
+      ]
+    },
+    {
+      "id": "deeplethe/utopia",
+      "name": "Utopia",
+      "category": "rag-vector",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "knowledge-graph",
+        "bitemporal",
+        "ontology",
+        "self-hosted",
+        "enterprise"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Stand up an offline knowledge base with a bitemporal graph and ontology instead of plain RAG.",
+      "why": "Tracks how knowledge changes over time, so past decisions can be traced to their grounds.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An enterprise knowledge system written in Rust. It builds a bitemporal knowledge graph that keeps time and ontology at the base, detects conflicts, and routes doubtful cases to human review. It deploys offline on hardware you control.",
+      "best_for": "Organizations that need auditable, evolving knowledge with an audit trail for agent decisions.",
+      "not_for": "Every use case needs a chat model configured. The marketing-heavy README gives little API detail, so check maturity first.",
+      "keywords": [
+        "bitemporal knowledge graph",
+        "enterprise world model",
+        "knowledge graph vs rag",
+        "ontology engine",
+        "offline knowledge base",
+        "palantir alternative"
       ]
     },
     {

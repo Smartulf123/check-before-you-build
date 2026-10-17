@@ -538,6 +538,42 @@
       ]
     },
     {
+      "id": "gkurt/tegaki",
+      "name": "Tegaki",
+      "category": "animation",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "handwriting",
+        "animation",
+        "svg",
+        "fonts",
+        "text"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react"
+      ],
+      "use_for": "Animate text as handwriting from any font, in React or as a standalone animated SVG.",
+      "why": "No manual path drawing and no native dependencies; it works from the font itself.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Turns any font into animated handwriting, drawn stroke by stroke with natural timing. Use the TegakiRenderer component, or run npx tegaki to write a looping SVG. Bundled fonts cover Latin, Arabic, Hebrew, Devanagari, Japanese and more.",
+      "best_for": "Handwriting-style intros, hero text and READMEs with a self-drawing signature or title.",
+      "not_for": "A text animation effect only. Quality depends on how well the chosen font works with the stroke detection.",
+      "keywords": [
+        "handwriting animation",
+        "text write on effect",
+        "animated svg text",
+        "react handwriting component",
+        "self-drawing text",
+        "font stroke animation"
+      ]
+    },
+    {
       "id": "tweenjs/tween.js",
       "name": "tween.js",
       "category": "animation",

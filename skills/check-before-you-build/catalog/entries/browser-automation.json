@@ -38,6 +38,114 @@
       ]
     },
     {
+      "id": "Anakin-Inc/anakin",
+      "name": "AnakinScraper OSS",
+      "category": "browser-automation",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "web-scraping",
+        "markdown",
+        "anti-detect",
+        "proxy",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "go",
+        "python"
+      ],
+      "use_for": "Self-host a scraping API that returns clean markdown or structured JSON for AI.",
+      "why": "Falls back from plain HTTP to an anti-detect browser to an external API, per domain.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Go scraping service you start with make up. It tries an HTTP fetch, then an anti-detect Camoufox browser, then a custom API handler. It adds domain configs, failure detection, proxy auto-selection and Gemini-based JSON extraction.",
+      "best_for": "Feeding RAG or agent pipelines with page content when you want to run the scraper yourself.",
+      "not_for": "AGPL-3.0 license. Structured extraction uses Gemini. Hosted anakin.io adds infrastructure not in this repo.",
+      "keywords": [
+        "web scraping api",
+        "firecrawl alternative",
+        "self-hosted scraper",
+        "website to markdown",
+        "anti-detect browser",
+        "proxy rotation",
+        "llm scraping"
+      ]
+    },
+    {
+      "id": "epiral/bb-browser",
+      "name": "bb-browser",
+      "category": "browser-automation",
+      "kinds": [
+        "cli",
+        "mcp"
+      ],
+      "tags": [
+        "browser",
+        "mcp",
+        "adapters",
+        "logged-in",
+        "chrome"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Let AI agents use websites through your real logged-in Chrome via a CLI and MCP server.",
+      "why": "Site adapters run inside your own browser tab with your cookies, so no API keys or bot detection issues.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI and MCP server whose community adapters, such as twitter/search or zhihu/hot, run eval or fetch inside your Chrome tab. It also works through OpenClaw's browser with no extension.",
+      "best_for": "Agents that need data from sites you are already signed into, where no API exists.",
+      "not_for": "Isolated or headless runs, or sites whose terms forbid automation: it acts as you with your login state.",
+      "keywords": [
+        "browser as api",
+        "agent uses my chrome",
+        "logged in browser automation",
+        "mcp browser",
+        "site adapters",
+        "twitter reddit cli no api"
+      ]
+    },
+    {
+      "id": "brightdata/cli",
+      "name": "Bright Data CLI",
+      "category": "browser-automation",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "web-scraping",
+        "serp",
+        "cli",
+        "brightdata",
+        "scraping-browser"
+      ],
+      "ecosystems": [
+        "node",
+        "typescript"
+      ],
+      "use_for": "Scrape pages, run searches and call prebuilt scrapers from the terminal using Bright Data.",
+      "why": "Official CLI covering scrape, search, discover, AI-built scrapers, pipelines and a real scraping browser.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "The brightdata command (alias bdata) wraps the Bright Data API. It scrapes URLs with anti-bot handling, searches Google, Bing and Yandex into JSON, runs thousands of prebuilt scrapers, and controls a remote browser.",
+      "best_for": "Agent or script scraping where you already use, or will pay for, Bright Data.",
+      "not_for": "Free, self-hosted scraping. It needs a Bright Data account and API key, and creates zones on first login.",
+      "keywords": [
+        "bright data cli",
+        "scrape from terminal",
+        "serp api cli",
+        "scraping browser cli",
+        "web scraping command line",
+        "brightdata"
+      ]
+    },
+    {
       "id": "browser-use/browser-use",
       "name": "Browser Use",
       "category": "browser-automation",
@@ -108,6 +216,117 @@
       ]
     },
     {
+      "id": "browser-act/skills",
+      "name": "BrowserAct",
+      "category": "browser-automation",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "browser-automation",
+        "ai-agents",
+        "stealth",
+        "scraping",
+        "human-handoff"
+      ],
+      "ecosystems": [
+        "node"
+      ],
+      "use_for": "Let AI agents drive a real browser, extract data and keep separate logged-in accounts in isolated sessions.",
+      "why": "Adds stealth fingerprints, CAPTCHA solving and a live URL so a human can take over.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A browser automation CLI built for AI agents. It has chrome and stealth modes, parallel isolated sessions, stealth extraction and remote-assist handoff to a human. It can run cloud-managed or against your local browser.",
+      "best_for": "Agents that must work on bot-protected sites or manage several accounts at once.",
+      "not_for": "Several features need a login, and managed proxies and more than five stealth browsers are paid. Check target sites' terms before scraping.",
+      "keywords": [
+        "browser automation for agents",
+        "anti bot scraping",
+        "captcha solver agent",
+        "multi account browser",
+        "stealth browser cli",
+        "playwright alternative agents",
+        "human takeover browser"
+      ]
+    },
+    {
+      "id": "Tencent/BrowserSkill",
+      "name": "BrowserSkill",
+      "category": "browser-automation",
+      "kinds": [
+        "cli",
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "browser-automation",
+        "ai-agents",
+        "chrome-extension",
+        "logged-in-browser",
+        "debugging"
+      ],
+      "ecosystems": [
+        "chrome",
+        "edge",
+        "cli"
+      ],
+      "use_for": "Let a shell-capable AI agent drive your real, logged-in Chrome or Edge in a separate visible window.",
+      "why": "Uses your existing browser logins and keeps tasks in a visible Agent Window.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A `bsk` CLI with a daemon and a Chrome/Edge extension, plus a skill that teaches agents to use it. Agents can read pages, fill forms, capture screenshots, and inspect requests and console output. You can borrow an existing tab and take over for logins.",
+      "best_for": "Agent tasks that need your signed-in accounts, or debugging a website with real request and console evidence.",
+      "not_for": "Needs the extension in Chrome or Edge (Chromium 125 or later). Other Chromium browsers are not guaranteed to work.",
+      "keywords": [
+        "browser automation for agents",
+        "logged-in browser",
+        "agent chrome extension",
+        "bsk cli",
+        "claude code browser",
+        "scrape with my login",
+        "web debugging agent"
+      ]
+    },
+    {
+      "id": "jo-inc/camofox-browser",
+      "name": "camofox-browser",
+      "category": "browser-automation",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "headless-browser",
+        "anti-detection",
+        "camoufox",
+        "scraping",
+        "rest-api"
+      ],
+      "ecosystems": [
+        "javascript",
+        "node"
+      ],
+      "use_for": "Give agents a stealth browser over REST that avoids bot detection when browsing the real web.",
+      "why": "Camoufox spoofs fingerprints at C++ level; snapshots are about 90% smaller than HTML.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A REST server wrapping Camoufox, a Firefox fork with fingerprint spoofing. It returns accessibility snapshots with stable element refs, isolates sessions, imports cookies, supports proxies with GeoIP and has search macros.",
+      "best_for": "Agent browsing and scraping on sites that block Playwright or headless Chrome.",
+      "not_for": "Cases where bypassing bot detection is not allowed. Check the target site's terms and the law before use.",
+      "keywords": [
+        "stealth browser",
+        "bypass cloudflare",
+        "anti detection browser",
+        "playwright alternative for agents",
+        "headless firefox",
+        "agent browser api",
+        "camofox"
+      ]
+    },
+    {
       "id": "cheeriojs/cheerio",
       "name": "Cheerio",
       "category": "browser-automation",
@@ -145,6 +364,42 @@
       ]
     },
     {
+      "id": "pasky/chrome-cdp-skill",
+      "name": "chrome-cdp",
+      "category": "browser-automation",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "chrome",
+        "cdp",
+        "agent-skill",
+        "browser-control",
+        "devtools"
+      ],
+      "ecosystems": [
+        "javascript",
+        "node"
+      ],
+      "use_for": "Let an AI agent read and control the Chrome session you already have open, including logged-in tabs.",
+      "why": "Connects straight to Chrome's debugging socket with a per-tab daemon, so it handles 100+ tabs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill with a CLI script that attaches to your live Chrome over the remote debugging WebSocket. It can list tabs, take screenshots, read the accessibility tree, evaluate JS, navigate and click, with no Puppeteer.",
+      "best_for": "Agents that need to work inside your real logged-in browser rather than a fresh one.",
+      "not_for": "Acts on your real browsing session, so it can see and click in logged-in accounts. Chrome shows an Allow debugging prompt once per tab.",
+      "keywords": [
+        "control my chrome with ai",
+        "chrome devtools protocol skill",
+        "chrome-devtools-mcp alternative",
+        "agent browser live session",
+        "cdp cli",
+        "use logged in browser agent"
+      ]
+    },
+    {
       "id": "chromedp/chromedp",
       "name": "chromedp",
       "category": "browser-automation",
@@ -177,6 +432,42 @@
         "screenshots",
         "golang",
         "cdp"
+      ]
+    },
+    {
+      "id": "CloakHQ/CloakBrowser",
+      "name": "CloakBrowser",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "stealth",
+        "chromium",
+        "playwright",
+        "anti-detection",
+        "scraping"
+      ],
+      "ecosystems": [
+        "python",
+        "javascript"
+      ],
+      "use_for": "Swap in a stealth Chromium for Playwright or Puppeteer so automation looks like a normal browser.",
+      "why": "Fingerprints are patched in Chromium's C++ source, not with injected JavaScript.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "CloakBrowser is a Chromium build with 87 source-level patches for canvas, WebGL, audio, WebRTC and other fingerprints. It is a drop-in Playwright and Puppeteer replacement for Python and JavaScript, with a humanize option for mouse and keyboard timing. The binary downloads on install.",
+      "best_for": "Scraping and agent browsing against sites with bot detection where JavaScript stealth plugins fail.",
+      "not_for": "It does not solve CAPTCHAs. Some features need a paid Pro plan. Check site terms before bypassing bot protection.",
+      "keywords": [
+        "stealth browser",
+        "playwright stealth",
+        "undetected chromedriver alternative",
+        "bypass bot detection",
+        "anti-detect chromium",
+        "cloudflare turnstile bypass",
+        "browser fingerprint patch"
       ]
     },
     {
@@ -323,6 +614,81 @@
       ]
     },
     {
+      "id": "SawyerHood/dev-browser",
+      "name": "dev-browser",
+      "category": "browser-automation",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "browser",
+        "puppeteer",
+        "agent-skill",
+        "chrome",
+        "accessibility-tree"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Let a coding agent drive Chrome with short JavaScript scripts across persistent pages.",
+      "why": "Keeps the browser open between calls and gives compact accessibility snapshots with stable element refs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI and bundled skill for Claude Code, Codex and other agents. Scripts use the real Puppeteer Page API with named tabs, and can launch an isolated Chrome profile or attach to your own browser.",
+      "best_for": "Agents that need to navigate, inspect and verify pages step by step without restarting the browser.",
+      "not_for": "Large-scale scraping or non-Chrome browsers. Chrome 136+ ignores debug flags on the default profile, so it uses a dedicated one.",
+      "keywords": [
+        "claude browser skill",
+        "agent browser control",
+        "puppeteer for agents",
+        "browser automation skill",
+        "attach to chrome",
+        "dev browser"
+      ]
+    },
+    {
+      "id": "citrolabs/ego-lite",
+      "name": "ego lite",
+      "category": "browser-automation",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "browser",
+        "agents",
+        "automation",
+        "claude-code",
+        "codex",
+        "spaces"
+      ],
+      "ecosystems": [
+        "javascript",
+        "macos"
+      ],
+      "use_for": "Let coding agents drive a real browser, with your logins, without taking the browser away from you.",
+      "why": "Agents get their own isolated Spaces in one shared browser and call browser actions as JavaScript functions.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "ego lite is a browser built for you and your AI agents to share. Each agent works in its own isolated Space while you keep browsing. Browser capabilities are exposed as JavaScript functions, so an agent can write one script for a multi-step task instead of looping through CLI calls.",
+      "best_for": "Agent tasks that need your real logged-in sessions, or several agents working in parallel browser workspaces.",
+      "not_for": "Windows or Linux today. It runs on macOS only, with a Windows closed beta coming and Linux on the roadmap.",
+      "keywords": [
+        "browser for ai agents",
+        "browser automation",
+        "browser-use alternative",
+        "agent-browser",
+        "share logged in browser",
+        "parallel browser agents",
+        "claude code browser",
+        "codex browser"
+      ]
+    },
+    {
       "id": "firecrawl/firecrawl",
       "name": "Firecrawl",
       "category": "browser-automation",
@@ -390,6 +756,41 @@
         "dom",
         "xss sanitization",
         "xml"
+      ]
+    },
+    {
+      "id": "tamnd/kage",
+      "name": "kage",
+      "category": "browser-automation",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "website-mirror",
+        "offline",
+        "headless-chrome",
+        "archive",
+        "crawler"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Clone a website into a folder of script-free HTML you can browse offline.",
+      "why": "It renders each page in real headless Chrome first, so JavaScript-built sites are captured as people saw them.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "kage crawls a site with headless Chrome, snapshots the finished DOM, strips all JavaScript, and downloads CSS, images and fonts to local paths with rewritten links. It can resume crawls and pack a mirror into one file.",
+      "best_for": "Archiving sites or reading material offline, including pages that rely on client-side rendering.",
+      "not_for": "Capturing interactive behavior, logins or app-like features: all scripts are removed, so only the static look remains.",
+      "keywords": [
+        "offline website copy",
+        "mirror website",
+        "httrack alternative",
+        "save site without javascript",
+        "headless chrome archive",
+        "wget alternative spa",
+        "website archiver"
       ]
     },
     {
@@ -497,6 +898,42 @@
       ]
     },
     {
+      "id": "lexmount/moli",
+      "name": "Moli",
+      "category": "browser-automation",
+      "kinds": [
+        "engine",
+        "cli"
+      ],
+      "tags": [
+        "headless-browser",
+        "cdp",
+        "webdriver",
+        "ai-agents",
+        "scraping"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Fetch, extract and automate web pages with a light headless browser built for AI agents.",
+      "why": "Skips layout and paint unless an operation needs it, so it is fast and light.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Moli is a headless browser written in Rust with real JavaScript, DOM, CSS and networking. It works through a CLI, CDP, WebDriver Classic and WebDriver BiDi. Structure-first operations skip rendering, and layout runs only when needed.",
+      "best_for": "Agent web fetching and automation where memory and speed matter more than full visual rendering.",
+      "not_for": "Pixel-exact rendering at scale. Screenshots use software paint, and mainstream Chrome is more battle-tested.",
+      "keywords": [
+        "headless browser for agents",
+        "lightweight browser",
+        "rust browser",
+        "cdp server",
+        "webdriver bidi",
+        "puppeteer alternative",
+        "agent web fetch"
+      ]
+    },
+    {
       "id": "codelucas/newspaper",
       "name": "newspaper3k",
       "category": "browser-automation",
@@ -563,6 +1000,41 @@
       ]
     },
     {
+      "id": "jackwener/OpenCLI",
+      "name": "OpenCLI",
+      "category": "browser-automation",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "browser-automation",
+        "cli",
+        "agents",
+        "adapters",
+        "chrome"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Turn websites into command-line commands and let agents drive your logged-in Chrome.",
+      "why": "Built-in adapters for sites like Reddit, Hacker News and Bilibili, plus generic browser primitives.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenCLI is a browser automation CLI for AI agents. It reuses your logged-in browser to navigate, click, fill, extract and screenshot pages using DOM snapshots. Site adapters give repeatable commands, and bundled skills help agents write and repair new adapters.",
+      "best_for": "Agents that need to act on sites where you are already signed in, with stable commands for common sites.",
+      "not_for": "Works through your real browser session, so be careful what an agent can reach. Adapters can break when sites change.",
+      "keywords": [
+        "website to cli",
+        "browser use logged-in chrome",
+        "agent browser alternative",
+        "browser automation for ai agents",
+        "site adapters",
+        "scrape with login",
+        "opencli"
+      ]
+    },
+    {
       "id": "alibaba/page-agent",
       "name": "page-agent",
       "category": "browser-automation",
@@ -593,6 +1065,42 @@
         "llm",
         "form filling",
         "mcp"
+      ]
+    },
+    {
+      "id": "pinchtab/pinchtab",
+      "name": "PinchTab",
+      "category": "browser-automation",
+      "kinds": [
+        "service",
+        "cli"
+      ],
+      "tags": [
+        "browser-control",
+        "chrome",
+        "http-api",
+        "ai-agents",
+        "token-efficient"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Give AI agents control of Chrome through a small local HTTP server and CLI.",
+      "why": "A single 30MB Go binary with token-efficient page text extraction.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A standalone HTTP server that drives Chrome for agents. It supports headless or headed mode, multiple isolated Chrome instances, accessibility-based element refs, and site audit and visual compare commands for CI. It can run as a background daemon.",
+      "best_for": "Agent tools that need a reusable local browser service reachable over HTTP or CLI.",
+      "not_for": "Anyone without Chrome or Chromium installed, since it drives a local browser. The stealth CloakBrowser option needs a binary you supply.",
+      "keywords": [
+        "browser automation for agents",
+        "chrome http api",
+        "playwright alternative for ai",
+        "headless chrome server",
+        "agent browser",
+        "web audit cli",
+        "browser mcp alternative"
       ]
     },
     {
@@ -629,6 +1137,81 @@
         "skills",
         "token-efficient",
         "headless"
+      ]
+    },
+    {
+      "id": "lackeyjb/playwright-skill",
+      "name": "Playwright Skill",
+      "category": "browser-automation",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "playwright",
+        "agent-skill",
+        "browser-automation",
+        "testing",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "javascript",
+        "node"
+      ],
+      "use_for": "Let a coding agent write and run custom Playwright scripts for testing and browser automation.",
+      "why": "The agent writes real code for each task, runs it with a portable executor, and keeps scripts you can rerun.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An Agent Skill, also packaged as a Claude Code plugin, that has the agent write and execute Playwright automation on the fly. The browser is visible by default, and an API reference loads only when needed.",
+      "best_for": "Multi-step flows, assertions, network interception or screenshots where the script itself is worth keeping.",
+      "not_for": "For simple interactive browsing the README suggests Microsoft's @playwright/cli or playwright-mcp instead.",
+      "keywords": [
+        "playwright claude code skill",
+        "agent browser testing",
+        "playwright automation for ai",
+        "claude code browser plugin",
+        "write playwright scripts with ai",
+        "e2e test agent"
+      ]
+    },
+    {
+      "id": "remorses/playwriter",
+      "name": "Playwriter",
+      "category": "browser-automation",
+      "kinds": [
+        "cli",
+        "mcp",
+        "plugin"
+      ],
+      "tags": [
+        "playwright",
+        "chrome-extension",
+        "mcp",
+        "browser-agent",
+        "cdp"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node",
+        "chrome"
+      ],
+      "use_for": "Let agents drive your own running Chrome with the Playwright API, keeping logins and extensions.",
+      "why": "Connects to your real browser through an extension instead of spawning a fresh, easily flagged Chrome.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Playwriter is a Chrome extension plus CLI and MCP server. Agents run Playwright code snippets in a stateful sandbox against your existing browser, so logins, cookies and extensions are already there. Sessions have isolated state, and a Node API can connect through the extension.",
+      "best_for": "You need an agent to act in sites you are already logged into, without bot-detection issues from a fresh browser.",
+      "not_for": "The agent acts in your real browser session, so mind what it can reach. Needs the Chrome extension installed. Not for headless server scraping at scale.",
+      "keywords": [
+        "browser mcp",
+        "playwright mcp alternative",
+        "control my chrome",
+        "agent browser automation",
+        "chrome extension cdp",
+        "logged in browser agent",
+        "playwriter"
       ]
     },
     {
@@ -951,6 +1534,43 @@
         "browserbase",
         "typescript",
         "python"
+      ]
+    },
+    {
+      "id": "zenbu-labs/terminal-browser",
+      "name": "terminal-browser",
+      "category": "browser-automation",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "terminal",
+        "browser",
+        "agent-browser",
+        "ssh",
+        "kitty-graphics"
+      ],
+      "ecosystems": [
+        "typescript",
+        "macos",
+        "linux"
+      ],
+      "use_for": "Browse the web inside a terminal pane next to your coding agent, which can drive it too.",
+      "why": "A real browser in the terminal with an agent-browser compatible CLI, split panes, and SSH tunneling.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "terminal-browser runs a real browser inside your terminal. Agents can interact with open browsers through a CLI compatible with agent-browser, and you can open HTML plans in a split pane next to the agent. It works over SSH to preview sites on remote machines.",
+      "best_for": "You work in a terminal with an agent and want pages and previews in the same tab.",
+      "not_for": "Needs a terminal with graphics support such as kitty protocol. Windows works only through WSL. Design mode and Chrome extensions are still on the roadmap.",
+      "keywords": [
+        "terminal browser",
+        "browser in terminal",
+        "agent browser cli",
+        "kitty graphics browser",
+        "preview over ssh",
+        "browser for coding agent",
+        "tui web browser"
       ]
     },
     {

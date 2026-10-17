@@ -107,6 +107,113 @@
       ]
     },
     {
+      "id": "BIT-DataLab/Edit-Banana",
+      "name": "Edit Banana",
+      "category": "images",
+      "kinds": [
+        "app",
+        "engine"
+      ],
+      "tags": [
+        "diagram",
+        "drawio",
+        "segmentation",
+        "ocr",
+        "sam"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Convert diagram images into editable DrawIO files using segmentation, OCR and multimodal models.",
+      "why": "Rebuilds diagram elements and formulas as separate editable objects instead of a flat image.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Edit Banana uses a fine-tuned SAM 3 for segmentation, multimodal LLM scanning, local OCR and Pix2Text for formulas, to produce editable DrawIO XML. It also has a user and credit system with a global GPU lock.",
+      "best_for": "Turning figures and diagrams from papers or screenshots into editable DrawIO.",
+      "not_for": "Latest features: the README says the GitHub repo trails the hosted web service. Needs GPU and model setup. AGPL-3.0.",
+      "keywords": [
+        "image to drawio",
+        "diagram to editable",
+        "figure to xml",
+        "sam 3 segmentation",
+        "screenshot to diagram",
+        "edit banana",
+        "formula ocr latex"
+      ]
+    },
+    {
+      "id": "CookSleep/gpt_image_playground",
+      "name": "GPT Image Playground",
+      "category": "images",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "image-generation",
+        "openai",
+        "image-editing",
+        "mask",
+        "web-ui"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react"
+      ],
+      "use_for": "Generate and edit images with GPT image models through a local-first web UI you can self-host.",
+      "why": "Supports reference images, masks, sketch annotations, batch prompts, and several API providers with local-only data.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A React and TypeScript web app for text-to-image and image editing with the OpenAI gpt-image API. It supports OpenAI-compatible endpoints, sub2api, fal.ai and custom HTTP providers, up to 16 reference images, a mask editor, canvas annotations, streaming previews and batch prompts. Data is stored locally. The README is in Chinese.",
+      "best_for": "You want a ready UI on top of image generation APIs, or a React base to fork.",
+      "not_for": "You need your own API key or compatible endpoint. The hosted demo is limited to HTTPS APIs. README sponsors promote third-party API relay services.",
+      "keywords": [
+        "gpt image ui",
+        "openai image playground",
+        "image editing mask web app",
+        "gpt-image-2",
+        "fal.ai image ui",
+        "ai image generator frontend",
+        "reference image editor"
+      ]
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanImage-3.0",
+      "name": "HunyuanImage-3.0",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "image-generation",
+        "multimodal",
+        "moe",
+        "text-to-image",
+        "open-weights"
+      ],
+      "ecosystems": [
+        "python",
+        "pytorch"
+      ],
+      "use_for": "Run an open text-to-image and image-editing model locally, with Transformers or vLLM.",
+      "why": "A very large open image MoE model: 80B parameters with 13B active, in an autoregressive design.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A native multimodal model that unifies understanding and generation in one autoregressive framework. It has 64 experts and 80 billion parameters, and supports text-to-image, image-to-image, and an Instruct variant with reasoning.",
+      "best_for": "Research or high-quality self-hosted image generation when you have multi-GPU hardware.",
+      "not_for": "Heavy hardware needs (the quick start uses several GPUs). The license is not stated in the README excerpt, so check it before commercial use.",
+      "keywords": [
+        "open source image generation model",
+        "hunyuan image",
+        "text to image model weights",
+        "autoregressive image model",
+        "image editing model",
+        "tencent image model"
+      ]
+    },
+    {
       "id": "image-rs/image",
       "name": "image (Rust)",
       "category": "images",
@@ -242,6 +349,42 @@
         "image optimization",
         "libvips",
         "webp avif"
+      ]
+    },
+    {
+      "id": "basketikun/infinite-canvas",
+      "name": "Infinite Canvas",
+      "category": "images",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "infinite-canvas",
+        "ai-image",
+        "openai-compatible",
+        "plugins",
+        "mcp"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run an open-source infinite-canvas workspace for AI image and video creation with an OpenAI-compatible API.",
+      "why": "Has a node plugin system with a TypeScript SDK, and a local agent that lets Codex or Claude Code edit the canvas over MCP.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A canvas workbench that puts canvas layout, AI image generation, reference-image editing, a chat assistant, a prompt library and asset storage in one interface. You supply an OpenAI-compatible Base URL and API key. Data stays in the browser by default.",
+      "best_for": "Building or forking a visual AI-image workflow tool that works with many OpenAI-compatible relay services.",
+      "not_for": "README is in Chinese. It warns the project is in development and local storage formats may change. It asks forks to keep the original author credit.",
+      "keywords": [
+        "infinite canvas",
+        "ai image canvas",
+        "node based image generation",
+        "无限画布",
+        "openai compatible image",
+        "prompt library",
+        "canvas agent mcp"
       ]
     },
     {
@@ -520,6 +663,42 @@
       ]
     },
     {
+      "id": "Hunyuan-PromptEnhancer/PromptEnhancer",
+      "name": "PromptEnhancer",
+      "category": "images",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "prompt-rewriting",
+        "text-to-image",
+        "image-editing",
+        "llm",
+        "gguf"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Rewrite short image prompts into clearer, structured ones before sending them to an image model.",
+      "why": "Keeps the original intent and has 7B, 32B and quantized GGUF models.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A prompt-rewriting tool from Tencent Hunyuan. It handles text-to-image prompts and image-editing instructions (with the source image). Models run with Transformers or llama.cpp in GGUF form.",
+      "best_for": "Improving prompts for text-to-image or image editing pipelines using local models.",
+      "not_for": "It rewrites prompts only and does not generate images. Larger models need much GPU memory. License is not clearly stated.",
+      "keywords": [
+        "prompt enhancer",
+        "prompt rewriting",
+        "text to image prompt",
+        "image editing instructions",
+        "hunyuan",
+        "gguf prompt model",
+        "chain of thought prompts"
+      ]
+    },
+    {
       "id": "danielgatis/rembg",
       "name": "rembg",
       "category": "images",
@@ -649,6 +828,43 @@
       ]
     },
     {
+      "id": "shitagaki-lab/see-through",
+      "name": "See-through",
+      "category": "images",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "anime",
+        "layer-decomposition",
+        "psd",
+        "diffusion",
+        "live2d"
+      ],
+      "ecosystems": [
+        "python",
+        "pytorch"
+      ],
+      "use_for": "Split a single anime illustration into up to 23 inpainted layers and export a PSD.",
+      "why": "SIGGRAPH 2026 research with released models and an end-to-end pipeline, with inferred draw order.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Research code that decomposes a static anime image into semantic layers such as hair, face, eyes and clothing, with hidden regions inpainted and drawing order inferred. Models include a diffusion layer generator, depth estimation and body parsing, and a main script outputs a PSD.",
+      "best_for": "Preparing 2.5D or animated models from existing anime art.",
+      "not_for": "A research project that needs a GPU and a conda setup. Output quality is not guaranteed for every art style.",
+      "keywords": [
+        "anime layer separation",
+        "illustration to psd",
+        "live2d layers",
+        "2.5d anime model",
+        "image layer decomposition",
+        "inpaint layers",
+        "anime character parts"
+      ]
+    },
+    {
       "id": "facebookresearch/sam2",
       "name": "Segment Anything 2",
       "category": "images",
@@ -716,6 +932,40 @@
         "libvips",
         "image optimization",
         "thumbnails"
+      ]
+    },
+    {
+      "id": "Hugo-Dz/spritefusion-pixel-snapper",
+      "name": "Sprite Fusion Pixel Snapper",
+      "category": "images",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "pixel-art",
+        "ai-art",
+        "quantization",
+        "cli",
+        "sprites"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Clean up AI-generated pixel art by snapping it to a consistent pixel grid and a fixed color palette.",
+      "why": "Fixes drifting pixel size and messy colors while keeping details like dithering.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A command-line tool that detects the pixel size of an image, snaps pixels to a perfect grid and quantizes colors to a palette. It handles single files or whole directories and accepts custom palettes.",
+      "best_for": "Post-processing AI pixel art or irregular 2D art into clean, scalable game assets.",
+      "not_for": "Works on PNG and JPEG images only and fixes grid and palette, not artistic quality. Auto pixel-size detection may need a manual override.",
+      "keywords": [
+        "fix ai pixel art",
+        "pixel art grid snap",
+        "pixel art cleanup",
+        "palette quantize",
+        "sprite cleanup cli",
+        "pixel snapper"
       ]
     },
     {

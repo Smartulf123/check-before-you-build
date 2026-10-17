@@ -211,6 +211,42 @@
       ]
     },
     {
+      "id": "tirth8205/code-review-graph",
+      "name": "code-review-graph",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp",
+        "cli"
+      ],
+      "tags": [
+        "mcp",
+        "code-graph",
+        "tree-sitter",
+        "context",
+        "code-review"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Give AI coding tools a local code graph so they read only the files a change touches.",
+      "why": "Builds a Tree-sitter graph of calls and imports and serves compact context over MCP.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "code-review-graph parses your repo with Tree-sitter into a graph of functions, classes, imports, calls and test coverage, updated incrementally. An MCP server then returns the smallest set of files needed for a review. One install command configures many AI coding tools.",
+      "best_for": "Large repos where assistants waste tokens re-reading code during reviews.",
+      "not_for": "The README admits limits: tiny single-file edits can cost more than a plain read, search ranking needs work, and impact recall is circular.",
+      "keywords": [
+        "code knowledge graph",
+        "mcp code context",
+        "reduce tokens code review",
+        "tree-sitter graph",
+        "ai code review context",
+        "codebase map for agents",
+        "claude code mcp"
+      ]
+    },
+    {
       "id": "DeusData/codebase-memory-mcp",
       "name": "codebase-memory-mcp",
       "category": "mcp-servers",
@@ -319,6 +355,115 @@
       ]
     },
     {
+      "id": "Waishnav/devspace",
+      "name": "DevSpace",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp",
+        "service"
+      ],
+      "tags": [
+        "mcp",
+        "chatgpt",
+        "coding-agent",
+        "local-first",
+        "worktrees"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Let ChatGPT or Claude read, edit and run code in your local projects through a self-hosted MCP server.",
+      "why": "Turns ChatGPT into a coding agent on your own machine without uploading files.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted MCP server exposing tools to read, write and edit files, search code, run shell commands and use Git worktrees inside approved folders. It follows AGENTS.md and CLAUDE.md and finds local skills. You expose it through your own tunnel.",
+      "best_for": "Using ChatGPT or another MCP-capable chat host as a coding agent on a local repo.",
+      "not_for": "Offline use: a public HTTPS tunnel is needed for hosted chat apps. It runs real commands on your machine, so approve folders carefully.",
+      "keywords": [
+        "chatgpt coding agent",
+        "local mcp server files",
+        "chatgpt codex alternative",
+        "mcp shell tools",
+        "self-hosted mcp",
+        "devspace",
+        "connect chatgpt to local repo"
+      ]
+    },
+    {
+      "id": "jgraph/drawio-mcp",
+      "name": "Draw.io MCP Server",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp",
+        "plugin"
+      ],
+      "tags": [
+        "diagrams",
+        "drawio",
+        "mcp",
+        "mermaid",
+        "official"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Let LLMs create and open diagrams in draw.io from Claude, Cursor, VS Code and other MCP clients.",
+      "why": "Official draw.io server with a hosted endpoint, inline diagram viewer and a no-install option.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "The official draw.io MCP server. It offers an MCP App server that shows diagrams inline in chat, a tool server (`npx @drawio/mcp`) that opens diagrams in the editor from XML, CSV or Mermaid, assistant plugins and Claude Project instructions.",
+      "best_for": "Anyone who wants an AI assistant to produce editable draw.io diagrams.",
+      "not_for": "Diagram creation only. Inline rendering needs a host that supports MCP Apps.",
+      "keywords": [
+        "drawio mcp",
+        "diagrams.net mcp",
+        "ai diagram generator",
+        "mermaid to drawio",
+        "claude draw.io",
+        "mcp diagram server",
+        "generate flowchart llm"
+      ]
+    },
+    {
+      "id": "Gentleman-Programming/engram",
+      "name": "Engram",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp",
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "agent-memory",
+        "sqlite",
+        "fts5",
+        "mcp",
+        "tui"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Give any MCP-compatible coding agent persistent memory across sessions.",
+      "why": "A single Go binary with SQLite and FTS5 and no other dependencies.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Engram is a single Go binary that stores what an agent learns in SQLite with full-text search. It offers an MCP server, HTTP API, CLI and a terminal UI to browse memories. It has setup targets for 14 agents including Claude Code, Codex and Cursor.",
+      "best_for": "Stopping coding agents from forgetting your project between sessions, with local storage.",
+      "not_for": "Stores notes and recalls by text search, not a vector database. The Engram name and logo are trademarks of the author.",
+      "keywords": [
+        "engram",
+        "agent memory",
+        "persistent memory mcp",
+        "claude code memory",
+        "sqlite fts5 memory",
+        "claude-mem alternative"
+      ]
+    },
+    {
       "id": "exa-labs/exa-mcp-server",
       "name": "Exa MCP Server",
       "category": "mcp-servers",
@@ -352,6 +497,44 @@
         "content fetch",
         "agent plugin",
         "search api"
+      ]
+    },
+    {
+      "id": "UsefulSoftwareCo/executor",
+      "name": "Executor",
+      "category": "mcp-servers",
+      "kinds": [
+        "service",
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "mcp",
+        "openapi",
+        "graphql",
+        "integrations",
+        "policy"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Set up tools, auth and per-tool policies once and share them with every MCP-compatible agent.",
+      "why": "One catalog of MCP, OpenAPI and GraphQL integrations with allow, approval or block policies per tool.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Executor is an integration layer for AI agents. You add MCP servers, OpenAPI specs or GraphQL APIs, set credentials and policies once, and any MCP-compatible agent uses the same catalog. Runs as a local CLI, desktop app, hosted cloud, or self-hosted on Docker or Cloudflare.",
+      "best_for": "You use several agents (Claude Code, Cursor, ChatGPT) and want one place for API keys, tool catalog and approval rules.",
+      "not_for": "Not an agent framework. Agents must speak MCP to use it. Hosted cloud is a separate product from the self-hosted option.",
+      "keywords": [
+        "mcp gateway",
+        "agent integrations",
+        "openapi to mcp",
+        "graphql mcp",
+        "tool policy",
+        "share tools across agents",
+        "mcp aggregator"
       ]
     },
     {
@@ -461,6 +644,41 @@
       ]
     },
     {
+      "id": "jacob-bd/gemini-notebook-mcp-cli",
+      "name": "Gemini Notebook MCP & CLI",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp",
+        "cli"
+      ],
+      "tags": [
+        "notebooklm",
+        "mcp",
+        "cli",
+        "gemini",
+        "research"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Drive Gemini Notebook (formerly NotebookLM) from the command line or from AI assistants over MCP.",
+      "why": "One package gives both an nlm CLI and an MCP server, with encrypted login storage in the OS keychain.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Python CLI and MCP server for Gemini Notebook. It lists and creates notebooks, adds sources from URLs, text, Drive and files, and queries notebooks. nlm setup connects the tools to your AI assistants.",
+      "best_for": "Scripting NotebookLM-style research or letting an agent manage notebooks and sources.",
+      "not_for": "Official API stability. It signs in with a Google account, and Enterprise support is experimental.",
+      "keywords": [
+        "notebooklm mcp",
+        "notebooklm cli",
+        "google notebooklm api",
+        "gemini notebook",
+        "nlm cli",
+        "notebooklm automation"
+      ]
+    },
+    {
       "id": "LaurieWired/GhidraMCP",
       "name": "GhidraMCP",
       "category": "mcp-servers",
@@ -529,6 +747,183 @@
         "repository",
         "code search",
         "official"
+      ]
+    },
+    {
+      "id": "hi-godot/godot-ai",
+      "name": "Godot AI",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "godot",
+        "mcp-server",
+        "game-dev",
+        "gdscript",
+        "scene-editing"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Letting an MCP client like Claude Code build scenes, edit nodes and scripts, and wire signals in a live Godot editor.",
+      "why": "Exposes 46 tools and 120+ operations covering UI, materials, animation, particles and environments.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Godot AI is an MCP server that bridges MCP clients to a running Godot editor through a local Python server and an editor plugin, both authenticated. It fully supports GDScript (parse-validated, hot-reloaded) and offers text-only support for C# scripts.",
+      "best_for": "Godot 4.7+ developers who want an AI assistant to build and edit scenes directly in the live editor.",
+      "not_for": "Does not build or report compiler errors for C# scripts; those still need the editor's Build panel or dotnet build.",
+      "keywords": [
+        "godot mcp server",
+        "godot ai assistant",
+        "claude code godot",
+        "gdscript ai editing",
+        "godot scene automation",
+        "ai game development tool"
+      ]
+    },
+    {
+      "id": "google/mcp",
+      "name": "Google MCP",
+      "category": "mcp-servers",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "mcp",
+        "google-cloud",
+        "official",
+        "bigquery",
+        "cloud-run"
+      ],
+      "ecosystems": [
+        "google-cloud"
+      ],
+      "use_for": "Find Google's official MCP servers and examples for deploying MCP servers to Google Cloud.",
+      "why": "Official index of Google's remote and open-source MCP servers with deployment guidance and sample agents.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A repository listing Google's official Model Context Protocol servers: managed remote ones such as BigQuery, Cloud SQL, Firestore and Maps, and open-source ones such as Workspace, Firebase, GKE and MCP Toolbox for Databases. It also links deployment guides for Cloud Run and has two example apps.",
+      "best_for": "Connecting agents to Google Cloud and Google products through supported MCP servers.",
+      "not_for": "Mostly an index and guidance. The servers themselves live elsewhere, and examples are small.",
+      "keywords": [
+        "google mcp servers",
+        "bigquery mcp",
+        "google cloud mcp",
+        "firebase mcp",
+        "cloud run mcp",
+        "mcp toolbox for databases",
+        "google workspace mcp"
+      ]
+    },
+    {
+      "id": "homeassistant-ai/ha-mcp",
+      "name": "ha-mcp",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "home-assistant",
+        "mcp",
+        "smart-home",
+        "automation"
+      ],
+      "ecosystems": [
+        "python",
+        "home-assistant"
+      ],
+      "use_for": "Let an AI assistant control Home Assistant and manage its automations, scripts and dashboards.",
+      "why": "Wide tool coverage plus safety controls such as read-only mode and automatic edit backups.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An unofficial MCP server for Home Assistant. AI assistants can search entities, control devices, and create or edit automations, scripts, helpers and dashboards. It also reads history and traces, handles backups, and includes a read-only mode, per-tool enable switches and approval policies.",
+      "best_for": "Home Assistant users who want to manage their setup by chatting with Claude or another MCP client.",
+      "not_for": "Unofficial. Home Assistant also ships its own built-in MCP server, built on Assist, which is a narrower option.",
+      "keywords": [
+        "home assistant mcp",
+        "smart home ai",
+        "home assistant claude",
+        "hass mcp",
+        "home automation llm",
+        "control lights with ai"
+      ]
+    },
+    {
+      "id": "zhongerxin/iPhone-use",
+      "name": "iPhone Use",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp",
+        "plugin"
+      ],
+      "tags": [
+        "ios",
+        "mobile-automation",
+        "webdriveragent",
+        "mcp",
+        "codex"
+      ],
+      "ecosystems": [
+        "python",
+        "node",
+        "macos"
+      ],
+      "use_for": "Let Codex or another agent drive a real iPhone over USB: open apps, read screens, tap and type.",
+      "why": "Local MCP server on WebDriverAgent with a live screen view and screenshot fallback when controls fail.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "iPhone Use gives agents hands on a real iPhone. It uses WebDriverAgent on the phone, a local MCP service, setup and usage skills, and a live screen widget. It supports Codex, and adapted installs for WorkBuddy and Doubao. The README is mainly in Chinese.",
+      "best_for": "You want an agent to automate apps on your own iPhone and can use a Mac with Xcode.",
+      "not_for": "Needs macOS, full Xcode, a USB iPhone, and your own signed WDA runner. The README says the repo is private and needs access. Sends anonymous usage stats by default in Codex.",
+      "keywords": [
+        "iphone automation agent",
+        "control iphone with ai",
+        "webdriveragent mcp",
+        "ios agent",
+        "wda",
+        "codex iphone",
+        "mobile device mcp"
+      ]
+    },
+    {
+      "id": "ascending-llc/jarvis-registry",
+      "name": "Jarvis Registry",
+      "category": "mcp-servers",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "mcp-gateway",
+        "a2a",
+        "oauth",
+        "access-control",
+        "enterprise"
+      ],
+      "ecosystems": [
+        "python",
+        "docker"
+      ],
+      "use_for": "Put one secure gateway in front of your MCP servers and agents with identity and per-tool access control.",
+      "why": "Combines an MCP gateway, A2A agent registry, OAuth/OIDC login and tool-level ACLs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An enterprise MCP and A2A gateway and registry. It proxies MCP over SSE or Streamable HTTP, signs users in via Keycloak, Cognito or Entra ID, enforces scope and role rules down to single tools, and offers discovery and observability.",
+      "best_for": "Companies that need governed access for copilots and agents to internal tools.",
+      "not_for": "Heavy for a single-user or hobby setup. It manages access to MCP servers rather than being a tool server itself.",
+      "keywords": [
+        "mcp gateway",
+        "mcp registry",
+        "a2a agent registry",
+        "enterprise mcp",
+        "mcp access control",
+        "mcp oauth proxy",
+        "jarvis registry"
       ]
     },
     {
@@ -760,6 +1155,42 @@
       ]
     },
     {
+      "id": "openclaw/mcporter",
+      "name": "MCPorter",
+      "category": "mcp-servers",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "mcp",
+        "client",
+        "cli-generator",
+        "typescript",
+        "tools"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Call any MCP server's tools from a terminal, a TypeScript script, or a generated standalone CLI.",
+      "why": "Lets scripts and agents use MCP tools directly, with typed clients and one-off URL or stdio connections.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A TypeScript runtime and CLI for discovering and calling Model Context Protocol servers. You can list a server's tools, call them from the command line, connect to ad-hoc URLs or stdio commands, and generate typed clients or standalone CLIs.",
+      "best_for": "Developers and agents that need MCP tools outside an MCP-enabled chat client.",
+      "not_for": "It is a client, not an MCP server. Needs Node 24 or newer for npm installs.",
+      "keywords": [
+        "mcp client",
+        "call mcp from cli",
+        "mcp to cli",
+        "mcp typescript client",
+        "generate cli from mcp",
+        "mcp tools script"
+      ]
+    },
+    {
       "id": "czlonkowski/n8n-mcp",
       "name": "n8n-mcp",
       "category": "mcp-servers",
@@ -791,6 +1222,43 @@
         "claude",
         "cursor",
         "automation"
+      ]
+    },
+    {
+      "id": "oomol-lab/open-connector",
+      "name": "OpenConnector",
+      "category": "mcp-servers",
+      "kinds": [
+        "service",
+        "library",
+        "mcp"
+      ],
+      "tags": [
+        "connector-gateway",
+        "oauth",
+        "mcp",
+        "saas-integrations",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Give AI agents authenticated access to 1,000+ SaaS apps through SDK, CLI, MCP or HTTP.",
+      "why": "A self-hostable alternative to Pipedream and Composio with a shared catalog of prebuilt actions.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenConnector is an open-source connector gateway for AI agents. It handles OAuth and API-key credentials, exposes provider actions with schemas, and enforces scopes and allow/block policies with run logs. Run it with Docker or Node.js, or use the hosted runtime.",
+      "best_for": "Agent builders who want one integration layer across many SaaS tools without writing OAuth code.",
+      "not_for": "You manage storage and your own OAuth apps if you self-host. Hosted use depends on OOMOL's service.",
+      "keywords": [
+        "composio alternative",
+        "pipedream alternative",
+        "agent tool integrations",
+        "mcp gateway oauth",
+        "saas connectors for ai agents",
+        "self-hosted tool gateway",
+        "agent auth"
       ]
     },
     {
@@ -867,6 +1335,81 @@
       ]
     },
     {
+      "id": "repowise-dev/repowise",
+      "name": "Repowise",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp",
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "codebase-intelligence",
+        "code-health",
+        "git-analytics",
+        "dead-code",
+        "mcp"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Give coding agents and humans an index of a codebase: call graph, risk, dead code and past decisions.",
+      "why": "Risk, health and dead-code checks make no LLM calls, so the same diff gives the same answer.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Repowise indexes code, call graph, git history, tests and docs once on your machine. You and your agent then ask what calls what, what breaks on a change and what is dead, via CLI, REST or MCP. It can also gate changes in CI with SARIF.",
+      "best_for": "Agents or teams working in a large repo who want to stop paying tokens to rediscover the code every session.",
+      "not_for": "AGPL-3.0 licence, with a commercial option. Free use is described for one developer. Not a general search engine for non-code data.",
+      "keywords": [
+        "codebase intelligence",
+        "code health score",
+        "dead code detection",
+        "change risk",
+        "repo index mcp",
+        "call graph",
+        "git analytics",
+        "agent context"
+      ]
+    },
+    {
+      "id": "MinishLab/semble",
+      "name": "Semble",
+      "category": "mcp-servers",
+      "kinds": [
+        "library",
+        "mcp",
+        "cli"
+      ],
+      "tags": [
+        "code-search",
+        "mcp",
+        "coding-agents",
+        "token-savings",
+        "cpu"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Give coding agents fast natural-language code search over a repo, as an MCP server, CLI or sub-agent.",
+      "why": "Runs on CPU with no API keys and returns only relevant snippets instead of whole files.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Semble is a code search library for agents. It indexes a repo in about half a second and answers natural-language queries with just the relevant snippets. It installs as an MCP server, AGENTS.md instructions or a sub-agent.",
+      "best_for": "Cutting token use when a coding agent searches a codebase, without GPUs, API keys or external services.",
+      "not_for": "Not a general document search or a hosted service. It is built for code search by agents, and setup assumes uv and a supported coding agent.",
+      "keywords": [
+        "code search for agents",
+        "semantic code search",
+        "mcp code search",
+        "reduce tokens grep",
+        "claude code search",
+        "codebase indexing",
+        "cursor codex search"
+      ]
+    },
+    {
       "id": "oraios/serena",
       "name": "Serena",
       "category": "mcp-servers",
@@ -906,6 +1449,43 @@
       ]
     },
     {
+      "id": "giancarloerra/SocratiCode",
+      "name": "SocratiCode",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp",
+        "plugin",
+        "cli"
+      ],
+      "tags": [
+        "codebase-search",
+        "mcp",
+        "dependency-graph",
+        "qdrant",
+        "ollama"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Give an AI coding assistant semantic search, dependency graphs and impact analysis over a large local codebase.",
+      "why": "Runs locally with zero setup, and covers hybrid search, polyglot dependency graphs and symbol-level impact analysis.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A codebase context engine used as an MCP server or plugin. It indexes your code with hybrid semantic search, builds dependency graphs and call flows, and adds searchable context such as database schemas and API specs.",
+      "best_for": "Letting Claude Code, Cursor or VS Code understand a big or multi-project codebase without sending code to the cloud.",
+      "not_for": "Needs Node.js 18.17+ and Docker for the default local Qdrant and Ollama stack. AGPL-3.0 licensed, which limits closed-source reuse.",
+      "keywords": [
+        "codebase context mcp",
+        "semantic code search",
+        "code dependency graph",
+        "impact analysis",
+        "claude code codebase index",
+        "local code search for ai"
+      ]
+    },
+    {
       "id": "supabase/mcp",
       "name": "Supabase MCP",
       "category": "mcp-servers",
@@ -937,6 +1517,41 @@
         "postgres",
         "logs",
         "database management"
+      ]
+    },
+    {
+      "id": "tradesdontlie/tradingview-mcp",
+      "name": "TradingView MCP Bridge",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "tradingview",
+        "pine-script",
+        "charts",
+        "cdp",
+        "trading"
+      ],
+      "ecosystems": [
+        "node",
+        "typescript"
+      ],
+      "use_for": "Let Claude Code control a local TradingView Desktop app for chart analysis and Pine Script work.",
+      "why": "Drives your own TradingView Desktop over Chrome DevTools Protocol; it does not touch TradingView's servers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An MCP bridge to your locally running TradingView Desktop. It can change symbols and timeframes, read indicator values, draw on charts, and write, compile and debug Pine Script.",
+      "best_for": "Pine Script development and chart workflow automation by someone with a TradingView subscription.",
+      "not_for": "Executing trades, or use without a TradingView subscription and Desktop app. It relies on undocumented internals that can break on updates.",
+      "keywords": [
+        "tradingview mcp",
+        "pine script ai",
+        "claude tradingview",
+        "chart automation",
+        "tradingview desktop automation",
+        "trading chart analysis"
       ]
     },
     {
@@ -974,6 +1589,44 @@
         "editor automation",
         "assets",
         "unity editor"
+      ]
+    },
+    {
+      "id": "KnockOutEZ/wigolo",
+      "name": "wigolo",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp",
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "web-search",
+        "crawl",
+        "local-first",
+        "mcp",
+        "research"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Give coding agents local web search, fetch, crawl and research over MCP with no API keys.",
+      "why": "Runs fully on your machine with no keys or per-query cost, and wires into many agents with one command.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "wigolo gives an agent search, fetch, crawl, extract, cache, find-similar and research tools. It runs as an MCP server, a REST endpoint, or an SDK, and downloads a browser engine and local models on setup.",
+      "best_for": "Agents that need web access without paying for search APIs or sending queries to a cloud.",
+      "not_for": "Small installs: it needs Node 20+ and about 1.5 GB disk. It is a public beta under AGPL-3.0.",
+      "keywords": [
+        "web search mcp",
+        "local search for agents",
+        "no api key search",
+        "crawl mcp server",
+        "firecrawl alternative",
+        "free web fetch agent",
+        "wigolo"
       ]
     },
     {

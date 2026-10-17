@@ -1,0 +1,1314 @@
+{
+  "category": "agent-apps",
+  "entries": [
+    {
+      "id": "agentscope-ai/AgentTeams",
+      "name": "AgentTeams",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "service"
+      ],
+      "tags": [
+        "multi-agent",
+        "matrix",
+        "manager-workers",
+        "human-in-the-loop",
+        "gateway"
+      ],
+      "ecosystems": [
+        "docker",
+        "go"
+      ],
+      "use_for": "Run a manager and several worker agents in shared Matrix rooms where humans can watch and step in.",
+      "why": "Mixes OpenClaw, QwenPaw and Hermes workers and keeps real credentials in the gateway.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "AgentTeams is a collaborative multi-agent runtime with a Manager-Workers design. It orchestrates agent containers, uses a built-in Matrix server and Element client for visibility, a MinIO shared file system and the Higress gateway to hold credentials.",
+      "best_for": "Companies who want auditable multi-agent teams with human oversight, self-hosted.",
+      "not_for": "It orchestrates agent runtimes rather than implementing agent logic itself. It is a multi-container deployment.",
+      "keywords": [
+        "multi agent matrix",
+        "manager worker agents",
+        "openclaw multi agent",
+        "human in the loop agents",
+        "self-hosted agent team",
+        "agent collaboration room",
+        "higress ai gateway"
+      ]
+    },
+    {
+      "id": "aipoch/open-science",
+      "name": "AIPOCH Open-Science",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "research",
+        "desktop",
+        "skills",
+        "mcp",
+        "notebooks"
+      ],
+      "ecosystems": [
+        "typescript",
+        "python",
+        "r"
+      ],
+      "use_for": "Run a local-first desktop research workbench with agents, Python/R execution, data connectors and traceable outputs.",
+      "why": "Model-agnostic and extensible with skills, MCP tools and connectors, exporting sessions as portable .science packages.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop app where scientists describe a goal and agents read files, search, run Python and R, query data sources and produce reports with provenance. It runs on macOS, Windows and Linux, and sessions export as .science packages.",
+      "best_for": "Reproducible computational research with agents on your own machine.",
+      "not_for": "A library to embed in another app; it is a full desktop product. Benchmark claims in the README come from the project's own reports.",
+      "keywords": [
+        "ai research workbench",
+        "scientific agents",
+        "reproducible research agent",
+        "python r notebook agent",
+        "local-first research app",
+        "science agent skills",
+        "open science"
+      ]
+    },
+    {
+      "id": "aiming-lab/AutoResearchClaw",
+      "name": "AutoResearchClaw",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "research",
+        "paper-writing",
+        "multi-agent",
+        "latex",
+        "experiments",
+        "openclaw"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Turn a research topic into a full paper with real citations, sandboxed experiments and LaTeX output.",
+      "why": "A staged pipeline with real references, multi-agent review, and a co-pilot mode for human decisions.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "AutoResearchClaw takes a topic and produces a paper draft, conference-style LaTeX, BibTeX references from OpenAlex, Semantic Scholar and arXiv, a citation check and experiment results with charts. It can run fully autonomously or in Co-Pilot mode, and loops to refine or pivot. It can be driven from OpenClaw chat.",
+      "best_for": "Researchers exploring a full idea-to-paper workflow with human checkpoints.",
+      "not_for": "Trusting output unreviewed. The authors are still looking for testers, and results need human checking.",
+      "keywords": [
+        "ai paper writing",
+        "autonomous research agent",
+        "idea to paper",
+        "ai scientist alternative",
+        "latex paper generator",
+        "literature review agent",
+        "openclaw research",
+        "neurips paper agent"
+      ]
+    },
+    {
+      "id": "spinabot/brigade",
+      "name": "Brigade",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "multi-agent",
+        "tui",
+        "memory",
+        "channels",
+        "org-chart"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run a crew of AI agents with shared memory, an org chart and chat channels from a terminal.",
+      "why": "Shared long-term memory, many providers, WhatsApp/Telegram/Slack channels and 1,000+ connectors.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A terminal-first system for a crew of agents with their own personas, credentials and memory, governed by an org chart. It has the Tideline memory engine, cron jobs, a headless gateway and any model provider.",
+      "best_for": "People wanting a self-hosted team of agents reachable from messaging apps.",
+      "not_for": "Minimal setups. It is a large system, and its README is marketing-heavy, so check docs for exact capabilities.",
+      "keywords": [
+        "multi agent crew",
+        "agent org chart",
+        "terminal agent tui",
+        "whatsapp telegram agent",
+        "agent shared memory",
+        "personal ai ecosystem",
+        "brigade"
+      ]
+    },
+    {
+      "id": "block/buzz",
+      "name": "Buzz",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "nostr",
+        "team-workspace",
+        "agents",
+        "self-hosted",
+        "event-log"
+      ],
+      "ecosystems": [
+        "rust",
+        "typescript"
+      ],
+      "use_for": "Self-host a workspace where people and AI agents share rooms, repos and workflows on one relay.",
+      "why": "Humans and agents use the same signed event log, identity model and audit trail.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Buzz is a self-hostable team workspace built as a Nostr relay. Messages, reactions, workflow steps, reviews and git events are signed events in one log. Agents can open repos, send patches, run workflows and join voice huddles like human teammates.",
+      "best_for": "Teams that want agents as full members of a workspace they host and audit themselves.",
+      "not_for": "A whole platform, not a library. Needs Docker and a Rust, Node and pnpm toolchain to build from source.",
+      "keywords": [
+        "agent workspace",
+        "nostr relay",
+        "human and ai collaboration",
+        "self-hosted team chat agents",
+        "agent audit trail",
+        "slack alternative agents",
+        "multi-agent workspace"
+      ]
+    },
+    {
+      "id": "dataelement/Clawith",
+      "name": "Clawith",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "multi-agent",
+        "platform",
+        "rbac",
+        "memory",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Run a team of persistent AI agents with memory, workspaces and org-level controls.",
+      "why": "Agents get identity, long-term memory and their own workspace, with multi-tenant RBAC and approvals.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Clawith is a multi-agent collaboration platform. Each agent has a persistent identity, long-term memory and workspace, and agents work together and with humans. It adds multi-tenant RBAC, Slack, Discord and Feishu channels, usage quotas, approval workflows, audit logs, and runtime tool and skill discovery.",
+      "best_for": "You want a self-hostable platform for a crew of long-lived agents inside an organization, not just a single chat agent.",
+      "not_for": "A full platform, not a lightweight library. The shared live demo is not guaranteed stable. Heavier to run than an agent SDK.",
+      "keywords": [
+        "multi-agent platform",
+        "digital employees",
+        "agent workspace",
+        "agent memory",
+        "ai agent company",
+        "slack discord agents",
+        "feishu agent"
+      ]
+    },
+    {
+      "id": "cloudflare/cloudflare-os",
+      "name": "Cloudflare OS",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "agent-workspace",
+        "cloudflare-workers",
+        "sandbox",
+        "gadgets",
+        "guardrails"
+      ],
+      "ecosystems": [
+        "typescript",
+        "cloudflare-workers"
+      ],
+      "use_for": "Fork a company agent workspace on Workers: agent chat, sandboxed mini apps and guardrails.",
+      "why": "Used inside Cloudflare; Gatekeepers add guardrails so non-engineers can safely build apps.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source AI productivity environment with an agent chat UI preloaded with company knowledge, sandboxed app building for small personal apps called gadgets, and a security framework called Gatekeepers. Runs locally with pnpm.",
+      "best_for": "Companies that want to customise their own internal agent workspace on Cloudflare.",
+      "not_for": "Production use of the local run mode, which the README says is not meant for production. Some integrations need extra setup.",
+      "keywords": [
+        "company ai workspace",
+        "internal agent platform",
+        "cloudflare workers agents",
+        "sandboxed app builder",
+        "agent guardrails",
+        "self hosted ai productivity",
+        "cloudflare os"
+      ]
+    },
+    {
+      "id": "zts212653/clowder-ai",
+      "name": "Clowder AI",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "app"
+      ],
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "a2a",
+        "shared-memory",
+        "cross-model-review"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run Claude, GPT and Gemini as a persistent team with roles, shared memory and cross-model review.",
+      "why": "Treats agent teamwork as a platform: persistent identity, A2A handoffs and built-in review between models.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A platform layer for multi-agent teams. It routes tasks to the right model, keeps each agent's role and memory across sessions, supports async agent-to-agent messaging with @mentions, and offers MCP tools, chat adapters like Feishu and Telegram, and skills.",
+      "best_for": "Developers who already use several frontier models and want them to collaborate without acting as the router.",
+      "not_for": "A minimal single-agent library. It is a full Node/pnpm platform, with Redis optional.",
+      "keywords": [
+        "multi agent platform",
+        "claude gpt gemini team",
+        "agent to agent messaging",
+        "cross model code review",
+        "persistent agent identity",
+        "clowder",
+        "ai team orchestration"
+      ]
+    },
+    {
+      "id": "trycompai/crm",
+      "name": "Comp AI CRM",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "template"
+      ],
+      "tags": [
+        "crm",
+        "ai-agent",
+        "postgres",
+        "self-hosted",
+        "research"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run an open-source CRM where an autonomous agent researches contacts and keeps the records.",
+      "why": "The agent never guesses: tools report evidence and a ledger decides what is written.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An agent-first CRM. The agent runs on its own schedule and work queue, books follow-ups and spends a research budget. Strong evidence writes to the record, and weak evidence becomes a suggestion for a human. Uses Bun, Postgres and Docker.",
+      "best_for": "Forking a CRM built around an autonomous research agent, or studying its evidence-ledger design.",
+      "not_for": "A drop-in generic CRM library. It is an app that you deploy and configure yourself.",
+      "keywords": [
+        "ai crm",
+        "open source crm",
+        "agentic crm",
+        "crm for ai agents",
+        "contact research agent",
+        "self hosted crm",
+        "comp ai crm"
+      ]
+    },
+    {
+      "id": "ResearAI/DeepScientist",
+      "name": "DeepScientist",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "app"
+      ],
+      "tags": [
+        "research-agent",
+        "autonomous-research",
+        "experiments",
+        "local-first",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "typescript",
+        "python"
+      ],
+      "use_for": "Run long, local autonomous research projects that go from baselines and experiment rounds to paper-ready output.",
+      "why": "One repo per quest, kept failure history and a research map, with human takeover at any time.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local-first autonomous research studio. It uses runners such as Codex, Claude Code, Kimi Code and OpenCode, keeps findings memory, and uses Bayesian optimization to pick next experiments. It installs via npm and has web, TUI and connector interfaces.",
+      "best_for": "Researchers who want an agent to carry multi-round experiments with reviewable history on their own machine.",
+      "not_for": "Quick one-shot tasks. It is built for long-horizon work and needs a supported coding agent as a runner.",
+      "keywords": [
+        "autonomous research agent",
+        "ai scientist alternative",
+        "deepscientist",
+        "automated experiments agent",
+        "research paper agent",
+        "autoresearch",
+        "local research studio"
+      ]
+    },
+    {
+      "id": "HKUDS/DeepTutor",
+      "name": "DeepTutor",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "tutoring",
+        "education",
+        "learning",
+        "quiz",
+        "research"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Self-host an AI learning workspace for tutoring, quizzes, problem solving and study tracking.",
+      "why": "One runtime covers chat, quiz, research, course study and reading, sharing knowledge bases and memory.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "DeepTutor is an agent-based learning workspace with a Python backend and a Next.js front end. It combines tutoring, quiz generation, research, visualization and mastery practice, and reuses knowledge bases, notebooks and memory across modes.",
+      "best_for": "Building or forking an AI tutoring or study product, or running a personal learning workspace you control.",
+      "not_for": "It is a full app, not a small library. Not for adding one tutoring feature to an existing app; expect to adopt the whole workspace.",
+      "keywords": [
+        "ai tutor",
+        "personalized learning",
+        "quiz generator",
+        "study assistant",
+        "learning workspace",
+        "education agent",
+        "lifelong learning"
+      ]
+    },
+    {
+      "id": "ZJU-REAL/Easel",
+      "name": "Easel",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "social-media",
+        "content-creation",
+        "agent",
+        "publishing",
+        "chinese-platforms"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Run an AI agent that finds trends, makes content and publishes to Chinese social platforms.",
+      "why": "Covers discover, plan, create, publish and analyze in one flow, with per-account profiles.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source content workspace that connects an OpenClaw agent to account profiles, content skills and real media tools. It makes images, audio and video, publishes to seven platforms including Xiaohongshu, Douyin and Zhihu, and learns from results.",
+      "best_for": "Creators and teams who post on Chinese social platforms and want an agent to handle the whole workflow.",
+      "not_for": "Needs OpenClaw as its agent runtime. Windows support is still on the roadmap. Auto-posting to Xiaohongshu may trigger account risk controls.",
+      "keywords": [
+        "social media agent",
+        "xiaohongshu",
+        "douyin",
+        "bilibili",
+        "auto publish",
+        "content calendar ai",
+        "openclaw",
+        "easel"
+      ]
+    },
+    {
+      "id": "cft0808/edict",
+      "name": "Edict (三省六部)",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "app"
+      ],
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "dashboard",
+        "audit",
+        "openclaw",
+        "kanban"
+      ],
+      "ecosystems": [
+        "python",
+        "openclaw"
+      ],
+      "use_for": "Run a multi-agent team on OpenClaw with a review step, a live task board and full audit trail.",
+      "why": "Splits agents into planning, review and execution roles, with a dedicated reviewer that can reject work.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Edict models a multi-agent system on the ancient Chinese three-departments-six-ministries government. Twelve agents plan, review, dispatch and execute tasks in order. It has a Kanban dashboard, task stop/cancel/resume, per-agent model switching and archived records of every step. The README is in Chinese.",
+      "best_for": "Teams on OpenClaw who want auditable multi-agent workflows and a visible control panel.",
+      "not_for": "Use outside OpenClaw, or if you do not read Chinese. A Docker demo with sample data exists, but the full setup needs OpenClaw.",
+      "keywords": [
+        "multi-agent orchestration",
+        "openclaw agents",
+        "agent dashboard",
+        "crewai alternative",
+        "autogen alternative",
+        "agent audit trail",
+        "agent kanban",
+        "三省六部"
+      ]
+    },
+    {
+      "id": "EvoScientist/EvoScientist",
+      "name": "EvoScientist",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "research-agent",
+        "multi-agent",
+        "memory",
+        "mcp",
+        "skills"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run a multi-agent AI research assistant that plans, codes, analyzes and writes up research.",
+      "why": "Combines six sub-agents with self-evolving memory and skills proposed from its own history.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A ready-to-use research agent system with six sub-agents for plan, research, code, debug, analyze and write. It keeps a memory that links into a knowledge graph, proposes reusable skills, supports several model providers and chat channels, and has a CLI/TUI and web UI.",
+      "best_for": "Researchers who want an opinionated, out-of-the-box AI scientist they can keep in the loop.",
+      "not_for": "Opinionated full system, not a small library. Needs model provider API keys.",
+      "keywords": [
+        "ai scientist",
+        "research agent",
+        "deep research agent",
+        "autonomous research",
+        "self-evolving agent",
+        "multi-agent research",
+        "vibe research"
+      ]
+    },
+    {
+      "id": "Companion-Inc/feynman",
+      "name": "Feynman",
+      "category": "agent-apps",
+      "kinds": [
+        "cli",
+        "framework"
+      ],
+      "tags": [
+        "research-agent",
+        "literature-review",
+        "papers",
+        "citations",
+        "pi"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run an AI research agent for deep research, literature reviews and paper audits from the terminal.",
+      "why": "Uses four research agents and checks citations across many scholarly sources.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI research agent built on Pi with researcher, verifier, reviewer and writer agents. Workflows cover deep research, literature review, paper review, auditing claims against code, and replication plans. It searches alphaXiv, arXiv, PubMed, OpenAlex and more.",
+      "best_for": "Researchers and students who want cited, multi-source answers from the command line.",
+      "not_for": "Privacy-strict setups. It sends anonymous usage data to PostHog by default (turn off with FEYNMAN_TELEMETRY=off).",
+      "keywords": [
+        "ai research agent",
+        "literature review tool",
+        "deep research cli",
+        "paper review ai",
+        "arxiv agent",
+        "replicate paper",
+        "feynman"
+      ]
+    },
+    {
+      "id": "ApodexAI/FrontierAgent",
+      "name": "FrontierAgent",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "agent-runtime",
+        "tui",
+        "agent-team",
+        "react",
+        "sandbox"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run a terminal agent for long research and file tasks, with ReAct or a coordinator and parallel sub-agents.",
+      "why": "Task-scoped sandbox, live task board and approval flow, with the runtime, tools and evals reusable apart.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "FrontierAgent is an agent runtime, terminal UI and evaluation suite. It has a ReAct mode and an Agent Team mode with a task board and parallel sub-agents, a sandboxed file system, queued mid-run instructions and traces. Needs an OpenAI-compatible endpoint.",
+      "best_for": "Long-horizon research or file-based work, or building on a documented agent runtime and benchmark runner.",
+      "not_for": "Hosted use with no setup: it needs Python 3.12, uv and a model endpoint. Much of the promotion centres on Apodex models.",
+      "keywords": [
+        "agent runtime tui",
+        "react agent framework",
+        "agent team coordinator",
+        "sandboxed agent files",
+        "research agent cli",
+        "frontier agent",
+        "apodex"
+      ]
+    },
+    {
+      "id": "aden-hive/hive",
+      "name": "Hive",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "engine"
+      ],
+      "tags": [
+        "multi-agent",
+        "runtime",
+        "parallel-workers",
+        "sqlite",
+        "dashboard"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Run a queen agent that plans work and fans it out to parallel workers with a shared tracker.",
+      "why": "Results land in a queryable SQLite tracker you can audit and resume from.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source runtime for colonies of agents. A queen agent takes a job, does the first piece to learn it, saves the method as a skill, then starts workers in parallel. Works with many API keys, coding subscriptions or Ollama.",
+      "best_for": "Repeatable business tasks that split into many similar jobs, such as researching a list of products.",
+      "not_for": "Simple single-agent chat. It needs Python 3.11+, Node.js 20+ and git, and is built for multi-step work.",
+      "keywords": [
+        "multi agent runtime",
+        "queen worker agents",
+        "parallel agents",
+        "agent harness production",
+        "agent tracker sqlite",
+        "agent colony",
+        "aden hive"
+      ]
+    },
+    {
+      "id": "holaboss-ai/holaOS",
+      "name": "HolaOS",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "agent-workspace",
+        "mcp",
+        "integrations",
+        "local-first",
+        "skills"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Assemble a local-first agent workspace from apps, chat tools, skills, integrations and MCP servers.",
+      "why": "Apps open as live surfaces beside the agent; works with any model or agent.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local-first agentic workspace with an in-workspace app marketplace, chat tool connections such as Slack and Feishu, one-click OAuth integrations, MCP server support, skills and shared memory.",
+      "best_for": "Teams who want to shape an agent workspace around their own tools without a cloud service.",
+      "not_for": "A small embeddable library. It is a full workspace product, and the licence is not a standard SPDX one.",
+      "keywords": [
+        "agentic workspace",
+        "agent with apps side by side",
+        "mcp workspace",
+        "local first agents",
+        "enterprise agent platform",
+        "slack feishu agent",
+        "holaos"
+      ]
+    },
+    {
+      "id": "Thysrael/Horizon",
+      "name": "Horizon",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "cli",
+        "mcp"
+      ],
+      "tags": [
+        "news-aggregator",
+        "daily-briefing",
+        "rss",
+        "llm",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build a self-run AI news radar that collects, scores and summarizes sources into daily briefings.",
+      "why": "Profiles give each kind of content its own scoring and output format.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A pipeline that pulls from RSS, Hacker News, Reddit, Telegram, X, GitHub and more, filters and deduplicates items, enriches them, and writes bilingual (English and Chinese) briefings. It can publish to GitHub Pages or send email and webhooks, and has a CLI and MCP.",
+      "best_for": "Anyone who wants a personal or team news digest tuned to their own interests.",
+      "not_for": "A general agent framework. It is a focused briefing app, and it needs an LLM provider for scoring and summaries.",
+      "keywords": [
+        "ai news digest",
+        "rss summarizer",
+        "daily briefing generator",
+        "news aggregator llm",
+        "hacker news summarizer",
+        "personal news radar",
+        "horizon"
+      ]
+    },
+    {
+      "id": "Narcooo/inkos",
+      "name": "InkOS",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "story-writing",
+        "novel",
+        "screenplay",
+        "translation",
+        "interactive-fiction"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Write and manage long novels, short stories, scripts and interactive worlds with an AI agent.",
+      "why": "Tracks characters, settings and plot state so long stories stay consistent.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A story-creation agent system with Studio, TUI and CLI interfaces. It handles world setup, chapters, review, revision, covers and translation, and keeps story state. It also supports short stories, multi-branch planning and open-world interactive play.",
+      "best_for": "Authors and teams producing serial fiction or scripts who want an AI workbench with memory.",
+      "not_for": "General software agents. It is AGPL-3.0, and the README is mostly Chinese and mentions a 2.0 development branch with a migration step.",
+      "keywords": [
+        "ai novel writing",
+        "story generation agent",
+        "web novel ai",
+        "screenplay ai",
+        "interactive fiction engine",
+        "ai translation long text",
+        "inkos"
+      ]
+    },
+    {
+      "id": "Snailclimb/interview-guide",
+      "name": "InterviewGuide",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "template"
+      ],
+      "tags": [
+        "spring-ai",
+        "rag",
+        "pgvector",
+        "interview",
+        "resume-analysis"
+      ],
+      "ecosystems": [
+        "java",
+        "typescript"
+      ],
+      "use_for": "Fork a full Spring AI and React app for resume analysis, mock text and voice interviews, and a RAG knowledge base.",
+      "why": "A complete working stack: Spring Boot, Spring AI, pgvector, Redis Stream tasks and PDF report export.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An AI interview platform that parses resumes, runs skill-driven mock interviews (text and voice) with a shared evaluation engine, and answers questions from a knowledge base. Backend is Spring Boot 4 on Java 25 with PostgreSQL/pgvector and Redis. README is in Chinese.",
+      "best_for": "Java developers learning or forking a real Spring AI plus RAG project, or running an interview-prep tool.",
+      "not_for": "Closed-source reuse, since it is AGPL-3.0. A paid tutorial exists separately, and the docs are in Chinese.",
+      "keywords": [
+        "spring ai example project",
+        "ai mock interview platform",
+        "resume analysis llm",
+        "rag knowledge base java",
+        "pgvector spring boot",
+        "ai 面试官",
+        "interviewguide"
+      ]
+    },
+    {
+      "id": "openJiuwen-ai/jiuwenswarm",
+      "name": "JiuwenSwarm",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "app"
+      ],
+      "tags": [
+        "multi-agent",
+        "swarm",
+        "workflows",
+        "skills",
+        "chat-channels"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run a leader-and-teammates agent swarm from a browser, terminal or chat apps.",
+      "why": "Supports distributed swarms, scripted Swarmflow stages with human-in-the-loop, and skill self-evolution.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A multi-agent system built on openJiuwen. A leader splits a task and builds a team that can run across processes and machines. Swarmflow gives deterministic multi-stage workflows in Python, with token budgets and run monitoring in a TUI.",
+      "best_for": "Teams automating complex tasks with several cooperating agents.",
+      "not_for": "README is partly marketing and heavy on feature names. A desktop installer is the quick path; check docs for library use.",
+      "keywords": [
+        "jiuwenswarm",
+        "agent swarm",
+        "multi-agent collaboration",
+        "openjiuwen",
+        "swarmflow",
+        "skill self-evolution"
+      ]
+    },
+    {
+      "id": "open-legal-products/mike",
+      "name": "Mike (MikeOSS)",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "template"
+      ],
+      "tags": [
+        "legal",
+        "document-review",
+        "nextjs",
+        "supabase",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Fork or self-host a legal AI app for document review, drafting and case research.",
+      "why": "A full stack with a Word add-in, CourtListener research and local Ollama support.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source legal AI platform. It uses a Next.js frontend, Express backend, Supabase and R2-compatible storage. Features include chatting with documents, suggested edits, tabular review, citation checks and Ollama models.",
+      "best_for": "Starting point for a document-review or legal research product.",
+      "not_for": "AGPL-3.0. Bundled local credentials are for development only. Not legal advice, and output needs human review.",
+      "keywords": [
+        "legal ai",
+        "contract review",
+        "document review platform",
+        "legal research",
+        "harvey alternative",
+        "word add-in",
+        "courtlistener"
+      ]
+    },
+    {
+      "id": "666ghj/MiroFish",
+      "name": "MiroFish",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "engine"
+      ],
+      "tags": [
+        "multi-agent",
+        "simulation",
+        "prediction",
+        "swarm",
+        "knowledge-graph"
+      ],
+      "ecosystems": [
+        "python",
+        "docker"
+      ],
+      "use_for": "Simulate how many AI agents react to a news item or document, to explore possible outcomes.",
+      "why": "Builds a parallel world of agents with memory and personalities and lets you inject variables.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "MiroFish takes seed material such as news, policy drafts or a story, builds a simulated world of many agents with personalities and memory, and lets them interact. You describe what to predict and get a report plus an interactive simulation.",
+      "best_for": "You want to experiment with large agent-based social simulations or scenario rehearsal.",
+      "not_for": "AGPL-3.0, and setup needs a Zep API key. Predictions come from LLM role-play, so treat them as exploration, not evidence.",
+      "keywords": [
+        "mirofish",
+        "swarm intelligence engine",
+        "multi agent simulation",
+        "ai prediction engine",
+        "social simulation agents",
+        "public opinion simulation",
+        "digital sandbox agents"
+      ]
+    },
+    {
+      "id": "OpenCoworkAI/open-codesign",
+      "name": "Open CoDesign",
+      "category": "agent-apps",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "ai-design",
+        "prototyping",
+        "byok",
+        "local-first",
+        "multi-model"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Turn prompts into prototypes, slide decks and marketing assets locally with your own model.",
+      "why": "Bring your own key, supports many models, and can import Claude Code or Codex keys.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An MIT-licensed Electron desktop app that creates prototypes, slides and PDFs from prompts. It works with Claude, GPT, Gemini, Kimi, GLM and Ollama, supports DESIGN.md design systems, and uses permissioned local tools in workspace-backed sessions.",
+      "best_for": "An open alternative to Claude Design, v0 or Lovable that runs on your laptop with models you already pay for.",
+      "not_for": "A desktop app rather than an SDK. Output quality depends on the model you connect.",
+      "keywords": [
+        "claude design alternative",
+        "v0 alternative",
+        "prompt to prototype",
+        "local ai design tool",
+        "byok design app",
+        "lovable alternative",
+        "ai slides generator"
+      ]
+    },
+    {
+      "id": "leigest519/OpenGame",
+      "name": "OpenGame",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "game-generation",
+        "agentic-coding",
+        "web-games",
+        "headless",
+        "prompt-to-game"
+      ],
+      "ecosystems": [
+        "javascript"
+      ],
+      "use_for": "Generating a complete, playable web game end-to-end from a single text prompt using coding agents.",
+      "why": "Explicitly targets the cross-file consistency and scene-wiring failures that make LLMs stumble on full game builds.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenGame is an open-source agentic framework for end-to-end web game creation from a single prompt, run headlessly from the command line. It coordinates game-engine code, real-time loops and cross-file state to produce playable games, demonstrated with a gallery of generated games including a full platformer.",
+      "best_for": "Researchers and developers exploring prompt-to-game generation rather than hand-coding a game engine.",
+      "not_for": "Currently headless/one-shot only, with no interactive editing mode documented yet.",
+      "keywords": [
+        "prompt to game generator",
+        "agentic game creation",
+        "opengame framework",
+        "ai generated web game",
+        "llm game development",
+        "text to game ai"
+      ]
+    },
+    {
+      "id": "THU-MAIC/OpenMAIC",
+      "name": "OpenMAIC",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "skill"
+      ],
+      "tags": [
+        "education",
+        "multi-agent",
+        "classroom",
+        "slides",
+        "quiz"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Turn a topic or document into an interactive AI classroom with slides, quizzes and AI teachers.",
+      "why": "Multi-agent teachers and classmates talk, draw on a whiteboard, and export to PPTX or offline HTML.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "OpenMAIC is an open-source platform that generates lessons from a topic or document. AI teachers and peers present slides, quizzes, interactive simulations and project-based activities. It also ships a Skill so agents like OpenClaw or Codex can generate classrooms.",
+      "best_for": "Building or hosting an AI-generated classroom or course tool, or adding lesson generation to an agent.",
+      "not_for": "Version 1.2 needs PostgreSQL and a long-running server, so Vercel deployments stay on 1.1.x. A full platform, not a small library.",
+      "keywords": [
+        "ai classroom",
+        "lesson generator",
+        "multi-agent teaching",
+        "interactive course",
+        "ai teacher",
+        "slides and quiz generator",
+        "education platform"
+      ]
+    },
+    {
+      "id": "openocta/openocta",
+      "name": "OpenOcta",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "aiops",
+        "itops",
+        "monitoring",
+        "mcp",
+        "desktop"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Run an AI ops agent that does alert analysis, scheduled inspections and data Q&A across Zabbix, Prometheus and Kubernetes.",
+      "why": "An IT-ops-focused agent as a single Go binary, with a desktop UI, a knowledge vault and China IM channels.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source AIOps agent for Windows and macOS. It aggregates alerts and correlates metrics, logs and changes, runs inspections written in natural language, and connects tools through skills and MCP. It can take tasks from WeCom, DingTalk and Feishu.",
+      "best_for": "IT operations and SRE teams who want a self-installed ops agent with desktop UI and local chat channels.",
+      "not_for": "GPL-3.0 licensed, which affects closed-source reuse. Comparison claims against OpenClaw and Hermes are the project's own.",
+      "keywords": [
+        "aiops agent",
+        "it ops ai agent",
+        "alert root cause analysis ai",
+        "zabbix prometheus agent",
+        "sre ai assistant",
+        "openocta"
+      ]
+    },
+    {
+      "id": "alphaXiv/OpenResearch",
+      "name": "OpenResearch",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "research-agents",
+        "experiments",
+        "desktop",
+        "local-first",
+        "literature"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run research agents that review papers, form hypotheses, run experiments and log every result locally.",
+      "why": "Works with Claude Code, Codex, OpenCode and Cursor, and records experiments in a local SQL database.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local-first harness and desktop workspace for research agents. It links to alphaXiv, bioRxiv and PubMed for literature, runs experiments locally, over SSH or on Hugging Face Jobs, and keeps logs, code and artifacts on your machine.",
+      "best_for": "Researchers who want a coding agent to run and track experiments with memory of past results.",
+      "not_for": "Official builds send opt-out usage analytics. Windows is beta.",
+      "keywords": [
+        "openresearch",
+        "research agent",
+        "autoresearch",
+        "experiment tracking agent",
+        "alphaxiv",
+        "literature review agent"
+      ]
+    },
+    {
+      "id": "synthetic-sciences/openscience",
+      "name": "OpenScience",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "research-agent",
+        "science",
+        "notebooks",
+        "literature",
+        "workbench"
+      ],
+      "ecosystems": [
+        "typescript",
+        "python"
+      ],
+      "use_for": "Run an AI research agent that reads papers, runs code and experiments, and writes up results.",
+      "why": "Every step is visible and logged, with real shell, Python and R kernels and many bundled science skills.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenScience is a research agent with a workbench around it. You describe a goal; it plans, searches literature, runs code and experiments, and reports checkable results. It runs as a desktop app, browser workspace or terminal command on your files, with hundreds of science skills and database connectors such as PubMed and UniProt.",
+      "best_for": "You want an inspectable agent for research tasks like literature review, data analysis and reproducing a claim.",
+      "not_for": "Aimed at scientific research work, not general app development. You still own the judgment on results. Heavier than a plain agent SDK.",
+      "keywords": [
+        "ai research agent",
+        "scientific workbench",
+        "literature review agent",
+        "reproduce experiments",
+        "pubmed arxiv agent",
+        "science skills",
+        "research assistant open source"
+      ]
+    },
+    {
+      "id": "TokenRhythm/opensquilla",
+      "name": "OpenSquilla",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "agent",
+        "model-routing",
+        "memory",
+        "sandbox",
+        "multi-provider"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run a token-efficient agent that routes each turn to the cheapest capable model, via CLI, web UI or chat.",
+      "why": "A local LightGBM and ONNX router classifies every turn on-device before choosing a model tier.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A microkernel AI agent where Web UI, CLI and chat channels share one turn loop. It adds persistent memory, a layered sandbox, web search and on-device embeddings. A provider layer covers 20+ LLM providers.",
+      "best_for": "Agents where cost control across many models matters.",
+      "not_for": "Reporting is on by default and can be switched off in Privacy settings. The routing quality claims are the project's own.",
+      "keywords": [
+        "opensquilla",
+        "model router agent",
+        "token efficient agent",
+        "cheapest model routing",
+        "microkernel agent",
+        "multi-provider agent"
+      ]
+    },
+    {
+      "id": "HKUDS/Paper2Slides",
+      "name": "Paper2Slides",
+      "category": "agent-apps",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "slides",
+        "pdf",
+        "rag",
+        "llm",
+        "posters"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Turn research papers and documents into slides and posters with an LLM.",
+      "why": "Links generated slide content back to the source and offers a fast mode and a RAG mode.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Python tool that reads PDF, Word, Excel, PowerPoint and Markdown files and generates slides or posters. Normal mode builds a RAG index for long documents. Fast mode skips indexing and queries the LLM directly.",
+      "best_for": "Making a first-draft slide deck or poster from a paper or report, with themes or a natural-language style.",
+      "not_for": "Needs an LLM API. Not a general slide editor or presentation library. Output quality depends on the model and source.",
+      "keywords": [
+        "paper to slides",
+        "pdf to powerpoint",
+        "research poster generator",
+        "ai presentation",
+        "document to slides",
+        "paper2slides",
+        "rag slides"
+      ]
+    },
+    {
+      "id": "dwzhu-pku/PaperBanana",
+      "name": "PaperBanana",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "app"
+      ],
+      "tags": [
+        "academic-illustration",
+        "multi-agent",
+        "diagrams",
+        "image-generation",
+        "research"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate academic paper diagrams and plots with a five-agent pipeline.",
+      "why": "A retriever, planner, stylist, visualizer and critic work in a refinement loop.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Orchestrates five agents: Retriever picks reference diagrams, Planner writes a description, Stylist applies academic style, Visualizer renders it and Critic iterates. Run it through main.py with several experiment modes, from vanilla to the full pipeline.",
+      "best_for": "Researchers who need figures for papers and want to study or extend an agent pipeline for it.",
+      "not_for": "The README admits generation is still not fully reliable. Needs image-generation model access.",
+      "keywords": [
+        "paperbanana",
+        "academic figure generation",
+        "paper diagram ai",
+        "papervizagent",
+        "scientific illustration agents",
+        "method diagram generator"
+      ]
+    },
+    {
+      "id": "OpenBMB/PilotDeck",
+      "name": "PilotDeck",
+      "category": "agent-apps",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "agent-os",
+        "workspace",
+        "memory",
+        "skills",
+        "productivity"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run long, multi-project agent work with isolated workspaces and traceable memory.",
+      "why": "Each workspace has its own files, memory and skills, and memory is editable.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source agent operating system built around workspaces. Each project gets its own file system, memory store and skills. Memory is visible and editable, with idle-time consolidation, cost tracking and task routing.",
+      "best_for": "Long-running, multi-project agent work where you must inspect and fix what the agent remembers.",
+      "not_for": "AGPL-3.0 license limits closed-source reuse. It is a full platform, not a small library.",
+      "keywords": [
+        "agent operating system",
+        "agent workspace",
+        "white-box memory",
+        "agent harness",
+        "long-running agents",
+        "openbmb"
+      ]
+    },
+    {
+      "id": "sapientinc/PRAXIST",
+      "name": "Praxist",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "autonomous-research",
+        "evaluation",
+        "multi-agent",
+        "optimization",
+        "experiments"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run parallel research agents on a project with a measurable goal, across generations of experiments.",
+      "why": "Keeps evidence, ranks results on multiple metrics, and feeds findings into the next generation.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Praxist coordinates parallel research peers, task-owned evaluation and durable evidence over several generations. You give it a runnable project and a measurable objective. It includes examples, task templates, resume and replay.",
+      "best_for": "Optimizing something that already runs and can be scored, where the best approach is unknown.",
+      "not_for": "Open-ended research with no measurable metric. The licence is not clearly stated (NOASSERTION), so check it before building on it.",
+      "keywords": [
+        "autonomous research agent",
+        "automated experiments",
+        "parallel research agents",
+        "quality diversity search",
+        "ai r&d system",
+        "praxist",
+        "evaluation harness"
+      ]
+    },
+    {
+      "id": "simonlin1212/TradingAgents-astock",
+      "name": "TradingAgents-Astock",
+      "category": "agent-apps",
+      "kinds": [
+        "framework",
+        "app"
+      ],
+      "tags": [
+        "multi-agent",
+        "a-share",
+        "investment-research",
+        "langchain",
+        "finance"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run a multi-agent research and debate workflow on Chinese A-share stocks.",
+      "why": "Adapts TradingAgents to A-share data and rules, with seven analysts and bull/bear debate.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A fork of TradingAgents for China's A-share market. It swaps in free A-share data sources, adds policy, hot-money and lockup analysts, applies T+1 and price-limit rules, and outputs Chinese reports. It has a Streamlit web UI and a CLI.",
+      "best_for": "Research or teaching on LLM-based investment analysis for the A-share market.",
+      "not_for": "Research and teaching only; it gives no investment advice. Built on Chinese data providers and LangChain.",
+      "keywords": [
+        "a-share ai agents",
+        "tradingagents fork",
+        "chinese stock analysis llm",
+        "multi agent trading research",
+        "bull bear debate",
+        "stock research agent"
+      ]
+    }
+  ]
+}

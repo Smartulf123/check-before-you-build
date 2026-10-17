@@ -1,0 +1,870 @@
+{
+  "category": "business-skills",
+  "entries": [
+    {
+      "id": "simonlin1212/a-stock-data",
+      "name": "a-stock-data",
+      "category": "business-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "china-a-shares",
+        "market-data",
+        "agent-skill",
+        "finance",
+        "data-toolkit"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Give an AI coding agent ready-made code to pull Chinese A-share market data from many free sources.",
+      "why": "Wraps 34 data sources and 87 endpoints so you skip each source's quirks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A single self-contained skill file (structured Markdown with embedded Python) that gathers A-share and related market data: K-lines, ticks, reports, fund flow, news, financials, filings, futures and more. It lists backup sources if a main one is blocked. It works with Claude Code, Codex and similar agents.",
+      "best_for": "Building research or analysis tools on Chinese stock data with an AI coding agent, without paying for a data API.",
+      "not_for": "Backtesting: the README says it only fetches data and ships no backtest engine. Docs are mainly Chinese and rely on scraped public sources that can break.",
+      "keywords": [
+        "a-share data",
+        "china stock data",
+        "akshare alternative",
+        "stock k-line api",
+        "chinese stock market skill",
+        "tushare alternative",
+        "claude code finance skill"
+      ]
+    },
+    {
+      "id": "xbtlin/ai-berkshire",
+      "name": "AI Berkshire",
+      "category": "business-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "investing",
+        "research",
+        "claude-code",
+        "codex",
+        "multi-agent",
+        "value-investing"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Run structured value-investing research on a company with Claude Code or Codex skills.",
+      "why": "Four investor viewpoints argue against each other and the skills force a pass, fail or grey-area verdict.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "AI Berkshire is a set of skills for Claude Code and Codex that turns the methods of Buffett, Munger, Duan Yongping and Li Lu into agent workflows. Multiple agents analyse a company from different angles and the output must give a clear verdict and price ranges. The README is mainly Chinese.",
+      "best_for": "Individual investors who want a repeatable, skeptical research process for stocks.",
+      "not_for": "Financial advice or trading automation. The README's track record is the author's own claim, and it includes a disclaimer.",
+      "keywords": [
+        "stock research skills",
+        "value investing ai",
+        "claude code investing",
+        "buffett munger agent",
+        "equity research agent",
+        "investment analysis skills",
+        "multi-agent stock analysis",
+        "价值投资"
+      ]
+    },
+    {
+      "id": "MadsLorentzen/ai-job-search",
+      "name": "AI Job Search",
+      "category": "business-skills",
+      "kinds": [
+        "template",
+        "skill"
+      ],
+      "tags": [
+        "job-search",
+        "cv",
+        "cover-letter",
+        "claude-code",
+        "latex"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "latex"
+      ],
+      "use_for": "Fork a Claude Code workflow that evaluates job postings and drafts tailored CVs and cover letters.",
+      "why": "A drafter-reviewer pipeline compiles and visually checks the PDFs until the layout is clean.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A job-application framework on Claude Code. You fill in a profile, then commands like /scrape and /apply evaluate fit, and draft a tailored LaTeX CV and cover letter. A verification loop inspects each PDF. Portal search skills target Danish job boards.",
+      "best_for": "You want a fork-and-own job-search workflow, and can swap in your local job portals.",
+      "not_for": "Job-search skills are built for the Danish market and need adapting elsewhere. It is a personal workflow, not a reusable library.",
+      "keywords": [
+        "ai job search",
+        "claude code job application",
+        "cv tailoring latex",
+        "cover letter generator claude",
+        "job portal scraper skill",
+        "apply command",
+        "interview prep ai"
+      ]
+    },
+    {
+      "id": "ericosiu/ai-marketing-skills",
+      "name": "AI Marketing Skills",
+      "category": "business-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "marketing",
+        "sales",
+        "outbound",
+        "seo",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "python",
+        "markdown"
+      ],
+      "use_for": "Add ready-made marketing and sales workflows to Claude Code, from experiments to outbound.",
+      "why": "Full workflows with scripts and statistics, not just prompts.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A set of Claude Code skills for marketing and sales teams, grouped into growth experiments, sales pipeline, content ops, SEO, outbound and finance. Examples include an experiment engine with real statistics, a deal resurrector and an ICP learner.",
+      "best_for": "Marketing and revenue teams who want to run these workflows in Claude Code or another coding agent.",
+      "not_for": "Built around the authors' own business stack, so expect to adapt scripts and connect your own tools.",
+      "keywords": [
+        "marketing skills claude code",
+        "sales automation agent",
+        "outbound skills",
+        "growth experiments ai",
+        "seo skills",
+        "icp learner",
+        "ai marketing"
+      ]
+    },
+    {
+      "id": "Hisn00w/ASu-skills",
+      "name": "ASu-skills",
+      "category": "business-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "job-search",
+        "resume",
+        "interview",
+        "chinese",
+        "agent-skills"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "codex"
+      ],
+      "use_for": "Use nine job-search skills for resumes, job matching, applications, interview prep and open-source contributions.",
+      "why": "Installs on Codex, Claude Code and several other agents from one shared skills folder.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Chinese job-search workflow plugin with nine separate commands, including resume improvement, resume making, job matching, application filling, interview prep and campus-recruitment tracking. It supports Codex, Claude Code and other agents.",
+      "best_for": "Chinese-speaking job seekers, especially developers, who want an agent to help with applications.",
+      "not_for": "Written in Chinese and aimed at the Chinese job market. Not a general software library.",
+      "keywords": [
+        "resume skill",
+        "简历 优化 skill",
+        "job application agent",
+        "interview prep claude",
+        "求职 skills",
+        "校招 管理",
+        "resume generator agent"
+      ]
+    },
+    {
+      "id": "career-ops-hq/career-ops",
+      "name": "career-ops",
+      "category": "business-skills",
+      "kinds": [
+        "skill",
+        "app"
+      ],
+      "tags": [
+        "job-search",
+        "cv-tailoring",
+        "local-first",
+        "ats",
+        "agent-workflow"
+      ],
+      "ecosystems": [
+        "node",
+        "claude-code"
+      ],
+      "use_for": "Fork a local AI workflow that scores job postings against your CV and drafts tailored applications.",
+      "why": "Keeps a human in the loop: it drafts everything but never submits or emails for you.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "career-ops runs inside your AI coding tool. It checks if a posting is still open, scores it against your CV, tailors a CV and cover letter, and drafts answers and outreach notes. Data stays on your machine and nothing is auto-submitted.",
+      "best_for": "You want a personal, hackable job-search assistant built on an AI coding agent.",
+      "not_for": "A personal-workflow tool, not a general library. It sends your CV to the AI provider you choose and can reword facts, so review every output.",
+      "keywords": [
+        "career-ops",
+        "ai job search",
+        "job application agent",
+        "cv tailoring ai",
+        "resume cover letter generator",
+        "job fit scoring",
+        "application tracker"
+      ]
+    },
+    {
+      "id": "anthropics/financial-services",
+      "name": "Claude for Financial Services",
+      "category": "business-skills",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "finance",
+        "agents",
+        "plugins",
+        "investment-banking",
+        "research"
+      ],
+      "ecosystems": [
+        "claude",
+        "markdown"
+      ],
+      "use_for": "Start from ready-made finance agents and skills for banking, equity research, private equity and wealth work.",
+      "why": "Official reference agents that install as a Cowork plugin or deploy through the Managed Agents API.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "A repo of reference agents, skills, slash commands and data connectors for finance workflows such as pitch decks, comps, DCF and reconciliation. The same prompts and skills run as a Claude Cowork plugin or as Claude Managed Agent templates.",
+      "best_for": "Finance teams or builders who want a starting point for analyst-style agents they can tune to their firm.",
+      "not_for": "Starting points that draft work for human review. They do not give advice, trade, or approve anything, and they are tied to Claude.",
+      "keywords": [
+        "finance agent",
+        "investment banking ai",
+        "equity research skills",
+        "claude financial plugins",
+        "dcf comps skill",
+        "managed agents template",
+        "cowork plugin finance"
+      ]
+    },
+    {
+      "id": "anthropics/claude-for-legal",
+      "name": "Claude for Legal",
+      "category": "business-skills",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "legal",
+        "plugins",
+        "managed-agents",
+        "connectors",
+        "reference"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "claude-cowork"
+      ],
+      "use_for": "Use or adapt reference legal agents, skills and connectors for in-house legal workflows.",
+      "why": "Official Anthropic reference set that runs as plugins or via Managed Agents API.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A suite of agents, skills and data connectors covering commercial, privacy, product, corporate, employment, litigation, regulatory, AI governance and IP work. The same source installs as a Claude Cowork or Claude Code plugin or deploys through the Managed Agents API.",
+      "best_for": "Legal teams and builders who want a starting point for legal drafting and review agents.",
+      "not_for": "Giving legal advice. The README says every output is a draft for attorney review, not legal advice.",
+      "keywords": [
+        "legal ai agents",
+        "claude legal plugin",
+        "contract review skill",
+        "in-house legal automation",
+        "legal skills claude",
+        "privacy legal plugin",
+        "managed agents legal"
+      ]
+    },
+    {
+      "id": "AgriciDaniel/claude-seo",
+      "name": "Claude SEO",
+      "category": "business-skills",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "seo",
+        "audit",
+        "schema",
+        "geo",
+        "core-web-vitals"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "python"
+      ],
+      "use_for": "Run SEO audits from Claude Code across technical SEO, content quality, schema, AI search and local SEO.",
+      "why": "Runs many specialist agents in parallel and gives a prioritised action plan.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source SEO analysis plugin for Claude Code with 26 sub-skills and 19 specialist agents. Audits cover technical SEO, E-E-A-T, schema, AI search optimisation, local, e-commerce and international SEO. It checks Core Web Vitals and reports with an action plan.",
+      "best_for": "Site owners and developers who want an agent-run SEO audit with recommendations.",
+      "not_for": "Replacing paid backlink or rank data tools; some features need Google API keys. A private mirror gets early features.",
+      "keywords": [
+        "seo skill",
+        "claude code seo",
+        "seo audit agent",
+        "schema markup checker",
+        "geo aeo optimization",
+        "llms.txt",
+        "core web vitals audit"
+      ]
+    },
+    {
+      "id": "tradermonty/claude-trading-skills",
+      "name": "Claude Trading Skills",
+      "category": "business-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "trading",
+        "claude-code-skills",
+        "market-analysis",
+        "risk-management",
+        "journaling"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Structuring market review, risk management, trade planning and journaling workflows for individual investors using Claude skills.",
+      "why": "Built first as the author's own real trading workflow, then shared openly for others with the same constraints.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Claude Trading Skills is a toolkit of Claude Skills for time-constrained individual investors who combine long-term investing with disciplined swing trading. It structures market review, risk management, trade planning and journaling rather than outsourcing buy/sell decisions to AI, and works with public CSVs and chart screenshots by default.",
+      "best_for": "Individual investors wanting a structured, skill-based review and journaling process on top of Claude.",
+      "not_for": "Not a signal service or a promise of profitability, and it does not make buy or sell decisions for you.",
+      "keywords": [
+        "claude trading skills",
+        "claude code trading",
+        "market analysis skill",
+        "swing trading toolkit",
+        "trading journal skill",
+        "claude skills investing"
+      ]
+    },
+    {
+      "id": "dontbesilent2025/dbskill",
+      "name": "dbskill",
+      "category": "business-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "agent-skills",
+        "business",
+        "content",
+        "chinese",
+        "decision-making"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "codex"
+      ],
+      "use_for": "Add Chinese-language business diagnosis, content and decision skills to Claude Code, Codex and other agents.",
+      "why": "One /dbs entry point routes you to the right skill for your question.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skills toolbox from dontbesilent covering business judgement, content creation, action decisions, learning and knowledge management. Install with the Skills CLI or as a Claude Code plugin. Methods were distilled from 16,152 public tweets.",
+      "best_for": "Chinese-speaking founders and creators who want coaching-style skills inside their coding agent.",
+      "not_for": "Building software. These are advice and writing skills, mostly in Chinese, and the license is unclear (NOASSERTION).",
+      "keywords": [
+        "business diagnosis skill",
+        "claude code skills chinese",
+        "content creation skills",
+        "dontbesilent",
+        "agent skills for founders",
+        "dbs diagnosis",
+        "skills cli"
+      ]
+    },
+    {
+      "id": "himself65/finance-skills",
+      "name": "finance-skills",
+      "category": "business-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "finance",
+        "yfinance",
+        "agent-skills",
+        "stocks",
+        "analysis"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Give an agent skills for stock analysis, earnings, valuation and read-only market and social research.",
+      "why": "Grouped plugin sets installable with npx plugins or npx skills for many agents.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A collection of agent skills following the Agent Skills standard. Market-analysis skills use yfinance for valuation (DCF, relative, SOTP), earnings previews and recaps, estimates and options payoff. Social readers cover Twitter/X, Discord, LinkedIn, Telegram and more.",
+      "best_for": "Analysts and builders who want an agent to do repeatable market and company research.",
+      "not_for": "Investment decisions: the README says it is educational only and not financial advice. Data quality depends on yfinance.",
+      "keywords": [
+        "finance agent skills",
+        "yfinance claude skill",
+        "dcf valuation skill",
+        "earnings analysis ai",
+        "stock research agent",
+        "trading skills",
+        "finance plugin claude code"
+      ]
+    },
+    {
+      "id": "zubair-trabzada/geo-seo-claude",
+      "name": "GEO-SEO Claude",
+      "category": "business-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "seo",
+        "geo",
+        "ai-search",
+        "audit",
+        "schema-markup"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Audit a site's visibility in AI search with Claude Code commands for citability, crawlers and schema.",
+      "why": "Parallel-subagent audits and commands for llms.txt, brand mentions and schema.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Claude Code skill with /geo commands for full audits, a 60-second snapshot, citability scoring, AI crawler checks, llms.txt, brand mentions, platform tips, schema markup and PDF reports. Needs Python 3.10+ and the Claude Code CLI.",
+      "best_for": "Marketers and agencies auditing sites for ChatGPT, Perplexity, Gemini and AI Overviews while keeping SEO basics.",
+      "not_for": "Proven results. The market figures in the README are marketing claims, and it requires Claude Code.",
+      "keywords": [
+        "generative engine optimization",
+        "geo seo audit",
+        "ai search optimization",
+        "llms.txt generator",
+        "claude code seo skill",
+        "ai citability score",
+        "geo seo claude"
+      ]
+    },
+    {
+      "id": "anthropics/knowledge-work-plugins",
+      "name": "Knowledge Work Plugins",
+      "category": "business-skills",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "claude-cowork",
+        "plugins",
+        "skills",
+        "slash-commands",
+        "knowledge-work"
+      ],
+      "ecosystems": [
+        "claude",
+        "markdown"
+      ],
+      "use_for": "Install role-based Claude plugins for sales, support, finance, productivity and other jobs, then tailor them.",
+      "why": "Official examples of the plugin layout: manifest, MCP connections, commands and skills.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "A set of 11 open-source plugins for Claude Cowork that also work in Claude Code. Each bundles skills, connectors, slash commands and sub-agents for one job function. They are meant as a starting point you change to match your tools and terms.",
+      "best_for": "Learning the plugin structure, or customizing a ready role plugin for your team.",
+      "not_for": "Aimed at office work, not software engineering. Many connectors need accounts with the linked services.",
+      "keywords": [
+        "claude cowork plugins",
+        "claude code plugin marketplace",
+        "sales plugin claude",
+        "customer support plugin",
+        "slash commands plugin",
+        "claude plugin examples",
+        "role-based agent skills"
+      ]
+    },
+    {
+      "id": "sergebulaev/linkedin-skills",
+      "name": "LinkedIn Marketing Skills",
+      "category": "business-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "linkedin",
+        "content",
+        "marketing",
+        "social-media",
+        "skills"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "codex"
+      ],
+      "use_for": "Draft LinkedIn posts, comments and content plans in your voice from Claude Code or Codex.",
+      "why": "Twelve skills that strip AI tells and always show a draft for approval before anything is published.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A pack of 12 Claude Code and Codex skills for LinkedIn. They write posts, comments and replies in your voice, audit drafts for AI tells, reverse-engineer viral hooks, plan a weekly calendar and optimize profiles. Publishing goes through the Publora API only after you approve.",
+      "best_for": "Founders and marketers who want help writing and planning LinkedIn content from the terminal.",
+      "not_for": "LinkedIn only. Publishing relies on the third-party Publora API.",
+      "keywords": [
+        "linkedin post generator",
+        "linkedin skills claude",
+        "linkedin content plan",
+        "write linkedin comments",
+        "social media skill",
+        "humanize linkedin post"
+      ]
+    },
+    {
+      "id": "coreyhaines31/marketingskills",
+      "name": "Marketing Skills",
+      "category": "business-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "marketing",
+        "seo",
+        "copywriting",
+        "cro"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Give agents marketing skills for SEO audits, CRO, copywriting, analytics and growth.",
+      "why": "Most-installed marketing skill pack (~230k installs for seo-audit); MIT.",
+      "skill": "coreyhaines31/marketingskills/seo-audit",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Collection of marketing skills for coding agents: SEO audits, conversion optimization, copywriting, analytics and growth engineering. Works with Claude Code, Codex, Cursor, Windsurf and other Agent Skills hosts.",
+      "best_for": "Technical marketers and founders using agents for SEO, CRO, copy and growth tasks.",
+      "not_for": "Guidance prompts, not analytics software; connecting marketing accounts requires separate scoped credentials. Author promotes related paid services.",
+      "keywords": [
+        "seo audit",
+        "conversion optimization",
+        "copywriting",
+        "marketing",
+        "growth",
+        "analytics",
+        "landing page",
+        "agent skills",
+        "cro"
+      ]
+    },
+    {
+      "id": "nowork-studio/notfair-plugin",
+      "name": "NotFair Plugin",
+      "category": "business-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "seo",
+        "geo",
+        "marketing",
+        "ads",
+        "analytics"
+      ],
+      "ecosystems": [
+        "markdown",
+        "python"
+      ],
+      "use_for": "Give Claude Code or Codex ready workflows for SEO, GEO and paid-ad audits and changes.",
+      "why": "Focused, testable skills that use live Search Console, GA4 and ad platform data instead of generic advice.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A plugin of marketing skills for coding agents. Skills cover site and page audits, keyword research, technical SEO, AI-search visibility, and Google, Meta, X, LinkedIn, Reddit and TikTok ads. Each skill has a SKILL.md entry point and a readable WORKFLOW.md, and review-first boundaries guard live changes.",
+      "best_for": "You want an agent to audit a site, find wasted ad spend or run marketing workflows with reviewable steps.",
+      "not_for": "Live-data skills need access to your own ad, analytics and CMS accounts. Marketing focus only, not a general dev toolkit.",
+      "keywords": [
+        "seo skills claude code",
+        "geo aeo",
+        "google ads agent",
+        "marketing agent skills",
+        "search console analysis",
+        "ai search visibility",
+        "meta ads audit"
+      ]
+    },
+    {
+      "id": "phuryn/pm-skills",
+      "name": "PM Skills",
+      "category": "business-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "product-management",
+        "prd",
+        "roadmap"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Give an agent product-management workflows: PRDs, pre-mortems, prioritization, roadmaps",
+      "why": "100+ PM skills and commands; top skills each around 10k installs on skills.sh.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Marketplace of 69 product-management skills and 42 chained workflows across 9 plugins covering discovery, strategy, prioritization, PRDs, launch and growth. Built for Claude Code and Cowork, compatible with other assistants.",
+      "best_for": "Product managers wanting structured, framework-driven AI workflows for discovery, prioritization and roadmaps.",
+      "not_for": "PM-specific; not for engineering tasks. Frameworks are opinionated and output still needs your own judgment.",
+      "keywords": [
+        "product management",
+        "prd",
+        "roadmap",
+        "prioritization",
+        "pre-mortem",
+        "discovery",
+        "pm skills",
+        "claude code",
+        "strategy"
+      ]
+    },
+    {
+      "id": "deanpeters/Product-Manager-Skills",
+      "name": "Product Manager Skills",
+      "category": "business-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "product-management",
+        "frameworks",
+        "prd",
+        "strategy",
+        "agent-skills"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Give your agent 77 product-management frameworks such as problem framing, positioning and strategy.",
+      "why": "Each skill explains the why, failure modes and judgment, so it teaches the human too.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A library of PM frameworks as skills for Claude, Codex, ChatGPT and any agent that can read structured knowledge. Examples include a problem-framing canvas, positioning statement and a product strategy session. It is also a Claude Code plugin marketplace.",
+      "best_for": "Product managers who want their agent to follow known PM methods instead of generic output.",
+      "not_for": "Knowledge and process skills, not tools. Licence is listed as NOASSERTION, so check it.",
+      "keywords": [
+        "product manager skills",
+        "pm frameworks agent",
+        "prd writing skill",
+        "product strategy skill",
+        "claude product management",
+        "positioning statement"
+      ]
+    },
+    {
+      "id": "TheCraigHewitt/seomachine",
+      "name": "SEO Machine",
+      "category": "business-skills",
+      "kinds": [
+        "template",
+        "skill"
+      ],
+      "tags": [
+        "seo",
+        "content",
+        "claude-code",
+        "marketing",
+        "blog"
+      ],
+      "ecosystems": [
+        "markdown",
+        "python"
+      ],
+      "use_for": "Research, write, analyse and optimise long-form SEO blog content inside Claude Code.",
+      "why": "Bundles slash commands, specialist agents, 26 marketing skills and GA4, Search Console and DataForSEO links.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Claude Code workspace with commands like /research, /write, /rewrite and /optimize, plus agents for SEO, meta tags, internal links and editing. Brand voice and style files in a context folder steer the output. SEO analysis scores readability, keyword density and search intent.",
+      "best_for": "Businesses or marketers who want a repeatable blog workflow with Claude Code.",
+      "not_for": "Needs you to fill in context files first. Data features need Google and DataForSEO accounts. Content workflow only.",
+      "keywords": [
+        "seo machine",
+        "seo content claude code",
+        "blog writing workflow",
+        "seo optimization agent",
+        "content marketing skills",
+        "keyword research claude"
+      ]
+    },
+    {
+      "id": "charlie947/social-media-skills",
+      "name": "Social Media Skills",
+      "category": "business-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "linkedin",
+        "social-media",
+        "content",
+        "voice",
+        "carousel"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Give your agent skills for LinkedIn posts, voice matching, carousels and Reel scripts.",
+      "why": "Seventeen standalone skills that work with Codex and Claude.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A public toolkit of 17 skills as markdown files. They cover building your writing voice, post writing and scoring, niche research, content planning, Reel scripting, thumbnails and Gemini image prompts.",
+      "best_for": "Creators and marketers who write LinkedIn or social content with an agent.",
+      "not_for": "Not the maintainer's full private system. It is built around LinkedIn-style content and one author's methods.",
+      "keywords": [
+        "linkedin skills",
+        "social media agent skills",
+        "post writer",
+        "voice builder",
+        "carousel generator",
+        "reels script",
+        "content skills claude"
+      ]
+    },
+    {
+      "id": "imraywang/wewrite",
+      "name": "WeWrite",
+      "category": "business-skills",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "wechat",
+        "content-pipeline",
+        "agent-skill",
+        "writing",
+        "chinese"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Have an agent take a WeChat Official Account article from trending topic to finished draft, images, layout and draft-box push.",
+      "why": "A modular skill pack with 18 layout themes, writing personas and learning from your edits.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill for Claude Code, Codex and similar agents. One request runs topic search and scoring, source gathering, drafting and editorial review. Cover images, themed WeChat-compatible HTML and draft-box publishing are separate steps you can add. It also rewrites for Xiaohongshu and Douyin.",
+      "best_for": "Chinese-language creators running WeChat Official Accounts who want an agent to handle the whole pipeline.",
+      "not_for": "Non-WeChat publishing workflows or English content. Publishing needs explicit authorization and WeChat account access.",
+      "keywords": [
+        "wechat article generator",
+        "公众号 写作 skill",
+        "weixin official account agent",
+        "wechat draft box",
+        "公众号排版",
+        "claude code wechat",
+        "wewrite"
+      ]
+    },
+    {
+      "id": "mcncarl/yichen-skills",
+      "name": "yichen-skills",
+      "category": "business-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "creator-tools",
+        "x-articles",
+        "wechat",
+        "obsidian",
+        "agent-memory"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Use a set of creator skills for X article drafts, WeChat data capture and content workflows.",
+      "why": "Many ready skills for X, WeChat, Douyin and Xiaohongshu workflows.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A skill collection for Claude Code and Codex. It covers uploading Markdown articles to X Articles drafts, WeChat local capture and export, Douyin and Xiaohongshu fetching, Volcengine transcription, and an agent memory vault.",
+      "best_for": "Chinese-language creators who want ready skills for X and WeChat publishing and archiving.",
+      "not_for": "License is not stated. Skills are built around one author's workflows and need cookies, Playwright or local app data.",
+      "keywords": [
+        "x articles uploader",
+        "wechat export skill",
+        "obsidian to x",
+        "douyin fetch",
+        "claude code skills",
+        "creator skills",
+        "agent memory vault"
+      ]
+    },
+    {
+      "id": "handsomestWei/patent-disclosure-skill",
+      "name": "中国专利.skill (Patent Disclosure Skill)",
+      "category": "business-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "patent",
+        "chinese",
+        "obsidian",
+        "agent-skill",
+        "legal-docs"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Draft Chinese patent disclosures and filings, and read patents in plain language, with an agent.",
+      "why": "Covers disclosure, application files, patent reading, maps and office-action replies.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A set of agent skills for Chinese patents. They find patentable points, write disclosure documents and application files, explain patents into Obsidian notes and maps, and help draft replies to examination opinions.",
+      "best_for": "Inventors and engineers in China who need help turning projects into patent paperwork.",
+      "not_for": "Legal advice or non-Chinese patent systems. The README is in Chinese and the output still needs review by a patent professional.",
+      "keywords": [
+        "patent disclosure skill",
+        "china patent ai",
+        "专利交底书",
+        "patent drafting agent",
+        "patent reader obsidian",
+        "office action reply",
+        "专利 skill"
+      ]
+    }
+  ]
+}

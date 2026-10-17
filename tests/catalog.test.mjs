@@ -10,11 +10,11 @@ const entries = [
   { id: 'vercel/next.js', name: 'Next.js', category: 'web-frameworks', kinds: ['framework'], tags: ['react', 'website'], use_for: 'Build websites', why: 'Most popular React framework' },
 ];
 
-test('categories file: 50 categories and 20 domains, all consistent (SPEC §8.4)', async () => {
+test('categories file: 62 categories and 20 domains, all consistent (SPEC §8.4)', async () => {
   const cats = await catalog.loadCategories();
   const domains = await catalog.loadDomains();
-  assert.equal(cats.length, 50);
-  assert.equal(new Set(cats.map((c) => c.slug)).size, 50);
+  assert.equal(cats.length, 62);
+  assert.equal(new Set(cats.map((c) => c.slug)).size, 62);
   assert.ok(cats.every((c) => c.slug && c.name && c.description && c.group && c.queries?.length));
   assert.equal(domains.length, 20);
   const slugs = new Set(cats.map((c) => c.slug));

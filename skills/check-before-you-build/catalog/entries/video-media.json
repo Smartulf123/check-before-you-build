@@ -2,6 +2,43 @@
   "category": "video-media",
   "entries": [
     {
+      "id": "ArcReel/ArcReel",
+      "name": "ArcReel",
+      "category": "video-media",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "ai-video",
+        "storyboard",
+        "self-hosted",
+        "agents",
+        "short-video"
+      ],
+      "ecosystems": [
+        "python",
+        "docker"
+      ],
+      "use_for": "Self-host a pipeline that turns novels or scripts into storyboards, video clips and editable drafts.",
+      "why": "Keeps characters consistent across shots, tracks cost, and exports drafts for further editing.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted workbench that runs content analysis, asset creation, storyboards, media generation and export as a reviewable pipeline. It reuses reference images across shots, lets you redo single assets, and shows cost. Runs with Docker Compose.",
+      "best_for": "Building or forking a short-video or AI drama production tool with agent steps and several model providers.",
+      "not_for": "Capcut export: the README says the export targets the mainland China version of Jianying, and CapCut is untested. Docs are mainly Chinese. AGPL-3.0.",
+      "keywords": [
+        "ai video workbench",
+        "novel to video",
+        "storyboard generator",
+        "ai short drama",
+        "self-hosted video generation",
+        "jianying draft export",
+        "script to video"
+      ]
+    },
+    {
       "id": "WyattBlue/auto-editor",
       "name": "auto-editor",
       "category": "video-media",
@@ -34,6 +71,191 @@
         "premiere export",
         "davinci resolve",
         "dead air"
+      ]
+    },
+    {
+      "id": "Anionex/banana-slides",
+      "name": "Banana Slides",
+      "category": "video-media",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "slides",
+        "ppt",
+        "image-generation",
+        "presentation",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript",
+        "docker"
+      ],
+      "use_for": "Generate editable slide decks from an idea, outline or documents using image-generation models.",
+      "why": "Renders each page with an image model, accepts custom template images, and exports PPTX.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Banana Slides is an AI-native presentation generator. You give it an idea, outline, documents or template images, and it builds pages with image-generation models. You can edit by chatting, select regions to change, and export to PPTX or video. It runs locally with Docker. The README is mainly Chinese.",
+      "best_for": "Self-hosting or forking an AI slide generator with template control.",
+      "not_for": "Closed-source or SaaS use without care. It is AGPL-3.0, and it needs image and text model API access.",
+      "keywords": [
+        "ai ppt generator",
+        "ai slides",
+        "presentation generator",
+        "nano banana slides",
+        "pptx export",
+        "gamma alternative",
+        "text to slides",
+        "vibe ppt"
+      ]
+    },
+    {
+      "id": "AIEraDev/Clypra",
+      "name": "Clypra",
+      "category": "video-media",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "video-editor",
+        "tauri",
+        "rust",
+        "ffmpeg",
+        "timeline"
+      ],
+      "ecosystems": [
+        "rust",
+        "typescript",
+        "tauri"
+      ],
+      "use_for": "Fork or study a Tauri video editor with a frame-accurate timeline and hardware-accelerated decoding.",
+      "why": "Rust decoding with GPU support and FFmpeg under a React 19 UI, MIT licensed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A free desktop video editor built on Rust, Tauri v2 and React 19. It has a multi-track timeline, GPU decoding, waveforms, text overlays, filters, and exports to MP4, MOV, WebM and ProRes.",
+      "best_for": "A starting point or code reference for a native-feeling desktop video editor.",
+      "not_for": "An end-user app, not a library or SDK, so there is no embeddable editing API in the README. Performance claims are the project's own.",
+      "keywords": [
+        "open source video editor",
+        "tauri video editor",
+        "rust video editor",
+        "desktop video editing app",
+        "react video timeline",
+        "capcut alternative"
+      ]
+    },
+    {
+      "id": "jub0t/Concat",
+      "name": "Concat",
+      "category": "video-media",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "video-editor",
+        "capcut-alternative",
+        "local-ai",
+        "json-rpc",
+        "gpu"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Edit video locally with captions, voices and cutouts, or script edits through a JSON-RPC API.",
+      "why": "A Rust engine with a GPU compositor and a JSON-RPC API that agents can drive.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A free video editor for macOS, Windows, Linux and Android. It has local Whisper captions, text-to-speech with voice cloning, background removal, keyframes, effects and multi-track editing. Export reaches 4K with H.264, HEVC or AV1.",
+      "best_for": "A CapCut replacement without watermarks or accounts, or scripted and agent-driven video cutting.",
+      "not_for": "AGPL-3.0 license, which limits closed-source use. It is an editor app, not an embeddable video library. AI models download once in Settings.",
+      "keywords": [
+        "capcut alternative",
+        "open source video editor",
+        "ai video editor api",
+        "local whisper captions",
+        "video editing json-rpc",
+        "rust video editor"
+      ]
+    },
+    {
+      "id": "nikopueringer/CorridorKey",
+      "name": "CorridorKey",
+      "category": "video-media",
+      "kinds": [
+        "engine",
+        "cli"
+      ],
+      "tags": [
+        "green-screen",
+        "keying",
+        "matting",
+        "vfx",
+        "exr",
+        "neural-network"
+      ],
+      "ecosystems": [
+        "python",
+        "pytorch"
+      ],
+      "use_for": "Key green or blue screen footage, recovering true foreground colour and soft alpha at edges.",
+      "why": "Predicts straight foreground colour and linear alpha, keeping hair, motion blur and translucency.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "CorridorKey is a neural network that separates a foreground subject from a green screen. For each pixel it predicts the true foreground colour and a clean linear alpha, rather than a binary mask. It handles green or blue screens, scales to 4K and reads and writes 16-bit and 32-bit linear EXR.",
+      "best_for": "VFX and compositing work in Nuke, Fusion or Resolve where edge quality matters.",
+      "not_for": "Commercial use without reading the licence, which is non-standard. Blue-screen support is currently Torch-only.",
+      "keywords": [
+        "green screen removal",
+        "ai chroma key",
+        "video matting",
+        "alpha matte",
+        "despill",
+        "rotoscoping ai",
+        "exr keyer",
+        "background removal video"
+      ]
+    },
+    {
+      "id": "diffusionstudio/editor",
+      "name": "Diffusion Studio",
+      "category": "video-media",
+      "kinds": [
+        "app",
+        "mcp",
+        "skill"
+      ],
+      "tags": [
+        "video-editing",
+        "agents",
+        "motion-graphics",
+        "mcp",
+        "solidjs"
+      ],
+      "ecosystems": [
+        "typescript",
+        "solidjs"
+      ],
+      "use_for": "Let a coding agent edit video, add captions and build motion graphics by driving a code-based timeline.",
+      "why": "Video is defined as SolidJS code, so the canvas and the code stay in sync and agents can edit both.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop app whose document source is SolidJS modules rendered to a video canvas. It registers an MCP server with Claude Code, Codex, Cursor and others, plus command-line tools so agents can watch footage, edit and render.",
+      "best_for": "Letting an agent cut footage, make promos or explainers, or clip long videos from plain-language requests.",
+      "not_for": "Desktop app for Apple Silicon macOS and Windows x64 only. Needs an agent to drive it. MPL-2.0 licensed.",
+      "keywords": [
+        "agent video editor",
+        "claude code video editing",
+        "ai video editing mcp",
+        "motion graphics with code",
+        "auto subtitles video",
+        "diffusion studio"
       ]
     },
     {
@@ -177,6 +399,42 @@
         "video trim",
         "thumbnail",
         "javascript ffmpeg"
+      ]
+    },
+    {
+      "id": "FireRedTeam/FireRed-OpenStoryline",
+      "name": "FireRed-OpenStoryline",
+      "category": "video-media",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "video-editing",
+        "agent",
+        "llm",
+        "storytelling",
+        "style-skills"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Edit videos by chatting with an LLM agent that plans the cut, finds media, writes narration and picks music.",
+      "why": "Human-in-the-loop editing with reusable style skills and conversational refinement of clips, color and fonts.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An AI video editing agent that turns a natural-language request into a finished video. It searches for media, segments clips, writes a script, recommends music, voiceover and fonts, and lets you refine by conversation. You configure API keys in config.toml.",
+      "best_for": "Building or running a chat-driven video editor, especially for short narrated or commentary videos.",
+      "not_for": "Offline use or exact frame-level editing: it needs LLM and service API keys, and results depend on those models.",
+      "keywords": [
+        "ai video editing agent",
+        "chat video editor",
+        "llm video editing",
+        "auto video script",
+        "video agent open source",
+        "firered storyline",
+        "narrated video generator"
       ]
     },
     {
@@ -332,6 +590,44 @@
       ]
     },
     {
+      "id": "nexu-io/html-video",
+      "name": "html-video",
+      "category": "video-media",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "video",
+        "html-to-video",
+        "agents",
+        "templates",
+        "hyperframes"
+      ],
+      "ecosystems": [
+        "typescript",
+        "html",
+        "ffmpeg"
+      ],
+      "use_for": "Have a coding agent turn a prompt, article link or repo into a rendered MP4 from HTML.",
+      "why": "A meta-layer over render engines with one adapter interface, 21 templates and no per-render fees.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Works with your local coding agent to turn a prompt, article or GitHub repo into a storyboard and HTML frames, then renders a real MP4 on your machine. Hyperframes is the shipped engine using headless Chromium and ffmpeg; Remotion and others are planned. Includes templates and optional AI soundtrack.",
+      "best_for": "Generating explainer, promo or repo videos locally from an agent without paid render services.",
+      "not_for": "Only one render engine is shipped today. Others are listed as planned.",
+      "keywords": [
+        "html to video",
+        "programmatic video agent",
+        "remotion alternative",
+        "article to video",
+        "github repo to video",
+        "ai video templates",
+        "hyperframes"
+      ]
+    },
+    {
       "id": "heygen-com/hyperframes",
       "name": "HyperFrames",
       "category": "video-media",
@@ -370,6 +666,76 @@
       ]
     },
     {
+      "id": "hypit-ai/hypit",
+      "name": "Hypit",
+      "category": "video-media",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "video",
+        "ai-agents",
+        "viral-clone",
+        "captions",
+        "ugc"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Let an agent turn a reference video into an editable, re-runnable workflow and render many variants.",
+      "why": "Clones the whole workflow with footage, captions and B-roll, not just a script breakdown.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Hypit gives agents like Claude Code and Codex a system to create video. Drop in a video and the agent rebuilds it as a composition with captions and effects tied to words. You can swap the host, hook or language and render many variants.",
+      "best_for": "Marketers and creators who want many variants of one ad or short-form video format.",
+      "not_for": "Anyone who needs clear license terms: the license is not a standard one. Model services you plug in are billed separately.",
+      "keywords": [
+        "clone viral video",
+        "ai video agent",
+        "tiktok ad variants",
+        "ugc video generator",
+        "video workflow",
+        "reels clone",
+        "hypit"
+      ]
+    },
+    {
+      "id": "Robbyant/lingbot-world",
+      "name": "LingBot-World",
+      "category": "video-media",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "world-model",
+        "video-generation",
+        "interactive",
+        "wan2.2",
+        "open-weights"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run an open world simulator that generates interactive video from camera or action input.",
+      "why": "Open weights for a video-based world model with minute-level memory and real-time use.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source world simulator built from video generation, on top of Wan2.2. It targets diverse environments, minute-long consistency and interactive latency under one second at 16 fps. Base, Act and Fast variants are released.",
+      "best_for": "Researchers and builders experimenting with open interactive world models.",
+      "not_for": "No longer actively maintained. The README points to a newer repo, lingbot-world-v2, for updates.",
+      "keywords": [
+        "world model",
+        "world simulator",
+        "genie 3 alternative",
+        "interactive video generation",
+        "wan2.2",
+        "open source world model"
+      ]
+    },
+    {
       "id": "KlingAIResearch/LivePortrait",
       "name": "LivePortrait",
       "category": "video-media",
@@ -405,6 +771,78 @@
         "retargeting",
         "pytorch",
         "avatar"
+      ]
+    },
+    {
+      "id": "meituan-longcat/LongCat-Video",
+      "name": "LongCat-Video",
+      "category": "video-media",
+      "kinds": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "video-generation",
+        "text-to-video",
+        "image-to-video",
+        "long-video",
+        "diffusion"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate text-to-video, image-to-video and long continued videos with one open 13.6B model.",
+      "why": "Natively trained on video continuation for minutes-long clips without quality drift.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A 13.6B-parameter video generation model that unifies text-to-video, image-to-video and video continuation. It uses a coarse-to-fine strategy and block sparse attention to produce 720p, 30fps video in minutes, and was tuned with multi-reward GRPO.",
+      "best_for": "Researchers and builders needing open, long-form video generation under an MIT license.",
+      "not_for": "Small GPUs or production use without evaluation. The model card says it was not evaluated for every downstream use.",
+      "keywords": [
+        "open source video model",
+        "long video generation",
+        "text to video model",
+        "image to video open",
+        "video continuation",
+        "meituan longcat",
+        "wan alternative"
+      ]
+    },
+    {
+      "id": "Lightricks/LTX-2",
+      "name": "LTX-2",
+      "category": "video-media",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "video-generation",
+        "audio-video",
+        "diffusion",
+        "lora",
+        "inference"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run and fine-tune an open audio-video generation model with synchronized sound.",
+      "why": "One DiT model produces video and audio together, with a LoRA trainer included.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Official Python inference and LoRA trainer package for LTX-2, a DiT-based audio-video foundation model. Setup uses uv and downloads roughly 66 GiB of weights from Hugging Face after accepting model terms. Linux with CUDA gives the fastest VAE backend.",
+      "best_for": "Teams with a strong GPU who want local, tunable text or image to video with audio.",
+      "not_for": "Small machines or tight storage. The license is custom (NOASSERTION) and weights are gated on Hugging Face.",
+      "keywords": [
+        "open source video generation",
+        "audio video model",
+        "text to video local",
+        "ltx video",
+        "video lora training",
+        "lightricks ltx",
+        "wan alternative"
       ]
     },
     {
@@ -592,6 +1030,114 @@
       ]
     },
     {
+      "id": "calesthio/OpenMontage",
+      "name": "OpenMontage",
+      "category": "video-media",
+      "kinds": [
+        "framework",
+        "skill"
+      ],
+      "tags": [
+        "video-production",
+        "agentic",
+        "remotion",
+        "hyperframes",
+        "ffmpeg"
+      ],
+      "ecosystems": [
+        "python",
+        "typescript"
+      ],
+      "use_for": "Let your coding assistant research, script, generate assets, edit and render finished videos.",
+      "why": "12 pipelines and 100+ tools, and it can work with zero paid API keys using free stock and open footage.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenMontage turns an AI coding assistant into a video studio. The agent handles research, scripting, asset generation, editing and composition using Remotion, HyperFrames and FFmpeg. Free options include Piper TTS and open footage archives.",
+      "best_for": "You want an agent to produce explainer, promo or stock-footage videos end to end.",
+      "not_for": "AGPL-3.0. Higher-quality generated clips need paid model APIs. It is a pipeline for agents, not a video editor UI.",
+      "keywords": [
+        "openmontage",
+        "agentic video production",
+        "ai video editor open source",
+        "remotion agent",
+        "text to video pipeline",
+        "video from coding agent",
+        "hyperframes"
+      ]
+    },
+    {
+      "id": "Augani/openreel-video",
+      "name": "OpenReel Video",
+      "category": "video-media",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "video-editor",
+        "browser",
+        "captions",
+        "timeline",
+        "open-source"
+      ],
+      "ecosystems": [
+        "typescript",
+        "web"
+      ],
+      "use_for": "Run or fork a browser-based video editor with timeline, captions and export, no watermark.",
+      "why": "Editing and rendering happen on-device, with an optional AI editor using your own model keys.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenReel is an MIT-licensed video editor for the browser and desktop. It has a multi-track timeline, keyframes, transitions, captions with SRT import, audio mixing and export presets. An AI assistant can make reversible edits through your own endpoint.",
+      "best_for": "Self-hosting or forking a CapCut-style editor that keeps footage local.",
+      "not_for": "Library use inside another app. It is a full editor, and the desktop builds are alpha.",
+      "keywords": [
+        "browser video editor",
+        "capcut alternative",
+        "open source video editor",
+        "web video timeline",
+        "video editor no watermark",
+        "ai video editing",
+        "openreel"
+      ]
+    },
+    {
+      "id": "getopenscreen/openscreen",
+      "name": "OpenScreen",
+      "category": "video-media",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "screen-recording",
+        "demo-video",
+        "desktop",
+        "mcp",
+        "editor"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Record the screen and turn it into polished product demos with auto zoom and captions.",
+      "why": "Free and MIT, with auto-zoom, on-device captions, and an MCP server and demo skill for agents.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop app for recording the screen or a window, then editing with zooms, cursor effects, webcam overlay, annotations and speed control. It has offline captions and an optional AI editor using your own key.",
+      "best_for": "Making demo videos or PR walkthroughs, including from a coding agent through its skill and MCP server.",
+      "not_for": "Under active development, with possible breaking changes to the project format and CLI. An end-user app, not an embeddable library.",
+      "keywords": [
+        "screen recorder",
+        "screen studio alternative",
+        "product demo video",
+        "open source screen recording",
+        "auto zoom",
+        "demo video agent"
+      ]
+    },
+    {
       "id": "AcademySoftwareFoundation/OpenTimelineIO",
       "name": "OpenTimelineIO",
       "category": "video-media",
@@ -625,6 +1171,78 @@
         "post-production",
         "python",
         "c++"
+      ]
+    },
+    {
+      "id": "GVCLab/PersonaLive",
+      "name": "PersonaLive",
+      "category": "video-media",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "portrait-animation",
+        "diffusion",
+        "live-streaming",
+        "research",
+        "real-time"
+      ],
+      "ecosystems": [
+        "python",
+        "pytorch"
+      ],
+      "use_for": "Animate a portrait image in real time from a driving video, for live streaming research.",
+      "why": "A CVPR 2026 diffusion framework that is real-time, streamable and can run for infinite length.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "PersonaLive is a diffusion framework for expressive portrait image animation in live streaming. It generates streamable, infinite-length animations. The repo provides weight download scripts, ONNX weights, a WebUI with reference image replacement, and training code. A follow-up, EditaLive, adds full-body animation and editing.",
+      "best_for": "You research or prototype real-time talking-head or portrait animation and can run GPU models.",
+      "not_for": "The README says it is released for academic research only and warns against harmful use. Needs a conda setup and downloaded weights. Not a hosted product.",
+      "keywords": [
+        "portrait animation",
+        "live portrait streaming",
+        "talking head diffusion",
+        "real-time avatar",
+        "image animation model",
+        "cvpr 2026",
+        "editalive"
+      ]
+    },
+    {
+      "id": "ATH-MaaS/Pixelle-Video",
+      "name": "Pixelle-Video",
+      "category": "video-media",
+      "kinds": [
+        "app",
+        "engine"
+      ],
+      "tags": [
+        "short-video",
+        "text-to-video",
+        "tts",
+        "comfyui",
+        "automation"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate a full short video from just a topic: script, images, voice-over, music and final render.",
+      "why": "Swap models freely: ComfyUI or RunningHub workflows or direct APIs for image, video, TTS and vision.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Pixelle-Video turns a topic into a short video with the flow: script, image planning, per-frame processing, composition. It supports many LLMs, TTS engines and templates, portrait or landscape, and has digital-human and image-to-video pipelines. A Windows bundle runs without setup. README is mostly Chinese.",
+      "best_for": "Producing faceless explainer or short-form videos at scale, or building on a modular video pipeline.",
+      "not_for": "Needs API keys or ComfyUI services for generation. Quality depends on the models you pick. Docs lean Chinese.",
+      "keywords": [
+        "ai short video generator",
+        "topic to video",
+        "text to video pipeline",
+        "comfyui video workflow",
+        "automated video creation",
+        "faceless video ai",
+        "tiktok video automation"
       ]
     },
     {
@@ -663,6 +1281,113 @@
       ]
     },
     {
+      "id": "webadderallorg/Recordly",
+      "name": "Recordly",
+      "category": "video-media",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "screen-recorder",
+        "demo-video",
+        "electron",
+        "pixijs",
+        "editor"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Record the screen and edit it into a polished demo video with auto zoom, cursor effects and styled frames.",
+      "why": "Free recorder and editor for Mac, Windows and Linux with native capture helpers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Recordly is a desktop app built on Electron that records and edits screen captures. It adds zoom suggestions, smooth cursor movement, webcam bubbles and styled backgrounds. Scenes render with PixiJS and export to MP4 or GIF. Project files keep the editor state.",
+      "best_for": "Product demos and walkthroughs, or as a codebase to fork for a screen-recording tool.",
+      "not_for": "Mainly an end-user app. Its license is listed as unclear (NOASSERTION), so check before reusing code. Linux cannot hide the cursor.",
+      "keywords": [
+        "screen recorder",
+        "demo video maker",
+        "screen studio alternative",
+        "auto zoom screen recording",
+        "open source screen capture editor",
+        "product demo recorder",
+        "cursor zoom effects"
+      ]
+    },
+    {
+      "id": "edenfunf/reelmimic",
+      "name": "ReelMimic",
+      "category": "video-media",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "video-generation",
+        "style-transfer",
+        "multi-agent",
+        "claude-code",
+        "codex"
+      ],
+      "ecosystems": [
+        "typescript",
+        "python"
+      ],
+      "use_for": "Make a new video in the style of a reference video, using a crew of Claude Code or Codex agents.",
+      "why": "Breaks the reference into rhythm and shots, then parallel agents build and a fresh agent reviews each shot.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local web app that analyzes a reference video (file, recording or YouTube link) for shot count, timing, transitions, colors and camera moves. It shows a plan, then up to six agents build the video in parallel and independent reviewers check each shot. Styles are single Markdown files.",
+      "best_for": "Creators who want a new video in the style of one they like, and already have Claude Code or Codex.",
+      "not_for": "Copying the original footage or characters, which it does not carry over. It needs Node 22.18+, Python, FFmpeg and your own agent subscription.",
+      "keywords": [
+        "video style transfer",
+        "copy video style ai",
+        "reference video generator",
+        "claude code video",
+        "multi agent video production",
+        "music video generator",
+        "reelmimic"
+      ]
+    },
+    {
+      "id": "Emily2040/seedance-2.0",
+      "name": "Seedance 2.0 Skill OS",
+      "category": "video-media",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "seedance",
+        "video-prompts",
+        "agent-skill",
+        "filmmaking",
+        "references"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Have a coding agent plan shots and write Seedance video prompts, then continue from an accepted clip.",
+      "why": "Routes a request to the right workflow: interview, prompt, sequence, continuation, references or retake.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An agent skill pack that turns an idea into a directed Seedance 2.0 video prompt. It covers shot planning, reference binding, first and last frame control and continuing from accepted footage. Your video provider does the generation.",
+      "best_for": "Anyone prompting Seedance 2.0 who wants repeatable prompts and continuity across clips.",
+      "not_for": "It generates prompts, not video. The README says live model scores and rendered-pilot results are still pending.",
+      "keywords": [
+        "seedance",
+        "seedance 2.0 prompts",
+        "ai video prompt",
+        "video generation skill",
+        "ai filmmaking",
+        "shot planning",
+        "first last frame"
+      ]
+    },
+    {
       "id": "shaka-project/shaka-player",
       "name": "Shaka Player",
       "category": "video-media",
@@ -697,6 +1422,43 @@
         "shaka player",
         "mse",
         "eme"
+      ]
+    },
+    {
+      "id": "thu-ml/TurboDiffusion",
+      "name": "TurboDiffusion",
+      "category": "video-media",
+      "kinds": [
+        "framework",
+        "engine"
+      ],
+      "tags": [
+        "video-diffusion",
+        "acceleration",
+        "wan",
+        "sparse-attention",
+        "distillation"
+      ],
+      "ecosystems": [
+        "python",
+        "pytorch"
+      ],
+      "use_for": "Speed up video diffusion models like Wan 2.1 and 2.2 by 100 to 200 times on one GPU.",
+      "why": "Combines SageAttention, sparse-linear attention and timestep distillation, with released checkpoints and training code.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "TurboDiffusion is the official implementation of a video generation acceleration framework. It uses SageAttention, Sparse-Linear Attention and rCM timestep distillation to cut end-to-end generation from minutes to seconds on a single RTX 5090. It provides TurboWan checkpoints at 480p and 720p.",
+      "best_for": "You run Wan-based video generation and need much faster inference.",
+      "not_for": "Models were trained on long English prompts, so other prompts need augmenting. Checkpoints and paper are not final. Needs a strong GPU.",
+      "keywords": [
+        "video diffusion acceleration",
+        "wan 2.1 faster",
+        "fast text to video",
+        "sageattention",
+        "rcm distillation",
+        "turbowan",
+        "speed up video generation"
       ]
     },
     {

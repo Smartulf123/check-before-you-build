@@ -77,6 +77,42 @@
       ]
     },
     {
+      "id": "Arthur-Ficial/apfel",
+      "name": "apfel",
+      "category": "ai-sdks",
+      "kinds": [
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "apple-intelligence",
+        "on-device",
+        "openai-compatible",
+        "cli",
+        "foundationmodels"
+      ],
+      "ecosystems": [
+        "swift",
+        "macos"
+      ],
+      "use_for": "Use the LLM built into Apple Silicon Macs from the shell or through a local OpenAI-compatible server.",
+      "why": "Free, on-device and keyless, wrapping Apple FoundationModels as a UNIX tool and server.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Swift tool that exposes Apple's built-in on-device model as a pipe-friendly command and a local OpenAI-compatible server, with an interactive chat. Nothing leaves the machine and no API key is needed.",
+      "best_for": "Quick local scripting and prototypes on a Mac with no key, cloud or download.",
+      "not_for": "Anything needing a big model, embeddings or other platforms. macOS 26+ on Apple Silicon, one roughly 3B model, 4096-token context on many Macs.",
+      "keywords": [
+        "apple intelligence cli",
+        "foundation models api",
+        "on-device llm mac",
+        "local openai compatible server mac",
+        "free local llm macos",
+        "apple on-device model"
+      ]
+    },
+    {
       "id": "ax-llm/ax",
       "name": "Ax",
       "category": "ai-sdks",
@@ -147,6 +183,230 @@
         "quantization",
         "edge inference",
         "i2_s"
+      ]
+    },
+    {
+      "id": "miuuyy/codex-chatgpt-web",
+      "name": "codex-chatgpt-web",
+      "category": "ai-sdks",
+      "kinds": [
+        "app",
+        "mcp"
+      ],
+      "tags": [
+        "codex",
+        "chatgpt",
+        "mcp",
+        "model-picker",
+        "harness"
+      ],
+      "ecosystems": [
+        "typescript",
+        "macos"
+      ],
+      "use_for": "Use your ChatGPT Web models, including Pro, from inside Codex's model picker.",
+      "why": "Uses ChatGPT Web's separate limits, and full harness mode links its tool calls back to the Codex task over MCP.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A launcher that adds ChatGPT Web models to Codex's native model picker, using an embedded browser signed in to ChatGPT. Full harness mode connects ChatGPT to the current task's files, terminal, tools and approvals through MCP via an outbound tunnel, keeping conversations tied to the Codex task.",
+      "best_for": "Codex users who want ChatGPT Web model quota instead of spending Codex quota.",
+      "not_for": "Anyone who wants an official, supported route. It drives the ChatGPT web UI, and available models depend on your account.",
+      "keywords": [
+        "chatgpt pro in codex",
+        "codex model picker",
+        "use chatgpt web with codex",
+        "codex quota workaround",
+        "chatgpt web mcp",
+        "codex custom model",
+        "chatgpt codex bridge",
+        "web models codex"
+      ]
+    },
+    {
+      "id": "JustVugg/colibri",
+      "name": "colibri",
+      "category": "ai-sdks",
+      "kinds": [
+        "engine",
+        "cli"
+      ],
+      "tags": [
+        "llm-inference",
+        "moe",
+        "c",
+        "disk-streaming",
+        "local-models"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Run very large mixture-of-experts open models on ordinary hardware by streaming experts from disk.",
+      "why": "Pure C with no dependencies and no GPU needed, with a dashboard showing experts as they fire.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "colibri is an inference engine that keeps the dense part of a MoE model in RAM and reads routed experts from disk through a learning cache. It has thirteen engines, one per model family, including GLM, Kimi, DeepSeek and Qwen. A GPU is optional.",
+      "best_for": "You want to try or study huge open MoE models on a laptop or modest server.",
+      "not_for": "Speed depends on RAM, disk and cache. Each model family has its own engine, so support is limited to the listed ones.",
+      "keywords": [
+        "colibri",
+        "run large moe models locally",
+        "llm inference in c",
+        "stream experts from disk",
+        "glm kimi deepseek local",
+        "cpu llm engine",
+        "llama.cpp alternative"
+      ]
+    },
+    {
+      "id": "antirez/ds4",
+      "name": "DwarfStar (ds4)",
+      "category": "ai-sdks",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "local-llm",
+        "inference",
+        "deepseek",
+        "gguf",
+        "kv-cache"
+      ],
+      "ecosystems": [
+        "c",
+        "metal",
+        "cuda",
+        "rocm"
+      ],
+      "use_for": "Run DeepSeek V4 Flash and a few other large models locally on a Mac or CUDA/ROCm GPUs.",
+      "why": "A small native engine tuned for a few models, with SSD streaming and multi-GPU serving.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "DwarfStar is a narrow native inference engine, first tuned for DeepSeek V4 Flash, plus GLM and Qwen models. It uses its own GGUF files, with Metal, CUDA and ROCm backends. It has an HTTP server, a coding agent and tools for quality and speed tests.",
+      "best_for": "Running a few big open models well on a MacBook, DGX Spark, Strix Halo or CUDA cards.",
+      "not_for": "A general GGUF runner. It only loads the project's own GGUF files, and the README says it is beta quality.",
+      "keywords": [
+        "deepseek v4 local",
+        "local llm engine",
+        "metal inference",
+        "cuda inference server",
+        "glm local",
+        "antirez",
+        "run deepseek on mac"
+      ]
+    },
+    {
+      "id": "Edge0-AI/Edge0",
+      "name": "edge0",
+      "category": "ai-sdks",
+      "kinds": [
+        "framework",
+        "engine"
+      ],
+      "tags": [
+        "moe",
+        "inference",
+        "on-device",
+        "ssd-offload",
+        "mlx"
+      ],
+      "ecosystems": [
+        "python",
+        "swift",
+        "kotlin"
+      ],
+      "use_for": "Run large mixture-of-experts models on laptops and phones by streaming experts from SSD.",
+      "why": "Memory use depends on the active experts, not total parameters, with a router that predicts loads.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A streaming MoE inference framework that combines SSD expert offload, Recover-LoRA and a prerouter that predicts which experts load next. It has a transformers-style Python API and engines for macOS, iOS and Android, with preview model checkpoints.",
+      "best_for": "Running big sparse models on consumer hardware with little RAM.",
+      "not_for": "Server throughput serving. The CUDA backend is only a reserved slot, and the iOS, macOS and Android engines use separate platform stacks.",
+      "keywords": [
+        "run moe on phone",
+        "ssd offload inference",
+        "35b model low ram",
+        "on-device llm",
+        "mlx moe",
+        "streaming experts",
+        "edge llm inference"
+      ]
+    },
+    {
+      "id": "FlashML-org/FreeToken",
+      "name": "FreeToken",
+      "category": "ai-sdks",
+      "kinds": [
+        "engine",
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "inference",
+        "moe",
+        "local-llm",
+        "serving",
+        "consumer-gpu",
+        "kv-cache"
+      ],
+      "ecosystems": [
+        "python",
+        "cuda"
+      ],
+      "use_for": "Run very large open-weight MoE models locally on a gaming PC.",
+      "why": "Uses CPU-GPU co-execution, expert caching and semantic KV checkpoints to make huge MoE models usable at home.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "FreeToken is an edge-native serving engine for Mixture-of-Experts models on personal hardware. It splits work between GPU and CPU, streams prefill layers, caches experts, and avoids recomputing context after agentic edits. It supports models like DeepSeek-V4-Flash, Qwen and GLM, and comes as a desktop app and a CLI.",
+      "best_for": "Running frontier-scale MoE models locally with limited VRAM.",
+      "not_for": "Dense models or macOS. The desktop download is for Windows or Linux, and it targets MoE models.",
+      "keywords": [
+        "run large models locally",
+        "moe inference engine",
+        "local llm serving",
+        "llama.cpp alternative",
+        "vllm alternative consumer gpu",
+        "deepseek local",
+        "cpu gpu offload",
+        "local agent inference"
+      ]
+    },
+    {
+      "id": "zai-org/GLM-5",
+      "name": "GLM-5 series",
+      "category": "ai-sdks",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "llm",
+        "open-weights",
+        "coding",
+        "agentic",
+        "long-context"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Use open-weights GLM-5.x models for coding and long-horizon agent tasks, locally or via the Z.ai API.",
+      "why": "GLM-5.2 offers a 1M-token context and GLM-5.3 is described as the strongest open-weights model for coding.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "The GLM-5 family of Z.ai flagship models: GLM-5, 5.1, 5.2 and 5.3 with a Flash variant. They target coding, agentic engineering and long tasks. They can be used through the Z.ai API or by running the open weights.",
+      "best_for": "Teams wanting an open-weights model for coding agents, with a hosted API as a fallback.",
+      "not_for": "Benchmark claims come from the vendor. Running the large models needs serious GPU hardware.",
+      "keywords": [
+        "glm-5",
+        "zai glm",
+        "open weights coding model",
+        "glm 5.2 1m context",
+        "zhipu glm",
+        "agentic engineering model"
       ]
     },
     {
@@ -294,6 +554,75 @@
       ]
     },
     {
+      "id": "MoonshotAI/Kimi-K3",
+      "name": "Kimi K3",
+      "category": "ai-sdks",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "open-weights",
+        "llm",
+        "multimodal",
+        "agentic",
+        "long-context"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Use or self-host an open-weight multimodal model for coding, agents and long-context work.",
+      "why": "An open-weight 2.8T-parameter model with native vision and a 1M-token context window.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Kimi K3 is an open-weight, native multimodal agentic model with 2.8T parameters. It uses Kimi Delta Attention and a mixture-of-experts design that activates 16 of 896 experts. Thinking is always on, and the API returns `reasoning_content`.",
+      "best_for": "Teams that want frontier-class open weights for long coding sessions, research and tool use.",
+      "not_for": "Weights fall under the Kimi K3 License, not a standard open license. Multi-turn use must pass back full assistant messages including reasoning. A model this size needs serious hardware.",
+      "keywords": [
+        "kimi k3",
+        "moonshot ai model",
+        "open weight llm",
+        "1m context model",
+        "open source coding model",
+        "multimodal open model"
+      ]
+    },
+    {
+      "id": "FareedKhan-dev/kimi-k3-in-c",
+      "name": "kimi-k3-in-c",
+      "category": "ai-sdks",
+      "kinds": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "inference",
+        "llm",
+        "c99",
+        "cpu",
+        "low-memory"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Study or run Kimi K3 inference in plain C99 on a CPU with very little RAM.",
+      "why": "A 176 KB engine with no BLAS, framework or GPU, tested against a PyTorch reference.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A portable C99 inference engine for the 2.78-trillion-parameter Kimi K3. It streams the checkpoint from disk, so peak memory is about 8 GB. Output is byte-identical across machines; more RAM only speeds it up. A weightless test suite builds in about a minute.",
+      "best_for": "Learning how a huge mixture-of-experts model runs, or running it offline on ordinary hardware when speed does not matter.",
+      "not_for": "Very slow on small machines (about 26 s per token with 8 GB RAM). Needs a 1.56 TB checkpoint on fast disk. Not for production serving.",
+      "keywords": [
+        "run kimi k3 locally",
+        "llm inference in c",
+        "cpu only llm",
+        "trillion parameter model",
+        "llama.cpp alternative",
+        "low ram inference"
+      ]
+    },
+    {
       "id": "kvcache-ai/ktransformers",
       "name": "KTransformers",
       "category": "ai-sdks",
@@ -327,6 +656,43 @@
         "kt-kernel",
         "sglang",
         "large model inference"
+      ]
+    },
+    {
+      "id": "NandhaKishorM/laya",
+      "name": "Laya",
+      "category": "ai-sdks",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "classification",
+        "decision-engine",
+        "multilingual",
+        "onnx",
+        "non-autoregressive"
+      ],
+      "ecosystems": [
+        "python",
+        "rust"
+      ],
+      "use_for": "Get typed choice, score or yes/no decisions over any text in one fast forward pass.",
+      "why": "A non-autoregressive model that answers in about 33 ms across 100+ languages, with a checkpoint router.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Laya is a decision engine, not a text generator. You give it text and typed questions, such as which department should handle a ticket, and it returns choices or scores in a single forward pass. A router picks the right checkpoint per request. It has Python and Rust SDKs.",
+      "best_for": "Routing, triage and classification tasks where an LLM call is too slow or costly.",
+      "not_for": "Does not write free text. Long-document accuracy varies beyond about 4,000 tokens, so test on your own data.",
+      "keywords": [
+        "text classification",
+        "ticket routing model",
+        "fast decision model",
+        "multilingual classifier",
+        "system 1 llm",
+        "non-autoregressive",
+        "yes no classifier"
       ]
     },
     {
@@ -444,6 +810,41 @@
       ]
     },
     {
+      "id": "AlexsJones/llmfit",
+      "name": "llmfit",
+      "category": "ai-sdks",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "llm",
+        "hardware",
+        "local-models",
+        "quantization",
+        "tui"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Check which open LLMs your CPU, RAM and GPU can actually run, and how fast.",
+      "why": "Scores hundreds of models on fit, speed, quality and context, with a TUI, web dashboard and REST API.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "llmfit detects your CPU, RAM, GPU and VRAM, then scores a catalog of models across quantizations for memory fit, estimated speed, quality and context. It has an interactive terminal UI, a CLI, a web dashboard and a JSON API. Users can also share benchmarks.",
+      "best_for": "Picking a local model before you download it, or adding hardware-aware model choice to a deployment script.",
+      "not_for": "It recommends models; it does not run inference. Speed numbers are estimates unless you benchmark on your own machine.",
+      "keywords": [
+        "which llm can i run",
+        "local llm hardware check",
+        "model vram calculator",
+        "gguf quantization fit",
+        "ollama model picker",
+        "llm hardware",
+        "tokens per second estimate"
+      ]
+    },
+    {
       "id": "lmstudio-ai/lmstudio-js",
       "name": "LM Studio SDK",
       "category": "ai-sdks",
@@ -478,6 +879,115 @@
         "embeddings",
         "speculative decoding",
         "structured output"
+      ]
+    },
+    {
+      "id": "magnitudedev/magnitude",
+      "name": "Magnitude",
+      "category": "ai-sdks",
+      "kinds": [
+        "engine",
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "inference",
+        "local-llm",
+        "kernels",
+        "speculative-decoding",
+        "desktop"
+      ],
+      "ecosystems": [
+        "rust",
+        "cpp"
+      ],
+      "use_for": "Run open models locally with kernels tuned to your hardware, and connect them to your coding agent.",
+      "why": "The README claims over 2x faster than Ollama across popular local models on Mac and NVIDIA.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source inference engine that tunes its kernels for each model on your hardware. It ships as a desktop app with a CLI and works on Apple Silicon, NVIDIA, AMD or CPU. It adds speculative decoding drafters and one-click links to agents like Pi, OpenCode and Codex.",
+      "best_for": "Running local models for agents with better speed than a default setup.",
+      "not_for": "Speed figures are the project's own. Model size is limited by your memory.",
+      "keywords": [
+        "magnitude inference",
+        "ollama alternative",
+        "local llm engine",
+        "tuned kernels",
+        "run open models locally",
+        "speculative decoding local"
+      ]
+    },
+    {
+      "id": "Mesh-LLM/mesh-llm",
+      "name": "Mesh LLM",
+      "category": "ai-sdks",
+      "kinds": [
+        "service",
+        "cli"
+      ],
+      "tags": [
+        "distributed-inference",
+        "openai-compatible",
+        "llama-cpp",
+        "gpu",
+        "p2p"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Pool GPUs and memory across machines and serve one OpenAI-compatible API for local or shared models.",
+      "why": "Large models can be split across nodes, and the mesh decides whether to run locally or route to a peer.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Mesh LLM joins machines into one inference mesh with an OpenAI-compatible API at localhost:9337. You can start with one node and add more, and join a public mesh or run a private one. Skippy handles model management and split execution.",
+      "best_for": "People with several consumer machines who want to run models too big for one box, or share compute with others.",
+      "not_for": "A single-machine setup where plain llama.cpp or Ollama is enough. Windows multi-node LAN clustering may need WSL2.",
+      "keywords": [
+        "distributed llm inference",
+        "pool gpus",
+        "share compute llm",
+        "openai compatible local api",
+        "split large models across machines",
+        "llama.cpp cluster",
+        "mesh llm"
+      ]
+    },
+    {
+      "id": "sgl-project/mini-sglang",
+      "name": "Mini-SGLang",
+      "category": "ai-sdks",
+      "kinds": [
+        "engine",
+        "framework"
+      ],
+      "tags": [
+        "llm-serving",
+        "inference",
+        "radix-cache",
+        "tensor-parallel",
+        "cuda"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Serve LLMs with a small readable engine, or learn how modern serving systems work.",
+      "why": "About 5,000 lines of typed Python with radix cache, chunked prefill and FlashAttention.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A compact version of SGLang with radix cache, chunked prefill, overlap scheduling, tensor parallelism and FlashAttention/FlashInfer kernels. It launches an OpenAI-compatible server with one command.",
+      "best_for": "Researchers and engineers who want to read, modify or learn from an LLM serving engine.",
+      "not_for": "Windows or macOS: it is Linux only and needs the CUDA toolkit. For full features use the main SGLang project.",
+      "keywords": [
+        "llm serving engine",
+        "sglang",
+        "small inference server",
+        "radix cache",
+        "openai compatible server",
+        "learn llm inference",
+        "mini sglang"
       ]
     },
     {
@@ -558,6 +1068,83 @@
       ]
     },
     {
+      "id": "cactus-compute/needle",
+      "name": "Needle",
+      "category": "ai-sdks",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "tiny-model",
+        "tool-calling",
+        "on-device",
+        "extraction",
+        "embeddings",
+        "speech"
+      ],
+      "ecosystems": [
+        "python",
+        "mobile",
+        "embedded"
+      ],
+      "use_for": "Run tool calls, structured extraction, embeddings and speech on phones and tiny devices with an 8-29 MB model.",
+      "why": "A single small binary that beats much larger models on mobile tool calls and guarantees parseable output.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Needle is a very small foundation model for mobiles, wearables, robots, smart homes, cars and microcontrollers. It picks the right tool and fills its arguments, extracts typed fields from messy text under a schema grammar, and returns embeddings. A sibling model, Whistle, adds speech input. It installs with pip.",
+      "best_for": "On-device assistants and automation where size, latency and privacy matter.",
+      "not_for": "General chat. The README says it trades general chat capacity for tool calls and extraction.",
+      "keywords": [
+        "on device function calling",
+        "tiny llm tool calling",
+        "edge ai model",
+        "structured extraction local",
+        "small model for phones",
+        "microcontroller llm",
+        "cactus needle",
+        "local embeddings"
+      ]
+    },
+    {
+      "id": "teng-lin/notebooklm-py",
+      "name": "notebooklm-py",
+      "category": "ai-sdks",
+      "kinds": [
+        "library",
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "notebooklm",
+        "gemini-notebook",
+        "unofficial-api",
+        "research",
+        "agent-skill"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Script Google's NotebookLM (now Gemini Notebook) from Python, a CLI or an agent skill.",
+      "why": "Exposes features the web UI lacks, such as batch downloads and mind map JSON.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An unofficial Python API, CLI and agent skill for NotebookLM. It can bulk-import sources, run research queries, generate audio overviews, slides, quizzes and more, and download the results. It ships a skill for Claude Code and Codex.",
+      "best_for": "Research automation and agent workflows that use NotebookLM for grounded analysis.",
+      "not_for": "Production systems. It uses undocumented Google APIs that can change or be rate-limited without notice.",
+      "keywords": [
+        "notebooklm api",
+        "notebooklm python",
+        "gemini notebook api",
+        "unofficial notebooklm",
+        "audio overview automation",
+        "notebooklm cli",
+        "notebooklm skill"
+      ]
+    },
+    {
       "id": "ollama/ollama",
       "name": "Ollama",
       "category": "ai-sdks",
@@ -593,6 +1180,44 @@
         "model library",
         "docker",
         "self-hosted llm"
+      ]
+    },
+    {
+      "id": "jundot/omlx",
+      "name": "oMLX",
+      "category": "ai-sdks",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "local-llm",
+        "mlx",
+        "apple-silicon",
+        "kv-cache",
+        "inference-server"
+      ],
+      "ecosystems": [
+        "python",
+        "swift",
+        "apple-silicon"
+      ],
+      "use_for": "Serve local LLMs on a Mac with continuous batching and a tiered memory and SSD KV cache.",
+      "why": "Keeps past context cached on SSD so agent tools like Claude Code stay fast.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "oMLX is an inference server for Apple Silicon managed from the macOS menu bar. It supports text LLMs, vision models, OCR, embeddings and rerankers. It pins models in memory, swaps others in, and has a Homebrew install and a web UI.",
+      "best_for": "Mac users running local models for coding agents who want caching and model management.",
+      "not_for": "Windows, Linux or Nvidia GPUs; it targets Apple Silicon only.",
+      "keywords": [
+        "mlx server",
+        "apple silicon llm server",
+        "local llm mac",
+        "menu bar llm",
+        "kv cache ssd",
+        "ollama alternative mac",
+        "continuous batching mlx"
       ]
     },
     {
@@ -742,6 +1367,185 @@
       ]
     },
     {
+      "id": "raullenchai/Rapid-MLX",
+      "name": "Rapid-MLX",
+      "category": "ai-sdks",
+      "kinds": [
+        "service",
+        "cli"
+      ],
+      "tags": [
+        "mlx",
+        "apple-silicon",
+        "inference-server",
+        "openai-compatible",
+        "tool-calling"
+      ],
+      "ecosystems": [
+        "python",
+        "macos"
+      ],
+      "use_for": "Serve local LLMs on a Mac with OpenAI and Anthropic compatible APIs and reliable tool calling.",
+      "why": "Faster decode than mlx-lm, oMLX and LM Studio in its own benchmarks, with continuous batching.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Rapid-MLX is an inference server for Apple Silicon built on MLX. It exposes OpenAI chat and responses endpoints and the Anthropic Messages API, focuses on tool calling for coding agents, and uses continuous batching. A macOS desktop app is also provided.",
+      "best_for": "You run models locally on a Mac and want coding agents to talk to them through standard APIs.",
+      "not_for": "Apple Silicon only. Speed numbers come from the project's own single-run benchmarks. Not for Linux or Windows servers.",
+      "keywords": [
+        "mlx server",
+        "local llm mac",
+        "apple silicon inference",
+        "openai compatible local server",
+        "anthropic messages local",
+        "ollama alternative mac",
+        "lm studio alternative"
+      ]
+    },
+    {
+      "id": "alexzhang13/rlm",
+      "name": "RLM",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "recursive-language-models",
+        "inference",
+        "repl",
+        "sandbox",
+        "long-context"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Replace llm.completion with rlm.completion so a model can handle huge contexts by recursively calling itself in a REPL.",
+      "why": "Plug-and-play inference library for Recursive Language Models with local and cloud sandboxes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Recursive Language Models let a model examine, split and recursively call itself over its input, with the context held as a variable in a REPL. The library supports a local REPL and isolated cloud sandboxes such as Prime and Modal.",
+      "best_for": "Researchers and builders working on very long-context tasks or CodeAct-style harnesses.",
+      "not_for": "The default local REPL is not safe for production or untrusted prompts. Use an isolated sandbox for that.",
+      "keywords": [
+        "recursive language models",
+        "rlm",
+        "long context llm",
+        "repl llm harness",
+        "codeact sub-calls",
+        "infinite context",
+        "modal sandbox llm"
+      ]
+    },
+    {
+      "id": "TheoLeeCJ/SemIf-OpenJev",
+      "name": "SemIf",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "llm",
+        "classification",
+        "logits",
+        "routing",
+        "local-models"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Make fast typed yes/no or multi-option decisions from an open LLM by reading option probabilities directly.",
+      "why": "Skips generating text and parsing it back; scores typed options straight from model logits.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A research baseline that reproduces the 'semantic if' interface with open models. It takes unstructured state, runtime criteria and typed options, and reads option probabilities from a 4B model without an answer sentence or JSON repair. It runs on CUDA, Apple Silicon (MLX or MPS) or CPU through llama.cpp.",
+      "best_for": "Agent routing and small classification decisions where low latency and local models matter.",
+      "not_for": "An independent research project. It does not reproduce the closed Jev service's model or training.",
+      "keywords": [
+        "semantic if",
+        "llm decision routing",
+        "option logits",
+        "local llm classifier",
+        "openjev",
+        "typed options llm",
+        "agent routing small model"
+      ]
+    },
+    {
+      "id": "OpenSenseNova/SenseNova-U1",
+      "name": "SenseNova-U1",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "multimodal",
+        "image-generation",
+        "image-editing",
+        "model",
+        "open-weights"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run an open unified multimodal model for image understanding, generation and editing.",
+      "why": "One native model covers understanding, reasoning and generation, with native 4K and text-heavy infographics.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A series of native multimodal models that handle vision and language in a single architecture, without adapters. The U1.5-8B-MoT checkpoint targets image generation, text rendering, native 4K output and editing.",
+      "best_for": "Developers who want open image generation and editing with strong Chinese and English text rendering.",
+      "not_for": "Small GPUs or quick setups; these are large research checkpoints rather than a hosted API or lightweight SDK.",
+      "keywords": [
+        "unified multimodal model",
+        "text to image open source",
+        "image editing model",
+        "native 4k generation",
+        "sensenova",
+        "infographic generation model"
+      ]
+    },
+    {
+      "id": "Niko1221/Strata",
+      "name": "Strata",
+      "category": "ai-sdks",
+      "kinds": [
+        "engine",
+        "app"
+      ],
+      "tags": [
+        "local-llm",
+        "inference",
+        "openai-api",
+        "gpu",
+        "quantization"
+      ],
+      "ecosystems": [
+        "c++",
+        "windows",
+        "linux"
+      ],
+      "use_for": "Run a very large open model on a gaming PC and call it through a local OpenAI/Anthropic-style API.",
+      "why": "One-click installer that fits a 125B-parameter model on a 12 GB GPU plus system RAM.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Strata is an inference engine that runs Qwen3.8-Flash-Next on consumer NVIDIA or AMD cards. It needs 12 GB of VRAM and 32 GB or more of RAM. It serves local OpenAI and Anthropic style APIs and can take image input.",
+      "best_for": "People who want private, local use of a large model with their coding agents on a Windows or Linux gaming PC.",
+      "not_for": "Running other models: it is built around one model family. Needs a strong GPU, lots of RAM and about 80 GB of disk.",
+      "keywords": [
+        "run llm locally",
+        "local inference engine",
+        "qwen local",
+        "openai compatible local server",
+        "gaming pc llm",
+        "private ai coding model",
+        "125b model"
+      ]
+    },
+    {
       "id": "TanStack/ai",
       "name": "TanStack AI",
       "category": "ai-sdks",
@@ -861,6 +1665,43 @@
       ]
     },
     {
+      "id": "TheTom/turboquant_plus",
+      "name": "TurboQuant+",
+      "category": "ai-sdks",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "kv-cache",
+        "quantization",
+        "llama.cpp",
+        "inference",
+        "research"
+      ],
+      "ecosystems": [
+        "python",
+        "c++"
+      ],
+      "use_for": "Shrink the transformer KV cache 3.8-6.4x to fit longer contexts in local LLM inference.",
+      "why": "Research home for KV cache compression that has been merged upstream into vLLM and llama.cpp.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Python reference implementation of TurboQuant, with a llama.cpp port (Metal, CUDA, HIP) and extra findings such as asymmetric K/V and boundary V. It compresses the KV cache using PolarQuant and Walsh-Hadamard rotation.",
+      "best_for": "Running long contexts on limited memory, or studying KV cache quantization with benchmarks and papers.",
+      "not_for": "A turnkey inference engine. The README says it is the research home; run it through llama.cpp or vLLM instead.",
+      "keywords": [
+        "kv cache compression",
+        "llm quantization",
+        "turboquant",
+        "llama.cpp long context",
+        "vllm kv cache",
+        "polarquant",
+        "reduce llm memory"
+      ]
+    },
+    {
       "id": "vercel/ai",
       "name": "Vercel AI SDK",
       "category": "ai-sdks",
@@ -933,6 +1774,41 @@
         "gpu inference",
         "throughput",
         "speculative decoding"
+      ]
+    },
+    {
+      "id": "vllm-project/vllm-omni",
+      "name": "vLLM-Omni",
+      "category": "ai-sdks",
+      "kinds": [
+        "framework",
+        "engine"
+      ],
+      "tags": [
+        "inference",
+        "multimodal",
+        "vllm",
+        "serving",
+        "diffusion"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Serve text, image, audio, video and action models with vLLM-style efficient inference.",
+      "why": "Extends vLLM to diffusion transformers and other non-autoregressive models with staged, disaggregated pipelines.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "vLLM-Omni extends vLLM from text generation to omni-modality serving. It uses vLLM's KV cache management for autoregressive stages, adds support for DiT and parallel generation models and overlaps pipeline stages for throughput.",
+      "best_for": "Teams serving multimodal or diffusion models at scale who already know vLLM.",
+      "not_for": "A serving runtime that needs GPU or NPU hardware. Not a client SDK.",
+      "keywords": [
+        "vllm omni",
+        "multimodal model serving",
+        "diffusion transformer serving",
+        "omni modality inference",
+        "minicpm-o serving",
+        "audio video generation server"
       ]
     },
     {

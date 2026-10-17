@@ -1,0 +1,1412 @@
+{
+  "category": "agent-workbenches",
+  "entries": [
+    {
+      "id": "graykode/abtop",
+      "name": "abtop",
+      "category": "agent-workbenches",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "tui",
+        "monitoring",
+        "claude-code",
+        "codex",
+        "agents"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Watch all running AI coding agent sessions in one terminal screen.",
+      "why": "Read-only and needs no keys: shows tokens, context use, rate limits and open ports per session.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A terminal UI like btop for Claude Code, Codex CLI and OpenCode. It finds sessions from local process and file state and shows token use, context window percent, rate limits, child processes and orphan ports. It has JSON output for scripts.",
+      "best_for": "Anyone running several coding agents who wants a single status view.",
+      "not_for": "Monitors only; it does not control agents. Covers Claude Code, Codex CLI and OpenCode. OpenCode needs sqlite3.",
+      "keywords": [
+        "htop for ai agents",
+        "claude code monitor",
+        "codex cli monitor",
+        "agent token usage",
+        "context window monitor",
+        "rate limit monitor",
+        "btop agents"
+      ]
+    },
+    {
+      "id": "openclaw/acpx",
+      "name": "acpx",
+      "category": "agent-workbenches",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "acp",
+        "coding-agents",
+        "cli",
+        "sessions",
+        "orchestration"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Drive ACP-compatible coding agents from scripts with persistent sessions, one-shot runs and machine-readable output.",
+      "why": "One command shape works across Codex, Claude Code, Pi, OpenClaw and custom ACP servers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A headless command-line client for the Agent Client Protocol. It gives agents, orchestrators and developers one interface for persistent sessions, one-shot runs, permissions and JSON output across ACP coding agents.",
+      "best_for": "Scripting or orchestrating several coding agents through one structured CLI instead of each agent's own interface.",
+      "not_for": "Pre-1.0, so the CLI and runtime interfaces are expected to change. The upstream agent must be installed and logged in separately.",
+      "keywords": [
+        "agent client protocol",
+        "acp client",
+        "headless coding agent cli",
+        "orchestrate codex and claude code",
+        "agent sessions cli",
+        "acpx"
+      ]
+    },
+    {
+      "id": "agent-of-empires/agent-of-empires",
+      "name": "Agent of Empires (AoE)",
+      "category": "agent-workbenches",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "tmux",
+        "coding-agents",
+        "tui",
+        "git-worktrees",
+        "sandbox"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Manage many coding-agent sessions (Claude Code, Codex, OpenCode, Gemini and more) from a TUI or a web dashboard, even on a phone.",
+      "why": "Each agent lives in a persistent tmux session with optional worktree and container isolation.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A session manager for AI coding agents on Linux and macOS. It adds agent-aware status detection, notifications, git worktrees, Docker, Podman or Apple Container sandboxing, a diff viewer, and a browser view with mobile access. Sessions survive closed terminals and SSH drops.",
+      "best_for": "Developers running several agents in parallel across branches who want them to survive disconnects.",
+      "not_for": "Native Windows: it needs tmux and works only through WSL2.",
+      "keywords": [
+        "manage multiple claude code sessions",
+        "tmux agent manager",
+        "coding agent dashboard",
+        "agent worktrees tui",
+        "run agents from phone",
+        "aoe",
+        "multi agent session manager"
+      ]
+    },
+    {
+      "id": "benjitaylor/agentation",
+      "name": "Agentation",
+      "category": "agent-workbenches",
+      "kinds": [
+        "library",
+        "mcp"
+      ],
+      "tags": [
+        "react",
+        "visual-feedback",
+        "annotations",
+        "ai-agents",
+        "mcp"
+      ],
+      "ecosystems": [
+        "react",
+        "typescript"
+      ],
+      "use_for": "Click elements in your running React app and send exact selectors and notes to a coding agent.",
+      "why": "Copies structured selectors and positions so agents can grep for the exact code, with no runtime dependencies.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A React toolbar you add to your app. You click or select elements, add notes, and copy structured markdown with class names, selectors and positions. An optional MCP server syncs the feedback straight to agents like Claude Code or Codex.",
+      "best_for": "Giving precise UI feedback to a coding agent instead of describing 'the blue button in the sidebar'.",
+      "not_for": "React only. License is not clearly stated in the metadata, so check it before commercial use.",
+      "keywords": [
+        "ui feedback for ai agents",
+        "annotate web page for claude",
+        "click element selector",
+        "visual feedback tool",
+        "react dev toolbar",
+        "agentation mcp"
+      ]
+    },
+    {
+      "id": "pacifio/atlas",
+      "name": "Atlas",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "agent-checkpoints",
+        "source-control",
+        "shared-memory",
+        "acp",
+        "coding-agents"
+      ],
+      "ecosystems": [
+        "desktop",
+        "typescript"
+      ],
+      "use_for": "Run several coding agents side by side and keep a record of which agent changed what and why.",
+      "why": "Links each commit to the prompts, tool calls and reasoning that produced it.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop tool that treats agent runs as checkpoints tied to commits. It runs Claude Code, Codex, its own agent and ACP registry agents on one codebase, with shared memory and project knowledge files so switching agents does not lose context.",
+      "best_for": "Teams who want an audit trail of agent work and smooth hand-offs between agents.",
+      "not_for": "A library to embed in your code; it is a desktop app. Simple single-agent workflows will not need it.",
+      "keywords": [
+        "agent source control",
+        "track ai commits",
+        "multiple coding agents",
+        "acp client",
+        "agent checkpoints",
+        "shared agent memory",
+        "atlas"
+      ]
+    },
+    {
+      "id": "SaladDay/cc-switch-cli",
+      "name": "CC-Switch CLI",
+      "category": "agent-workbenches",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "provider-switching",
+        "claude-code",
+        "codex",
+        "tui",
+        "usage-stats"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Manage providers, sessions and usage for Claude Code, Codex, Gemini and others from one TUI or CLI.",
+      "why": "One tool to switch provider config per terminal and review sessions and token costs across agents.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Rust CLI fork of CC-Switch with a full-screen TUI and scriptable commands. It switches providers globally or per launch, lists and resumes saved sessions, and shows 30-day token and cost usage. WebDAV sync matches the upstream project.",
+      "best_for": "People who use several coding agents or API providers and want to switch between them quickly.",
+      "not_for": "Anyone using one agent with one provider. Check your providers' terms before routing through third-party endpoints.",
+      "keywords": [
+        "switch claude code provider",
+        "cc switch",
+        "codex provider manager",
+        "coding agent config manager",
+        "claude code api endpoint switch",
+        "agent session history",
+        "tui for claude code"
+      ]
+    },
+    {
+      "id": "SeemSeam/claude_codex_bridge",
+      "name": "CCB (Claude Codex Bridge)",
+      "category": "agent-workbenches",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "multi-agent",
+        "tui",
+        "claude",
+        "codex",
+        "terminal"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run Codex, Claude, Gemini and other CLI coding agents side by side in one terminal workspace that you can take over.",
+      "why": "Agents talk to each other in graphs like A to B to C, but each runs as a visible native terminal.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A multi-agent terminal UI with a cross-provider messaging layer. A background daemon keeps project state alive when the UI closes. It can run several CLI providers at once and has a mobile remote controller.",
+      "best_for": "Developers who already use several coding-agent CLIs and want them to hand work to each other while they watch.",
+      "not_for": "A library for building your own agents. The license is listed as NOASSERTION, so check it before reuse.",
+      "keywords": [
+        "multi agent cli",
+        "codex claude gemini together",
+        "ccb",
+        "claude code codex bridge",
+        "agent tui",
+        "coordinate coding agents",
+        "tmux agents"
+      ]
+    },
+    {
+      "id": "jarrodwatts/claude-hud",
+      "name": "claude-hud",
+      "category": "agent-workbenches",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "claude-code",
+        "statusline",
+        "context",
+        "observability"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "See context usage, active tools, subagents and todo progress in Claude Code",
+      "why": "Popular Claude Code plugin (135 contributors) that adds a live HUD without leaving the terminal.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Claude Code status line plugin showing model, project and git branch, plus context usage and subscriber rate limits; optional lines show active tools, running subagents and todo progress. It runs as a status line command reading session data from stdin.",
+      "best_for": "Keeping live context-window and usage visibility in Claude Code without a separate window or tmux.",
+      "not_for": "Claude Code only. Usage limits appear only for subscriber sessions, and are hidden for API-key, Bedrock and Vertex sessions.",
+      "keywords": [
+        "claude code",
+        "status line",
+        "statusline",
+        "context usage",
+        "rate limits",
+        "hud",
+        "subagents",
+        "todo progress",
+        "plugin"
+      ],
+      "featured": true
+    },
+    {
+      "id": "manaflow-ai/cmux",
+      "name": "cmux",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "terminal",
+        "macos",
+        "ghostty",
+        "agents",
+        "notifications"
+      ],
+      "ecosystems": [
+        "swift"
+      ],
+      "use_for": "Use a macOS terminal with vertical tabs and notifications built for running many coding agents.",
+      "why": "Native Swift app on libghostty that shows git branch, PR status, ports and agent alerts in a sidebar.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "cmux is a Ghostty-based macOS terminal. Panes get a ring and tabs light up when an agent needs attention, picked up from terminal sequences or a cmux notify command wired into hooks. It adds an in-app scriptable browser, SSH workspaces and a Claude Code teams command.",
+      "best_for": "Developers running several Claude Code or Codex sessions in parallel on a Mac.",
+      "not_for": "macOS only. A terminal app to use, not a library to build on.",
+      "keywords": [
+        "terminal for coding agents",
+        "ghostty terminal",
+        "macos terminal notifications",
+        "claude code terminal",
+        "vertical tabs terminal",
+        "agent session manager",
+        "libghostty"
+      ]
+    },
+    {
+      "id": "spacering-net/codeg",
+      "name": "Codeg",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "acp",
+        "multi-agent",
+        "coding-agents",
+        "workspace",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "typescript",
+        "rust"
+      ],
+      "use_for": "Run Claude Code, Codex, OpenCode and other coding agents in one workspace and search all their sessions.",
+      "why": "Speaks the Agent Client Protocol so 19 built-in agents share one rich UI, with session import and handoff.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Codeg is a multi-agent coding workspace. It shows every agent as a structured conversation with tool cards and diffs, imports and searches session history from each agent CLI, lets agents delegate to each other with @, and runs to-dos unattended in their own git worktrees. Available as a desktop app, self-hosted server or Docker.",
+      "best_for": "You use several coding agents and want one UI, shared session history and scheduled agent tasks.",
+      "not_for": "It wraps existing agent CLIs and does not replace them. Not a library for building your own agent.",
+      "keywords": [
+        "acp client",
+        "multi-agent coding ui",
+        "claude code codex gui",
+        "agent session manager",
+        "agent client protocol",
+        "unified coding agent",
+        "worktree agent tasks"
+      ]
+    },
+    {
+      "id": "chuspeeism/dashi-taskboard",
+      "name": "Codex Taskboard",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app",
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "taskboard",
+        "codex",
+        "kanban",
+        "sqlite",
+        "cli"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Run a local issue board next to Codex that you and the agent both update through an HTTP API and a taskctl CLI.",
+      "why": "The same HTTP API powers the React UI, the taskctl CLI and a bundled Codex skill.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local-first issue board that runs in the browser and can be embedded in the Codex app through a CDP launcher or injection script. Data is stored in SQLite. The bundled skill lets the agent manage tasks with taskctl.",
+      "best_for": "Tracking tasks for a Codex workflow on your own machine with a board the agent can read and write.",
+      "not_for": "Needs Node.js 22.5 or newer. Embedding relies on remote-debugging the Codex app, which is fragile. Mac and Windows packaging needs Rust toolchains.",
+      "keywords": [
+        "codex taskboard",
+        "task board for coding agents",
+        "agent kanban",
+        "taskctl",
+        "deepseek harness taskboard",
+        "local issue tracker for ai agents"
+      ]
+    },
+    {
+      "id": "collabs-inc/collab-public",
+      "name": "Collaborator",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "electron",
+        "agent-canvas",
+        "terminals",
+        "local-first",
+        "desktop-app"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Arranging terminals, agent sessions and context files on an infinite canvas for agentic development.",
+      "why": "Keeps all application state as local JSON files with no accounts required.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Collaborator is a native desktop app (Electron, React, xterm.js, Monaco) for building with agents. Terminals, context files and running code are arranged on a pan-and-zoom canvas, with a file-tree navigator and support for both PowerShell and WSL2 terminal sessions on Windows.",
+      "best_for": "Developers who want a visual, canvas-based workspace for running multiple agent terminals side by side.",
+      "not_for": "Early-stage and in active development; not for users who need a stable, feature-complete release.",
+      "keywords": [
+        "agent canvas app",
+        "collaborator desktop app",
+        "infinite canvas coding",
+        "claude code canvas",
+        "agentic development workspace",
+        "terminal canvas tool"
+      ]
+    },
+    {
+      "id": "yetone/cumora",
+      "name": "Cumora",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "team-chat",
+        "agents",
+        "byoa",
+        "kanban",
+        "multi-platform"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react",
+        "electron"
+      ],
+      "use_for": "Run team chat where AI agents are teammates, on a cloud brain or your own Claude Code or Codex.",
+      "why": "Agents get personas, memory, email and a shared Kanban board, and can run on your own machine.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Cumora is cross-platform team chat with AI agents as first-class participants beside humans. Agents claim work, coordinate, and send and receive email. Brains run on Cumora Cloud with the OpenAI Responses API, or on your own machine through BYOA with Claude Code, Codex, OpenCode and others. Clients are web, Electron, iOS and Android.",
+      "best_for": "You want a Slack-like workspace where agents join the team, and you may read or fork the full stack.",
+      "not_for": "A full product with Kubernetes and Cloudflare pieces, not a drop-in library. Cloud agents rely on the OpenAI API. Android is not published yet.",
+      "keywords": [
+        "ai team chat",
+        "agents as teammates",
+        "slack for agents",
+        "bring your own agent",
+        "agent kanban",
+        "multi-agent chat app",
+        "cumora"
+      ]
+    },
+    {
+      "id": "anywhere-labs/dsh-desktop",
+      "name": "DSH Desktop",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app",
+        "plugin"
+      ],
+      "tags": [
+        "desktop",
+        "deepseek-harness",
+        "plugins",
+        "agent-client",
+        "windows"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Run DeepSeek Harness as a desktop app with a plugin market, tray and phone remote control.",
+      "why": "Wraps the harness's local web UI and plugin system in a native window with its own plugin marketplace.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "DSH Desktop is a community desktop client for DeepSeek Harness on Windows and macOS. It starts and manages the local harness service, adds a tray, terminal, updates and a built-in plugin market, and can be controlled from a phone. README is in Chinese.",
+      "best_for": "Users and plugin authors in the DeepSeek Harness ecosystem who want a packaged desktop experience.",
+      "not_for": "Independent project with no tie to DeepSeek. Needs the upstream harness. LAN access has no authentication.",
+      "keywords": [
+        "deepseek harness desktop",
+        "deepseek desktop client",
+        "agent plugin market",
+        "dsh desktop",
+        "deepseek agent app",
+        "桌面 插件",
+        "windows macos agent app"
+      ]
+    },
+    {
+      "id": "EKKOLearnAI/ekko-studio",
+      "name": "Ekko Studio",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "multi-agent",
+        "workspace",
+        "desktop",
+        "web-console",
+        "usage-analytics"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run and manage several coding and chat agents in one local-first desktop or web workspace.",
+      "why": "Connects Hermes, Ekko Agent and 14 coding agents with chat, workflows and usage stats.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop app and self-hosted web console for multi-agent chat, coding and visual workflows. It offers shared and group chats, files, voice, visual workflows with approval gates, agent management and usage analytics.",
+      "best_for": "People who run many agents and want one interface for sessions, workflows and cost tracking.",
+      "not_for": "Building agents in code. It is an end-user workspace, previously named Hermes Studio, and the licence is not a standard SPDX one.",
+      "keywords": [
+        "multi agent workspace",
+        "hermes web ui",
+        "agent manager",
+        "claude code gui",
+        "local first ai studio",
+        "agent workflows",
+        "ekko studio"
+      ]
+    },
+    {
+      "id": "entireio/cli",
+      "name": "Entire CLI",
+      "category": "agent-workbenches",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "git",
+        "agent-sessions",
+        "checkpoints",
+        "claude-code",
+        "audit"
+      ],
+      "ecosystems": [
+        "go",
+        "git"
+      ],
+      "use_for": "Record AI agent sessions alongside git commits so you can search and resume how code was written.",
+      "why": "Git-native: transcripts live outside your branch history and link to commits via trailers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Entire hooks into git to capture agent prompts, transcripts, files touched and tool calls. On commit, work is condensed into a checkpoint linked by a trailer. You can resume a session from a checkpoint. Works with Claude Code, Codex, Cursor and others.",
+      "best_for": "Teams who need traceability of AI-written code and want to pick up agent sessions later.",
+      "not_for": "Repos where nothing should be stored about prompts. Some agents need specific setup steps and have limits (see README).",
+      "keywords": [
+        "track ai agent sessions",
+        "git ai audit trail",
+        "resume claude code session",
+        "agent transcripts in git",
+        "ai code provenance",
+        "entire cli",
+        "checkpoints"
+      ]
+    },
+    {
+      "id": "gastownhall/gastown",
+      "name": "Gas Town",
+      "category": "agent-workbenches",
+      "kinds": [
+        "cli",
+        "framework"
+      ],
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "workspace",
+        "git-hooks",
+        "beads"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Coordinate many AI coding agents on different tasks, with work state saved in git-backed hooks.",
+      "why": "Keeps work state in a ledger so agent restarts do not lose context, and scales to 20-30 agents.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Gas Town is a workspace manager for agents such as Claude Code, Copilot, Codex and Gemini. Work persists in git-backed hooks and the Beads ledger, with mailboxes, identities and handoffs between agents. You talk to a Mayor agent to start work.",
+      "best_for": "Running larger teams of coding agents that need shared state and handoffs.",
+      "not_for": "Light single-agent use. Its own terms and setup add overhead for small tasks.",
+      "keywords": [
+        "gas town",
+        "multi agent workspace",
+        "agent orchestration",
+        "claude code swarm",
+        "gt cli",
+        "agent mailboxes",
+        "coordinate coding agents"
+      ]
+    },
+    {
+      "id": "tiann/hapi",
+      "name": "HAPI",
+      "category": "agent-workbenches",
+      "kinds": [
+        "cli",
+        "app",
+        "service"
+      ],
+      "tags": [
+        "remote-control",
+        "claude-code",
+        "codex",
+        "mobile",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run Claude Code, Codex and other agent sessions on your machine and control them from your phone or web.",
+      "why": "Wraps the real agent CLIs so you can hand off between terminal and phone without losing context.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "HAPI starts official agent sessions locally and exposes them through a hub with native iOS/Android apps, a PWA or a Telegram Mini App. It supports approvals from your phone, a remote terminal and a workspace browser. A relay or your own tunnel provides access.",
+      "best_for": "Developers who want to approve and steer coding agents away from their desk.",
+      "not_for": "Cloud-hosted agents. It controls agents running on your own machine, and the hub should not be exposed to the open internet unprotected. AGPL-3.0.",
+      "keywords": [
+        "control claude code from phone",
+        "remote coding agent",
+        "codex mobile app",
+        "happy alternative",
+        "agent session handoff",
+        "vibe coding mobile",
+        "hapi"
+      ]
+    },
+    {
+      "id": "herdrdev/herdr",
+      "name": "herdr",
+      "category": "agent-workbenches",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "terminal-multiplexer",
+        "agent-runtime",
+        "tmux-like",
+        "ssh",
+        "plugins"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Keep many coding-agent terminals running, labeled working, blocked or idle, in one Rust binary.",
+      "why": "Agents can drive it through a CLI and socket API to spawn panes and wait on each other.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "herdr is a terminal runtime for coding agents. It keeps terminals alive in a background server after you detach or lose SSH, shows each pane as working, blocked or idle, and combines local and saved SSH machines. It wraps no agent and has plugins.",
+      "best_for": "You run Claude Code, Codex, OpenCode and similar agents side by side and want a tmux-like manager.",
+      "not_for": "It does not run agents itself, and after a machine restart the original processes do not survive. It is a terminal tool, not a library.",
+      "keywords": [
+        "herdr",
+        "agent terminal multiplexer",
+        "tmux for coding agents",
+        "manage claude code sessions",
+        "agent runtime",
+        "ssh agent sessions",
+        "agent blocked idle status"
+      ]
+    },
+    {
+      "id": "RunMaestro/Maestro",
+      "name": "Maestro",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "agent-orchestration",
+        "desktop",
+        "git-worktrees",
+        "claude-code",
+        "codex"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Run many coding agents in parallel from one desktop app, with worktrees, playbooks and group chat.",
+      "why": "Auto Run executes markdown task lists with a fresh session per task, enabling very long unattended runs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A cross-platform desktop app that orchestrates Claude Code, Codex, OpenCode, Factory Droid and other CLI agents. It adds git worktree sub-agents, Auto Run playbooks, group chat with a moderator agent, and a keyboard-first interface. It passes through your existing agent config.",
+      "best_for": "Power users running several agents across projects who want one keyboard-driven control center.",
+      "not_for": "Embedding orchestration in your own product, or commercial closed-source reuse: it is an AGPL-3.0 desktop app.",
+      "keywords": [
+        "agent orchestration desktop app",
+        "run multiple claude code agents",
+        "coding agent command center",
+        "git worktree agents",
+        "auto run playbooks",
+        "maestro agents",
+        "parallel coding agents"
+      ]
+    },
+    {
+      "id": "builderz-labs/mission-control",
+      "name": "Mission Control",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "agent-ops",
+        "control-plane",
+        "dashboard",
+        "self-hosted",
+        "cost-tracking"
+      ],
+      "ecosystems": [
+        "typescript",
+        "sqlite"
+      ],
+      "use_for": "Dispatch tasks to, review and track spend of agents from Claude Code, Codex, OpenClaw and others.",
+      "why": "One local SQLite-backed dashboard with web UI, CLI, MCP server, REST API and review gates over many runtimes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted control plane that sits above agent runtimes. It handles task inbox and review, agent registration, schedules, alerts, webhooks, token and cost views, a skills registry, roles and audit trails.",
+      "best_for": "Operating several agent runtimes from one place with governance and cost visibility.",
+      "not_for": "Replacing an agent's reasoning loop, and production exposure: it is alpha, APIs may change, and live messaging needs a runtime gateway.",
+      "keywords": [
+        "agent control plane",
+        "agent dashboard",
+        "manage claude code agents",
+        "track agent cost",
+        "openclaw dashboard",
+        "agent task dispatch",
+        "self-hosted agent ops"
+      ]
+    },
+    {
+      "id": "hardbeat920/monocode",
+      "name": "MonoCode",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "coding-agent-gui",
+        "multi-agent",
+        "git-worktrees",
+        "claude-code",
+        "desktop-app"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Running and organizing multiple coding-agent sessions (Claude Code, Codex, Cursor and others) side by side in a desktop GUI.",
+      "why": "Uses your existing agent subscriptions directly and does not sell tokens itself.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "MonoCode is a desktop GUI for coding agents. Each tab is a session with an installed, logged-in agent CLI; you can split panes to work side by side, use separate Git worktrees per task, and edit files or review changes inside the app.",
+      "best_for": "Developers who already pay for agent CLI subscriptions and want a GUI to manage multiple parallel sessions.",
+      "not_for": "Still early software, so expect rough edges; it requires the underlying agent CLIs to already be installed and logged in.",
+      "keywords": [
+        "coding agent gui",
+        "claude code gui",
+        "codex gui",
+        "monocode",
+        "git worktree agent sessions",
+        "multi agent desktop app"
+      ]
+    },
+    {
+      "id": "HarnessMD/munder-difflin",
+      "name": "Munder Difflin",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "multi-agent",
+        "terminal-agents",
+        "desktop-app",
+        "memory",
+        "orchestration"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Run an office of Claude Code, Codex and other terminal agents that message each other and share memory.",
+      "why": "Wraps real agent CLIs in pseudo-terminals, so you keep your existing subscriptions.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop app that runs each terminal agent CLI (claude, codex, opencode and others) as a real process and shows it as an avatar on an office floor. Agents coordinate through a git-based hive of files, with a GOD agent that routes and escalates, plus a markdown memory layer.",
+      "best_for": "Running many agent CLIs side by side with shared memory and a single supervising agent.",
+      "not_for": "A desktop app, not an embeddable library. Quality depends on the agent CLIs it wraps and their subscriptions.",
+      "keywords": [
+        "multi-agent desktop",
+        "run many claude code agents",
+        "agent orchestration gui",
+        "codex claude team",
+        "agent office",
+        "shared agent memory"
+      ]
+    },
+    {
+      "id": "omnigent-ai/omnigent",
+      "name": "Omnigent",
+      "category": "agent-workbenches",
+      "kinds": [
+        "framework",
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "meta-harness",
+        "multi-agent",
+        "claude-code",
+        "sandbox",
+        "orchestration"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run and supervise several coding agents (Claude Code, Codex, Cursor and more) from one layer.",
+      "why": "Swap or mix agent harnesses without rewriting, with policies and sandboxes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source meta-harness that sits over Claude Code, Codex, Cursor, OpenCode, Hermes, Pi and custom YAML agents. Sessions sync across terminal, browser and phone. It adds approval policies, cloud sandboxes and shared sessions.",
+      "best_for": "Teams who use more than one coding agent and want shared sessions, governance and sandboxing.",
+      "not_for": "Windows users who need the tmux wrappers or bwrap/seatbelt sandboxing. The README says these are not available on Windows.",
+      "keywords": [
+        "agent orchestration",
+        "meta harness",
+        "run claude code and codex together",
+        "coding agent sandbox",
+        "multi agent coding",
+        "agent governance",
+        "omnigent"
+      ]
+    },
+    {
+      "id": "openchamber/openchamber",
+      "name": "OpenChamber",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "opencode",
+        "coding-agent",
+        "vscode",
+        "multi-run",
+        "workspace"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Run, compare and review AI coding sessions from a desktop, web, VS Code or mobile interface on OpenCode.",
+      "why": "Multi-run gives one task to up to five models and Fusion combines the best parts.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source workspace on top of the OpenCode agent. It adds multi-run comparison, session goals that continue automatically, guided diff walkthroughs and a live preview that sends element details to the agent.",
+      "best_for": "OpenCode users who want a richer UI for reviewing agent work and working from several devices.",
+      "not_for": "Use without OpenCode. It is built on OpenCode and is independent of the OpenCode team.",
+      "keywords": [
+        "opencode ui",
+        "coding agent gui",
+        "compare ai models coding",
+        "agent workspace",
+        "vscode agent extension",
+        "multi model coding",
+        "openchamber"
+      ]
+    },
+    {
+      "id": "mvschwarz/openrig",
+      "name": "OpenRig",
+      "category": "agent-workbenches",
+      "kinds": [
+        "cli",
+        "framework"
+      ],
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "yaml",
+        "claude-code",
+        "codex"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Define a team of coding agents in YAML and run Claude Code and Codex together as one system.",
+      "why": "Treats a team of agents as one managed system with roles, shared context and recovery after a reboot.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenRig is a multi-agent harness. You describe pods and agent roles in a RigSpec YAML file and boot them with one command. It tracks which sessions run, how they relate and how to restore them.",
+      "best_for": "Running several persistent coding agents across Claude Code, Codex and Pi without terminal sprawl.",
+      "not_for": "It changes your machine: tmux config, hooks and trust settings. The README lists these. It manages agents and does not replace them.",
+      "keywords": [
+        "openrig",
+        "multi-agent harness",
+        "agent team yaml",
+        "claude code and codex together",
+        "persistent agents",
+        "agent topology",
+        "rig cli"
+      ]
+    },
+    {
+      "id": "stablyai/orca",
+      "name": "Orca",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "agent-orchestrator",
+        "git-worktrees",
+        "desktop",
+        "coding-agents",
+        "terminal"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Run several coding agents side by side, each in its own git worktree, from one desktop app.",
+      "why": "Parallel worktrees, a mobile companion and a CLI that agents can drive themselves.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "Orca is a desktop app for running Codex, Claude Code, OpenCode or Pi in parallel. It gives each its own worktree, with terminal splits, SSH worktrees, diff annotation and GitHub/Linear views. A CLI lets agents script it.",
+      "best_for": "You run multiple coding agents on one repo and want isolation, comparison and review in a single place.",
+      "not_for": "It is an app, not a library to embed. It orchestrates agents you already have, using your own subscriptions.",
+      "keywords": [
+        "orca",
+        "stablyai orca",
+        "parallel coding agents",
+        "git worktree agents",
+        "agent orchestrator",
+        "codex claude code manager",
+        "ai agent terminal"
+      ]
+    },
+    {
+      "id": "OrchestratorInc/agent-orchestrator",
+      "name": "Orchestrator.inc",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "coding-agents",
+        "orchestration",
+        "kanban",
+        "pull-requests",
+        "worktrees"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Plan, run and supervise many coding agents in parallel, each in its own workspace.",
+      "why": "Works with Claude Code, Codex and 25+ other harnesses, with CI and review feedback in one place.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop, web and mobile app that gives each task its own coding agent and isolated workspace. A Kanban shows workers, pull requests, CI runs and reviews. Feedback goes back to the same agent.",
+      "best_for": "Developers running several coding agents at once who want one place to track tasks, PRs and reviews.",
+      "not_for": "Building your own agent runtime. It supervises existing agent tools rather than providing an agent framework.",
+      "keywords": [
+        "manage coding agents",
+        "parallel coding agents",
+        "claude code orchestrator",
+        "agent kanban",
+        "multi agent coding",
+        "codex manager",
+        "agent worktrees"
+      ]
+    },
+    {
+      "id": "getpaseo/paseo",
+      "name": "Paseo",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "agent-orchestration",
+        "worktrees",
+        "multi-provider",
+        "mobile",
+        "daemon"
+      ],
+      "ecosystems": [
+        "typescript",
+        "ios",
+        "android"
+      ],
+      "use_for": "Run and manage many coding agents from desktop, mobile, web and CLI, each in its own git worktree.",
+      "why": "One interface for Claude Code, Codex, Copilot and others, with plugins that show in every client.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Paseo is an agentic development environment. A local daemon manages agents; desktop, mobile, web and CLI clients connect to it. Each agent gets its own worktree, and agents can launch and message each other. It has diffs, terminals, PR tools and a plugin system.",
+      "best_for": "Developers who run several coding agents in parallel and want to check in from a phone.",
+      "not_for": "Building your own agent framework. It is a front end for existing agents, and its license is not a standard one.",
+      "keywords": [
+        "manage multiple coding agents",
+        "claude code ui",
+        "codex ui",
+        "agent worktrees",
+        "mobile coding agent",
+        "parallel agents",
+        "agent orchestrator app"
+      ]
+    },
+    {
+      "id": "PeonPing/peon-ping",
+      "name": "peon-ping",
+      "category": "agent-workbenches",
+      "kinds": [
+        "plugin",
+        "cli"
+      ],
+      "tags": [
+        "notifications",
+        "sound",
+        "hooks",
+        "claude-code",
+        "mcp"
+      ],
+      "ecosystems": [
+        "claude-code",
+        "codex",
+        "cursor",
+        "shell"
+      ],
+      "use_for": "Get sound and on-screen alerts when a coding agent finishes or needs permission.",
+      "why": "Works across many agent tools and follows an open event sound pack spec (CESP).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Plays game character voice lines and shows overlay banners and tab titles when an AI coding agent finishes, asks for input or hits an error. It works with Claude Code, Codex, Cursor and many other agents, and an MCP mode lets the agent pick its own sound.",
+      "best_for": "Anyone who tabs away while agents run and wants a clear signal when attention is needed.",
+      "not_for": "Notifications only. The default sound packs use game character voices, so check rights before redistributing them.",
+      "keywords": [
+        "claude code notifications",
+        "agent finished sound",
+        "coding agent alert",
+        "warcraft peon",
+        "hook sounds",
+        "permission prompt notification"
+      ]
+    },
+    {
+      "id": "agegr/pi-web",
+      "name": "Pi Web",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "web-ui",
+        "coding-agent",
+        "pi",
+        "sessions",
+        "git"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Use the pi coding agent from a local browser UI with sessions, file tools and model settings.",
+      "why": "Shares pi's own config and session files, so nothing needs migrating.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local browser UI for the pi coding agent. You can browse and resume sessions, branch conversations, preview files, view Git diffs and manage providers, models and skills. It runs with one npx command and listens on 127.0.0.1.",
+      "best_for": "Pi users who prefer a browser to the terminal.",
+      "not_for": "Only for the pi agent. Needs Node.js 22.19 or newer.",
+      "keywords": [
+        "pi web",
+        "pi coding agent ui",
+        "agent web ui",
+        "session browser",
+        "pi-web",
+        "local agent interface"
+      ]
+    },
+    {
+      "id": "pixel-agents-hq/pixel-agents",
+      "name": "Pixel Agents",
+      "category": "agent-workbenches",
+      "kinds": [
+        "plugin",
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "agent-monitoring",
+        "visualization",
+        "vscode-extension",
+        "claude-code",
+        "pixel-art"
+      ],
+      "ecosystems": [
+        "typescript",
+        "vscode"
+      ],
+      "use_for": "See your Claude Code terminals as animated pixel characters in a tiny office.",
+      "why": "Shows each agent's live activity and waiting state at a glance.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A VS Code extension and standalone CLI (npx pixel-agents) that map each AI coding agent to a pixel-art character. Characters walk, type, read and flag when they need input. It includes a layout editor, sub-agent display and sound notifications.",
+      "best_for": "Developers running several agents in parallel who want a fun status view.",
+      "not_for": "Serious orchestration. It only visualizes agents; Claude Code is the only reference integration today, others are on the roadmap.",
+      "keywords": [
+        "agent dashboard",
+        "claude code visualizer",
+        "pixel art agents",
+        "multi agent monitor",
+        "vscode agent extension",
+        "agent status display",
+        "pixel agents"
+      ]
+    },
+    {
+      "id": "superset-sh/superset",
+      "name": "Superset",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "agent-ide",
+        "worktrees",
+        "claude-code",
+        "codex",
+        "diff-review",
+        "parallel"
+      ],
+      "ecosystems": [
+        "typescript",
+        "macos"
+      ],
+      "use_for": "Run many CLI coding agents in parallel git worktrees with terminals, diff review and browser preview.",
+      "why": "Each task gets its own worktree, branch and terminals, with a built-in diff viewer and browser pane.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Superset is an agentic IDE for running Claude Code, Codex or another CLI agent in one workspace. Each task gets a Git worktree with its own branch and terminals. It has a diff viewer you can comment on, an in-app browser with per-workspace ports, and PR review tools.",
+      "best_for": "Developers running several coding agents on separate tasks and reviewing their patches.",
+      "not_for": "Sandboxing. The README says worktrees do not sandbox processes or prevent merge conflicts. The download shown is for macOS.",
+      "keywords": [
+        "parallel coding agents",
+        "agent ide",
+        "git worktree agents",
+        "claude code manager",
+        "codex multiple agents",
+        "conductor alternative",
+        "agent diff review",
+        "run many agents"
+      ]
+    },
+    {
+      "id": "openai/symphony",
+      "name": "Symphony",
+      "category": "agent-workbenches",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "coding-agents",
+        "orchestration",
+        "linear",
+        "codex",
+        "spec"
+      ],
+      "ecosystems": [
+        "elixir"
+      ],
+      "use_for": "Run coding agents on tracked project tasks in isolated runs, so engineers manage work instead of agents.",
+      "why": "Ships a written spec so you can have an agent build it in any language, plus an Elixir reference version.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Symphony watches a work board such as Linear and starts isolated, autonomous agent runs for each task. Agents return proof of work like CI status and review feedback. It comes as a spec plus an experimental Elixir implementation.",
+      "best_for": "Teams that already use harness engineering and want to hand off board tasks to agents with proof of work.",
+      "not_for": "Production use today: the README calls it a low-key engineering preview for trusted environments.",
+      "keywords": [
+        "symphony",
+        "openai symphony",
+        "autonomous coding agents",
+        "linear agent",
+        "codex orchestration",
+        "agent task runner",
+        "manage agents at scale"
+      ]
+    },
+    {
+      "id": "pingdotgg/t3code",
+      "name": "T3 Code",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "agent-harness",
+        "control-surface",
+        "mobile",
+        "desktop",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Control Claude Code, Codex, Cursor, OpenCode and other agents on your machine from web, desktop or mobile.",
+      "why": "A single open UI over the agent tools you already pay for, with iOS and Android apps.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true,
+      "summary": "T3 Code is an agent harness control surface. It runs a local server and lets you drive agents installed on your computer from a web app, an Electron desktop app or mobile apps. It uses your existing subscriptions and is meant to be forked if you disagree with its direction.",
+      "best_for": "Managing several coding agents from one place, including remotely from a phone.",
+      "not_for": "It controls other agents and does not replace them, so they must be installed and set up first.",
+      "keywords": [
+        "agent control surface",
+        "claude code ui",
+        "codex gui",
+        "mobile app for coding agents",
+        "remote coding agent",
+        "t3 code",
+        "agent harness frontend"
+      ]
+    },
+    {
+      "id": "tutti-os/tutti",
+      "name": "Tutti",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "multi-agent",
+        "collaboration",
+        "claude-code",
+        "codex",
+        "desktop"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Let several coding agents and people work in one shared workspace without copy-pasting between them.",
+      "why": "Hands work between agents such as Claude Code and Codex without you re-explaining context.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A collaboration space where multiple agents (Claude Code, Codex and others) and people work together in real time. The open-source app covers one person with several agents. A separate VM edition adds multi-user rooms.",
+      "best_for": "Developers who run more than one agent and are tired of acting as the messenger between them.",
+      "not_for": "Multi-user Rooms need the Tutti VM early-access edition, which needs an invite code. The README gives little technical detail.",
+      "keywords": [
+        "multi-agent workspace",
+        "claude code and codex together",
+        "agent collaboration",
+        "agent handoff",
+        "shared agent room",
+        "tutti"
+      ]
+    },
+    {
+      "id": "devdotfast/whiteboard",
+      "name": "Whiteboard",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "whiteboard",
+        "code-review",
+        "architecture",
+        "coding-agents",
+        "canvas"
+      ],
+      "ecosystems": [
+        "typescript",
+        "desktop"
+      ],
+      "use_for": "Let you and a coding agent design and review software together on a shared in-app canvas.",
+      "why": "Plugs into Claude Code and Codex and gives the agent an SDK to draw on the canvas.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source desktop app where humans and agents architect software together. Your coding agent draws diagrams and explains a branch or change on the canvas. It runs on macOS, Windows and Linux.",
+      "best_for": "Reviewing agent-written changes or explaining a codebase visually with an agent.",
+      "not_for": "You cannot edit files in it. Multi-repo reviews are poorly supported, and shared reviews do not update after sharing.",
+      "keywords": [
+        "agent whiteboard",
+        "visual code review",
+        "architecture canvas for ai",
+        "claude code diagrams",
+        "software design canvas",
+        "devdotfast whiteboard"
+      ]
+    },
+    {
+      "id": "max-sixty/worktrunk",
+      "name": "Worktrunk",
+      "category": "agent-workbenches",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "git-worktree",
+        "parallel-agents",
+        "cli",
+        "hooks",
+        "workflow"
+      ],
+      "ecosystems": [
+        "rust",
+        "git"
+      ],
+      "use_for": "Manage git worktrees as easily as branches so you can run AI agents in parallel.",
+      "why": "Three core commands plus hooks and copy-on-write build caches.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI for git worktree management. wt switch --create makes a branch and worktree, wt list shows status, wt merge squashes, rebases and cleans up, and wt remove tidies after a PR. Hooks automate local workflows.",
+      "best_for": "Running several coding agents on separate branches of one repo.",
+      "not_for": "Teams not using git worktrees. The license field shows NOASSERTION, so check the repo's license first.",
+      "keywords": [
+        "git worktree manager",
+        "parallel ai agents git",
+        "worktree cli",
+        "wt switch",
+        "multiple branches at once",
+        "agent worktrees",
+        "worktrunk"
+      ]
+    },
+    {
+      "id": "zeronsh/zeron",
+      "name": "Zeron",
+      "category": "agent-workbenches",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "coding-agents",
+        "control-plane",
+        "desktop",
+        "headless",
+        "sync"
+      ],
+      "ecosystems": [
+        "typescript",
+        "rust"
+      ],
+      "use_for": "Run and manage several coding agents (Claude Code, Codex, Cursor, Devin and others) from one app, locally or headless.",
+      "why": "One control plane for many agents, local by default, with optional sync across devices.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A native control plane for coding agents. A desktop app for macOS, Windows and Linux keeps sessions on your device. A Linux headless CLI runs the engine as a background service. Signing in adds multi-device sync.",
+      "best_for": "Juggling several coding agents at once, or keeping agents running on a server and following them from another device.",
+      "not_for": "The README excerpt is about installing and using it, not extending it. Signed-in devices can read and write each other's workspace files.",
+      "keywords": [
+        "coding agent manager",
+        "control plane for claude code and codex",
+        "multi agent desktop app",
+        "run agents on a vps",
+        "agent session sync",
+        "zeron"
+      ]
+    }
+  ]
+}

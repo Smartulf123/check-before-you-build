@@ -2,6 +2,40 @@
   "category": "cli-tooling",
   "entries": [
     {
+      "id": "rorkai/App-Store-Connect-CLI",
+      "name": "App Store Connect CLI (asc)",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "app-store-connect",
+        "testflight",
+        "ios",
+        "ci-cd",
+        "release-automation"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Automate TestFlight, builds, submissions, signing and metadata for Apple apps from scripts or CI.",
+      "why": "A single Go binary for the App Store Connect API, with a matching pack of 25 agent skills.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A fast, scriptable CLI for the App Store Connect API. It automates release work for iOS, macOS, tvOS and visionOS, from review status checks to TestFlight and submissions. Auth uses API keys, and `asc install-skills` adds agent skills.",
+      "best_for": "Release engineers and agents that automate Apple app shipping in CI or a terminal.",
+      "not_for": "Only for Apple's App Store Connect, and you need an API key. Releases built with Go 1.27 require macOS 13 or later.",
+      "keywords": [
+        "app store connect cli",
+        "testflight automation",
+        "ios release automation",
+        "fastlane alternative",
+        "asc command line",
+        "app store submission cli"
+      ]
+    },
+    {
       "id": "charmbracelet/bubbletea",
       "name": "Bubble Tea",
       "category": "cli-tooling",
@@ -144,6 +178,42 @@
       ]
     },
     {
+      "id": "mvanhorn/cli-printing-press",
+      "name": "CLI Printing Press",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli",
+        "framework"
+      ],
+      "tags": [
+        "cli-generator",
+        "api",
+        "mcp",
+        "sqlite",
+        "ai-agents"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Generate an agent-friendly Go CLI, Claude Code skill and MCP server for any API or website.",
+      "why": "Generated CLIs include a local SQLite store with sync, full-text search and cross-resource commands.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A generator that reads official API docs, existing community CLIs and MCP servers, and can sniff unpublished web APIs. It prints a token-efficient Go CLI with domain SQLite tables, FTS5 search, incremental sync, auto-JSON output when piped, plus a Claude Code skill and MCP server.",
+      "best_for": "Building a fast offline-capable CLI for an API that agents will use heavily.",
+      "not_for": "Output quality depends on the source API. Sniffing unpublished web APIs may break a site's terms.",
+      "keywords": [
+        "generate cli from api",
+        "openapi to cli",
+        "api to mcp server",
+        "agent native cli",
+        "sqlite sync cli",
+        "cli generator go",
+        "printing press"
+      ]
+    },
+    {
       "id": "pallets/click",
       "name": "Click",
       "category": "cli-tooling",
@@ -250,6 +320,77 @@
       ]
     },
     {
+      "id": "microsoft/coreutils",
+      "name": "Coreutils for Windows",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "coreutils",
+        "windows",
+        "unix-tools",
+        "uutils",
+        "grep"
+      ],
+      "ecosystems": [
+        "rust",
+        "windows"
+      ],
+      "use_for": "Use Unix-style commands like ls, grep and find natively on Windows with the same flags as Linux.",
+      "why": "A Microsoft-maintained single binary of uutils coreutils, findutils and grep.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A packaged multi-call binary of uutils/coreutils, findutils and grep for Windows. The aim is that the same commands, flags and pipelines work as on Linux, macOS and WSL, so scripts carry over.",
+      "best_for": "Windows users and CI that want familiar Unix tools without WSL.",
+      "not_for": "Full POSIX behaviour: no signals, no /dev/null, CRLF quirks, and PowerShell aliases can break piped binary streams. It is in preview.",
+      "keywords": [
+        "unix commands windows",
+        "coreutils windows",
+        "grep for windows",
+        "ls on windows",
+        "uutils",
+        "wsl alternative",
+        "gnu tools windows"
+      ]
+    },
+    {
+      "id": "DingTalk-Real-AI/dingtalk-workspace-cli",
+      "name": "DingTalk Workspace CLI (dws)",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "dingtalk",
+        "cli",
+        "agent-skills",
+        "enterprise",
+        "oauth"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Use DingTalk contacts, calendar, docs and more from the command line or from an AI agent.",
+      "why": "Official DingTalk CLI with JSON output, built-in agent skills and admin-controlled access.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A cross-platform CLI from DingTalk that exposes its product features as commands, such as contacts, calendar, docs, whiteboards and meeting minutes. It uses OAuth device flow, supports dry runs and several output formats, and ships agent skills.",
+      "best_for": "Scripting or letting agents work with DingTalk enterprise data.",
+      "not_for": "Needs a DingTalk organization with admin-approved CLI access. Only useful for DingTalk.",
+      "keywords": [
+        "dingtalk cli",
+        "dingtalk api",
+        "dingtalk agent",
+        "dws",
+        "dingtalk automation",
+        "enterprise chat cli"
+      ]
+    },
+    {
       "id": "ArthurSonzogni/FTXUI",
       "name": "FTXUI",
       "category": "cli-tooling",
@@ -280,6 +421,111 @@
         "widgets",
         "cmake",
         "cross-platform"
+      ]
+    },
+    {
+      "id": "unhappychoice/gitlogue",
+      "name": "gitlogue",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "git",
+        "terminal",
+        "animation",
+        "tui",
+        "demos"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Replay git commits in the terminal as an animated typing session.",
+      "why": "Turns real commit history into a syntax-highlighted replay, useful for demos and screen recordings.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A terminal tool that replays git commits as animation with typing, cursor movement, file tree changes and tree-sitter syntax highlighting for 32 languages. It can show a working-tree diff, replay a commit range, and run in screensaver mode. It has 9 built-in themes.",
+      "best_for": "Making demos, presentations, teaching material or a decorative terminal from a real git history.",
+      "not_for": "A visual toy, not a git workflow tool. It is not a real screensaver and may burn in OLED screens.",
+      "keywords": [
+        "git commit replay",
+        "git history animation",
+        "terminal screensaver",
+        "git visualization",
+        "commit playback",
+        "tui demo"
+      ]
+    },
+    {
+      "id": "openclaw/gogcli",
+      "name": "gog (gogcli)",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "google-workspace",
+        "gmail",
+        "calendar",
+        "drive",
+        "json-output"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Script Gmail, Calendar, Drive, Docs and Sheets from the terminal with JSON output.",
+      "why": "Offers a read-only mode, explicit account routing and least-privilege Gmail scopes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Go command-line client for Gmail, Calendar, Drive, Docs, Sheets and more of Google Workspace. Built for people, scripts, CI and agents, it provides machine-readable output, account routing and safety controls. You create your own Desktop OAuth client.",
+      "best_for": "Automation or agent tools that need safe, scriptable access to Google Workspace data.",
+      "not_for": "You must set up a Google Cloud project and OAuth client yourself. Not a library for embedding in an app.",
+      "keywords": [
+        "gmail cli",
+        "google workspace cli",
+        "google drive command line",
+        "gcal cli",
+        "agent google tools",
+        "gog",
+        "google docs from terminal"
+      ]
+    },
+    {
+      "id": "modem-dev/hunk",
+      "name": "hunk",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "diff-viewer",
+        "tui",
+        "code-review",
+        "git",
+        "ai-annotations"
+      ],
+      "ecosystems": [
+        "typescript",
+        "terminal"
+      ],
+      "use_for": "Review code changes in a terminal diff viewer with sidebar navigation and inline agent notes.",
+      "why": "A review-first interactive UI, unlike pager-style diff tools such as delta.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An interactive terminal diff viewer built on OpenTUI and Pierre diffs. It shows a multi-file review stream with a sidebar, split or unified layouts, watch mode, and mouse and keyboard control. It works as a Git difftool or pager and shows AI annotations inline.",
+      "best_for": "Reviewing agent-written changes in the terminal.",
+      "not_for": "Plain diff coloring in pipelines; use delta or difftastic for that. It is meant for interactive review.",
+      "keywords": [
+        "terminal diff viewer",
+        "git diff tui",
+        "review agent changes",
+        "delta alternative",
+        "difftastic alternative",
+        "code review cli",
+        "hunk"
       ]
     },
     {
@@ -356,6 +602,43 @@
       ]
     },
     {
+      "id": "larksuite/cli",
+      "name": "lark-cli",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "lark",
+        "feishu",
+        "cli",
+        "agent-skills",
+        "workplace-api"
+      ],
+      "ecosystems": [
+        "go",
+        "node"
+      ],
+      "use_for": "Control Lark/Feishu messages, docs, calendar, mail, sheets and more from the terminal or an AI agent.",
+      "why": "Official CLI with 200+ commands and ready-made agent skills.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "The official Lark/Feishu CLI from the larksuite team. It covers messaging, docs, drive, base, sheets, calendar, mail, tasks and meetings. It has a three-layer design of shortcuts, API commands and raw API, and stores credentials in the OS keychain.",
+      "best_for": "Automating Lark/Feishu work or giving an agent safe access to it.",
+      "not_for": "Anyone not on Lark or Feishu. It only talks to that platform.",
+      "keywords": [
+        "lark cli",
+        "feishu cli",
+        "飞书",
+        "lark api",
+        "larksuite",
+        "feishu agent skills",
+        "lark automation"
+      ]
+    },
+    {
       "id": "charmbracelet/lipgloss",
       "name": "Lip Gloss",
       "category": "cli-tooling",
@@ -388,6 +671,77 @@
         "css-like",
         "bubble tea",
         "colors"
+      ]
+    },
+    {
+      "id": "mixedbread-ai/mgrep",
+      "name": "mgrep",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "semantic-search",
+        "grep",
+        "cli",
+        "coding-agents",
+        "multimodal"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Search code, PDFs and images by meaning from the terminal.",
+      "why": "Grep-like feel with natural-language queries and a watch mode that keeps the index fresh.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI that indexes a repo into a Mixedbread store and answers natural-language queries over code, text, PDFs and images. It respects .gitignore, supports web search, and integrates with coding agents to cut token use.",
+      "best_for": "Finding code by description in large repos, and giving agents better search than grep.",
+      "not_for": "Needs a Mixedbread account or API key, so indexed content goes to their service. Audio and video are not yet supported.",
+      "keywords": [
+        "semantic grep",
+        "semantic code search",
+        "grep for agents",
+        "natural language code search",
+        "pdf search cli",
+        "mixedbread",
+        "codebase search"
+      ]
+    },
+    {
+      "id": "matthart1983/netwatch",
+      "name": "NetWatch",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "network",
+        "tui",
+        "packet-capture",
+        "diagnostics",
+        "monitoring"
+      ],
+      "ecosystems": [
+        "terminal"
+      ],
+      "use_for": "Watch live network traffic, connections and latency from the terminal and get diagnostic findings against a learned baseline.",
+      "why": "One binary with no config shows connections, packets with L7 decode, and a rule-based diagnostic engine.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A terminal network diagnostics tool with ten tabs: dashboard, connections, interfaces, packet capture with TLS decryption and JA4, stats, topology and more. It has full, lite (80x24) and dense views, and opens issues when a baseline breaks.",
+      "best_for": "Sysadmins and developers who want Wireshark-like visibility over SSH or in a tmux pane.",
+      "not_for": "Deep offline packet forensics at scale. Capture needs sudo or Linux capabilities, and platform support varies.",
+      "keywords": [
+        "terminal network monitor",
+        "tui packet capture",
+        "network diagnostics cli",
+        "netwatch",
+        "wireshark in terminal",
+        "ja4 fingerprint",
+        "connection monitor"
       ]
     },
     {
@@ -428,6 +782,41 @@
       ]
     },
     {
+      "id": "iOfficeAI/OfficeCLI",
+      "name": "OfficeCLI",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "office",
+        "docx",
+        "xlsx",
+        "pptx",
+        "agent-tools"
+      ],
+      "ecosystems": [
+        "dotnet"
+      ],
+      "use_for": "Let AI agents or scripts read, edit and render Word, Excel and PowerPoint files without Office installed.",
+      "why": "Single binary with JSON output, stable element paths and HTML or PNG rendering so agents can check results.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OfficeCLI is a command-line tool for creating and editing .docx, .xlsx and .pptx files. Every command can return JSON, elements have stable paths like /slide[1]/shape[2], and a built-in engine renders documents to HTML or PNG so agents can look and fix.",
+      "best_for": "Agent pipelines or CI jobs that generate reports and slide decks, replacing multi-library Python scripts.",
+      "not_for": "Rendering is an approximation of Office, not the real thing. Not for editing documents interactively as a person.",
+      "keywords": [
+        "edit word excel powerpoint cli",
+        "docx pptx xlsx automation",
+        "office for ai agents",
+        "python-pptx alternative",
+        "headless office",
+        "generate pptx from agent",
+        "openxml cli"
+      ]
+    },
+    {
       "id": "anomalyco/opentui",
       "name": "OpenTUI",
       "category": "cli-tooling",
@@ -461,6 +850,78 @@
         "solid",
         "flexbox",
         "opencode"
+      ]
+    },
+    {
+      "id": "steipete/oracle",
+      "name": "Oracle",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli",
+        "mcp"
+      ],
+      "tags": [
+        "second-opinion",
+        "code-review",
+        "mcp",
+        "context-bundle",
+        "gpt"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Bundle a prompt with chosen files and ask another AI model for a grounded second opinion.",
+      "why": "Works through an API or a signed-in browser, and shows exactly what it will send before it sends it.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Oracle is a CLI and MCP server that packs a prompt with selected files, sends the context to an AI model via API or a signed-in browser session, and stores the result as a session. A render mode prints the exact bundle without calling any model, and dry-run reports files and token estimates.",
+      "best_for": "You or your coding agent want a second model to review a real project, with control over which files go in.",
+      "not_for": "You still need a provider key or a signed-in browser session. Browser mode depends on Chrome and a ChatGPT or Gemini login. Not an agent framework.",
+      "keywords": [
+        "second opinion llm",
+        "ask gpt-5 pro cli",
+        "bundle files for llm",
+        "mcp code review",
+        "oracle cli",
+        "prompt with files",
+        "steipete oracle"
+      ]
+    },
+    {
+      "id": "Kuddev/pebrel",
+      "name": "Pebrel",
+      "category": "cli-tooling",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "terminal-emulator",
+        "ssh",
+        "gpui",
+        "ai-cli",
+        "desktop"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Use or fork a GPU-accelerated terminal with split panes, SSH/SFTP and workflows for Claude Code and Codex sessions.",
+      "why": "Rust and GPUI native app that combines terminals, SSH hosts, file browsing and AI session restore.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A desktop terminal workspace for Windows, macOS and Linux. It has tabs and splits, saved layouts, its own completion engine, an SSH host library with SFTP, Git actions and tracking of AI CLI conversations. It was formerly called Nebula.",
+      "best_for": "Windows users who live in terminals and AI coding CLIs and want an integrated SSH and sessions workspace.",
+      "not_for": "Reusing as a library, or embedding in closed-source products: it is a GPL-3.0 desktop application.",
+      "keywords": [
+        "gpu terminal windows",
+        "rust terminal emulator",
+        "ssh sftp terminal app",
+        "claude code terminal",
+        "gpui terminal",
+        "nebula terminal",
+        "ai cli workspace"
       ]
     },
     {
@@ -500,6 +961,41 @@
       ]
     },
     {
+      "id": "psmux/psmux",
+      "name": "psmux",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "tmux",
+        "terminal-multiplexer",
+        "windows",
+        "powershell",
+        "conpty"
+      ],
+      "ecosystems": [
+        "rust",
+        "windows"
+      ],
+      "use_for": "Use tmux-style split panes and sessions natively on Windows.",
+      "why": "Reads your .tmux.conf and supports tmux commands and themes without WSL.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A terminal multiplexer written in Rust for Windows. It uses ConPTY and speaks the tmux command language, with 90+ commands, split panes, windows, session persistence and mouse support. It installs as psmux, pmux and tmux.",
+      "best_for": "Windows users in PowerShell or cmd who want tmux workflows without WSL or Cygwin.",
+      "not_for": "Windows only. Not a full drop-in for every tmux feature, so check the compatibility doc.",
+      "keywords": [
+        "tmux for windows",
+        "windows terminal multiplexer",
+        "tmux powershell",
+        "tmux without wsl",
+        "rust tmux",
+        "conpty multiplexer"
+      ]
+    },
+    {
       "id": "ratatui/ratatui",
       "name": "Ratatui",
       "category": "cli-tooling",
@@ -535,6 +1031,40 @@
       ]
     },
     {
+      "id": "orhun/ratty",
+      "name": "Ratty",
+      "category": "cli-tooling",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "terminal-emulator",
+        "gpu",
+        "3d",
+        "ratatui",
+        "kitty-graphics"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Use or study a GPU-rendered terminal emulator that can show inline 3D objects and a 3D mode.",
+      "why": "A terminal emulator in Rust with inline 3D graphics and a customizable 3D cursor.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A GPU-rendered terminal emulator built with Rust and Ratatui. It supports normal 2D use, a 3D mode, inline 3D objects in .obj, .glb and .stl, a custom cursor model and the Kitty graphics protocol for images.",
+      "best_for": "Experimenting with 3D in the terminal, or reading how a Rust terminal emulator is built.",
+      "not_for": "A novelty-leaning terminal emulator, not a library for building your own terminal UI. Building from source needs system packages on Linux.",
+      "keywords": [
+        "gpu terminal emulator",
+        "3d terminal",
+        "rust terminal emulator",
+        "kitty graphics protocol",
+        "inline 3d in terminal",
+        "ratty"
+      ]
+    },
+    {
       "id": "Textualize/rich",
       "name": "Rich",
       "category": "cli-tooling",
@@ -567,6 +1097,42 @@
         "syntax highlighting",
         "tracebacks",
         "markdown"
+      ]
+    },
+    {
+      "id": "steipete/summarize",
+      "name": "Summarize",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "summarization",
+        "youtube",
+        "podcasts",
+        "chrome-extension",
+        "transcription"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "Summarize web pages, files, YouTube videos and podcasts from the terminal or a browser side panel.",
+      "why": "One tool extracts clean text from many sources, with transcript fallbacks and an optional Chrome and Firefox panel.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Node.js CLI plus Chrome Side Panel and Firefox Sidebar extension. It extracts readable content from pages, PDFs and media, uses published transcripts first, and can call configured models or coding CLIs.",
+      "best_for": "Quick link-to-summary workflows, or content extraction with JSON output for automation.",
+      "not_for": "Offline summaries without a model: extraction works with no key, but a model summary needs a provider, local model or authenticated CLI.",
+      "keywords": [
+        "summarize url cli",
+        "youtube summarizer",
+        "podcast summary",
+        "article summarizer",
+        "summarize extension chrome",
+        "tldr cli"
       ]
     },
     {
@@ -640,6 +1206,149 @@
       ]
     },
     {
+      "id": "microsoft/tgrep",
+      "name": "tgrep",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "grep",
+        "trigram-index",
+        "regex",
+        "code-search",
+        "monorepo"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Search large codebases with regex much faster than plain grep by using a trigram index and an optional server.",
+      "why": "Built into GitHub Copilot CLI to speed up grep across large repositories.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A grep that builds a trigram index of your repo. Run tgrep serve to keep the index fresh, or tgrep index for an on-disk index. Searches use the server, then the local index, then fall back to a filesystem scan. Regex literals become trigram lookups.",
+      "best_for": "Big monorepos where ripgrep or grep gets slow, and agents that run many searches.",
+      "not_for": "Small repos where grep is already instant. The index can lag changes, and .tgrep/ is build output that must not be committed.",
+      "keywords": [
+        "fast grep large repo",
+        "trigram index search",
+        "ripgrep alternative",
+        "code search cli",
+        "monorepo grep",
+        "indexed regex search",
+        "copilot cli grep"
+      ]
+    },
+    {
+      "id": "junhoyeo/tokscale",
+      "name": "Tokscale",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "token-usage",
+        "cost-tracking",
+        "coding-agents",
+        "dashboard",
+        "cli"
+      ],
+      "ecosystems": [
+        "typescript",
+        "rust"
+      ],
+      "use_for": "Track token usage and cost across many AI coding agents from your terminal.",
+      "why": "Reads local data from OpenCode, Claude Code, Codex, Copilot CLI and more in one dashboard.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Tokscale is a CLI and visualization dashboard that reads local session data from many coding agents to show token consumption and costs. It has views by model, day, hour and session. A submit command can upload stats to an optional leaderboard.",
+      "best_for": "Developers using several coding agents who want one view of tokens and spend.",
+      "not_for": "The leaderboard submit feature shares stats publicly, so use only if you want that. Depends on each agent's local file format.",
+      "keywords": [
+        "claude code token usage",
+        "ai coding cost tracker",
+        "ccusage alternative",
+        "codex usage stats",
+        "token leaderboard",
+        "opencode usage",
+        "agent spend dashboard"
+      ]
+    },
+    {
+      "id": "agavra/tuicr",
+      "name": "tuicr",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "code-review",
+        "tui",
+        "vim",
+        "git",
+        "pull-requests"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Review diffs in the terminal with vim keys and push inline reviews to GitHub, GitLab, Gitea, Bitbucket, Azure DevOps or Gerrit.",
+      "why": "One TUI works across git, jj and mercurial and can submit a real review to six code hosts.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A GitHub-style continuous diff in the terminal. You comment on lines, ranges or files, track review progress per file or hunk across sessions, and then export as a hosted review, markdown on the clipboard, or stdout.",
+      "best_for": "Reviewing your own or agent-written changes before committing, or doing PR reviews without leaving the terminal.",
+      "not_for": "Browser-based review with rich discussion threads. It is keyboard-driven and terminal only.",
+      "keywords": [
+        "terminal code review",
+        "tui diff viewer",
+        "review ai generated code",
+        "vim keybindings diff",
+        "pr review cli",
+        "gerrit review tui",
+        "tuicr"
+      ]
+    },
+    {
+      "id": "Gaurav-Gosain/tuios",
+      "name": "TUIOS",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "terminal-multiplexer",
+        "tiling",
+        "tui",
+        "agents",
+        "bubble-tea"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Run a terminal window manager with tiled panes, persistent sessions and an inbox for coding agents.",
+      "why": "A tmux-style multiplexer that also tracks what each coding agent is doing.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "TUIOS is a terminal multiplexer built with Go and the Charm stack. It has vim-like modal control, BSP tiling, workspaces, kitty graphics, and a daemon that keeps sessions alive and lets agents report state.",
+      "best_for": "Developers who run several coding agents in terminal panes and want one view of what each needs.",
+      "not_for": "Replacing tmux in existing setups without learning its modal keys. Check the docs for the daemon and session model.",
+      "keywords": [
+        "terminal multiplexer",
+        "tmux alternative",
+        "tiling terminal",
+        "agent inbox",
+        "bubble tea app",
+        "tui window manager",
+        "persistent terminal sessions"
+      ]
+    },
+    {
       "id": "fastapi/typer",
       "name": "Typer",
       "category": "cli-tooling",
@@ -709,6 +1418,148 @@
       ]
     },
     {
+      "id": "WecomTeam/wecom-cli",
+      "name": "wecom-cli",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "wecom",
+        "enterprise-wechat",
+        "cli",
+        "agent-skills",
+        "office"
+      ],
+      "ecosystems": [
+        "rust",
+        "node"
+      ],
+      "use_for": "Operate WeCom (Enterprise WeChat) messages, mail, docs, todos, calendar, meetings and contacts from the terminal or an AI agent.",
+      "why": "An official CLI from the WeCom team with an agent skill, covering most WeCom office features.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A command-line tool for the WeCom open platform. It can send bot messages, manage mail, documents, spreadsheets, todos, calendars, meetings and drive files, and read contacts. It is installed with npm and has an agent skill.",
+      "best_for": "Automating WeCom office tasks, or letting an agent act in a WeCom workspace.",
+      "not_for": "Needs a WeCom account, and optionally a bot ID and secret. Docs are in Chinese. Useful only if you work with WeCom.",
+      "keywords": [
+        "wecom cli",
+        "enterprise wechat cli",
+        "企业微信命令行",
+        "wecom agent skill",
+        "wecom bot notifications",
+        "wechat work automation"
+      ]
+    },
+    {
+      "id": "Andyyyy64/whichllm",
+      "name": "whichllm",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "local-llm",
+        "hardware",
+        "huggingface",
+        "benchmarks",
+        "model-selection"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Find which local LLM runs best on your GPU, CPU and RAM.",
+      "why": "Ranks by merged real benchmarks with recency weighting, not just parameter count.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI that auto-detects your hardware and ranks HuggingFace models that fit, using benchmarks such as LiveBench, Aider and Chatbot Arena. It shows memory, estimated speed and fit type, and can simulate a GPU.",
+      "best_for": "Choosing a local model before you download, or checking what a GPU purchase would let you run.",
+      "not_for": "Running models. It only recommends; speeds are estimates and depend on live HuggingFace and benchmark data.",
+      "keywords": [
+        "which llm can i run",
+        "local llm for my gpu",
+        "llm hardware fit",
+        "best local model",
+        "vram calculator llm",
+        "ollama model picker"
+      ]
+    },
+    {
+      "id": "pranshuparmar/witr",
+      "name": "witr",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "process",
+        "ports",
+        "debugging",
+        "tui",
+        "containers"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Find out why a process, port, container or file lock exists and what started it.",
+      "why": "Builds a cause chain back to the starter, with JSON output and a TUI.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "witr treats every question as a process question: it maps ports, services and containers to a PID, then shows what started it and what keeps it running. It has short output, JSON, exit codes for scripts, and a TUI with process, port, container and lock tabs.",
+      "best_for": "Debugging a mystery port, service or container on a dev machine or server.",
+      "not_for": "Full system monitoring or metrics; it explains single processes. Some owners need sudo to show.",
+      "keywords": [
+        "why is this running",
+        "what is using port",
+        "trace process origin",
+        "process ancestry",
+        "who started this process",
+        "port owner cli",
+        "process tree tui"
+      ]
+    },
+    {
+      "id": "vercel-labs/wterm",
+      "name": "wterm",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "terminal-emulator",
+        "wasm",
+        "zig",
+        "dom",
+        "web"
+      ],
+      "ecosystems": [
+        "typescript",
+        "zig",
+        "wasm"
+      ],
+      "use_for": "Embed a terminal emulator in a web page that renders to the DOM, so text selection, find and accessibility just work.",
+      "why": "A Zig core compiled to a small WASM binary, with an optional libghostty backend for full VT compliance.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "wterm is a web terminal emulator. The VT100/xterm parser is written in Zig and compiled to a roughly 26 KB WASM file. It draws real DOM rows, which keeps native selection, copy, browser find and screen readers working. React, Next.js and Svelte examples are included.",
+      "best_for": "Web apps that need an accessible in-browser terminal, such as cloud IDEs, sandboxes and docs demos.",
+      "not_for": "A canvas-rendered terminal for very heavy output, or a full shell by itself: you still wire up a backend or in-browser shell.",
+      "keywords": [
+        "web terminal",
+        "xterm.js alternative",
+        "terminal emulator for browser",
+        "wasm terminal",
+        "ghostty web",
+        "dom terminal",
+        "vercel terminal"
+      ]
+    },
+    {
       "id": "yargs/yargs",
       "name": "yargs",
       "category": "cli-tooling",
@@ -742,6 +1593,42 @@
         "help",
         "completion",
         "javascript"
+      ]
+    },
+    {
+      "id": "zerobrewhq/zerobrew",
+      "name": "zerobrew",
+      "category": "cli-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "homebrew",
+        "package-manager",
+        "cli",
+        "performance",
+        "uv-style"
+      ],
+      "ecosystems": [
+        "rust",
+        "macos",
+        "linux"
+      ],
+      "use_for": "Install Homebrew packages faster with a uv-style client for macOS and Linux.",
+      "why": "Claims up to 5x faster installs than Homebrew, with an optional brew-compatible command.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A fast client for Homebrew packages that applies uv-style architecture. The `zb` command installs, upgrades and removes packages, and an optional `brew` alias covers common commands. Search, services, tap and casks are not implemented.",
+      "best_for": "Developers who want quicker Homebrew formula installs and can live without casks and services.",
+      "not_for": "Experimental. It lacks cask, search, services and tap support, so keep real Homebrew for those.",
+      "keywords": [
+        "faster homebrew",
+        "brew alternative",
+        "homebrew client",
+        "zb install",
+        "uv for homebrew",
+        "macos package manager"
       ]
     }
   ]

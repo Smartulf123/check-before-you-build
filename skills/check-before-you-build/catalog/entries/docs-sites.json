@@ -251,6 +251,41 @@
       ]
     },
     {
+      "id": "sopaco/deepwiki-rs",
+      "name": "Litho (deepwiki-rs)",
+      "category": "docs-sites",
+      "kinds": [
+        "engine",
+        "cli"
+      ],
+      "tags": [
+        "documentation-generator",
+        "c4-model",
+        "architecture-docs",
+        "ai-docs",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Automatically generating C4-model architecture documentation (context, container, component, code diagrams) from a codebase.",
+      "why": "Keeps documentation in sync with code automatically, instead of relying on manual updates that fall behind.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Litho (formerly deepwiki-rs) is an AI-driven documentation engine, written in Rust, that analyzes source code and generates a DeepWiki-like Repo-Wiki with C4 model diagrams. It supports multiple languages including Rust, Python, Java, Go, C# and JavaScript, and can run in CI/CD to regenerate docs on every commit.",
+      "best_for": "Teams wanting automated, always-current architecture documentation generated straight from the codebase.",
+      "not_for": "The project has evolved toward a successor (Terrain) for living, agent-readable knowledge bases; Litho itself stays the fast, focused C4 generator.",
+      "keywords": [
+        "deepwiki-rs",
+        "litho docs generator",
+        "c4 model documentation",
+        "ai architecture docs",
+        "repo wiki generator",
+        "automated documentation"
+      ]
+    },
+    {
       "id": "squidfunk/mkdocs-material",
       "name": "Material for MkDocs",
       "category": "docs-sites",

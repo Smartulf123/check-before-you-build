@@ -533,6 +533,41 @@
       ]
     },
     {
+      "id": "Universal-Commerce-Protocol/ucp",
+      "name": "Universal Commerce Protocol (UCP)",
+      "category": "ecommerce",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "commerce",
+        "agentic-commerce",
+        "protocol",
+        "checkout",
+        "specification"
+      ],
+      "ecosystems": [
+        "protocol"
+      ],
+      "use_for": "Implement or consume a standard way for AI agents and apps to discover capabilities and run checkout with businesses.",
+      "why": "An open spec with composable Capabilities and Extensions, usable over REST, MCP or A2A.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "UCP is a specification and documentation repo. Businesses declare capabilities such as Checkout or Identity Linking in a profile, and platforms discover them. It supports payment service providers and credential providers, and security patterns like AP2 mandates.",
+      "best_for": "Merchants, platforms and payment providers building agent-ready checkout who want a shared standard.",
+      "not_for": "A ready-made store or SDK. This repository is the specification and docs, so you build the implementation.",
+      "keywords": [
+        "agentic commerce protocol",
+        "ai agent checkout",
+        "ucp",
+        "commerce interoperability standard",
+        "agent payments protocol",
+        "ai shopping agent",
+        "ap2 mandates"
+      ]
+    },
+    {
       "id": "vendurehq/vendure",
       "name": "Vendure",
       "category": "ecommerce",

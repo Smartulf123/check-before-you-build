@@ -38,6 +38,41 @@
       ]
     },
     {
+      "id": "software-mansion/argent",
+      "name": "Argent",
+      "category": "mobile",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "mobile-automation",
+        "ios",
+        "android",
+        "profiling",
+        "react-native"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Giving an AI assistant or CLI direct control to tap, debug and profile iOS, Android and TV apps.",
+      "why": "Combines interaction, flow recording, visual regression and native profiling (Hermes, Instruments, Perfetto) in one toolkit.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Argent is an agentic toolkit from Software Mansion that gives an AI assistant or developer direct control of iOS simulators, Android emulators and devices, TVs, and Electron/Chromium apps. It supports scripted interaction, recorded and replayed flows, OCR-aware visual regression diffs, and native profiling and debugging, all from the CLI.",
+      "best_for": "Teams wanting one CLI to drive, test and profile mobile and TV apps without leaving the terminal.",
+      "not_for": "Telemetry is on by default (opt-out), which some privacy-sensitive teams may want to disable immediately.",
+      "keywords": [
+        "mobile app automation cli",
+        "ios simulator control ai",
+        "android emulator automation",
+        "react native profiling tool",
+        "argent software mansion",
+        "mobile app debugging ai"
+      ]
+    },
+    {
       "id": "ionic-team/capacitor",
       "name": "Capacitor",
       "category": "mobile",
@@ -922,6 +957,43 @@
       ]
     },
     {
+      "id": "Emanuele-web04/remodex",
+      "name": "Remodex",
+      "category": "mobile",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "codex",
+        "remote-control",
+        "ios",
+        "e2e-encryption",
+        "bridge"
+      ],
+      "ecosystems": [
+        "swift",
+        "typescript",
+        "ios"
+      ],
+      "use_for": "Control Codex or OpenCode running on your Mac from an iPhone over an encrypted, paired session.",
+      "why": "Local-first and self-host friendly, with end-to-end encrypted pairing and an inspectable transport layer.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source bridge plus iOS app that keeps the coding runtime on your Mac. Your phone connects after a QR pairing. You can stream runs, steer them, queue prompts and do git actions from the phone.",
+      "best_for": "Checking on and steering a Codex session on your Mac from your phone, or studying a self-hosted phone-to-desktop agent bridge.",
+      "not_for": "The background service and trusted reconnect are macOS-only. You still need Codex CLI set up on your own.",
+      "keywords": [
+        "codex remote control",
+        "control codex from iphone",
+        "opencode mobile",
+        "coding agent mobile app",
+        "remodex",
+        "ios app for codex"
+      ]
+    },
+    {
       "id": "tamagui/tamagui",
       "name": "Tamagui",
       "category": "mobile",
@@ -1027,6 +1099,45 @@
       ]
     },
     {
+      "id": "Snapchat/Valdi",
+      "name": "Valdi",
+      "category": "mobile",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "cross-platform",
+        "ui",
+        "native",
+        "typescript",
+        "mobile"
+      ],
+      "ecosystems": [
+        "typescript",
+        "ios",
+        "android",
+        "macos"
+      ],
+      "use_for": "Write mobile UI once in TypeScript and compile it to native views on iOS, Android and macOS.",
+      "why": "Used in Snap's production apps for eight years, with native views and no web view or JS bridge.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Valdi is a cross-platform UI framework from Snap. You write declarative TypeScript components that compile to native views. It has a flexbox layout system, worker threads, native animations, gesture handling, a test framework and Bazel builds.",
+      "best_for": "Teams wanting native performance from one TypeScript codebase on iOS and Android.",
+      "not_for": "Beginners wanting a quick start. It is in beta, uses Bazel, and needs Xcode on macOS.",
+      "keywords": [
+        "cross platform ui framework",
+        "react native alternative",
+        "native views typescript",
+        "snap valdi",
+        "flutter alternative",
+        "ios android typescript",
+        "native performance ui",
+        "bazel mobile"
+      ]
+    },
+    {
       "id": "margelo/react-native-vision-camera",
       "name": "VisionCamera",
       "category": "mobile",
@@ -1094,6 +1205,42 @@
         "sync",
         "reactive",
         "observables"
+      ]
+    },
+    {
+      "id": "shiaho777/web-to-app",
+      "name": "WebToApp",
+      "category": "mobile",
+      "kinds": [
+        "app",
+        "engine"
+      ],
+      "tags": [
+        "apk",
+        "webview",
+        "android",
+        "web-to-app",
+        "on-device-build"
+      ],
+      "ecosystems": [
+        "android",
+        "kotlin"
+      ],
+      "use_for": "Build and sign Android APKs or AABs from a website, local files or a server project, on the phone itself.",
+      "why": "Builds, patches and signs APKs on-device and can run Node, PHP, Python, Go and WordPress inside the app.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An Android app that wraps websites and local projects into installable apps. It signs APKs and exports Play-ready AABs on the phone, supports extensions and userscripts, and has an agent with up to 60 tools.",
+      "best_for": "Turning a site or small web project into an Android app without a PC or build server.",
+      "not_for": "iOS, or a polished cross-platform framework. It is a phone-based APK workshop; the README also promotes fingerprint spoofing and proxy features.",
+      "keywords": [
+        "website to apk",
+        "web to app android",
+        "webview app builder",
+        "apk builder on phone",
+        "wrap website android app",
+        "aab export"
       ]
     }
   ]

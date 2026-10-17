@@ -2,6 +2,78 @@
   "category": "music-audio",
   "entries": [
     {
+      "id": "ace-step/ACE-Step-1.5",
+      "name": "ACE-Step 1.5",
+      "category": "music-audio",
+      "kinds": [
+        "library",
+        "app"
+      ],
+      "tags": [
+        "music-generation",
+        "text-to-music",
+        "lora",
+        "local-model",
+        "gradio"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate full songs locally from text with an open music model, via UI, Python or REST API.",
+      "why": "Runs under 4GB VRAM and trains a style LoRA from a few songs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source music foundation model that generates full songs on consumer hardware. It ships a Gradio UI, Python API, REST API, CLI and a VST3 plugin. Supports CUDA, MPS, ROCm, Intel XPU and CPU.",
+      "best_for": "Adding local AI music generation to an app or workflow without a paid API, including personalised styles via LoRA.",
+      "not_for": "Machines with no GPU if you need speed. The XL models need 12GB VRAM or more, and Python must be 3.11 or 3.12.",
+      "keywords": [
+        "ai music generation",
+        "text to music",
+        "local music model",
+        "open source suno alternative",
+        "song generator",
+        "music lora",
+        "ace step"
+      ]
+    },
+    {
+      "id": "0xShug0/audio.cpp",
+      "name": "audio.cpp",
+      "category": "music-audio",
+      "kinds": [
+        "engine",
+        "cli"
+      ],
+      "tags": [
+        "ggml",
+        "tts",
+        "stt",
+        "inference",
+        "local-ai"
+      ],
+      "ecosystems": [
+        "c++"
+      ],
+      "use_for": "Run text-to-speech, speech-to-text, voice conversion and music models locally from one C++ runtime.",
+      "why": "No Python needed, and one native runtime supports 100+ audio model architectures on NVIDIA, AMD, Apple and CPU.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A C++ audio inference framework on ggml. It runs TTS, STT, VAD, voice conversion and music generation models with a CLI and server, on Windows, Linux and macOS, with GGUF models on Hugging Face and streaming for several TTS models.",
+      "best_for": "Apps that want local, portable audio AI without Python dependencies.",
+      "not_for": "Each model has its own requirements and options, so read the model docs. The license is not clearly stated.",
+      "keywords": [
+        "whisper.cpp alternative",
+        "local tts",
+        "ggml audio",
+        "speech to text c++",
+        "voice conversion",
+        "gguf audio models",
+        "audio inference engine"
+      ]
+    },
+    {
       "id": "AudioKit/AudioKit",
       "name": "AudioKit",
       "category": "music-audio",
@@ -33,6 +105,41 @@
         "audio effects",
         "audio analysis",
         "sequencer"
+      ]
+    },
+    {
+      "id": "torvalds/AudioNoise",
+      "name": "AudioNoise",
+      "category": "music-audio",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "audio-effects",
+        "dsp",
+        "iir-filters",
+        "guitar-pedal",
+        "learning"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Read small, simple digital audio effect code built from IIR filters and delay loops.",
+      "why": "Tiny sample-in, sample-out effects written to learn DSP basics.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A set of toy digital audio effects from a guitar-pedal project. It uses only IIR filters and basic delay loops, with single-sample processing and no added latency, to explore digital audio basics.",
+      "best_for": "Learning basic DSP effect code and how low-latency per-sample processing looks.",
+      "not_for": "The author calls these toy effects not to be taken seriously. GPL-2.0, and not a polished effects library.",
+      "keywords": [
+        "audio effects",
+        "guitar pedal dsp",
+        "iir filter",
+        "delay effect",
+        "digital audio basics",
+        "linus torvalds audio",
+        "dsp learning"
       ]
     },
     {
@@ -172,6 +279,42 @@
         "sf2",
         "audio library",
         "c"
+      ]
+    },
+    {
+      "id": "HeartMuLa/heartlib",
+      "name": "HeartMuLa",
+      "category": "music-audio",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "music-generation",
+        "text-to-music",
+        "codec",
+        "lyrics",
+        "pytorch"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate music from lyrics and style tags with open-source models.",
+      "why": "A full open family: music model, codec, lyrics transcriber and audio-text alignment.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A family of open music models. HeartMuLa generates music from lyrics and tags in many languages, HeartCodec is a 12.5 Hz codec, HeartTranscriptor transcribes lyrics, and HeartCLAP aligns audio and text. A script runs generation from the command line.",
+      "best_for": "Developers who want a local, open alternative for lyrics-to-song generation.",
+      "not_for": "Needs a GPU with enough memory (lazy loading helps on one card). The strongest 7B version is not the released one.",
+      "keywords": [
+        "music generation model",
+        "lyrics to song",
+        "suno alternative",
+        "open source text to music",
+        "music codec",
+        "heartmula",
+        "lyrics transcription"
       ]
     },
     {
@@ -350,6 +493,42 @@
       ]
     },
     {
+      "id": "ysharma3501/LuxTTS",
+      "name": "LuxTTS",
+      "category": "music-audio",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "speech",
+        "zipvoice",
+        "48khz"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Clone a voice from a short sample and generate 48kHz speech very fast on a local GPU or CPU.",
+      "why": "Runs at over 150x realtime and fits in about 1GB of VRAM.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "LuxTTS is a small text-to-speech model built on ZipVoice for voice cloning. It outputs 48kHz audio, runs on CUDA, MPS and CPU, and takes a reference audio file of at least 3 seconds.",
+      "best_for": "Local, low-resource voice cloning and TTS where speed matters.",
+      "not_for": "Streaming production services: the README roadmap still lists v1.5 and float16 code as to-do. Cloning needs a clean reference clip.",
+      "keywords": [
+        "voice cloning",
+        "text to speech",
+        "fast tts",
+        "local tts",
+        "zipvoice",
+        "48khz tts",
+        "lux tts"
+      ]
+    },
+    {
       "id": "mackron/miniaudio",
       "name": "miniaudio",
       "category": "music-audio",
@@ -390,6 +569,114 @@
       ]
     },
     {
+      "id": "MisoLabsAI/MisoTTS",
+      "name": "Miso TTS",
+      "category": "music-audio",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "tts",
+        "text-to-speech",
+        "dialogue",
+        "speech-synthesis",
+        "open-weights"
+      ],
+      "ecosystems": [
+        "python",
+        "pytorch"
+      ],
+      "use_for": "Generate emotive, conversational English speech locally from text using an 8B text-to-dialogue model.",
+      "why": "An 8B RVQ Transformer in the Sesame CSM style, tuned for high-quality conversational speech.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An 8 billion parameter text-to-dialogue model that generates Mimi audio codes from text and optional audio context, using a Llama 3.2-style backbone. The repo holds inference code, the model definition and setup for running it locally.",
+      "best_for": "Trying or integrating a highly expressive open TTS model for dialogue.",
+      "not_for": "English only. An 8B model needs a capable GPU. The license is not stated in the README excerpt, so check it before commercial use.",
+      "keywords": [
+        "open source tts",
+        "emotive text to speech",
+        "conversational speech model",
+        "sesame csm alternative",
+        "dialogue tts model",
+        "miso tts"
+      ]
+    },
+    {
+      "id": "OpenMOSS/MOSS-TTS",
+      "name": "MOSS-TTS Family",
+      "category": "music-audio",
+      "kinds": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "dialogue",
+        "sound-effects",
+        "streaming"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate long-form speech, multi-speaker dialogue, designed voices and sound effects.",
+      "why": "Five models that work alone or together, with fine control over pinyin, phonemes and duration.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open speech and sound generation family. It includes MOSS-TTS for zero-shot cloning and long speech, MOSS-TTSD for dialogue, VoiceGenerator for voice design, SoundEffect and a real-time streaming model. Demo scripts are included.",
+      "best_for": "Production-style speech apps needing cloning, dialogue or voice design, with model weights you control.",
+      "not_for": "The larger models need GPU resources. For a tiny CPU model use MOSS-TTS-Nano instead.",
+      "keywords": [
+        "open source tts",
+        "voice cloning",
+        "dialogue tts",
+        "voice design",
+        "sound effect generation",
+        "streaming tts",
+        "elevenlabs alternative"
+      ]
+    },
+    {
+      "id": "OpenMOSS/MOSS-TTS-Nano",
+      "name": "MOSS-TTS-Nano",
+      "category": "music-audio",
+      "kinds": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "cpu",
+        "onnx",
+        "multilingual"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Add real-time multilingual text-to-speech and voice cloning that runs on CPU.",
+      "why": "A 0.1B model with streaming output that runs on a 4-core CPU.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A tiny open speech model using an audio tokenizer plus an LLM. It outputs 48 kHz stereo, supports many languages, streaming, long text with voice cloning, and ONNX CPU inference. Includes an Android ONNX example.",
+      "best_for": "Local demos, web serving or on-device apps that need speech without a GPU.",
+      "not_for": "A small model, so quality trails larger TTS systems. Check the model card for supported languages and limits.",
+      "keywords": [
+        "tts",
+        "text to speech",
+        "voice cloning",
+        "cpu tts",
+        "onnx tts",
+        "realtime speech",
+        "small tts model",
+        "moss tts"
+      ]
+    },
+    {
       "id": "cuthbertLab/music21",
       "name": "music21",
       "category": "music-audio",
@@ -425,6 +712,78 @@
       ]
     },
     {
+      "id": "neuphonic/neutts",
+      "name": "NeuTTS",
+      "category": "music-audio",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "on-device",
+        "gguf",
+        "speech"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run open text-to-speech models on-device with instant voice cloning from a few seconds of audio.",
+      "why": "Small LM-plus-codec speech models in GGUF form that run on laptops, phones and Raspberry Pis.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A family of on-device TTS models (Air, Nano in several languages, 2E with emotion control) built on LLM backbones. Quantized GGUF builds are provided, and a 3-second reference clip is enough to clone a voice.",
+      "best_for": "Private or offline voice agents, toys and embedded apps that need natural speech.",
+      "not_for": "Cloud-scale serving. Non-English backbones need care, and voice cloning raises consent concerns. The license is not clearly stated.",
+      "keywords": [
+        "on-device tts",
+        "voice cloning open source",
+        "local text to speech",
+        "gguf tts",
+        "neutts air",
+        "offline voice agent"
+      ]
+    },
+    {
+      "id": "k2-fsa/OmniVoice",
+      "name": "OmniVoice",
+      "category": "music-audio",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "multilingual",
+        "speech",
+        "diffusion"
+      ],
+      "ecosystems": [
+        "python",
+        "pytorch"
+      ],
+      "use_for": "Generate speech in 600+ languages with zero-shot voice cloning or voice design.",
+      "why": "Broadest language coverage of zero-shot TTS models, running about 40 times faster than real time.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OmniVoice is a massively multilingual zero-shot text-to-speech model with a diffusion language model-style design. It clones a voice from reference audio or designs one from attributes such as gender, age, pitch and accent. It offers a Python API, command-line tools, a web demo and training code.",
+      "best_for": "Multilingual TTS or voice cloning in your own Python app.",
+      "not_for": "Voice design in most languages. It is trained on Chinese and English only, and voice cloning is the most stable mode.",
+      "keywords": [
+        "text to speech",
+        "voice cloning",
+        "multilingual tts",
+        "zero shot tts",
+        "elevenlabs alternative",
+        "open source tts",
+        "600 languages",
+        "voice design"
+      ]
+    },
+    {
       "id": "spotify/pedalboard",
       "name": "Pedalboard",
       "category": "music-audio",
@@ -457,6 +816,42 @@
         "reverb",
         "audio processing",
         "spotify"
+      ]
+    },
+    {
+      "id": "kyutai-labs/pocket-tts",
+      "name": "Pocket TTS",
+      "category": "music-audio",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "text-to-speech",
+        "cpu",
+        "voice-cloning",
+        "streaming",
+        "multilingual"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate speech from text on a CPU with a pip install and a function call.",
+      "why": "100M parameters, about 6x real-time on a laptop CPU, with voice cloning.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A small text-to-speech model and Python package from Kyutai. It streams audio with about 200ms to the first chunk, uses two CPU cores, clones voices and supports seven languages. It has a CLI and can run in the browser. Training code is available.",
+      "best_for": "Apps and agents that need local, low-latency TTS with no GPU.",
+      "not_for": "Top-tier studio voice quality or languages beyond the seven listed. It needs PyTorch 2.5 or newer.",
+      "keywords": [
+        "cpu text to speech",
+        "local tts python",
+        "voice cloning model",
+        "kyutai tts",
+        "lightweight tts",
+        "streaming tts",
+        "pocket tts"
       ]
     },
     {
@@ -530,6 +925,41 @@
       ]
     },
     {
+      "id": "facebookresearch/sam-audio",
+      "name": "SAM-Audio",
+      "category": "music-audio",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "audio-separation",
+        "foundation-model",
+        "pytorch",
+        "source-separation",
+        "multimodal"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Isolate a specific sound from an audio mix using a text, visual or time-span prompt.",
+      "why": "Meta's Segment Anything idea for audio, with three prompt types.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Inference code and checkpoints for a model that separates sounds from complex audio. You describe the sound in text, point at objects in video, or give time spans. A Python API loads the model from Hugging Face.",
+      "best_for": "Audio and video tools that need prompt-driven sound isolation.",
+      "not_for": "Checkpoints need access approval on Hugging Face and a GPU. The license is not a standard open one, so read it first.",
+      "keywords": [
+        "audio source separation",
+        "segment anything audio",
+        "isolate sound from audio",
+        "text prompted audio separation",
+        "meta sam audio",
+        "stem separation"
+      ]
+    },
+    {
       "id": "sonic-pi-net/sonic-pi",
       "name": "Sonic Pi",
       "category": "music-audio",
@@ -563,6 +993,41 @@
         "music programming",
         "education",
         "synth"
+      ]
+    },
+    {
+      "id": "storytold/soundcraft",
+      "name": "SoundCraft",
+      "category": "music-audio",
+      "kinds": [
+        "app",
+        "engine"
+      ],
+      "tags": [
+        "daw",
+        "audio-editing",
+        "midi",
+        "rust",
+        "cross-platform"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Recording, editing and mixing multitrack audio with a full mixer, MIDI editor and automation, like Pro Tools.",
+      "why": "Runs natively on macOS, Windows, Linux, FreeBSD and in the browser via WebAssembly, and is fully scriptable.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "SoundCraft is a clean-room, open-source digital audio workstation written in pure Rust, following the Edit/Mix window workflow of Avid Pro Tools. It supports multitrack editing, a full mixer with plugins and automation, a MIDI editor with built-in synths, video playback, and command-line or AI-agent scripting of every action.",
+      "best_for": "Developers or studios wanting an open, scriptable, cross-platform DAW instead of a closed commercial one.",
+      "not_for": "Not for users who need compatibility with existing Pro Tools sessions or third-party plugin formats it doesn't support.",
+      "keywords": [
+        "open source daw",
+        "pro tools alternative",
+        "rust audio workstation",
+        "multitrack editor",
+        "midi daw",
+        "soundcraft"
       ]
     },
     {
@@ -734,6 +1199,114 @@
         "datasets",
         "speech",
         "ml"
+      ]
+    },
+    {
+      "id": "jamiepine/voicebox",
+      "name": "Voicebox",
+      "category": "music-audio",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "voice-cloning",
+        "tts",
+        "dictation",
+        "mcp",
+        "local-first"
+      ],
+      "ecosystems": [
+        "typescript",
+        "python"
+      ],
+      "use_for": "Clone voices, generate speech, dictate into any app and give agents a voice, all locally.",
+      "why": "Bundles 8 TTS engines, dictation and an MCP voice for agents in one local app.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Voicebox is a local-first voice studio. It clones voices from a few seconds of audio, generates speech in 23 languages across 8 TTS engines, and dictates into any text field with a global hotkey. It adds effects and a bundled local LLM for refinement.",
+      "best_for": "You want a private ElevenLabs and WisprFlow style tool, or a local voice for MCP agents.",
+      "not_for": "It is a desktop app, not a library. Auto-paste dictation on Windows and Linux is still on the roadmap.",
+      "keywords": [
+        "voicebox",
+        "jamiepine voicebox",
+        "elevenlabs alternative",
+        "wisprflow alternative",
+        "local voice cloning",
+        "open source tts studio",
+        "voice dictation hotkey"
+      ]
+    },
+    {
+      "id": "debpalash/VoiceStudio",
+      "name": "VoiceStudio",
+      "category": "music-audio",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "voice-cloning",
+        "tts",
+        "dubbing",
+        "transcription",
+        "local-first"
+      ],
+      "ecosystems": [
+        "electron",
+        "python"
+      ],
+      "use_for": "Clone voices, dub video, dictate and make audiobooks locally, with a local API and MCP for agents.",
+      "why": "An offline ElevenLabs-style studio covering cloning, dubbing, dictation and audiobooks across 646 languages.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "VoiceStudio is a desktop app for voice cloning, voice design, video dubbing, dictation, transcription and audiobook creation. It defaults to the OmniVoice engine and supports others. It runs on your hardware and exposes a local API and MCP.",
+      "best_for": "You want a local voice toolkit, or a local TTS and dubbing API for your own tools or agents.",
+      "not_for": "AGPL-3.0, and it is an app, not an embeddable library. Quality depends on the model and your hardware. Analytics need consent.",
+      "keywords": [
+        "voicestudio",
+        "elevenlabs alternative",
+        "local voice cloning",
+        "video dubbing open source",
+        "offline tts",
+        "audiobook generator",
+        "voice design"
+      ]
+    },
+    {
+      "id": "OpenBMB/VoxCPM",
+      "name": "VoxCPM",
+      "category": "music-audio",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "speech",
+        "multilingual",
+        "diffusion"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate speech in 30 languages, design new voices from text, or clone a voice from a short clip.",
+      "why": "A tokenizer-free 2B text-to-speech model with 48kHz output, voice design and streaming.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "VoxCPM2 is a text-to-speech model that makes continuous speech with a diffusion autoregressive design instead of discrete tokens. It supports 30 languages, voice design from a description, controllable cloning and real-time streaming, via a Python API and a CLI.",
+      "best_for": "Apps that need high quality multilingual TTS or voice cloning you can run yourself.",
+      "not_for": "A 2B model needs a capable GPU for real-time use (the README quotes an RTX 4090). The README also lists risks of misuse for cloning.",
+      "keywords": [
+        "text to speech",
+        "tts model",
+        "voice cloning",
+        "voice design",
+        "multilingual tts",
+        "open source tts",
+        "speech synthesis"
       ]
     },
     {

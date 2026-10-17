@@ -275,6 +275,43 @@
       ]
     },
     {
+      "id": "hieunc229/mailflare",
+      "name": "Mailflare",
+      "category": "email",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "self-hosted",
+        "email",
+        "cloudflare-workers",
+        "mcp",
+        "calendar"
+      ],
+      "ecosystems": [
+        "cloudflare",
+        "typescript"
+      ],
+      "use_for": "Run a self-hosted team email inbox for custom domains on Cloudflare.",
+      "why": "Runs in your own Cloudflare account with D1 and R2 storage, and can send through Resend or Amazon SES.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A self-hosted email inbox for custom domains built on Cloudflare. It has shared mailboxes, routing rules, calendar and booking pages, an API, webhooks, an AI assistant and MCP access. Mail stays in your D1 database and attachments in your own bucket.",
+      "best_for": "Small teams that want their own email and calendar on Cloudflare without a hosted mail provider.",
+      "not_for": "AGPL-3.0 licensed, which limits closed-source reuse. Tied to the Cloudflare platform.",
+      "keywords": [
+        "self-hosted email",
+        "cloudflare email routing",
+        "custom domain inbox",
+        "gmail alternative self host",
+        "resend inbox",
+        "ses mailbox",
+        "email workers"
+      ]
+    },
+    {
       "id": "jstedfast/MailKit",
       "name": "MailKit",
       "category": "email",

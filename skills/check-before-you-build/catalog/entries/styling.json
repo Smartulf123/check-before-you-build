@@ -177,6 +177,42 @@
       ]
     },
     {
+      "id": "dembrandt/dembrandt",
+      "name": "Dembrandt",
+      "category": "styling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "design-tokens",
+        "css",
+        "playwright",
+        "ci",
+        "scraping"
+      ],
+      "ecosystems": [
+        "node",
+        "typescript"
+      ],
+      "use_for": "Extract a live website's colors, fonts, spacing and more as design tokens, and catch drift in CI.",
+      "why": "One command outputs W3C design tokens, and a GitHub Action compares them to a baseline.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Node CLI that renders a page with Playwright, reads computed styles and returns logo, colors, typography, spacing, borders, shadows, motion, components and breakpoints. It can compare against a saved baseline and fail on drift.",
+      "best_for": "Reverse engineering a site's design system, or guarding a preview deploy against unplanned style changes.",
+      "not_for": "Cannot read canvas or WebGL sites. Dark mode needs a flag. Hover states and late-loaded content may be missed.",
+      "keywords": [
+        "extract design system",
+        "website to design tokens",
+        "css style extractor",
+        "brand colors from website",
+        "design drift ci",
+        "w3c design tokens",
+        "playwright design tokens"
+      ]
+    },
+    {
       "id": "emotion-js/emotion",
       "name": "Emotion",
       "category": "styling",

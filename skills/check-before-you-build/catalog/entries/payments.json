@@ -465,6 +465,41 @@
       ]
     },
     {
+      "id": "unicity-sphere/sphere-sdk",
+      "name": "Sphere SDK",
+      "category": "payments",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "wallet",
+        "unicity",
+        "nostr",
+        "agents",
+        "payments"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Give an app or agent a wallet, payments and messaging on the Unicity network.",
+      "why": "One modular TypeScript SDK for wallets, payment requests, an intent market and group chat.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A TypeScript SDK for Unicity wallet operations: BIP39/BIP32 key handling, token transfers over a wallet-api service, payment requests, a signed intent board, Nostr messaging and a dApp connect protocol. Runs in browsers and Node 22+.",
+      "best_for": "Building apps or agents on the Unicity network.",
+      "not_for": "General crypto or fiat payments. It is tied to Unicity, and setup needs two provider layers or init fails.",
+      "keywords": [
+        "unicity wallet sdk",
+        "agent wallet",
+        "agent payments",
+        "nostr messaging sdk",
+        "typescript wallet",
+        "autonomous agents economy",
+        "sphere sdk"
+      ]
+    },
+    {
       "id": "stripe/ai",
       "name": "Stripe Agent Toolkit",
       "category": "payments",

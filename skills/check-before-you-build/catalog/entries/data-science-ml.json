@@ -2,6 +2,44 @@
   "category": "data-science-ml",
   "entries": [
     {
+      "id": "firecrawl/anydoc",
+      "name": "anydoc",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "document-conversion",
+        "markdown",
+        "docx",
+        "pptx",
+        "llm-ready"
+      ],
+      "ecosystems": [
+        "rust",
+        "node",
+        "python",
+        "wasm"
+      ],
+      "use_for": "Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV and PDF files to clean Markdown.",
+      "why": "One shared model and Markdown writer, so every format gives the same output style.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A fast Rust library that parses office documents and PDFs into one shared document model and writes GitHub-flavored Markdown. It has Node.js, Python and WebAssembly bindings. Format is detected from file contents, not the extension.",
+      "best_for": "Feeding office documents to LLMs as Markdown, locally and fast, including in the browser.",
+      "not_for": "Scanned pages. It cannot read them on its own and points to the hosted API with OCR.",
+      "keywords": [
+        "docx to markdown",
+        "pptx to markdown",
+        "document to markdown",
+        "office to markdown",
+        "pdf to markdown rust",
+        "llm document parsing",
+        "markitdown alternative"
+      ]
+    },
+    {
       "id": "apache/datafusion",
       "name": "Apache DataFusion",
       "category": "data-science-ml",
@@ -110,6 +148,78 @@
       ]
     },
     {
+      "id": "datalab-to/chandra",
+      "name": "Chandra OCR 2",
+      "category": "data-science-ml",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "ocr",
+        "document-ai",
+        "handwriting",
+        "tables",
+        "vllm"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Convert images and PDFs to Markdown, HTML or JSON with layout, tables, forms and handwriting.",
+      "why": "Handles handwriting, checkboxes, math and 90+ languages; runs locally or on vLLM.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An OCR model with a pip package and CLI. It turns documents into structured HTML, Markdown or JSON and keeps layout, extracts images and diagrams, and rebuilds forms. Inference runs through HuggingFace locally or a vLLM server.",
+      "best_for": "Document pipelines that need accurate layout, tables and handwriting without sending files to a cloud service.",
+      "not_for": "Competing with the vendor's API or larger companies. The weights use a modified OpenRAIL-M licence, free only for research, personal use and small startups.",
+      "keywords": [
+        "ocr model",
+        "pdf to markdown",
+        "handwriting recognition",
+        "document ai",
+        "table extraction",
+        "olmocr alternative",
+        "chandra"
+      ]
+    },
+    {
+      "id": "ChatLab/ChatLab",
+      "name": "ChatLab",
+      "category": "data-science-ml",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "chat-analysis",
+        "local-first",
+        "sql",
+        "ai-agents",
+        "desktop"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Import chat exports from WhatsApp, Telegram, Discord and others and analyse them with SQL and AI on your machine.",
+      "why": "Keeps chats local and gives AI agents 24+ tools to search and summarise records.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An Electron and Vue desktop app, plus a CLI with a web UI and API. It parses exports from many chat apps into one model, stores them locally and lets you query with SQL and AI agents. Shared packages are used by both the app and CLI.",
+      "best_for": "Analysing your own chat history privately, or forking a local-first chat analysis tool.",
+      "not_for": "AGPL-3.0 licence. It works on exported chat files, not live accounts. Messenger and KakaoTalk are not yet supported.",
+      "keywords": [
+        "chat history analyzer",
+        "whatsapp analysis",
+        "telegram export analysis",
+        "local-first chat analytics",
+        "chatlab",
+        "analyze imessage line discord"
+      ]
+    },
+    {
       "id": "NVIDIA/cudf",
       "name": "cuDF",
       "category": "data-science-ml",
@@ -144,6 +254,43 @@
         "parquet",
         "groupby",
         "cudf.pandas"
+      ]
+    },
+    {
+      "id": "ZhuLinsen/daily_stock_analysis",
+      "name": "daily_stock_analysis",
+      "category": "data-science-ml",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "stock-analysis",
+        "llm",
+        "notifications",
+        "github-actions",
+        "fastapi"
+      ],
+      "ecosystems": [
+        "python",
+        "docker"
+      ],
+      "use_for": "Fork a self-run system that analyzes your stock watchlist with an LLM and pushes a daily report.",
+      "why": "Covers A-share, HK, US, JP, KR and TW markets and runs free on GitHub Actions or Docker.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An LLM-driven stock analysis app that pulls prices, news and fundamentals, writes a decision dashboard with scores and risk alerts, and sends it to WeCom, Feishu, Telegram, Discord, Slack or email. It has a web UI, an agent Q and A and a FastAPI service.",
+      "best_for": "You want a ready, hackable template for scheduled LLM market reports, especially for Chinese-market users.",
+      "not_for": "The README is mainly in Chinese. Free data sources are rate-limited and unreliable. Output is LLM analysis, not financial advice.",
+      "keywords": [
+        "daily stock analysis",
+        "llm stock analyzer",
+        "ai stock report",
+        "a-share analysis",
+        "stock decision dashboard",
+        "stock bot telegram",
+        "akshare llm"
       ]
     },
     {
@@ -217,6 +364,76 @@
       ]
     },
     {
+      "id": "ruc-datalab/DeepAnalyze",
+      "name": "DeepAnalyze",
+      "category": "data-science-ml",
+      "kinds": [
+        "engine",
+        "app"
+      ],
+      "tags": [
+        "data-science",
+        "agentic-llm",
+        "report-generation",
+        "llm",
+        "open-model"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run an open LLM agent that carries out data science tasks and writes analyst-style reports.",
+      "why": "Open model, training data, code and demo for an agentic LLM focused on data science.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An 8B agentic LLM that autonomously handles the data science pipeline: preparation, analysis, modeling, visualization and reporting. It works on structured, semi-structured and unstructured data and produces research reports. The model, code, training data and demo are released openly.",
+      "best_for": "Experimenting with autonomous data analysis, or building on an open data-science agent model.",
+      "not_for": "A research project. The model needs a GPU to host, and results should be checked by a person.",
+      "keywords": [
+        "ai data analyst",
+        "autonomous data science",
+        "agentic llm data analysis",
+        "csv analysis agent",
+        "data analysis report generator",
+        "deepanalyze 8b"
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSpec",
+      "name": "DeepSpec",
+      "category": "data-science-ml",
+      "kinds": [
+        "library",
+        "framework"
+      ],
+      "tags": [
+        "speculative-decoding",
+        "training",
+        "draft-models",
+        "evaluation",
+        "llm"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Train and evaluate draft models for speculative decoding.",
+      "why": "Covers data prep, draft model code, training and benchmark evaluation in one repo.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A full-stack codebase for speculative decoding research. It has data preparation scripts, draft model implementations, training code and evaluation on benchmarks like GSM8K, MATH500 and HumanEval. Configs target models such as Qwen3-4B.",
+      "best_for": "Researchers and inference teams who want to train their own draft models.",
+      "not_for": "Heavy requirements: default setup assumes 8 GPUs, and the target cache can be about 38 TB.",
+      "keywords": [
+        "deepspec",
+        "speculative decoding training",
+        "draft model",
+        "deepseek speculative",
+        "llm inference speedup",
+        "acceptance rate evaluation"
+      ]
+    },
+    {
       "id": "deepspeedai/DeepSpeed",
       "name": "DeepSpeed",
       "category": "data-science-ml",
@@ -249,6 +466,42 @@
         "model parallelism",
         "gpu",
         "inference"
+      ]
+    },
+    {
+      "id": "z-lab/dflash",
+      "name": "DFlash",
+      "category": "data-science-ml",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "speculative-decoding",
+        "llm-inference",
+        "diffusion",
+        "mlx",
+        "vllm"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Speed up LLM inference with a block diffusion draft model for speculative decoding.",
+      "why": "Ships draft checkpoints for many popular models and runs on Transformers, MLX, SGLang or vLLM.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "DFlash is a lightweight block diffusion model used as a drafter for speculative decoding, so tokens are drafted in parallel. The repo has a CLI and backends for Transformers and Apple MLX, and checkpoints for Qwen, Gemma, Kimi, MiniMax and more.",
+      "best_for": "Researchers and serving engineers who want faster generation from supported open models.",
+      "not_for": "Only works for models that have a released draft checkpoint. Not a general inference server.",
+      "keywords": [
+        "speculative decoding",
+        "llm inference speedup",
+        "block diffusion drafter",
+        "faster llm generation",
+        "mlx speculative decoding",
+        "vllm speculative",
+        "draft model"
       ]
     },
     {
@@ -359,6 +612,78 @@
       ]
     },
     {
+      "id": "zai-org/GLM-OCR",
+      "name": "GLM-OCR",
+      "category": "data-science-ml",
+      "kinds": [
+        "library",
+        "service"
+      ],
+      "tags": [
+        "ocr",
+        "document-understanding",
+        "multimodal",
+        "tables",
+        "formulas"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Extract text, tables and formulas from complex documents with a small multimodal OCR model.",
+      "why": "Reports the top score on OmniDocBench V1.5 with a 0.5B language decoder.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A multimodal OCR model built on the GLM-V encoder-decoder design. It runs layout analysis, then recognises regions in parallel. You can use the hosted Zhipu API with no GPU, or run the model yourself.",
+      "best_for": "Document parsing for invoices, tables, code-heavy pages and seals where plain OCR struggles.",
+      "not_for": "The hosted route needs a Zhipu API key. Benchmark claims come from the authors.",
+      "keywords": [
+        "glm-ocr",
+        "ocr model",
+        "document parsing",
+        "table recognition",
+        "pdf to markdown",
+        "zhipu ocr"
+      ]
+    },
+    {
+      "id": "NVlabs/GR00T-WholeBodyControl",
+      "name": "GR00T Whole-Body Control",
+      "category": "data-science-ml",
+      "kinds": [
+        "framework",
+        "library"
+      ],
+      "tags": [
+        "humanoid",
+        "robotics",
+        "whole-body-control",
+        "reinforcement-learning",
+        "isaac-lab"
+      ],
+      "ecosystems": [
+        "python",
+        "c++"
+      ],
+      "use_for": "Train, test and deploy whole-body controllers and motion models for humanoid robots.",
+      "why": "Includes the controllers behind GR00T N1.5/N1.6, the GEAR-SONIC series and MotionBricks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "NVIDIA's codebase with model checkpoints and scripts for humanoid controllers. It has a Python training stack and a C++ inference stack for deploying SONIC policies on real hardware.",
+      "best_for": "Humanoid robotics teams that use Isaac Lab and want a working whole-body control baseline.",
+      "not_for": "Needs NVIDIA simulation and robot hardware. The license is not clearly stated, so read it before commercial use.",
+      "keywords": [
+        "humanoid control",
+        "whole body control",
+        "gr00t",
+        "gear sonic",
+        "isaac lab",
+        "humanoid teleoperation",
+        "robot policy deployment"
+      ]
+    },
+    {
       "id": "gradio-app/gradio",
       "name": "Gradio",
       "category": "data-science-ml",
@@ -391,6 +716,42 @@
         "share link",
         "model demo",
         "chatbot ui"
+      ]
+    },
+    {
+      "id": "p-e-w/heretic",
+      "name": "Heretic",
+      "category": "data-science-ml",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "abliteration",
+        "llm",
+        "alignment",
+        "optuna",
+        "transformers"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Automatically remove refusal behavior from transformer language models with directional ablation.",
+      "why": "Tunes abliteration parameters with Optuna to cut refusals while keeping the model close to the original.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Heretic removes safety alignment from transformer LLMs without post-training. It combines directional ablation with a TPE optimizer that minimizes refusals and KL divergence from the original model. You run one command on a model name. It supports most dense and several MoE models.",
+      "best_for": "Researchers and hobbyists who want an uncensored variant of an open model without hand-tuning.",
+      "not_for": "Pure state-space models and some research architectures are not supported. Removes safety behavior, so check use and model license. AGPL-3.0.",
+      "keywords": [
+        "abliteration",
+        "uncensor llm",
+        "remove refusals",
+        "decensor model",
+        "directional ablation",
+        "uncensored language model",
+        "llm safety removal"
       ]
     },
     {
@@ -467,6 +828,188 @@
         "python",
         "data engineering",
         "pipeline visualization"
+      ]
+    },
+    {
+      "id": "jaredpalmer/kev",
+      "name": "Kev",
+      "category": "data-science-ml",
+      "kinds": [
+        "library",
+        "service"
+      ],
+      "tags": [
+        "decision-models",
+        "qwen",
+        "lora",
+        "classification",
+        "mlx"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Train and serve small models that answer yes/no, multiple-choice and rating questions about text.",
+      "why": "Calibrated probabilities and an API matching TypeSafe's System One.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A family of small decision models (0.8B to 27B) built on Qwen3.5 and Qwen3.8 as LoRA adapters with a pointer head. Several questions are answered in one request. It runs on CUDA and Apple Silicon, handles up to 65,536 tokens, and can be fine-tuned and deployed with one command.",
+      "best_for": "Fast, cheap classification and routing decisions you can run yourself.",
+      "not_for": "Hard knowledge questions. The README shows Kev-27B trails Jev on MMLU-Pro, and small models struggle with date arithmetic.",
+      "keywords": [
+        "small decision model",
+        "llm classifier lora",
+        "yes no question model",
+        "typesafe system one alternative",
+        "qwen lora classifier",
+        "calibrated probabilities llm",
+        "kev"
+      ]
+    },
+    {
+      "id": "nv-tlabs/kimodo",
+      "name": "Kimodo",
+      "category": "data-science-ml",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "motion-generation",
+        "diffusion",
+        "humanoid",
+        "animation",
+        "robotics"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate 3D human and robot motion from text prompts and kinematic constraints.",
+      "why": "Trained on 700 hours of commercially-friendly mocap, with keyframe and path controls.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A kinematic motion diffusion model with inference code and a CLI for human and robot skeletons. It adds an interactive timeline demo for authoring motion, a benchmark on BONES-SEED, and text annotations.",
+      "best_for": "Animation and robotics teams who need text-controlled motion generation with pose and path constraints.",
+      "not_for": "Needs a GPU and model downloads. Research-grade code, not a game-engine plugin.",
+      "keywords": [
+        "motion diffusion",
+        "text to motion",
+        "humanoid motion generation",
+        "character animation ai",
+        "robot motion",
+        "motion capture model",
+        "kimodo"
+      ]
+    },
+    {
+      "id": "lucas-maes/le-wm",
+      "name": "LeWorldModel (LeWM)",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "world-model",
+        "jepa",
+        "pytorch",
+        "research",
+        "planning"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Train and evaluate a JEPA world model from raw pixels.",
+      "why": "Official code for a JEPA that trains end to end with only two loss terms.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Research code for LeWorldModel, a joint-embedding predictive architecture that learns from pixels. The PyTorch model sits in jepa.py, with Hydra configs, HDF5 datasets and planning evaluation built on stable-worldmodel and stable-pretraining.",
+      "best_for": "Researchers reproducing the paper or studying a simple, stable JEPA training setup.",
+      "not_for": "Paper-companion code, not a packaged library. Expects specific datasets, WandB setup and the stable-worldmodel stack.",
+      "keywords": [
+        "jepa",
+        "world model",
+        "joint embedding predictive architecture",
+        "lecun",
+        "latent world model",
+        "pixels world model",
+        "pytorch research"
+      ]
+    },
+    {
+      "id": "Robbyant/lingbot-map",
+      "name": "LingBot-Map",
+      "category": "data-science-ml",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "3d-reconstruction",
+        "slam",
+        "transformer",
+        "video",
+        "research"
+      ],
+      "ecosystems": [
+        "python",
+        "pytorch"
+      ],
+      "use_for": "Reconstruct 3D scenes from streaming video or image folders with a geometric context transformer.",
+      "why": "Handles very long sequences using windowed inference, with an interactive viewer.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Research code and weights for streaming 3D reconstruction. A demo script loads images or a video and opens an interactive viser viewer. For long sequences it uses sliding-window inference and an offline rendering pipeline.",
+      "best_for": "Researchers and engineers testing 3D reconstruction from video, such as indoor walkthroughs or driving scenes.",
+      "not_for": "Plug-and-play production use. It needs a GPU and a downloaded model checkpoint, and is paper-style research code.",
+      "keywords": [
+        "streaming 3d reconstruction",
+        "video to 3d",
+        "slam transformer",
+        "lingbot map",
+        "geometric context transformer",
+        "point cloud from video",
+        "3d scene reconstruction"
+      ]
+    },
+    {
+      "id": "run-llama/liteparse",
+      "name": "LiteParse",
+      "category": "data-science-ml",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "pdf-parsing",
+        "ocr",
+        "markdown",
+        "rag",
+        "bounding-boxes"
+      ],
+      "ecosystems": [
+        "rust",
+        "typescript",
+        "python"
+      ],
+      "use_for": "Parse PDFs locally into Markdown, JSON or text with bounding boxes, for LLM and RAG pipelines.",
+      "why": "About 2 to 5ms per page, fully local, usable from Rust, Node, Python and the browser.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A fast local PDF parser using PDFium with built-in Tesseract OCR or any HTTP OCR server. It outputs structured Markdown, JSON or text, makes page screenshots, and can check whether a document needs heavier parsing.",
+      "best_for": "Quick, private document ingestion where speed matters more than perfect layout.",
+      "not_for": "Dense tables, multi-column layouts, charts or scans. The README points those to the paid LlamaParse cloud service.",
+      "keywords": [
+        "pdf parser",
+        "pdf to markdown",
+        "document parsing for rag",
+        "local ocr",
+        "llamaparse alternative",
+        "pdf bounding boxes",
+        "liteparse"
       ]
     },
     {
@@ -585,6 +1128,42 @@
       ]
     },
     {
+      "id": "karpathy/nanochat",
+      "name": "nanochat",
+      "category": "data-science-ml",
+      "kinds": [
+        "framework",
+        "engine"
+      ],
+      "tags": [
+        "llm-training",
+        "pretraining",
+        "finetuning",
+        "single-gpu-node",
+        "education"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Train and chat with your own small GPT-style LLM end to end on one GPU node.",
+      "why": "Minimal, hackable code covering tokenization, pretraining, finetuning, evaluation and inference.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "nanochat is a simple experimental harness for training LLMs on a single GPU node. One depth setting configures a whole series of compute-optimal models. A speedrun script trains a GPT-2-grade model in about 2 hours on 8 H100s, then you chat with it over a CLI.",
+      "best_for": "You want to learn or experiment with the full LLM training pipeline in small, readable code.",
+      "not_for": "It trains small models for research and learning, not frontier-quality assistants, and needs rented GPUs for a real run.",
+      "keywords": [
+        "nanochat",
+        "karpathy nanochat",
+        "train your own llm",
+        "gpt-2 speedrun",
+        "minimal llm training",
+        "nanogpt successor",
+        "single gpu llm"
+      ]
+    },
+    {
       "id": "numpy/numpy",
       "name": "NumPy",
       "category": "data-science-ml",
@@ -626,6 +1205,43 @@
       ]
     },
     {
+      "id": "maziyarpanahi/openmed",
+      "name": "OpenMed",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "healthcare",
+        "clinical-ner",
+        "deidentification",
+        "pii",
+        "local-first"
+      ],
+      "ecosystems": [
+        "python",
+        "swift",
+        "android"
+      ],
+      "use_for": "Extract medical entities and de-identify PII in clinical text on hardware you control.",
+      "why": "Large model catalog with Python, Apple MLX, Android and browser runtimes under an Apache-2.0 SDK.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenMed is a local-first SDK for clinical text. It runs NER models for diseases and other entities, and PII detection and de-identification in 35 languages. The core runtime works locally once model files are downloaded.",
+      "best_for": "Health-tech teams that need on-device or self-hosted clinical NER and de-identification.",
+      "not_for": "Using the SDK does not make you HIPAA compliant, and model and dataset licenses vary. Validate for your clinical use.",
+      "keywords": [
+        "clinical ner",
+        "medical de-identification",
+        "hipaa pii redaction",
+        "healthcare nlp",
+        "medical entity extraction",
+        "local clinical ai",
+        "phi removal"
+      ]
+    },
+    {
       "id": "pandas-dev/pandas",
       "name": "pandas",
       "category": "data-science-ml",
@@ -659,6 +1275,44 @@
         "groupby",
         "time series",
         "series"
+      ]
+    },
+    {
+      "id": "firecrawl/pdf-inspector",
+      "name": "pdf-inspector",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "pdf",
+        "text-extraction",
+        "ocr-routing",
+        "markdown",
+        "table-detection"
+      ],
+      "ecosystems": [
+        "rust",
+        "node",
+        "python",
+        "wasm"
+      ],
+      "use_for": "Tell scanned PDFs from text PDFs and extract text and Markdown from the text ones without OCR.",
+      "why": "Classifies a PDF in tens of milliseconds so only the pages that need OCR get sent to it.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A fast Rust library that classifies PDFs as text-based, scanned, image-based or mixed. For text PDFs it extracts text with position and converts to Markdown, with table, multi-column and CID font handling. It has Python, Node.js and WebAssembly bindings.",
+      "best_for": "PDF pipelines that want to skip costly OCR for the many PDFs that already hold text.",
+      "not_for": "Scanned documents on their own; OCR is optional and only for native Rust and CLI use.",
+      "keywords": [
+        "pdf to markdown",
+        "detect scanned pdf",
+        "pdf text extraction rust",
+        "pdf ocr routing",
+        "pdf classification",
+        "pdf table extraction",
+        "llm pdf ingestion"
       ]
     },
     {
@@ -698,6 +1352,43 @@
         "pandas alternative",
         "expressions",
         "parquet"
+      ]
+    },
+    {
+      "id": "Jon-Becker/prediction-market-analysis",
+      "name": "Prediction Market Analysis",
+      "category": "data-science-ml",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "prediction-markets",
+        "polymarket",
+        "kalshi",
+        "dataset",
+        "analysis"
+      ],
+      "ecosystems": [
+        "python",
+        "parquet"
+      ],
+      "use_for": "Collect and analyze Polymarket and Kalshi market and trade data with a ready dataset.",
+      "why": "Ships indexers, parquet storage and extensible analysis scripts plus a large public dataset.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A framework for analyzing prediction market data. It includes pre-collected Polymarket and Kalshi datasets, indexers for market metadata and trade history via API and blockchain, parquet storage with resumable progress, and analysis scripts that produce figures and statistics. Run with make index and make analyze.",
+      "best_for": "You research prediction markets and want a starting dataset and scripts to extend.",
+      "not_for": "A research toolkit, not a trading bot. Covers Polymarket and Kalshi only.",
+      "keywords": [
+        "polymarket data",
+        "kalshi dataset",
+        "prediction market research",
+        "trade history indexer",
+        "market data parquet",
+        "polymarket analysis",
+        "prediction market scripts"
       ]
     },
     {
@@ -877,6 +1568,77 @@
       ]
     },
     {
+      "id": "MakazhanAlpamys/Soup",
+      "name": "Soup",
+      "category": "data-science-ml",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "fine-tuning",
+        "llm",
+        "qlora",
+        "yaml",
+        "low-vram"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Fine-tune and post-train LLMs from one YAML config and one command, even on small GPUs.",
+      "why": "Layer streaming trains an 8B model in about 3 GB of VRAM (still beta).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CLI that fine-tunes LLMs from a YAML file with soup train. It picks batch size, detects GPUs and handles quantization such as QLoRA. Opt-in layer streaming feeds one decoder layer at a time to the GPU so large models fit on a 4 GB laptop card.",
+      "best_for": "Fine-tuning on your own GPU without writing training scripts.",
+      "not_for": "Stable pipelines. Layer streaming is beta, and v0.76 now refuses settings that were never applied, so old configs may stop loading.",
+      "keywords": [
+        "fine tune llm yaml",
+        "qlora cli",
+        "train llm on laptop gpu",
+        "axolotl alternative",
+        "unsloth alternative",
+        "llm post training",
+        "soup-cli"
+      ]
+    },
+    {
+      "id": "starVLA/starVLA",
+      "name": "StarVLA",
+      "category": "data-science-ml",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "robotics",
+        "vla",
+        "vision-language-action",
+        "pytorch",
+        "research"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build and compare vision-language-action models for robots with swappable parts.",
+      "why": "Backbones and action heads are decoupled, so a new variant is mostly a swap.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A research codebase for vision-language-action robot models. Model, data, trainer, config and evaluation are separate parts. It ships action-head variants (FAST, OFT, flow-matching PI, GR00T-style) that share one data interface.",
+      "best_for": "Robotics researchers who want to prototype and benchmark VLA models quickly.",
+      "not_for": "A research platform, not a production robot stack. The license is not clearly stated, so check it before reuse.",
+      "keywords": [
+        "vision language action",
+        "vla model",
+        "robot learning",
+        "openvla",
+        "pi0",
+        "robot foundation model",
+        "libero benchmark"
+      ]
+    },
+    {
       "id": "tensorflow/tfjs",
       "name": "TensorFlow.js",
       "category": "data-science-ml",
@@ -986,6 +1748,44 @@
         "gpu",
         "distributed",
         "scikit-learn api"
+      ]
+    },
+    {
+      "id": "QuipNetwork/xquad",
+      "name": "XQuad",
+      "category": "data-science-ml",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "optimization",
+        "qubo",
+        "ising",
+        "quantum",
+        "solver"
+      ],
+      "ecosystems": [
+        "rust",
+        "python"
+      ],
+      "use_for": "Write a QUBO, Ising or integer optimization problem once and run it on quantum or classical solvers.",
+      "why": "A shared virtual machine and spec, so one problem can be retargeted to any supported backend.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "XQuad is a toolchain for quadratic optimization problems. It has Rust crates and Python packages built around one VM spec, with the Rust and Python VMs checked against each other in CI. Includes TSP and maxcut examples.",
+      "best_for": "Researchers and developers who want a backend-neutral way to express quadratic optimization and switch between annealers and classical solvers.",
+      "not_for": "Production use: the README says the instruction set, binary format and API may change before v1.0. AGPL-3.0 licence.",
+      "keywords": [
+        "qubo",
+        "ising model",
+        "quantum annealing",
+        "optimization solver",
+        "quadratic optimization",
+        "hardware agnostic",
+        "tsp solver",
+        "maxcut"
       ]
     },
     {

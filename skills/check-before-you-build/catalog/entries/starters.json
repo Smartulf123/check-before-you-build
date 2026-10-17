@@ -36,6 +36,43 @@
       ]
     },
     {
+      "id": "JCodesMore/ai-website-cloner-template",
+      "name": "AI Website Cloner Template",
+      "category": "starters",
+      "kinds": [
+        "template",
+        "skill"
+      ],
+      "tags": [
+        "website-cloning",
+        "nextjs",
+        "claude-code",
+        "migration",
+        "agent-skill"
+      ],
+      "ecosystems": [
+        "typescript",
+        "nextjs"
+      ],
+      "use_for": "Have a coding agent rebuild a website you own as a clean Next.js app from its URL.",
+      "why": "A /clone-website skill that maps, inspects, builds and compares pages, with screenshots of remaining gaps.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A GitHub template with a /clone-website skill for coding agents. The agent maps source URLs to routes, inspects pages and assets, builds editable components, then compares the clone to the original. It works best with Claude Code and also supports Codex, Cursor and OpenCode.",
+      "best_for": "Moving a WordPress, Webflow or Squarespace site to Next.js, recovering a site whose source is lost, or studying how a layout works.",
+      "not_for": "Cloning sites you do not own can break copyright or terms. Output is a recreation and may have visible gaps.",
+      "keywords": [
+        "clone website",
+        "website to nextjs",
+        "webflow to nextjs",
+        "recreate site from url",
+        "claude code website cloner",
+        "site migration agent",
+        "copy website with ai"
+      ]
+    },
+    {
       "id": "ant-design/ant-design-pro",
       "name": "Ant Design Pro",
       "category": "starters",
@@ -818,6 +855,42 @@
       ]
     },
     {
+      "id": "vercel-labs/open-agents",
+      "name": "Open Agents",
+      "category": "starters",
+      "kinds": [
+        "template",
+        "app"
+      ],
+      "tags": [
+        "cloud-agents",
+        "background-agents",
+        "vercel",
+        "sandbox",
+        "github"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Fork a reference app for running background coding agents with a web UI, workflow runtime and sandbox VMs.",
+      "why": "Covers the whole path from prompt to GitHub code changes, built to be forked.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Open Agents is an open-source reference app for background coding agents on Vercel. It has three layers: a web app for auth and chat, an agent running as a durable workflow, and a sandbox VM with filesystem, shell and git.",
+      "best_for": "Teams building their own cloud coding agent product who want a working starting point.",
+      "not_for": "Geared to Vercel and needs Postgres, OAuth and a GitHub App to deploy fully. It is a reference app, not a drop-in library.",
+      "keywords": [
+        "cloud coding agent template",
+        "background agents",
+        "vercel agent starter",
+        "open source devin alternative",
+        "agent sandbox github",
+        "coding agent web ui",
+        "durable workflow agent"
+      ]
+    },
+    {
       "id": "wasp-lang/open-saas",
       "name": "Open SaaS",
       "category": "starters",
@@ -856,6 +929,113 @@
         "prisma",
         "ai examples",
         "payments"
+      ]
+    },
+    {
+      "id": "CopilotKit/OpenDots",
+      "name": "OpenDots",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "agents",
+        "copilotkit",
+        "ag-ui",
+        "slack",
+        "template"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react"
+      ],
+      "use_for": "Start an agent workspace app with chat, pages, Slack and call features that you then customize.",
+      "why": "A full-featured agent workspace template built on CopilotKit and AG-UI.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A template for persistent AI agents (Dots) with their own spaces, searchable pages, chat threads, a Slack channel and WebRTC calls. You run and configure it yourself.",
+      "best_for": "Teams building a custom always-on agent workspace on CopilotKit who want a working base to adapt.",
+      "not_for": "A hosted product or a quick start with no setup: conversations need CopilotKit Intelligence, and the template is in early development.",
+      "keywords": [
+        "agent workspace template",
+        "copilotkit template",
+        "ag-ui starter",
+        "ai coworker slack",
+        "persistent agents",
+        "opendots"
+      ]
+    },
+    {
+      "id": "CopilotKit/openmuse",
+      "name": "OpenMuse",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "personal-agent",
+        "copilotkit",
+        "ag-ui",
+        "react-native",
+        "browser-agent"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react-native"
+      ],
+      "use_for": "Start a personal-agent app with chat, a browser and terminal for the agent, tasks and goals, on iOS, Android and web.",
+      "why": "A working alpha with an agent computer you can take over, durable tasks and rich result cards.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A CopilotKit React Native template with its own server, task worker and browser worker. The agent gets a persistent Chromium and an optional Linux workspace. Includes chat, activity plans with approvals, goals, tracking and documents.",
+      "best_for": "Building your own personal agent app with a visible computer and long-running tasks.",
+      "not_for": "Production use: the README calls it an alpha. Some features need extra setup, and autonomous checkout and graphical desktops are future work.",
+      "keywords": [
+        "personal agent template",
+        "copilotkit react native",
+        "agent with browser and terminal",
+        "ag-ui app",
+        "self-hosted personal assistant",
+        "openmuse"
+      ]
+    },
+    {
+      "id": "Open-Dev-Society/OpenStock",
+      "name": "OpenStock",
+      "category": "starters",
+      "kinds": [
+        "template",
+        "app"
+      ],
+      "tags": [
+        "stock-tracker",
+        "nextjs",
+        "better-auth",
+        "mongodb",
+        "finnhub"
+      ],
+      "ecosystems": [
+        "typescript",
+        "nextjs"
+      ],
+      "use_for": "Fork a Next.js stock tracking app with auth, watchlists, TradingView charts and email summaries.",
+      "why": "A full example app wiring Better Auth, MongoDB, Finnhub, TradingView widgets and Inngest.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "OpenStock is a stock market app on Next.js with shadcn/ui, Tailwind, Better Auth and MongoDB. It uses Finnhub data and TradingView widgets for charts. It has search, watchlists, onboarding and AI-written welcome and weekly emails.",
+      "best_for": "A base for a finance dashboard or to learn how these pieces fit together.",
+      "not_for": "Closed-source products: AGPL-3.0 requires sharing source, including for web services. Real-time data may need a paid Finnhub plan.",
+      "keywords": [
+        "stock market app nextjs",
+        "stock tracker template",
+        "finnhub nextjs",
+        "tradingview widgets",
+        "better auth example",
+        "watchlist app",
+        "finance dashboard starter"
       ]
     },
     {

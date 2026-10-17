@@ -838,6 +838,41 @@
       ]
     },
     {
+      "id": "tokio-rs/topcoat",
+      "name": "Topcoat",
+      "category": "web-frameworks",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "rust",
+        "full-stack",
+        "web-framework",
+        "tokio",
+        "ssr"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Build full-stack web apps in Rust with a router, views and components in one framework.",
+      "why": "From the Tokio team, aiming to be a batteries-included full-stack Rust framework.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Topcoat is a modular, batteries-included Rust framework for full-stack apps, focused on simplicity and productivity. It has a module router, a view macro and components. The roadmap lists auth, validation and background jobs as not yet built.",
+      "best_for": "Rust developers who want to try a full-stack framework with server-side views.",
+      "not_for": "Early-stage and experimental with expected breaking changes. Auth, background jobs and validation are still on the roadmap.",
+      "keywords": [
+        "rust full stack framework",
+        "rust web framework",
+        "tokio web app",
+        "rust ssr",
+        "rust rails alternative",
+        "leptos alternative",
+        "axum full stack"
+      ]
+    },
+    {
       "id": "umijs/umi",
       "name": "Umi",
       "category": "web-frameworks",
@@ -904,6 +939,42 @@
         "solid",
         "web framework",
         "ssr"
+      ]
+    },
+    {
+      "id": "cloudflare/vinext",
+      "name": "vinext",
+      "category": "web-frameworks",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "nextjs",
+        "vite",
+        "cloudflare-workers",
+        "rsc",
+        "migration"
+      ],
+      "ecosystems": [
+        "typescript",
+        "react"
+      ],
+      "use_for": "Run Next.js apps on Vite and deploy them to Cloudflare Workers or other hosts.",
+      "why": "Reimplements the Next.js API on Vite, with Workers bindings and migration tooling.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A Vite plugin that reimplements the Next.js API surface, including App Router, Pages Router, Server Components, Server Actions, middleware and ISR. Cloudflare Workers has the deepest support. `vinext init` migrates an existing app.",
+      "best_for": "Teams with a Next.js app who want Vite tooling or a Cloudflare Workers deployment.",
+      "not_for": "Not a drop-in replacement yet. The README warns of compatibility gaps, especially in newer App Router features. Test it on your own app first.",
+      "keywords": [
+        "next.js on vite",
+        "nextjs cloudflare workers",
+        "next.js alternative",
+        "vite rsc",
+        "migrate nextjs",
+        "deploy nextjs anywhere"
       ]
     },
     {

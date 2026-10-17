@@ -2,6 +2,43 @@
   "category": "embedded-iot",
   "entries": [
     {
+      "id": "NawfalMotii79/PLFM_RADAR",
+      "name": "AERIS-10",
+      "category": "embedded-iot",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "radar",
+        "hardware",
+        "phased-array",
+        "fpga",
+        "sdr"
+      ],
+      "ecosystems": [
+        "python",
+        "fpga"
+      ],
+      "use_for": "Study or build an open-source 10.5 GHz phased array radar with schematics, firmware and a Python GUI.",
+      "why": "Complete hardware design, FPGA signal processing and software in one open project.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "AERIS-10 is an open-source, low-cost phased array radar using pulse linear frequency modulation. It comes in a 3 km and a 20 km version. The repo has schematics, PCB layouts, firmware and a Python GUI with map support.",
+      "best_for": "Researchers, drone developers and advanced makers who want to experiment with beamforming and radar processing.",
+      "not_for": "Software-only projects. It is a physical RF hardware build, and its license is not a standard software license (CERN-OHL-P for hardware).",
+      "keywords": [
+        "open source radar",
+        "phased array radar",
+        "10.5 GHz radar",
+        "drone radar",
+        "sdr radar",
+        "beamforming",
+        "fpga radar",
+        "diy radar"
+      ]
+    },
+    {
       "id": "apache/nuttx",
       "name": "Apache NuttX",
       "category": "embedded-iot",
@@ -144,6 +181,41 @@
       ]
     },
     {
+      "id": "crosspoint-reader/crosspoint-reader",
+      "name": "CrossPoint Reader",
+      "category": "embedded-iot",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "firmware",
+        "e-reader",
+        "epub",
+        "esp32",
+        "open-source"
+      ],
+      "ecosystems": [
+        "c++",
+        "esp32"
+      ],
+      "use_for": "Flash open e-reader firmware with EPUB support onto ESP32-based devices.",
+      "why": "Community firmware with EPUB rendering, wireless file transfer, WebDAV and Calibre sync.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Open source e-reader firmware for ESP32-C3 and ESP32-S3 devices such as Xteink X4 and X3. It renders EPUB 2/3, reads TXT and BMP, supports custom fonts and dictionary lookups, and offers a web UI, WebDAV, OPDS and Calibre wireless transfer.",
+      "best_for": "Owners of supported e-reader hardware, or firmware developers who want a base for an ESP32 reader.",
+      "not_for": "Only runs on the listed ESP32 devices. Not a general reading app or library.",
+      "keywords": [
+        "e-reader firmware",
+        "esp32 ebook reader",
+        "xteink firmware",
+        "epub on esp32",
+        "open source ereader",
+        "koreader sync firmware"
+      ]
+    },
+    {
       "id": "eclipse-mosquitto/mosquitto",
       "name": "Eclipse Mosquitto",
       "category": "embedded-iot",
@@ -251,6 +323,80 @@
         "menuconfig",
         "embedded",
         "iot"
+      ]
+    },
+    {
+      "id": "M-Abozaid/esp32-c3-adblock",
+      "name": "esp32-c3-adblock",
+      "category": "embedded-iot",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "esp32",
+        "dns",
+        "adblock",
+        "pi-hole",
+        "firmware"
+      ],
+      "ecosystems": [
+        "c",
+        "arduino",
+        "esp32"
+      ],
+      "use_for": "Run a Pi-hole-style DNS ad blocker on a $2 ESP32-C3 using hashes of blocked domains stored in flash.",
+      "why": "Keeps the blocklist as sorted 40-bit hashes in flash, so it needs no PSRAM and about 50 KB of RAM.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A DNS sinkhole for the ESP32-C3. Domains are stored as sorted 40-bit FNV-1a hashes in flash and found by binary search. Blocked names return 0.0.0.0 and others go to an upstream resolver. It includes a web dashboard.",
+      "best_for": "A tiny low-power network ad blocker, or learning the hash-in-flash technique for large lookup tables on small chips.",
+      "not_for": "Hash collisions can over-block a domain (about 1 at 537k domains). Far less capable than a full Pi-hole.",
+      "keywords": [
+        "esp32 dns sinkhole",
+        "esp32 ad blocker",
+        "pi-hole on esp32",
+        "microcontroller adblock",
+        "dns blocklist in flash",
+        "esp32-c3"
+      ]
+    },
+    {
+      "id": "francescopace/espectre",
+      "name": "ESPectre",
+      "category": "embedded-iot",
+      "kinds": [
+        "library",
+        "app"
+      ],
+      "tags": [
+        "wifi-csi",
+        "motion-detection",
+        "esp32",
+        "esphome",
+        "matter"
+      ],
+      "ecosystems": [
+        "c++",
+        "esp32",
+        "micropython"
+      ],
+      "use_for": "Detect motion with an ESP32 using Wi-Fi signal changes, with no camera or radar.",
+      "why": "Ships firmware, a C++ SDK, browser flasher and tools, an open dataset and weights.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source platform that reads Wi-Fi CSI on supported ESP32 chips to report motion in real time. It offers ready-to-flash firmware, a C++ SDK, ESPHome and Matter frontends, a MicroPython version, browser tools and a host CLI.",
+      "best_for": "Private home or room occupancy sensing built on cheap ESP32 boards.",
+      "not_for": "Commercial products without a license. It is GPL-3.0 with commercial licensing offered, and Matter support is still being tested with controllers.",
+      "keywords": [
+        "wifi motion sensor",
+        "esp32 presence detection",
+        "csi sensing",
+        "esphome motion",
+        "camera free occupancy",
+        "matter occupancy sensor",
+        "espectre"
       ]
     },
     {
@@ -396,6 +542,42 @@
       ]
     },
     {
+      "id": "arnegiacomo/fugleramme",
+      "name": "fugleramme",
+      "category": "embedded-iot",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "raspberry-pi",
+        "e-ink",
+        "birdnet",
+        "homelab",
+        "display"
+      ],
+      "ecosystems": [
+        "python",
+        "docker"
+      ],
+      "use_for": "Build a bird picture frame that shows birds heard by a microphone as vintage illustrations.",
+      "why": "Fully local bird detection shown on an e-ink panel or any screen, with an admin page.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Polls BirdNET-Go for detected bird species, matches each to an 1800s illustration, lays them out on a page and redraws only when the birds change. It runs on a Raspberry Pi with an Inky Impression e-ink panel or in a container for any screen.",
+      "best_for": "Hobbyists with a Raspberry Pi or homelab who want a live bird display.",
+      "not_for": "A single-purpose hobby app, not a library. It depends on BirdNET-Go for detection.",
+      "keywords": [
+        "bird detection display",
+        "raspberry pi e-ink",
+        "birdnet-go",
+        "inky impression",
+        "homelab dashboard",
+        "bird picture frame",
+        "fugleramme"
+      ]
+    },
+    {
       "id": "home-assistant/core",
       "name": "Home Assistant",
       "category": "embedded-iot",
@@ -467,6 +649,43 @@
       ]
     },
     {
+      "id": "pollen-robotics/microduck",
+      "name": "Microduck",
+      "category": "embedded-iot",
+      "kinds": [
+        "app",
+        "engine"
+      ],
+      "tags": [
+        "biped-robot",
+        "reinforcement-learning",
+        "onnx",
+        "rk3566",
+        "robotics"
+      ],
+      "ecosystems": [
+        "rust",
+        "robotics"
+      ],
+      "use_for": "Run and extend the control software of a tiny biped robot that walks with learned policies.",
+      "why": "Complete robot stack with verified, reversible over-the-air updates.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "The software brain of the Microduck robot, about 25 cm and 800 g. Daemons run a 50 Hz control loop for fifteen servos from ONNX neural policies, plus radios, camera and an update system. Policies are trained in the separate microduck_rl repo.",
+      "best_for": "Owners and builders of Microduck, or anyone learning sim-to-real robot control.",
+      "not_for": "General robots. It is tied to this robot and a Rockchip RK3566 board.",
+      "keywords": [
+        "biped robot software",
+        "reinforcement learning robot",
+        "sim2real",
+        "pollen robotics",
+        "desktop robot duck",
+        "onnx robot policy",
+        "microduck"
+      ]
+    },
+    {
       "id": "micropython/micropython",
       "name": "MicroPython",
       "category": "embedded-iot",
@@ -500,6 +719,80 @@
         "firmware",
         "bytecode",
         "iot"
+      ]
+    },
+    {
+      "id": "bellard/mquickjs",
+      "name": "MicroQuickJS",
+      "category": "embedded-iot",
+      "kinds": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "javascript-engine",
+        "embedded",
+        "low-memory",
+        "interpreter",
+        "c"
+      ],
+      "ecosystems": [
+        "c",
+        "javascript"
+      ],
+      "use_for": "Run JavaScript on microcontrollers and other tiny devices with as little as 10 kB of RAM.",
+      "why": "A full JS engine in about 100 kB of ROM, from the author of QuickJS.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "MicroQuickJS (MQuickJS) is a JavaScript engine for embedded systems. It runs programs in about 10 kB of RAM and needs about 100 kB of ROM. It supports a stricter subset close to ES5 and uses a tracing garbage collector.",
+      "best_for": "Embedding scripting in firmware or devices where QuickJS is too large.",
+      "not_for": "Not for running modern JavaScript or Node.js code. It only supports a strict ES5-like subset, and the license is not a standard SPDX one.",
+      "keywords": [
+        "embedded javascript",
+        "quickjs",
+        "mquickjs",
+        "javascript engine microcontroller",
+        "small js interpreter",
+        "js on esp32",
+        "low ram javascript"
+      ]
+    },
+    {
+      "id": "memovai/mimiclaw",
+      "name": "MimiClaw",
+      "category": "embedded-iot",
+      "kinds": [
+        "app",
+        "engine"
+      ],
+      "tags": [
+        "esp32",
+        "ai-assistant",
+        "firmware",
+        "telegram",
+        "openclaw"
+      ],
+      "ecosystems": [
+        "c",
+        "esp32"
+      ],
+      "use_for": "Run a personal AI assistant on an ESP32-S3 chip that you talk to over Telegram.",
+      "why": "Pure C with no Linux or Node.js, and local memory on the chip's flash.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "MimiClaw turns an ESP32-S3 board into a personal AI assistant. A Telegram message arrives over WiFi, goes through an agent loop where the LLM thinks and calls tools, and the reply is sent back. It supports Anthropic and OpenAI as providers.",
+      "best_for": "Hardware hobbyists who want an always-on agent on cheap hardware.",
+      "not_for": "Needs a specific ESP32-S3 board (16 MB flash, 8 MB PSRAM), a Telegram bot and an LLM API key. It calls cloud models, not local ones.",
+      "keywords": [
+        "esp32 ai agent",
+        "openclaw esp32",
+        "telegram bot esp32",
+        "llm on microcontroller",
+        "esp-idf agent",
+        "cheap ai assistant hardware",
+        "claude on esp32"
       ]
     },
     {
@@ -611,6 +904,77 @@
       ]
     },
     {
+      "id": "dorianborian/sesame-robot",
+      "name": "Sesame Robot",
+      "category": "embedded-iot",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "robotics",
+        "esp32",
+        "quadruped",
+        "3d-printing",
+        "firmware"
+      ],
+      "ecosystems": [
+        "esp32",
+        "arduino"
+      ],
+      "use_for": "Build a small 3D-printed ESP32 quadruped robot with an expressive OLED face.",
+      "why": "Complete open kit: CAD and STL files, wiring guides, firmware and a JSON API for about $50-60 in parts.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source mini quadruped robot with 8 servos and a 128x64 OLED face. The repo has CAD and STL files, build and wiring guides, base and expanded ESP32 firmware, debug firmware, a REST/JSON API and Sesame Studio for creating animations.",
+      "best_for": "Makers who want an affordable walking robot to build and program.",
+      "not_for": "A hardware project. You need a 3D printer, soldering skills and basic Arduino IDE knowledge.",
+      "keywords": [
+        "esp32 robot",
+        "quadruped robot",
+        "open source robot",
+        "3d printed robot",
+        "arduino walking robot",
+        "servo robot oled face",
+        "diy robot"
+      ]
+    },
+    {
+      "id": "cpaczek/skylight",
+      "name": "Skylight",
+      "category": "embedded-iot",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "ads-b",
+        "rtl-sdr",
+        "projector",
+        "aircraft",
+        "astronomy"
+      ],
+      "ecosystems": [
+        "javascript",
+        "rtl-sdr"
+      ],
+      "use_for": "Project live aircraft, plus sun, moon, stars and the ISS, onto a ceiling from an RTL-SDR radio.",
+      "why": "Turns local ADS-B data into a smooth, type-aware overhead sky display, with a phone control panel.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Decodes ADS-B from a cheap RTL-SDR radio and renders the planes flying overhead for a ceiling-pointed projector. It also draws a live sky layer and can use a free web API instead of a radio.",
+      "best_for": "A hobby build that shows overhead planes on a projector, or a reference for ADS-B and sky-position rendering.",
+      "not_for": "A single-purpose installation. It needs a projector and ideally an RTL-SDR, and it is not a general flight-tracking library.",
+      "keywords": [
+        "ads-b projector",
+        "rtl-sdr plane tracker",
+        "overhead aircraft display",
+        "ceiling projector",
+        "flight tracker diy",
+        "iss pass display"
+      ]
+    },
+    {
       "id": "arendst/Tasmota",
       "name": "Tasmota",
       "category": "embedded-iot",
@@ -682,6 +1046,43 @@
       ]
     },
     {
+      "id": "davidmonterocrespo24/velxio",
+      "name": "Velxio",
+      "category": "embedded-iot",
+      "kinds": [
+        "app",
+        "engine"
+      ],
+      "tags": [
+        "arduino",
+        "esp32",
+        "emulator",
+        "circuit-simulator",
+        "raspberry-pi"
+      ],
+      "ecosystems": [
+        "typescript",
+        "python",
+        "arduino"
+      ],
+      "use_for": "Write, compile and run Arduino, ESP32 and Raspberry Pi code against real CPU emulation in the browser.",
+      "why": "Emulates real CPUs across 40 boards with 150+ interactive components, with no hardware needed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "An open-source multi-board emulator and circuit simulator that runs in the browser. It supports Arduino C++, MicroPython, ESP-IDF and Python on AVR, ARM Cortex-M, Xtensa, RISC-V and Raspberry Pi boards.",
+      "best_for": "Teaching or prototyping embedded projects without hardware, or self-hosting an Arduino simulator.",
+      "not_for": "AGPL licensed with a separate commercial license, so closed-source reuse needs that license. An emulator, not a replacement for testing on real boards.",
+      "keywords": [
+        "arduino simulator",
+        "esp32 emulator browser",
+        "wokwi alternative",
+        "raspberry pi emulator",
+        "circuit simulator",
+        "online arduino ide"
+      ]
+    },
+    {
       "id": "wled/WLED",
       "name": "WLED",
       "category": "embedded-iot",
@@ -713,6 +1114,42 @@
         "home assistant",
         "art-net",
         "effects"
+      ]
+    },
+    {
+      "id": "XiaoMi/xiaomi-miloco",
+      "name": "Xiaomi Miloco",
+      "category": "embedded-iot",
+      "kinds": [
+        "plugin",
+        "service"
+      ],
+      "tags": [
+        "smart-home",
+        "xiaomi",
+        "openclaw",
+        "vision",
+        "iot"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Add whole-home AI to Mi Home: camera-based perception and device control through an agent plugin.",
+      "why": "Uses Mi Home camera video and audio plus Xiaomi's MiMo model to act proactively on household events.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Xiaomi's open-source smart-home AI. It treats Mi Home cameras as a perception gateway, uses the MiMo model for decisions, and runs as an agent plugin on OpenClaw. It recognizes family members, applies rules to devices and breaks vague goals into tasks.",
+      "best_for": "Mi Home owners and developers experimenting with proactive, vision-driven home automation.",
+      "not_for": "Homes without Xiaomi devices, or fully offline setups. It depends on Mi Home, OpenClaw and Xiaomi models, and the license is NOASSERTION.",
+      "keywords": [
+        "xiaomi smart home ai",
+        "mi home camera agent",
+        "miloco",
+        "home assistant alternative ai",
+        "openclaw plugin smart home",
+        "mimo model home",
+        "family recognition camera"
       ]
     },
     {

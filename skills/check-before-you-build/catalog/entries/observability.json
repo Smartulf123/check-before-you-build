@@ -2,6 +2,42 @@
   "category": "observability",
   "entries": [
     {
+      "id": "kenn-io/agentsview",
+      "name": "agentsview",
+      "category": "observability",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "coding-agents",
+        "analytics",
+        "token-usage",
+        "session-search",
+        "sqlite"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Browse, search and measure token cost across your AI coding agent sessions on your own machine.",
+      "why": "Covers Claude Code, Codex and 20+ other agents in one local archive and web UI.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "agentsview finds sessions from supported coding agents, syncs them into a local SQLite database and serves a web UI. It gives session search and a usage command for daily token and cost reports.",
+      "best_for": "Developers using several coding agents who want one local place for history and spend.",
+      "not_for": "Not a hosted team observability service. It reads local session files and some features share data only if you enable them.",
+      "keywords": [
+        "claude code usage tracking",
+        "coding agent session history",
+        "token cost tracker",
+        "codex session search",
+        "ai agent analytics local",
+        "agent session viewer",
+        "ccusage alternative"
+      ]
+    },
+    {
       "id": "apache/skywalking",
       "name": "Apache SkyWalking",
       "category": "observability",
@@ -32,6 +68,77 @@
         "java agent",
         "observability",
         "metrics"
+      ]
+    },
+    {
+      "id": "matt1398/claude-devtools",
+      "name": "claude-devtools",
+      "category": "observability",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "claude-code",
+        "session-logs",
+        "token-usage",
+        "debugging",
+        "subagents"
+      ],
+      "ecosystems": [
+        "typescript",
+        "electron"
+      ],
+      "use_for": "Inspect Claude Code sessions: tool calls, thinking, subagents and per-turn token use.",
+      "why": "Rebuilds the details the terminal hides from the logs already saved on your machine.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "claude-devtools is a desktop app that reads Claude Code session logs from ~/.claude and shows exact file reads, search patterns, inline diffs, subagent activity and token attribution per turn. It runs as a Mac, Linux or Windows app or in Docker.",
+      "best_for": "You want to see what Claude Code actually did and where your context window went.",
+      "not_for": "Read-only viewer for Claude Code logs. It does not work with other agents and does not change how Claude runs.",
+      "keywords": [
+        "claude code devtools",
+        "inspect claude code sessions",
+        "claude code logs viewer",
+        "token usage claude code",
+        "subagent debugging",
+        "session transcript viewer",
+        "claude code observability"
+      ]
+    },
+    {
+      "id": "liaohch3/claude-tap",
+      "name": "claude-tap",
+      "category": "observability",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "proxy",
+        "trace-viewer",
+        "coding-agents",
+        "llm-debugging",
+        "api-traffic"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Inspect the real API traffic of coding agents: prompts, tool schemas, tool calls, streaming and token usage.",
+      "why": "Works across many agent CLIs, keeps traces local, and diffs context between turns.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local proxy and trace viewer for AI coding agents. Run an agent through it, then inspect system prompts, history, tool calls and token usage, with diffs between requests. Traces export to a self-contained HTML viewer.",
+      "best_for": "Debugging why an agent behaves as it does, or learning how Claude Code, Codex and others build their prompts.",
+      "not_for": "Debugging and inspection only, not production monitoring. Common auth headers are redacted, but traces can still hold your code and prompts.",
+      "keywords": [
+        "claude code traffic inspector",
+        "llm proxy trace viewer",
+        "see claude code system prompt",
+        "codex cli api logging",
+        "agent request diff",
+        "claude tap"
       ]
     },
     {
@@ -66,6 +173,117 @@
         "file logger",
         "os_log",
         "cocoalumberjack"
+      ]
+    },
+    {
+      "id": "getagentseal/codeburn",
+      "name": "CodeBurn",
+      "category": "observability",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "token-usage",
+        "cost-tracking",
+        "claude-code",
+        "codex",
+        "local-first"
+      ],
+      "ecosystems": [
+        "typescript",
+        "node"
+      ],
+      "use_for": "See what your AI coding tools cost by tool, model, project and task, using local session files.",
+      "why": "No account or proxy; reads files already on disk and covers dozens of tools.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A local tool that reads the session files written by Claude Code, Codex, Cursor and others, prices every token using LiteLLM prices, and shows tables in a terminal UI, desktop app, menu bar or browser.",
+      "best_for": "Finding where AI coding spend goes without sending prompts or code anywhere.",
+      "not_for": "Tracking API spend by proxying live traffic. It only reads logs the tools already write, and needs Node.js 22.13 or newer.",
+      "keywords": [
+        "claude code cost tracker",
+        "ai token usage",
+        "llm spend by project",
+        "codex usage",
+        "cursor cost",
+        "coding agent bill",
+        "codeburn"
+      ]
+    },
+    {
+      "id": "steipete/CodexBar",
+      "name": "CodexBar",
+      "category": "observability",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "usage-limits",
+        "menu-bar",
+        "codex",
+        "claude-code",
+        "cost-tracking"
+      ],
+      "ecosystems": [
+        "swift",
+        "macos",
+        "linux"
+      ],
+      "use_for": "See AI coding-tool limits, reset times and spend in the macOS menu bar.",
+      "why": "Reuses existing provider sessions, so no passwords are stored.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "CodexBar is a small macOS menu bar app that shows usage windows and reset countdowns for AI coding providers such as Codex and Claude Code. It also shows credits, spend charts and local cost scans. A Linux desktop app and CLI exist too.",
+      "best_for": "Heavy users of Codex, Claude Code and similar tools who want to track limits and spend.",
+      "not_for": "Team-wide or server-side usage monitoring; it is a personal desktop tool.",
+      "keywords": [
+        "codex usage",
+        "claude code usage limits",
+        "ai token usage menu bar",
+        "track ai spend",
+        "rate limit monitor",
+        "codexbar",
+        "usage tracker"
+      ]
+    },
+    {
+      "id": "tigerless-labs/cost-xray",
+      "name": "cost-xray",
+      "category": "observability",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "token-usage",
+        "cost",
+        "claude-code",
+        "codex",
+        "proxy"
+      ],
+      "ecosystems": [
+        "python",
+        "shell"
+      ],
+      "use_for": "See which parts of an agent's API requests (prompts, tools, MCP) use tokens and money.",
+      "why": "Reads real API traffic, so it sees the system prompt and tool schemas that transcripts never record.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "cost-xray captures local API traffic from Claude Code and Codex and attributes tokens and dollars to sources in each request, down to each MCP server and tool. A terminal UI lets you drill from agent to project to session to call.",
+      "best_for": "Finding out why a coding agent session is expensive and which MCP servers or tools add context.",
+      "not_for": "Total spend tracking only: log-based tools like ccusage are simpler. It works by proxying traffic, so it supports Claude Code and Codex only.",
+      "keywords": [
+        "claude code token cost",
+        "mcp token usage",
+        "codex cost breakdown",
+        "api request inspector",
+        "context window usage",
+        "ccusage alternative",
+        "agent cost tracking"
       ]
     },
     {
@@ -134,6 +352,42 @@
         "swarm",
         "kubernetes",
         "web ui"
+      ]
+    },
+    {
+      "id": "FailproofAI/failproofai",
+      "name": "Failproof AI",
+      "category": "observability",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "agent-policies",
+        "hooks",
+        "observability",
+        "guardrails",
+        "coding-agents"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Capture agent runs and block dangerous tool calls with policies across many agent harnesses.",
+      "why": "40 built-in policies plus custom policy files, hooked into 12 harnesses and run locally.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Failproof hooks into agent harnesses such as Claude Code and Codex to record runs and enforce policies before tools execute. Policies block things like .env reads, sudo, rm -rf and force pushes. You add your own by dropping files into .failproofai/policies.",
+      "best_for": "Teams who want shared, committed guardrails and run records for coding agents.",
+      "not_for": "Policies gate tool calls and are not a sandbox. Some sanitize policies run after output, so they report secrets rather than prevent exposure.",
+      "keywords": [
+        "agent guardrails",
+        "claude code policies",
+        "block dangerous tool calls",
+        "agent observability hooks",
+        "codex hooks policy",
+        "custom agent policies",
+        "agent run capture"
       ]
     },
     {
@@ -656,6 +910,42 @@
       ]
     },
     {
+      "id": "Tracer-Cloud/opensre",
+      "name": "OpenSRE",
+      "category": "observability",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "sre",
+        "incident-response",
+        "ai-agents",
+        "observability",
+        "evaluation"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build AI SRE agents that investigate production incidents across your logs, metrics and runbooks.",
+      "why": "Connects 60+ tools and adds end-to-end tests for realistic failures.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "A framework for AI SRE agents plus an evaluation environment for incident response. It connects tools you already run, supports custom workflows, and has an interactive shell. It is built to run on your own infrastructure.",
+      "best_for": "Teams exploring AI-assisted on-call work who want to wire agents to existing monitoring.",
+      "not_for": "Production reliance yet. It is in public alpha and APIs may change; first launch also signs in and uses a hosted model.",
+      "keywords": [
+        "ai sre agent",
+        "incident response ai",
+        "root cause analysis agent",
+        "on call automation",
+        "devops agent",
+        "production debugging",
+        "opensre"
+      ]
+    },
+    {
       "id": "open-telemetry/opentelemetry-collector",
       "name": "OpenTelemetry Collector",
       "category": "observability",
@@ -869,6 +1159,43 @@
         "monitoring",
         "scrape",
         "kubernetes"
+      ]
+    },
+    {
+      "id": "scanopy/scanopy",
+      "name": "Scanopy",
+      "category": "observability",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "network-discovery",
+        "network-diagram",
+        "snmp",
+        "self-hosted",
+        "homelab"
+      ],
+      "ecosystems": [
+        "rust",
+        "typescript"
+      ],
+      "use_for": "Scan your network on a schedule and keep L2, L3, workload and application diagrams up to date.",
+      "why": "Diagrams update themselves from scans and can export to SVG, Mermaid or Confluence.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Scanopy scans a network with a daemon and builds four views: physical L2, logical L3, workloads and applications. It detects 230+ services, integrates with Docker and SNMP, and supports distributed scanners. Run it with Docker Compose.",
+      "best_for": "IT teams and homelabbers who want current network documentation without drawing it by hand.",
+      "not_for": "A running service, not a library. AGPL license, and some features (Confluence export, more seats) need the paid Commercial Edition.",
+      "keywords": [
+        "network diagram generator",
+        "auto network map",
+        "network discovery self-hosted",
+        "snmp topology map",
+        "homelab network documentation",
+        "l2 l3 diagram",
+        "netbox alternative discovery"
       ]
     },
     {
@@ -1089,6 +1416,40 @@
         "kotlin",
         "java",
         "lint rules"
+      ]
+    },
+    {
+      "id": "Javis603/token-monitor",
+      "name": "Token Monitor",
+      "category": "observability",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "token-usage",
+        "claude-code",
+        "cost-tracking",
+        "desktop-widget",
+        "multi-device-sync"
+      ],
+      "ecosystems": [
+        "typescript"
+      ],
+      "use_for": "Tracking live token usage, costs and limits across Claude Code, Codex, Cursor and other AI coding tools.",
+      "why": "Syncs usage across every machine you work on, not just the one it runs on.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false,
+      "summary": "Token Monitor is a local-first Electron desktop widget that reads local session logs for 46+ AI coding tools and shows live token usage, cost in several currencies, and per-session breakdowns. An optional sync mode (self-hosted hub, Cloudflare Worker, or iCloud Drive) pushes updates to every connected device.",
+      "best_for": "Developers using multiple AI coding tools across several machines who want one combined usage dashboard.",
+      "not_for": "Not needed if you only use one tool on one machine; most of its value is the multi-device sync.",
+      "keywords": [
+        "claude code token usage",
+        "ai coding cost tracker",
+        "token monitor widget",
+        "codex usage tracker",
+        "cursor token usage",
+        "ai tool limits dashboard"
       ]
     },
     {
