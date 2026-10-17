@@ -22,3 +22,6 @@ Thumbs.db
 
 # Temporary catalog review files
 docs/catalog-review/
+
+# Local catalog harvest working files
+.harvest/

@@ -14,6 +14,8 @@ test('license classes', () => {
   assert.equal(licenseClass(null), 'none');
   assert.equal(licenseClass('NOASSERTION'), 'other');
   assert.equal(licenseClass('Some Custom License'), 'other');
+  assert.equal(licenseClass('PostgreSQL'), 'permissive');
+  assert.equal(licenseClass('BlueOak-1.0.0'), 'permissive');
 });
 
 test('recommendation rules per license class', () => {

@@ -3,6 +3,7 @@
 const PERMISSIVE = new Set([
   'MIT', 'MIT-0', 'Apache-2.0', 'BSD-2-Clause', 'BSD-3-Clause', 'ISC', '0BSD',
   'Unlicense', 'MPL-2.0', 'Zlib', 'BSL-1.0', 'CC0-1.0', 'Python-2.0', 'PSF-2.0',
+  'PostgreSQL', 'BlueOak-1.0.0', 'MIT-CMU', 'Ms-PL', 'NCSA', 'Artistic-2.0', 'UPL-1.0', 'X11',
 ]);
 
 const COPYLEFT_PREFIXES = ['GPL-', 'AGPL-', 'LGPL-', 'EUPL-', 'OSL-', 'CDDL-', 'EPL-'];

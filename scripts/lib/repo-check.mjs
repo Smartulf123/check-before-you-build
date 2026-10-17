@@ -4,6 +4,7 @@ import { getContributorsCount, getRepo } from '../../skills/check-before-you-bui
 import { packageInfo } from '../../skills/check-before-you-build/scripts/npm.mjs';
 import { searchSkills } from '../../skills/check-before-you-build/scripts/skills.mjs';
 import { evaluate } from '../../skills/check-before-you-build/scripts/lib/criteria.mjs';
+import { licenseClass } from '../../skills/check-before-you-build/scripts/lib/license.mjs';
 
 /** Look up a skill's install count by searching skills.sh for its skill id. */
 async function skillInstalls(skillId) {
@@ -23,9 +24,9 @@ async function licenseFromNpm(fullName, npmName) {
   for (const name of [npmName, repoName, repoName.toLowerCase()].filter(Boolean)) {
     try {
       const pkg = await packageInfo(name);
-      if (pkg.found && pkg.result.github?.toLowerCase() === fullName.toLowerCase() && pkg.result.signals.license) {
-        return pkg.result.signals.license;
-      }
+      const lic = pkg.found && pkg.result.github?.toLowerCase() === fullName.toLowerCase() ? pkg.result.signals.license : null;
+      // Only trust a real, recognised license id ("SEE LICENSE IN …" is not one).
+      if (lic && ['permissive', 'copyleft'].includes(licenseClass(lic))) return lic;
     } catch {
       // try the next name
     }
