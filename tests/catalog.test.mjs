@@ -10,11 +10,19 @@ const entries = [
   { id: 'vercel/next.js', name: 'Next.js', category: 'web-frameworks', kinds: ['framework'], tags: ['react', 'website'], use_for: 'Build websites', why: 'Most popular React framework' },
 ];
 
-test('categories file lists every SPEC §8.4 category', async () => {
+test('categories file: 50 categories and 20 domains, all consistent (SPEC §8.4)', async () => {
   const cats = await catalog.loadCategories();
-  assert.equal(cats.length, 38);
-  assert.ok(cats.every((c) => c.slug && c.name && c.description));
-  assert.equal(new Set(cats.map((c) => c.slug)).size, 38);
+  const domains = await catalog.loadDomains();
+  assert.equal(cats.length, 50);
+  assert.equal(new Set(cats.map((c) => c.slug)).size, 50);
+  assert.ok(cats.every((c) => c.slug && c.name && c.description && c.group && c.queries?.length));
+  assert.equal(domains.length, 20);
+  const slugs = new Set(cats.map((c) => c.slug));
+  for (const d of domains) {
+    for (const s of d.categories) assert.ok(slugs.has(s), `domain ${d.slug} points to unknown category ${s}`);
+  }
+  const used = new Set(domains.flatMap((d) => d.categories));
+  assert.deepEqual([...slugs].filter((s) => !used.has(s)), [], 'every category is used by a domain');
 });
 
 test('search filters by category and ranks keyword hits', () => {

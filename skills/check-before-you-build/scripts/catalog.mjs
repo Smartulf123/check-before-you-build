@@ -12,12 +12,17 @@ import { getRepo } from './github.mjs';
 const CATALOG_DIR = fileURLToPath(new URL('../catalog/', import.meta.url));
 
 const USAGE = `catalog.mjs <command>
-  categories                                         list category slugs
+  categories                                         list building-block categories
+  domains                                            list domains and the categories each one needs
   search [keywords...] [--categories a,b] [--kinds skill,mcp] [--limit 15] [--live]
   get <owner/repo> [--live]`;
 
 export async function loadCategories(dir = CATALOG_DIR) {
   return JSON.parse(await readFile(`${dir}categories.json`, 'utf8')).categories;
+}
+
+export async function loadDomains(dir = CATALOG_DIR) {
+  return JSON.parse(await readFile(`${dir}categories.json`, 'utf8')).domains || [];
 }
 
 export async function loadEntries(dir = CATALOG_DIR) {
@@ -107,7 +112,11 @@ const list = (v) => (typeof v === 'string' ? v.split(',').map((s) => s.trim()).f
 if (isMain(import.meta.url)) {
   runCli(
     {
-      categories: async () => ({ source: 'catalog', results: await loadCategories() }),
+      categories: async () => ({
+        source: 'catalog',
+        results: (await loadCategories()).map(({ slug, group, name, description }) => ({ slug, group, name, description })),
+      }),
+      domains: async () => ({ source: 'catalog', results: await loadDomains() }),
       search: async (args, flags) => {
         const entries = await loadEntries();
         const results = searchEntries(entries, {

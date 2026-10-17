@@ -9,7 +9,8 @@ const API = 'https://api.github.com';
 const USAGE = `github.mjs <command>
   search <keywords...> [--limit 20] [--min-stars 20]   2–4 unquoted keywords; topic:<slug> allowed
   repo <owner/repo>                                     live stats; found:false on 404
-  issues <owner/repo> [--limit 10]                      open issues sorted by 👍`;
+  issues <owner/repo> [--limit 10]                      open issues sorted by 👍
+  contributors <owner/repo>                             contributor count`;
 
 export function mapRepo(r) {
   return {
@@ -69,6 +70,22 @@ export async function getRepo(fullName) {
   return { source: 'github', found: true, renamed: data.full_name.toLowerCase() !== fullName.toLowerCase(), result: mapRepo(data) };
 }
 
+/** Total from a GitHub `Link` header when requesting per_page=1 (the last page number). */
+export function countFromLink(link, itemsOnPage) {
+  const last = /[?&]page=(\d+)>;\s*rel="last"/.exec(link || '');
+  return last ? Number(last[1]) : itemsOnPage;
+}
+
+/** Number of contributors (anonymous included). One cheap request via pagination. */
+export async function getContributorsCount(fullName) {
+  if (!/^[\w.-]+\/[\w.-]+$/.test(fullName || '')) throw new Error('expected owner/repo');
+  const { status, data, link } = await fetchJson(`${API}/repos/${fullName}/contributors?per_page=1&anon=1`, {
+    headers: githubHeaders(),
+  });
+  if (status === 404 || !Array.isArray(data)) return null;
+  return countFromLink(link, data.length);
+}
+
 export async function getIssues(fullName, { limit = 10 } = {}) {
   if (!/^[\w.-]+\/[\w.-]+$/.test(fullName || '')) throw new Error('expected owner/repo');
   const q = `repo:${fullName} is:issue is:open`;
@@ -83,6 +100,7 @@ if (isMain(import.meta.url)) {
       search: (args, flags) => searchRepos(args, { limit: intFlag(flags, 'limit', 20), minStars: intFlag(flags, 'min-stars', 20) }),
       repo: ([name]) => getRepo(name),
       issues: ([name], flags) => getIssues(name, { limit: intFlag(flags, 'limit', 10) }),
+      contributors: async ([name]) => ({ source: 'github', repo: name, contributors: await getContributorsCount(name) }),
     },
     USAGE,
   );

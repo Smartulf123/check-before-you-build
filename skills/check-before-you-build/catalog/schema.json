@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Smartulf123/check-before-you-build/catalog/schema.json",
+  "title": "check-before-you-build catalog category file",
+  "description": "One file per building-block category: catalog/entries/<category>.json. Quality rules live in scripts/lib/criteria.mjs (SPEC §8.2).",
+  "type": "object",
+  "required": ["category", "entries"],
+  "properties": {
+    "category": { "type": "string", "description": "Category slug from categories.json" },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "category", "kinds", "tags", "use_for", "why", "added", "last_reviewed"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[\\w.-]+/[\\w.-]+$", "description": "GitHub owner/repo" },
+          "name": { "type": "string" },
+          "category": { "type": "string" },
+          "subcategories": { "type": "array", "items": { "type": "string" } },
+          "tags": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+          "kinds": {
+            "type": "array",
+            "items": { "enum": ["library", "framework", "template", "skill", "plugin", "mcp", "cli", "app", "service", "engine"] },
+            "minItems": 1
+          },
+          "ecosystems": { "type": "array", "items": { "type": "string" } },
+          "domains": { "type": "array", "items": { "type": "string" }, "description": "For starters: which domains the template is for" },
+          "use_for": { "type": "string", "maxLength": 140, "description": "One plain sentence: what it is for" },
+          "why": { "type": "string", "maxLength": 200, "description": "One line: why it is recommended" },
+          "alternatives": { "type": "array", "items": { "type": "string" } },
+          "npm": { "type": "string", "description": "npm package name, for the downloads signal" },
+          "skill": { "type": "string", "description": "skills.sh id owner/repo/skill, for the installs signal" },
+          "official": { "type": "boolean", "description": "Official repo of the vendor it integrates with" },
+          "stable": { "type": "boolean" },
+          "stable_reason": { "type": "string" },
+          "added": { "type": "string", "format": "date" },
+          "last_reviewed": { "type": "string", "format": "date" }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 # check-before-you-build — Specification
 
-> **Status:** Draft v0.4 · 2026-10-17 · for review
+> **Status:** Draft v0.5 · 2026-10-17 · for review
+> **v0.5:** catalog quality rules decided (tiers, freshness, alternative signals, contributors, fake-star check; §8.2–8.3); 20 domains + 50 building-block categories (§8.4)
 > **v0.4:** catalog moved inside the skill folder (§12) so installed copies include it; popularity takes the strongest normalised signal across sources (§9.1)
 > **v0.3:** sources verified in M0. §7 rewritten with real endpoints and query-writing rules (§7.1); Smithery added; Glama deferred; open questions 1–3 resolved
 > **v0.2:** added build purposes (fun / for me / launch) and friendlier verdict labels: §4.1, §6.1, §6.6, §6.8, §9.7, §11.1, §13.1, §18, §19
@@ -387,69 +388,88 @@ The catalog is the core asset: a curated, categorized list of repos that are pro
 
 A `catalog/.cache/stats.json` snapshot (refreshed by the weekly health check) is used as a fallback when live fetching fails. When it is used, the report labels its numbers *"as of <date>"*.
 
-### 8.2 Inclusion criteria
+### 8.2 Quality rules (decided 2026-10-17)
 
-A repo is added only if **all** of these hold:
+The **same rules apply to every entry**, including the maintainer's own favourites. They are implemented once in `scripts/lib/criteria.mjs` and used by `catalog-add`, `catalog-validate`, `health` and `scout`. They are re-checked live, so an entry that stops qualifying stops being recommended.
 
-1. **Maintained**: a commit within the last 12 months. Exception: mature, stable libraries flagged `stable: true`.
-2. **Licensed**: an OSI-approved license, or clearly marked as a free service/tool with documented terms.
-3. **Adopted**: at least one of: ≥ 500 GitHub stars · ≥ 10,000 weekly npm downloads · an official vendor repo · the recognised leader of a small niche (requires a written justification).
-4. **Clear use case**: `use_for` can be written in one plain sentence.
-5. **Not a thin fork or clone** of another catalog entry.
-6. **Documented**: a README that explains installation and usage.
+**Tiers:**
+
+| Tier | Requirement | Shown as |
+|---|---|---|
+| ⭐ **Top choice** | ≥ 3,000 stars (or the alternative top signal below) **and** pushed ≤ 90 days ago | "Top choice" |
+| ✅ **Solid** | ≥ 1,000 stars (or an alternative signal) **and** pushed ≤ 6 months ago | "Solid" |
+| ❌ Excluded | anything else | — |
+
+**Alternative adoption signals** (any one replaces the star requirement):
+
+| Signal | Solid | Top choice |
+|---|---|---|
+| skills.sh installs | ≥ 5,000 | ≥ 50,000 |
+| npm weekly downloads | ≥ 50,000 | ≥ 500,000 |
+| Smithery uses | ≥ 1,000 | ≥ 10,000 |
+| Official vendor repo (`official: true`, e.g. Stripe's or Supabase's own) | ✔ | ✔ if pushed ≤ 90 days |
+
+**Freshness** (last push):
+
+| Last push | Label |
+|---|---|
+| ≤ 30 days | 🟢 very fresh |
+| ≤ 90 days | 🟢 fresh |
+| ≤ 6 months | 🟡 OK (noted in reports) |
+| > 6 months | ❌ excluded |
+
+**Exception, finished libraries:** an entry marked `stable: true`, with ≥ 5,000 stars and a written `stable_reason`, may go up to **18 months** without a push. It is always tier ✅, never ⭐.
+
+**Hard requirements (all entries):**
+
+1. **Not archived.**
+2. **Licensed**: permissive or copyleft license class. No license, or a custom license, is excluded. When GitHub reports `NOASSERTION` (a license file it can't classify, common for MIT with a custom header), the license is resolved from the npm package that points back to the same repo. If that fails, the entry is flagged *"verify by hand"* instead of being rejected.
+3. **≥ 3 contributors**: no single point of failure.
+4. **No signs of fake stars**: excluded when stars ≥ 1,000 but forks are under 1 % of stars **and** there are 2 or fewer contributors.
+5. **Clear use case**: `use_for` fits in one plain sentence.
+6. **Not a thin fork or clone** of another entry.
+7. **Documented**: a README that explains installation and usage.
+
+**Target size:** ~300 entries (250–350): at least 5 and at most 12 per category. The bar is never lowered to hit a number. A category with only 4 qualifying repos gets 4.
 
 ### 8.3 Removal criteria
 
 - Archived or deleted.
-- License removed or changed to non-OSI.
-- No commit in > 18 months (unless `stable: true`).
+- License removed or changed to a non-qualifying class.
+- Falls outside the freshness rules (> 6 months, or > 18 months for `stable`).
+- Contributors drop below 3, or fake-star signals appear.
 - A security incident or compromise.
 - Superseded: a clearly better maintained alternative exists and the project itself recommends it.
 
-Removals are recorded in `CHANGELOG.md`.
+`health.mjs` flags these weekly. Removals are recorded in `CHANGELOG.md`.
 
-### 8.4 Categories (v1 target: ~35 categories, ~8–10 repos each, ~300 total)
+### 8.4 Domains and categories
 
-| Slug | Category |
+Two levels, defined in `catalog/categories.json`:
+
+- **20 domains**, meaning what people build, in their own words. Each domain maps to the building-block categories it typically needs, so the skill can say *"you're building a game: here are engines, physics, audio and multiplayer"*.
+- **50 building-block categories** in 12 groups. Entries live here only, so one repo appears once even when several domains use it. Each category carries GitHub search queries for `scout.mjs`.
+
+**Domains:** websites · e-commerce · mobile apps · desktop apps · games · AI apps and agents · tools for coding agents · CLI tools · extensions for apps (browser, VS Code, Obsidian, Raycast, Figma) · bots · APIs and backends · automation and scraping · data, analytics and ML · video and media · music and audio · content and docs · 3D/VR/AR · creative coding · CAD and 3D printing · hardware, IoT and smart home.
+
+**Category groups:**
+
+| Group | Categories |
 |---|---|
-| `web-frameworks` | Web frameworks (Next.js, Astro, SvelteKit, Nuxt, Remix …) |
-| `ui-components` | UI component libraries and design systems |
-| `styling` | CSS frameworks and styling tools |
-| `animation` | Animation, motion and scroll effects |
-| `3d-graphics` | 3D, WebGL, canvas |
-| `forms-validation` | Forms and schema validation |
-| `state-data` | State management and data fetching |
-| `auth` | Authentication and identity |
-| `databases` | Databases, ORMs, query builders |
-| `backend` | Backend frameworks and API layers |
-| `realtime` | Realtime, websockets, sync |
-| `payments` | Payments and billing |
-| `email` | Email sending and templates |
-| `storage-uploads` | File storage and uploads |
-| `search` | Search engines and libraries |
-| `ai-sdks` | LLM SDKs and model access |
-| `agents` | Agent frameworks and orchestration |
-| `rag-vector` | RAG, embeddings, vector databases |
-| `mcp-servers` | Notable MCP servers |
-| `agent-skills` | Notable agent skills and plugins |
-| `browser-automation` | Browser automation and scraping |
-| `testing` | Testing frameworks and tools |
-| `deploy-infra` | Deployment, hosting, infrastructure as code |
-| `observability` | Logging, monitoring, error tracking |
-| `analytics` | Product and web analytics |
-| `cms-content` | CMS and content tooling |
-| `docs-sites` | Documentation site generators |
-| `mobile` | Mobile apps (Expo, React Native, Flutter …) |
-| `desktop` | Desktop apps (Electron, Tauri …) |
-| `cli-tooling` | Building CLIs and TUIs |
-| `video-media` | Video, audio and media generation |
-| `images` | Image processing and generation |
-| `charts-dataviz` | Charts and data visualization |
-| `maps-geo` | Maps and geospatial |
-| `i18n` | Internationalization |
-| `security` | Security scanning and hardening |
-| `dev-tooling` | Linting, formatting, monorepos, build tools |
-| `starters` | Templates, boilerplates and starter kits |
+| Frontend | web-frameworks · ui-components · styling · animation · 3d-graphics · forms-validation · state-data · charts-dataviz |
+| Backend and data | backend · databases · realtime · auth · payments · ecommerce · email · storage-uploads · search |
+| AI | ai-sdks · agents · rag-vector · mcp-servers · agent-skills |
+| Games | game-engines · game-libraries · multiplayer |
+| Platforms | mobile · desktop · app-extensions · bots · cli-tooling |
+| Automation | browser-automation · workflow-automation |
+| Media | video-media · music-audio · images · maps-geo |
+| Making | creative-coding · cad-3d-printing · embedded-iot |
+| Data | data-science-ml |
+| Quality and ops | testing · deploy-infra · observability · analytics · security · dev-tooling · i18n |
+| Content | cms-content · docs-sites |
+| Starters | starters (tagged by domain) |
+
+**Deliberately excluded in v1:** crypto/Web3/smart contracts (mistakes cost real money; recommendations would give false confidence), robotics/ROS (too niche, hardware-heavy), education apps and office automation (covered by other domains).
 
 ### 8.5 Weekly update workflow (maintainer)
 

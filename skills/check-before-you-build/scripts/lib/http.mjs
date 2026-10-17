@@ -99,7 +99,8 @@ export async function fetchJson(url, { headers = {}, retries = 2, timeoutMs = 15
     }
 
     const data = await res.json();
-    const result = { status: res.status, data };
+    // `link` carries GitHub pagination, which is how contributor counts are read cheaply.
+    const result = { status: res.status, data, link: res.headers.get('link') };
     if (cache) await writeCache(url, result);
     return result;
   }
