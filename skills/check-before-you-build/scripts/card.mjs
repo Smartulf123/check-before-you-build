@@ -61,6 +61,17 @@ function scoreBar(label, value) {
   return `<div class="bar"><span class="bl">${label}</span><span class="track"><span class="fill" style="width:${v * 10}%"></span></span><span class="bv">${v.toFixed(1).replace(/\.0$/, '')}/10</span></div>`;
 }
 
+const SOURCE_NAMES = { catalog: 'Catalog', github: 'GitHub', skills: 'skills.sh', plugins: 'Claude plugins', mcp: 'MCP registries', npm: 'npm', pypi: 'PyPI', hn: 'Hacker News', web: 'Web' };
+
+/** The sources this run actually used (status "ok"); falls back to the core list for old evidence. */
+export function sourcesLine(evidence) {
+  const status = evidence.sources_status || {};
+  const used = Object.entries(SOURCE_NAMES)
+    .filter(([key]) => String(status[key] ?? '').startsWith('ok'))
+    .map(([, name]) => name);
+  return used.length ? used.join(' · ') : 'GitHub · skills.sh · MCP registries · npm · Hacker News';
+}
+
 function chips(items, max = 5) {
   return usable(items)
     .slice(0, max)
@@ -138,7 +149,7 @@ html,body{width:1200px;height:630px;background:var(--bg);color:var(--fg);font-fa
 <div class="idea">${escapeHtml(idea)}</div>
 ${headline}
 ${body}
-<div class="foot"><span>Evidence from GitHub · skills.sh · MCP registries · npm · Hacker News</span><span>github.com/Smartulf123/check-before-you-build</span></div>
+<div class="foot"><span>Evidence from ${escapeHtml(sourcesLine(evidence))}</span><span>github.com/Smartulf123/check-before-you-build</span></div>
 </div></body></html>
 `;
 }
@@ -157,7 +168,9 @@ async function main() {
     const theme = ['light', 'dark', 'auto'].includes(args.flags.theme) ? args.flags.theme : 'auto';
     const target = typeof args.flags.out === 'string' ? args.flags.out : join(dirname(file), 'card.html');
     await writeFile(target, renderCard(evidence, { theme }));
-    out({ ok: true, card: target, purpose: evidence.idea?.purpose || 'launch', verdict: evidence.verdict?.code || null });
+    const purpose = evidence.idea?.purpose || 'launch';
+    // fun and me runs never show a verdict, so don't hand one to the agent either
+    out({ ok: true, card: target, purpose, ...(purpose === 'launch' ? { verdict: evidence.verdict?.code || null } : {}) });
   } catch (err) {
     out({ ok: false, error: errorObject(err) });
     process.exitCode = 1;

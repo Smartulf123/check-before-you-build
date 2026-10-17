@@ -26,7 +26,7 @@
       "url": "https://github.com/owner/repo", // ✱
       "source": "github",                   // github | skills.sh | smithery | mcp-registry | npm | pypi | claude-plugins-official | commercial | catalog
       "description": "…",
-      "signals": { "stars": 4248, "pushed_at": "…", "license": "MIT", "archived": false },
+      "signals": { "stars": 4248, "pushed_at": "…", "license": "MIT", "archived": false },   // commercial products: { "traction": true } when the site shows real users or reviews
       "other_signals": { "npm:designlang": { "downloads_weekly": 790 } },
       "match": "direct",                    // ✱ direct | partial | adjacent
       "match_reason": "…",                  // ✱ for direct and partial

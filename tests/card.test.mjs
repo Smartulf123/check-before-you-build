@@ -64,3 +64,9 @@ test('formatCount', () => {
   assert.equal(card.formatCount(130285), '130k');
   assert.equal(card.formatCount(3900000), '3.9M');
 });
+
+test('the footer lists only the sources this run used', async () => {
+  const { sourcesLine } = await load('card.mjs');
+  assert.equal(sourcesLine({ sources_status: { catalog: 'ok', github: 'ok (authenticated)', npm: 'skipped', hn: 'failed' } }), 'Catalog · GitHub');
+  assert.match(sourcesLine({}), /GitHub/);
+});

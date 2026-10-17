@@ -3,6 +3,7 @@
 // against the GitHub API rate limit, and condenses it to the parts that matter for choosing a
 // repo: the intro, features, usage, limitations and comparisons. Installation walls, badges,
 // images and long code blocks are dropped so the agent's context stays small.
+import { posix } from 'node:path';
 import { fetchText } from './lib/http.mjs';
 import { intFlag, isMain, runCli } from './lib/cli.mjs';
 
@@ -117,7 +118,9 @@ async function fetchCandidate(fullName, file) {
   // Monorepos often symlink the root README; raw serves the link target path as text.
   const link = text.trim();
   if (link.length < 200 && !link.includes('\n') && /\.(md|markdown|rst)$/i.test(link)) {
-    const target = await fetchText(`https://raw.githubusercontent.com/${fullName}/HEAD/${link.replace(/^\.?\//, '')}`);
+    // the link is relative to the folder the link file lives in (e.g. .github/README.md → ../packages/x/README.md)
+    const resolved = posix.normalize(posix.join(posix.dirname(file), link)).replace(/^(\.\.\/)+/, '');
+    const target = await fetchText(`https://raw.githubusercontent.com/${fullName}/HEAD/${resolved}`);
     if (target.text) text = target.text;
   }
   if (/\.rst$/i.test(file)) text = rstToMarkdown(text);

@@ -111,3 +111,16 @@ test('getReadme tries README variants on raw.githubusercontent.com', async () =>
   assert.match(r.source_url, /readme\.md$/);
   assert.match(r.excerpt, /Zod/);
 });
+
+test('a symlinked README inside .github is resolved relative to its folder', async () => {
+  const calls = [];
+  globalThis.fetch = async (url) => {
+    const u = String(url);
+    calls.push(u);
+    if (u.endsWith('/HEAD/.github/README.md')) return new Response('../packages/toolkit/README.md', { status: 200 });
+    if (u.endsWith('/HEAD/packages/toolkit/README.md')) return new Response('# Redux Toolkit\n\nThe official toolset.', { status: 200 });
+    return new Response('nf', { status: 404 });
+  };
+  const r = await readme.getReadme('reduxjs/redux-toolkit');
+  assert.match(r.excerpt, /official toolset/);
+});
