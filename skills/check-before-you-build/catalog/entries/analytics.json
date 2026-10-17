@@ -1,0 +1,401 @@
+{
+  "category": "analytics",
+  "entries": [
+    {
+      "id": "electerious/Ackee",
+      "name": "Ackee",
+      "category": "analytics",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "web-analytics",
+        "privacy",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Self-hosted, privacy-focused web analytics with a GraphQL API",
+      "why": "Lightweight, cookie-free Node analytics; simple to run alongside a site.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "DavidWells/analytics",
+      "name": "Analytics (getanalytics.io)",
+      "category": "analytics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "tracking",
+        "abstraction",
+        "plugins",
+        "client"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Send events to multiple analytics providers through one small client API.",
+      "why": "Provider-agnostic plugin layer so you can swap GA, Segment and others without rewriting tracking code.",
+      "npm": "analytics",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "aptabase/aptabase",
+      "name": "Aptabase",
+      "category": "analytics",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "app-analytics",
+        "privacy",
+        "mobile",
+        "desktop"
+      ],
+      "ecosystems": [
+        "csharp",
+        "ts"
+      ],
+      "use_for": "Privacy-first analytics for mobile, desktop and web apps",
+      "why": "Fills the gap for app (not website) analytics, with SDKs for Tauri, Electron, Flutter and Swift.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "allinurl/goaccess",
+      "name": "GoAccess",
+      "category": "analytics",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "log-analysis",
+        "terminal",
+        "real-time",
+        "web-server"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Analyze web server logs in real time in the terminal or as an HTML report.",
+      "why": "No tracking script needed; works straight from Nginx/Apache logs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "growthbook/growthbook",
+      "name": "GrowthBook",
+      "category": "analytics",
+      "kinds": [
+        "app",
+        "library"
+      ],
+      "tags": [
+        "ab-testing",
+        "feature-flags",
+        "experimentation"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Feature flags and A/B testing with warehouse-native experiment analysis",
+      "why": "Most popular open experimentation platform; SDKs for every stack, MIT core.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "Open-core: MIT except enterprise directories under GrowthBook Enterprise License",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jitsucom/jitsu",
+      "name": "Jitsu",
+      "category": "analytics",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "event-collection",
+        "cdp",
+        "segment-alternative"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Collect events and stream them to your data warehouse, Segment-style",
+      "why": "Open MIT-licensed Segment alternative for event ingestion into ClickHouse, BigQuery and more.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "matomo-org/matomo",
+      "name": "Matomo",
+      "category": "analytics",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "web-analytics",
+        "ga-alternative",
+        "privacy",
+        "php"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Self-host full-featured web analytics comparable to Google Analytics.",
+      "why": "The most complete open analytics platform with goals, funnels, heatmaps and full data ownership.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "Openpanel-dev/openpanel",
+      "name": "OpenPanel",
+      "category": "analytics",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "product-analytics",
+        "web-analytics",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Open-source Mixpanel alternative: events, funnels, retention and web analytics",
+      "why": "Combines product and web analytics in one self-hostable AGPL stack with a clean SDK.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "openreplay/openreplay",
+      "name": "OpenReplay",
+      "category": "analytics",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "session-replay",
+        "product-analytics",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "ts",
+        "python",
+        "go"
+      ],
+      "use_for": "Self-hosted session replay with devtools, product analytics and co-browsing",
+      "why": "The leading self-hostable session-replay suite; open-core with an AGPL core.",
+      "license_verified": {
+        "license": "AGPL-3.0",
+        "note": "Open-core: AGPLv3 by default, some dirs MIT, ee/ directory under separate enterprise license",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "every-app/open-seo",
+      "name": "OpenSEO",
+      "kinds": [
+        "app",
+        "mcp"
+      ],
+      "tags": [
+        "seo",
+        "keyword-research",
+        "rank-tracking",
+        "mcp"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Self-hosted SEO toolkit for keyword research, rank tracking, backlinks and site audits, with an MCP server for agents.",
+      "why": "Open-source, pay-as-you-go alternative to Semrush and Ahrefs; self-hostable on Cloudflare or Docker.",
+      "category": "analytics",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "plausible/analytics",
+      "name": "Plausible Analytics",
+      "category": "analytics",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "web-analytics",
+        "privacy",
+        "cookieless",
+        "lightweight"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Add lightweight, cookie-free website analytics as a Google Analytics alternative.",
+      "why": "Tiny script, GDPR-friendly, clean dashboard; self-host (AGPL) or use the hosted service.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "PostHog/posthog",
+      "name": "PostHog",
+      "category": "analytics",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "product-analytics",
+        "session-replay",
+        "feature-flags",
+        "experiments"
+      ],
+      "ecosystems": [
+        "python",
+        "ts"
+      ],
+      "use_for": "Add product analytics, session replay, feature flags and A/B tests to your app.",
+      "why": "All-in-one product suite with SDKs for most platforms; self-hostable, MIT core and generous cloud tier.",
+      "npm": "posthog-js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "rrweb-io/rrweb",
+      "name": "rrweb",
+      "category": "analytics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "session-replay",
+        "recording",
+        "dom"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Record and replay user sessions in the browser",
+      "why": "The session-replay engine behind PostHog and many other replay tools.",
+      "npm": "rrweb",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "rybbit-io/rybbit",
+      "name": "Rybbit",
+      "category": "analytics",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "web-analytics",
+        "product-analytics",
+        "privacy",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Self-host privacy-friendly web and product analytics with funnels and session replay.",
+      "why": "Fast-growing open alternative that covers both web and product analytics in one tool.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Swetrix/swetrix",
+      "name": "Swetrix",
+      "category": "analytics",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "web-analytics",
+        "privacy",
+        "cookieless",
+        "performance"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Self-host cookieless web analytics with performance monitoring and error tracking.",
+      "why": "Privacy-first analytics that adds page speed and error data alongside traffic.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "msgbyte/tianji",
+      "name": "Tianji",
+      "category": "analytics",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "web-analytics",
+        "uptime",
+        "monitoring",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Self-host website analytics combined with uptime and server monitoring.",
+      "why": "One lightweight app for analytics, uptime checks and server status.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "umami-software/umami",
+      "name": "Umami",
+      "category": "analytics",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "web-analytics",
+        "privacy",
+        "self-hosted",
+        "cookieless"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Self-host privacy-friendly website analytics without cookies.",
+      "why": "MIT licensed, simple to deploy on Postgres and a lightweight tracking script.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    }
+  ]
+}

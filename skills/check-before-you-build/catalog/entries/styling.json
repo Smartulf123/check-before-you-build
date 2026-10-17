@@ -1,0 +1,429 @@
+{
+  "category": "styling",
+  "entries": [
+    {
+      "id": "twbs/bootstrap",
+      "name": "Bootstrap",
+      "category": "styling",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "css",
+        "responsive",
+        "components",
+        "sass"
+      ],
+      "ecosystems": [
+        "js",
+        "any"
+      ],
+      "use_for": "Build responsive sites quickly with a classic CSS framework and ready-made components.",
+      "why": "The most used CSS framework, with stable conventions, great docs and themes everywhere.",
+      "npm": "bootstrap",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "thomaspark/bootswatch",
+      "name": "Bootswatch",
+      "category": "styling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "bootstrap",
+        "themes",
+        "css"
+      ],
+      "ecosystems": [
+        "css"
+      ],
+      "use_for": "Free drop-in themes for Bootstrap",
+      "why": "Two dozen polished Bootstrap themes as one CSS swap; the go-to way to restyle Bootstrap apps.",
+      "npm": "bootswatch",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "jgthms/bulma",
+      "name": "Bulma",
+      "category": "styling",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "css",
+        "flexbox",
+        "sass",
+        "no-js"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Style sites with a modern, JavaScript-free CSS framework.",
+      "why": "Clean, readable class names and pure CSS, so it fits any JS framework.",
+      "npm": "bulma",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "joe-bell/cva",
+      "name": "Class Variance Authority",
+      "category": "styling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "variants",
+        "tailwind",
+        "design-system"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Type-safe component variants on top of class names",
+      "why": "The variant API used by shadcn/ui and most Tailwind component libraries.",
+      "npm": "class-variance-authority",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "saadeghi/daisyui",
+      "name": "daisyUI",
+      "category": "styling",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "tailwind",
+        "components",
+        "themes",
+        "css"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Add semantic component classes and themes on top of Tailwind CSS.",
+      "why": "Most popular Tailwind plugin, giving btn/card-style classes and 30+ themes without JS.",
+      "npm": "daisyui",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "emotion-js/emotion",
+      "name": "Emotion",
+      "category": "styling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "css-in-js",
+        "react",
+        "performance"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Style React components with the css prop or styled API.",
+      "why": "Fast, flexible CSS-in-JS used under MUI and many design systems.",
+      "npm": "@emotion/react",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "less/less.js",
+      "name": "Less",
+      "category": "styling",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "css-preprocessor"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Less CSS preprocessor: variables, mixins and functions",
+      "why": "Still widely deployed (e.g. Ant Design theming); the other major CSS preprocessor.",
+      "npm": "less",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "callstack/linaria",
+      "name": "Linaria",
+      "category": "styling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "zero-runtime",
+        "css-in-js",
+        "react"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Write styled-components-like CSS in JS that is extracted to CSS at build time.",
+      "why": "Mature zero-runtime option with a familiar styled API.",
+      "npm": "@linaria/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "argyleink/open-props",
+      "name": "Open Props",
+      "category": "styling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "css-variables",
+        "design-tokens"
+      ],
+      "ecosystems": [
+        "css"
+      ],
+      "use_for": "Ready-made CSS custom properties (design tokens) for colors, sizes and easing",
+      "why": "Framework-free design tokens for adding consistent styling to plain CSS.",
+      "npm": "open-props",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "chakra-ui/panda",
+      "name": "Panda CSS",
+      "category": "styling",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "css-in-js",
+        "zero-runtime",
+        "design-tokens",
+        "recipes"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build design systems with type-safe, build-time CSS-in-JS and tokens.",
+      "why": "Zero-runtime, works with React Server Components, from the Chakra UI team.",
+      "npm": "@pandacss/dev",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "postcss/postcss",
+      "name": "PostCSS",
+      "category": "styling",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "css",
+        "transform",
+        "plugins"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Transform CSS with JS plugins (autoprefixer, nesting, Tailwind)",
+      "why": "The CSS processing engine under Tailwind, Autoprefixer and most build tools.",
+      "npm": "postcss",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "sass/dart-sass",
+      "name": "Sass (Dart Sass)",
+      "category": "styling",
+      "kinds": [
+        "engine",
+        "cli"
+      ],
+      "tags": [
+        "css-preprocessor",
+        "scss"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "The primary Sass/SCSS compiler, available as the sass npm package",
+      "why": "The reference Sass implementation; the most-used CSS preprocessor.",
+      "npm": "sass",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "styled-components/styled-components",
+      "name": "styled-components",
+      "category": "styling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "css-in-js",
+        "react",
+        "theming"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Write component-scoped CSS in JavaScript for React apps.",
+      "why": "The best-known CSS-in-JS library with theming and SSR support.",
+      "npm": "styled-components",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "facebook/stylex",
+      "name": "StyleX",
+      "category": "styling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "atomic-css",
+        "zero-runtime",
+        "react",
+        "compiler"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Write co-located styles in JS that compile to atomic CSS for large apps.",
+      "why": "Meta styling system used on Facebook and Instagram; predictable, type-safe and scalable.",
+      "npm": "@stylexjs/stylex",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tailwindlabs/tailwindcss",
+      "name": "Tailwind CSS",
+      "category": "styling",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "utility-first",
+        "css",
+        "design-tokens"
+      ],
+      "ecosystems": [
+        "js",
+        "any"
+      ],
+      "use_for": "Style any web UI with utility classes and a design-token config.",
+      "why": "The dominant CSS approach for new projects; fast v4 engine and the base of shadcn/ui, daisyUI and most templates.",
+      "npm": "tailwindcss",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "heroui-inc/tailwind-variants",
+      "name": "Tailwind Variants",
+      "category": "styling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "tailwind",
+        "variants",
+        "slots"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Tailwind-first variants API with slots, responsive variants and conflict resolution",
+      "why": "A richer alternative to cva, from the HeroUI team.",
+      "npm": "tailwind-variants",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "dcastil/tailwind-merge",
+      "name": "tailwind-merge",
+      "category": "styling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "tailwind",
+        "classnames",
+        "utilities"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Merge Tailwind class strings without style conflicts",
+      "why": "Essential utility in shadcn-style component code (the cn() helper).",
+      "npm": "tailwind-merge",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "unocss/unocss",
+      "name": "UnoCSS",
+      "category": "styling",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "atomic-css",
+        "utility-first",
+        "vite",
+        "presets"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Generate atomic CSS on demand with Tailwind-compatible or custom presets.",
+      "why": "Extremely fast and fully customizable engine; popular in the Vue/Vite ecosystem.",
+      "npm": "unocss",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "vanilla-extract-css/vanilla-extract",
+      "name": "vanilla-extract",
+      "category": "styling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "zero-runtime",
+        "css-in-ts",
+        "type-safe",
+        "themes"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Write type-safe styles in TypeScript that compile to static CSS files.",
+      "why": "Zero runtime cost and full type safety for themes and variants; works with Vite, Next.js and others.",
+      "npm": "@vanilla-extract/css",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

@@ -1,0 +1,667 @@
+{
+  "category": "starters",
+  "entries": [
+    {
+      "id": "a16z-infra/ai-town",
+      "name": "AI Town",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "ai",
+        "agents",
+        "convex",
+        "simulation"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Deployable starter for a virtual town of AI characters",
+      "why": "MIT starter kit from a16z for agent simulations with a Convex backend; easy to customize.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "ant-design/ant-design-pro",
+      "name": "Ant Design Pro",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "admin-dashboard",
+        "react",
+        "antd",
+        "enterprise"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Start an enterprise admin dashboard or back-office UI in React.",
+      "why": "Official Ant Design template with layouts, auth flows and dozens of ready pages for admin apps.",
+      "domains": [
+        "websites"
+      ],
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "aspnetboilerplate/aspnetboilerplate",
+      "name": "ASP.NET Boilerplate",
+      "category": "starters",
+      "kinds": [
+        "template",
+        "framework"
+      ],
+      "tags": [
+        "dotnet",
+        "aspnet",
+        "multi-tenant",
+        "ddd"
+      ],
+      "ecosystems": [
+        "dotnet"
+      ],
+      "use_for": "Starting point for ASP.NET Core apps with DDD, multi-tenancy and auth",
+      "why": "Mature .NET application template and framework behind ABP; MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "alan2207/bulletproof-react",
+      "name": "Bulletproof React",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "react",
+        "architecture",
+        "best-practices"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Opinionated, scalable React application architecture with sample apps",
+      "why": "Widely referenced React architecture with example apps for Vite, Next.js and React Router",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "chibat/chrome-extension-typescript-starter",
+      "name": "Chrome Extension TypeScript Starter",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "chrome-extension",
+        "typescript",
+        "webpack",
+        "browser"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Start a Chrome extension written in TypeScript.",
+      "why": "Minimal, well-known starter with build setup for background, content and popup scripts.",
+      "domains": [
+        "app-extensions"
+      ],
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "drivendataorg/cookiecutter-data-science",
+      "name": "Cookiecutter Data Science",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "data-science",
+        "python",
+        "project-structure"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Standard project structure for data science work",
+      "why": "Widely adopted, opinionated layout for reproducible data science projects",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "cookiecutter/cookiecutter-django",
+      "name": "Cookiecutter Django",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "django",
+        "python",
+        "docker",
+        "production"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate a production-ready Django project with Docker, auth and settings done right.",
+      "why": "The standard Django starting point, generating a secure 12-factor setup with Celery and deployment options.",
+      "domains": [
+        "websites",
+        "apis-backends"
+      ],
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "electron-react-boilerplate/electron-react-boilerplate",
+      "name": "Electron React Boilerplate",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "electron",
+        "react",
+        "typescript",
+        "webpack"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Start a cross-platform Electron desktop app with React and TypeScript.",
+      "why": "Long-standing Electron + React template with packaging, hot reload and auto-update preconfigured.",
+      "domains": [
+        "desktop-apps"
+      ],
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "fastapi/full-stack-fastapi-template",
+      "name": "Full Stack FastAPI Template",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "fastapi",
+        "react",
+        "postgres",
+        "docker"
+      ],
+      "ecosystems": [
+        "python",
+        "ts"
+      ],
+      "use_for": "Full-stack template: FastAPI, SQLModel, Postgres, React, Docker Compose and CI",
+      "why": "Official FastAPI template with auth, tests and deploy setup out of the box",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "go-admin-team/go-admin",
+      "name": "go-admin",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "go",
+        "gin",
+        "vue",
+        "admin",
+        "rbac"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Gin + Vue admin starter with RBAC and code generation",
+      "why": "Popular Go admin scaffold with permissions, menus and code generator; MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "sahat/hackathon-starter",
+      "name": "Hackathon Starter",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "node",
+        "express",
+        "auth",
+        "mongodb"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Node.js/Express boilerplate with auth and API integrations",
+      "why": "Ready OAuth logins, account management and many API examples; ideal for fast prototypes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "h5bp/html5-boilerplate",
+      "name": "HTML5 Boilerplate",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "html",
+        "frontend",
+        "web"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Front-end template for fast, robust static websites",
+      "why": "Long-standing baseline template for web projects (57k stars), maintained by H5BP.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "zeon-studio/hugoplate",
+      "name": "Hugoplate",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "hugo",
+        "tailwind",
+        "static-site",
+        "blog"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Start a static marketing site or blog with Hugo and Tailwind CSS.",
+      "why": "Actively maintained Hugo + Tailwind v4 starter with blog, SEO and multilingual support.",
+      "domains": [
+        "websites",
+        "content-docs"
+      ],
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "infinitered/ignite",
+      "name": "Ignite",
+      "category": "starters",
+      "kinds": [
+        "template",
+        "cli"
+      ],
+      "tags": [
+        "react-native",
+        "expo",
+        "mobile"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "React Native/Expo boilerplate with CLI and generators",
+      "why": "Infinite Red's battle-tested RN starter used for years in production apps.",
+      "npm": "ignite-cli",
+      "license_verified": {
+        "license": "MIT",
+        "note": "LICENSE file is MIT, read from raw.githubusercontent.com",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "jhipster/generator-jhipster",
+      "name": "JHipster",
+      "category": "starters",
+      "kinds": [
+        "template",
+        "cli"
+      ],
+      "tags": [
+        "java",
+        "spring-boot",
+        "angular",
+        "react",
+        "microservices"
+      ],
+      "ecosystems": [
+        "java",
+        "ts"
+      ],
+      "use_for": "Generate Spring Boot + Angular/React/Vue apps and microservices",
+      "why": "Widely used generator for full-stack Java apps with auth, CI and deploy configs; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "n8n-io/self-hosted-ai-starter-kit",
+      "name": "n8n Self-hosted AI Starter Kit",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "ai",
+        "n8n",
+        "ollama",
+        "docker"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Spin up a local AI workflow stack (n8n, Ollama, Qdrant, Postgres) with Docker Compose.",
+      "why": "Official n8n template bundling a local LLM, vector store and workflow engine in one compose file.",
+      "domains": [
+        "ai-apps",
+        "automation-scraping"
+      ],
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "brocoders/nestjs-boilerplate",
+      "name": "NestJS Boilerplate",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "nestjs",
+        "api",
+        "auth",
+        "postgres"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Start a NestJS REST API with auth, database, mailing, i18n and Docker in place.",
+      "why": "Well-maintained NestJS starter supporting TypeORM/Postgres or Mongoose, with social login and tests.",
+      "domains": [
+        "apis-backends"
+      ],
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Kiranism/next-shadcn-dashboard-starter",
+      "name": "Next Shadcn Dashboard Starter",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "nextjs",
+        "dashboard",
+        "admin",
+        "shadcn"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Admin dashboard starter with Next.js App Router, shadcn/ui, auth, tables and charts",
+      "why": "Popular Next.js admin starter with data tables, forms and kanban ready to extend",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vercel/next-forge",
+      "name": "next-forge",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "nextjs",
+        "turborepo",
+        "saas",
+        "monorepo"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Start a production Next.js SaaS monorepo with auth, billing, analytics and docs.",
+      "why": "Vercel-maintained Turborepo template that wires best-in-class services together in a clean monorepo.",
+      "domains": [
+        "websites"
+      ],
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "ixartz/Next-js-Boilerplate",
+      "name": "Next.js Boilerplate",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "nextjs",
+        "tailwind",
+        "typescript",
+        "testing"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Start a Next.js app with Tailwind, TypeScript, auth, DB, testing and linting preconfigured.",
+      "why": "Popular, frequently updated boilerplate with strong DX defaults (Drizzle, Vitest, Playwright, Storybook).",
+      "domains": [
+        "websites"
+      ],
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Blazity/next-enterprise",
+      "name": "Next.js Enterprise Boilerplate",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "nextjs",
+        "enterprise",
+        "testing"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Enterprise-grade Next.js boilerplate with testing, CI, Storybook and observability",
+      "why": "Well-maintained production setup for larger Next.js teams",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "obytes/react-native-template-obytes",
+      "name": "Obytes React Native Template",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "react-native",
+        "expo",
+        "tailwind",
+        "typescript"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Start an Expo React Native app with TypeScript, styling, forms and testing set up.",
+      "why": "Opinionated, actively maintained Expo template with NativeWind, React Query, i18n and CI.",
+      "domains": [
+        "mobile-apps"
+      ],
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "wasp-lang/open-saas",
+      "name": "Open SaaS",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "saas",
+        "react",
+        "nodejs",
+        "prisma",
+        "stripe"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Start a full SaaS app with auth, payments, admin dashboard and AI examples already wired up.",
+      "why": "Free, full-featured SaaS boilerplate on Wasp (React + Node + Prisma) with Stripe/Polar, email and docs.",
+      "domains": [
+        "websites",
+        "ai-apps"
+      ],
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "kriasoft/react-starter-kit",
+      "name": "React Starter Kit",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "react",
+        "bun",
+        "trpc",
+        "cloudflare",
+        "saas"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "React + Bun + tRPC + Tailwind starter deployable to Cloudflare Workers",
+      "why": "Modern, maintained full-stack React template with Stripe and edge deployment.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "ixartz/SaaS-Boilerplate",
+      "name": "SaaS Boilerplate",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "nextjs",
+        "saas",
+        "multi-tenancy",
+        "shadcn"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Next.js SaaS boilerplate with auth, multi-tenancy, roles, i18n, billing and tests",
+      "why": "Feature-complete multi-tenant SaaS starter with Drizzle, shadcn/ui and full testing setup",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "satnaing/shadcn-admin",
+      "name": "Shadcn Admin",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "dashboard",
+        "admin",
+        "shadcn",
+        "vite"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Admin dashboard template built with shadcn/ui, Vite and TanStack Router",
+      "why": "Popular polished admin UI starter with many ready pages",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vercel/chatbot",
+      "name": "Vercel Chatbot",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "ai",
+        "chatbot",
+        "nextjs",
+        "ai-sdk"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Full-featured AI chatbot template with Next.js and the AI SDK",
+      "why": "Vercel's reference chat app template: streaming, persistence, auth and artifacts",
+      "license_verified": {
+        "license": "Apache-2.0",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "yournextstore/yournextstore",
+      "name": "Your Next Store",
+      "category": "starters",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "ecommerce",
+        "nextjs",
+        "stripe",
+        "storefront"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Start a fast Next.js storefront backed by Stripe products and checkout.",
+      "why": "Lean open-source commerce starter using Stripe as the product catalog, avoiding a separate commerce backend.",
+      "domains": [
+        "ecommerce"
+      ],
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

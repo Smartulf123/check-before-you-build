@@ -1,0 +1,562 @@
+{
+  "category": "video-media",
+  "entries": [
+    {
+      "id": "WyattBlue/auto-editor",
+      "name": "auto-editor",
+      "category": "video-media",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "auto-cut",
+        "silence-removal",
+        "video-editing"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Automatically cut silence and dead air from videos and export to editors or rendered files.",
+      "why": "Popular, actively maintained CLI for automated rough cuts; exports to Premiere, Resolve and FCP.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "hao-ai-lab/FastVideo",
+      "name": "FastVideo",
+      "category": "video-media",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "video-generation",
+        "inference",
+        "diffusion",
+        "acceleration"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Speed up inference and post-training of open video diffusion models like Wan and Hunyuan.",
+      "why": "Unified, actively developed framework for accelerated video generation; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "FFmpeg/FFmpeg",
+      "name": "FFmpeg",
+      "category": "video-media",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "ffmpeg",
+        "transcoding",
+        "codecs",
+        "streaming"
+      ],
+      "ecosystems": [
+        "c",
+        "any"
+      ],
+      "use_for": "Decode, encode, transcode, mux and filter almost any audio/video format from the CLI or libav* libraries.",
+      "why": "The de facto media processing engine underneath most video tools; LGPL-2.1+ by default (verified LICENSE.md).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "BtbN/FFmpeg-Builds",
+      "name": "FFmpeg-Builds",
+      "category": "video-media",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "ffmpeg",
+        "static-builds",
+        "ci"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Download up-to-date static/shared FFmpeg builds for Windows and Linux in CI or apps",
+      "why": "Widely used source of nightly and release FFmpeg binaries (GPL/LGPL variants) built reproducibly via GitHub Actions.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "ffmpegwasm/ffmpeg.wasm",
+      "name": "ffmpeg.wasm",
+      "category": "video-media",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "ffmpeg",
+        "wasm",
+        "browser",
+        "transcoding"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Run FFmpeg in the browser or Node via WebAssembly for client-side video conversion.",
+      "why": "Most widely used WASM port of FFmpeg; avoids a server for trimming, converting and thumbnailing.",
+      "npm": "@ffmpeg/ffmpeg",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "AlexxIT/go2rtc",
+      "name": "go2rtc",
+      "category": "video-media",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "rtsp",
+        "webrtc",
+        "camera",
+        "streaming"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Restream and convert camera streams between RTSP, WebRTC, HLS, MSE and more.",
+      "why": "Zero-dependency streaming server widely used with Frigate/Home Assistant for low-latency camera video.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "GStreamer/gstreamer",
+      "name": "GStreamer",
+      "category": "video-media",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "multimedia",
+        "pipeline",
+        "streaming",
+        "codecs"
+      ],
+      "ecosystems": [
+        "c",
+        "rust",
+        "python"
+      ],
+      "use_for": "Pipeline-based multimedia framework for building capture, transcoding, streaming and playback apps",
+      "why": "The standard plugin-based media pipeline framework on Linux and embedded devices; bindings for Rust, Python and more",
+      "license_verified": {
+        "license": "LGPL-2.1-or-later",
+        "note": "LICENSE is LGPL 2.1; some optional plugins with GPL deps are opt-in",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "CarGuo/GSYVideoPlayer",
+      "name": "GSYVideoPlayer",
+      "category": "video-media",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "android",
+        "video-player",
+        "exoplayer",
+        "ijkplayer"
+      ],
+      "ecosystems": [
+        "kotlin",
+        "java"
+      ],
+      "use_for": "Add a full-featured video player to an Android app",
+      "why": "Wraps IJKPlayer, ExoPlayer and MediaPlayer behind one API with caching, danmaku, filters and fullscreen handling.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "video-dev/hls.js",
+      "name": "hls.js",
+      "category": "video-media",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "hls",
+        "streaming",
+        "player",
+        "mse"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Play HLS (m3u8) streams in browsers that lack native HLS via Media Source Extensions.",
+      "why": "The standard HLS playback library on the web, used by most JS video players.",
+      "npm": "hls.js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "heygen-com/hyperframes",
+      "name": "HyperFrames",
+      "category": "video-media",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "html-to-video",
+        "rendering",
+        "agents",
+        "motion-graphics"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Author videos as HTML/CSS/JS compositions and render them deterministically to MP4.",
+      "why": "Apache-2.0 HTML-to-video renderer designed for coding agents; a permissive alternative to Remotion-style workflows.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "KlingAIResearch/LivePortrait",
+      "name": "LivePortrait",
+      "category": "video-media",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "portrait-animation",
+        "video-generation",
+        "pytorch"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Animate a still portrait from a driving video or expressions",
+      "why": "Efficient Kuaishou/Kling portrait animation model with stitching and retargeting control; MIT-licensed code.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "LICENSE file is MIT",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "Vanilagy/mediabunny",
+      "name": "Mediabunny",
+      "category": "video-media",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "webcodecs",
+        "mp4",
+        "webm",
+        "muxing",
+        "browser"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Read, write and convert MP4/WebM/MP3 and more in the browser with WebCodecs, no FFmpeg needed",
+      "why": "Pure-TypeScript media toolkit (successor to mp4-muxer/webm-muxer) for fast in-browser transcoding, trimming and muxing",
+      "npm": "mediabunny",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "bluenviron/mediamtx",
+      "name": "MediaMTX",
+      "category": "video-media",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "rtsp",
+        "webrtc",
+        "hls",
+        "srt",
+        "streaming"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Ready-to-use media server and proxy to read, publish and route live video over RTSP, RTMP, WebRTC, HLS and SRT",
+      "why": "Single binary that converts between all common live-streaming protocols; the default self-hosted relay for cameras and live video",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "motion-canvas/motion-canvas",
+      "name": "Motion Canvas",
+      "category": "video-media",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "animation",
+        "video",
+        "typescript",
+        "canvas"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Create animated explainer videos programmatically with TypeScript and a live-preview editor",
+      "why": "MIT-licensed code-to-video tool with a timeline editor; a fully open alternative for programmatic motion graphics",
+      "npm": "@motion-canvas/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Zulko/moviepy",
+      "name": "MoviePy",
+      "category": "video-media",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "video-editing",
+        "python",
+        "compositing",
+        "ffmpeg"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Script video edits in Python: cut, concatenate, add titles, overlays and effects.",
+      "why": "Long-standing, simple Python API for programmatic editing; MIT licensed and actively maintained.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "mpv-player/mpv",
+      "name": "mpv",
+      "category": "video-media",
+      "kinds": [
+        "app",
+        "library"
+      ],
+      "tags": [
+        "media-player",
+        "libmpv",
+        "playback"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Embed a capable video player in your app via libmpv, or script playback from the CLI",
+      "why": "libmpv powers many desktop players; plays nearly any format with GPU rendering and a Lua/JS scripting API.",
+      "license_verified": {
+        "license": "GPL-2.0-or-later",
+        "note": "Copyright file: GPLv2+ by default, LGPLv2.1+ when built with -Dgpl=false",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "AcademySoftwareFoundation/OpenTimelineIO",
+      "name": "OpenTimelineIO",
+      "category": "video-media",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "timeline",
+        "interchange",
+        "editorial",
+        "python"
+      ],
+      "ecosystems": [
+        "python",
+        "cpp"
+      ],
+      "use_for": "Read, write and convert editorial timelines between NLEs (EDL, FCP XML and more via adapters).",
+      "why": "ASWF industry-standard API and format for editorial timeline interchange.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "PyAV-Org/PyAV",
+      "name": "PyAV",
+      "category": "video-media",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "ffmpeg",
+        "python",
+        "decoding",
+        "encoding"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Pythonic bindings to FFmpeg libraries for frame-level decoding, encoding and muxing",
+      "why": "Direct access to FFmpeg packets and frames from Python without shelling out; used by torchvision, auto-editor and many ML pipelines",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "shaka-project/shaka-player",
+      "name": "Shaka Player",
+      "category": "video-media",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "dash",
+        "hls",
+        "drm",
+        "video-player"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Adaptive DASH and HLS playback in the browser with DRM, offline storage and captions",
+      "why": "Google-backed player library for adaptive streaming with Widevine/PlayReady DRM; the go-to when hls.js alone isn't enough",
+      "npm": "shaka-player",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "browser-use/video-use",
+      "name": "video-use",
+      "category": "video-media",
+      "kinds": [
+        "skill",
+        "cli"
+      ],
+      "tags": [
+        "video-editing",
+        "coding-agents",
+        "ffmpeg"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Let a coding agent edit videos (cuts, captions, overlays) from natural language",
+      "why": "From the browser-use team: gives Claude Code/Codex a toolkit to transcribe, cut and render edits programmatically.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "videojs/video.js",
+      "name": "Video.js",
+      "category": "video-media",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "video-player",
+        "html5",
+        "plugins",
+        "streaming"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Embed a customizable, skinnable HTML5 video player with HLS/DASH support and plugins.",
+      "why": "Mature open-source web player with a large plugin ecosystem; Apache-2.0.",
+      "npm": "video.js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vidstack/player",
+      "name": "Vidstack Player",
+      "category": "video-media",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "video-player",
+        "react",
+        "web-components",
+        "hls"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Accessible, customisable audio/video player components for React and web components",
+      "why": "Modern successor to Plyr/Vime: headless-friendly player UI with HLS, YouTube and Vimeo providers built in",
+      "npm": "vidstack",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Wan-Video/Wan2.2",
+      "name": "Wan 2.2",
+      "category": "video-media",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "video-generation",
+        "diffusion",
+        "text-to-video",
+        "open-weights"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate videos from text or images with open-weight diffusion models you can self-host.",
+      "why": "Leading open-weight video generation model family under Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "yt-dlp/yt-dlp",
+      "name": "yt-dlp",
+      "category": "video-media",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "downloader",
+        "extractors",
+        "python",
+        "media"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Download video and audio from YouTube and thousands of other sites from the CLI or Python.",
+      "why": "The maintained youtube-dl successor with the broadest site coverage; embeddable as a Python module.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

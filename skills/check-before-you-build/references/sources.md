@@ -22,7 +22,7 @@ catalog.mjs categories
 catalog.mjs search <keywords...> [--categories a,b] [--kinds library,skill,mcp] [--limit 15] [--live]
 catalog.mjs get <owner/repo> [--live]
 ```
-`--live` fetches GitHub stats. Without it, or on failure, the weekly snapshot is used (`stats_source`).
+By default the catalog uses the weekly stats snapshot shipped with the skill (`stats_source: snapshot <date>`): **zero GitHub calls**. That matters because users without a GitHub login only get 60 API calls an hour. `--live` refetches stats from GitHub; only use it when the user explicitly asks for fresh numbers.
 
 ### github.mjs
 ```

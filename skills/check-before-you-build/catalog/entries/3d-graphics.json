@@ -1,0 +1,486 @@
+{
+  "category": "3d-graphics",
+  "entries": [
+    {
+      "id": "aframevr/aframe",
+      "name": "A-Frame",
+      "category": "3d-graphics",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "webxr",
+        "vr",
+        "threejs",
+        "html"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Build VR/AR experiences for the web with HTML-like markup on top of three.js.",
+      "why": "Easiest entry to WebXR; declarative entity-component system with many community components.",
+      "npm": "aframe",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "BabylonJS/Babylon.js",
+      "name": "Babylon.js",
+      "category": "3d-graphics",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "3d",
+        "webgl",
+        "webgpu",
+        "game-engine"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Full 3D rendering and game engine for the web, with physics, XR and an inspector.",
+      "why": "Batteries-included engine backed by Microsoft, strong WebGPU support and tooling (Playground, Inspector).",
+      "npm": "@babylonjs/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "pmndrs/drei",
+      "name": "drei",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "threejs",
+        "helpers",
+        "3d"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Ready-made helpers (controls, loaders, text, environments) for React Three Fiber.",
+      "why": "Saves writing common R3F building blocks by hand; maintained by the R3F team.",
+      "npm": "@react-three/drei",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "fabricjs/fabric.js",
+      "name": "Fabric.js",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "canvas",
+        "2d",
+        "svg",
+        "editor"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Interactive object model on canvas: select, transform, serialize, SVG import/export",
+      "why": "Classic choice for in-browser image and design editors",
+      "npm": "fabric",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "google/filament",
+      "name": "Filament",
+      "category": "3d-graphics",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "pbr",
+        "rendering",
+        "android",
+        "ios"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Real-time physically based rendering engine for Android, iOS, desktop and WebGL.",
+      "why": "Google-maintained PBR renderer that is small enough for mobile apps.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "gpujs/gpu.js",
+      "name": "GPU.js",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "gpgpu",
+        "webgl",
+        "gpu",
+        "compute"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Run general-purpose compute kernels on the GPU from JavaScript",
+      "why": "Transpiles plain JS functions to WebGL/WebGL2 shaders with CPU fallback; the standard way to do GPGPU in browser and Node.",
+      "npm": "gpu.js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "konvajs/konva",
+      "name": "Konva",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "canvas",
+        "2d",
+        "react"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "2D canvas scene graph with shapes, events and drag-and-drop; React and Vue bindings",
+      "why": "Most popular 2D canvas framework for interactive editors and diagrams",
+      "npm": "konva",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "visgl/luma.gl",
+      "name": "luma.gl",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "webgl",
+        "webgpu",
+        "gpu"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "High-performance WebGL2/WebGPU rendering toolkit for GPU-heavy visualization",
+      "why": "The GPU layer under deck.gl (vis.gl / OpenJS); WebGPU-ready",
+      "license_verified": {
+        "license": "MIT",
+        "note": "MIT per LICENSE (GitHub cannot classify due to attribution notes)",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "google/model-viewer",
+      "name": "model-viewer",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "3d",
+        "gltf",
+        "web-component",
+        "ar"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Drop a 3D glTF model with AR and camera controls into any page via a web component",
+      "why": "Google's easy path to embedding 3D/AR on the web without writing three.js code",
+      "npm": "@google/model-viewer",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "pixijs/pixijs",
+      "name": "PixiJS",
+      "category": "3d-graphics",
+      "kinds": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "2d",
+        "canvas",
+        "webgl",
+        "webgpu"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Fast 2D rendering on WebGL/WebGPU for interactive graphics and games.",
+      "why": "The leading 2D renderer for the web; great when you need many sprites with high performance.",
+      "npm": "pixi.js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "playcanvas/engine",
+      "name": "PlayCanvas Engine",
+      "category": "3d-graphics",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "webgl",
+        "webgpu",
+        "webxr",
+        "gltf"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Lightweight web graphics runtime for 3D apps and games, including Gaussian splats.",
+      "why": "Fast, small engine with WebGPU and WebXR support; powers the PlayCanvas editor.",
+      "npm": "playcanvas",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "pmndrs/postprocessing",
+      "name": "postprocessing",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "three.js",
+        "webgl",
+        "effects"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Bloom, SSAO, depth of field and other post effects for three.js",
+      "why": "Standard post-processing library for three.js, faster than the built-in EffectComposer; powers react-postprocessing",
+      "npm": "postprocessing",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "pmndrs/react-three-fiber",
+      "name": "React Three Fiber",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "threejs",
+        "3d",
+        "declarative"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build three.js scenes declaratively as React components.",
+      "why": "The default way to use three.js in React apps; pairs with drei and the wider pmndrs ecosystem.",
+      "npm": "@react-three/fiber",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "regl-project/regl",
+      "name": "regl",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "webgl",
+        "functional"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Functional, stateless WebGL wrapper for custom rendering pipelines",
+      "why": "Lean, battle-tested WebGL abstraction used in data-viz and research",
+      "npm": "regl",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "gkjohnson/three-mesh-bvh",
+      "name": "three-mesh-bvh",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "three.js",
+        "raycasting",
+        "bvh"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Fast raycasting, collision and spatial queries on three.js meshes",
+      "why": "Go-to BVH acceleration for three.js; used by drei, path tracers and many editors",
+      "npm": "three-mesh-bvh",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mrdoob/three.js",
+      "name": "three.js",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "3d",
+        "webgl",
+        "webgpu",
+        "javascript"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Render 3D scenes in the browser with WebGL or WebGPU.",
+      "why": "The standard 3D library for the web, with the largest ecosystem of examples, loaders and add-ons.",
+      "npm": "three",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "threlte/threlte",
+      "name": "Threlte",
+      "category": "3d-graphics",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "svelte",
+        "threejs",
+        "3d",
+        "declarative"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build three.js scenes declaratively in Svelte.",
+      "why": "The Svelte counterpart to React Three Fiber, with physics and helper packages.",
+      "npm": "@threlte/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Tresjs/tres",
+      "name": "TresJS",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "vue",
+        "threejs",
+        "3d",
+        "declarative"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build three.js scenes declaratively with Vue components.",
+      "why": "The Vue counterpart to React Three Fiber, with a Nuxt module and helper packages.",
+      "npm": "@tresjs/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jonobr1/two.js",
+      "name": "Two.js",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "2d",
+        "svg",
+        "canvas",
+        "webgl"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Renderer-agnostic 2D drawing API that targets SVG, Canvas or WebGL",
+      "why": "Simple 2D drawing with one API across three renderers",
+      "npm": "two.js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "software-mansion/TypeGPU",
+      "name": "TypeGPU",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "webgpu",
+        "typescript",
+        "shaders",
+        "type-safe"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Write type-safe WebGPU code and shaders in TypeScript.",
+      "why": "Removes much of WebGPU boilerplate with strong type inference; maintained by Software Mansion.",
+      "npm": "typegpu",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "gfx-rs/wgpu",
+      "name": "wgpu",
+      "category": "3d-graphics",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "webgpu",
+        "rust",
+        "graphics-api",
+        "vulkan"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Cross-platform, safe Rust graphics API based on WebGPU, running on Vulkan, Metal, DX12 and the web.",
+      "why": "Foundation of most Rust graphics (Bevy, Firefox WebGPU); one API across native and browser.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

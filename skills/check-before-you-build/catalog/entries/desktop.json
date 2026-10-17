@@ -1,0 +1,415 @@
+{
+  "category": "desktop",
+  "entries": [
+    {
+      "id": "AvaloniaUI/Avalonia",
+      "name": "Avalonia",
+      "category": "desktop",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "dotnet",
+        "xaml",
+        "cross-platform",
+        "ui"
+      ],
+      "ecosystems": [
+        "csharp"
+      ],
+      "use_for": "Build native cross-platform desktop apps in C# and XAML.",
+      "why": "Leading cross-platform .NET UI framework (Windows, macOS, Linux), often used as a WPF successor.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "eclipse-theia/theia",
+      "name": "Eclipse Theia",
+      "category": "desktop",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "ide",
+        "electron",
+        "vscode-extensions",
+        "typescript"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Framework for building custom desktop and cloud IDEs and tools",
+      "why": "Eclipse-governed IDE platform supporting VS Code extensions; basis for products like Arduino IDE 2; EPL-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "emilk/egui",
+      "name": "egui",
+      "category": "desktop",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "gui",
+        "immediate-mode",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Easy immediate-mode GUI for Rust that runs natively and on the web",
+      "why": "The most popular Rust GUI library; fast to build tools and runs on desktop and WASM",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "electron/electron",
+      "name": "Electron",
+      "category": "desktop",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "cross-platform",
+        "chromium",
+        "nodejs",
+        "javascript"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Build cross-platform desktop apps with HTML, CSS and JavaScript.",
+      "why": "Powers VS Code, Slack and Discord; the most mature web-tech desktop framework with a huge ecosystem.",
+      "npm": "electron",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "electron/forge",
+      "name": "Electron Forge",
+      "category": "desktop",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "electron",
+        "packaging",
+        "publishing"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Official all-in-one tool to scaffold, package, sign and publish Electron apps",
+      "why": "The Electron team's recommended build pipeline with Vite/Webpack templates and makers for every OS",
+      "npm": "@electron-forge/cli",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "electron-userland/electron-builder",
+      "name": "electron-builder",
+      "category": "desktop",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "packaging",
+        "installers",
+        "auto-update",
+        "electron"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Package, sign and publish Electron apps as installers with auto-update support.",
+      "why": "The standard Electron packaging tool: DMG, NSIS, AppImage, Snap and more, plus code signing and electron-updater.",
+      "npm": "electron-builder",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "alex8088/electron-vite",
+      "name": "electron-vite",
+      "category": "desktop",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "electron",
+        "vite",
+        "build"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Vite-based build tooling for Electron main, preload and renderer processes",
+      "why": "Fast HMR-based dev setup for Electron with sensible defaults; widely used for modern Electron apps",
+      "npm": "electron-vite",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "flet-dev/flet",
+      "name": "Flet",
+      "category": "desktop",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "python",
+        "flutter",
+        "gui"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build desktop, web and mobile apps in Python with Flutter-rendered UI",
+      "why": "Easiest way to ship cross-platform GUIs from Python without frontend experience",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "fyne-io/fyne",
+      "name": "Fyne",
+      "category": "desktop",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "gui",
+        "golang",
+        "cross-platform"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Cross-platform GUI toolkit for Go: desktop and mobile from one codebase",
+      "why": "The most popular Go GUI toolkit; material-style widgets and simple packaging",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "iced-rs/iced",
+      "name": "iced",
+      "category": "desktop",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "gui",
+        "rust",
+        "cross-platform"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Cross-platform Elm-inspired GUI library for Rust",
+      "why": "Leading Rust native GUI toolkit; used by System76's COSMIC desktop",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "neutralinojs/neutralinojs",
+      "name": "Neutralinojs",
+      "category": "desktop",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "desktop",
+        "lightweight",
+        "webview"
+      ],
+      "ecosystems": [
+        "js",
+        "cpp"
+      ],
+      "use_for": "Lightweight cross-platform desktop apps with JS, HTML and CSS using the system webview",
+      "why": "Tiny binaries without bundling Chromium or Node; language-agnostic extensions",
+      "license_verified": {
+        "license": "MIT",
+        "note": "Core MIT; bundled third-party libraries keep their own permissive licenses",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "nwjs/nw.js",
+      "name": "NW.js",
+      "category": "desktop",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "desktop",
+        "chromium",
+        "nodejs"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Build desktop apps with HTML, CSS and JS with Node.js APIs available in the DOM",
+      "why": "Long-standing Electron alternative with direct Node access from web pages and source protection",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tw93/Pake",
+      "name": "Pake",
+      "category": "desktop",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "tauri",
+        "webview",
+        "wrapper",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust",
+        "any"
+      ],
+      "use_for": "Wrap an existing website into a lightweight desktop app with one command.",
+      "why": "Tauri-based CLI that produces small native apps (~5 MB) from a URL; far lighter than Electron wrappers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Sjj1024/PakePlus",
+      "name": "PakePlus",
+      "category": "desktop",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "tauri",
+        "webview",
+        "packaging"
+      ],
+      "ecosystems": [
+        "rust",
+        "ts"
+      ],
+      "use_for": "Package any webpage or web app into a small desktop/mobile app",
+      "why": "Tauri-based wrapper producing ~5MB apps from a URL or HTML build, with GUI and CI builds; MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "r0x0r/pywebview",
+      "name": "pywebview",
+      "category": "desktop",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "python",
+        "webview",
+        "desktop"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Lightweight wrapper to show HTML UIs in a native webview window from Python",
+      "why": "The go-to way to build web-UI desktop apps in Python with a JS-Python bridge",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "slint-ui/slint",
+      "name": "Slint",
+      "category": "desktop",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "gui",
+        "declarative",
+        "embedded",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust",
+        "cpp",
+        "js",
+        "python"
+      ],
+      "use_for": "Declarative UI toolkit for native desktop, embedded and mobile apps from Rust, C++, JS or Python",
+      "why": "Native UI with its own markup language; GPL-3.0, royalty-free and commercial options",
+      "license_verified": {
+        "license": "GPL-3.0-only",
+        "note": "Triple-licensed: GPL-3.0-only, Slint Royalty-free 2.0 (proprietary desktop/mobile/web, not embedded) or commercial",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tauri-apps/tauri",
+      "name": "Tauri",
+      "category": "desktop",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "cross-platform",
+        "rust",
+        "webview",
+        "small-binaries"
+      ],
+      "ecosystems": [
+        "rust",
+        "ts"
+      ],
+      "use_for": "Build small, secure desktop (and mobile) apps with a web frontend and a Rust backend.",
+      "why": "Uses the OS webview instead of bundling Chromium, so binaries are a few MB; strong security model and plugin system.",
+      "npm": "@tauri-apps/api",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "wailsapp/wails",
+      "name": "Wails",
+      "category": "desktop",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "go",
+        "webview",
+        "cross-platform",
+        "desktop"
+      ],
+      "ecosystems": [
+        "go",
+        "ts"
+      ],
+      "use_for": "Build desktop apps with a Go backend and any web frontend.",
+      "why": "Go equivalent of Tauri: native webview, generated TS bindings to Go methods and small binaries.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    }
+  ]
+}

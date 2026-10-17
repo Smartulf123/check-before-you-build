@@ -1,0 +1,536 @@
+{
+  "category": "state-data",
+  "entries": [
+    {
+      "id": "apollographql/apollo-client",
+      "name": "Apollo Client",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "graphql",
+        "cache",
+        "react",
+        "data-fetching"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "GraphQL client with normalized caching and React hooks",
+      "why": "The most widely used GraphQL client; normalized cache, devtools and React integration",
+      "npm": "@apollo/client",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "axios/axios",
+      "name": "Axios",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "http-client",
+        "fetch",
+        "promises",
+        "interceptors"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Promise-based HTTP client for the browser and Node.js",
+      "why": "Most downloaded JS HTTP client; interceptors, cancellation and consistent behavior across environments",
+      "npm": "axios",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "felangel/bloc",
+      "name": "Bloc",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "flutter",
+        "dart",
+        "state",
+        "bloc-pattern"
+      ],
+      "ecosystems": [
+        "dart"
+      ],
+      "use_for": "Separate business logic from UI in Flutter with the BLoC pattern.",
+      "why": "Mature, predictable state management for Flutter with strong tooling.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "graphql/dataloader",
+      "name": "DataLoader",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "batching",
+        "caching",
+        "graphql",
+        "data-fetching"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Batch and cache data-fetching calls to avoid N+1 queries",
+      "why": "Canonical batching/caching utility from the GraphQL Foundation, used across GraphQL servers.",
+      "npm": "dataloader",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "jonataslaw/getx",
+      "name": "GetX",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "flutter",
+        "state-management",
+        "dependency-injection",
+        "routing"
+      ],
+      "ecosystems": [
+        "dart"
+      ],
+      "use_for": "Manage state, routes and dependencies in Flutter with minimal boilerplate",
+      "why": "One of the most used Flutter state packages, bundling reactive state, DI and navigation.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "hey-api/hey-api",
+      "name": "Hey API openapi-ts",
+      "category": "state-data",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "openapi",
+        "codegen",
+        "sdk",
+        "tanstack-query"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Generate typed TypeScript SDKs, Zod schemas and TanStack Query hooks from OpenAPI",
+      "why": "Fast-growing OpenAPI code generator used by Vercel and others; plugin system for clients and validators",
+      "npm": "@hey-api/openapi-ts",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "pmndrs/jotai",
+      "name": "Jotai",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "atomic",
+        "state",
+        "hooks"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Manage React state as small composable atoms.",
+      "why": "Primitive, atomic approach that avoids unnecessary re-renders; 21k stars.",
+      "npm": "jotai",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "LegendApp/legend-state",
+      "name": "Legend-State",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "state-management",
+        "signals",
+        "sync",
+        "local-first"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Fast signal-based state with built-in persistence and sync for React and React Native",
+      "why": "Fine-grained reactivity plus sync plugins (Supabase, Keel, local storage) for local-first apps",
+      "npm": "@legendapp/state",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mobxjs/mobx",
+      "name": "MobX",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "state-management",
+        "reactive",
+        "observables",
+        "react"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Simple, scalable state management through transparent reactive observables",
+      "why": "Long-standing alternative to Redux with minimal boilerplate; works with React, Vue and plain JS",
+      "npm": "mobx",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "nanostores/nanostores",
+      "name": "Nano Stores",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "state-management",
+        "tiny",
+        "framework-agnostic"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Tiny framework-agnostic state manager with atomic stores",
+      "why": "Under 1 KB, works across React, Vue, Svelte, Solid and Astro islands",
+      "npm": "nanostores",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "47ng/nuqs",
+      "name": "nuqs",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "url-state",
+        "search-params",
+        "react",
+        "nextjs"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Store React state in URL search params with type safety, like useState.",
+      "why": "Type-safe URL state for Next.js, Remix, React Router and more.",
+      "npm": "nuqs",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "orval-labs/orval",
+      "name": "Orval",
+      "category": "state-data",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "openapi",
+        "codegen",
+        "react-query",
+        "typescript"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Generate typed API clients and TanStack Query/SWR hooks from an OpenAPI spec.",
+      "why": "Popular OpenAPI-to-client generator that integrates with data-fetching libraries.",
+      "npm": "orval",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vuejs/pinia",
+      "name": "Pinia",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "vue",
+        "state",
+        "store",
+        "devtools"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Manage global state in Vue apps with type-safe stores.",
+      "why": "The official Vue state management library, replacing Vuex.",
+      "npm": "pinia",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "preactjs/signals",
+      "name": "Preact Signals",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "signals",
+        "reactivity",
+        "state",
+        "fine-grained"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Add fine-grained reactive state with signals in Preact, React or vanilla JS.",
+      "why": "Small, fast signals implementation with framework bindings.",
+      "npm": "@preact/signals-core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "reduxjs/redux",
+      "name": "Redux",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "state-management",
+        "javascript",
+        "predictable-state"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Manage predictable global state with a single store and reducers",
+      "why": "The original predictable state container underlying Redux Toolkit and many other libraries.",
+      "npm": "redux",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "reduxjs/redux-toolkit",
+      "name": "Redux Toolkit",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "redux",
+        "state",
+        "rtk-query",
+        "react"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Manage predictable app state with Redux plus built-in data fetching via RTK Query.",
+      "why": "The official, recommended way to write Redux, with strong devtools and patterns.",
+      "npm": "@reduxjs/toolkit",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "rrousselGit/riverpod",
+      "name": "Riverpod",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "flutter",
+        "dart",
+        "state",
+        "caching"
+      ],
+      "ecosystems": [
+        "dart"
+      ],
+      "use_for": "Manage reactive state and async data in Flutter and Dart apps.",
+      "why": "Compile-safe successor to Provider, widely used in Flutter.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vercel/swr",
+      "name": "SWR",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "data-fetching",
+        "react",
+        "hooks",
+        "cache"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Fetch and cache remote data in React with stale-while-revalidate hooks.",
+      "why": "Lightweight data fetching hooks from Vercel; a simpler alternative to TanStack Query.",
+      "npm": "swr",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "TanStack/query",
+      "name": "TanStack Query",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "data-fetching",
+        "caching",
+        "server-state",
+        "react"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Fetch, cache, sync and update server data in React, Vue, Solid, Svelte or Angular.",
+      "why": "The standard for server-state management with caching, retries and devtools.",
+      "npm": "@tanstack/react-query",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "urql-graphql/urql",
+      "name": "urql",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "graphql",
+        "data-fetching",
+        "react",
+        "vue"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Lightweight, extensible GraphQL client for React, Vue, Svelte and Solid",
+      "why": "Smaller, exchange-based alternative to Apollo Client with optional normalized caching (Graphcache)",
+      "npm": "urql",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "pmndrs/valtio",
+      "name": "Valtio",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "state-management",
+        "proxy",
+        "react"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Proxy-based state that makes mutable objects reactive in React and vanilla JS",
+      "why": "From the Zustand/Jotai team: mutate state directly and components re-render automatically",
+      "npm": "valtio",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "statelyai/xstate",
+      "name": "XState",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "state-machines",
+        "statecharts",
+        "actors",
+        "logic"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Model complex app logic with state machines, statecharts and actors.",
+      "why": "The leading statechart library, framework-agnostic with visual tooling.",
+      "npm": "xstate",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "pmndrs/zustand",
+      "name": "Zustand",
+      "category": "state-data",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "state",
+        "hooks",
+        "minimal"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Manage global client state in React with a tiny hook-based store.",
+      "why": "Minimal API and boilerplate, very widely adopted; MIT.",
+      "npm": "zustand",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    }
+  ]
+}

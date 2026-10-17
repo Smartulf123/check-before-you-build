@@ -1,0 +1,563 @@
+{
+  "category": "realtime",
+  "entries": [
+    {
+      "id": "automerge/automerge",
+      "name": "Automerge",
+      "category": "realtime",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "crdt",
+        "local-first",
+        "sync",
+        "json"
+      ],
+      "ecosystems": [
+        "js",
+        "ts",
+        "rust"
+      ],
+      "use_for": "Store app state as a JSON-like CRDT document that syncs and merges across devices offline.",
+      "why": "Rust core with JS bindings and a sync protocol (automerge-repo); a reference implementation of the local-first approach.",
+      "npm": "@automerge/automerge",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "centrifugal/centrifugo",
+      "name": "Centrifugo",
+      "category": "realtime",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "websockets",
+        "pubsub",
+        "sse",
+        "scalable"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Run a standalone, language-agnostic realtime messaging server next to any backend.",
+      "why": "Self-hosted alternative to Pusher/Ably: WebSocket, SSE and HTTP-streaming transports, presence, history and Redis/NATS scaling.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "electric-sql/electric",
+      "name": "ElectricSQL",
+      "category": "realtime",
+      "kinds": [
+        "service",
+        "library"
+      ],
+      "tags": [
+        "postgres",
+        "sync",
+        "local-first",
+        "realtime"
+      ],
+      "ecosystems": [
+        "ts",
+        "any"
+      ],
+      "use_for": "Stream live subsets of Postgres data to clients so the UI stays in sync without hand-written polling.",
+      "why": "Read-path sync engine in front of Postgres using HTTP shape streams that cache well on CDNs; works with any frontend.",
+      "npm": "@electric-sql/client",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "gotify/server",
+      "name": "Gotify",
+      "category": "realtime",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "push-notifications",
+        "websockets",
+        "self-hosted",
+        "go"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Self-hosted server to send and receive push messages over WebSocket via REST",
+      "why": "Simple self-hosted push notification server with REST API, WebSocket stream, Android client and plugins.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "LICENSE file is MIT, read from raw.githubusercontent.com",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "amark/gun",
+      "name": "GUN",
+      "category": "realtime",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "p2p",
+        "graph",
+        "sync",
+        "decentralized"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Decentralised realtime graph database that syncs peer-to-peer and offline-first in browser and Node",
+      "why": "One of the oldest and most-starred JS sync engines; works without a central server and runs in the browser",
+      "npm": "gun",
+      "license_verified": {
+        "license": "MIT",
+        "note": "LICENSE.md offers MIT, Zlib or Apache-2.0 at the user's choice",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "ueberdosis/hocuspocus",
+      "name": "Hocuspocus",
+      "category": "realtime",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "yjs",
+        "websocket",
+        "collaboration",
+        "server"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Plug-and-play Yjs websocket backend with persistence, auth hooks and scaling",
+      "why": "The standard self-hosted Yjs collaboration server from the Tiptap team; extension hooks for DB, Redis and auth",
+      "npm": "@hocuspocus/server",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "instantdb/instant",
+      "name": "InstantDB",
+      "category": "realtime",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "local-first",
+        "sync",
+        "database",
+        "realtime"
+      ],
+      "ecosystems": [
+        "ts",
+        "clojure"
+      ],
+      "use_for": "Realtime client-side database with optimistic updates, offline mode and permissions",
+      "why": "Firebase-style realtime DB with relational queries and offline sync; fully open-source and self-hostable",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "n0-computer/iroh",
+      "name": "iroh",
+      "category": "realtime",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "p2p",
+        "quic",
+        "nat-traversal",
+        "sync"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Peer-to-peer QUIC connections with NAT hole-punching, dialing by public key",
+      "why": "Production-grade Rust p2p networking with relay fallback; base for local-first sync (iroh-docs, iroh-gossip).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "liveblocks/liveblocks",
+      "name": "Liveblocks",
+      "category": "realtime",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "multiplayer",
+        "presence",
+        "collaboration",
+        "yjs"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Add presence, live cursors, comments and collaborative storage to React apps",
+      "why": "Ready-made collaboration primitives (presence, storage, comments, Yjs) with React hooks; Apache-2.0 client and server libs",
+      "npm": "@liveblocks/client",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "livekit/livekit",
+      "name": "LiveKit",
+      "category": "realtime",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "webrtc",
+        "sfu",
+        "video",
+        "voice"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Self-hostable WebRTC SFU for realtime audio, video and data, incl. voice AI agents",
+      "why": "The leading open-source WebRTC media server with SDKs for every platform; widely used for voice-AI agents",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "loro-dev/loro",
+      "name": "Loro",
+      "category": "realtime",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "crdt",
+        "local-first",
+        "collaboration",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust",
+        "ts"
+      ],
+      "use_for": "High-performance CRDT library for collaborative text, lists, maps and trees",
+      "why": "Fast Rust CRDT with JS/WASM bindings, rich-text and movable tree support, plus version history",
+      "npm": "loro-crdt",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "nats-io/nats-server",
+      "name": "NATS",
+      "category": "realtime",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "messaging",
+        "pubsub",
+        "streaming",
+        "cncf"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Lightweight pub/sub, request-reply and persistent streaming (JetStream) message broker",
+      "why": "CNCF messaging system: single small binary, very fast, with clients for 40+ languages and built-in persistence",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "nsqio/nsq",
+      "name": "NSQ",
+      "category": "realtime",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "message-queue",
+        "pubsub",
+        "distributed",
+        "go"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Distributed realtime messaging and pub/sub with no single point of failure",
+      "why": "Battle-tested Go message platform (25k stars, 140+ contributors); simple topology, at-least-once delivery, clients for most languages.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "pubkey/rxdb",
+      "name": "RxDB",
+      "category": "realtime",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "local-first",
+        "database",
+        "offline",
+        "replication"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Keep a reactive local database in the browser or app that replicates to your backend.",
+      "why": "Runs on every JS runtime and offers replication plugins for CouchDB, GraphQL, Firestore, Supabase and custom HTTP backends.",
+      "npm": "rxdb",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "socketio/socket.io",
+      "name": "Socket.IO",
+      "category": "realtime",
+      "kinds": [
+        "library",
+        "framework"
+      ],
+      "tags": [
+        "websockets",
+        "realtime",
+        "pubsub",
+        "nodejs"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Add bidirectional realtime events (chat, live updates) between browsers and a Node.js server.",
+      "why": "The most widely used realtime library for Node: rooms, auto-reconnect, fallbacks and adapters for scaling across servers.",
+      "npm": "socket.io",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "SocketCluster/socketcluster",
+      "name": "SocketCluster",
+      "category": "realtime",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "pubsub",
+        "rpc",
+        "websockets",
+        "scalable"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Build horizontally scalable realtime pub/sub and RPC services in Node.js.",
+      "why": "Mature framework with channels, async-iterable streams and built-in clustering for scaling past one process.",
+      "npm": "socketcluster-server",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "supabase/realtime",
+      "name": "Supabase Realtime",
+      "category": "realtime",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "postgres",
+        "websockets",
+        "presence",
+        "broadcast"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Broadcast messages, track presence and listen to Postgres changes over WebSockets.",
+      "why": "Elixir server behind Supabase realtime; self-hostable and exposes database change feeds without extra infra.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tinyplex/tinybase",
+      "name": "TinyBase",
+      "category": "realtime",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "local-first",
+        "store",
+        "crdt",
+        "sync"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Tiny reactive store and sync engine for local-first apps with persistence and CRDT merging",
+      "why": "Small, dependency-free reactive data store with many persisters and sync options; strong TypeScript and React support",
+      "npm": "tinybase",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "uNetworking/uWebSockets.js",
+      "name": "uWebSockets.js",
+      "category": "realtime",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "websockets",
+        "performance",
+        "http",
+        "pubsub"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Serve very high-throughput WebSocket and HTTP traffic from Node.js.",
+      "why": "C++-backed server with built-in pub/sub; markedly faster and lighter on memory than pure-JS servers for large connection counts.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "joewalnes/websocketd",
+      "name": "websocketd",
+      "category": "realtime",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "websockets",
+        "websocket-server",
+        "stdio"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Turn any STDIN/STDOUT program into a WebSocket server",
+      "why": "Zero-code WebSocket server: wrap a script in any language and stream it to browsers; tiny single binary, BSD-2.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "walkor/workerman",
+      "name": "Workerman",
+      "category": "realtime",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "websockets",
+        "socket-server",
+        "async",
+        "php"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Async event-driven socket server for WebSocket, TCP and custom protocols in PHP",
+      "why": "The go-to PHP framework for long-lived WebSocket/socket servers without extensions; powers GatewayWorker and webman.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "websockets/ws",
+      "name": "ws",
+      "category": "realtime",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "websockets",
+        "nodejs",
+        "server",
+        "client"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Run a plain, fast WebSocket server or client in Node.js.",
+      "why": "The de facto low-level WebSocket implementation for Node; tiny, heavily tested and used under many higher-level libraries.",
+      "npm": "ws",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "yjs/yjs",
+      "name": "Yjs",
+      "category": "realtime",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "crdt",
+        "collaboration",
+        "local-first",
+        "sync"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Build Google-Docs-style collaborative editing with shared data types that merge automatically.",
+      "why": "The most adopted CRDT for the web, with bindings for ProseMirror, Tiptap, Monaco, CodeMirror and many network providers.",
+      "npm": "yjs",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "rocicorp/mono",
+      "name": "Zero",
+      "category": "realtime",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "sync",
+        "local-first",
+        "postgres",
+        "query"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Zero: query-driven sync engine that syncs Postgres data to clients for instant UIs",
+      "why": "From the Replicache team; client queries sync from Postgres with instant local results",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

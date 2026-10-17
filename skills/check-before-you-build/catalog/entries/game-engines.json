@@ -1,0 +1,444 @@
+{
+  "category": "game-engines",
+  "entries": [
+    {
+      "id": "bevyengine/bevy",
+      "name": "Bevy",
+      "category": "game-engines",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "ecs",
+        "rust",
+        "data-driven",
+        "2d-3d"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Build games in Rust with a data-driven ECS engine.",
+      "why": "Leading Rust engine with a fast-moving ecosystem and modular plugin design.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "hajimehoshi/ebiten",
+      "name": "Ebitengine",
+      "category": "game-engines",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "go",
+        "2d",
+        "cross-platform",
+        "simple"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Make 2D games in Go for desktop, mobile, web and consoles.",
+      "why": "The standard Go game engine; simple API, ships on Nintendo Switch.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "excaliburjs/Excalibur",
+      "name": "Excalibur",
+      "category": "game-engines",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "2d",
+        "typescript",
+        "html5"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Build 2D web games in TypeScript with a full engine (scenes, physics, input).",
+      "why": "TypeScript-first 2D engine (~2.4k stars, BSD-2) with good docs and tooling.",
+      "npm": "excalibur",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "flame-engine/flame",
+      "name": "Flame",
+      "category": "game-engines",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "flutter",
+        "dart",
+        "2d",
+        "mobile"
+      ],
+      "ecosystems": [
+        "dart"
+      ],
+      "use_for": "Build 2D games on Flutter for mobile, web and desktop.",
+      "why": "The main Flutter game engine with components, collisions and many bridge packages.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "FyroxEngine/Fyrox",
+      "name": "Fyrox",
+      "category": "game-engines",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "rust",
+        "3d",
+        "2d",
+        "editor"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Make 2D and 3D games in Rust with a scene editor.",
+      "why": "Feature-rich Rust engine that ships with a full editor, unlike most Rust engines.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "4ian/GDevelop",
+      "name": "GDevelop",
+      "category": "game-engines",
+      "kinds": [
+        "engine",
+        "app"
+      ],
+      "tags": [
+        "no-code",
+        "2d",
+        "3d",
+        "html5"
+      ],
+      "ecosystems": [
+        "ts",
+        "js",
+        "cpp"
+      ],
+      "use_for": "Make 2D/3D games with an event-based, no-code editor that exports to web and mobile.",
+      "why": "Open-source no-code engine (~28k stars); Core, GDJS and IDE are MIT.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "Core, GDJS, IDE and Extensions folders are MIT; name and logo are trademarks",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "godotengine/godot",
+      "name": "Godot",
+      "category": "game-engines",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "2d",
+        "3d",
+        "game-engine",
+        "editor"
+      ],
+      "ecosystems": [
+        "cpp",
+        "csharp"
+      ],
+      "use_for": "Make 2D and 3D games with a full editor, GDScript or C#.",
+      "why": "Most popular open-source game engine (119k stars); MIT, no royalties, exports to all major platforms.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "kaplayjs/kaplay",
+      "name": "KAPLAY",
+      "category": "game-engines",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "2d",
+        "javascript",
+        "html5",
+        "beginner-friendly"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Make 2D browser games quickly with a fun, beginner-friendly JS library.",
+      "why": "Community successor to Kaboom.js (~1.8k stars, MIT) with an active release cadence.",
+      "npm": "kaplay",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "libgdx/libgdx",
+      "name": "libGDX",
+      "category": "game-engines",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "java",
+        "cross-platform",
+        "android",
+        "2d"
+      ],
+      "ecosystems": [
+        "java",
+        "kotlin"
+      ],
+      "use_for": "Build cross-platform Java games for desktop, Android, iOS and web.",
+      "why": "Long-standing, mature JVM game framework with a large community.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "love2d/love",
+      "name": "LÖVE",
+      "category": "game-engines",
+      "kinds": [
+        "engine",
+        "framework"
+      ],
+      "tags": [
+        "2d",
+        "lua",
+        "indie"
+      ],
+      "ecosystems": [
+        "lua",
+        "cpp"
+      ],
+      "use_for": "Make 2D games in Lua with a small, fast framework.",
+      "why": "Beloved Lua 2D framework (~9k stars, zlib) behind many indie hits like Balatro.",
+      "license_verified": {
+        "license": "Zlib",
+        "note": "license.txt: LOVE is zlib; bundled deps have own licenses",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "MonoGame/MonoGame",
+      "name": "MonoGame",
+      "category": "game-engines",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "csharp",
+        "xna",
+        "cross-platform",
+        "2d"
+      ],
+      "ecosystems": [
+        "csharp"
+      ],
+      "use_for": "Build cross-platform 2D/3D games in C# with an XNA-style framework.",
+      "why": "Proven framework behind Stardew Valley and Celeste; Ms-PL licensed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "o3de/o3de",
+      "name": "Open 3D Engine",
+      "category": "game-engines",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "3d",
+        "aaa",
+        "cpp",
+        "linux-foundation"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Build AAA-scale 3D games and simulations on an open engine.",
+      "why": "Linux Foundation engine from Amazon Lumberyard (~10k stars), Apache-2.0 or MIT.",
+      "license_verified": {
+        "license": "Apache-2.0",
+        "note": "LICENSE.txt: Apache-2.0, or MIT at your option",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "panda3d/panda3d",
+      "name": "Panda3D",
+      "category": "game-engines",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "3d",
+        "python",
+        "cpp"
+      ],
+      "ecosystems": [
+        "python",
+        "cpp"
+      ],
+      "use_for": "Build 3D games and simulations in Python with a C++ core.",
+      "why": "Mature 3D engine (~5k stars, BSD-3) originally from Disney and Carnegie Mellon.",
+      "license_verified": {
+        "license": "BSD-3-Clause",
+        "note": "LICENSE: modified BSD (3-clause), Carnegie Mellon University",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "phaserjs/phaser",
+      "name": "Phaser",
+      "category": "game-engines",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "html5",
+        "2d",
+        "canvas",
+        "webgl"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Make 2D browser games with Canvas and WebGL.",
+      "why": "The most popular HTML5 2D game framework (40k stars) with extensive examples.",
+      "npm": "phaser",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "pygame-community/pygame-ce",
+      "name": "pygame-ce",
+      "category": "game-engines",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "2d",
+        "python",
+        "sdl",
+        "beginner-friendly"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Make 2D games in Python on top of SDL.",
+      "why": "Actively maintained community fork of pygame (370+ contributors), drop-in compatible.",
+      "license_verified": {
+        "license": "LGPL-2.1-or-later",
+        "note": "README states LGPL-2.1-or-later; text in docs/LGPL.txt",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "raysan5/raylib",
+      "name": "raylib",
+      "category": "game-engines",
+      "kinds": [
+        "library",
+        "framework"
+      ],
+      "tags": [
+        "c",
+        "simple",
+        "2d",
+        "3d"
+      ],
+      "ecosystems": [
+        "cpp",
+        "any"
+      ],
+      "use_for": "Program games in C (or 70+ language bindings) with a simple, dependency-free API.",
+      "why": "Famously easy to learn; great for prototypes, jams and teaching. Zlib license.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "renpy/renpy",
+      "name": "Ren'Py",
+      "category": "game-engines",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "visual-novel",
+        "python",
+        "narrative"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build visual novels and story-driven games with a Python-based script language.",
+      "why": "The standard visual novel engine (~7k stars) behind thousands of commercial titles.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "Ren'Py itself MIT per sphinx/source/license.rst; some bundled parts LGPL",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "stride3d/stride",
+      "name": "Stride",
+      "category": "game-engines",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "csharp",
+        "3d",
+        "editor",
+        "dotnet"
+      ],
+      "ecosystems": [
+        "csharp"
+      ],
+      "use_for": "Make 3D games in C# with a full editor.",
+      "why": "MIT-licensed C# engine with editor; an open alternative for Unity developers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

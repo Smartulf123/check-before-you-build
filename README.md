@@ -17,7 +17,7 @@ Most idea validators give you an opinion about market size. This one shows you *
 - **Does it already exist?** Real repos, skills, MCP servers and packages, with live stars, last-commit dates and licenses.
 - **Does anyone want it?** Hacker News threads, feature requests on competitors' issue trackers, real questions on the web, each with a link.
 - **Where's the gap?** What the existing projects are missing, backed by evidence.
-- **What should I build it with?** A curated catalog of ~300 repos tells you what to 🧱 use, 🍴 fork, 💡 learn from, or 🤝 contribute to.
+- **What should I build it with?** A curated catalog of 1,170 quality-checked repos tells you what to 🧱 use, 🍴 fork, 💡 learn from, or 🤝 contribute to.
 
 ## What it will look like
 
@@ -90,7 +90,7 @@ Or as a Claude Code plugin:
 - [x] Helper scripts (GitHub, npm, PyPI, Smithery + MCP registry, skills.sh, plugins, HN)
 - [x] Skill workflow (SKILL.md + methodology), rule-based scoring, eval set
 - [x] Demand, gaps and building blocks (instructions; tuning ongoing)
-- [ ] Catalog: ~300 repos in ~35 categories
+- [x] Catalog: 1,170 repos in 50 categories, 20 domains
 - [ ] Automated fact-checking script, report polish and verdict card
 - [ ] Evaluation set passing, packaging, v1.0.0
 

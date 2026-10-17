@@ -1,6 +1,7 @@
 # check-before-you-build — Specification
 
-> **Status:** Draft v0.6 · 2026-10-17 · for review
+> **Status:** Draft v0.7 · 2026-10-17 · for review
+> **v0.7:** ceiling raised to 50 per category (not a target); rate-limit pausing for long checks; maintainer-pick exceptions; big-repo safety net in scout (§8.2, §8.5)
 > **v0.6:** up to 20 entries per category with up to 5 `featured`; `license_verified` for hand-checked licenses (§8.2)
 > **v0.5:** catalog quality rules decided (tiers, freshness, alternative signals, contributors, fake-star check; §8.2–8.3); 20 domains + 50 building-block categories (§8.4)
 > **v0.4:** catalog moved inside the skill folder (§12) so installed copies include it; popularity takes the strongest normalised signal across sources (§9.1)
@@ -431,7 +432,9 @@ The **same rules apply to every entry**, including the maintainer's own favourit
 6. **Not a thin fork or clone** of another entry.
 7. **Documented**: a README that explains installation and usage.
 
-**Size:** depth over a fixed number (decided 2026-10-17). At least 5 and **at most 20 per category** (up to ~1,000 entries). The bar is never lowered to fill a category. Up to **5 entries per category are `featured`**: the strongest picks, shown first in recommendations, so users get a short list even when a category is deep. The cap keeps weekly health checks within GitHub's API budget and stops the catalog from diluting.
+**Maintainer picks:** the maintainer may include an exceptional repo that fails a quality rule, via `exception: { rules, reason, date }`. Only `contributors`, `freshness`, `adoption` and `fake_stars` can be waived, never license, archived or missing. Such entries are labelled *"👤 Maintainer pick (exception)"* everywhere they appear, so users can see why they're there. Use sparingly.
+
+**Size:** depth over a fixed number (decided 2026-10-17; the ceiling was raised to 50 the same day). At least 5 and **at most 50 per category** (up to ~2,500 entries). 50 is a ceiling, not a target: categories are never filled with weaker repos to reach it. A full health check needs ~6,000 GitHub calls, more than one hour allows, so `health.mjs` and `catalog-validate --live` pause automatically at the rate limit and continue after the reset (~1.5 hours for a full run). The bar is never lowered to fill a category. Up to **5 entries per category are `featured`**: the strongest picks, shown first in recommendations, so users get a short list even when a category is deep. The cap keeps weekly health checks within GitHub's API budget and stops the catalog from diluting.
 
 ### 8.3 Removal criteria
 

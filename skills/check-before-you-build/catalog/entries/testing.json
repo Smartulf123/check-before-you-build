@@ -1,0 +1,674 @@
+{
+  "category": "testing",
+  "entries": [
+    {
+      "id": "appium/appium",
+      "name": "Appium",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "mobile-testing",
+        "e2e",
+        "ios",
+        "android"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Automate iOS, Android and desktop app tests with the WebDriver protocol.",
+      "why": "Standard open-source mobile test automation (~22k stars), clients in many languages.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "avajs/ava",
+      "name": "AVA",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "test-runner",
+        "nodejs",
+        "concurrent",
+        "minimal"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Run Node.js tests concurrently with a minimal API.",
+      "why": "Lean, concurrent test runner with isolated test files; good for libraries.",
+      "npm": "ava",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "teamcapybara/capybara",
+      "name": "Capybara",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "acceptance-testing",
+        "ruby",
+        "rails"
+      ],
+      "ecosystems": [
+        "ruby"
+      ],
+      "use_for": "Acceptance tests for Ruby web apps by simulating users",
+      "why": "The standard browser-level testing DSL for Rails apps.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "catchorg/Catch2",
+      "name": "Catch2",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "unit-testing",
+        "bdd",
+        "cpp"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Modern C++ unit, TDD and BDD testing",
+      "why": "Popular C++ test framework with natural test names and built-in microbenchmarks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "cypress-io/cypress",
+      "name": "Cypress",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "e2e",
+        "component-testing",
+        "browser",
+        "javascript"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Write end-to-end and component tests that run in the browser with time-travel debugging.",
+      "why": "Very popular E2E tool with an interactive runner; strong developer experience.",
+      "npm": "cypress",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "doctest/doctest",
+      "name": "doctest",
+      "category": "testing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "unit-testing",
+        "cpp",
+        "header-only",
+        "fast"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Write fast-compiling unit tests in C++ with a single header.",
+      "why": "Fastest-compiling feature-rich C++ test framework; tests can live next to production code.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "dubzzz/fast-check",
+      "name": "fast-check",
+      "category": "testing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "property-based-testing",
+        "fuzzing",
+        "typescript",
+        "quickcheck"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Add property-based tests that generate inputs and shrink failures in JS/TS.",
+      "why": "The standard property-based testing library for JS; works with Jest, Vitest and others.",
+      "npm": "fast-check",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "google/googletest",
+      "name": "GoogleTest",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "unit-testing",
+        "mocking",
+        "cpp"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Unit testing and mocking for C++",
+      "why": "The most widely used C++ test framework, with gMock included.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "HypothesisWorks/hypothesis",
+      "name": "Hypothesis",
+      "category": "testing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "property-based-testing",
+        "python",
+        "fuzzing"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Find edge-case bugs in Python with property-based tests that generate inputs.",
+      "why": "The leading Python property-based testing library (~9k stars, MPL-2.0).",
+      "license_verified": {
+        "license": "MPL-2.0",
+        "note": "LICENSE.txt: all code MPL-2.0 unless noted",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jasmine/jasmine",
+      "name": "Jasmine",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "unit-testing",
+        "bdd",
+        "javascript"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "BDD-style JavaScript testing for browsers and Node",
+      "why": "Long-standing JS test framework, still the default in many Angular projects.",
+      "npm": "jasmine",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "jestjs/jest",
+      "name": "Jest",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "unit-testing",
+        "snapshot",
+        "mocking",
+        "javascript"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Write unit tests with built-in mocking, snapshots and coverage.",
+      "why": "The long-time standard JS test framework (45k stars, 1.7k contributors).",
+      "npm": "jest",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "grafana/k6",
+      "name": "k6",
+      "category": "testing",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "load-testing",
+        "performance",
+        "javascript"
+      ],
+      "ecosystems": [
+        "go",
+        "js"
+      ],
+      "use_for": "Load-test APIs and websites with test scripts written in JavaScript.",
+      "why": "Grafana's popular load-testing tool (~32k stars, AGPL-3.0); CI-friendly with thresholds.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "karatelabs/karate",
+      "name": "Karate",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "api-testing",
+        "bdd",
+        "contract-testing",
+        "performance"
+      ],
+      "ecosystems": [
+        "java",
+        "any"
+      ],
+      "use_for": "Write API, UI, mock and performance tests in a readable DSL.",
+      "why": "Combines API testing, mocks and perf testing in one tool, no Java code required.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "keploy/keploy",
+      "name": "Keploy",
+      "category": "testing",
+      "kinds": [
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "api-testing",
+        "mocks",
+        "record-replay"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Generate API and integration tests by recording real traffic",
+      "why": "Records calls and dependencies via eBPF to produce replayable tests and mocks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "web-infra-dev/midscene",
+      "name": "Midscene.js",
+      "category": "testing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "ai-testing",
+        "e2e",
+        "natural-language",
+        "vision"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Automate and test web, Android and iOS UIs with natural-language instructions.",
+      "why": "AI-driven UI automation from ByteDance; integrates with Playwright and Puppeteer.",
+      "npm": "@midscene/web",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mochajs/mocha",
+      "name": "Mocha",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "unit-testing",
+        "nodejs",
+        "bdd"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Run unit and integration tests in Node.js or the browser with a flexible runner.",
+      "why": "Long-standing JS test runner (~13M weekly npm downloads); pairs with any assertion library.",
+      "npm": "mocha",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mswjs/msw",
+      "name": "Mock Service Worker",
+      "category": "testing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "api-mocking",
+        "network",
+        "rest",
+        "graphql"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Mock REST and GraphQL APIs at the network level in tests, browser and Node.",
+      "why": "Leading API mocking library (~23M weekly npm downloads); same mocks for tests and dev.",
+      "npm": "msw",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mockery/mockery",
+      "name": "Mockery",
+      "category": "testing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "mocking",
+        "php"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Flexible mock objects for PHP tests",
+      "why": "Standard PHP mocking library used with PHPUnit and Pest.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "mockito/mockito",
+      "name": "Mockito",
+      "category": "testing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "mocking",
+        "java"
+      ],
+      "ecosystems": [
+        "java",
+        "kotlin"
+      ],
+      "use_for": "Mock objects for Java unit tests",
+      "why": "The most popular Java mocking framework.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "pestphp/pest",
+      "name": "Pest",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "unit-testing",
+        "php",
+        "laravel"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Expressive PHP testing built on PHPUnit",
+      "why": "Modern PHP test framework popular in the Laravel community.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "sebastianbergmann/phpunit",
+      "name": "PHPUnit",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "unit-testing",
+        "php"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Unit testing for PHP",
+      "why": "The standard PHP testing framework underlying Laravel, Symfony and Pest.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "microsoft/playwright",
+      "name": "Playwright",
+      "category": "testing",
+      "kinds": [
+        "framework",
+        "library"
+      ],
+      "tags": [
+        "e2e",
+        "browser-testing",
+        "cross-browser",
+        "automation"
+      ],
+      "ecosystems": [
+        "ts",
+        "python",
+        "java",
+        "csharp"
+      ],
+      "use_for": "Write reliable end-to-end tests across Chromium, Firefox and WebKit.",
+      "why": "Leading E2E framework (98k stars) with auto-waiting, tracing, codegen and bindings for 4 languages.",
+      "npm": "@playwright/test",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "pytest-dev/pytest",
+      "name": "pytest",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "unit-testing",
+        "fixtures",
+        "python",
+        "plugins"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Write simple to complex Python tests with fixtures and plain asserts.",
+      "why": "The de facto Python test framework with 1,000+ plugins.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "testing-library/react-testing-library",
+      "name": "React Testing Library",
+      "category": "testing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "component-testing",
+        "dom",
+        "accessibility"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Test React components the way users interact with them.",
+      "why": "Standard React component testing library (~70M weekly npm downloads).",
+      "npm": "@testing-library/react",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "robotframework/robotframework",
+      "name": "Robot Framework",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "acceptance-testing",
+        "rpa",
+        "keyword-driven"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Keyword-driven acceptance testing and RPA",
+      "why": "Mature generic automation framework with a large library ecosystem (Browser, Selenium, Appium).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "seleniumbase/SeleniumBase",
+      "name": "SeleniumBase",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "e2e",
+        "selenium",
+        "python",
+        "pytest"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Write Python browser tests and automation on top of Selenium and pytest.",
+      "why": "Batteries-included Python E2E framework with recorder, dashboards and CDP mode.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "sinonjs/sinon",
+      "name": "Sinon.JS",
+      "category": "testing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "spies",
+        "stubs",
+        "mocks",
+        "fake-timers"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Add spies, stubs, mocks and fake timers to JavaScript tests.",
+      "why": "Standard standalone test doubles library (~11M weekly npm downloads), framework-agnostic.",
+      "npm": "sinon",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "testcontainers/testcontainers-java",
+      "name": "Testcontainers",
+      "category": "testing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "integration-testing",
+        "docker",
+        "databases",
+        "java"
+      ],
+      "ecosystems": [
+        "java"
+      ],
+      "use_for": "Spin up real databases and services in Docker for integration tests.",
+      "why": "The original Testcontainers (~9k stars); ports exist for Node, Go, Python, .NET.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "stretchr/testify",
+      "name": "testify",
+      "category": "testing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "assertions",
+        "mocks",
+        "go"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Write Go tests with assertions, mocks and suites.",
+      "why": "Most-used Go testing toolkit (~26k stars).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vitest-dev/vitest",
+      "name": "Vitest",
+      "category": "testing",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "unit-testing",
+        "vite",
+        "jest-compatible",
+        "typescript"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Run fast unit and component tests with a Jest-compatible API, powered by Vite.",
+      "why": "Default test runner for Vite projects; native ESM/TS, browser mode and fast watch.",
+      "npm": "vitest",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    }
+  ]
+}

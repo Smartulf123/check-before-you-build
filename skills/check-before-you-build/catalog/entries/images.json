@@ -1,0 +1,468 @@
+{
+  "category": "images",
+  "entries": [
+    {
+      "id": "Comfy-Org/ComfyUI",
+      "name": "ComfyUI",
+      "category": "images",
+      "kinds": [
+        "app",
+        "engine"
+      ],
+      "tags": [
+        "image-generation",
+        "node-graph",
+        "diffusion",
+        "api"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build and run node-based image generation workflows locally, with an API for automation.",
+      "why": "The most capable open diffusion backend; huge custom-node ecosystem and a workflow API you can call from apps.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "fengyuanchen/cropperjs",
+      "name": "Cropper.js",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "crop",
+        "image-editor",
+        "javascript"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Add an image cropping UI to a web app.",
+      "why": "Long-standing, dependency-free JS cropper with a v2 web-components rewrite.",
+      "npm": "cropperjs",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "huggingface/diffusers",
+      "name": "Diffusers",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "image-generation",
+        "diffusion",
+        "stable-diffusion",
+        "pytorch"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate and edit images with diffusion models (Stable Diffusion, Flux) in Python.",
+      "why": "The standard library for diffusion pipelines with 1,000+ contributors and support for most open image models.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "image-rs/image",
+      "name": "image (Rust)",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "rust",
+        "decoding",
+        "encoding"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Encode, decode and manipulate images in Rust",
+      "why": "The standard Rust imaging crate, used across the Rust ecosystem.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "ImageMagick/ImageMagick",
+      "name": "ImageMagick",
+      "category": "images",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "convert",
+        "image-processing",
+        "formats"
+      ],
+      "ecosystems": [
+        "cpp",
+        "any"
+      ],
+      "use_for": "Convert, edit and compose images in 200+ formats from the command line or bindings.",
+      "why": "The Swiss-army knife for image formats, available everywhere and scriptable.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "cshum/imagor",
+      "name": "imagor",
+      "category": "images",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "image-cdn",
+        "libvips",
+        "thumbor-compatible"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Fast libvips-based image processing server with Thumbor-compatible URLs",
+      "why": "Modern Go alternative to Thumbor/imgproxy; Apache-2.0 with URL signing and S3 support.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "imgproxy/imgproxy",
+      "name": "imgproxy",
+      "category": "images",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "image-server",
+        "resize",
+        "cdn",
+        "security"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Resize and convert images on the fly via URL with a standalone server.",
+      "why": "Fast, secure (signed URLs) libvips-based server; a self-hosted replacement for paid image CDNs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Intervention/image",
+      "name": "Intervention Image",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "php",
+        "image-processing",
+        "resize",
+        "gd"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "PHP image processing with GD, Imagick or libvips drivers",
+      "why": "The de facto PHP/Laravel image library for resizing, cropping, watermarking and encoding.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "jimp-dev/jimp",
+      "name": "Jimp",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "pure-js",
+        "image-processing",
+        "node"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Pure-JavaScript image processing for Node and the browser, no native deps",
+      "why": "Zero-native-dependency alternative to sharp for serverless and browser use.",
+      "npm": "jimp",
+      "stable": true,
+      "stable_reason": "Mature pure-JS image library (v1 rewrite done); covers its scope without needing frequent releases",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "kornia/kornia",
+      "name": "Kornia",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "computer-vision",
+        "pytorch",
+        "augmentation"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Differentiable computer-vision and image-augmentation ops for PyTorch",
+      "why": "GPU-native image processing that plugs into training pipelines, unlike OpenCV.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "libvips/libvips",
+      "name": "libvips",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "image-processing",
+        "performance",
+        "low-memory",
+        "c"
+      ],
+      "ecosystems": [
+        "cpp",
+        "any"
+      ],
+      "use_for": "Process large images quickly with low memory from C or bindings (pyvips, sharp, ruby-vips).",
+      "why": "Streaming architecture that is many times faster than ImageMagick for typical pipelines.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "opencv/opencv",
+      "name": "OpenCV",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "computer-vision",
+        "image-processing",
+        "cpp",
+        "python"
+      ],
+      "ecosystems": [
+        "cpp",
+        "python"
+      ],
+      "use_for": "Do computer vision and image processing (filters, detection, transforms) in C++ or Python.",
+      "why": "The most widely used CV library with thousands of algorithms and bindings for Python, Java and JS.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "oxipng/oxipng",
+      "name": "oxipng",
+      "category": "images",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "png",
+        "optimization",
+        "lossless",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Losslessly optimize PNG files in build steps or CI.",
+      "why": "Fast multithreaded Rust PNG optimizer, a modern replacement for optipng.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "nodeca/pica",
+      "name": "pica",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "resize",
+        "browser",
+        "webworker"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "High-quality image resizing in the browser (Lanczos, WebAssembly, workers)",
+      "why": "Best client-side resize quality; ideal for shrinking uploads before sending.",
+      "npm": "pica",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "python-pillow/Pillow",
+      "name": "Pillow",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "image-processing",
+        "python",
+        "formats"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Open, edit, convert and save images in Python.",
+      "why": "The standard Python imaging library, supported by nearly every Python tool that touches images.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "danielgatis/rembg",
+      "name": "rembg",
+      "category": "images",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "background-removal",
+        "ai",
+        "python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Remove image backgrounds from Python, the CLI or an HTTP server.",
+      "why": "Easy, local background removal with several U2Net/ISNet models; no API key needed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "scikit-image/scikit-image",
+      "name": "scikit-image",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "image-processing",
+        "python",
+        "scientific",
+        "numpy"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Apply scientific image processing algorithms (segmentation, filters, features) to NumPy arrays.",
+      "why": "Well-documented, peer-reviewed algorithms that integrate with the SciPy stack.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "facebookresearch/sam2",
+      "name": "Segment Anything 2",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "segmentation",
+        "computer-vision",
+        "video"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Promptable segmentation of objects in images and video",
+      "why": "Meta foundation model and code for cut-outs, masking and annotation pipelines.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "lovell/sharp",
+      "name": "sharp",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "resize",
+        "image-processing",
+        "node",
+        "libvips"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Resize, convert and optimize images in Node.js (JPEG, PNG, WebP, AVIF).",
+      "why": "The fastest and most used Node image library, powering Next.js image optimization.",
+      "npm": "sharp",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "roboflow/supervision",
+      "name": "supervision",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "computer-vision",
+        "detection",
+        "annotation",
+        "tracking"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Reusable computer vision utilities: annotate, track, count and filter detections",
+      "why": "Model-agnostic toolkit that turns raw detector outputs into boxes, masks, zones and tracks with a few lines.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "thumbor/thumbor",
+      "name": "Thumbor",
+      "category": "images",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "image-cdn",
+        "resizing",
+        "smart-crop"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "On-demand image resizing, cropping and filters server with smart cropping",
+      "why": "Veteran open image service with face/feature-aware cropping; drop-in behind a CDN.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

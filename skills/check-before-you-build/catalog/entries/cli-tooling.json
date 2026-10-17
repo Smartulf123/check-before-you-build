@@ -1,0 +1,475 @@
+{
+  "category": "cli-tooling",
+  "entries": [
+    {
+      "id": "charmbracelet/bubbletea",
+      "name": "Bubble Tea",
+      "category": "cli-tooling",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "tui",
+        "go",
+        "elm-architecture",
+        "terminal"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Build terminal UIs in Go using the Elm architecture.",
+      "why": "Standard Go TUI framework (45k stars) with the Charm ecosystem (Bubbles, Lip Gloss).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "chalk/chalk",
+      "name": "chalk",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "terminal-colors",
+        "styling",
+        "nodejs"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Color and style terminal output in Node.js.",
+      "why": "The most-used terminal styling package (~500M weekly npm downloads).",
+      "npm": "chalk",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "bombshell-dev/clack",
+      "name": "Clack",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "prompts",
+        "interactive",
+        "cli",
+        "ui"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Build polished interactive CLI prompts and spinners in Node.",
+      "why": "Modern prompt library (~30M weekly npm downloads) used by create-* scaffolding tools.",
+      "npm": "@clack/prompts",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "clap-rs/clap",
+      "name": "clap",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "cli",
+        "argument-parsing",
+        "rust",
+        "derive"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Parse command-line arguments in Rust with derive macros or a builder.",
+      "why": "The de facto Rust argument parser; rich help, completions and validation.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "pallets/click",
+      "name": "Click",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "cli-framework",
+        "python",
+        "decorators"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build composable Python command-line interfaces with decorators.",
+      "why": "Pallets' CLI library (~18k stars) that Typer and Flask build on.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "spf13/cobra",
+      "name": "Cobra",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "cli-framework",
+        "subcommands",
+        "go"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Build Go CLIs with subcommands, flags and generated help and completion.",
+      "why": "Powers kubectl, Hugo and the GitHub CLI (~45k stars); the Go CLI standard.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "tj/commander.js",
+      "name": "Commander.js",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "cli",
+        "argument-parsing",
+        "nodejs",
+        "commands"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Parse arguments and define commands for Node.js CLIs.",
+      "why": "The most used Node.js CLI framework; tiny, stable API with subcommands and help generation.",
+      "npm": "commander",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "ArthurSonzogni/FTXUI",
+      "name": "FTXUI",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "tui",
+        "cpp",
+        "terminal-ui"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Build functional terminal UIs in C++",
+      "why": "Leading C++ TUI library with a React-like component model and no dependencies.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "vadimdemedes/ink",
+      "name": "Ink",
+      "category": "cli-tooling",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "tui",
+        "react",
+        "terminal",
+        "nodejs"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Build interactive terminal UIs with React components.",
+      "why": "Powers the CLIs of Claude Code, Gemini CLI, Gatsby and more; React model in the terminal.",
+      "npm": "ink",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "SBoudrias/Inquirer.js",
+      "name": "Inquirer.js",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "prompts",
+        "interactive",
+        "cli"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Ask interactive questions (lists, confirms, inputs) in Node CLIs.",
+      "why": "The classic Node prompt library (~22k stars), now modular via @inquirer/prompts.",
+      "npm": "@inquirer/prompts",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "charmbracelet/lipgloss",
+      "name": "Lip Gloss",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "terminal",
+        "styling",
+        "layout",
+        "go"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Style and lay out terminal output in Go with CSS-like definitions.",
+      "why": "Companion styling library to Bubble Tea; used across most modern Go CLIs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "oclif/oclif",
+      "name": "oclif",
+      "category": "cli-tooling",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "cli-framework",
+        "plugins",
+        "typescript"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Build large, plugin-based CLIs in TypeScript.",
+      "why": "Salesforce's CLI framework used by the Heroku and Salesforce CLIs; plugins and generators.",
+      "npm": "oclif",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "anomalyco/opentui",
+      "name": "OpenTUI",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "tui",
+        "terminal",
+        "typescript",
+        "zig"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build performant terminal UIs in TypeScript with React or Solid bindings.",
+      "why": "Native Zig core with TS bindings; powers the opencode TUI.",
+      "npm": "@opentui/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "remkop/picocli",
+      "name": "picocli",
+      "category": "cli-tooling",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "cli",
+        "java",
+        "argument-parsing",
+        "graalvm"
+      ],
+      "ecosystems": [
+        "java",
+        "kotlin"
+      ],
+      "use_for": "Build CLIs in Java or Kotlin with annotations, help and completion.",
+      "why": "Most capable JVM CLI framework; supports GraalVM native images.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "ratatui/ratatui",
+      "name": "Ratatui",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "tui",
+        "rust",
+        "terminal",
+        "widgets"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Build terminal user interfaces in Rust with widgets and layouts.",
+      "why": "The standard Rust TUI library (successor to tui-rs), used by many popular Rust tools.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Textualize/rich",
+      "name": "Rich",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "terminal",
+        "formatting",
+        "tables",
+        "progress-bars"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Print colored text, tables, progress bars, tracebacks and Markdown in the terminal.",
+      "why": "Ubiquitous Python terminal formatting library (58k stars); MIT confirmed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "tui-cs/Terminal.Gui",
+      "name": "Terminal.Gui",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "tui",
+        "dotnet",
+        "csharp",
+        "terminal"
+      ],
+      "ecosystems": [
+        "csharp"
+      ],
+      "use_for": "Build cross-platform terminal UIs in .NET.",
+      "why": "The leading .NET TUI toolkit, with a rich widget set.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Textualize/textual",
+      "name": "Textual",
+      "category": "cli-tooling",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "tui",
+        "python",
+        "widgets",
+        "css"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build full terminal (and web) applications in Python with widgets and CSS styling.",
+      "why": "The most capable Python TUI framework, from the Rich team.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "fastapi/typer",
+      "name": "Typer",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "cli",
+        "type-hints",
+        "python",
+        "argument-parsing"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build Python CLIs from functions using type hints.",
+      "why": "From the FastAPI author; minimal code, automatic help and completion, built on Click.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "urfave/cli",
+      "name": "urfave/cli",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "cli-framework",
+        "go",
+        "flags"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Build simple, declarative command-line apps in Go.",
+      "why": "Popular lightweight Go CLI package (~24k stars), alternative to Cobra.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "yargs/yargs",
+      "name": "yargs",
+      "category": "cli-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "argument-parsing",
+        "cli",
+        "nodejs"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Parse command-line arguments and build subcommands in Node.js.",
+      "why": "Hugely used Node argument parser (~270M weekly npm downloads) with help and completion.",
+      "npm": "yargs",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

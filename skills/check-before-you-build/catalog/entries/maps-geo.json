@@ -1,0 +1,506 @@
+{
+  "category": "maps-geo",
+  "entries": [
+    {
+      "id": "CesiumGS/cesium",
+      "name": "CesiumJS",
+      "category": "maps-geo",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "3d-globe",
+        "webgl",
+        "3d-tiles",
+        "geospatial"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Render 3D globes and maps with terrain and 3D Tiles in the browser.",
+      "why": "The standard for web 3D geospatial; created the 3D Tiles format.",
+      "npm": "cesium",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "visgl/deck.gl",
+      "name": "deck.gl",
+      "category": "maps-geo",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "webgl",
+        "data-visualization",
+        "geospatial",
+        "large-data"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Visualize large geospatial datasets as GPU-accelerated layers over a map.",
+      "why": "Handles millions of points; integrates with MapLibre, Google Maps and React (vis.gl / OpenJS).",
+      "npm": "deck.gl",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "OSGeo/gdal",
+      "name": "GDAL",
+      "category": "maps-geo",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "raster",
+        "vector",
+        "formats",
+        "geospatial"
+      ],
+      "ecosystems": [
+        "cpp",
+        "python"
+      ],
+      "use_for": "Read, write and convert raster and vector geospatial data in 200+ formats.",
+      "why": "The foundation of open GIS; nearly every geo tool (QGIS, PostGIS, rasterio) builds on it.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "LICENSE.TXT: GDAL/OGR in general MIT; some bundled parts under other licenses",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "geopandas/geopandas",
+      "name": "GeoPandas",
+      "category": "maps-geo",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "gis",
+        "dataframes",
+        "vector-data",
+        "python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Work with geospatial vector data as pandas DataFrames.",
+      "why": "Core of the Python GIS stack: spatial joins, overlays, reprojection with a pandas API.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "graphhopper/graphhopper",
+      "name": "GraphHopper",
+      "category": "maps-geo",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "routing",
+        "openstreetmap",
+        "navigation",
+        "java"
+      ],
+      "ecosystems": [
+        "java",
+        "any"
+      ],
+      "use_for": "Compute routes, isochrones and distance matrices on OpenStreetMap data.",
+      "why": "Fast, mature open-source routing engine usable as a Java library or HTTP server.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "uber/h3",
+      "name": "H3",
+      "category": "maps-geo",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "geospatial-index",
+        "hexagons",
+        "grid",
+        "spatial"
+      ],
+      "ecosystems": [
+        "cpp",
+        "python",
+        "js"
+      ],
+      "use_for": "Index and aggregate locations on a hierarchical hexagonal grid.",
+      "why": "Uber's hex grid system with bindings for most languages; widely used for spatial aggregation.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "keplergl/kepler.gl",
+      "name": "kepler.gl",
+      "category": "maps-geo",
+      "kinds": [
+        "library",
+        "app"
+      ],
+      "tags": [
+        "geospatial",
+        "visualization",
+        "deck.gl",
+        "react"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Visual exploration of large geospatial datasets, embeddable in React",
+      "why": "Open-source geo analysis tool built on deck.gl, usable as a React component; MIT.",
+      "npm": "kepler.gl",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "Leaflet/Leaflet",
+      "name": "Leaflet",
+      "category": "maps-geo",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "maps",
+        "interactive-maps",
+        "tiles",
+        "lightweight"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Add lightweight, mobile-friendly interactive maps to a web page.",
+      "why": "The most widely used open-source web map library (46k stars) with a huge plugin ecosystem.",
+      "npm": "leaflet",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "maplibre/maplibre-gl-js",
+      "name": "MapLibre GL JS",
+      "category": "maps-geo",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "vector-tiles",
+        "webgl",
+        "maps",
+        "open-source"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Render interactive vector-tile maps in the browser with WebGL.",
+      "why": "Open BSD-licensed fork of Mapbox GL JS; the default choice for vector maps without vendor lock-in.",
+      "npm": "maplibre-gl",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "maplibre/martin",
+      "name": "Martin",
+      "category": "maps-geo",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "tile-server",
+        "postgis",
+        "vector-tiles",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Serve vector tiles from PostGIS, MBTiles and PMTiles with a fast Rust tile server.",
+      "why": "MapLibre's tile server (~4k stars); generates tiles from PostGIS on the fly.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "openlayers/openlayers",
+      "name": "OpenLayers",
+      "category": "maps-geo",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "maps",
+        "gis",
+        "projections",
+        "ogc"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Build feature-rich web maps with many data formats, projections and OGC services.",
+      "why": "Most capable GIS-grade web map library; strong support for WMS/WFS and reprojection.",
+      "npm": "ol",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "gboeing/osmnx",
+      "name": "OSMnx",
+      "category": "maps-geo",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "openstreetmap",
+        "street-networks",
+        "routing",
+        "networkx"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Download and analyze street networks and features from OpenStreetMap.",
+      "why": "Standard Python tool for OSM network analysis, built on NetworkX and GeoPandas.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Project-OSRM/osrm-backend",
+      "name": "OSRM",
+      "category": "maps-geo",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "routing",
+        "openstreetmap",
+        "directions",
+        "cpp"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Run a very fast self-hosted routing engine on OpenStreetMap data.",
+      "why": "High-performance OSM routing (~8k stars, BSD-2) with routes, tables, map matching.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "protomaps/PMTiles",
+      "name": "PMTiles",
+      "category": "maps-geo",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "vector-tiles",
+        "single-file",
+        "serverless",
+        "maps"
+      ],
+      "ecosystems": [
+        "ts",
+        "go"
+      ],
+      "use_for": "Serve map tiles from a single static file on S3 or a CDN, no tile server.",
+      "why": "Single-file tile archive format (~3k stars) that makes serverless maps cheap.",
+      "license_verified": {
+        "license": "BSD-3-Clause",
+        "note": "BSD-3 for reference implementations; spec is public domain/CC0",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "visgl/react-map-gl",
+      "name": "react-map-gl",
+      "category": "maps-geo",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "maplibre",
+        "mapbox",
+        "maps"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Use MapLibre or Mapbox GL maps as React components.",
+      "why": "Most-used React map wrapper (~2.3M weekly npm downloads), from the vis.gl team behind deck.gl.",
+      "npm": "react-map-gl",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "shapely/shapely",
+      "name": "Shapely",
+      "category": "maps-geo",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "geometry",
+        "python",
+        "geos",
+        "spatial-analysis"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Manipulate and analyse planar geometries in Python.",
+      "why": "Standard Python geometry library (GEOS bindings) underlying GeoPandas.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mapbox/supercluster",
+      "name": "Supercluster",
+      "category": "maps-geo",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "clustering",
+        "markers",
+        "geospatial",
+        "performance"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Cluster huge numbers of map points quickly in the browser or Node.",
+      "why": "Very fast point clustering used by MapLibre/Mapbox; ISC-licensed.",
+      "npm": "supercluster",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tidwall/tile38",
+      "name": "Tile38",
+      "category": "maps-geo",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "geofencing",
+        "geospatial-database",
+        "realtime",
+        "location"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Store moving objects and trigger realtime geofence events.",
+      "why": "Purpose-built in-memory geospatial DB with geofencing webhooks and a Redis-like protocol.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "felt/tippecanoe",
+      "name": "tippecanoe",
+      "category": "maps-geo",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "vector-tiles",
+        "geojson",
+        "mbtiles",
+        "pmtiles"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Build vector tilesets from large GeoJSON and other datasets.",
+      "why": "Maintained fork of Mapbox's tippecanoe by Felt; the standard tool for making vector tiles.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Turfjs/turf",
+      "name": "Turf",
+      "category": "maps-geo",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "geospatial",
+        "analysis",
+        "geojson",
+        "modular"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Run geospatial analysis (buffers, distances, intersections) on GeoJSON in JS.",
+      "why": "The standard modular geospatial analysis library for browser and Node.",
+      "npm": "@turf/turf",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "valhalla/valhalla",
+      "name": "Valhalla",
+      "category": "maps-geo",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "routing",
+        "openstreetmap",
+        "isochrones",
+        "multimodal"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Self-host multimodal routing, isochrones and map matching on OSM data.",
+      "why": "Flexible OSM routing engine (~6k stars, MIT) with dynamic costing and transit.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "COPYING is MIT",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

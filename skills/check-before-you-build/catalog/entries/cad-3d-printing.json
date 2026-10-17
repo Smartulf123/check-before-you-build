@@ -1,0 +1,405 @@
+{
+  "category": "cad-3d-printing",
+  "entries": [
+    {
+      "id": "BelfrySCAD/BOSL2",
+      "name": "BOSL2",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "openscad",
+        "library",
+        "shapes",
+        "threads"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Extend OpenSCAD with attachable shapes, threads, gears, rounding and transforms.",
+      "why": "The most comprehensive OpenSCAD standard library; dramatically shortens real-world models.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "gumyr/build123d",
+      "name": "build123d",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "parametric-cad",
+        "python",
+        "occt",
+        "code-cad"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Write precise, parametric CAD parts in modern, Pythonic code.",
+      "why": "Evolution of CadQuery ideas with builder and algebra modes, type hints and strong docs; same OCCT kernel.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "CadQuery/cadquery",
+      "name": "CadQuery",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "parametric-cad",
+        "python",
+        "occt",
+        "step"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Script parametric 3D CAD models in Python and export STEP/STL.",
+      "why": "Mature Python CAD library on OpenCascade with a fluent API; exports precise B-rep STEP files, not just meshes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "Ultimaker/Cura",
+      "name": "Cura",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "slicer",
+        "3d-printing",
+        "fdm"
+      ],
+      "ecosystems": [
+        "python",
+        "cpp"
+      ],
+      "use_for": "Popular open-source slicer for FDM 3D printers with plugin system",
+      "why": "One of the most used slicers with a Python plugin system and CuraEngine backend",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "FreeCAD/FreeCAD",
+      "name": "FreeCAD",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "parametric-cad",
+        "python-scripting",
+        "occt",
+        "engineering"
+      ],
+      "ecosystems": [
+        "cpp",
+        "python"
+      ],
+      "use_for": "Design parametric mechanical parts with a full GUI CAD that can be scripted in Python.",
+      "why": "The leading open-source parametric CAD application; full Python API and macros for automation.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jscad/OpenJSCAD.org",
+      "name": "JSCAD",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "library",
+        "app"
+      ],
+      "tags": [
+        "code-cad",
+        "javascript",
+        "csg",
+        "browser"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Create parametric 3D models in JavaScript, in the browser or Node.js.",
+      "why": "JS-native CSG modeling with modular packages and a web playground; easy to embed in web apps.",
+      "npm": "@jscad/modeling",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Klipper3d/klipper",
+      "name": "Klipper",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "firmware",
+        "3d-printer",
+        "motion-control",
+        "python"
+      ],
+      "ecosystems": [
+        "python",
+        "cpp"
+      ],
+      "use_for": "Run 3D printer firmware with host-side motion planning on a Raspberry Pi.",
+      "why": "High-speed firmware with input shaping and pressure advance; configured in text files and extensible in Python.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "LibreCAD/LibreCAD",
+      "name": "LibreCAD",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "2d-cad",
+        "dxf"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Open-source 2D CAD for DXF drawings",
+      "why": "The main open-source 2D drafting app",
+      "license_verified": {
+        "license": "GPL-2.0-only",
+        "note": "LICENSE states GPLv2",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "elalish/manifold",
+      "name": "Manifold",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "mesh",
+        "csg",
+        "boolean"
+      ],
+      "ecosystems": [
+        "cpp",
+        "ts",
+        "python"
+      ],
+      "use_for": "Fast, robust mesh boolean (CSG) library with JS/WASM and Python bindings",
+      "why": "Guaranteed-manifold booleans; adopted by OpenSCAD and Blender for speed",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "MarlinFirmware/Marlin",
+      "name": "Marlin",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "firmware",
+        "3d-printer",
+        "microcontroller",
+        "reprap"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Build and configure firmware that runs directly on a 3D printer mainboard.",
+      "why": "The most widely deployed 3D printer firmware, supporting 8- and 32-bit boards and a vast hardware range.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Arksine/moonraker",
+      "name": "Moonraker",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "klipper",
+        "api",
+        "3d-printing"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Web API server for Klipper used by Mainsail and Fluidd",
+      "why": "The API layer you build on to talk to Klipper printers",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "OctoPrint/OctoPrint",
+      "name": "OctoPrint",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "3d-printing",
+        "web-ui",
+        "plugins"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Web interface and API to control and monitor 3D printers",
+      "why": "The standard printer host with REST API and a huge plugin ecosystem",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Open-Cascade-SAS/OCCT",
+      "name": "Open CASCADE Technology",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "cad-kernel",
+        "brep",
+        "step"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Open-source B-rep CAD kernel for modelling, STEP/IGES exchange and meshing",
+      "why": "The geometry kernel under FreeCAD, CadQuery and build123d",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "openscad/openscad",
+      "name": "OpenSCAD",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "code-cad",
+        "csg",
+        "stl",
+        "3d-printing"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Model printable 3D parts with a scripting language and render STL from the command line.",
+      "why": "The classic programmer CAD tool; huge library ecosystem and the de facto format for parametric printables.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "OrcaSlicer/OrcaSlicer",
+      "name": "OrcaSlicer",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "slicer",
+        "gcode",
+        "bambu",
+        "prusa"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Slice 3D models into G-code for a wide range of FDM printers.",
+      "why": "Popular PrusaSlicer/Bambu Studio fork with built-in calibration tools and broad printer profiles.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "prusa3d/PrusaSlicer",
+      "name": "PrusaSlicer",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "slicer",
+        "3d-printing",
+        "fdm",
+        "sla"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Feature-rich slicer for FDM and SLA printers",
+      "why": "Upstream of many slicer forks (incl. Bambu Studio/Orca lineage); CLI for scripted slicing",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "fogleman/sdf",
+      "name": "sdf",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "sdf",
+        "mesh",
+        "python",
+        "stl"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate 3D-printable meshes from signed distance functions in Python.",
+      "why": "Tiny, expressive API for organic and smooth-blended shapes that are awkward in CSG tools.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "solvespace/solvespace",
+      "name": "SolveSpace",
+      "category": "cad-3d-printing",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "parametric-cad",
+        "constraints"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Parametric 2D/3D CAD with a constraint solver",
+      "why": "Lightweight constraint-based CAD; its solver library is reused in other tools",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

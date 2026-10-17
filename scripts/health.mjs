@@ -6,7 +6,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { parseArgs } from '../skills/check-before-you-build/scripts/lib/cli.mjs';
 import { TIER_LABEL } from '../skills/check-before-you-build/scripts/lib/criteria.mjs';
 import { CATALOG_DIR, readAllCategoryFiles } from './lib/catalog-files.mjs';
-import { checkRepo } from './lib/repo-check.mjs';
+import { checkRepoPatient as checkRepo } from './lib/repo-check.mjs';
 
 export function renderReport(rows, generatedAt) {
   const failing = rows.filter((r) => !r.pass);

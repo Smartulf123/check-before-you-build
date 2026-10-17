@@ -1,0 +1,520 @@
+{
+  "category": "workflow-automation",
+  "entries": [
+    {
+      "id": "activepieces/activepieces",
+      "name": "Activepieces",
+      "category": "workflow-automation",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "no-code",
+        "integrations",
+        "automation",
+        "mcp"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Self-host a Zapier-style automation builder with hundreds of app integrations.",
+      "why": "MIT-licensed core (unlike n8n), TypeScript piece framework, and integrations exposed as MCP servers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Activiti/Activiti",
+      "name": "Activiti",
+      "category": "workflow-automation",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "bpmn",
+        "bpm",
+        "workflow-engine",
+        "java"
+      ],
+      "ecosystems": [
+        "java"
+      ],
+      "use_for": "Embeddable BPMN workflow and business process engine for Java",
+      "why": "Long-standing BPMN 2.0 engine for Spring/Java apps, for human-task and approval workflows.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "apache/airflow",
+      "name": "Apache Airflow",
+      "category": "workflow-automation",
+      "kinds": [
+        "framework",
+        "service"
+      ],
+      "tags": [
+        "dag",
+        "scheduling",
+        "data-pipelines",
+        "etl"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Author, schedule and monitor batch workflows as Python DAGs.",
+      "why": "Industry standard for scheduled data pipelines with a huge provider/operator ecosystem and 4,700+ contributors.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "argoproj/argo-workflows",
+      "name": "Argo Workflows",
+      "category": "workflow-automation",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "kubernetes",
+        "dag",
+        "ci",
+        "ml-pipelines"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Run container-native workflows and DAGs on Kubernetes.",
+      "why": "CNCF graduated, the standard for parallel jobs on Kubernetes and the base of Kubeflow Pipelines.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "hibiken/asynq",
+      "name": "Asynq",
+      "category": "workflow-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "job-queue",
+        "redis",
+        "background-jobs"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Distributed background task queue for Go backed by Redis",
+      "why": "The de facto Go job queue: retries, scheduling, priorities and a web UI (asynqmon).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "taskforcesh/bullmq",
+      "name": "BullMQ",
+      "category": "workflow-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "job-queue",
+        "redis",
+        "node",
+        "background-jobs"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Add Redis-backed job queues with retries, delays and rate limiting to a Node.js app.",
+      "why": "Successor to Bull and the most used Node.js queue; supports flows, priorities and repeatable jobs.",
+      "npm": "bullmq",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "celery/celery",
+      "name": "Celery",
+      "category": "workflow-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "task-queue",
+        "python",
+        "distributed",
+        "background-jobs"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run asynchronous and scheduled background tasks in Python apps.",
+      "why": "The long-standing default Python task queue with Redis/RabbitMQ brokers and deep Django integration.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "conductor-oss/conductor",
+      "name": "Conductor",
+      "category": "workflow-automation",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "orchestration",
+        "microservices",
+        "event-driven",
+        "workflows"
+      ],
+      "ecosystems": [
+        "java",
+        "any"
+      ],
+      "use_for": "Orchestrate microservices and agent workflows with a JSON-defined workflow engine.",
+      "why": "Originally built at Netflix, battle-tested at scale with a visual UI and polyglot workers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "dagster-io/dagster",
+      "name": "Dagster",
+      "category": "workflow-automation",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "orchestration",
+        "data-pipelines",
+        "assets",
+        "scheduling"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Asset-based orchestration for data and ML pipelines",
+      "why": "Models pipelines as software-defined assets with lineage, testing and observability; a modern Airflow alternative.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "googleworkspace/cli",
+      "name": "Google Workspace CLI (gws)",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "google-workspace",
+        "gmail",
+        "drive",
+        "sheets",
+        "automation"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "One CLI for Drive, Gmail, Calendar, Sheets, Docs and every Workspace API, with structured JSON output for scripts and agents.",
+      "why": "Builds its commands from Google discovery docs, so it covers new APIs automatically; ships 40+ agent skills.",
+      "category": "workflow-automation",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "graphile/worker",
+      "name": "Graphile Worker",
+      "category": "workflow-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "job-queue",
+        "postgres",
+        "node",
+        "background-jobs"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Run background jobs in Node.js using only your existing Postgres database.",
+      "why": "No Redis needed; uses LISTEN/NOTIFY and SKIP LOCKED for low-latency, transactional job enqueueing.",
+      "npm": "graphile-worker",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "hatchet-dev/hatchet",
+      "name": "Hatchet",
+      "category": "workflow-automation",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "task-queue",
+        "durable",
+        "workflows",
+        "postgres"
+      ],
+      "ecosystems": [
+        "go",
+        "python",
+        "ts"
+      ],
+      "use_for": "Run background tasks and durable workflows on a Postgres-backed orchestration engine.",
+      "why": "Combines queue, scheduling, concurrency control and observability in one service with Python, TS and Go SDKs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "huginn/huginn",
+      "name": "Huginn",
+      "category": "workflow-automation",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "agents",
+        "automation",
+        "self-hosted",
+        "ifttt"
+      ],
+      "ecosystems": [
+        "ruby"
+      ],
+      "use_for": "Self-hosted agents that watch the web and act on events, IFTTT/Zapier style",
+      "why": "Long-standing MIT-licensed Zapier alternative with a large catalog of agent types.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "kestra-io/kestra",
+      "name": "Kestra",
+      "category": "workflow-automation",
+      "kinds": [
+        "engine",
+        "app"
+      ],
+      "tags": [
+        "orchestration",
+        "yaml",
+        "scheduling",
+        "event-driven"
+      ],
+      "ecosystems": [
+        "java"
+      ],
+      "use_for": "Declarative YAML workflow orchestration for data, infra and business processes",
+      "why": "Apache-2.0 orchestrator with UI, 600+ plugins and event triggers; a fully open alternative to Airflow and n8n.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "spotify/luigi",
+      "name": "Luigi",
+      "category": "workflow-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "pipelines",
+        "batch",
+        "dependency-graph"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build complex batch job pipelines with dependency resolution in Python",
+      "why": "Spotify-born, simple and proven pipeline library; lighter than Airflow when you just need task DAGs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "PrefectHQ/prefect",
+      "name": "Prefect",
+      "category": "workflow-automation",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "workflows",
+        "data-pipelines",
+        "orchestration",
+        "python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Turn Python functions into observable, retryable, scheduled workflows.",
+      "why": "Pythonic API with less boilerplate than Airflow, dynamic workflows and a good UI.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "rq/rq",
+      "name": "RQ",
+      "category": "workflow-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "job-queue",
+        "redis",
+        "background-jobs"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Simple Redis-backed job queue for Python background work",
+      "why": "The low-ceremony alternative to Celery; easy to adopt for Flask/Django apps.",
+      "license_verified": {
+        "license": "BSD-2-Clause",
+        "note": "LICENSE is 2-clause BSD text",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "sidekiq/sidekiq",
+      "name": "Sidekiq",
+      "category": "workflow-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "job-queue",
+        "redis",
+        "background-jobs",
+        "rails"
+      ],
+      "ecosystems": [
+        "ruby"
+      ],
+      "use_for": "Redis-backed background job processing for Ruby and Rails",
+      "why": "The standard Ruby background-job system; efficient threads, rich ecosystem, LGPLv3 OSS edition.",
+      "license_verified": {
+        "license": "LGPL-3.0-only",
+        "note": "LICENSE.txt: OSS Sidekiq is LGPLv3; Pro/Enterprise are separate commercial products",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "temporalio/temporal",
+      "name": "Temporal",
+      "category": "workflow-automation",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "durable-execution",
+        "workflows",
+        "orchestration",
+        "microservices"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Run long-running, fault-tolerant workflows as code with automatic retries and state persistence.",
+      "why": "The reference durable-execution platform with SDKs for Go, Java, TS, Python and .NET; used in production at large scale.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "triggerdotdev/trigger.dev",
+      "name": "Trigger.dev",
+      "category": "workflow-automation",
+      "kinds": [
+        "framework",
+        "service"
+      ],
+      "tags": [
+        "background-jobs",
+        "durable",
+        "typescript",
+        "ai-agents"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Write long-running background jobs and AI workflows in TypeScript without timeouts.",
+      "why": "TS-native with retries, queues, scheduling and realtime status; self-hostable or managed.",
+      "npm": "@trigger.dev/sdk",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "windmill-labs/windmill",
+      "name": "Windmill",
+      "category": "workflow-automation",
+      "kinds": [
+        "app",
+        "engine"
+      ],
+      "tags": [
+        "scripts",
+        "workflows",
+        "internal-tools",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "ts",
+        "python",
+        "go"
+      ],
+      "use_for": "Turn scripts into workflows, schedules, webhooks and internal UIs; self-hosted",
+      "why": "Fast open-core platform (AGPLv3 core) combining job queue, flows and app builder; strong n8n/Retool alternative.",
+      "license_verified": {
+        "license": "AGPL-3.0",
+        "note": "Open-core: backend/frontend AGPLv3, clients Apache-2.0; enterprise-flagged code proprietary (root LICENSE)",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vercel/workflow",
+      "name": "Workflow SDK (Vercel)",
+      "category": "workflow-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "durable",
+        "typescript",
+        "workflows",
+        "ai-agents"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Make TypeScript functions durable and resumable with simple directives.",
+      "why": "Lightweight durable execution for TS apps and agents that runs on Vercel or self-hosted backends.",
+      "npm": "workflow",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

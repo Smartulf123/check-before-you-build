@@ -1,0 +1,530 @@
+{
+  "category": "embedded-iot",
+  "entries": [
+    {
+      "id": "apache/nuttx",
+      "name": "Apache NuttX",
+      "category": "embedded-iot",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "rtos",
+        "posix",
+        "microcontroller",
+        "embedded"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "POSIX-compliant real-time OS for 8- to 64-bit microcontrollers",
+      "why": "Apache top-level RTOS with a Linux-like API; used in PX4 drones and commercial products",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "espressif/arduino-esp32",
+      "name": "Arduino core for ESP32",
+      "category": "embedded-iot",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "arduino",
+        "esp32",
+        "microcontrollers",
+        "official"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Program ESP32 boards using the Arduino API and library ecosystem.",
+      "why": "Official Espressif Arduino core; the easiest on-ramp to ESP32 development.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "bblanchon/ArduinoJson",
+      "name": "ArduinoJson",
+      "category": "embedded-iot",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "json",
+        "arduino",
+        "embedded",
+        "serialization"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Parse and generate JSON efficiently on Arduino and embedded C++.",
+      "why": "Fast, memory-efficient, header-only JSON library used across the Arduino ecosystem.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "adafruit/circuitpython",
+      "name": "CircuitPython",
+      "category": "embedded-iot",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "python",
+        "microcontroller",
+        "education",
+        "firmware"
+      ],
+      "ecosystems": [
+        "python",
+        "c"
+      ],
+      "use_for": "Beginner-friendly Python for microcontrollers with a huge driver library",
+      "why": "Adafruit-backed MicroPython fork with 500+ supported boards and a large library bundle",
+      "license_verified": {
+        "license": "MIT",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "eclipse-mosquitto/mosquitto",
+      "name": "Eclipse Mosquitto",
+      "category": "embedded-iot",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "mqtt",
+        "broker",
+        "iot",
+        "pubsub"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Lightweight MQTT 5/3.1.1 broker and client library",
+      "why": "The reference open MQTT broker; tiny footprint, runs from Raspberry Pis to servers",
+      "license_verified": {
+        "license": "EPL-2.0",
+        "note": "Dual licensed EPL-2.0 OR BSD-3-Clause (EDL-1.0) per LICENSE.txt",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "embassy-rs/embassy",
+      "name": "Embassy",
+      "category": "embedded-iot",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "rust",
+        "async",
+        "embedded",
+        "hal"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Async Rust framework and HALs for embedded devices (STM32, nRF, RP2040, ESP)",
+      "why": "The leading way to write async firmware in Rust, with HALs, networking and USB stacks",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "espressif/esp-idf",
+      "name": "ESP-IDF",
+      "category": "embedded-iot",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "esp32",
+        "sdk",
+        "freertos",
+        "official"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Develop production firmware for ESP32-family chips with Espressif's official SDK.",
+      "why": "Official Espressif framework with full access to Wi-Fi, BLE and chip peripherals.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "esphome/esphome",
+      "name": "ESPHome",
+      "category": "embedded-iot",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "esp32",
+        "yaml",
+        "firmware",
+        "home-assistant"
+      ],
+      "ecosystems": [
+        "python",
+        "cpp"
+      ],
+      "use_for": "Build custom ESP32/ESP8266/RP2040 firmware from YAML config with Home Assistant integration.",
+      "why": "Fastest way to make DIY sensors and devices; MIT (Python) and GPLv3 (C++), verified.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "FastLED/FastLED",
+      "name": "FastLED",
+      "category": "embedded-iot",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "led",
+        "arduino",
+        "ws2812",
+        "animation"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Drive addressable RGB LED strips (WS2812, APA102 and more) from Arduino-class boards.",
+      "why": "The standard LED library for Arduino with wide chipset support.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "FreeRTOS/FreeRTOS-Kernel",
+      "name": "FreeRTOS Kernel",
+      "category": "embedded-iot",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "rtos",
+        "microcontroller",
+        "real-time",
+        "c"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Small, portable real-time OS kernel for microcontrollers",
+      "why": "The most widely deployed MCU RTOS (MIT licensed); ships inside ESP-IDF and many vendor SDKs",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "blakeblackshear/frigate",
+      "name": "Frigate",
+      "category": "embedded-iot",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "nvr",
+        "object-detection",
+        "home-assistant",
+        "cameras"
+      ],
+      "ecosystems": [
+        "python",
+        "ts"
+      ],
+      "use_for": "Run a local NVR with real-time object detection for IP cameras",
+      "why": "Core smart-home component with MQTT events and deep Home Assistant integration; runs on Coral/OpenVINO.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "home-assistant/core",
+      "name": "Home Assistant",
+      "category": "embedded-iot",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "smart-home",
+        "home-automation",
+        "integrations",
+        "python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run a local smart-home hub and build integrations for devices and services.",
+      "why": "The largest open-source home automation platform with thousands of integrations.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "lvgl/lvgl",
+      "name": "LVGL",
+      "category": "embedded-iot",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "gui",
+        "embedded",
+        "display",
+        "widgets"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Build graphical UIs with widgets and animations on small displays and MCUs.",
+      "why": "The leading free embedded graphics library; MIT and runs from tiny MCUs up.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "micropython/micropython",
+      "name": "MicroPython",
+      "category": "embedded-iot",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "python",
+        "microcontrollers",
+        "interpreter",
+        "firmware"
+      ],
+      "ecosystems": [
+        "python",
+        "c"
+      ],
+      "use_for": "Run Python 3 directly on microcontrollers like ESP32, RP2040 and STM32.",
+      "why": "Lean, well-maintained Python implementation for MCUs; MIT (verified).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "node-red/node-red",
+      "name": "Node-RED",
+      "category": "embedded-iot",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "iot",
+        "flow-based",
+        "low-code",
+        "mqtt"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Low-code flow-based programming for wiring together devices, APIs and online services",
+      "why": "OpenJS Foundation project and the classic IoT integration tool, with thousands of community nodes",
+      "npm": "node-red",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "platformio/platformio-core",
+      "name": "PlatformIO",
+      "category": "embedded-iot",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "build-system",
+        "toolchains",
+        "embedded",
+        "ide"
+      ],
+      "ecosystems": [
+        "python",
+        "any"
+      ],
+      "use_for": "Manage toolchains, libraries, builds and uploads for many embedded platforms from one CLI.",
+      "why": "Cross-platform embedded build system covering 1,000+ boards and frameworks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "raspberrypi/pico-sdk",
+      "name": "Raspberry Pi Pico SDK",
+      "category": "embedded-iot",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "rp2040",
+        "rp2350",
+        "c",
+        "microcontroller"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Official C/C++ SDK for RP2040 and RP2350 microcontrollers",
+      "why": "Official SDK for one of the most popular hobbyist and commercial MCU families",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "arendst/Tasmota",
+      "name": "Tasmota",
+      "category": "embedded-iot",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "esp8266",
+        "esp32",
+        "firmware",
+        "mqtt"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Flash alternative firmware onto ESP-based smart devices for local MQTT/HTTP control.",
+      "why": "Mature, widely deployed firmware supporting a huge range of off-the-shelf devices.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tinygo-org/tinygo",
+      "name": "TinyGo",
+      "category": "embedded-iot",
+      "kinds": [
+        "cli",
+        "engine"
+      ],
+      "tags": [
+        "go",
+        "compiler",
+        "microcontrollers",
+        "wasm"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Compile Go programs for microcontrollers and small WebAssembly targets.",
+      "why": "LLVM-based Go compiler supporting many boards; BSD-3 (verified).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "wled/WLED",
+      "name": "WLED",
+      "category": "embedded-iot",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "esp32",
+        "led",
+        "firmware",
+        "home-assistant"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Flash ESP32/ESP8266 boards to drive addressable RGB LEDs over WiFi",
+      "why": "The standard LED firmware: 100+ effects, JSON/MQTT/E1.31 APIs and Home Assistant integration.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "78/xiaozhi-esp32",
+      "name": "xiaozhi-esp32",
+      "category": "embedded-iot",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "esp32",
+        "voice-assistant",
+        "mcp",
+        "llm"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Build an ESP32 voice assistant that talks to LLMs and controls devices via MCP",
+      "why": "Popular open firmware (163 contributors) supporting many ESP32 boards, wake word and MCP device control.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "zephyrproject-rtos/zephyr",
+      "name": "Zephyr RTOS",
+      "category": "embedded-iot",
+      "kinds": [
+        "framework",
+        "engine"
+      ],
+      "tags": [
+        "rtos",
+        "microcontrollers",
+        "bluetooth",
+        "linux-foundation"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Build firmware for resource-constrained devices on a scalable, multi-architecture RTOS.",
+      "why": "Linux Foundation RTOS with broad board support and strong vendor backing; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "Koenkk/zigbee2mqtt",
+      "name": "Zigbee2MQTT",
+      "category": "embedded-iot",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "zigbee",
+        "mqtt",
+        "smart-home",
+        "bridge"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Bridge Zigbee devices to MQTT so you can use them without vendor hubs",
+      "why": "Supports thousands of Zigbee devices; the standard open Zigbee bridge for Home Assistant and other platforms",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

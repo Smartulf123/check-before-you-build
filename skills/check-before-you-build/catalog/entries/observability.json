@@ -1,0 +1,849 @@
+{
+  "category": "observability",
+  "entries": [
+    {
+      "id": "apache/skywalking",
+      "name": "Apache SkyWalking",
+      "category": "observability",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "apm",
+        "tracing",
+        "metrics"
+      ],
+      "ecosystems": [
+        "java"
+      ],
+      "use_for": "Self-hosted APM with distributed tracing and service topology",
+      "why": "Apache top-level APM with agents for many languages, eBPF profiling and OpenTelemetry ingest.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "CocoaLumberjack/CocoaLumberjack",
+      "name": "CocoaLumberjack",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "logging",
+        "ios",
+        "macos",
+        "swift"
+      ],
+      "ecosystems": [
+        "swift"
+      ],
+      "use_for": "Fast, flexible logging for Apple platforms",
+      "why": "Long-standing logging framework for iOS/macOS with file and custom loggers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "debug-js/debug",
+      "name": "debug",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "logging",
+        "debugging",
+        "nodejs"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Namespaced debug logging for Node and browsers",
+      "why": "Tiny, ubiquitous debug logger toggled by the DEBUG env var; a dependency of much of npm.",
+      "npm": "debug",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "amir20/dozzle",
+      "name": "Dozzle",
+      "category": "observability",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "logs",
+        "docker",
+        "kubernetes"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Realtime web log viewer for Docker, Swarm and K8s containers",
+      "why": "Lightweight self-hosted container log viewer, widely deployed alongside dev and homelab stacks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "fluent/fluentd",
+      "name": "Fluentd",
+      "category": "observability",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "logging",
+        "log-shipping",
+        "cncf"
+      ],
+      "ecosystems": [
+        "ruby"
+      ],
+      "use_for": "Unified logging layer to collect and route logs",
+      "why": "CNCF graduated log collector with a large plugin ecosystem.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "grafana/grafana",
+      "name": "Grafana",
+      "category": "observability",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "dashboards",
+        "visualization",
+        "metrics",
+        "alerting"
+      ],
+      "ecosystems": [
+        "go",
+        "ts"
+      ],
+      "use_for": "Build dashboards and alerts over Prometheus, Loki, Postgres and dozens of other data sources.",
+      "why": "The standard observability dashboard (~77k stars, AGPL-3.0); pairs with Prometheus, Loki and Tempo.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "grafana/loki",
+      "name": "Grafana Loki",
+      "category": "observability",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "logs",
+        "log-aggregation",
+        "grafana",
+        "cloud-native"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Aggregate and query logs cheaply by indexing only labels.",
+      "why": "Cost-efficient log store that pairs natively with Grafana and Prometheus labels (AGPL-3.0).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "grafana/pyroscope",
+      "name": "Grafana Pyroscope",
+      "category": "observability",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "profiling",
+        "continuous-profiling"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Continuous profiling down to the line of code",
+      "why": "Grafana's continuous profiling backend with SDKs and eBPF; complements Loki/Tempo; AGPL-3.0.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "hyperdxio/hyperdx",
+      "name": "HyperDX",
+      "category": "observability",
+      "kinds": [
+        "service",
+        "app"
+      ],
+      "tags": [
+        "logs",
+        "traces",
+        "session-replay",
+        "clickhouse"
+      ],
+      "ecosystems": [
+        "ts",
+        "any"
+      ],
+      "use_for": "Self-host one platform for logs, metrics, traces, errors and session replays.",
+      "why": "MIT-licensed, OpenTelemetry-native, ClickHouse-backed; now part of ClickStack.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jaegertracing/jaeger",
+      "name": "Jaeger",
+      "category": "observability",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "tracing",
+        "distributed-tracing",
+        "opentelemetry",
+        "cncf"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Collect, store and visualize distributed traces.",
+      "why": "CNCF-graduated tracing backend with native OpenTelemetry ingestion.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "kubeshark/kubeshark",
+      "name": "Kubeshark",
+      "category": "observability",
+      "kinds": [
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "kubernetes",
+        "network",
+        "ebpf"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Inspect Kubernetes L4/L7 API traffic with full context",
+      "why": "eBPF-powered traffic observability for K8s, like Wireshark for clusters.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "langfuse/langfuse",
+      "name": "Langfuse",
+      "category": "observability",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "llm-observability",
+        "tracing",
+        "evals",
+        "prompts"
+      ],
+      "ecosystems": [
+        "ts",
+        "python"
+      ],
+      "use_for": "Trace, evaluate and debug LLM apps and agents, with prompt management.",
+      "why": "Leading open-source LLM observability platform (~36k stars) with SDKs and OTel support.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "MIT outside ee/ directories (those are under ee/LICENSE)",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tstack/lnav",
+      "name": "lnav",
+      "category": "observability",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "log-viewer",
+        "terminal",
+        "sql"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Navigate, merge and query log files in the terminal",
+      "why": "Powerful log file navigator with automatic format detection and SQL queries over logs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "sirupsen/logrus",
+      "name": "logrus",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "logging",
+        "go",
+        "structured"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Structured, pluggable logging for Go",
+      "why": "Classic Go structured logger with hooks; huge installed base (maintenance mode but stable).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "Delgan/loguru",
+      "name": "Loguru",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "logging",
+        "python",
+        "simple"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Add readable, structured logging to Python apps with almost no setup.",
+      "why": "Most popular third-party Python logger; one import replaces stdlib logging boilerplate.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Seldaek/monolog",
+      "name": "Monolog",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "logging",
+        "php",
+        "psr-3"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "PSR-3 logging for PHP with many handlers",
+      "why": "The standard PHP logger used by Laravel and Symfony.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "netdata/netdata",
+      "name": "Netdata",
+      "category": "observability",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "monitoring",
+        "metrics",
+        "real-time",
+        "infrastructure"
+      ],
+      "ecosystems": [
+        "c",
+        "go"
+      ],
+      "use_for": "Monitor servers and containers in real time with per-second metrics and zero config.",
+      "why": "Very popular infra monitoring agent (~81k stars, GPL-3.0) with auto-discovery of services.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "ccfos/nightingale",
+      "name": "Nightingale",
+      "category": "observability",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "alerting",
+        "monitoring",
+        "metrics"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Self-hosted alerting and monitoring for metrics, logs and databases",
+      "why": "CCF open-source monitoring/alerting platform working on top of Prometheus, VictoriaMetrics and more.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "openobserve/openobserve",
+      "name": "OpenObserve",
+      "category": "observability",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "logs",
+        "metrics",
+        "traces",
+        "rum"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Self-hosted logs, metrics and traces platform on object storage",
+      "why": "Rust all-in-one observability backend positioned as a low-cost Elasticsearch/Datadog alternative; AGPL-3.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "open-telemetry/opentelemetry-collector",
+      "name": "OpenTelemetry Collector",
+      "category": "observability",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "opentelemetry",
+        "telemetry-pipeline",
+        "traces",
+        "metrics"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Receive, process and export traces, metrics and logs in a vendor-neutral pipeline.",
+      "why": "CNCF core component (~8k stars) for routing OTel data to any backend.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "open-telemetry/opentelemetry-go",
+      "name": "OpenTelemetry Go",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "opentelemetry",
+        "tracing",
+        "metrics",
+        "instrumentation"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Instrument Go services with vendor-neutral traces, metrics and logs.",
+      "why": "Official OpenTelemetry API and SDK for Go; export to any OTel-compatible backend.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "open-telemetry/opentelemetry-js",
+      "name": "OpenTelemetry JS",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "opentelemetry",
+        "tracing",
+        "nodejs",
+        "instrumentation"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Instrument Node.js and browser apps with OpenTelemetry traces and metrics.",
+      "why": "Official OTel SDK for JavaScript (~3.5k stars); vendor-neutral instrumentation.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "open-telemetry/opentelemetry-python",
+      "name": "OpenTelemetry Python",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "opentelemetry",
+        "tracing",
+        "python",
+        "instrumentation"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Instrument Python apps with OpenTelemetry traces, metrics and logs.",
+      "why": "Official OTel SDK for Python; auto-instrumentation for Django, Flask, FastAPI and more.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "pinojs/pino",
+      "name": "Pino",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "logging",
+        "json",
+        "nodejs",
+        "fast"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Write fast structured JSON logs from Node.js apps.",
+      "why": "The fastest mainstream Node.js logger with transports and framework integrations (Fastify default).",
+      "npm": "pino",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "prometheus/prometheus",
+      "name": "Prometheus",
+      "category": "observability",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "metrics",
+        "monitoring",
+        "alerting",
+        "time-series"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Collect and query metrics and alert on them.",
+      "why": "CNCF-graduated standard for metrics monitoring; the PromQL ecosystem is everywhere.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "getsentry/sentry-javascript",
+      "name": "Sentry JavaScript SDK",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "error-tracking",
+        "performance",
+        "session-replay",
+        "monitoring"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Capture errors, performance traces and replays from browser and Node apps.",
+      "why": "Official Sentry SDKs (MIT) for React, Next.js, Node and more; the most used error-tracking client.",
+      "npm": "@sentry/browser",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "SigNoz/signoz",
+      "name": "SigNoz",
+      "category": "observability",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "apm",
+        "opentelemetry",
+        "logs",
+        "traces"
+      ],
+      "ecosystems": [
+        "go",
+        "ts"
+      ],
+      "use_for": "Self-host an OpenTelemetry-native APM with logs, traces and metrics in one app.",
+      "why": "Open-source Datadog alternative (~32k stars) built on OTel and ClickHouse.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "MIT outside ee/ and cmd/enterprise/ (those are under ee/LICENSE)",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "gabime/spdlog",
+      "name": "spdlog",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "logging",
+        "cpp"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Fast, header-only C++ logging",
+      "why": "The default C++ logging library: fmt-based, async sinks, very fast.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "LICENSE file is the MIT License",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "influxdata/telegraf",
+      "name": "Telegraf",
+      "category": "observability",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "metrics",
+        "collector",
+        "agent"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Collect and ship metrics/logs from 300+ sources",
+      "why": "Plugin-driven collection agent with input/output plugins for nearly every system; 1,500+ contributors.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "thanos-io/thanos",
+      "name": "Thanos",
+      "category": "observability",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "prometheus",
+        "long-term-storage",
+        "ha"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Highly available Prometheus with long-term object storage",
+      "why": "CNCF project adding global query, HA and unlimited retention to Prometheus.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "JakeWharton/timber",
+      "name": "Timber",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "logging",
+        "android"
+      ],
+      "ecosystems": [
+        "kotlin",
+        "java"
+      ],
+      "use_for": "Extensible logging API for Android",
+      "why": "The standard Android logging wrapper on top of Android's Log class.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "tokio-rs/tracing",
+      "name": "tracing",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "tracing",
+        "logging",
+        "rust",
+        "async"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Instrument Rust apps with structured, async-aware spans and events.",
+      "why": "The standard Rust instrumentation framework, with OpenTelemetry and log subscribers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vectordotdev/vector",
+      "name": "Vector",
+      "category": "observability",
+      "kinds": [
+        "service",
+        "cli"
+      ],
+      "tags": [
+        "logs",
+        "pipeline",
+        "metrics",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust",
+        "any"
+      ],
+      "use_for": "Collect, transform and route logs and metrics to any backend.",
+      "why": "High-performance Rust observability pipeline from Datadog; replaces Logstash/Fluentd setups.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "VictoriaMetrics/VictoriaMetrics",
+      "name": "VictoriaMetrics",
+      "category": "observability",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "metrics",
+        "time-series",
+        "prometheus",
+        "monitoring"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Store and query metrics at scale as a Prometheus-compatible backend.",
+      "why": "Drop-in Prometheus long-term storage with lower resource use; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "winstonjs/winston",
+      "name": "winston",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "logging",
+        "nodejs",
+        "transports"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Log from Node.js with multiple transports, levels and formats.",
+      "why": "Long-standing Node logger (~27M weekly npm downloads) with a large transport ecosystem.",
+      "npm": "winston",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "uber-go/zap",
+      "name": "zap",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "logging",
+        "structured-logging",
+        "go",
+        "fast"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Write fast, structured, leveled logs in Go.",
+      "why": "Uber's zero-allocation structured logger; one of the most used Go logging libraries.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "rs/zerolog",
+      "name": "zerolog",
+      "category": "observability",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "logging",
+        "go",
+        "json"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Zero-allocation JSON logging for Go",
+      "why": "One of the fastest Go structured loggers with a chainable API.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "openzipkin/zipkin",
+      "name": "Zipkin",
+      "category": "observability",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "tracing",
+        "distributed-tracing"
+      ],
+      "ecosystems": [
+        "java"
+      ],
+      "use_for": "Collect and view distributed traces",
+      "why": "Long-standing distributed tracing system and UI; compatible with OpenTelemetry exporters.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    }
+  ]
+}

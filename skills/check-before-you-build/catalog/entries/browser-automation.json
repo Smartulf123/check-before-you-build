@@ -1,0 +1,629 @@
+{
+  "category": "browser-automation",
+  "entries": [
+    {
+      "id": "vercel-labs/agent-browser",
+      "name": "agent-browser",
+      "category": "browser-automation",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "ai-agents",
+        "browser",
+        "cli",
+        "automation"
+      ],
+      "ecosystems": [
+        "ts",
+        "rust"
+      ],
+      "use_for": "Give coding agents a fast CLI to drive a headless browser with ref-based snapshots.",
+      "why": "Vercel Labs' browser CLI for AI agents (~44k stars); compact accessibility snapshots save tokens.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "browser-use/browser-use",
+      "name": "Browser Use",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "ai-agents",
+        "browser",
+        "llm",
+        "automation"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Let an LLM agent operate a real browser to complete web tasks.",
+      "why": "Most popular AI browser-agent library (118k stars); works with any major LLM.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "browser-use/browser-harness",
+      "name": "browser-harness",
+      "category": "browser-automation",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "coding-agents",
+        "chrome",
+        "cdp"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Let coding agents drive your real logged-in Chrome",
+      "why": "From the browser-use team: lightweight harness connecting Claude Code/Codex/Cursor to a real Chrome via CDP.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "cheeriojs/cheerio",
+      "name": "Cheerio",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "html-parsing",
+        "scraping",
+        "jquery",
+        "dom"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Parse and query HTML with a jQuery-like API in Node.js for scraping.",
+      "why": "Default HTML parsing library for Node scrapers (~27M weekly npm downloads); fast, no browser needed.",
+      "npm": "cheerio",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "chromedp/chromedp",
+      "name": "chromedp",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "cdp",
+        "chrome",
+        "go",
+        "headless"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Drive Chrome via the DevTools Protocol from Go without external dependencies.",
+      "why": "Most-used Go library for headless Chrome (~13k stars); pure Go CDP client.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "gocolly/colly",
+      "name": "Colly",
+      "category": "browser-automation",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "scraper",
+        "crawler",
+        "go",
+        "fast"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Write fast scrapers and crawlers in Go.",
+      "why": "The standard Go scraping framework; simple callback API and high throughput.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "unclecode/crawl4ai",
+      "name": "Crawl4AI",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "crawler",
+        "llm",
+        "markdown",
+        "rag"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Crawl websites into clean, LLM-ready Markdown and structured data.",
+      "why": "Open-source (Apache-2.0) crawler built for RAG and agents, 86k stars; runs fully locally.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "apify/crawlee",
+      "name": "Crawlee",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "crawler",
+        "scraping",
+        "playwright",
+        "puppeteer"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Build reliable Node.js crawlers over HTTP, Playwright or Puppeteer with queues and retries.",
+      "why": "Production crawling toolkit from Apify: request queues, proxy rotation, autoscaling built in.",
+      "npm": "crawlee",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "apify/crawlee-python",
+      "name": "Crawlee for Python",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "crawler",
+        "scraping",
+        "playwright",
+        "asyncio"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build reliable Python crawlers with Playwright or HTTP, queues, retries and storage.",
+      "why": "Python port of Crawlee with the same production-grade crawling primitives.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "firecrawl/firecrawl",
+      "name": "Firecrawl",
+      "category": "browser-automation",
+      "kinds": [
+        "service",
+        "library"
+      ],
+      "tags": [
+        "scraping",
+        "crawler",
+        "llm",
+        "api"
+      ],
+      "ecosystems": [
+        "ts",
+        "python"
+      ],
+      "use_for": "Turn websites into LLM-ready Markdown or structured data via an API you can self-host.",
+      "why": "Widely used scrape/crawl/search API for AI apps; SDKs for many languages (AGPL-3.0 server).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jhy/jsoup",
+      "name": "jsoup",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "html-parser",
+        "java",
+        "scraping"
+      ],
+      "ecosystems": [
+        "java"
+      ],
+      "use_for": "Parse, clean and scrape HTML in Java",
+      "why": "The standard Java HTML parser with CSS selectors and safe-list sanitizing, maintained since 2009.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "projectdiscovery/katana",
+      "name": "Katana",
+      "category": "browser-automation",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "crawler",
+        "spider",
+        "headless"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Fast web crawling and spidering with headless or standard modes",
+      "why": "ProjectDiscovery's crawler with JS parsing, scope control and pipeline-friendly output; usable as a Go library.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "lightpanda-io/browser",
+      "name": "Lightpanda",
+      "category": "browser-automation",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "headless-browser",
+        "cdp",
+        "zig",
+        "automation"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Run a lightweight headless browser driven via CDP from Puppeteer or Playwright.",
+      "why": "Purpose-built headless browser in Zig; much lower memory and faster startup than Chrome (AGPL-3.0).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "getmaxun/maxun",
+      "name": "Maxun",
+      "category": "browser-automation",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "no-code",
+        "extraction",
+        "api",
+        "monitoring"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Turn websites into structured APIs with self-hosted robots",
+      "why": "Self-hostable open-source scraping platform with a recorder, scheduled runs and API output; AGPL-3.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "codelucas/newspaper",
+      "name": "newspaper3k",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "article-extraction",
+        "news",
+        "nlp"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Extract article text, authors and metadata from news pages",
+      "why": "Widely used Python article extractor and news crawler.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "h4ckf0r0day/obscura",
+      "name": "Obscura",
+      "category": "browser-automation",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "headless-browser",
+        "ai-agents",
+        "scraping"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Lightweight headless browser for AI agents and scraping",
+      "why": "Purpose-built headless browser aimed at agent and scraping workloads; ~90 contributors, Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "alibaba/page-agent",
+      "name": "page-agent",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "gui-agent",
+        "in-page",
+        "natural-language"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Control a web page's UI with natural language from inside the page",
+      "why": "Embeddable JS GUI agent from Alibaba that drives web interfaces without a separate browser harness.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "microsoft/playwright-cli",
+      "name": "Playwright CLI",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "playwright",
+        "browser",
+        "agents",
+        "cli"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Drive a real browser from a coding agent with short CLI commands instead of a heavy MCP server.",
+      "why": "Official Microsoft tool; token-efficient browser automation built for agents, ships its own skills.",
+      "category": "browser-automation",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "puppeteer/puppeteer",
+      "name": "Puppeteer",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "headless-chrome",
+        "cdp",
+        "automation",
+        "scraping"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Control headless Chrome or Firefox from Node.js for scraping, screenshots and automation.",
+      "why": "The original high-level Chrome automation API from the Chrome team; 95k stars.",
+      "npm": "puppeteer",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "mozilla/readability",
+      "name": "Readability.js",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "article-extraction",
+        "reader-mode",
+        "html",
+        "content"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Extract the main article content from an HTML page, like Firefox Reader View.",
+      "why": "Mozilla's battle-tested content extractor (~11k stars) used in Firefox Reader View.",
+      "npm": "@mozilla/readability",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "go-rod/rod",
+      "name": "Rod",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "cdp",
+        "browser",
+        "go",
+        "scraping"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Automate and scrape with Chrome from Go using a high-level, chainable API.",
+      "why": "High-level Go DevTools driver (~7k stars) with auto-wait, iframe and concurrency support.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "ScrapeGraphAI/Scrapegraph-ai",
+      "name": "ScrapeGraphAI",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "llm",
+        "scraping",
+        "extraction",
+        "graphs"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Extract structured data from websites by describing what you want to an LLM.",
+      "why": "Popular LLM-powered scraping library (~32k stars); prompt-driven pipelines, local or hosted models.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "D4Vinci/Scrapling",
+      "name": "Scrapling",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "scraping",
+        "adaptive",
+        "stealth",
+        "parsing"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Scrape sites with adaptive selectors that survive layout changes, from simple fetches to full crawls.",
+      "why": "Fast-growing (88k stars) adaptive scraper with fast parsing and built-in fetchers; BSD-3.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "scrapy/scrapy",
+      "name": "Scrapy",
+      "category": "browser-automation",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "crawler",
+        "scraping",
+        "spiders",
+        "pipelines"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build large-scale crawlers and scrapers with spiders, pipelines and middleware.",
+      "why": "The mature, battle-tested Python crawling framework with a large extension ecosystem.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "SeleniumHQ/selenium",
+      "name": "Selenium",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "webdriver",
+        "browser-automation",
+        "cross-browser",
+        "grid"
+      ],
+      "ecosystems": [
+        "java",
+        "python",
+        "js",
+        "csharp",
+        "ruby"
+      ],
+      "use_for": "Automate real browsers via WebDriver from Java, Python, JS, C# or Ruby.",
+      "why": "The original browser automation project (~35k stars); W3C WebDriver standard, Grid for scaling.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "Skyvern-AI/skyvern",
+      "name": "Skyvern",
+      "category": "browser-automation",
+      "kinds": [
+        "framework",
+        "service"
+      ],
+      "tags": [
+        "ai-agents",
+        "browser",
+        "vision",
+        "workflows"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Automate browser workflows on unseen sites with LLM and computer-vision agents.",
+      "why": "AI browser automation (~23k stars, AGPL-3.0) that fills forms and runs flows without per-site selectors.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "browserbase/stagehand",
+      "name": "Stagehand",
+      "category": "browser-automation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "ai",
+        "browser",
+        "playwright",
+        "extraction"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Mix code and natural-language actions to automate and extract data from websites.",
+      "why": "Combines deterministic Playwright code with AI act/extract/observe primitives; TS-first.",
+      "npm": "@browserbasehq/stagehand",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "adbar/trafilatura",
+      "name": "Trafilatura",
+      "category": "browser-automation",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "text-extraction",
+        "boilerplate-removal",
+        "crawler",
+        "metadata"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Extract main text, metadata and comments from web pages.",
+      "why": "Top-scoring main-content extractor in benchmarks; Python library and CLI.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

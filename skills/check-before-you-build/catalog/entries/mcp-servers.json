@@ -1,0 +1,654 @@
+{
+  "category": "mcp-servers",
+  "entries": [
+    {
+      "id": "apify/apify-mcp-server",
+      "name": "Apify MCP Server",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "scraping",
+        "crawlers",
+        "mcp",
+        "data-extraction"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "official": true,
+      "use_for": "Give agents access to thousands of ready-made scrapers and crawlers for social media, maps, e-commerce and websites.",
+      "why": "Official Apify server with hosted OAuth access; the broadest catalogue of web-data tools available over MCP.",
+      "category": "mcp-servers",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "awslabs/mcp",
+      "name": "AWS MCP Servers",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "aws",
+        "cloud",
+        "mcp"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Official MCP servers for AWS services, docs, CDK, cost and more",
+      "why": "AWS's own suite of MCP servers with broad service coverage",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "ahujasid/mcp-for-blender",
+      "name": "Blender MCP",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "blender",
+        "3d",
+        "mcp"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Drive Blender from Claude and other agents for 3D modeling",
+      "why": "The most popular creative-tool MCP server",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "ChromeDevTools/chrome-devtools-mcp",
+      "name": "Chrome DevTools MCP",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "chrome",
+        "devtools",
+        "debugging",
+        "performance"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Let coding agents inspect and debug a live Chrome: DOM, console, network, performance traces.",
+      "why": "Official Chrome DevTools team server; best for debugging and performance work in agents.",
+      "npm": "chrome-devtools-mcp",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "zilliztech/claude-context",
+      "name": "Claude Context",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "mcp",
+        "code-search",
+        "semantic-search",
+        "vector"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Semantic code search over a whole codebase for coding agents",
+      "why": "Zilliz's MCP server that indexes code into a vector DB (Milvus/Zilliz) for hybrid search, cutting tokens for agents.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "cloudflare/mcp-server-cloudflare",
+      "name": "Cloudflare MCP Servers",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "cloudflare",
+        "workers",
+        "mcp"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "MCP servers for Cloudflare: Workers, observability, DNS, docs, browser rendering",
+      "why": "Official remote MCP servers from Cloudflare",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "DeusData/codebase-memory-mcp",
+      "name": "codebase-memory-mcp",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "mcp",
+        "code-intelligence",
+        "knowledge-graph",
+        "coding-agents"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Give coding agents a persistent code knowledge graph via MCP",
+      "why": "High-performance MCP server indexing repos into a queryable graph (162 languages) so agents navigate code without re-reading files.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "upstash/context7",
+      "name": "Context7",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp",
+        "service"
+      ],
+      "tags": [
+        "docs",
+        "mcp",
+        "context",
+        "libraries"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Feed agents up-to-date, version-specific library documentation via MCP.",
+      "why": "Widely used fix for outdated API knowledge in coding agents; official Upstash server.",
+      "npm": "@upstash/context7-mcp",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "wonderwhy-er/DesktopCommanderMCP",
+      "name": "Desktop Commander MCP",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "mcp",
+        "terminal",
+        "filesystem",
+        "editing"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Give Claude terminal control, file search and diff-based editing",
+      "why": "Popular MCP server for local shell commands, long-running processes, file search and surgical edits.",
+      "npm": "@wonderwhy-er/desktop-commander",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "exa-labs/exa-mcp-server",
+      "name": "Exa MCP Server",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "web-search",
+        "mcp",
+        "research",
+        "crawling"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Give agents web search and crawling via the Exa search API.",
+      "why": "Official Exa server, also offered as a hosted remote endpoint.",
+      "npm": "exa-mcp-server",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "PrefectHQ/fastmcp",
+      "name": "FastMCP",
+      "category": "mcp-servers",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "mcp",
+        "python",
+        "server",
+        "client"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Pythonic framework for building MCP servers and clients quickly.",
+      "why": "Most popular high-level Python MCP framework; adds auth, composition, proxying and testing.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "firecrawl/firecrawl-mcp-server",
+      "name": "Firecrawl MCP Server",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "scraping",
+        "web-search",
+        "mcp",
+        "crawling"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Add web scraping, crawling and search to agents through Firecrawl.",
+      "why": "Official Firecrawl server; returns clean markdown from pages for LLM use.",
+      "npm": "firecrawl-mcp",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "GLips/Figma-Context-MCP",
+      "name": "Framelink Figma MCP",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "figma",
+        "design-to-code",
+        "mcp"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Feed Figma layout data to coding agents for design-to-code",
+      "why": "Widely used Figma MCP for one-shot UI implementation",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "LaurieWired/GhidraMCP",
+      "name": "GhidraMCP",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp",
+        "plugin"
+      ],
+      "tags": [
+        "mcp",
+        "ghidra",
+        "reverse-engineering",
+        "decompiler"
+      ],
+      "ecosystems": [
+        "java",
+        "python"
+      ],
+      "use_for": "Let LLMs drive Ghidra to decompile and analyze binaries",
+      "why": "Ghidra plugin plus MCP bridge exposing decompilation, renaming and xrefs to agents for autonomous reverse engineering.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "github/github-mcp-server",
+      "name": "GitHub MCP Server",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "github",
+        "mcp",
+        "issues",
+        "pull-requests"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Give agents access to GitHub repos, issues, PRs and Actions through MCP.",
+      "why": "GitHub's official server, available locally or as a hosted remote server.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "modelcontextprotocol/inspector",
+      "name": "MCP Inspector",
+      "category": "mcp-servers",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "mcp",
+        "debugging",
+        "testing"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Visually test and debug MCP servers",
+      "why": "Official dev tool for building and debugging MCP servers",
+      "official": true,
+      "license_verified": {
+        "license": "Apache-2.0",
+        "note": "Apache-2.0; some older contributions remain MIT during MCP relicensing",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "modelcontextprotocol/python-sdk",
+      "name": "MCP Python SDK",
+      "category": "mcp-servers",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "mcp",
+        "sdk",
+        "python",
+        "server",
+        "client"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Official Python SDK for building MCP servers and clients.",
+      "why": "The reference Python SDK, including the FastMCP-style decorator API.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "modelcontextprotocol/servers",
+      "name": "MCP reference servers",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "mcp",
+        "reference",
+        "filesystem",
+        "git",
+        "fetch"
+      ],
+      "ecosystems": [
+        "ts",
+        "python"
+      ],
+      "use_for": "Reference MCP servers (filesystem, git, fetch, memory and more) maintained by the MCP project.",
+      "why": "Official reference implementations; the canonical examples for building and testing servers.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "googleapis/mcp-toolbox",
+      "name": "MCP Toolbox for Databases",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "databases",
+        "sql",
+        "mcp"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "MCP server exposing Postgres, MySQL, BigQuery, AlloyDB and more as safe tools",
+      "why": "Google's open-source database MCP server with many backends",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "modelcontextprotocol/typescript-sdk",
+      "name": "MCP TypeScript SDK",
+      "category": "mcp-servers",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "mcp",
+        "sdk",
+        "typescript",
+        "server",
+        "client"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Official TypeScript SDK for building MCP servers and clients.",
+      "why": "The reference SDK most JS/TS MCP servers are built on.",
+      "npm": "@modelcontextprotocol/sdk",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "mcp-use/mcp-use",
+      "name": "mcp-use",
+      "category": "mcp-servers",
+      "kinds": [
+        "framework",
+        "library"
+      ],
+      "tags": [
+        "mcp",
+        "client",
+        "apps",
+        "typescript",
+        "python"
+      ],
+      "ecosystems": [
+        "ts",
+        "python"
+      ],
+      "use_for": "Full-stack framework for building MCP servers, MCP Apps and connecting agents to any MCP server.",
+      "why": "Covers both client and server side with SDKs for TS and Python; handy for MCP Apps in ChatGPT/Claude.",
+      "npm": "mcp-use",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "czlonkowski/n8n-mcp",
+      "name": "n8n-mcp",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "mcp",
+        "n8n",
+        "workflow-automation"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Let Claude, Cursor etc. design and build n8n workflows",
+      "why": "MCP server exposing n8n node docs, properties and validation so agents can generate working n8n workflows.",
+      "npm": "n8n-mcp",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "microsoft/playwright-mcp",
+      "name": "Playwright MCP",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "browser",
+        "playwright",
+        "mcp",
+        "automation"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Let agents drive a real browser via Playwright using accessibility snapshots.",
+      "why": "Official Microsoft server; structured page snapshots instead of screenshots make it reliable and cheap.",
+      "npm": "@playwright/mcp",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "morluto/rea",
+      "name": "REA (Reverse Engineer Anything)",
+      "kinds": [
+        "mcp",
+        "skill"
+      ],
+      "tags": [
+        "reverse-engineering",
+        "mcp",
+        "binaries",
+        "frida"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "MCP server that lets agents reverse engineer apps and native binaries, from runtime behaviour down to disassembly.",
+      "why": "One of the most popular MCP projects; unique coverage of binaries, Electron apps and runtime tracing.",
+      "category": "mcp-servers",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "oraios/serena",
+      "name": "Serena",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "coding-agent",
+        "lsp",
+        "semantic-search"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Give coding agents semantic, LSP-backed code navigation and editing via MCP",
+      "why": "Highly adopted MCP toolkit that adds IDE-like symbol tools to any agent",
+      "license_verified": {
+        "license": "GPL-3.0-or-later",
+        "note": "Serena app GPL-3.0-or-later; bundled SolidLSP MIT",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "supabase/mcp",
+      "name": "Supabase MCP",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "supabase",
+        "postgres",
+        "mcp"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Let agents manage Supabase projects: SQL, migrations, logs, edge functions",
+      "why": "Supabase's maintained MCP server",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "CoplayDev/unity-mcp",
+      "name": "Unity MCP",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp",
+        "plugin"
+      ],
+      "tags": [
+        "unity",
+        "game-dev",
+        "mcp",
+        "editor"
+      ],
+      "ecosystems": [
+        "csharp",
+        "python"
+      ],
+      "use_for": "Let AI assistants control the Unity Editor: assets, scenes, scripts.",
+      "why": "The most used Unity bridge for agents, actively maintained with many contributors.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "xpzouying/xiaohongshu-mcp",
+      "name": "xiaohongshu-mcp",
+      "category": "mcp-servers",
+      "kinds": [
+        "mcp"
+      ],
+      "tags": [
+        "mcp",
+        "xiaohongshu",
+        "social-media",
+        "automation"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Search, read and publish Xiaohongshu (RED) posts from agents",
+      "why": "Widely used MCP server for Xiaohongshu: login, feed/search, post details and publishing image/video notes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    }
+  ]
+}

@@ -87,6 +87,22 @@ test('no detected license fails unless a human verified it', () => {
   assert.equal(bogus.pass, false);
 });
 
+test('maintainer exception waives only the named rules and is labelled', () => {
+  const ex = { rules: ['contributors', 'fake_stars'], reason: 'exclusive, high-quality design skill', date: '2026-10-17' };
+  const pick = evaluate(repo({ stars: 3500, forks: 20 }, { contributors: 1, exception: ex }), NOW);
+  assert.equal(pick.pass, true);
+  assert.equal(pick.maintainer_pick, true);
+  assert.ok(pick.warnings.some((w) => w.startsWith('maintainer exception (contributors)')));
+  // a license problem can never be waived
+  const noLicense = evaluate(repo({ license: null }, { contributors: 1, exception: { ...ex, rules: ['contributors', 'license'] } }), NOW);
+  assert.equal(noLicense.pass, false);
+  // an exception without a reason/date is rejected
+  const sloppy = evaluate(repo({}, { contributors: 1, exception: { rules: ['contributors'] } }), NOW);
+  assert.equal(sloppy.pass, false);
+  // normal entries are never maintainer picks
+  assert.equal(evaluate(repo(), NOW).maintainer_pick, false);
+});
+
 test('unknown contributors or push date only warn', () => {
   const r = evaluate(repo({}, { contributors: undefined }), NOW);
   assert.equal(r.pass, true);

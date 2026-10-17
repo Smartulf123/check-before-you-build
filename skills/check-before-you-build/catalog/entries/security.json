@@ -1,0 +1,458 @@
+{
+  "category": "security",
+  "entries": [
+    {
+      "id": "PyCQA/bandit",
+      "name": "Bandit",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "python",
+        "sast",
+        "linting",
+        "code-scanning"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Find common security issues in Python code.",
+      "why": "The standard Python security linter from PyCQA.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "bridgecrewio/checkov",
+      "name": "Checkov",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "iac",
+        "terraform",
+        "kubernetes",
+        "misconfiguration"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Scan Terraform, Kubernetes, Helm, Dockerfiles and more for security misconfigurations",
+      "why": "Leading open IaC scanner with 1000+ built-in policies and CI integrations",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "crowdsecurity/crowdsec",
+      "name": "CrowdSec",
+      "category": "security",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "ips",
+        "waf",
+        "bot-protection",
+        "crowdsourced"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Open-source, crowd-powered intrusion prevention that detects and blocks malicious IPs",
+      "why": "Modern fail2ban successor with shared blocklists and bouncers for Nginx, Traefik, Cloudflare and more",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "cure53/DOMPurify",
+      "name": "DOMPurify",
+      "category": "security",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "xss",
+        "sanitization",
+        "html",
+        "browser"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Fast, tolerant XSS sanitizer for HTML, MathML and SVG",
+      "why": "The trusted HTML sanitizer from security firm Cure53; the default fix for rendering untrusted HTML",
+      "npm": "dompurify",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "falcosecurity/falco",
+      "name": "Falco",
+      "category": "security",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "runtime-security",
+        "kubernetes",
+        "ebpf",
+        "detection"
+      ],
+      "ecosystems": [
+        "c",
+        "go"
+      ],
+      "use_for": "Cloud-native runtime threat detection for hosts, containers and Kubernetes",
+      "why": "CNCF graduated project; eBPF-based detection of suspicious behavior at runtime",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "gitleaks/gitleaks",
+      "name": "Gitleaks",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "secrets",
+        "git",
+        "pre-commit",
+        "ci"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Detect hardcoded secrets like API keys and passwords in git repos and files.",
+      "why": "The most popular open-source secret scanner, easy to run in pre-commit and CI.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "anchore/grype",
+      "name": "Grype",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "vulnerability-scanner",
+        "containers",
+        "sbom",
+        "cve"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Vulnerability scanner for container images, filesystems and SBOMs",
+      "why": "Fast, accurate CVE scanning that pairs with Syft SBOMs; easy to drop into CI",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "helmetjs/helmet",
+      "name": "Helmet",
+      "category": "security",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "http-headers",
+        "express",
+        "csp",
+        "hardening"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Secure Express/Node apps by setting HTTP security headers like CSP and HSTS",
+      "why": "Standard one-line hardening middleware for Express, with millions of weekly downloads",
+      "npm": "helmet",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mongodb/kingfisher",
+      "name": "Kingfisher",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "secrets",
+        "validation",
+        "scanning",
+        "revocation"
+      ],
+      "ecosystems": [
+        "rust",
+        "any"
+      ],
+      "use_for": "Detect secrets in code and history and validate whether they are live.",
+      "why": "MongoDB-maintained scanner that adds live validation and blast-radius mapping.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "CISOfy/lynis",
+      "name": "Lynis",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "hardening",
+        "audit",
+        "linux",
+        "compliance"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Audit Linux, macOS and Unix hosts for security hardening and compliance.",
+      "why": "Long-standing, agentless host auditing tool with actionable hardening suggestions.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "projectdiscovery/nuclei",
+      "name": "Nuclei",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "dast",
+        "templates",
+        "vulnerability-scanner",
+        "yaml"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Scan web apps, APIs and infrastructure for vulnerabilities using YAML templates.",
+      "why": "Fast template-driven scanner with a huge community template library.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "google/osv-scanner",
+      "name": "OSV-Scanner",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "dependencies",
+        "sca",
+        "osv",
+        "vulnerabilities"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Find known vulnerabilities in your project's dependencies using the OSV database.",
+      "why": "Google's SCA scanner backed by the open, multi-ecosystem OSV.dev database.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "OWASP/Nettacker",
+      "name": "OWASP Nettacker",
+      "category": "security",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "pentest",
+        "recon",
+        "vulnerability-scanner",
+        "owasp"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Automate network and web reconnaissance and vulnerability scanning.",
+      "why": "OWASP-maintained modular scanning framework; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "semgrep/semgrep",
+      "name": "Semgrep",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "sast",
+        "static-analysis",
+        "rules",
+        "code-scanning"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Scan source code for bugs and security issues with fast, customizable pattern rules.",
+      "why": "Lightweight, multi-language SAST with a large rule registry; CE is LGPL-2.1.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "NVIDIA/SkillSpector",
+      "name": "SkillSpector",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "agent-skills",
+        "supply-chain",
+        "malicious-code",
+        "ai-security"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Scan AI agent skills for vulnerabilities, malicious patterns and risky behavior before installing.",
+      "why": "NVIDIA-maintained scanner for the agent-skill supply chain; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "anchore/syft",
+      "name": "Syft",
+      "category": "security",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "sbom",
+        "supply-chain",
+        "containers",
+        "spdx"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Generate SBOMs (SPDX, CycloneDX) from container images and filesystems",
+      "why": "The most used open SBOM generator; the foundation for supply-chain scanning pipelines",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "aquasecurity/trivy",
+      "name": "Trivy",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "containers",
+        "sbom",
+        "iac",
+        "vulnerabilities"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Scan containers, filesystems, repos, IaC and Kubernetes for vulnerabilities and misconfigurations.",
+      "why": "All-in-one, widely adopted scanner that drops easily into CI; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "trufflesecurity/trufflehog",
+      "name": "TruffleHog",
+      "category": "security",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "secrets",
+        "scanning",
+        "git",
+        "credentials"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Find, verify and analyze leaked credentials in git, CI, cloud storage and more",
+      "why": "Verifies detected secrets against live APIs to cut false positives; 800+ detectors",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "future-architect/vuls",
+      "name": "Vuls",
+      "category": "security",
+      "kinds": [
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "vulnerability-scanner",
+        "linux",
+        "agentless",
+        "cve"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Scan Linux/FreeBSD servers, containers and libraries for known CVEs without agents.",
+      "why": "Agentless vulnerability scanner for server fleets with multiple data sources.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "zaproxy/zaproxy",
+      "name": "ZAP",
+      "category": "security",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "dast",
+        "web-security",
+        "proxy",
+        "owasp"
+      ],
+      "ecosystems": [
+        "java",
+        "any"
+      ],
+      "use_for": "Test web applications for vulnerabilities with an intercepting proxy and automated scans.",
+      "why": "The most widely used free DAST tool, scriptable and CI-friendly.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    }
+  ]
+}

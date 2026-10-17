@@ -1,0 +1,868 @@
+{
+  "category": "dev-tooling",
+  "entries": [
+    {
+      "id": "ast-grep/ast-grep",
+      "name": "ast-grep",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "structural-search",
+        "codemod",
+        "linter",
+        "tree-sitter"
+      ],
+      "ecosystems": [
+        "rust",
+        "ts",
+        "python"
+      ],
+      "use_for": "Structural code search, lint rules and rewrites across languages",
+      "why": "Fast tree-sitter based tool for writing custom lint rules and codemods with pattern syntax.",
+      "npm": "@ast-grep/cli",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "biomejs/biome",
+      "name": "Biome",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "linter",
+        "formatter",
+        "rust",
+        "toolchain"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Format and lint JS, TS, JSON and CSS with one fast tool.",
+      "why": "Single Rust binary replacing ESLint + Prettier for many projects; very fast with minimal config.",
+      "npm": "@biomejs/biome",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "oven-sh/bun",
+      "name": "Bun",
+      "category": "dev-tooling",
+      "kinds": [
+        "engine",
+        "cli"
+      ],
+      "tags": [
+        "runtime",
+        "bundler",
+        "package-manager",
+        "test-runner"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "All-in-one JS runtime, bundler, test runner and package manager",
+      "why": "Fast Node-compatible toolkit replacing several tools at once; MIT core per LICENSE.md.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "LICENSE.md: Bun itself is MIT-licensed; statically links LGPL-2 JavaScriptCore",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "changesets/changesets",
+      "name": "Changesets",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "versioning",
+        "changelog",
+        "monorepo",
+        "release"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Version packages and generate changelogs in monorepos from small change files.",
+      "why": "Widely used release tool (~12k stars) for multi-package repos; integrates with GitHub Actions.",
+      "npm": "@changesets/cli",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "rust-lang/rust-clippy",
+      "name": "Clippy",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "linter",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Catch common mistakes and non-idiomatic Rust",
+      "why": "The official Rust linter shipped with rustup, 700+ lints.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "conventional-changelog/commitlint",
+      "name": "commitlint",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "git",
+        "commits",
+        "conventional-commits"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Lint commit messages against Conventional Commits",
+      "why": "Standard commit-message linter, pairs with husky and changelog/release tooling.",
+      "npm": "@commitlint/cli",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "evanw/esbuild",
+      "name": "esbuild",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "bundler",
+        "transpiler",
+        "fast",
+        "go"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Bundle and transpile JS/TS extremely fast, from the CLI or as a library.",
+      "why": "Order-of-magnitude faster than legacy bundlers; used under the hood by many tools.",
+      "npm": "esbuild",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "eslint/eslint",
+      "name": "ESLint",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "linter",
+        "javascript",
+        "typescript",
+        "static-analysis"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Lint JavaScript and TypeScript code for bugs and style issues.",
+      "why": "The standard JS linter with the largest plugin and rule ecosystem.",
+      "npm": "eslint",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "golangci/golangci-lint",
+      "name": "golangci-lint",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "linter",
+        "go",
+        "static-analysis"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Run dozens of Go linters fast in one tool",
+      "why": "The de facto Go lint runner bundling 100+ linters with caching and CI integration.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "hadolint/hadolint",
+      "name": "hadolint",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "linter",
+        "docker",
+        "dockerfile"
+      ],
+      "ecosystems": [
+        "docker"
+      ],
+      "use_for": "Lint Dockerfiles and the shell inside them",
+      "why": "Standard Dockerfile linter applying best-practice rules plus ShellCheck on RUN steps.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "typicode/husky",
+      "name": "Husky",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "git-hooks",
+        "pre-commit",
+        "workflow"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Run linters and tests in Git hooks (pre-commit, pre-push) in JS projects.",
+      "why": "De facto Git hooks tool for JS (~37M weekly npm downloads); tiny and dependency-free.",
+      "npm": "husky",
+      "stable": true,
+      "stable_reason": "Tiny, feature-complete Git hooks manager; core behaviour unchanged since v9",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "webpro-nl/knip",
+      "name": "Knip",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "dead-code",
+        "dependencies",
+        "linter",
+        "typescript"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Find unused files, dependencies and exports in JS/TS projects.",
+      "why": "The go-to dead-code and unused-dependency finder, with 100+ framework plugins.",
+      "npm": "knip",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "lerna/lerna",
+      "name": "Lerna",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "monorepo",
+        "publishing",
+        "versioning"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Version and publish packages from a JS/TS monorepo",
+      "why": "Long-standing monorepo publishing tool, now maintained by Nx with task caching.",
+      "npm": "lerna",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "lint-staged/lint-staged",
+      "name": "lint-staged",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "git-hooks",
+        "linting",
+        "pre-commit"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Run linters and formatters on staged git files",
+      "why": "Ubiquitous pre-commit companion to husky that keeps hooks fast by touching only staged files.",
+      "npm": "lint-staged",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "python/mypy",
+      "name": "mypy",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "type-checker",
+        "python",
+        "static-analysis"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Static type checking for Python",
+      "why": "The reference Python type checker; MIT-licensed per LICENSE.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "LICENSE: mypy and mypyc are MIT; a few mypyc runtime files are PSF-2.0",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "nrwl/nx",
+      "name": "Nx",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli",
+        "framework"
+      ],
+      "tags": [
+        "monorepo",
+        "build-system",
+        "caching",
+        "generators"
+      ],
+      "ecosystems": [
+        "js",
+        "ts",
+        "any"
+      ],
+      "use_for": "Manage large monorepos with task graphs, caching, generators and affected-only CI.",
+      "why": "Most full-featured monorepo platform; supports JS plus Java, .NET, Go via plugins.",
+      "npm": "nx",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "oxc-project/oxc",
+      "name": "Oxc",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "linter",
+        "parser",
+        "rust",
+        "formatter"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Lint (oxlint), parse, transform and minify JavaScript with high-performance Rust tools.",
+      "why": "oxlint is 50-100x faster than ESLint; Oxc powers Rolldown and Vite tooling.",
+      "npm": "oxlint",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "parcel-bundler/parcel",
+      "name": "Parcel",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "bundler",
+        "zero-config",
+        "build"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Zero-config web app bundler",
+      "why": "Mature zero-configuration bundler with a Rust core, HMR and built-in transforms.",
+      "npm": "parcel",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "pre-commit/pre-commit",
+      "name": "pre-commit",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli",
+        "framework"
+      ],
+      "tags": [
+        "git-hooks",
+        "linting",
+        "multi-language",
+        "ci"
+      ],
+      "ecosystems": [
+        "python",
+        "any"
+      ],
+      "use_for": "Manage and run multi-language git pre-commit hooks.",
+      "why": "Standard language-agnostic hook manager with a huge library of ready hooks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "prettier/prettier",
+      "name": "Prettier",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "formatter",
+        "javascript",
+        "css",
+        "markdown"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Auto-format JS, TS, CSS, HTML, Markdown and more to a consistent style.",
+      "why": "The de facto opinionated code formatter for web projects (52k stars).",
+      "npm": "prettier",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "rolldown/rolldown",
+      "name": "Rolldown",
+      "category": "dev-tooling",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "bundler",
+        "rust",
+        "rollup-compatible",
+        "vite"
+      ],
+      "ecosystems": [
+        "js",
+        "ts",
+        "rust"
+      ],
+      "use_for": "Bundle JS/TS fast with a Rust bundler that has a Rollup-compatible API.",
+      "why": "Rust bundler behind Vite's future (~111M weekly npm downloads); Rollup-compatible plugins at esbuild-like speed.",
+      "npm": "rolldown",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "rollup/rollup",
+      "name": "Rollup",
+      "category": "dev-tooling",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "bundler",
+        "esm",
+        "libraries",
+        "tree-shaking"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Bundle JavaScript libraries into clean ESM/CJS output with tree-shaking.",
+      "why": "Go-to bundler for libraries (~126M weekly npm downloads); plugin API shared by Vite.",
+      "npm": "rollup",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "web-infra-dev/rspack",
+      "name": "Rspack",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "bundler",
+        "webpack",
+        "rust",
+        "fast"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Speed up webpack-style builds with a Rust bundler that keeps the webpack API.",
+      "why": "Near drop-in webpack replacement backed by ByteDance; easiest path to faster builds for webpack projects.",
+      "npm": "@rspack/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "rubocop/rubocop",
+      "name": "RuboCop",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "linter",
+        "formatter",
+        "ruby"
+      ],
+      "ecosystems": [
+        "ruby"
+      ],
+      "use_for": "Lint and auto-format Ruby code",
+      "why": "The standard Ruby static analyzer and formatter with a large plugin ecosystem.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "astral-sh/ruff",
+      "name": "Ruff",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "linter",
+        "formatter",
+        "python",
+        "rust"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Lint and format Python code in one extremely fast tool.",
+      "why": "Replaces Flake8, isort, Black and more; the fastest-growing Python linter (50k stars).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "koalaman/shellcheck",
+      "name": "ShellCheck",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "linter",
+        "shell",
+        "bash",
+        "static-analysis"
+      ],
+      "ecosystems": [
+        "shell"
+      ],
+      "use_for": "Lint shell scripts for bugs and pitfalls",
+      "why": "The standard static analyzer for sh/bash; integrated into nearly every editor and CI linter.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "stylelint/stylelint",
+      "name": "Stylelint",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "linter",
+        "css",
+        "scss"
+      ],
+      "ecosystems": [
+        "css"
+      ],
+      "use_for": "Lint CSS, SCSS and CSS-in-JS",
+      "why": "The standard CSS linter with 100+ rules and a large plugin/config ecosystem.",
+      "npm": "stylelint",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "super-linter/super-linter",
+      "name": "Super-Linter",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "linter",
+        "github-actions",
+        "ci"
+      ],
+      "ecosystems": [
+        "docker"
+      ],
+      "use_for": "Run many language linters in one GitHub Action or container",
+      "why": "Bundles 50+ linters into a single CI step for polyglot repos.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "swc-project/swc",
+      "name": "SWC",
+      "category": "dev-tooling",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "compiler",
+        "transpiler",
+        "rust",
+        "typescript"
+      ],
+      "ecosystems": [
+        "js",
+        "ts",
+        "rust"
+      ],
+      "use_for": "Compile and minify TypeScript/JavaScript very fast as a Babel replacement.",
+      "why": "Rust compiler used by Next.js, Deno and others (~45M weekly npm downloads for @swc/core).",
+      "npm": "@swc/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "realm/SwiftLint",
+      "name": "SwiftLint",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "linter",
+        "swift",
+        "ios"
+      ],
+      "ecosystems": [
+        "swift"
+      ],
+      "use_for": "Enforce Swift style and conventions",
+      "why": "The standard Swift linter used across iOS/macOS projects, with autocorrect and Xcode integration.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "egoist/tsup",
+      "name": "tsup",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "bundler",
+        "library",
+        "typescript",
+        "esbuild"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Bundle TypeScript libraries with zero config",
+      "why": "Popular esbuild-powered library bundler emitting ESM/CJS and .d.ts with minimal config.",
+      "npm": "tsup",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "vercel/turborepo",
+      "name": "Turborepo",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "monorepo",
+        "build-system",
+        "caching",
+        "rust"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Run and cache tasks across a JS/TS monorepo.",
+      "why": "Simple, incremental monorepo task runner with local and remote caching.",
+      "npm": "turbo",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "typescript-eslint/typescript-eslint",
+      "name": "typescript-eslint",
+      "category": "dev-tooling",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "linting",
+        "typescript",
+        "eslint",
+        "type-aware"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Lint TypeScript with ESLint, including type-aware rules.",
+      "why": "The standard way to lint TypeScript (~90M weekly npm downloads); parser plus hundreds of rules.",
+      "npm": "typescript-eslint",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "astral-sh/uv",
+      "name": "uv",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "python",
+        "package-manager",
+        "virtualenv",
+        "fast"
+      ],
+      "ecosystems": [
+        "python",
+        "rust"
+      ],
+      "use_for": "Manage Python projects, dependencies, virtualenvs and Python versions with one fast tool.",
+      "why": "Rust-based Python package and project manager (~91k stars) replacing pip, pip-tools, venv and pyenv.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vitejs/vite",
+      "name": "Vite",
+      "category": "dev-tooling",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "bundler",
+        "dev-server",
+        "build-tool",
+        "hmr"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Run a fast dev server and production build for frontend apps.",
+      "why": "Default build tool for most modern frameworks (83k stars); instant HMR and a large plugin ecosystem.",
+      "npm": "vite",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "webpack/webpack",
+      "name": "webpack",
+      "category": "dev-tooling",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "bundler",
+        "javascript",
+        "build",
+        "modules"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Bundle JavaScript apps and assets with a large loader and plugin ecosystem.",
+      "why": "Still one of the most-used bundlers (~56M weekly npm downloads); huge plugin ecosystem, standard in legacy and enterprise apps.",
+      "npm": "webpack",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "webpack/webpack-bundle-analyzer",
+      "name": "webpack-bundle-analyzer",
+      "category": "dev-tooling",
+      "kinds": [
+        "plugin",
+        "cli"
+      ],
+      "tags": [
+        "bundle-size",
+        "webpack",
+        "analysis"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Visualize what is inside your webpack bundles",
+      "why": "Go-to treemap analyzer for finding bundle bloat in webpack and Rspack builds.",
+      "npm": "webpack-bundle-analyzer",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    }
+  ]
+}

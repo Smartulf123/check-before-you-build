@@ -1,0 +1,462 @@
+{
+  "category": "search",
+  "entries": [
+    {
+      "id": "apache/lucene",
+      "name": "Apache Lucene",
+      "category": "search",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "full-text",
+        "inverted-index",
+        "java",
+        "search-engine"
+      ],
+      "ecosystems": [
+        "java"
+      ],
+      "use_for": "Embed full-text search and indexing in Java applications.",
+      "why": "The search library under Elasticsearch, OpenSearch and Solr; the reference implementation.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "apache/solr",
+      "name": "Apache Solr",
+      "category": "search",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "search-server",
+        "lucene",
+        "faceting",
+        "enterprise"
+      ],
+      "ecosystems": [
+        "java"
+      ],
+      "use_for": "Run a mature, self-hosted search server with faceting, replication and SolrCloud.",
+      "why": "Long-established Lucene-based search platform; Apache-2.0 alternative to Elasticsearch.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "blevesearch/bleve",
+      "name": "Bleve",
+      "category": "search",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "full-text",
+        "go",
+        "indexing"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Embed full-text search and indexing in Go programs.",
+      "why": "The main Go full-text search library (~11k stars); powers Couchbase search.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "elastic/elasticsearch",
+      "name": "Elasticsearch",
+      "category": "search",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "search-engine",
+        "full-text",
+        "distributed",
+        "analytics"
+      ],
+      "ecosystems": [
+        "java",
+        "any"
+      ],
+      "use_for": "Run distributed full-text search, logging and analytics workloads.",
+      "why": "The most deployed search engine; available under AGPL-3.0 (or SSPL/ELv2), with official clients everywhere.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "nextapps-de/flexsearch",
+      "name": "FlexSearch",
+      "category": "search",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "full-text-search",
+        "client-side",
+        "javascript",
+        "fast"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Add fast in-memory full-text search in the browser or Node.js.",
+      "why": "One of the fastest JS full-text search libraries; Apache-2.0 confirmed.",
+      "npm": "flexsearch",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "krisk/Fuse",
+      "name": "Fuse.js",
+      "category": "search",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "fuzzy-search",
+        "javascript",
+        "client-side",
+        "lightweight"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Add lightweight fuzzy search over small in-memory lists in JS.",
+      "why": "The default zero-dependency fuzzy search library for JS (20k stars).",
+      "npm": "fuse.js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "algolia/instantsearch",
+      "name": "InstantSearch",
+      "category": "search",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "search-ui",
+        "react",
+        "vue",
+        "widgets"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Build search UIs (search box, facets, hits) in JS, React or Vue.",
+      "why": "Widely used search UI library (~1.4M weekly npm downloads); adapters exist for Typesense and Meilisearch.",
+      "npm": "instantsearch.js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "manticoresoftware/manticoresearch",
+      "name": "Manticore Search",
+      "category": "search",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "search-engine",
+        "sql",
+        "full-text",
+        "vector-search"
+      ],
+      "ecosystems": [
+        "cpp",
+        "any"
+      ],
+      "use_for": "Run full-text, vector and hybrid search with a SQL interface.",
+      "why": "Lightweight, fast Sphinx successor with MySQL protocol support; low resource use.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "meilisearch/meilisearch",
+      "name": "Meilisearch",
+      "category": "search",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "search-engine",
+        "typo-tolerance",
+        "hybrid-search",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust",
+        "any"
+      ],
+      "use_for": "Add fast, typo-tolerant, as-you-type search to apps and sites.",
+      "why": "Easiest-to-run search server with great relevance defaults; core is MIT (some enterprise features BUSL).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "opensearch-project/OpenSearch",
+      "name": "OpenSearch",
+      "category": "search",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "search-engine",
+        "full-text",
+        "analytics",
+        "apache-2"
+      ],
+      "ecosystems": [
+        "java",
+        "any"
+      ],
+      "use_for": "Run distributed full-text search and analytics at scale.",
+      "why": "Apache-2.0 fork of Elasticsearch under the Linux Foundation; large plugin ecosystem.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "oramasearch/orama",
+      "name": "Orama",
+      "category": "search",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "full-text-search",
+        "vector-search",
+        "edge",
+        "typescript"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Run full-text, vector and hybrid search in the browser, server or edge.",
+      "why": "Tiny dependency-free TS search engine with RAG support; Apache-2.0 confirmed.",
+      "npm": "@orama/orama",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Pagefind/pagefind",
+      "name": "Pagefind",
+      "category": "search",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "static-search",
+        "static-sites",
+        "wasm",
+        "low-bandwidth"
+      ],
+      "ecosystems": [
+        "rust",
+        "js"
+      ],
+      "use_for": "Add full-text search to a static site with no server.",
+      "why": "Indexes built HTML after any static generator; loads only needed index chunks, scaling to large sites.",
+      "npm": "pagefind",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "paradedb/paradedb",
+      "name": "ParadeDB",
+      "category": "search",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "postgres",
+        "bm25",
+        "full-text-search",
+        "hybrid-search"
+      ],
+      "ecosystems": [
+        "rust",
+        "any"
+      ],
+      "use_for": "Add Elasticsearch-quality full-text and hybrid search inside Postgres.",
+      "why": "Keeps search in your Postgres instead of a separate cluster; built on Tantivy (AGPL-3.0).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tobi/qmd",
+      "name": "qmd",
+      "category": "search",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "local-search",
+        "hybrid-search",
+        "docs"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Local hybrid search over markdown docs and notes",
+      "why": "Small on-device search engine combining BM25, vectors and reranking; also exposes an MCP server.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "quickwit-oss/quickwit",
+      "name": "Quickwit",
+      "category": "search",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "log-search",
+        "object-storage",
+        "tantivy",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Search logs and traces at scale directly on object storage.",
+      "why": "Cloud-native search engine on Tantivy (~12k stars, Apache-2.0); cheap search over S3.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "searxng/searxng",
+      "name": "SearXNG",
+      "category": "search",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "metasearch",
+        "self-hosted",
+        "privacy"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Self-hosted metasearch engine with a JSON API",
+      "why": "Aggregates 200+ search engines; a common search backend for AI agents and research tools; AGPL-3.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "valeriansaliou/sonic",
+      "name": "Sonic",
+      "category": "search",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "search-backend",
+        "lightweight",
+        "rust",
+        "autocomplete"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Run a tiny, fast search backend that returns IDs, as a lightweight Elasticsearch alternative.",
+      "why": "Very low-memory Rust search server (~21k stars) with autocomplete and typo tolerance.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "quickwit-oss/tantivy",
+      "name": "Tantivy",
+      "category": "search",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "full-text-search",
+        "rust",
+        "lucene",
+        "embedded"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Embed a Lucene-style full-text search engine in a Rust app.",
+      "why": "Fast, mature Rust search library powering Quickwit, ParadeDB and others; MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "typesense/typesense",
+      "name": "Typesense",
+      "category": "search",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "search-engine",
+        "typo-tolerance",
+        "vector-search",
+        "algolia-alternative"
+      ],
+      "ecosystems": [
+        "cpp",
+        "any"
+      ],
+      "use_for": "Run an Algolia-style instant search server with typo tolerance and vector search.",
+      "why": "Fast, simple in-memory search engine with official clients; open-source alternative to Algolia (GPL-3.0).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "vespa-engine/vespa",
+      "name": "Vespa",
+      "category": "search",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "search-engine",
+        "ranking",
+        "vector-search",
+        "big-data"
+      ],
+      "ecosystems": [
+        "java",
+        "any"
+      ],
+      "use_for": "Serve large-scale search, ranking and recommendation with ML models.",
+      "why": "Battle-tested at Yahoo scale; combines text, vector and ML ranking in one engine.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

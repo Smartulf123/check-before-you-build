@@ -1,0 +1,397 @@
+{
+  "category": "ecommerce",
+  "entries": [
+    {
+      "id": "aimeos/aimeos-laravel",
+      "name": "Aimeos Laravel",
+      "category": "ecommerce",
+      "kinds": [
+        "library",
+        "framework"
+      ],
+      "tags": [
+        "ecommerce",
+        "laravel",
+        "php",
+        "headless"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Laravel e-commerce package for online shops, marketplaces and B2B apps, with JSON:API",
+      "why": "Add full commerce (catalog, basket, checkout, admin) to any Laravel app; scales to millions of products",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "bagisto/bagisto",
+      "name": "Bagisto",
+      "category": "ecommerce",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "laravel",
+        "php",
+        "multi-vendor",
+        "marketplace"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Launch a Laravel-based store or multi-vendor marketplace.",
+      "why": "Popular Laravel commerce platform with marketplace and headless options; MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "evershopcommerce/evershop",
+      "name": "EverShop",
+      "category": "ecommerce",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "ecommerce",
+        "typescript",
+        "react",
+        "graphql"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "TypeScript-first e-commerce platform with modular architecture and GraphQL",
+      "why": "Modern Node/React commerce engine with extensions and themes; lighter than Magento-class platforms",
+      "npm": "@evershop/evershop",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Shopify/hydrogen",
+      "name": "Hydrogen",
+      "category": "ecommerce",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "shopify",
+        "storefront",
+        "react-router",
+        "headless"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build custom headless Shopify storefronts with React.",
+      "why": "Shopify's official headless storefront framework, MIT.",
+      "npm": "@shopify/hydrogen",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "lunarphp/lunar",
+      "name": "Lunar",
+      "category": "ecommerce",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "laravel",
+        "headless",
+        "php",
+        "package"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Add headless e-commerce functionality to an existing Laravel app.",
+      "why": "Laravel package approach rather than a full platform; MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "magento/magento2",
+      "name": "Magento Open Source",
+      "category": "ecommerce",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "php",
+        "enterprise",
+        "ecommerce",
+        "adobe"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Run a full-featured, extensible PHP commerce platform.",
+      "why": "Long-established enterprise-grade platform with a large extension ecosystem; OSL-3.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "medusajs/medusa",
+      "name": "Medusa",
+      "category": "ecommerce",
+      "kinds": [
+        "framework",
+        "engine"
+      ],
+      "tags": [
+        "headless",
+        "nodejs",
+        "commerce-modules",
+        "typescript"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build a custom headless commerce backend with modular TypeScript commerce primitives.",
+      "why": "Most popular JS headless commerce engine; MIT (verified, enterprise folder excluded).",
+      "npm": "@medusajs/medusa",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "vercel/commerce",
+      "name": "Next.js Commerce",
+      "category": "ecommerce",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "nextjs",
+        "storefront",
+        "shopify",
+        "headless"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "High-performance Next.js storefront template for headless commerce (Shopify by default)",
+      "why": "Official Vercel reference storefront using App Router and server components; easy to adapt to other backends",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "opencart/opencart",
+      "name": "OpenCart",
+      "category": "ecommerce",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "ecommerce",
+        "php",
+        "shop"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Lightweight PHP shopping cart system with an extension marketplace",
+      "why": "Long-running, simple self-hosted shop software with a large extension marketplace",
+      "license_verified": {
+        "license": "GPL-3.0-only",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "PrestaShop/PrestaShop",
+      "name": "PrestaShop",
+      "category": "ecommerce",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "ecommerce",
+        "php",
+        "shop",
+        "modules"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Full open-source e-commerce platform with thousands of modules and themes",
+      "why": "Powers hundreds of thousands of shops, especially in Europe; OSL-3.0 licensed",
+      "license_verified": {
+        "license": "OSL-3.0",
+        "note": "Core OSL-3.0, modules AFL-3.0 per LICENSE.md",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "saleor/saleor",
+      "name": "Saleor",
+      "category": "ecommerce",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "headless",
+        "graphql",
+        "python",
+        "django"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run a high-performance headless commerce API with GraphQL.",
+      "why": "GraphQL-first, composable commerce platform; BSD-3.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "shopware/shopware",
+      "name": "Shopware 6",
+      "category": "ecommerce",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "symfony",
+        "vue",
+        "php",
+        "commerce"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Run an open commerce platform on Symfony and Vue.",
+      "why": "Major European commerce platform; MIT core.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "solidusio/solidus",
+      "name": "Solidus",
+      "category": "ecommerce",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "rails",
+        "ecommerce",
+        "customizable"
+      ],
+      "ecosystems": [
+        "ruby"
+      ],
+      "use_for": "Build a highly customized store on Rails.",
+      "why": "Community-driven Spree fork focused on stability and customization.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "spree/spree",
+      "name": "Spree",
+      "category": "ecommerce",
+      "kinds": [
+        "engine",
+        "framework"
+      ],
+      "tags": [
+        "rails",
+        "headless",
+        "b2b",
+        "marketplace"
+      ],
+      "ecosystems": [
+        "ruby"
+      ],
+      "use_for": "Build DTC, B2B or marketplace stores on Ruby on Rails with REST APIs.",
+      "why": "Mature Rails commerce platform; BSD-3.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Sylius/Sylius",
+      "name": "Sylius",
+      "category": "ecommerce",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "symfony",
+        "php",
+        "headless",
+        "api-platform"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Build headless or custom PHP shops on Symfony and API Platform.",
+      "why": "Developer-focused Symfony commerce framework; MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vendurehq/vendure",
+      "name": "Vendure",
+      "category": "ecommerce",
+      "kinds": [
+        "framework",
+        "engine"
+      ],
+      "tags": [
+        "headless",
+        "nestjs",
+        "graphql",
+        "typescript"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build headless commerce on TypeScript/NestJS with a GraphQL API and plugin system.",
+      "why": "Extensible TypeScript commerce framework; GPLv3 community edition (verified).",
+      "npm": "@vendure/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "woocommerce/woocommerce",
+      "name": "WooCommerce",
+      "category": "ecommerce",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "wordpress",
+        "php",
+        "ecommerce",
+        "plugins"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Add a store to a WordPress site.",
+      "why": "The most deployed open-source e-commerce plugin; GPLv2+ (verified).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    }
+  ]
+}

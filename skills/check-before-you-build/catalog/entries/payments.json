@@ -1,0 +1,435 @@
+{
+  "category": "payments",
+  "entries": [
+    {
+      "id": "btcpayserver/btcpayserver",
+      "name": "BTCPay Server",
+      "category": "payments",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "bitcoin",
+        "lightning",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "csharp"
+      ],
+      "use_for": "Self-hosted Bitcoin and Lightning payment processor with no fees or intermediaries",
+      "why": "The standard self-hosted crypto payment gateway with e-commerce plugins and APIs",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "dj-stripe/dj-stripe",
+      "name": "dj-stripe",
+      "category": "payments",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "django",
+        "stripe",
+        "subscriptions",
+        "webhooks"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Sync Stripe data into Django models and handle webhooks.",
+      "why": "Keeps a local copy of Stripe objects as Django models, simplifying queries and webhook handling.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "juspay/hyperswitch",
+      "name": "Hyperswitch",
+      "category": "payments",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "payment-orchestration",
+        "payments",
+        "rust",
+        "pci"
+      ],
+      "ecosystems": [
+        "rust",
+        "any"
+      ],
+      "use_for": "Route payments across many processors through one self-hostable API.",
+      "why": "Open-source payment orchestrator from Juspay: smart routing, retries and unified API for 50+ processors.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "killbill/killbill",
+      "name": "Kill Bill",
+      "category": "payments",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "subscriptions",
+        "billing",
+        "invoicing",
+        "java"
+      ],
+      "ecosystems": [
+        "java",
+        "any"
+      ],
+      "use_for": "Run a self-hosted subscription billing and payments system.",
+      "why": "Mature, plugin-based billing platform in production for over a decade; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "getlago/lago",
+      "name": "Lago",
+      "category": "payments",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "usage-based-billing",
+        "metering",
+        "subscriptions",
+        "invoicing"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Meter usage and bill customers with usage-based or hybrid pricing.",
+      "why": "Leading open-source metering and billing API; self-host or cloud, integrates with Stripe and other gateways.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "laravel/cashier-stripe",
+      "name": "Laravel Cashier (Stripe)",
+      "category": "payments",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "laravel",
+        "stripe",
+        "subscriptions",
+        "php"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Add Stripe subscriptions, invoices and checkout to a Laravel app.",
+      "why": "Official Laravel package with a fluent API over Stripe Billing; the default choice for Laravel SaaS.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "thephpleague/omnipay",
+      "name": "Omnipay",
+      "category": "payments",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "php",
+        "payment-gateways"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Framework-agnostic multi-gateway payment library for PHP",
+      "why": "The standard PHP payments abstraction with many gateway drivers",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "openmeterio/openmeter",
+      "name": "OpenMeter",
+      "category": "payments",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "metering",
+        "usage-based-billing",
+        "ai",
+        "api"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Collect and aggregate usage events (API calls, tokens) for billing and limits.",
+      "why": "Real-time metering built for AI/API products, with entitlements and Stripe sync.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "pay-rails/pay",
+      "name": "Pay",
+      "category": "payments",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "rails",
+        "subscriptions",
+        "stripe",
+        "paddle"
+      ],
+      "ecosystems": [
+        "ruby"
+      ],
+      "use_for": "Add payments and subscriptions to a Ruby on Rails app with Stripe, Paddle or Braintree.",
+      "why": "Rails engine that unifies multiple processors behind one model API, including webhooks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Payum/Payum",
+      "name": "Payum",
+      "category": "payments",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "php",
+        "payments",
+        "gateways",
+        "symfony"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Integrate many payment gateways in PHP through one abstraction.",
+      "why": "Framework-agnostic PHP payment library with gateways for Stripe, PayPal and more; used by Sylius.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "polarsource/polar",
+      "name": "Polar",
+      "category": "payments",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "billing",
+        "merchant-of-record",
+        "subscriptions",
+        "saas"
+      ],
+      "ecosystems": [
+        "python",
+        "ts"
+      ],
+      "use_for": "Sell subscriptions and digital products with a merchant-of-record handling tax.",
+      "why": "Open-source billing platform with SDKs and framework adapters; handles global sales tax as MoR.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "hyodotdev/openiap",
+      "name": "react-native-iap (OpenIAP)",
+      "category": "payments",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "in-app-purchases",
+        "react-native",
+        "expo",
+        "subscriptions"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "In-app purchases and subscriptions for React Native/Expo on iOS and Android",
+      "why": "Home of react-native-iap (moved from hyochan/react-native-iap); the most used open-source IAP library for React Native",
+      "npm": "react-native-iap",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "RevenueCat/react-native-purchases",
+      "name": "RevenueCat React Native",
+      "category": "payments",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "in-app-purchases",
+        "subscriptions",
+        "react-native",
+        "mobile"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Add in-app purchases and subscriptions to iOS/Android React Native apps.",
+      "why": "Official RevenueCat SDK abstracting StoreKit and Google Play Billing with receipt validation.",
+      "npm": "react-native-purchases",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "stripe/ai",
+      "name": "Stripe Agent Toolkit",
+      "category": "payments",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "stripe",
+        "agents",
+        "mcp",
+        "llm"
+      ],
+      "ecosystems": [
+        "ts",
+        "python"
+      ],
+      "use_for": "Let LLM agents use Stripe through function calling, MCP and agent frameworks",
+      "why": "Official Stripe toolkit for OpenAI, LangChain, Vercel AI SDK and MCP agents",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "stripe/stripe-cli",
+      "name": "Stripe CLI",
+      "category": "payments",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "stripe",
+        "webhooks",
+        "testing"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Test webhooks locally, trigger events and call the Stripe API from the terminal",
+      "why": "Official tool for forwarding webhooks to localhost and triggering test events",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "stripe/stripe-node",
+      "name": "Stripe Node.js",
+      "category": "payments",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "stripe",
+        "payments",
+        "api-client",
+        "webhooks"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Call the Stripe API (payments, subscriptions, webhooks) from Node.js.",
+      "why": "Official, typed Stripe SDK for Node, kept in step with Stripe API versions.",
+      "npm": "stripe",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "stripe/stripe-php",
+      "name": "Stripe PHP",
+      "category": "payments",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "stripe",
+        "php",
+        "payments"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Official PHP library for the Stripe API",
+      "why": "Official, actively maintained Stripe SDK for PHP backends",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "stripe/stripe-python",
+      "name": "Stripe Python",
+      "category": "payments",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "stripe",
+        "payments",
+        "api-client",
+        "python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Call the Stripe API from Python backends.",
+      "why": "Official Stripe SDK for Python with typed resources and async support.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "stripe/stripe-js",
+      "name": "Stripe.js",
+      "category": "payments",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "stripe",
+        "checkout",
+        "payments",
+        "frontend"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Load Stripe.js and use Elements and Checkout in the browser with TypeScript types",
+      "why": "Official browser loader for Stripe Elements/Checkout; pairs with stripe-node",
+      "npm": "@stripe/stripe-js",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    }
+  ]
+}

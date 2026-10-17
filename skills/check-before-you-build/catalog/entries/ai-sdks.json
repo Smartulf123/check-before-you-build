@@ -1,0 +1,626 @@
+{
+  "category": "ai-sdks",
+  "entries": [
+    {
+      "id": "anthropics/anthropic-sdk-python",
+      "name": "Anthropic Python SDK",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "anthropic",
+        "claude",
+        "llm",
+        "sdk"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Call Claude models from Python: messages, streaming, tool use, batches",
+      "why": "Official Python client for the Claude API; counterpart to the TS SDK already listed, typed and kept in step with the API",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "anthropics/anthropic-sdk-typescript",
+      "name": "Anthropic TypeScript SDK",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "anthropic",
+        "claude",
+        "llm",
+        "typescript",
+        "api-client"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Official TypeScript client for the Anthropic Claude API, including streaming and tool use.",
+      "why": "Official vendor SDK for Claude, typed end to end and updated alongside API releases.",
+      "npm": "@anthropic-ai/sdk",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "ax-llm/ax",
+      "name": "Ax",
+      "category": "ai-sdks",
+      "kinds": [
+        "library",
+        "framework"
+      ],
+      "tags": [
+        "dspy",
+        "prompt-optimization",
+        "typescript",
+        "llm"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build LLM programs with DSPy-style signatures and automatic prompt optimization in TypeScript.",
+      "why": "The most complete DSPy port for TypeScript; supports many providers and typed signatures instead of hand-written prompts.",
+      "npm": "@ax-llm/ax",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "microsoft/BitNet",
+      "name": "BitNet",
+      "category": "ai-sdks",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "llm",
+        "inference",
+        "1-bit",
+        "quantization"
+      ],
+      "ecosystems": [
+        "python",
+        "cpp"
+      ],
+      "use_for": "Run 1-bit (ternary) LLMs fast on CPUs and GPUs",
+      "why": "Microsoft's official inference framework for BitNet b1.58 models; optimized kernels make large models usable on commodity CPUs.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "googleapis/js-genai",
+      "name": "Google Gen AI SDK (JS)",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "gemini",
+        "google",
+        "llm",
+        "sdk"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Call Gemini models from TypeScript/JavaScript, incl. Live API and Vertex AI",
+      "why": "Official unified Gemini SDK for JS (replaces @google/generative-ai); covers both the Gemini API and Vertex AI",
+      "npm": "@google/genai",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "googleapis/python-genai",
+      "name": "Google Gen AI SDK (Python)",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "gemini",
+        "google",
+        "llm",
+        "sdk"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Call Gemini models from Python against the Gemini API or Vertex AI",
+      "why": "Official unified Python SDK for Gemini; the supported replacement for google-generativeai",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "huggingface/huggingface.js",
+      "name": "Hugging Face JS",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "huggingface",
+        "inference",
+        "llm"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Call Hugging Face Inference Providers and the Hub from JavaScript",
+      "why": "Official JS client for HF inference (many providers behind one API) and Hub access",
+      "npm": "@huggingface/inference",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "567-labs/instructor",
+      "name": "Instructor",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "structured-output",
+        "pydantic",
+        "llm"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Get validated, typed structured outputs from any LLM via Pydantic models",
+      "why": "Most widely used structured-output layer for LLMs; works across OpenAI, Anthropic, Gemini and local models",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "kvcache-ai/ktransformers",
+      "name": "KTransformers",
+      "category": "ai-sdks",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "llm",
+        "inference",
+        "moe",
+        "cpu-gpu",
+        "fine-tuning"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Run huge MoE LLMs locally with hybrid CPU/GPU offloading",
+      "why": "Heterogeneous inference that runs DeepSeek-class MoE models on a single GPU plus system RAM; exposes OpenAI-compatible APIs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "BerriAI/litellm",
+      "name": "LiteLLM",
+      "category": "ai-sdks",
+      "kinds": [
+        "library",
+        "service"
+      ],
+      "tags": [
+        "llm",
+        "gateway",
+        "proxy",
+        "openai-compatible",
+        "python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Call 100+ LLM APIs through one OpenAI-format interface, as a Python SDK or a self-hosted gateway.",
+      "why": "Widely adopted unified client/proxy with cost tracking, fallbacks and rate limits; MIT outside its enterprise/ folder.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "Lightning-AI/litgpt",
+      "name": "LitGPT",
+      "category": "ai-sdks",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "llm",
+        "pretraining",
+        "fine-tuning",
+        "lora",
+        "deployment"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Pretrain, finetune and serve 20+ open LLMs with simple recipes",
+      "why": "Lightning AI's hackable from-scratch implementations of popular LLMs with LoRA/QLoRA, FSDP and serving recipes.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "ggml-org/llama.cpp",
+      "name": "llama.cpp",
+      "category": "ai-sdks",
+      "kinds": [
+        "engine",
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "llm",
+        "inference",
+        "gguf",
+        "local"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Run open-weight LLMs locally on CPU/GPU with GGUF models and an OpenAI-compatible server",
+      "why": "The engine under Ollama, LM Studio and most local-LLM tools; broadest hardware and model support",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "lmstudio-ai/lmstudio-js",
+      "name": "LM Studio SDK",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "local-llm",
+        "lm-studio",
+        "typescript",
+        "inference"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Load and call local models running in LM Studio from TypeScript.",
+      "why": "Official SDK for LM Studio, with model management, structured output and tool use against local models.",
+      "npm": "@lmstudio/sdk",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mistralai/client-ts",
+      "name": "Mistral TypeScript SDK",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "mistral",
+        "llm",
+        "sdk"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Call Mistral models (chat, embeddings, OCR, agents) from TypeScript",
+      "why": "Official Mistral client for TypeScript",
+      "npm": "@mistralai/mistralai",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "alibaba/MNN",
+      "name": "MNN",
+      "category": "ai-sdks",
+      "kinds": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "inference",
+        "on-device",
+        "mobile",
+        "llm",
+        "edge-ai"
+      ],
+      "ecosystems": [
+        "cpp",
+        "java",
+        "swift",
+        "python"
+      ],
+      "use_for": "Run LLMs and other models on-device on mobile, embedded and desktop",
+      "why": "Alibaba's battle-tested lightweight inference engine; powers on-device LLMs in production apps with CPU/GPU/NPU backends.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "ollama/ollama",
+      "name": "Ollama",
+      "category": "ai-sdks",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "local-llm",
+        "inference",
+        "openai-compatible",
+        "models"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Run open-weight LLMs locally behind a simple REST and OpenAI-compatible API.",
+      "why": "The most popular way to pull and serve local models; large model library and SDKs for JS and Python.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "openai/openai-node",
+      "name": "OpenAI Node SDK",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "openai",
+        "llm",
+        "typescript",
+        "api-client"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Official TypeScript/JavaScript client for the OpenAI API (chat, responses, embeddings, audio, images).",
+      "why": "Official vendor SDK, generated from the OpenAI API spec and kept in lockstep with new endpoints.",
+      "npm": "openai",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "openai/openai-python",
+      "name": "OpenAI Python SDK",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "openai",
+        "llm",
+        "python",
+        "api-client"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Official Python client for the OpenAI API, sync and async.",
+      "why": "Official vendor SDK; many OpenAI-compatible servers (vLLM, Ollama, LM Studio) accept it too, so one client covers many backends.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "bentoml/OpenLLM",
+      "name": "OpenLLM",
+      "category": "ai-sdks",
+      "kinds": [
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "llm",
+        "serving",
+        "openai-compatible",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Serve open-source LLMs as OpenAI-compatible API endpoints",
+      "why": "One command turns Llama, DeepSeek, Qwen etc. into an OpenAI-compatible server, built on BentoML for cloud deployment.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "dottxt-ai/outlines",
+      "name": "Outlines",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "structured-output",
+        "constrained-decoding",
+        "llm"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Guarantee LLM output matches a JSON schema, regex or grammar",
+      "why": "Leading constrained-decoding library; its approach is used inside vLLM and other servers for structured generation",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "TanStack/ai",
+      "name": "TanStack AI",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "llm",
+        "streaming",
+        "tool-calling",
+        "typescript",
+        "type-safe"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Type-safe, provider-agnostic TypeScript SDK for streaming chat, tool calling and agents.",
+      "why": "From the TanStack team; framework-agnostic and strongly typed, a lighter alternative to the Vercel AI SDK.",
+      "npm": "@tanstack/ai",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "NVIDIA/TensorRT-LLM",
+      "name": "TensorRT-LLM",
+      "category": "ai-sdks",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "llm",
+        "inference",
+        "nvidia",
+        "gpu",
+        "serving"
+      ],
+      "ecosystems": [
+        "python",
+        "cpp"
+      ],
+      "use_for": "Optimize and serve LLMs on NVIDIA GPUs with a Python API",
+      "why": "NVIDIA's official LLM inference stack: in-flight batching, paged KV cache, FP8/FP4 quantization and speculative decoding for max GPU throughput.",
+      "official": true,
+      "license_verified": {
+        "license": "Apache-2.0",
+        "note": "LICENSE states Apache 2.0 with third-party notices appended",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "toon-format/toon",
+      "name": "TOON",
+      "category": "ai-sdks",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "llm",
+        "serialization",
+        "tokens",
+        "json",
+        "prompt"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Encode JSON for LLM prompts in a compact, token-efficient format",
+      "why": "Token-Oriented Object Notation spec with TS SDK and CLI; cuts prompt tokens for tabular/structured data vs JSON, with benchmarks.",
+      "npm": "@toon-format/toon",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "vercel/ai",
+      "name": "Vercel AI SDK",
+      "category": "ai-sdks",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "llm",
+        "streaming",
+        "tool-calling",
+        "typescript",
+        "react"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Call any LLM provider from TypeScript with streaming, tool calls, structured output and React/Svelte/Vue chat hooks.",
+      "why": "Provider-agnostic TS toolkit with first-class UI hooks; the de facto default for AI features in Next.js and other JS apps.",
+      "npm": "ai",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "vllm-project/vllm",
+      "name": "vLLM",
+      "category": "ai-sdks",
+      "kinds": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "llm",
+        "inference",
+        "serving",
+        "gpu"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Serve open-weight LLMs at high throughput behind an OpenAI-compatible API",
+      "why": "De facto standard for self-hosted GPU LLM serving (PagedAttention, continuous batching)",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mlc-ai/web-llm",
+      "name": "WebLLM",
+      "category": "ai-sdks",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "in-browser",
+        "webgpu",
+        "local-llm",
+        "inference"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Run LLMs fully in the browser via WebGPU with an OpenAI-style API.",
+      "why": "Leading in-browser inference engine; no server needed, so it suits private or offline AI features in web apps.",
+      "npm": "@mlc-ai/web-llm",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

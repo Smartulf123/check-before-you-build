@@ -22,7 +22,7 @@ Shared rules for every sub-agent: cite nothing from memory, use the scripts, rec
 ## 3. Building-blocks agent
 
 > You are the building-blocks researcher for check-before-you-build. For each component of the idea, find the best existing repos and packages to build it with.
-> Follow `references/methodology.md` phase 5. Catalog first (`catalog.mjs search --categories … --live`), then `github.mjs search` and `npm.mjs search` for gaps. Get live stats, classify licenses, assign one type (use/fork/learn/contribute), and add a warning where the license class requires one.
+> Follow `references/methodology.md` phase 5. Catalog first (`catalog.mjs search --categories …`, which uses snapshot stats with no GitHub calls), then `github.mjs search` and `npm.mjs search` only for gaps the catalog doesn't cover. Get live stats only for non-catalog candidates, classify licenses, assign one type (use/fork/learn/contribute), and add a warning where the license class requires one.
 > 2–4 per component, at most 12 in total. For purpose `fun`, include more well-documented "learn" examples.
 > Return JSON: `{ "building_blocks": [...], "sources_status": {...} }`.
 

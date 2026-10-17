@@ -1,0 +1,331 @@
+{
+  "category": "app-extensions",
+  "entries": [
+    {
+      "id": "GoogleChrome/chrome-extensions-samples",
+      "name": "Chrome Extensions Samples",
+      "category": "app-extensions",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "chrome-extension",
+        "manifest-v3",
+        "examples"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Official Manifest V3 sample extensions for every Chrome extension API",
+      "why": "Canonical reference code from the Chrome team for each extension API",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "crxjs/chrome-extension-tools",
+      "name": "CRXJS Vite plugin",
+      "category": "app-extensions",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "vite",
+        "chrome-extension",
+        "hmr",
+        "manifest-v3"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Vite plugin to build Chrome extensions with HMR, using manifest.json as the entry",
+      "why": "Lightweight alternative to WXT/Plasmo when you just want Vite plus a manifest",
+      "npm": "@crxjs/vite-plugin",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "extension-js/extension.js",
+      "name": "Extension.js",
+      "category": "app-extensions",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "browser-extension",
+        "cross-browser",
+        "templates"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Scaffold, develop and build cross-browser extensions with zero config.",
+      "why": "Framework-agnostic extension tooling with many templates; MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "JetBrains/intellij-platform-plugin-template",
+      "name": "IntelliJ Platform Plugin Template",
+      "category": "app-extensions",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "intellij",
+        "jetbrains",
+        "plugin",
+        "kotlin"
+      ],
+      "ecosystems": [
+        "jvm"
+      ],
+      "use_for": "Template repository for creating plugins for IntelliJ IDEA and other JetBrains IDEs",
+      "why": "Official JetBrains starter with Gradle setup, CI and publishing preconfigured",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "obsidianmd/obsidian-api",
+      "name": "Obsidian API",
+      "category": "app-extensions",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "obsidian",
+        "plugin",
+        "typescript",
+        "types"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Official TypeScript API definitions for building Obsidian plugins",
+      "why": "The typed API every Obsidian plugin depends on, with docs in the declarations",
+      "npm": "obsidian",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "obsidianmd/obsidian-sample-plugin",
+      "name": "Obsidian Sample Plugin",
+      "category": "app-extensions",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "obsidian",
+        "plugin",
+        "template",
+        "official"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Start an Obsidian community plugin with the official build setup.",
+      "why": "Official Obsidian template used by most community plugins.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "PlasmoHQ/plasmo",
+      "name": "Plasmo",
+      "category": "app-extensions",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "browser-extension",
+        "react",
+        "manifest-v3"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build browser extensions with React and TypeScript using a batteries-included framework.",
+      "why": "Popular extension framework with built-in messaging, storage and store publishing.",
+      "npm": "plasmo",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "raycast/extensions",
+      "name": "Raycast Extensions",
+      "category": "app-extensions",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "raycast",
+        "extensions",
+        "store",
+        "official"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build and publish Raycast extensions, using thousands of existing ones as references.",
+      "why": "Official repo for Raycast Store extensions with templates and contribution workflow.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "lisonge/vite-plugin-monkey",
+      "name": "vite-plugin-monkey",
+      "category": "app-extensions",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "userscript",
+        "tampermonkey",
+        "vite"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Vite plugin for building Tampermonkey, Violentmonkey and Greasemonkey userscripts",
+      "why": "Brings Vite dev server, HMR and frameworks to userscript development",
+      "npm": "vite-plugin-monkey",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "microsoft/vscode-extension-samples",
+      "name": "VS Code Extension Samples",
+      "category": "app-extensions",
+      "kinds": [
+        "template"
+      ],
+      "tags": [
+        "vscode",
+        "extensions",
+        "samples",
+        "official"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Start a VS Code extension from official samples covering most extension APIs.",
+      "why": "Microsoft's official reference samples for the VS Code extension API.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "microsoft/vscode-vsce",
+      "name": "vsce",
+      "category": "app-extensions",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "vscode",
+        "packaging",
+        "marketplace",
+        "publishing"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Package and publish VS Code extensions to the Marketplace",
+      "why": "Official tool for packaging .vsix files and publishing extensions",
+      "npm": "@vscode/vsce",
+      "license_verified": {
+        "license": "MIT",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mozilla/web-ext",
+      "name": "web-ext",
+      "category": "app-extensions",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "webextensions",
+        "firefox",
+        "lint",
+        "signing"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "CLI to run, lint, package and sign browser extensions",
+      "why": "Official Mozilla tool for developing and publishing Firefox (and Chromium) extensions",
+      "npm": "web-ext",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "wxt-dev/wxt",
+      "name": "WXT",
+      "category": "app-extensions",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "browser-extension",
+        "vite",
+        "manifest-v3",
+        "cross-browser"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build cross-browser web extensions with Vite, HMR and file-based entrypoints.",
+      "why": "Modern, fast-growing extension framework with excellent DX; MIT.",
+      "npm": "wxt",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "microsoft/vscode-generator-code",
+      "name": "Yo Code",
+      "category": "app-extensions",
+      "kinds": [
+        "cli",
+        "template"
+      ],
+      "tags": [
+        "vscode",
+        "extension",
+        "scaffolding",
+        "yeoman"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Scaffold new VS Code extensions, themes, language support and more",
+      "why": "Official Microsoft generator used in the VS Code extension docs",
+      "npm": "generator-code",
+      "license_verified": {
+        "license": "MIT",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

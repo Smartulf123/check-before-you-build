@@ -1,0 +1,640 @@
+{
+  "category": "data-science-ml",
+  "entries": [
+    {
+      "id": "apache/datafusion",
+      "name": "Apache DataFusion",
+      "category": "data-science-ml",
+      "kinds": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "sql",
+        "query-engine",
+        "arrow",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust",
+        "python"
+      ],
+      "use_for": "Embed a fast SQL and DataFrame query engine over Arrow data in your own system.",
+      "why": "Extensible Arrow-native query engine used as the core of many data products.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "apache/hamilton",
+      "name": "Apache Hamilton",
+      "category": "data-science-ml",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "dataflow",
+        "feature-engineering",
+        "pipelines",
+        "lineage"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Define testable, modular data and ML pipelines as plain Python functions.",
+      "why": "Lightweight dataflow framework with built-in lineage, now an Apache project.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tracel-ai/burn",
+      "name": "Burn",
+      "category": "data-science-ml",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "deep-learning",
+        "tensor",
+        "rust",
+        "gpu"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Train and run deep learning models in Rust across CPU, CUDA, Metal and WebGPU",
+      "why": "Flexible Rust DL framework with swappable backends, autodiff and kernel fusion; 351 contributors.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "NVIDIA/cudf",
+      "name": "cuDF",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "gpu",
+        "dataframe",
+        "rapids",
+        "cuda"
+      ],
+      "ecosystems": [
+        "python",
+        "cpp"
+      ],
+      "use_for": "Run pandas-style dataframe operations on NVIDIA GPUs.",
+      "why": "RAPIDS GPU DataFrame library, with a drop-in pandas accelerator mode.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "unit8co/darts",
+      "name": "Darts",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "time-series",
+        "forecasting",
+        "anomaly-detection"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Forecast and detect anomalies in time series with classical and deep learning models.",
+      "why": "One unified API over statistical and neural forecasting models; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "debezium/debezium",
+      "name": "Debezium",
+      "category": "data-science-ml",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "cdc",
+        "kafka",
+        "data-pipelines",
+        "streaming"
+      ],
+      "ecosystems": [
+        "java"
+      ],
+      "use_for": "Stream row-level database changes (CDC) into Kafka or other sinks",
+      "why": "De facto open-source change data capture for Postgres, MySQL, MongoDB and more; 900+ contributors.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "deepspeedai/DeepSpeed",
+      "name": "DeepSpeed",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "distributed-training",
+        "zero",
+        "inference",
+        "pytorch"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Train and serve very large PyTorch models efficiently across many GPUs.",
+      "why": "ZeRO optimizations and parallelism used to train many large models; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "fastai/fastai",
+      "name": "fastai",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "deep-learning",
+        "pytorch",
+        "transfer-learning",
+        "high-level"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Train state-of-the-art deep learning models quickly with high-level PyTorch APIs.",
+      "why": "Proven high-level API with good defaults and a well-known course ecosystem.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "alteryx/featuretools",
+      "name": "Featuretools",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "feature-engineering",
+        "automl",
+        "relational"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Automatically generate ML features from relational and temporal datasets.",
+      "why": "The best-known automated feature engineering library; BSD-3.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "ggml-org/ggml",
+      "name": "ggml",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "tensor",
+        "inference",
+        "quantization",
+        "cpu"
+      ],
+      "ecosystems": [
+        "c",
+        "cpp"
+      ],
+      "use_for": "Build lightweight on-device ML inference with quantized tensors",
+      "why": "The tensor library behind llama.cpp and whisper.cpp; no dependencies and broad hardware support.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "gradio-app/gradio",
+      "name": "Gradio",
+      "category": "data-science-ml",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "ml-demos",
+        "ui",
+        "python",
+        "huggingface"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Wrap an ML model in a shareable web UI or API in a few lines of Python",
+      "why": "Standard for ML demos and Hugging Face Spaces; auto-generates API endpoints and client libraries.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "jupyterlab/jupyterlab",
+      "name": "JupyterLab",
+      "category": "data-science-ml",
+      "kinds": [
+        "app",
+        "framework"
+      ],
+      "tags": [
+        "notebooks",
+        "jupyter",
+        "ide",
+        "extensions"
+      ],
+      "ecosystems": [
+        "python",
+        "ts"
+      ],
+      "use_for": "Notebook-based environment for interactive data science, extensible with plugins",
+      "why": "The standard notebook interface for data work, with a large extension ecosystem",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "kedro-org/kedro",
+      "name": "Kedro",
+      "category": "data-science-ml",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "pipelines",
+        "mlops",
+        "data-engineering"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Structure data science code into reproducible, testable pipelines",
+      "why": "LF AI & Data project bringing software engineering practice (data catalog, modular pipelines) to DS projects.",
+      "license_verified": {
+        "license": "Apache-2.0",
+        "note": "LICENSE.md is Apache License 2.0",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "marimo-team/marimo",
+      "name": "marimo",
+      "category": "data-science-ml",
+      "kinds": [
+        "library",
+        "app"
+      ],
+      "tags": [
+        "notebooks",
+        "reactive",
+        "python",
+        "data-apps"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Reactive Python notebooks stored as plain .py files, runnable as scripts or deployable as apps",
+      "why": "Fixes Jupyter hidden-state and git-diff pain: reactive execution, pure Python files, built-in UI elements",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "matplotlib/matplotlib",
+      "name": "Matplotlib",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "plotting",
+        "python",
+        "visualization",
+        "scientific"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "The foundational Python plotting library for static, animated and interactive figures",
+      "why": "Underpins seaborn, pandas plotting and most of the scientific Python stack; the default for publication-quality figures",
+      "license_verified": {
+        "license": "PSF-2.0",
+        "note": "Matplotlib License (PSF-derived permissive); PyPI classifier OSI Approved :: Python Software Foundation License",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mlflow/mlflow",
+      "name": "MLflow",
+      "category": "data-science-ml",
+      "kinds": [
+        "library",
+        "service"
+      ],
+      "tags": [
+        "mlops",
+        "experiment-tracking",
+        "model-registry",
+        "llmops"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Track experiments, package models, manage a model registry and evaluate LLM apps",
+      "why": "The most widely used open MLOps platform for experiment tracking and model lifecycle management",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "numpy/numpy",
+      "name": "NumPy",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "arrays",
+        "numerical",
+        "python",
+        "scientific"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "N-dimensional arrays and fast numerical computing for Python",
+      "why": "The base array library that pandas, scikit-learn, PyTorch interop and nearly all scientific Python builds on",
+      "license_verified": {
+        "license": "BSD-3-Clause",
+        "note": "LICENSE.txt is BSD 3-clause; bundled components under compatible licenses",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "pandas-dev/pandas",
+      "name": "pandas",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "dataframe",
+        "analysis",
+        "python",
+        "tabular"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Load, clean, transform and analyze tabular data with DataFrames in Python.",
+      "why": "The standard Python dataframe library with the largest ecosystem of integrations.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "pola-rs/polars",
+      "name": "Polars",
+      "category": "data-science-ml",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "dataframe",
+        "rust",
+        "lazy",
+        "performance"
+      ],
+      "ecosystems": [
+        "python",
+        "rust",
+        "js"
+      ],
+      "use_for": "Process large tabular datasets fast with a lazy, multi-threaded DataFrame engine.",
+      "why": "Rust-based, much faster than pandas on many workloads, with Python, Rust and Node APIs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Kanaries/pygwalker",
+      "name": "PyGWalker",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "eda",
+        "notebooks",
+        "visualization",
+        "dataframe"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Explore a DataFrame with a Tableau-style drag-and-drop UI inside Jupyter",
+      "why": "Turns pandas/polars DataFrames into an interactive visual analysis UI in notebooks and Streamlit.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "yzhao062/pyod",
+      "name": "PyOD",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "anomaly-detection",
+        "outliers",
+        "machine-learning"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Detect anomalies and outliers in tabular, time series or other data",
+      "why": "60+ detectors behind a scikit-learn-style API; the go-to Python anomaly detection library.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "pytorch/pytorch",
+      "name": "PyTorch",
+      "category": "data-science-ml",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "deep-learning",
+        "tensors",
+        "gpu",
+        "training"
+      ],
+      "ecosystems": [
+        "python",
+        "cpp"
+      ],
+      "use_for": "Build and train neural networks with tensors, autograd and GPU acceleration.",
+      "why": "The dominant deep learning framework in research and production; BSD-style license (verified).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "ray-project/ray",
+      "name": "Ray",
+      "category": "data-science-ml",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "distributed",
+        "scaling",
+        "training",
+        "serving"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Scale Python and ML workloads across clusters: distributed training, tuning, data and serving",
+      "why": "Standard compute engine for scaling ML from a laptop to a cluster; powers training and inference at many large labs",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "scikit-learn/scikit-learn",
+      "name": "scikit-learn",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "machine-learning",
+        "classification",
+        "regression",
+        "python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Train and evaluate classical ML models: classification, regression, clustering and preprocessing.",
+      "why": "The default library for classical ML in Python, with a consistent, well-documented API.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "tensorflow/tfjs",
+      "name": "TensorFlow.js",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "machine-learning",
+        "javascript",
+        "webgl",
+        "browser"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Train and run ML models in the browser or Node.js with WebGL/WebGPU acceleration.",
+      "why": "The most established ML library for JavaScript, with prebuilt models and converters.",
+      "npm": "@tensorflow/tfjs",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "huggingface/transformers",
+      "name": "Transformers",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "nlp",
+        "llm",
+        "pretrained-models",
+        "pytorch"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Load, fine-tune and run pretrained models for text, vision, audio and multimodal tasks",
+      "why": "The de-facto model-definition library: thousands of architectures and direct access to the Hugging Face Hub",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "dmlc/xgboost",
+      "name": "XGBoost",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "gradient-boosting",
+        "tabular",
+        "machine-learning",
+        "gpu"
+      ],
+      "ecosystems": [
+        "python",
+        "r",
+        "jvm"
+      ],
+      "use_for": "Scalable gradient-boosted trees for tabular classification, regression and ranking",
+      "why": "Still the strongest default for tabular data; GPU and distributed training, scikit-learn compatible API",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Data-Centric-AI-Community/fg-data-profiling",
+      "name": "ydata-profiling",
+      "category": "data-science-ml",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "eda",
+        "data-quality",
+        "pandas",
+        "spark"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate a full EDA and data-quality report from a DataFrame in one line",
+      "why": "Formerly pandas-profiling; HTML reports with correlations, missing values and alerts for Pandas and Spark.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    }
+  ]
+}

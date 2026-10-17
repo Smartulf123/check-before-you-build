@@ -1,0 +1,464 @@
+{
+  "category": "bots",
+  "entries": [
+    {
+      "id": "aiogram/aiogram",
+      "name": "aiogram",
+      "category": "bots",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "telegram",
+        "bot",
+        "python",
+        "async"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build Telegram bots in Python with a fully async framework.",
+      "why": "Popular async Telegram framework with FSM, routers and middlewares.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "WhiskeySockets/Baileys",
+      "name": "Baileys",
+      "category": "bots",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "whatsapp",
+        "websocket"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "WhatsApp Web API over WebSockets, no browser needed",
+      "why": "Most used unofficial WhatsApp library for Node that needs no Puppeteer",
+      "npm": "baileys",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "slackapi/bolt-js",
+      "name": "Bolt for JavaScript",
+      "category": "bots",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "slack",
+        "bot",
+        "nodejs",
+        "events"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Build Slack apps and bots that handle events, commands and interactivity.",
+      "why": "Slack's official app framework; handles auth, events and Socket Mode.",
+      "npm": "@slack/bolt",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "slackapi/bolt-python",
+      "name": "Bolt for Python",
+      "category": "bots",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "slack",
+        "events"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build Slack apps in Python",
+      "why": "Official Slack framework for Python",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vercel/chat",
+      "name": "Chat SDK",
+      "category": "bots",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "slack",
+        "discord",
+        "teams",
+        "multi-platform"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Write a bot once and deploy to Slack, Teams, Discord, Google Chat and more",
+      "why": "Unified TypeScript bot SDK from Vercel",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "discordjs/discord.js",
+      "name": "discord.js",
+      "category": "bots",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "discord",
+        "bot",
+        "nodejs"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Build Discord bots in Node.js.",
+      "why": "The most used Discord library, with full API coverage and active maintenance.",
+      "npm": "discord.js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "discord-net/Discord.Net",
+      "name": "Discord.Net",
+      "category": "bots",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "discord",
+        "dotnet"
+      ],
+      "ecosystems": [
+        "csharp"
+      ],
+      "use_for": ".NET wrapper for the Discord API",
+      "why": "Most popular C# Discord library",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Rapptz/discord.py",
+      "name": "discord.py",
+      "category": "bots",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "discord",
+        "bot",
+        "python",
+        "async"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build Discord bots in Python with an async API.",
+      "why": "The most popular Python Discord library, with slash commands and extensions.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "grammyjs/grammY",
+      "name": "grammY",
+      "category": "bots",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "telegram",
+        "bot",
+        "typescript",
+        "deno"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build Telegram bots in TypeScript on Node, Deno, Bun or serverless.",
+      "why": "Modern, well-documented Telegram framework with a rich plugin ecosystem.",
+      "npm": "grammy",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "koishijs/koishi",
+      "name": "Koishi",
+      "category": "bots",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "cross-platform",
+        "plugins"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Cross-platform chatbot framework with a plugin ecosystem",
+      "why": "Popular multi-platform bot framework",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "langbot-app/LangBot",
+      "name": "LangBot",
+      "category": "bots",
+      "kinds": [
+        "framework",
+        "service"
+      ],
+      "tags": [
+        "chatbot",
+        "llm",
+        "discord",
+        "telegram",
+        "slack",
+        "wechat"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build LLM-powered bots across Discord, Slack, Telegram, LINE, WeChat",
+      "why": "Production IM bot platform with agent/knowledge-base orchestration and a plugin system across many chat platforms.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "nonebot/nonebot2",
+      "name": "NoneBot2",
+      "category": "bots",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "chatbot",
+        "multi-platform",
+        "python",
+        "async"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Async cross-platform chatbot framework for QQ, Telegram, Discord and more.",
+      "why": "One plugin system across many chat platforms via adapters.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "eternnoir/pyTelegramBotAPI",
+      "name": "pyTelegramBotAPI",
+      "category": "bots",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "telegram",
+        "bot",
+        "python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Simple Python library for the Telegram Bot API, sync and async.",
+      "why": "Easy to start with and widely used; GPL-2.0 licensed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "python-telegram-bot/python-telegram-bot",
+      "name": "python-telegram-bot",
+      "category": "bots",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "telegram",
+        "async"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Async Python wrapper for the Telegram Bot API",
+      "why": "The most popular Telegram bot library",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "serenity-rs/serenity",
+      "name": "Serenity",
+      "category": "bots",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "discord",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Rust library for the Discord API",
+      "why": "Leading Rust Discord library",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "telegraf/telegraf",
+      "name": "Telegraf",
+      "category": "bots",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "telegram",
+        "bot",
+        "nodejs",
+        "middleware"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build Telegram bots in Node.js with a middleware-based API.",
+      "why": "Established Telegram framework with full Bot API typings.",
+      "npm": "telegraf",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "irazasyed/telegram-bot-sdk",
+      "name": "Telegram Bot SDK (PHP)",
+      "category": "bots",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "telegram",
+        "bot",
+        "php",
+        "laravel"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Build Telegram bots in PHP, with Laravel integration.",
+      "why": "Most used PHP Telegram SDK.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "TelegramBots/Telegram.Bot",
+      "name": "Telegram.Bot",
+      "category": "bots",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "telegram",
+        "bot",
+        "dotnet",
+        "csharp"
+      ],
+      "ecosystems": [
+        "csharp"
+      ],
+      "use_for": ".NET client for the Telegram Bot API.",
+      "why": "The standard C# Telegram library, kept current with Bot API releases.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "rubenlagus/TelegramBots",
+      "name": "TelegramBots (Java)",
+      "category": "bots",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "telegram",
+        "bot",
+        "java",
+        "spring"
+      ],
+      "ecosystems": [
+        "java"
+      ],
+      "use_for": "Build Telegram bots in Java.",
+      "why": "The standard Java Telegram library, with a Spring Boot starter.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "wwebjs/whatsapp-web.js",
+      "name": "whatsapp-web.js",
+      "category": "bots",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "whatsapp",
+        "bot",
+        "nodejs",
+        "puppeteer"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Automate WhatsApp through WhatsApp Web from Node.js.",
+      "why": "Most used WhatsApp Web client library; unofficial, so check WhatsApp terms before production use.",
+      "npm": "whatsapp-web.js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tulir/whatsmeow",
+      "name": "whatsmeow",
+      "category": "bots",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "whatsapp",
+        "go"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Go library for the WhatsApp web multidevice API",
+      "why": "Robust Go WhatsApp library used by Matrix bridges",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

@@ -14,6 +14,26 @@ async function skillInstalls(skillId) {
   return hit ? hit.signals.installs : null;
 }
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+/**
+ * checkRepo that waits out GitHub's hourly limit instead of failing. A large catalog (up to
+ * ~2,500 entries) needs more calls than one hour allows, so long runs pause and continue.
+ */
+export async function checkRepoPatient(id, meta = {}, { maxWaits = 3, log = (m) => process.stderr.write(m + '\n') } = {}) {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      return await checkRepo(id, meta);
+    } catch (err) {
+      if (err.name !== 'RateLimitError' || attempt >= maxWaits) throw err;
+      const resetMs = err.resetAt ? new Date(err.resetAt).getTime() - Date.now() : 60_000;
+      const waitMs = Math.max(5_000, resetMs + 5_000);
+      log(`rate limit reached; pausing ${Math.round(waitMs / 60000)} min until ${err.resetAt || 'reset'}`);
+      await sleep(waitMs);
+    }
+  }
+}
+
 /**
  * GitHub reports NOASSERTION when a license file exists but can't be classified (common for
  * MIT with a custom header). Resolve it from the npm package, but only if that package points
@@ -75,6 +95,7 @@ export async function checkRepo(id, meta = {}) {
     stable: meta.stable,
     stable_reason: meta.stable_reason,
     license_verified: meta.license_verified,
+    exception: meta.exception,
   });
   return {
     id,

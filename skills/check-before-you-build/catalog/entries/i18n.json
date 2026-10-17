@@ -1,0 +1,442 @@
+{
+  "category": "i18n",
+  "entries": [
+    {
+      "id": "python-babel/babel",
+      "name": "Babel (Python)",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "i18n",
+        "gettext",
+        "cldr"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Python i18n: gettext message extraction plus CLDR date, number and currency formatting",
+      "why": "Standard Python i18n toolkit used by Flask-Babel, Sphinx and many frameworks",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "projectfluent/fluent.js",
+      "name": "Fluent.js",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "i18n",
+        "fluent",
+        "mozilla"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Mozilla Fluent localization for JS, with natural-sounding grammar handling",
+      "why": "JS implementation of Mozilla's Fluent, the localization system used in Firefox",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "formatjs/formatjs",
+      "name": "FormatJS (react-intl)",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "icu",
+        "messageformat",
+        "react",
+        "intl"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "ICU message formatting, Intl polyfills and react-intl for React apps",
+      "why": "Home of react-intl and intl-messageformat, the reference ICU MessageFormat stack in JS; millions of weekly downloads",
+      "npm": "react-intl",
+      "license_verified": {
+        "license": "MIT",
+        "note": "Per-package licenses: most packages MIT; react-intl and intl-messageformat BSD-3-Clause",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "nicksnyder/go-i18n",
+      "name": "go-i18n",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "i18n",
+        "go",
+        "pluralization",
+        "cli"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Translate Go programs into multiple languages with CLDR plural rules.",
+      "why": "The most used i18n package for Go, with a CLI to extract and merge messages.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "i18next/i18next",
+      "name": "i18next",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "i18n",
+        "translation",
+        "javascript",
+        "pluralization"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Framework-agnostic internationalization for JavaScript with plurals, interpolation and backends.",
+      "why": "The most widely used JS i18n core, with bindings for React, Vue, Node and many plugins.",
+      "npm": "i18next",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "unicode-org/icu4x",
+      "name": "ICU4X",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "icu",
+        "unicode",
+        "cldr"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Modular Unicode/CLDR internationalization components for Rust, WASM and FFI",
+      "why": "Unicode Consortium's modern, lightweight ICU",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "lingodotdev/lingo.dev",
+      "name": "Lingo.dev",
+      "category": "i18n",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "i18n",
+        "ai-translation",
+        "localization",
+        "ci"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "AI-powered localization CLI and SDK that translates app strings and content in CI.",
+      "why": "Automates translation of JSON/YAML/markdown files with LLMs; plugs into CI and many frameworks.",
+      "npm": "lingo.dev",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "lingui/js-lingui",
+      "name": "Lingui",
+      "category": "i18n",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "i18n",
+        "icu",
+        "react",
+        "extraction"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Small, readable JS i18n with message extraction and compile-time catalogs.",
+      "why": "Compiles messages ahead of time for a tiny runtime; CLI handles extraction to PO/JSON.",
+      "npm": "@lingui/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "messageformat/messageformat",
+      "name": "messageformat",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "icu",
+        "messageformat",
+        "mf2"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "ICU MessageFormat and MessageFormat 2 parser/compiler for JS",
+      "why": "Reference JS implementation of Unicode MessageFormat 2",
+      "npm": "messageformat",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "amannn/next-intl",
+      "name": "next-intl",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "i18n",
+        "nextjs",
+        "app-router",
+        "react"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Internationalization for Next.js, including App Router, routing and server components.",
+      "why": "The go-to i18n library for the Next.js App Router, with ICU messages and localized routing.",
+      "npm": "next-intl",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "aralroca/next-translate",
+      "name": "next-translate",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "nextjs",
+        "i18n"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Lightweight i18n for Next.js pages and app router",
+      "why": "Popular small i18n alternative for Next.js",
+      "npm": "next-translate",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "ngx-translate/core",
+      "name": "ngx-translate",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "i18n",
+        "angular",
+        "translation"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Runtime translation library for Angular.",
+      "why": "Long-established Angular i18n library, simple JSON-based setup.",
+      "npm": "@ngx-translate/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "nuxt-modules/i18n",
+      "name": "Nuxt i18n",
+      "category": "i18n",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "i18n",
+        "nuxt",
+        "vue",
+        "seo"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "I18n module for Nuxt with localized routes, SEO tags and lazy loading.",
+      "why": "Standard Nuxt module built on vue-i18n; handles locale routing for you.",
+      "npm": "@nuxtjs/i18n",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "i18next/react-i18next",
+      "name": "react-i18next",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "i18n",
+        "react",
+        "hooks",
+        "translation"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "React bindings for i18next: hooks, components and SSR support.",
+      "why": "Default i18n choice for React apps; shares the i18next plugin ecosystem.",
+      "npm": "react-i18next",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "ruby-i18n/i18n",
+      "name": "Ruby I18n",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "i18n",
+        "ruby",
+        "rails"
+      ],
+      "ecosystems": [
+        "ruby"
+      ],
+      "use_for": "Core Ruby internationalization API used by Rails",
+      "why": "The i18n gem behind Rails",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tolgee/tolgee-platform",
+      "name": "Tolgee",
+      "category": "i18n",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "tms",
+        "localization",
+        "in-context"
+      ],
+      "ecosystems": [
+        "kotlin",
+        "ts"
+      ],
+      "use_for": "Self-hostable localization platform with in-context editing and machine translation",
+      "why": "Open-source TMS alternative to Crowdin/Lokalise with SDKs for major frameworks",
+      "license_verified": {
+        "license": "Apache-2.0",
+        "note": "Apache-2.0 outside ee/ and webapp/src/ee; those under the Tolgee EE license",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jsverse/transloco",
+      "name": "Transloco",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "i18n",
+        "angular",
+        "translation"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Internationalization library for Angular with runtime language switching.",
+      "why": "Modern Angular i18n with lazy-loaded scopes and tooling; more flexible than built-in Angular i18n.",
+      "npm": "@jsverse/transloco",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "intlify/vue-i18n",
+      "name": "Vue I18n",
+      "category": "i18n",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "i18n",
+        "vue",
+        "translation"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Internationalization plugin for Vue 3.",
+      "why": "The standard Vue i18n library, with Composition API support.",
+      "npm": "vue-i18n",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "WeblateOrg/weblate",
+      "name": "Weblate",
+      "category": "i18n",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "localization",
+        "tms",
+        "translation-management",
+        "git"
+      ],
+      "ecosystems": [
+        "python",
+        "any"
+      ],
+      "use_for": "Self-hosted web translation management system tightly integrated with Git.",
+      "why": "Mature open-source TMS used by many large projects; continuous localization straight from your repo.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

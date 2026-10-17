@@ -3,9 +3,11 @@
 // floor built in (≥ 1,000 stars, pushed within 6 months, not archived), drops repos already in
 // the catalog, and optionally runs the full quality check (contributors, fake stars, license).
 // Usage: node scripts/scout.mjs (--category <slug> | --all) [--check] [--limit 30]
-//          [--json candidates.json] [--report scout-report.md]
+//          [--big] [--exclude ids.txt] [--json candidates.json] [--report scout-report.md]
+// --big is the safety net: every repo with ≥ 10,000 stars, by topic AND by keywords in
+// name/description, so popular repos without topic tags are not missed.
 // Used weekly for new candidates, and once to harvest the initial catalog.
-import { writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import { intFlag, parseArgs } from '../skills/check-before-you-build/scripts/lib/cli.mjs';
 import { searchRepos } from '../skills/check-before-you-build/scripts/github.mjs';
 import { RULES, TIER_LABEL } from '../skills/check-before-you-build/scripts/lib/criteria.mjs';
@@ -29,9 +31,24 @@ export async function mapLimit(items, limit, fn) {
   return results;
 }
 
-export function qualityQualifiers(now = Date.now()) {
+export const BIG_REPO_STARS = 10000;
+
+export function qualityQualifiers(now = Date.now(), minStars = RULES.stars.solid) {
   const since = new Date(now - RULES.freshness_days.ok * 86400000).toISOString().slice(0, 10);
-  return `stars:>=${RULES.stars.solid} pushed:>=${since} archived:false`;
+  return `stars:>=${minStars} pushed:>=${since} archived:false`;
+}
+
+/**
+ * Queries for a category. Normal mode uses the topic queries. Big-repo mode (the safety net)
+ * also searches the same words in names and descriptions, because many popular repos never set
+ * the topic tags (that is how repos like morluto/rea were missed).
+ */
+export function categoryQueries(cat, { big = false } = {}) {
+  if (!big) return cat.queries;
+  const keywordVariants = cat.queries.map(
+    (q) => `${q.replace(/topic:([\w-]+)/g, (_, t) => t.replace(/-/g, ' '))} in:name,description`,
+  );
+  return [...new Set([...cat.queries, ...keywordVariants])];
 }
 
 export function renderReport(byCategory, generatedAt) {
@@ -62,16 +79,21 @@ async function main() {
     return;
   }
   const existing = new Set((await readAllCategoryFiles()).flatMap(({ data }) => data.entries.map((e) => e.id.toLowerCase())));
-  const qualifiers = qualityQualifiers();
+  if (typeof flags.exclude === 'string') {
+    // extra ids to treat as already present (e.g. a staged selection not yet written to the catalog)
+    for (const id of (await readFile(flags.exclude, 'utf8')).split(/\s+/).filter(Boolean)) existing.add(id.toLowerCase());
+  }
+  const big = Boolean(flags.big);
+  const qualifiers = qualityQualifiers(Date.now(), big ? BIG_REPO_STARS : RULES.stars.solid);
   const limit = intFlag(flags, 'limit', 30);
   const byCategory = {};
   const failures = [];
 
   for (const cat of targets) {
     const found = new Map();
-    for (const query of cat.queries) {
+    for (const query of categoryQueries(cat, { big })) {
       try {
-        const res = await searchRepos([query, qualifiers], { limit, minStars: 0 });
+        const res = await searchRepos([query, qualifiers], { limit, minStars: 0, sort: big ? 'stars' : undefined });
         for (const r of res.results) {
           const key = r.full_name.toLowerCase();
           if (!existing.has(key) && !found.has(key)) found.set(key, { ...r, matched_query: query });

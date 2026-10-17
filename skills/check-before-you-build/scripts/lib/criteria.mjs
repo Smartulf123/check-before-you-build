@@ -15,6 +15,8 @@ export const RULES = {
   fake_stars: { min_stars: 1000, max_fork_ratio: 0.01, max_contributors: 2 },
 };
 
+const WAIVABLE = new Set(['contributors', 'freshness', 'adoption', 'fake_stars']);
+
 export function daysSince(iso, now = Date.now()) {
   if (!iso) return null;
   const t = new Date(iso).getTime();
@@ -57,6 +59,15 @@ export function evaluate(input, now = Date.now()) {
   const days = daysSince(s.pushed_at, now);
   const freshness = freshnessLabel(days);
 
+  // Maintainer exceptions may waive only these rules, never license, archived or missing.
+  const exception = input.exception;
+  const waived = new Set(exception?.reason && exception?.date ? (exception.rules || []).filter((r) => WAIVABLE.has(r)) : []);
+  if (exception && waived.size === 0) reasons.push('exception needs rules (contributors|freshness|adoption|fake_stars), a reason and a date');
+  const fail = (rule, text) => {
+    if (waived.has(rule)) warnings.push(`maintainer exception (${rule}): ${text}; ${exception.reason}`);
+    else reasons.push(text);
+  };
+
   if (s.missing) reasons.push('repository not found');
   if (s.archived) reasons.push('archived');
 
@@ -75,7 +86,7 @@ export function evaluate(input, now = Date.now()) {
   } else if (cls === 'other') reasons.push(`license not recognised (${s.license})`);
 
   const adoption = adoptionLevel(s, { official: Boolean(input.official) });
-  if (!adoption) reasons.push(`not enough adoption (${s.stars ?? 0} stars; needs ≥ ${RULES.stars.solid} or an alternative signal)`);
+  if (!adoption) fail('adoption', `not enough adoption (${s.stars ?? 0} stars; needs ≥ ${RULES.stars.solid} or an alternative signal)`);
 
   const isStable = Boolean(input.stable);
   if (isStable) {
@@ -85,14 +96,14 @@ export function evaluate(input, now = Date.now()) {
   if (days === null) {
     warnings.push('last push date unknown');
   } else if (days > (isStable ? RULES.freshness_days.stable_max : RULES.freshness_days.ok)) {
-    reasons.push(`last push ${Math.round(days)} days ago (limit ${isStable ? RULES.freshness_days.stable_max : RULES.freshness_days.ok})`);
+    fail('freshness', `last push ${Math.round(days)} days ago (limit ${isStable ? RULES.freshness_days.stable_max : RULES.freshness_days.ok})`);
   }
 
   const contributors = input.contributors;
   if (contributors === undefined || contributors === null) {
     warnings.push('contributor count unknown');
   } else if (contributors < RULES.min_contributors) {
-    reasons.push(`only ${contributors} contributor(s) (needs ≥ ${RULES.min_contributors})`);
+    fail('contributors', `only ${contributors} contributor(s) (needs ≥ ${RULES.min_contributors})`);
   }
 
   const fs = RULES.fake_stars;
@@ -104,10 +115,11 @@ export function evaluate(input, now = Date.now()) {
     contributors !== null &&
     contributors <= fs.max_contributors
   ) {
-    reasons.push('possible fake stars (very few forks and contributors for the star count)');
+    fail('fake_stars', 'possible fake stars (very few forks and contributors for the star count)');
   }
 
   const pass = reasons.length === 0;
+  const maintainerPick = pass && waived.size > 0;
   let tier = null;
   if (pass) {
     const fresh = days !== null && days <= RULES.freshness_days.fresh;
@@ -115,7 +127,8 @@ export function evaluate(input, now = Date.now()) {
     tier = !isStable && fresh && topAdoption ? 'top' : 'solid';
     if (freshness === 'ok') warnings.push('last push 3–6 months ago');
   }
-  return { pass, tier, freshness, days_since_push: days === null ? null : Math.round(days), reasons, warnings };
+  return { pass, tier, maintainer_pick: maintainerPick, freshness, days_since_push: days === null ? null : Math.round(days), reasons, warnings };
 }
 
 export const TIER_LABEL = { top: '⭐ Top choice', solid: '✅ Solid' };
+export const MAINTAINER_PICK_LABEL = '👤 Maintainer pick (exception)';

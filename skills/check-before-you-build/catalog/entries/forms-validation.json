@@ -1,0 +1,455 @@
+{
+  "category": "forms-validation",
+  "entries": [
+    {
+      "id": "ajv-validator/ajv",
+      "name": "Ajv",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "json-schema",
+        "validation"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Fastest JSON Schema validator for Node.js and browsers",
+      "why": "The reference JSON Schema validator in JS; used across OpenAPI and config tooling",
+      "npm": "ajv",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "arktypeio/arktype",
+      "name": "ArkType",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "schema",
+        "validation",
+        "typescript"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "TypeScript's 1:1 validator with syntax that mirrors TS types",
+      "why": "Very fast runtime validation with type-level parsing; supports Standard Schema",
+      "npm": "arktype",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vantezzen/autoform",
+      "name": "AutoForm",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "forms",
+        "zod",
+        "react",
+        "shadcn"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Render complete React forms automatically from an existing Zod or other schema.",
+      "why": "Generates forms from schemas with shadcn/ui and other UI adapters, saving boilerplate for admin and CRUD forms.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "typestack/class-validator",
+      "name": "class-validator",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "decorators",
+        "validation",
+        "nestjs"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Decorator-based validation for TypeScript classes",
+      "why": "The validation layer used by NestJS DTOs",
+      "npm": "class-validator",
+      "stable": true,
+      "stable_reason": "Feature-complete decorator validation library; stable API that NestJS relies on",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "edmundhung/conform",
+      "name": "Conform",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "forms",
+        "progressive-enhancement",
+        "react",
+        "server-actions"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build forms that work without JavaScript and validate on server and client.",
+      "why": "Designed for Remix/Next.js server actions; progressive enhancement with Zod or Valibot schemas.",
+      "npm": "@conform-to/react",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "flutter-form-builder-ecosystem/flutter_form_builder",
+      "name": "Flutter Form Builder",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "flutter",
+        "forms",
+        "validation",
+        "dart"
+      ],
+      "ecosystems": [
+        "dart"
+      ],
+      "use_for": "Build forms with validation and many ready input fields in Flutter.",
+      "why": "The most used Flutter form package, reducing boilerplate for field state, validation and value collection.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jaredpalmer/formik",
+      "name": "Formik",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "forms",
+        "react"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build forms in React without tears",
+      "why": "One of the most used React form libraries; common in existing codebases",
+      "npm": "formik",
+      "stable": true,
+      "stable_reason": "Mature, feature-complete React form library in maintenance mode; API unchanged for years and still widely downloaded",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "hapijs/joi",
+      "name": "Joi",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "schema",
+        "validation",
+        "nodejs"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Powerful schema description language and data validator for JavaScript",
+      "why": "The classic Node.js validation library, widely used for API input validation",
+      "npm": "joi",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "pydantic/pydantic",
+      "name": "Pydantic",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "validation",
+        "python",
+        "type-hints",
+        "serialization"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Validate and parse data in Python using type hints.",
+      "why": "The standard Python validation library (Rust core), used by FastAPI and most LLM tooling.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "react-hook-form/react-hook-form",
+      "name": "React Hook Form",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "forms",
+        "react",
+        "hooks",
+        "performance"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Manage React form state and validation with minimal re-renders.",
+      "why": "The most used React form library; uncontrolled inputs keep it fast and resolvers plug in Zod, Yup or Valibot.",
+      "npm": "react-hook-form",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "rjsf-team/react-jsonschema-form",
+      "name": "react-jsonschema-form",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "json-schema",
+        "forms",
+        "react"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Generate React forms from JSON Schema with themes for MUI, Ant, Chakra and more",
+      "why": "Standard way to render forms from JSON Schema; many UI themes",
+      "npm": "@rjsf/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "ciscoheat/sveltekit-superforms",
+      "name": "Superforms",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "forms",
+        "sveltekit",
+        "validation",
+        "svelte"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Handle forms with server and client validation in SvelteKit.",
+      "why": "The de facto SvelteKit form library, supporting many validators and progressive enhancement.",
+      "npm": "sveltekit-superforms",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "TanStack/form",
+      "name": "TanStack Form",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "forms",
+        "type-safe",
+        "react",
+        "framework-agnostic"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build fully type-safe forms in React, Vue, Solid, Angular or Lit.",
+      "why": "Headless, deeply typed form state with standard-schema validation and adapters for many frameworks.",
+      "npm": "@tanstack/react-form",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "sinclairzx81/typebox",
+      "name": "TypeBox",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "json-schema",
+        "typescript",
+        "validation"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "JSON Schema type builder with static TypeScript type resolution",
+      "why": "Generates standard JSON Schema with TS types; used by Fastify and Elysia",
+      "npm": "@sinclair/typebox",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "open-circle/valibot",
+      "name": "Valibot",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "schema",
+        "validation",
+        "typescript",
+        "tree-shakable"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Validate data with a modular, tree-shakable schema library when bundle size matters.",
+      "why": "Zod-like type safety with a functional API that tree-shakes down to a few hundred bytes.",
+      "npm": "valibot",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "go-playground/validator",
+      "name": "validator",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "golang",
+        "validation",
+        "struct-tags"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Go struct and field validation via tags",
+      "why": "The de facto Go validation library, used by Gin and many APIs",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "logaretm/vee-validate",
+      "name": "VeeValidate",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "forms",
+        "vue",
+        "validation"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Form validation for Vue with Zod/Yup/Valibot schema support",
+      "why": "The leading Vue form library with composition API and schema integrations",
+      "npm": "vee-validate",
+      "stable": true,
+      "stable_reason": "Mature v4 Vue form library with a settled API; releases are infrequent because it is feature-complete",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "ealush/vest",
+      "name": "Vest",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "validation",
+        "unit-test-style",
+        "forms",
+        "framework-agnostic"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Write form validation as test-like suites, independent of UI framework.",
+      "why": "Unit-test-style syntax for complex, async and conditional validation that stays readable.",
+      "npm": "vest",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jquense/yup",
+      "name": "Yup",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "schema",
+        "validation",
+        "forms"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Schema builder for runtime value parsing and validation",
+      "why": "Long-time default schema validator for Formik and many React form setups",
+      "npm": "yup",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "colinhacks/zod",
+      "name": "Zod",
+      "category": "forms-validation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "schema",
+        "validation",
+        "typescript",
+        "type-inference"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Validate data at runtime with schemas that also give you static TypeScript types.",
+      "why": "The most adopted TS schema library; integrates with tRPC, react-hook-form, AI SDKs and many frameworks.",
+      "npm": "zod",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    }
+  ]
+}

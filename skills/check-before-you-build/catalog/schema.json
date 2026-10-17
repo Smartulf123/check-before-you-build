@@ -32,6 +32,16 @@
           "skill": { "type": "string", "description": "skills.sh id owner/repo/skill, for the installs signal" },
           "official": { "type": "boolean", "description": "Official repo of the vendor it integrates with" },
           "featured": { "type": "boolean", "description": "One of the 3–5 best picks in its category; shown first in recommendations (max 5 per category)" },
+          "exception": {
+            "type": "object",
+            "description": "Maintainer pick: waives named quality rules. Shown to users as a maintainer pick. Never waives license, archived or missing.",
+            "required": ["rules", "reason", "date"],
+            "properties": {
+              "rules": { "type": "array", "items": { "enum": ["contributors", "freshness", "adoption", "fake_stars"] }, "minItems": 1 },
+              "reason": { "type": "string" },
+              "date": { "type": "string", "format": "date" }
+            }
+          },
           "license_verified": {
             "type": "object",
             "description": "License checked by a human when detection fails (per-folder licenses, README-only license)",

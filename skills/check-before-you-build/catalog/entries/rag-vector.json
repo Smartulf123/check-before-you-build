@@ -1,0 +1,731 @@
+{
+  "category": "rag-vector",
+  "entries": [
+    {
+      "id": "Mintplex-Labs/anything-llm",
+      "name": "AnythingLLM",
+      "category": "rag-vector",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "rag",
+        "chat-with-docs",
+        "local-llm",
+        "agents"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Self-hosted RAG workspace with built-in vector DB, agents and a developer API",
+      "why": "MIT all-in-one RAG platform: document ingestion, many vector DB and LLM backends, plus an API and embeddable chat widget.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "chroma-core/chroma",
+      "name": "Chroma",
+      "category": "rag-vector",
+      "kinds": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "vector-database",
+        "embeddings",
+        "embedded",
+        "rag"
+      ],
+      "ecosystems": [
+        "python",
+        "ts"
+      ],
+      "use_for": "Store and query embeddings locally or as a server, with a few lines of Python or JS.",
+      "why": "Simplest way to get a vector store running: embedded mode for prototypes, client/server for production; default store in many RAG tutorials.",
+      "npm": "chromadb",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "topoteretes/cognee",
+      "name": "cognee",
+      "category": "rag-vector",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "memory",
+        "knowledge-graph",
+        "graphrag",
+        "agents"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Turn documents and data into a queryable knowledge graph memory for agents",
+      "why": "Combines vector search and graph extraction (ECL pipelines) to give agents structured long-term memory; self-hostable.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "docling-project/docling",
+      "name": "Docling",
+      "category": "rag-vector",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "document-parsing",
+        "pdf",
+        "ingestion",
+        "rag"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Convert PDFs, DOCX, PPTX and HTML into clean Markdown/JSON for RAG ingestion",
+      "why": "IBM-originated LF AI project; accurate layout, table and reading-order extraction, the hard part of RAG ingestion.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "facebookresearch/faiss",
+      "name": "Faiss",
+      "category": "rag-vector",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "vector-search",
+        "ann",
+        "similarity-search",
+        "gpu"
+      ],
+      "ecosystems": [
+        "python",
+        "cpp"
+      ],
+      "use_for": "In-process similarity search and clustering of dense vectors, CPU or GPU",
+      "why": "The reference ANN library from Meta; powers many vector DBs and is the default for local, embedded vector indexes.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "qdrant/fastembed",
+      "name": "FastEmbed",
+      "category": "rag-vector",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "embeddings",
+        "onnx",
+        "lightweight",
+        "sparse"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate dense and sparse embeddings locally on CPU without PyTorch.",
+      "why": "ONNX-based and small, so it fits serverless and CI; supports popular open embedding and SPLADE models.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "FlagOpen/FlagEmbedding",
+      "name": "FlagEmbedding (BGE)",
+      "category": "rag-vector",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "embeddings",
+        "reranker",
+        "bge",
+        "retrieval"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Use and fine-tune BGE embedding and reranker models for retrieval.",
+      "why": "Home of the BGE models that rank near the top of MTEB; includes training and reranking tooling.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "microsoft/graphrag",
+      "name": "GraphRAG",
+      "category": "rag-vector",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "graph-rag",
+        "knowledge-graph",
+        "summarization",
+        "llm"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build a knowledge graph from documents with an LLM and answer global questions over it.",
+      "why": "Microsoft Research reference implementation of graph-based RAG; strong for whole-corpus questions plain vector search misses.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "deepset-ai/haystack",
+      "name": "Haystack",
+      "category": "rag-vector",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "rag",
+        "pipelines",
+        "llm",
+        "retrieval"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build production RAG and search pipelines with pluggable retrievers, rankers and LLMs",
+      "why": "Mature, modular RAG framework (since 2019) with explicit pipelines and integrations for every major vector store.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "nmslib/hnswlib",
+      "name": "hnswlib",
+      "category": "rag-vector",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "ann",
+        "hnsw",
+        "vector-search"
+      ],
+      "ecosystems": [
+        "cpp",
+        "python"
+      ],
+      "use_for": "Header-only HNSW index for fast approximate nearest-neighbour search",
+      "why": "Canonical HNSW implementation by the algorithm author; used inside Chroma and many other systems.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "lancedb/lancedb",
+      "name": "LanceDB",
+      "category": "rag-vector",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "vector-database",
+        "embedded",
+        "multimodal",
+        "serverless"
+      ],
+      "ecosystems": [
+        "python",
+        "ts",
+        "rust"
+      ],
+      "use_for": "Embed a serverless vector store in your app, backed by files on disk or object storage.",
+      "why": "No server to run; columnar Lance format handles multimodal data and scales from laptop to S3.",
+      "npm": "@lancedb/lancedb",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "StarTrail-org/LEANN",
+      "name": "LEANN",
+      "category": "rag-vector",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "vector-index",
+        "rag",
+        "low-storage",
+        "local"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Storage-efficient vector index for local RAG on laptops",
+      "why": "MLSys best paper: recomputes embeddings on the fly to cut index storage about 97%, making personal-scale RAG cheap.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "HKUDS/LightRAG",
+      "name": "LightRAG",
+      "category": "rag-vector",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "graph-rag",
+        "knowledge-graph",
+        "retrieval",
+        "llm"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Add knowledge-graph-based retrieval to a RAG system with incremental updates.",
+      "why": "Simpler and cheaper graph RAG than heavier alternatives, with a server, web UI and multiple storage backends.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "run-llama/llama_index",
+      "name": "LlamaIndex",
+      "category": "rag-vector",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "rag",
+        "indexing",
+        "retrieval",
+        "document-parsing",
+        "llm"
+      ],
+      "ecosystems": [
+        "python",
+        "ts"
+      ],
+      "use_for": "Build RAG pipelines: ingest documents, index them and query them with an LLM.",
+      "why": "The most widely used RAG-focused framework, with hundreds of loaders, vector store integrations and 2,000+ contributors.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "mem0ai/mem0",
+      "name": "Mem0",
+      "category": "rag-vector",
+      "kinds": [
+        "library",
+        "service"
+      ],
+      "tags": [
+        "memory",
+        "agents",
+        "long-term-memory",
+        "personalization"
+      ],
+      "ecosystems": [
+        "python",
+        "ts"
+      ],
+      "use_for": "Persistent long-term memory layer for AI agents and assistants",
+      "why": "Most adopted agent memory layer: extracts, stores and retrieves user facts across sessions on top of vector and graph stores.",
+      "npm": "mem0ai",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "milvus-io/milvus",
+      "name": "Milvus",
+      "category": "rag-vector",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "vector-database",
+        "distributed",
+        "ann",
+        "scalable"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Run a distributed vector database for billion-scale similarity search.",
+      "why": "Built for very large collections with GPU indexes and horizontal scaling; Milvus Lite covers local development.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "volcengine/OpenViking",
+      "name": "OpenViking",
+      "category": "rag-vector",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "context-database",
+        "memory",
+        "rag",
+        "agents"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Context database unifying agent memory, knowledge RAG and skills",
+      "why": "ByteDance Volcengine project that organises agent context as a filesystem-like hierarchy with tiered retrieval; AGPL-3.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "PaddlePaddle/PaddleOCR",
+      "name": "PaddleOCR",
+      "category": "rag-vector",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "pdf",
+        "layout"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "OCR and document parsing to turn PDFs and images into structured data for RAG",
+      "why": "Mature multilingual OCR + layout/table parsing (PP-Structure) that feeds clean text into retrieval pipelines; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "VectifyAI/PageIndex",
+      "name": "PageIndex",
+      "category": "rag-vector",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "rag",
+        "vectorless",
+        "document-index",
+        "reasoning"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Vectorless, reasoning-based RAG over long documents via a tree index",
+      "why": "Builds a table-of-contents style tree and lets the LLM navigate it, a strong alternative to chunk+embed for long structured docs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "pgvector/pgvector",
+      "name": "pgvector",
+      "category": "rag-vector",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "postgres",
+        "vector-search",
+        "embeddings",
+        "extension"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Add vector similarity search to an existing Postgres database.",
+      "why": "Keeps vectors next to your relational data with HNSW/IVFFlat indexes; supported by nearly every managed Postgres provider.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "zylon-ai/private-gpt",
+      "name": "PrivateGPT",
+      "category": "rag-vector",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "rag",
+        "private",
+        "local-llm",
+        "api"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Private RAG API layer over local models for document Q&A",
+      "why": "OpenAI-style API with ingestion, retrieval and chat over local models, a ready backend for private document assistants.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "qdrant/qdrant",
+      "name": "Qdrant",
+      "category": "rag-vector",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "vector-database",
+        "rust",
+        "filtering",
+        "hybrid-search"
+      ],
+      "ecosystems": [
+        "rust",
+        "any"
+      ],
+      "use_for": "Run a dedicated vector database with payload filtering for semantic and hybrid search.",
+      "why": "Fast Rust engine with strong metadata filtering, quantization and simple REST/gRPC APIs; easy to self-host or use as cloud.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "HKUDS/RAG-Anything",
+      "name": "RAG-Anything",
+      "category": "rag-vector",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "rag",
+        "multimodal",
+        "knowledge-graph",
+        "document-parsing"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "All-in-one multimodal RAG over PDFs, images, tables and equations",
+      "why": "From the LightRAG team: parses mixed-content documents and builds a multimodal knowledge graph for retrieval in one pipeline.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "infiniflow/ragflow",
+      "name": "RAGFlow",
+      "category": "rag-vector",
+      "kinds": [
+        "engine",
+        "app"
+      ],
+      "tags": [
+        "rag",
+        "document-parsing",
+        "retrieval",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Self-hosted RAG engine with deep document understanding and citation-grounded answers",
+      "why": "Most-starred open RAG engine; strong layout-aware parsing of PDFs/tables, deployable via Docker with an API.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "huggingface/sentence-transformers",
+      "name": "Sentence Transformers",
+      "category": "rag-vector",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "embeddings",
+        "reranking",
+        "semantic-search",
+        "pytorch"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Compute text embeddings and rerank results with pretrained or fine-tuned models.",
+      "why": "The standard Python library for embedding and cross-encoder models, with thousands of compatible models on Hugging Face.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "asg017/sqlite-vec",
+      "name": "sqlite-vec",
+      "category": "rag-vector",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "sqlite",
+        "vector-search",
+        "embedded",
+        "extension"
+      ],
+      "ecosystems": [
+        "c",
+        "python",
+        "ts"
+      ],
+      "use_for": "Add vector search to SQLite with a tiny, dependency-free extension",
+      "why": "Runs anywhere SQLite runs (incl. WASM, mobile); successor to sqlite-vss and the go-to for local-first vector search.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "RyanCodrai/turbovec",
+      "name": "turbovec",
+      "category": "rag-vector",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "vector-index",
+        "ann",
+        "quantization",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust",
+        "python"
+      ],
+      "use_for": "Compressed vector index using TurboQuant quantization",
+      "why": "Rust ANN index with Python bindings built on TurboQuant, giving high recall at a fraction of FAISS-style memory.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "neuml/txtai",
+      "name": "txtai",
+      "category": "rag-vector",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "embeddings",
+        "semantic-search",
+        "rag",
+        "pipelines"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "All-in-one embeddings database for semantic search, RAG and LLM workflows",
+      "why": "Single package combining vector index, SQL, graph and pipelines; lightweight alternative to running a separate vector DB.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Unstructured-IO/unstructured",
+      "name": "Unstructured",
+      "category": "rag-vector",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "document-parsing",
+        "etl",
+        "chunking",
+        "rag"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Partition and chunk messy documents (PDF, HTML, email, Office) into elements for LLMs",
+      "why": "Widely used ingestion layer with partitioning and chunking strategies; integrated into LangChain and LlamaIndex.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "weaviate/weaviate",
+      "name": "Weaviate",
+      "category": "rag-vector",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "vector-database",
+        "hybrid-search",
+        "graphql",
+        "modules"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Run a vector database that stores objects plus vectors with built-in hybrid search and vectorizer modules.",
+      "why": "Combines BM25 and vector search out of the box and can call embedding models for you; mature clients for Python, TS, Go and Java.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Tencent/WeKnora",
+      "name": "WeKnora",
+      "category": "rag-vector",
+      "kinds": [
+        "framework",
+        "service"
+      ],
+      "tags": [
+        "rag",
+        "document-understanding",
+        "knowledge-base",
+        "agents"
+      ],
+      "ecosystems": [
+        "go",
+        "python"
+      ],
+      "use_for": "Document understanding and RAG framework for building knowledge-base Q&A",
+      "why": "Tencent RAG stack: multimodal parsing, hybrid retrieval and agentic reasoning, deployable as a service with a web UI.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "LICENSE states WeKnora is licensed under MIT; bundled third-party components keep their own licenses",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "alibaba/zvec",
+      "name": "zvec",
+      "category": "rag-vector",
+      "kinds": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "vector-database",
+        "embedded",
+        "ann",
+        "in-process"
+      ],
+      "ecosystems": [
+        "python",
+        "cpp"
+      ],
+      "use_for": "Lightweight in-process vector database embedded in your app",
+      "why": "Alibaba-built embedded vector DB: SQLite-style, no server to run, fast ANN search for local and edge RAG.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    }
+  ]
+}

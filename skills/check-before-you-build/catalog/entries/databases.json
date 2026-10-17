@@ -1,0 +1,773 @@
+{
+  "category": "databases",
+  "entries": [
+    {
+      "id": "WiseLibs/better-sqlite3",
+      "name": "better-sqlite3",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "sqlite",
+        "driver",
+        "embedded"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Synchronous, fast SQLite bindings for Node.js",
+      "why": "Default SQLite driver for Node apps and ORMs",
+      "npm": "better-sqlite3",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "citusdata/citus",
+      "name": "Citus",
+      "category": "databases",
+      "kinds": [
+        "plugin",
+        "engine"
+      ],
+      "tags": [
+        "postgres",
+        "distributed",
+        "sharding",
+        "extension"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Distribute Postgres tables across nodes for scale-out",
+      "why": "Postgres extension for sharding and parallel distributed queries with full Postgres compatibility (multi-tenant SaaS, analytics).",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "ClickHouse/ClickHouse",
+      "name": "ClickHouse",
+      "category": "databases",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "olap",
+        "analytics",
+        "columnar"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Column-oriented database for real-time analytics over billions of rows",
+      "why": "Leading open-source OLAP database (Apache-2.0)",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "diesel-rs/diesel",
+      "name": "Diesel",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "orm",
+        "rust",
+        "query-builder"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Compile-time checked ORM and query builder for Rust",
+      "why": "Mature, type-safe Rust ORM; complements SQLx already listed",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "drizzle-team/drizzle-orm",
+      "name": "Drizzle ORM",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "orm",
+        "typescript",
+        "sql",
+        "postgres",
+        "sqlite"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Type-safe SQL-like ORM for TypeScript on Postgres, MySQL and SQLite, including serverless drivers.",
+      "why": "Lightweight, SQL-first and edge-friendly; very popular in modern TS stacks with drizzle-kit migrations.",
+      "npm": "drizzle-orm",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "duckdb/duckdb",
+      "name": "DuckDB",
+      "category": "databases",
+      "kinds": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "analytics",
+        "sql",
+        "embedded",
+        "olap"
+      ],
+      "ecosystems": [
+        "cpp",
+        "python",
+        "any"
+      ],
+      "use_for": "In-process analytical SQL database for querying Parquet, CSV and dataframes.",
+      "why": "The SQLite of analytics: fast columnar queries with bindings for Python, Node, R, WASM and more.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "etcd-io/etcd",
+      "name": "etcd",
+      "category": "databases",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "key-value",
+        "distributed",
+        "raft",
+        "consensus"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Strongly consistent distributed key-value store for config and coordination",
+      "why": "Raft-based KV store behind Kubernetes; watch API, leases and transactions for service discovery and leader election.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "FerretDB/FerretDB",
+      "name": "FerretDB",
+      "category": "databases",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "mongodb",
+        "postgres",
+        "document",
+        "wire-protocol"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "MongoDB-compatible API on top of PostgreSQL",
+      "why": "Open-source MongoDB alternative: speaks the Mongo wire protocol so existing drivers work, stores data in Postgres.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "pressly/goose",
+      "name": "goose",
+      "category": "databases",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "migrations",
+        "sql",
+        "go"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Manage SQL and Go-function database migrations",
+      "why": "Simple migration tool supporting SQL files and Go functions, embeddable via io/fs, for Postgres, MySQL, SQLite and more.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "LICENSE is the MIT License",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "go-gorm/gorm",
+      "name": "GORM",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "orm",
+        "go",
+        "sql"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Full-featured ORM for Go with associations, hooks and migrations",
+      "why": "The most popular Go ORM",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "influxdata/influxdb",
+      "name": "InfluxDB",
+      "category": "databases",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "time-series",
+        "metrics",
+        "analytics",
+        "iot"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Store and query metrics, events and other time-series data",
+      "why": "Purpose-built time-series database (v3 core in Rust on Arrow/Parquet) with SQL querying.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "knex/knex",
+      "name": "Knex.js",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "query-builder",
+        "sql",
+        "migrations"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "SQL query builder with migrations and seeds for Postgres, MySQL, SQLite and more",
+      "why": "Most-downloaded SQL query builder for Node; base layer for Objection.js and others",
+      "npm": "knex",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "kysely-org/kysely",
+      "name": "Kysely",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "query-builder",
+        "typescript",
+        "sql",
+        "type-safe"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Type-safe SQL query builder for TypeScript.",
+      "why": "Full SQL control with inferred types and no codegen; a common choice when you want a query builder, not an ORM.",
+      "npm": "kysely",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "golang-migrate/migrate",
+      "name": "migrate",
+      "category": "databases",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "migrations",
+        "sql",
+        "go"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Run versioned database migrations from a CLI or Go code",
+      "why": "Widely used migration tool with drivers for Postgres, MySQL, SQLite, Mongo, ClickHouse and more; sources from files, S3, GitHub.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "LICENSE is the MIT License",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "mikro-orm/mikro-orm",
+      "name": "MikroORM",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "orm",
+        "typescript",
+        "unit-of-work",
+        "data-mapper"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "TypeScript ORM using Data Mapper, Unit of Work and Identity Map patterns.",
+      "why": "Strong choice for domain-heavy apps needing transactional unit-of-work semantics.",
+      "npm": "@mikro-orm/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Automattic/mongoose",
+      "name": "Mongoose",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "mongodb",
+        "odm",
+        "schema"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Model MongoDB data with schemas, validation and middleware in Node.js",
+      "why": "The default MongoDB ODM for Node.js, with millions of weekly downloads",
+      "npm": "mongoose",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "neondatabase/neon",
+      "name": "Neon",
+      "category": "databases",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "postgres",
+        "serverless",
+        "branching",
+        "storage"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Self-host serverless Postgres with branching and scale-to-zero",
+      "why": "Separates Postgres storage and compute for instant database branching and autoscaling; the open core behind Neon.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "brianc/node-postgres",
+      "name": "node-postgres",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "postgres",
+        "driver",
+        "nodejs"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "PostgreSQL client for Node.js.",
+      "why": "The standard Postgres driver for Node; underlies many ORMs and query builders.",
+      "npm": "pg",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "electric-sql/pglite",
+      "name": "PGlite",
+      "category": "databases",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "postgres",
+        "wasm",
+        "embedded",
+        "local-first"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Run real Postgres embedded in the browser, Node or Bun via WASM.",
+      "why": "Full Postgres in a few MB with no server; great for tests, local-first apps and prototypes.",
+      "npm": "@electric-sql/pglite",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "porsager/postgres",
+      "name": "Postgres.js",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "postgres",
+        "driver",
+        "sql"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Fast PostgreSQL client for Node, Deno and Bun using tagged-template SQL",
+      "why": "Fast, full-featured Postgres client for JS; a common Drizzle driver",
+      "npm": "postgres",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "postgres/postgres",
+      "name": "PostgreSQL",
+      "category": "databases",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "sql",
+        "relational",
+        "postgres",
+        "database"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "The default open-source relational database for new apps",
+      "why": "Official mirror of PostgreSQL: mature, extensible RDBMS with JSONB, full-text search and a huge extension ecosystem.",
+      "official": true,
+      "license_verified": {
+        "license": "PostgreSQL",
+        "note": "COPYRIGHT file contains the PostgreSQL License (OSI-approved)",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "prisma/orm",
+      "name": "Prisma ORM",
+      "category": "databases",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "orm",
+        "typescript",
+        "schema",
+        "migrations"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Schema-first ORM for Node.js and TypeScript with generated type-safe client and migrations.",
+      "why": "Mature and widely adopted, with strong DX: declarative schema, Prisma Migrate and Studio.",
+      "npm": "prisma",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "redis/redis",
+      "name": "Redis",
+      "category": "databases",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "key-value",
+        "cache",
+        "in-memory",
+        "vector",
+        "pubsub"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "In-memory data store for caching, queues, pub/sub and vector search",
+      "why": "The reference in-memory data structure server; Redis 8+ is available under AGPLv3 (tri-licensed with RSALv2/SSPL).",
+      "official": true,
+      "license_verified": {
+        "license": "AGPL-3.0",
+        "note": "Redis 8+ tri-licensed RSALv2/SSPLv1/AGPLv3; the AGPLv3 option is OSI-approved",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "facebook/rocksdb",
+      "name": "RocksDB",
+      "category": "databases",
+      "kinds": [
+        "library",
+        "engine"
+      ],
+      "tags": [
+        "key-value",
+        "embedded",
+        "lsm",
+        "storage"
+      ],
+      "ecosystems": [
+        "cpp",
+        "java"
+      ],
+      "use_for": "Embed a fast persistent key-value store in your application",
+      "why": "Meta's LSM-tree storage engine used inside TiKV, Kafka Streams and many databases; dual GPLv2/Apache-2.0.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "sequelize/sequelize",
+      "name": "Sequelize",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "orm",
+        "postgres",
+        "mysql",
+        "sqlite"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Promise-based ORM for Postgres, MySQL, MariaDB, SQLite and SQL Server",
+      "why": "Long-standing, very widely installed Node.js ORM",
+      "npm": "sequelize",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "sqlalchemy/sqlalchemy",
+      "name": "SQLAlchemy",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "orm",
+        "python",
+        "sql",
+        "query-builder"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "The Python SQL toolkit and ORM.",
+      "why": "The standard Python ORM; used under FastAPI and Flask apps, with Alembic for migrations.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "transact-rs/sqlx",
+      "name": "SQLx",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "rust",
+        "sql",
+        "async",
+        "compile-time-checked"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Async Rust SQL toolkit with compile-time checked queries for Postgres, MySQL and SQLite.",
+      "why": "Most popular Rust database crate; checks raw SQL against your schema at build time.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "supabase/supabase",
+      "name": "Supabase",
+      "category": "databases",
+      "kinds": [
+        "service",
+        "framework"
+      ],
+      "tags": [
+        "postgres",
+        "baas",
+        "realtime",
+        "auth",
+        "storage"
+      ],
+      "ecosystems": [
+        "ts",
+        "any"
+      ],
+      "use_for": "Hosted or self-hosted Postgres platform with auth, storage, realtime and auto-generated APIs.",
+      "why": "Fastest path to a production Postgres backend; open source and self-hostable, with SDKs for many languages.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "taosdata/TDengine",
+      "name": "TDengine",
+      "category": "databases",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "time-series",
+        "iot",
+        "industrial",
+        "sql"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "High-throughput time-series database for IoT and industrial data",
+      "why": "Time-series DB with built-in caching, stream processing and SQL; designed for billions of IIoT data points.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "pingcap/tidb",
+      "name": "TiDB",
+      "category": "databases",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "distributed-sql",
+        "mysql",
+        "htap",
+        "vector"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "MySQL-compatible distributed SQL database that scales horizontally",
+      "why": "Distributed ACID SQL with HTAP (TiFlash) and vector search; MySQL protocol so existing drivers and ORMs keep working.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "tursodatabase/turso",
+      "name": "Turso",
+      "category": "databases",
+      "kinds": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "sqlite",
+        "embedded",
+        "rust",
+        "async"
+      ],
+      "ecosystems": [
+        "rust",
+        "ts",
+        "python"
+      ],
+      "use_for": "SQLite-compatible embedded database rewritten in Rust",
+      "why": "Ground-up SQLite rewrite with async I/O, concurrent writes and vector search, keeping file and SQL compatibility.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "typeorm/typeorm",
+      "name": "TypeORM",
+      "category": "databases",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "orm",
+        "typescript",
+        "decorators",
+        "nestjs"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Decorator-based ORM for Node.js supporting many SQL databases and MongoDB.",
+      "why": "Long-standing ORM, default in many NestJS projects, supports Active Record and Data Mapper.",
+      "npm": "typeorm",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "valkey-io/valkey",
+      "name": "Valkey",
+      "category": "databases",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "key-value",
+        "cache",
+        "redis-compatible"
+      ],
+      "ecosystems": [
+        "c",
+        "any"
+      ],
+      "use_for": "High-performance key-value store for caching, queues and realtime data, compatible with Redis clients.",
+      "why": "BSD-licensed Linux Foundation fork of Redis, backed by major cloud vendors.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

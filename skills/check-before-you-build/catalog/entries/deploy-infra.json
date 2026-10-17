@@ -1,0 +1,560 @@
+{
+  "category": "deploy-infra",
+  "entries": [
+    {
+      "id": "ansible/ansible",
+      "name": "Ansible",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "configuration-management",
+        "automation",
+        "ssh",
+        "provisioning"
+      ],
+      "ecosystems": [
+        "python",
+        "any"
+      ],
+      "use_for": "Automate server configuration and app deployment with agentless YAML playbooks.",
+      "why": "The most widely used agentless config-management tool, with a huge collection ecosystem for servers, cloud and network.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "argoproj/argo-cd",
+      "name": "Argo CD",
+      "category": "deploy-infra",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "gitops",
+        "kubernetes",
+        "continuous-delivery"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Declarative GitOps continuous delivery for Kubernetes",
+      "why": "CNCF-graduated GitOps tool that syncs clusters from Git with a strong UI",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "aws/aws-cdk",
+      "name": "AWS CDK",
+      "category": "deploy-infra",
+      "kinds": [
+        "framework",
+        "library"
+      ],
+      "tags": [
+        "iac",
+        "aws",
+        "cloudformation",
+        "typescript"
+      ],
+      "ecosystems": [
+        "ts",
+        "python",
+        "java",
+        "csharp",
+        "go"
+      ],
+      "use_for": "Define AWS infrastructure in code and deploy it via CloudFormation.",
+      "why": "Official AWS framework with high-level constructs that encode best practices for AWS services.",
+      "npm": "aws-cdk-lib",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "caddyserver/caddy",
+      "name": "Caddy",
+      "category": "deploy-infra",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "web-server",
+        "reverse-proxy",
+        "https"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Web server and reverse proxy with automatic HTTPS",
+      "why": "Automatic TLS by default and a one-line reverse-proxy config; very popular for self-hosted deploys",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "capistrano/capistrano",
+      "name": "Capistrano",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "deployment",
+        "ssh",
+        "ruby"
+      ],
+      "ecosystems": [
+        "ruby"
+      ],
+      "use_for": "Scripted multi-server deployments over SSH",
+      "why": "The classic SSH deployment tool for Rails and beyond; large plugin ecosystem, MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "caprover/caprover",
+      "name": "CapRover",
+      "category": "deploy-infra",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "paas",
+        "docker-swarm",
+        "nginx",
+        "self-hosting"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Deploy apps and one-click services on your own servers with a web dashboard.",
+      "why": "Docker Swarm + nginx PaaS with automatic HTTPS and multi-node clustering; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "coollabsio/coolify",
+      "name": "Coolify",
+      "category": "deploy-infra",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "paas",
+        "self-hosting",
+        "docker",
+        "vercel-alternative"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Self-host a Vercel/Heroku-style PaaS on your own servers to deploy apps and databases.",
+      "why": "The most popular self-hosted PaaS: git push deploys, one-click databases and services, SSL and backups on any VPS.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "crossplane/crossplane",
+      "name": "Crossplane",
+      "category": "deploy-infra",
+      "kinds": [
+        "framework",
+        "service"
+      ],
+      "tags": [
+        "kubernetes",
+        "iac",
+        "control-plane",
+        "cloud"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Manage cloud resources declaratively through Kubernetes APIs and build internal platforms.",
+      "why": "CNCF project that turns Kubernetes into a universal control plane with composable, self-service infrastructure APIs.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "deployphp/deployer",
+      "name": "Deployer",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "deployment",
+        "php",
+        "zero-downtime"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Zero-downtime deployments for PHP apps with framework recipes",
+      "why": "De facto PHP deploy tool with ready recipes for Laravel, Symfony, WordPress; MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "DNSControl/dnscontrol",
+      "name": "DNSControl",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "dns",
+        "iac",
+        "gitops",
+        "multi-provider"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Manage DNS records for many providers as code and push changes from CI.",
+      "why": "Maintained by Stack Overflow engineers; JS-based config with support for dozens of DNS providers and registrars.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "docker/compose",
+      "name": "Docker Compose",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "docker",
+        "containers",
+        "self-hosting"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Define and run multi-container apps from a single YAML file",
+      "why": "The default way to describe and run multi-service apps locally and on single servers",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "dokku/dokku",
+      "name": "Dokku",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "paas",
+        "heroku",
+        "docker",
+        "buildpacks"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Turn a single server into a git-push Heroku-like deployment target.",
+      "why": "Small, battle-tested Docker PaaS with buildpack support and a plugin ecosystem; minimal moving parts.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Dokploy/dokploy",
+      "name": "Dokploy",
+      "category": "deploy-infra",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "paas",
+        "self-hosting",
+        "docker"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Self-hosted PaaS for deploying apps and databases with Docker and Traefik",
+      "why": "Popular Vercel/Heroku alternative with Compose, multi-server and backups; Apache-2.0 outside /proprietary",
+      "license_verified": {
+        "license": "Apache-2.0",
+        "note": "Apache-2.0 outside a /proprietary directory, which has its own proprietary license",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "helm/helm",
+      "name": "Helm",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "kubernetes",
+        "package-manager",
+        "charts"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Package manager for Kubernetes: install and upgrade apps via versioned charts",
+      "why": "CNCF standard for packaging Kubernetes apps; thousands of community charts",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "infracost/infracost",
+      "name": "Infracost",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "terraform",
+        "finops",
+        "cost",
+        "ci"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Show cloud cost estimates for Terraform changes in PRs and CI",
+      "why": "Standard tool for shift-left cloud cost checks on IaC pull requests; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "basecamp/kamal",
+      "name": "Kamal",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "deployment",
+        "docker",
+        "zero-downtime",
+        "ssh"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Deploy containerized web apps to plain servers over SSH with zero-downtime rollouts.",
+      "why": "From 37signals; no Kubernetes or PaaS required, handles proxying, rolling deploys and accessories with one config file.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "kubernetes/kubernetes",
+      "name": "Kubernetes",
+      "category": "deploy-infra",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "containers",
+        "orchestration",
+        "cncf"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Container orchestration for deploying, scaling and managing containerised workloads",
+      "why": "The industry-standard container orchestrator; the base most modern infra tooling targets",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "kubernetes-sigs/kubespray",
+      "name": "Kubespray",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "kubernetes",
+        "ansible",
+        "cluster-provisioning"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Deploy production-ready Kubernetes clusters with Ansible",
+      "why": "Official Kubernetes SIG project for provisioning HA clusters on bare metal or any cloud.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "opentofu/opentofu",
+      "name": "OpenTofu",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "iac",
+        "terraform",
+        "hcl",
+        "cloud"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Provision infrastructure with HCL and the Terraform provider ecosystem under an open license.",
+      "why": "Linux Foundation fork of Terraform (MPL-2.0); drop-in compatible with existing modules and providers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "pulumi/pulumi",
+      "name": "Pulumi",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli",
+        "library"
+      ],
+      "tags": [
+        "iac",
+        "cloud",
+        "typescript",
+        "python"
+      ],
+      "ecosystems": [
+        "ts",
+        "python",
+        "go",
+        "csharp"
+      ],
+      "use_for": "Define cloud infrastructure in TypeScript, Python, Go or C# instead of a DSL.",
+      "why": "Real programming languages for IaC across AWS, Azure, GCP and Kubernetes, with state management and testing.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "saltstack/salt",
+      "name": "Salt",
+      "category": "deploy-infra",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "configuration-management",
+        "automation",
+        "iac"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Event-driven configuration management and remote execution at scale",
+      "why": "Mature infra automation alternative to Ansible with a fast event bus; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "anomalyco/sst",
+      "name": "SST",
+      "category": "deploy-infra",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "serverless",
+        "aws",
+        "cloudflare",
+        "iac"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Deploy full-stack apps to AWS, Cloudflare and more with TypeScript infrastructure",
+      "why": "Popular TS-first framework for deploying Next.js, Astro and APIs; built on Pulumi/Terraform providers",
+      "npm": "sst",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "gruntwork-io/terragrunt",
+      "name": "Terragrunt",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "terraform",
+        "opentofu",
+        "iac"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Orchestrator for OpenTofu/Terraform that keeps multi-environment IaC DRY",
+      "why": "The standard wrapper for large OpenTofu/Terraform codebases: shared config, dependencies, stacks",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "traefik/traefik",
+      "name": "Traefik",
+      "category": "deploy-infra",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "reverse-proxy",
+        "load-balancer",
+        "letsencrypt"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Cloud-native reverse proxy with automatic service discovery and Let's Encrypt",
+      "why": "Auto-configures routes from Docker/Kubernetes labels; the common edge proxy for self-hosting",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "psviderski/uncloud",
+      "name": "Uncloud",
+      "category": "deploy-infra",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "docker",
+        "containers",
+        "self-hosting",
+        "cluster"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Deploy and run containers across a few machines without Kubernetes.",
+      "why": "Lightweight decentralized clustering with a Docker Compose workflow, WireGuard mesh and built-in ingress.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

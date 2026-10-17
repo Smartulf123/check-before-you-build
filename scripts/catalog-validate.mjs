@@ -4,11 +4,11 @@
 // Usage: node scripts/catalog-validate.mjs [--live]
 import { parseArgs } from '../skills/check-before-you-build/scripts/lib/cli.mjs';
 import { readAllCategoryFiles, readCategories } from './lib/catalog-files.mjs';
-import { checkRepo } from './lib/repo-check.mjs';
+import { checkRepoPatient as checkRepo } from './lib/repo-check.mjs';
 
 const KINDS = new Set(['library', 'framework', 'template', 'skill', 'plugin', 'mcp', 'cli', 'app', 'service', 'engine']);
 const REQUIRED = ['id', 'name', 'category', 'kinds', 'tags', 'use_for', 'why', 'added', 'last_reviewed'];
-const SIZE = { min: 5, max: 20 };
+const SIZE = { min: 5, max: 50 };
 const MAX_FEATURED = 5;
 
 export function validateStatic(files, categoriesDoc) {
@@ -44,6 +44,9 @@ export function validateStatic(files, categoriesDoc) {
       if ((e.why || '').length > 200) errors.push(`${where}: why over 200 chars`);
       if ((e.why || '').startsWith('TODO')) errors.push(`${where}: why is still TODO`);
       if (e.stable && !e.stable_reason) errors.push(`${where}: stable needs stable_reason`);
+      if (e.exception && (!(e.exception.rules || []).length || !e.exception.reason || !e.exception.date)) {
+        errors.push(`${where}: exception needs rules, reason and date`);
+      }
       if (e.license_verified && (!e.license_verified.license || !e.license_verified.date)) {
         errors.push(`${where}: license_verified needs license and date`);
       }

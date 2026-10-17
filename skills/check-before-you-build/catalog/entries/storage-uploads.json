@@ -1,0 +1,457 @@
+{
+  "category": "storage-uploads",
+  "entries": [
+    {
+      "id": "apache/opendal",
+      "name": "Apache OpenDAL",
+      "category": "storage-uploads",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "storage-abstraction",
+        "s3",
+        "multi-language"
+      ],
+      "ecosystems": [
+        "rust",
+        "python",
+        "ts",
+        "java"
+      ],
+      "use_for": "One API to access S3, GCS, Azure, filesystems and 50+ storage services",
+      "why": "Apache project with bindings for many languages; avoids vendor lock-in in storage code.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "ceph/ceph",
+      "name": "Ceph",
+      "category": "storage-uploads",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "object-storage",
+        "block-storage",
+        "distributed"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Unified distributed object, block and file storage at scale",
+      "why": "Proven large-scale open storage with an S3-compatible gateway; LGPL licensed.",
+      "license_verified": {
+        "license": "LGPL-2.1-only OR LGPL-3.0-only",
+        "note": "COPYING: core under LGPL-2.1 or LGPL-3, some files BSD/MIT",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "enyo/dropzone",
+      "name": "Dropzone",
+      "category": "storage-uploads",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "drag-and-drop",
+        "upload",
+        "javascript"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Add drag-and-drop uploads with previews to any web page without a framework.",
+      "why": "Long-standing, framework-free uploader with progress bars and chunking.",
+      "npm": "dropzone",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "pqina/filepond",
+      "name": "FilePond",
+      "category": "storage-uploads",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "upload",
+        "image-preview",
+        "javascript"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Add a polished drag-and-drop file upload field with image previews.",
+      "why": "Smooth UX, plugin system for image editing/validation and adapters for React, Vue and Svelte.",
+      "npm": "filepond",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "thephpleague/flysystem",
+      "name": "Flysystem",
+      "category": "storage-uploads",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "php",
+        "filesystem-abstraction",
+        "s3"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Filesystem abstraction for PHP: local, S3, SFTP and more behind one API",
+      "why": "Powers the Laravel Storage facade; the standard PHP storage layer.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "node-formidable/formidable",
+      "name": "formidable",
+      "category": "storage-uploads",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "multipart",
+        "node",
+        "streaming",
+        "upload"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Parse multipart form data and file uploads in any Node.js server.",
+      "why": "Streaming, framework-agnostic parser with a long track record and wide usage.",
+      "npm": "formidable",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "deuxfleurs-org/garage",
+      "name": "Garage",
+      "category": "storage-uploads",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "object-storage",
+        "s3",
+        "geo-distributed",
+        "lightweight"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Run lightweight S3-compatible storage across a few self-hosted machines.",
+      "why": "Designed for small, geo-distributed clusters on modest hardware; simple to operate (AGPL-3.0).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "juicedata/juicefs",
+      "name": "JuiceFS",
+      "category": "storage-uploads",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "distributed-filesystem",
+        "posix",
+        "s3"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "POSIX distributed file system on top of object storage and Redis/SQL metadata",
+      "why": "Mount S3 as a shared, fast filesystem for apps and ML workloads; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "spatie/laravel-medialibrary",
+      "name": "Laravel Media Library",
+      "category": "storage-uploads",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "laravel",
+        "media",
+        "conversions"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Associate uploaded files with Eloquent models, with conversions and responsive images",
+      "why": "The go-to Laravel upload and media package.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "expressjs/multer",
+      "name": "Multer",
+      "category": "storage-uploads",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "multipart",
+        "express",
+        "node",
+        "upload"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Handle multipart/form-data file uploads in Express apps.",
+      "why": "The standard Express upload middleware, maintained by the Express team.",
+      "npm": "multer",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "rclone/rclone",
+      "name": "rclone",
+      "category": "storage-uploads",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "cloud-storage",
+        "sync",
+        "s3",
+        "backup"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Sync, copy and mount files across 70+ cloud storage providers",
+      "why": "The Swiss-army knife for cloud storage; also usable as a Go library or via its remote-control HTTP API.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "react-dropzone/react-dropzone",
+      "name": "react-dropzone",
+      "category": "storage-uploads",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "drag-and-drop",
+        "upload",
+        "hooks"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Add a drag-and-drop file zone to a React app with a hook.",
+      "why": "Tiny, headless hook-based API that is the go-to dropzone for React.",
+      "npm": "react-dropzone",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "rustfs/rustfs",
+      "name": "RustFS",
+      "category": "storage-uploads",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "object-storage",
+        "s3",
+        "rust",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Self-host S3-compatible object storage written in Rust.",
+      "why": "Apache-2.0 MinIO alternative with a quickly growing community and a web console.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "seaweedfs/seaweedfs",
+      "name": "SeaweedFS",
+      "category": "storage-uploads",
+      "kinds": [
+        "engine",
+        "service"
+      ],
+      "tags": [
+        "object-storage",
+        "s3",
+        "distributed",
+        "filesystem"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Self-host distributed object storage with an S3 API for many small or large files.",
+      "why": "Mature, fast store for billions of files with S3, FUSE and WebDAV access.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "shrinerb/shrine",
+      "name": "Shrine",
+      "category": "storage-uploads",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "ruby",
+        "attachments",
+        "uploads",
+        "rails"
+      ],
+      "ecosystems": [
+        "ruby"
+      ],
+      "use_for": "Handle file attachments and uploads in Ruby and Rails apps.",
+      "why": "Modular toolkit with direct-to-S3 uploads, background processing and derivatives.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "supabase/storage",
+      "name": "Supabase Storage",
+      "category": "storage-uploads",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "s3",
+        "postgres",
+        "object-storage",
+        "permissions"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Self-host an S3-compatible storage API with Postgres-backed metadata and row-level security.",
+      "why": "Powers Supabase Storage; brings Postgres policies to file access and supports resumable uploads.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tus/tus-js-client",
+      "name": "tus-js-client",
+      "category": "storage-uploads",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "resumable-uploads",
+        "tus",
+        "browser"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Resumable file uploads from browsers and Node using the tus protocol",
+      "why": "Official tus client pairing with tusd; reliable large uploads that survive network drops.",
+      "npm": "tus-js-client",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tus/tusd",
+      "name": "tusd",
+      "category": "storage-uploads",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "resumable",
+        "tus",
+        "upload-server",
+        "go"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Run a server for resumable uploads using the open tus protocol.",
+      "why": "Reference tus server with S3, GCS and Azure storage backends; pairs with Uppy and tus-js-client.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "pingdotgg/uploadthing",
+      "name": "UploadThing",
+      "category": "storage-uploads",
+      "kinds": [
+        "library",
+        "service"
+      ],
+      "tags": [
+        "file-uploads",
+        "nextjs",
+        "react"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Type-safe file uploads for full-stack TypeScript apps (Next.js, Remix, etc.)",
+      "why": "Popular DX-first upload SDK with React components and server routes.",
+      "npm": "uploadthing",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "transloadit/uppy",
+      "name": "Uppy",
+      "category": "storage-uploads",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "upload",
+        "resumable",
+        "tus",
+        "s3"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Add a modular file uploader with drag and drop, remote sources and resumable uploads.",
+      "why": "Most complete JS uploader: tus, S3 multipart, Dashboard UI and Companion for Google Drive/Dropbox imports.",
+      "npm": "@uppy/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    }
+  ]
+}

@@ -1,0 +1,785 @@
+{
+  "category": "agent-skills",
+  "entries": [
+    {
+      "id": "addyosmani/agent-skills",
+      "name": "Agent Skills (Addy Osmani)",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "engineering",
+        "code-review",
+        "testing",
+        "workflow"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Add production-grade engineering skills (specs, TDD, review, CI, performance) to coding agents.",
+      "why": "Broad, well-structured engineering skill set; 107k stars and 93 contributors.",
+      "skill": "addyosmani/agent-skills/code-review-and-quality",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "anthropics/skills",
+      "name": "Anthropic Agent Skills",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "claude",
+        "agent-skills",
+        "official",
+        "document-skills"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Official Anthropic skill collection: frontend design, skill creation, MCP building, document handling and more.",
+      "why": "The reference implementation of the Agent Skills format, maintained by Anthropic and among the most-installed skills.",
+      "official": true,
+      "license_verified": {
+        "license": "Apache-2.0",
+        "note": "Per-skill licenses: most skills are Apache-2.0; the docx, pdf, pptx and xlsx skills are source-available (read-only, do not fork).",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "tt-a1i/archify",
+      "name": "archify",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "diagrams",
+        "architecture",
+        "visualization"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Turn an idea, plan or codebase into an interactive architecture diagram",
+      "why": "About 158k skills.sh installs; works across Claude Code, Codex and Cursor with a companion review skill.",
+      "skill": "tt-a1i/archify/archify",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "github/awesome-copilot",
+      "name": "Awesome GitHub Copilot",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "copilot",
+        "prompts",
+        "instructions"
+      ],
+      "ecosystems": [
+        "multi"
+      ],
+      "use_for": "Official GitHub collection of skills, prompts, instructions and custom agents usable across coding agents",
+      "why": "GitHub-maintained, community-contributed library of hundreds of skills and agents; widely installed via skills.sh",
+      "skill": "github/awesome-copilot/git-commit",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "microsoft/azure-skills",
+      "name": "Azure skills",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "azure",
+        "cloud",
+        "deploy"
+      ],
+      "ecosystems": [
+        "multi"
+      ],
+      "use_for": "Official Microsoft skills for preparing, deploying, diagnosing and securing apps on Azure",
+      "why": "Official vendor pack with ~560k installs per core skill on skills.sh; covers Foundry, deploy, diagnostics and storage",
+      "skill": "microsoft/azure-skills/microsoft-foundry",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "JuliusBrussee/caveman",
+      "name": "caveman",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "token-efficiency",
+        "output-style",
+        "claude-code",
+        "codex"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Cut agent output tokens with terse caveman-style responses, commits and reviews",
+      "why": "Most-installed skill pack on skills.sh (~578k installs for the core skill) with commit/review/compress variants.",
+      "skill": "juliusbrussee/caveman/caveman",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "anthropics/claude-plugins-official",
+      "name": "Claude Code official plugins",
+      "category": "agent-skills",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "claude-code",
+        "marketplace",
+        "plugins",
+        "official"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Install vetted Claude Code plugins from Anthropic's official marketplace directory.",
+      "why": "Anthropic-managed directory of curated plugins; the default trusted source for Claude Code.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jarrodwatts/claude-hud",
+      "name": "claude-hud",
+      "category": "agent-skills",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "claude-code",
+        "statusline",
+        "context",
+        "observability"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "See context usage, active tools, subagents and todo progress in Claude Code",
+      "why": "Popular Claude Code plugin (135 contributors) that adds a live HUD without leaving the terminal.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "thedotmack/claude-mem",
+      "name": "claude-mem",
+      "category": "agent-skills",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "memory",
+        "context",
+        "sessions",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Persist and recall context across agent sessions by capturing and compressing what the agent did.",
+      "why": "The most popular persistent-memory plugin for Claude Code; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "cloudflare/skills",
+      "name": "Cloudflare skills",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "cloudflare",
+        "workers",
+        "durable-objects"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Official skills for Workers, Wrangler, Durable Objects, Agents SDK and other Cloudflare products",
+      "why": "Official Cloudflare pack; cloudflare, wrangler and workers-best-practices each have 100k+ installs on skills.sh",
+      "skill": "cloudflare/skills/cloudflare",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "openai/codex-plugin-cc",
+      "name": "Codex plugin for Claude Code",
+      "category": "agent-skills",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "codex",
+        "claude-code",
+        "code-review",
+        "delegation"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Call Codex from inside Claude Code to review code or delegate tasks",
+      "why": "Official OpenAI plugin bridging Codex and Claude Code for second-opinion reviews and background tasks.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "EveryInc/compound-engineering-plugin",
+      "name": "Compound Engineering",
+      "category": "agent-skills",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "planning",
+        "code-review",
+        "workflow",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "markdown",
+        "ts"
+      ],
+      "use_for": "Adopt a plan, work, review, compound loop for agentic engineering",
+      "why": "Every's widely used plugin for Claude Code, Codex and Cursor; 108 contributors and a full brainstorm/plan/review skill set.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "cathrynlavery/diagram-design",
+      "name": "diagram-design",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "diagrams",
+        "design",
+        "svg"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Have an agent produce editorial-quality diagrams across 44 diagram types",
+      "why": "About 14k skills.sh installs; supports Claude Code, Codex, Copilot, Cursor and more.",
+      "skill": "cathrynlavery/diagram-design/diagram-design",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "affaan-m/ECC",
+      "name": "Everything Claude Code (ECC)",
+      "category": "agent-skills",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "harness",
+        "memory",
+        "hooks",
+        "security"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Bundle skills, hooks, memory and security configs to tune an agent harness.",
+      "why": "Very widely starred harness configuration pack, actively maintained, MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "expo/skills",
+      "name": "Expo Skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "expo",
+        "react-native",
+        "eas",
+        "mobile",
+        "official"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "official": true,
+      "use_for": "Official Expo skills for building, deploying, upgrading and debugging Expo and React Native apps with an agent.",
+      "why": "Maintained by the Expo team and listed in the official Claude and Codex plugin marketplaces.",
+      "category": "agent-skills",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Nutlope/hallmark",
+      "name": "hallmark",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "design",
+        "frontend",
+        "anti-slop"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Steer Claude Code, Cursor or Codex away from generic AI-looking UI",
+      "why": "About 63k skills.sh installs; opinionated design rules from Hassan El Mghari (Together AI).",
+      "skill": "nutlope/hallmark/hallmark",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "blader/humanizer",
+      "name": "Humanizer",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "writing",
+        "editing",
+        "ai-text",
+        "style"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Rewrite text to remove common signs of AI-generated writing.",
+      "why": "Focused, widely used writing skill (~58k stars), MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mvanhorn/last30days-skill",
+      "name": "last30days",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "research",
+        "reddit",
+        "hacker-news",
+        "web-search"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Research what people said about a topic in the last 30 days across Reddit, X, HN and the web",
+      "why": "About 48k skills.sh installs; synthesizes recent community discussion into a cited brief.",
+      "skill": "mvanhorn/last30days-skill/last30days",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "coreyhaines31/marketingskills",
+      "name": "Marketing Skills",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "marketing",
+        "seo",
+        "copywriting",
+        "cro"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Give agents marketing skills for SEO audits, CRO, copywriting, analytics and growth.",
+      "why": "Most-installed marketing skill pack (~230k installs for seo-audit); MIT.",
+      "skill": "coreyhaines31/marketingskills/seo-audit",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mattpocock/skills",
+      "name": "Matt Pocock skills",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "typescript",
+        "workflow",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Opinionated engineering skills: codebase design, interface design, git guardrails and TDD workflows",
+      "why": "One of the most-installed community skill packs on skills.sh (several skills above 200k installs) from a well-known TS educator",
+      "skill": "mattpocock/skills/setup-matt-pocock-skills",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "NVIDIA/skills",
+      "name": "NVIDIA skills",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "nvidia",
+        "cuda",
+        "gpu",
+        "official"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Install agent skills for NVIDIA products and SDKs into Claude Code, Codex and others.",
+      "why": "Official NVIDIA-maintained skills for its developer stack.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "kepano/obsidian-skills",
+      "name": "obsidian-skills",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "obsidian",
+        "markdown",
+        "bases",
+        "json-canvas"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Teach an agent Obsidian Flavored Markdown, Bases, JSON Canvas and the Obsidian CLI",
+      "why": "By Obsidian CEO Steph Ango; ~90k installs for obsidian-markdown on skills.sh, with cli and bases skills close behind.",
+      "skill": "kepano/obsidian-skills/obsidian-markdown",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "OthmanAdi/planning-with-files",
+      "name": "planning-with-files",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "planning",
+        "long-running",
+        "markdown",
+        "workflow"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Keep long-running agent tasks on track with persistent markdown plan, findings and progress files.",
+      "why": "Simple, crash-proof planning pattern with broad adoption (~27k stars).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "phuryn/pm-skills",
+      "name": "PM Skills",
+      "category": "agent-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "product-management",
+        "prd",
+        "roadmap"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Give an agent product-management workflows: PRDs, pre-mortems, prioritization, roadmaps",
+      "why": "100+ PM skills and commands; top skills each around 10k installs on skills.sh.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "DietrichGebert/ponytail",
+      "name": "ponytail",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "code-quality",
+        "minimalism",
+        "review"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Push your agent toward the smallest change: write less code, review and audit for bloat",
+      "why": "About 94k skills.sh installs for the core skill, plus review/audit/debt skills; 127 contributors.",
+      "skill": "dietrichgebert/ponytail/ponytail",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "K-Dense-AI/scientific-agent-skills",
+      "name": "Scientific Agent Skills",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "science",
+        "research",
+        "bioinformatics",
+        "data-analysis"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Equip agents with scientific skills for bioinformatics, chemistry, data analysis and literature work.",
+      "why": "Largest science-focused skill library; ~52k stars, MIT.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "cloudflare/security-audit-skill",
+      "name": "security-audit-skill",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "security",
+        "audit",
+        "code-review"
+      ],
+      "ecosystems": [
+        "markdown"
+      ],
+      "use_for": "Run a multi-phase security audit of a codebase with a coding agent",
+      "why": "Official Cloudflare skill; findings are independently verified and emitted as machine-readable output.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "vercel-labs/skills",
+      "name": "skills CLI (find-skills)",
+      "category": "agent-skills",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "cli",
+        "skills-sh",
+        "installer"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Install and discover agent skills for Claude Code, Codex, Cursor and others with npx skills add",
+      "why": "The open skills installer behind skills.sh; its find-skills skill is the most-installed skill on skills.sh (~3.9M installs)",
+      "skill": "vercel-labs/skills/find-skills",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "supabase/agent-skills",
+      "name": "Supabase agent skills",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "supabase",
+        "postgres",
+        "database",
+        "official"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Teach coding agents Supabase and Postgres best practices for schema, RLS and queries.",
+      "why": "Official Supabase skills; ~448k installs on skills.sh for the Postgres best-practices skill.",
+      "skill": "supabase/agent-skills/supabase-postgres-best-practices",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "obra/superpowers",
+      "name": "Superpowers",
+      "category": "agent-skills",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "workflow",
+        "tdd",
+        "planning",
+        "claude-code"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Give a coding agent a disciplined workflow: brainstorming, planning, TDD, debugging and code review skills.",
+      "why": "One of the most installed skill packs on skills.sh (~395k installs for brainstorming); MIT.",
+      "skill": "obra/superpowers/brainstorming",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "Leonxlnx/taste-skill",
+      "name": "Taste Skill",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "agent-skills",
+        "design",
+        "frontend",
+        "ui"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Design-taste skills that steer agents away from generic AI-looking frontends",
+      "why": "Very widely installed design skill pack on skills.sh (~625k installs for design-taste-frontend)",
+      "skill": "leonxlnx/taste-skill/design-taste-frontend",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "name": "UI UX Pro Max",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "ui",
+        "ux",
+        "design-system",
+        "frontend"
+      ],
+      "ecosystems": [
+        "markdown",
+        "python"
+      ],
+      "use_for": "Give a coding agent design intelligence: styles, palettes, font pairings and UX rules",
+      "why": "About 400k skills.sh installs; searchable database of UI styles, color palettes and stack-specific guidelines.",
+      "skill": "nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "vercel-labs/agent-skills",
+      "name": "Vercel Agent Skills",
+      "category": "agent-skills",
+      "kinds": [
+        "skill"
+      ],
+      "tags": [
+        "vercel",
+        "react",
+        "nextjs",
+        "agent-skills",
+        "official"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Vercel skills for coding agents: React and Next.js best practices, web design guidelines and deployment.",
+      "why": "Official Vercel skill pack with some of the highest install counts on skills.sh.",
+      "official": true,
+      "license_verified": {
+        "license": "MIT",
+        "note": "License stated as MIT in the README; no LICENSE file in the repo.",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "wshobson/agents",
+      "name": "wshobson/agents",
+      "category": "agent-skills",
+      "kinds": [
+        "plugin",
+        "skill"
+      ],
+      "tags": [
+        "subagents",
+        "marketplace",
+        "multi-harness",
+        "workflow"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Add a large marketplace of subagents, skills and commands across Claude Code, Codex, Cursor and more.",
+      "why": "Widely adopted multi-harness plugin marketplace with ~41k stars.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

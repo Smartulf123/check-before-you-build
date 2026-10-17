@@ -43,7 +43,7 @@ Each script prints **one JSON object**: `{ "ok": true, ... }` or `{ "ok": false,
 
 | Script | Use |
 |---|---|
-| `catalog.mjs search <keywords> --categories a,b [--live]` | Curated repos (checked first) |
+| `catalog.mjs search <keywords> --categories a,b` | Curated repos (checked first; uses the weekly stats snapshot, no GitHub calls) |
 | `github.mjs search <2–4 keywords>` · `repo <owner/repo>` · `issues <owner/repo>` | Competitors, live stats, unmet demand |
 | `skills.mjs search <keywords>` | Existing agent skills (installs) |
 | `plugins.mjs search <keywords>` | Official Claude plugins |
@@ -62,7 +62,7 @@ Follow `references/methodology.md` for the full detail of each phase.
 4. **Gaps** (launch: full · me: short · fun: skip): evidenced weaknesses and unmet requests.
 5. **Building blocks:** catalog first, then live search, per component. Recommend 🧱 use · 🍴 fork · 💡 learn · 🤝 contribute, respecting license classes.
 6. **Score:** write `evidence.json` (schema in `references/evidence-schema.md`), run `score.mjs`.
-7. **Check facts and write:** re-check every cited GitHub repo with `github.mjs repo` (drop anything `found:false`, update numbers), re-run `score.mjs` if anything changed, then write the report from `references/report-template.md` and print the chat summary.
+7. **Check facts and write:** re-check every cited GitHub repo **that is not from the catalog** with `github.mjs repo` (drop anything `found:false`, update numbers). Catalog entries are already verified weekly, so use their snapshot stats and don't spend GitHub calls on them. Re-run `score.mjs` if anything changed, then write the report from `references/report-template.md` and print the chat summary.
 
 In Claude Code, run phases 2, 3 and 5 as **three parallel sub-agents** using the briefs in `references/subagents.md`. Elsewhere, run them in sequence.
 

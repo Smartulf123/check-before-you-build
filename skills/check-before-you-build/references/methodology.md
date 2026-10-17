@@ -69,9 +69,9 @@ Competitor adoption is added automatically by `score.mjs`. Don't list it as a de
 
 ## Phase 5: Building blocks
 
-1. Catalog first: `catalog.mjs search <component keywords> --categories <slug> --live`.
-2. Live search for components the catalog doesn't cover: `github.mjs search`, `npm.mjs search`.
-3. Get live stats for each candidate (`github.mjs repo`, `npm.mjs info`).
+1. Catalog first: `catalog.mjs search <component keywords> --categories <slug>`. Catalog entries come with stats from the weekly snapshot (`stats_source`) and are already quality-checked, so **don't spend GitHub calls on them**. Prefer `featured` entries.
+2. Live search only for components the catalog doesn't cover well: `github.mjs search`, `npm.mjs search`.
+3. Get live stats only for candidates **outside** the catalog (`github.mjs repo`, `npm.mjs info`).
 4. Rank by fit → maintenance → adoption → license.
 5. One recommendation type per block: `use` 🧱 · `fork` 🍴 · `learn` 💡 · `contribute` 🤝.
 6. License classes: permissive (MIT, Apache-2.0, BSD, ISC, MPL-2.0) → any type. Copyleft (GPL/AGPL/LGPL) → use/learn/contribute; fork only with a warning. None → learn only ("no license: you have no right to copy this code"). Other → learn only.
@@ -89,7 +89,7 @@ It validates the file, computes saturation, demand and gap, applies verdict rule
 
 ## Phase 7: Check facts and write
 
-1. For every GitHub repo you will cite (competitors and building blocks): `github.mjs repo <owner/repo>`. On `found:false`, set `verified: false` and remove it from the report. On `renamed:true`, update the id and URL. Refresh `signals`.
+1. For every GitHub repo you will cite that is **not** from the catalog (competitors and non-catalog building blocks): `github.mjs repo <owner/repo>`. Catalog entries are verified weekly by the maintainer's health check; mark them `verified: true` with `stats_source` from the snapshot. On `found:false`, set `verified: false` and remove it from the report. On `renamed:true`, update the id and URL. Refresh `signals`.
 2. Record `verification: { checked, passed, corrected, dropped }` in `evidence.json`.
 3. Re-run `score.mjs` if anything changed.
 4. Write `report.md` from `report-template.md`, using only items with `verified !== false`.

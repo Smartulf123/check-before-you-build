@@ -1,0 +1,697 @@
+{
+  "category": "mobile",
+  "entries": [
+    {
+      "id": "dotnet/maui",
+      "name": ".NET MAUI",
+      "category": "mobile",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "cross-platform",
+        "csharp",
+        "xaml"
+      ],
+      "ecosystems": [
+        "csharp"
+      ],
+      "use_for": "Cross-platform native apps for Android, iOS, macOS and Windows in C#",
+      "why": "Microsoft official successor to Xamarin.Forms; the default for .NET teams building mobile apps.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "ionic-team/capacitor",
+      "name": "Capacitor",
+      "category": "mobile",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "webview",
+        "hybrid",
+        "ios",
+        "android"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Ship an existing web app as a native iOS/Android app with access to native APIs.",
+      "why": "Modern successor to Cordova; works with any web framework and keeps native projects editable.",
+      "npm": "@capacitor/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "JetBrains/compose-multiplatform",
+      "name": "Compose Multiplatform",
+      "category": "mobile",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "kotlin",
+        "ios",
+        "android",
+        "declarative-ui"
+      ],
+      "ecosystems": [
+        "kotlin"
+      ],
+      "use_for": "Share Kotlin UI code across Android, iOS, desktop and web with Jetpack Compose.",
+      "why": "JetBrains framework that extends Jetpack Compose to iOS, letting Kotlin teams share UI and logic.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "wix/Detox",
+      "name": "Detox",
+      "category": "mobile",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "react-native",
+        "e2e-testing",
+        "mobile-testing"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Gray-box end-to-end testing for React Native apps",
+      "why": "Synchronises with the app runtime to avoid flaky waits; the standard E2E tool for RN on simulators and devices.",
+      "npm": "detox",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "expo/expo",
+      "name": "Expo",
+      "category": "mobile",
+      "kinds": [
+        "framework",
+        "cli",
+        "service"
+      ],
+      "tags": [
+        "react-native",
+        "ios",
+        "android",
+        "ota-updates"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build, run and ship React Native apps with managed native modules, routing and cloud builds.",
+      "why": "Recommended way to start React Native apps; Expo Router, EAS Build and OTA updates remove most native setup.",
+      "npm": "expo",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "fastlane/fastlane",
+      "name": "fastlane",
+      "category": "mobile",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "ci-cd",
+        "app-store",
+        "code-signing",
+        "release"
+      ],
+      "ecosystems": [
+        "ruby"
+      ],
+      "use_for": "Automate iOS/Android builds, signing, screenshots and store releases",
+      "why": "The standard mobile release automation tool, used across native, Flutter and React Native apps.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Shopify/flash-list",
+      "name": "FlashList",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "list",
+        "performance"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Fast, recycling list component for React Native, a drop-in FlatList replacement",
+      "why": "Shopify-built; dramatically smoother long lists, widely recommended for Expo apps.",
+      "npm": "@shopify/flash-list",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "flutter/flutter",
+      "name": "Flutter",
+      "category": "mobile",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "dart",
+        "ios",
+        "android",
+        "cross-platform"
+      ],
+      "ecosystems": [
+        "dart"
+      ],
+      "use_for": "Build natively compiled mobile (and web/desktop) apps from one Dart codebase.",
+      "why": "Google-backed, own rendering engine for pixel-consistent UI and fast hot reload; very large package ecosystem.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "FaridSafi/react-native-gifted-chat",
+      "name": "Gifted Chat",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "chat",
+        "messaging",
+        "ui"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Complete chat UI for React Native apps",
+      "why": "Drop-in chat screen with bubbles, input toolbar, avatars and load-earlier; saves weeks of messaging UI.",
+      "npm": "react-native-gifted-chat",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "ionic-team/ionic-framework",
+      "name": "Ionic Framework",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "ui",
+        "hybrid",
+        "pwa",
+        "mobile-components"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build mobile-styled UIs for hybrid apps and PWAs with React, Vue or Angular.",
+      "why": "Mature mobile UI toolkit with platform-adaptive iOS/Android styling, usually paired with Capacitor.",
+      "npm": "@ionic/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "lynx-family/lynx",
+      "name": "Lynx",
+      "category": "mobile",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "cross-platform",
+        "react",
+        "native-rendering"
+      ],
+      "ecosystems": [
+        "ts",
+        "cpp"
+      ],
+      "use_for": "Write native mobile UIs with web-style markup, CSS and ReactLynx",
+      "why": "ByteDance open-sourced engine behind TikTok features; dual-threaded native rendering for web developers.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "NativeScript/NativeScript",
+      "name": "NativeScript",
+      "category": "mobile",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "cross-platform",
+        "native-api",
+        "typescript"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build native iOS/Android apps in TypeScript with direct native API access",
+      "why": "OpenJS project; lets JS/Angular/Vue/Svelte devs call platform APIs directly without bridges.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "nativewind/nativewind",
+      "name": "NativeWind",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "tailwind",
+        "styling"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Use Tailwind CSS classes to style React Native components",
+      "why": "The standard way to bring Tailwind to React Native/Expo; base of React Native Reusables.",
+      "npm": "nativewind",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "react/react-native",
+      "name": "React Native",
+      "category": "mobile",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "react",
+        "ios",
+        "android",
+        "cross-platform"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Build native iOS and Android apps with React and JavaScript/TypeScript.",
+      "why": "The most used JS mobile framework, backed by Meta with the New Architecture and a large library ecosystem.",
+      "npm": "react-native",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "wix/react-native-calendars",
+      "name": "React Native Calendars",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "calendar",
+        "agenda",
+        "date-picker"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Calendar, agenda and date-marking components for React Native",
+      "why": "Pure-JS, customizable calendar and agenda views used widely for booking and scheduling screens.",
+      "npm": "react-native-calendars",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "react-native-elements/react-native-elements",
+      "name": "React Native Elements",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "components",
+        "ui-toolkit"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Cross-platform UI toolkit for React Native",
+      "why": "Long-standing, themeable RN component kit (buttons, inputs, lists, cards).",
+      "npm": "@rneui/themed",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "invertase/react-native-firebase",
+      "name": "React Native Firebase",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "firebase",
+        "push-notifications",
+        "analytics"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Native Firebase SDK bindings for React Native",
+      "why": "Modular, well-tested wrappers for Auth, Firestore, Messaging, Crashlytics and more on iOS and Android.",
+      "npm": "@react-native-firebase/app",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "necolas/react-native-web",
+      "name": "React Native for Web",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "web",
+        "cross-platform"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Run React Native components and APIs in the browser to share code with web.",
+      "why": "Mature compatibility layer used by Expo for web and by large production web apps.",
+      "npm": "react-native-web",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "software-mansion/react-native-gesture-handler",
+      "name": "React Native Gesture Handler",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "gestures",
+        "touch"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Native-driven touch and gesture system for React Native",
+      "why": "Core dependency of React Navigation and most RN apps; gestures run on the UI thread.",
+      "npm": "react-native-gesture-handler",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "wix/react-native-navigation",
+      "name": "React Native Navigation",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "navigation",
+        "native-screens"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Fully native navigation for React Native",
+      "why": "Wix library using real native navigation stacks and tabs instead of JS-driven ones.",
+      "npm": "react-native-navigation",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "callstack/react-native-paper",
+      "name": "React Native Paper",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "material-design",
+        "components",
+        "theming"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Material Design component library for React Native",
+      "why": "Callstack-maintained, themeable Material 3 components with good accessibility.",
+      "npm": "react-native-paper",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "founded-labs/react-native-reusables",
+      "name": "React Native Reusables",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "shadcn",
+        "nativewind",
+        "components"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Copy shadcn/ui-style components into a React Native app styled with NativeWind.",
+      "why": "Brings the shadcn copy-paste model and look to React Native, built on accessible primitives.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "oblador/react-native-vector-icons",
+      "name": "React Native Vector Icons",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "icons",
+        "fonts"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Use popular icon sets (Material, FontAwesome, Ionicons) in React Native apps.",
+      "why": "The most used icon package for React Native, with many bundled icon sets.",
+      "npm": "react-native-vector-icons",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "react-navigation/react-navigation",
+      "name": "React Navigation",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "navigation",
+        "routing"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Add stack, tab and drawer navigation to a React Native app.",
+      "why": "The standard navigation library for React Native and the base Expo Router builds on.",
+      "npm": "@react-navigation/native",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "license_verified": {
+        "license": "MIT",
+        "note": "MIT license files live in each package folder (e.g. packages/native/LICENSE).",
+        "date": "2026-10-17"
+      },
+      "featured": false
+    },
+    {
+      "id": "react-native-maps/react-native-maps",
+      "name": "react-native-maps",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "maps",
+        "google-maps",
+        "apple-maps"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Native map views for React Native on iOS and Android",
+      "why": "The standard RN map component with markers, polygons and overlays on Google and Apple Maps.",
+      "npm": "react-native-maps",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "infinitered/reactotron",
+      "name": "Reactotron",
+      "category": "mobile",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "react-native",
+        "debugging",
+        "devtools"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Inspect state, network calls and logs of React Native apps while developing.",
+      "why": "Long-standing desktop debugger for RN with Redux/MobX-State-Tree plugins, maintained by Infinite Red.",
+      "npm": "reactotron-react-native",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tamagui/tamagui",
+      "name": "Tamagui",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "ui-kit",
+        "styling",
+        "universal"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Universal UI kit and optimizing style compiler for React Native and web",
+      "why": "Share styled components across Expo and Next.js with compile-time optimization.",
+      "npm": "tamagui",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "NervJS/taro",
+      "name": "Taro",
+      "category": "mobile",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "cross-platform",
+        "mini-programs",
+        "react",
+        "vue"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Write once in React/Vue, ship to WeChat/Alipay mini programs, H5 and React Native",
+      "why": "The leading framework for Chinese mini-program platforms with React Native and web targets.",
+      "npm": "@tarojs/taro",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "akveo/react-native-ui-kitten",
+      "name": "UI Kitten",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "components",
+        "eva-design",
+        "theming"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Themeable React Native UI library on Eva Design System",
+      "why": "30+ accessible components with runtime theme switching driven by design tokens.",
+      "npm": "@ui-kitten/components",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "margelo/react-native-vision-camera",
+      "name": "VisionCamera",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "camera",
+        "frame-processors"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "High-performance camera library for React Native with frame processors",
+      "why": "The standard RN camera library: photo, video, QR scanning and real-time ML frame processing.",
+      "npm": "react-native-vision-camera",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Nozbe/WatermelonDB",
+      "name": "WatermelonDB",
+      "category": "mobile",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react-native",
+        "database",
+        "offline-first",
+        "sqlite"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Reactive offline-first database for React Native",
+      "why": "Lazy-loaded SQLite-backed DB that stays fast with tens of thousands of records, with a sync protocol.",
+      "npm": "@nozbe/watermelondb",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    }
+  ]
+}

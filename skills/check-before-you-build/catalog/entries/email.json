@@ -1,0 +1,489 @@
+{
+  "category": "email",
+  "entries": [
+    {
+      "id": "anymail/django-anymail",
+      "name": "Anymail",
+      "category": "email",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "django",
+        "esp",
+        "transactional-email"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Django email integration for Amazon SES, Postmark, Resend, SendGrid and more",
+      "why": "One Django API across 20+ email providers incl. tracking webhooks and inbound",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Billionmail/BillionMail",
+      "name": "BillionMail",
+      "category": "email",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "mail-server",
+        "newsletter",
+        "email-marketing",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "go"
+      ],
+      "use_for": "Self-hosted mail server plus newsletter and email-marketing platform",
+      "why": "All-in-one open source mail server with campaigns and analytics; AGPL-3.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "docker-mailserver/docker-mailserver",
+      "name": "docker-mailserver",
+      "category": "email",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "mail-server",
+        "docker",
+        "self-hosting"
+      ],
+      "ecosystems": [
+        "shell"
+      ],
+      "use_for": "Production-ready full mail server (Postfix, Dovecot, Rspamd) in one container",
+      "why": "The simplest way to self-host a full mail stack with config files only",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "forwardemail/email-templates",
+      "name": "Email Templates",
+      "category": "email",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "email-templates",
+        "nodemailer",
+        "pug"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Create, preview and send custom email templates for Node.js",
+      "why": "Popular Nodemailer companion for templated emails with preview and i18n",
+      "npm": "email-templates",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "haraka/Haraka",
+      "name": "Haraka",
+      "category": "email",
+      "kinds": [
+        "service",
+        "framework"
+      ],
+      "tags": [
+        "smtp",
+        "mail-server",
+        "nodejs",
+        "plugins"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Run a programmable, high-performance SMTP server with Node.js plugins.",
+      "why": "Event-driven SMTP server used at scale for inbound filtering and outbound delivery; extend it in JS.",
+      "npm": "Haraka",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "lettre/lettre",
+      "name": "Lettre",
+      "category": "email",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "rust",
+        "smtp",
+        "send-email",
+        "async"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Build and send email from Rust applications.",
+      "why": "The standard Rust mailer crate with async SMTP, TLS and message building.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "knadh/listmonk",
+      "name": "listmonk",
+      "category": "email",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "newsletter",
+        "mailing-list",
+        "self-hosted",
+        "campaigns"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Self-host newsletters and mailing lists with an API and admin dashboard.",
+      "why": "Single Go binary with Postgres; very fast at large lists and exposes a full API for app integration.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mailcow/mailcow-dockerized",
+      "name": "mailcow",
+      "category": "email",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "mail-server",
+        "groupware",
+        "docker"
+      ],
+      "ecosystems": [
+        "php",
+        "shell"
+      ],
+      "use_for": "Dockerised mail server suite with web UI, groupware and spam filtering",
+      "why": "Popular self-hosted mail suite with admin UI, SOGo webmail and ActiveSync",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jstedfast/MailKit",
+      "name": "MailKit",
+      "category": "email",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "dotnet",
+        "smtp",
+        "imap",
+        "pop3"
+      ],
+      "ecosystems": [
+        "csharp"
+      ],
+      "use_for": "Send and read email (SMTP, IMAP, POP3) from .NET.",
+      "why": "Microsoft-recommended replacement for System.Net.Mail; robust, standards-compliant and cross-platform.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "axllent/mailpit",
+      "name": "Mailpit",
+      "category": "email",
+      "kinds": [
+        "app",
+        "cli"
+      ],
+      "tags": [
+        "testing",
+        "smtp",
+        "development",
+        "mail-catcher"
+      ],
+      "ecosystems": [
+        "go",
+        "any"
+      ],
+      "use_for": "Catch outgoing email locally during development and inspect it in a web UI.",
+      "why": "Modern successor to MailHog: single binary, fast UI, API for automated tests and HTML compatibility checks.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "maizzle/framework",
+      "name": "Maizzle",
+      "category": "email",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "email-templates",
+        "tailwindcss",
+        "html-email"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Build HTML emails with Tailwind CSS and inline-CSS post-processing",
+      "why": "Tailwind-first email framework that produces production-ready, inlined HTML",
+      "npm": "@maizzle/framework",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mautic/mautic",
+      "name": "Mautic",
+      "category": "email",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "marketing-automation",
+        "newsletter",
+        "campaigns"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Open-source marketing automation: email campaigns, segments and landing pages",
+      "why": "The main open-source alternative to HubSpot/Mailchimp automation",
+      "license_verified": {
+        "license": "GPL-3.0-or-later",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mjmlio/mjml",
+      "name": "MJML",
+      "category": "email",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "email-templates",
+        "responsive",
+        "markup",
+        "html-email"
+      ],
+      "ecosystems": [
+        "js",
+        "any"
+      ],
+      "use_for": "Write responsive email layouts in simple markup that compiles to client-safe HTML.",
+      "why": "Long-standing standard for responsive email markup; handles Outlook/Gmail quirks so you do not hand-write tables.",
+      "npm": "mjml",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "nodemailer/nodemailer",
+      "name": "Nodemailer",
+      "category": "email",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "smtp",
+        "nodejs",
+        "send-email",
+        "transport"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Send email from Node.js via SMTP or provider transports.",
+      "why": "The default email-sending module for Node, with attachments, DKIM, OAuth2 and pluggable transports.",
+      "npm": "nodemailer",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "novuhq/novu",
+      "name": "Novu",
+      "category": "email",
+      "kinds": [
+        "service",
+        "framework"
+      ],
+      "tags": [
+        "notifications",
+        "email",
+        "in-app",
+        "workflows"
+      ],
+      "ecosystems": [
+        "ts",
+        "any"
+      ],
+      "use_for": "Orchestrate email, SMS, push and in-app notifications through one API and workflow engine.",
+      "why": "Open-source notification infrastructure with provider integrations, digests, preferences and an inbox component.",
+      "npm": "@novu/api",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "PHPMailer/PHPMailer",
+      "name": "PHPMailer",
+      "category": "email",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "php",
+        "smtp",
+        "send-email",
+        "attachments"
+      ],
+      "ecosystems": [
+        "php"
+      ],
+      "use_for": "Send email from PHP applications over SMTP.",
+      "why": "The classic, most-used PHP mail library with SMTP auth, TLS, attachments and HTML mail.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "postalserver/postal",
+      "name": "Postal",
+      "category": "email",
+      "kinds": [
+        "service"
+      ],
+      "tags": [
+        "mail-server",
+        "transactional",
+        "smtp",
+        "self-hosted"
+      ],
+      "ecosystems": [
+        "any"
+      ],
+      "use_for": "Self-host a SendGrid/Mailgun-style platform for sending and receiving app email.",
+      "why": "Full mail delivery platform with HTTP API, webhooks, click/open tracking and multiple organizations.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "resend/react-email",
+      "name": "React Email",
+      "category": "email",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "email-templates",
+        "react",
+        "html-email",
+        "components"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build HTML email templates as React components and render them for any provider.",
+      "why": "Modern component set that outputs client-compatible HTML, with a local preview server; works with any sender.",
+      "npm": "@react-email/components",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "unlayer/react-email-editor",
+      "name": "React Email Editor",
+      "category": "email",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "email-builder",
+        "drag-and-drop",
+        "react",
+        "editor"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Embed a drag-and-drop email template builder in a React app.",
+      "why": "Wraps the Unlayer editor so end users can design emails visually; exports HTML and JSON designs.",
+      "npm": "react-email-editor",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "resend/resend-node",
+      "name": "Resend Node.js",
+      "category": "email",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "resend",
+        "transactional-email",
+        "sdk"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Official Node.js SDK for the Resend email API",
+      "why": "Official SDK for Resend; pairs directly with React Email templates",
+      "npm": "resend",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "stalwartlabs/stalwart",
+      "name": "Stalwart",
+      "category": "email",
+      "kinds": [
+        "engine"
+      ],
+      "tags": [
+        "mail-server",
+        "imap",
+        "jmap",
+        "smtp"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "All-in-one mail server (SMTP, IMAP, JMAP, POP3) with spam filtering, in Rust",
+      "why": "Modern single-binary mail server with JMAP and built-in spam filter; AGPL-3.0 or commercial",
+      "license_verified": {
+        "license": "AGPL-3.0-only",
+        "note": "Dual-licensed AGPL-3.0-only or proprietary Stalwart Enterprise License v2 (REUSE headers, LICENSES/ folder)",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    }
+  ]
+}

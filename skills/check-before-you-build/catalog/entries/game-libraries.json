@@ -1,0 +1,463 @@
+{
+  "category": "game-libraries",
+  "entries": [
+    {
+      "id": "assimp/assimp",
+      "name": "Assimp",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "3d-models",
+        "asset-import",
+        "fbx",
+        "gltf"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Load 40+ 3D model formats into one unified scene structure",
+      "why": "The standard C++ asset importer (FBX, glTF, OBJ, Collada) used by countless engines and tools.",
+      "license_verified": {
+        "license": "BSD-3-Clause",
+        "note": "LICENSE text is the standard 3-clause BSD under the assimp team name",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "avianphysics/avian",
+      "name": "Avian",
+      "category": "game-libraries",
+      "kinds": [
+        "library",
+        "plugin"
+      ],
+      "tags": [
+        "physics",
+        "bevy",
+        "ecs",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Add ECS-native 2D and 3D physics to Bevy games.",
+      "why": "Physics designed for Bevy ECS from the ground up; a leading Bevy physics option.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "bkaradzic/bgfx",
+      "name": "bgfx",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "rendering",
+        "graphics-api",
+        "cross-platform"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Cross-platform, graphics-API-agnostic rendering library (D3D, Metal, Vulkan, GL)",
+      "why": "Bring-your-own-engine renderer used by many shipped games and tools.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "NateTheGreatt/bitECS",
+      "name": "bitECS",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "ecs",
+        "typescript",
+        "data-oriented"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Add a minimal, high-performance ECS to JavaScript/TypeScript games.",
+      "why": "Tiny data-oriented ECS for the web, used with three.js and other JS renderers.",
+      "npm": "bitecs",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "erincatto/box2d",
+      "name": "Box2D",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "physics",
+        "2d",
+        "rigid-body",
+        "c"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Simulate 2D rigid-body physics in games.",
+      "why": "The classic 2D physics engine used by countless games and ported to most languages; v3 rewrite is fast and multithreaded.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "bulletphysics/bullet3",
+      "name": "Bullet Physics",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "physics",
+        "3d",
+        "collision",
+        "robotics"
+      ],
+      "ecosystems": [
+        "cpp",
+        "python"
+      ],
+      "use_for": "Real-time 3D collision detection and rigid/soft body physics (plus PyBullet)",
+      "why": "Long-standing 3D physics standard used in games, film and robotics; zlib licensed.",
+      "license_verified": {
+        "license": "Zlib",
+        "note": "LICENSE.txt: zlib license except Extras and examples/ThirdPartyLibs",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "ocornut/imgui",
+      "name": "Dear ImGui",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "immediate-mode",
+        "gui",
+        "debug-tools",
+        "cpp"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Add fast immediate-mode GUIs for in-game tools, editors and debug overlays.",
+      "why": "The standard for game tooling UIs, renderer-agnostic and used across the games industry.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "skypjack/entt",
+      "name": "EnTT",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "ecs",
+        "cpp",
+        "data-oriented"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Structure C++ game logic with a fast entity component system.",
+      "why": "Header-only, very fast ECS used in Minecraft (Bedrock) and many engines.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "SanderMertens/flecs",
+      "name": "Flecs",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "ecs",
+        "c",
+        "cpp",
+        "relationships"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Use a fast entity component system with entity relationships in C or C++.",
+      "why": "Feature-rich ECS with queries, relationships, systems and a web explorer; MIT licensed.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "glfw/glfw",
+      "name": "GLFW",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "windowing",
+        "opengl",
+        "vulkan",
+        "input"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Create windows and contexts and handle input for OpenGL/Vulkan apps",
+      "why": "Minimal, ubiquitous window/input library for custom renderers and engines.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jrouwe/JoltPhysics",
+      "name": "Jolt Physics",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "physics",
+        "3d",
+        "multithreaded",
+        "cpp"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Add fast multithreaded 3D rigid-body physics and collision detection to a game.",
+      "why": "Used in Horizon Forbidden West and integrated into Godot; JS/WASM builds available.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "tesselode/kira",
+      "name": "Kira",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "audio",
+        "game-audio",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Play and mix expressive game audio (tweens, clocks, effects) in Rust games.",
+      "why": "Game-focused audio library with smooth parameter tweening and timing, usable with Bevy.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "liabru/matter-js",
+      "name": "Matter.js",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "physics",
+        "2d",
+        "javascript",
+        "web"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Add 2D rigid-body physics to browser games and interactive pages.",
+      "why": "The most used pure-JS 2D physics engine, simple API and built-in renderer for debugging.",
+      "npm": "matter-js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "NVIDIA-Omniverse/PhysX",
+      "name": "NVIDIA PhysX",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "physics",
+        "3d",
+        "gpu"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Scalable 3D physics SDK with optional GPU acceleration",
+      "why": "Physics engine used by Unity and (historically) Unreal; BSD-3 open source.",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "piqnt/planck.js",
+      "name": "Planck.js",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "physics",
+        "2d",
+        "box2d"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "2D physics engine for JavaScript, a Box2D rewrite for web and Node",
+      "why": "The maintained Box2D port for JS games; complements Matter.js with Box2D semantics.",
+      "npm": "planck",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "viblo/pymunk",
+      "name": "Pymunk",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "physics",
+        "2d",
+        "python",
+        "pygame"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Add 2D physics to Python games and simulations.",
+      "why": "Pythonic wrapper over Chipmunk2D, works well with pygame and pyglet.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "dimforge/rapier",
+      "name": "Rapier",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "physics",
+        "2d",
+        "3d",
+        "rust",
+        "wasm"
+      ],
+      "ecosystems": [
+        "rust",
+        "js"
+      ],
+      "use_for": "Add 2D/3D physics to Rust games or web games via its WASM/JS packages.",
+      "why": "Fast Rust physics with official JS bindings, popular with Bevy and three.js users.",
+      "npm": "@dimforge/rapier3d",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "recastnavigation/recastnavigation",
+      "name": "Recast & Detour",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "navmesh",
+        "pathfinding",
+        "ai"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Navigation-mesh generation and pathfinding for game AI",
+      "why": "Industry-standard navmesh toolkit used in Unity, Unreal, Godot and many engines.",
+      "stable": true,
+      "stable_reason": "Industry-standard navmesh generation/pathfinding; algorithms are settled and the code is mature",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "libsdl-org/SDL",
+      "name": "SDL",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "windowing",
+        "input",
+        "audio",
+        "cross-platform"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Cross-platform windowing, input, audio and GPU access layer for games",
+      "why": "The foundation under countless engines and games; SDL3 adds a modern cross-platform GPU API.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "nothings/stb",
+      "name": "stb",
+      "category": "game-libraries",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "single-header",
+        "image-loading",
+        "fonts",
+        "utilities"
+      ],
+      "ecosystems": [
+        "c"
+      ],
+      "use_for": "Single-file C libraries for image loading/writing, fonts, audio decoding and more",
+      "why": "Ubiquitous drop-in headers (stb_image, stb_truetype) found in most engines and tools.",
+      "license_verified": {
+        "license": "MIT",
+        "note": "LICENSE: dual MIT or public domain (Unlicense), user's choice",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

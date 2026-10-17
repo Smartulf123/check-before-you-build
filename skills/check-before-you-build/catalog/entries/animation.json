@@ -1,0 +1,394 @@
+{
+  "category": "animation",
+  "entries": [
+    {
+      "id": "juliangarnier/anime",
+      "name": "Anime.js",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "animation",
+        "javascript",
+        "timeline",
+        "svg"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Animate CSS, SVG, DOM attributes and JS objects with timelines.",
+      "why": "Lightweight, popular engine with a clean API and scroll/timeline features in v4.",
+      "npm": "animejs",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "formkit/auto-animate",
+      "name": "AutoAnimate",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "animation",
+        "transitions",
+        "zero-config",
+        "react",
+        "vue"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Add smooth transitions when elements are added, removed or moved, with one line.",
+      "why": "Zero-config drop-in for lists and layout changes; works with React, Vue, Svelte and vanilla.",
+      "npm": "@formkit/auto-animate",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "darkroomengineering/lenis",
+      "name": "Lenis",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "smooth-scroll",
+        "scroll",
+        "animation"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Smooth scrolling that works with scroll-driven animations.",
+      "why": "Lightweight and widely used on design-heavy sites; integrates with GSAP and Motion.",
+      "npm": "lenis",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "lottie-react-native/lottie-react-native",
+      "name": "Lottie React Native",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "lottie",
+        "react-native"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Play Lottie animations in React Native apps",
+      "why": "Standard Lottie player for React Native",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "airbnb/lottie-web",
+      "name": "Lottie Web",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "lottie",
+        "after-effects",
+        "svg"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Play After Effects animations exported as Lottie JSON on the web",
+      "why": "The original Lottie player; still the most installed",
+      "npm": "lottie-web",
+      "stable": true,
+      "stable_reason": "Mature After Effects/Bodymovin JSON player; format and API are settled and widely deployed",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "mojs/mojs",
+      "name": "mo.js",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "motion-graphics",
+        "animation",
+        "svg"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Create motion graphics and micro-interactions for the web.",
+      "why": "Declarative toolkit for bursts, shapes and tweened effects.",
+      "npm": "@mojs/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "motiondivision/motion",
+      "name": "Motion",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "animation",
+        "react",
+        "gestures",
+        "layout-animations"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Animate React, Vue and vanilla JS with springs, gestures, layout and scroll animations.",
+      "why": "Formerly Framer Motion; the default animation library for React with a small vanilla core.",
+      "npm": "motion",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "barvian/number-flow",
+      "name": "NumberFlow",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "number",
+        "transitions",
+        "react"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Animated number transitions for React, Vue and Svelte",
+      "why": "Smooth, accessible number animations",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "software-mansion/react-native-reanimated",
+      "name": "React Native Reanimated",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "animation",
+        "react-native",
+        "gestures",
+        "ui-thread"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Run smooth animations on the UI thread in React Native.",
+      "why": "The standard animation library for React Native, maintained by Software Mansion.",
+      "npm": "react-native-reanimated",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "pmndrs/react-spring",
+      "name": "react-spring",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "spring-physics"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Spring-physics animations for React, React Native and three.js",
+      "why": "Popular physics-based animation library from pmndrs",
+      "npm": "@react-spring/web",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "rive-app/rive-wasm",
+      "name": "Rive (web)",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "rive",
+        "state-machine",
+        "interactive"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Run interactive Rive state-machine animations on the web",
+      "why": "Official Rive web runtime",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "nateherkai/scroll-craft",
+      "name": "scroll-craft",
+      "kinds": [
+        "skill",
+        "plugin"
+      ],
+      "tags": [
+        "scroll-animation",
+        "immersive",
+        "landing-pages",
+        "design"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Agent skill for building premium, scroll-driven websites with layered heroes, motion and a real design standard.",
+      "why": "Unusually high design bar with ten worked example sites; includes its own scroll engine and verification tools.",
+      "exception": {
+        "rules": [
+          "contributors"
+        ],
+        "reason": "Maintainer pick: exceptional design quality and worked examples despite a single maintainer.",
+        "date": "2026-10-17"
+      },
+      "category": "animation",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jeremyckahn/shifty",
+      "name": "Shifty",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "tweening",
+        "animation",
+        "typescript",
+        "easing"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Low-level, fast tweening engine for TypeScript/JavaScript.",
+      "why": "Small, dependency-free core to build custom animation tooling on.",
+      "npm": "shifty",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "svgdotjs/svg.js",
+      "name": "SVG.js",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "svg",
+        "animation",
+        "manipulation"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Create, manipulate and animate SVG.",
+      "why": "Lightweight, readable API for SVG drawing and animation.",
+      "npm": "@svgdotjs/svg.js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "swup/swup",
+      "name": "swup",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "page-transitions",
+        "server-rendered",
+        "animation"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Add animated page transitions to server-rendered websites.",
+      "why": "Plugin-based and framework-free; good for static or CMS-driven sites.",
+      "npm": "swup",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "tweenjs/tween.js",
+      "name": "tween.js",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "tweening",
+        "animation",
+        "easing",
+        "threejs"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Tween numeric properties of JS objects with easing.",
+      "why": "Tiny, long-standing tween engine, commonly paired with three.js.",
+      "npm": "@tweenjs/tween.js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mattboldt/typed.js",
+      "name": "Typed.js",
+      "category": "animation",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "typewriter",
+        "text"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Typewriter-style text animation for hero sections and landing pages",
+      "why": "The classic typing-effect library (15k+ stars); small, dependency-free and feature-complete",
+      "npm": "typed.js",
+      "stable": true,
+      "stable_reason": "Feature-complete, dependency-free typewriter effect; small API that needs no ongoing changes",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

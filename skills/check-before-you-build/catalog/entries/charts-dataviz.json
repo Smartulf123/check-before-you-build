@@ -1,0 +1,577 @@
+{
+  "category": "charts-dataviz",
+  "entries": [
+    {
+      "id": "antvis/G6",
+      "name": "AntV G6",
+      "category": "charts-dataviz",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "graph",
+        "network",
+        "diagrams",
+        "layouts"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Build interactive graph and network visualizations with built-in layouts and behaviors.",
+      "why": "Full-featured graph visualization framework from Ant Group with many layouts.",
+      "npm": "@antv/g6",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "apache/echarts",
+      "name": "Apache ECharts",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "charts",
+        "canvas",
+        "interactive",
+        "dashboards"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Add interactive charts of almost any type to web dashboards with declarative options.",
+      "why": "Feature-rich Apache charting library that handles large datasets well.",
+      "npm": "echarts",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "apache/superset",
+      "name": "Apache Superset",
+      "category": "charts-dataviz",
+      "kinds": [
+        "app",
+        "service"
+      ],
+      "tags": [
+        "bi",
+        "dashboards",
+        "sql",
+        "embedded-analytics"
+      ],
+      "ecosystems": [
+        "python",
+        "ts"
+      ],
+      "use_for": "Self-host BI dashboards and embed charts in your product",
+      "why": "Apache project with 40+ chart types, SQL Lab and an embedding SDK; 1,700+ contributors.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "bokeh/bokeh",
+      "name": "Bokeh",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "python",
+        "interactive",
+        "plots",
+        "dashboards"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Interactive browser-based plots and dashboards from Python",
+      "why": "NumFOCUS project for interactive web plots from Python without writing JavaScript",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "chartjs/Chart.js",
+      "name": "Chart.js",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "charts",
+        "canvas",
+        "simple",
+        "responsive"
+      ],
+      "ecosystems": [
+        "js",
+        "ts"
+      ],
+      "use_for": "Add common responsive charts (line, bar, pie) to a web page with minimal setup.",
+      "why": "The most popular simple charting library, lightweight and well documented.",
+      "npm": "chart.js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "cytoscape/cytoscape.js",
+      "name": "Cytoscape.js",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "graph",
+        "network",
+        "visualization",
+        "analysis"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Graph theory library for network visualization and analysis",
+      "why": "Mature, well-documented graph/network viz library with layouts and graph algorithms",
+      "npm": "cytoscape",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "d3/d3",
+      "name": "D3",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "svg",
+        "visualization",
+        "data-binding",
+        "low-level"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Build fully custom, data-driven visualizations with SVG, Canvas and HTML.",
+      "why": "The foundational web visualization toolkit; maximum flexibility and a huge ecosystem.",
+      "npm": "d3",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "plotly/dash",
+      "name": "Dash",
+      "category": "charts-dataviz",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "dashboards",
+        "plotly",
+        "python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build interactive analytical dashboards in Python on top of Plotly",
+      "why": "Production-grade dashboard framework with callbacks and a large component ecosystem.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "tradingview/lightweight-charts",
+      "name": "Lightweight Charts",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "financial",
+        "candlestick",
+        "canvas",
+        "trading"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Render fast, interactive financial and time-series charts like candlesticks.",
+      "why": "Small, performant canvas library from TradingView purpose-built for finance.",
+      "npm": "lightweight-charts",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mermaid-js/mermaid",
+      "name": "Mermaid",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "diagrams",
+        "markdown",
+        "flowcharts",
+        "text-to-diagram"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Generate flowcharts, sequence, Gantt and other diagrams from Markdown-like text",
+      "why": "Rendered natively by GitHub, GitLab and many doc tools; the standard text-to-diagram library",
+      "npm": "mermaid",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "plouc/nivo",
+      "name": "nivo",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "charts",
+        "d3",
+        "svg"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Rich set of React chart components built on D3 with SVG, canvas and server rendering",
+      "why": "Large catalogue of polished React charts (heatmaps, sankey, treemaps) with good theming",
+      "npm": "@nivo/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "observablehq/plot",
+      "name": "Observable Plot",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "charts",
+        "grammar-of-graphics",
+        "d3",
+        "exploratory"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Concise grammar-of-graphics charting library for exploratory data visualization",
+      "why": "From D3's creators: expressive charts in a few lines, much less code than raw D3",
+      "npm": "@observablehq/plot",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "perspective-dev/perspective",
+      "name": "Perspective",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "streaming",
+        "pivot",
+        "wasm",
+        "large-data"
+      ],
+      "ecosystems": [
+        "ts",
+        "python",
+        "rust"
+      ],
+      "use_for": "Analyze and visualize large or streaming datasets with pivoting in the browser or Jupyter.",
+      "why": "WebAssembly engine built for real-time, large-data analytics; Apache-2.0.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "plotly/plotly.py",
+      "name": "Plotly (Python)",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "python",
+        "interactive",
+        "charts",
+        "plotly"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Interactive, publication-quality graphs from Python; also powers Dash apps",
+      "why": "The most popular interactive plotting library in Python, with Plotly Express for one-line charts",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "plotly/plotly.js",
+      "name": "plotly.js",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "charts",
+        "scientific",
+        "3d",
+        "interactive"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Create interactive scientific, statistical and 3D charts in the browser.",
+      "why": "Broad chart coverage including 3D and maps; powers Plotly for Python, R and Dash.",
+      "npm": "plotly.js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "recharts/recharts",
+      "name": "Recharts",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "charts",
+        "svg",
+        "components"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Compose charts declaratively from React components.",
+      "why": "The most widely used React charting library, built on D3 primitives.",
+      "npm": "recharts",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "getredash/redash",
+      "name": "Redash",
+      "category": "charts-dataviz",
+      "kinds": [
+        "app"
+      ],
+      "tags": [
+        "bi",
+        "sql",
+        "dashboards"
+      ],
+      "ecosystems": [
+        "python",
+        "js"
+      ],
+      "use_for": "Query any data source with SQL and share dashboards",
+      "why": "Lightweight open BI tool with many connectors, alerts and shareable visualizations.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "rerun-io/rerun",
+      "name": "Rerun",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library",
+        "app"
+      ],
+      "tags": [
+        "robotics",
+        "multimodal",
+        "visualization",
+        "logging"
+      ],
+      "ecosystems": [
+        "rust",
+        "python",
+        "cpp"
+      ],
+      "use_for": "Log and visualize multimodal data (3D, images, time series) from robotics or CV code",
+      "why": "SDKs for Python, Rust and C++ with a fast viewer for streaming spatial and temporal data.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "mwaskom/seaborn",
+      "name": "seaborn",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "python",
+        "statistical",
+        "plots",
+        "matplotlib"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Make statistical plots from pandas data in Python with concise, attractive defaults.",
+      "why": "The standard high-level statistical plotting library on top of matplotlib.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "jacomyal/sigma.js",
+      "name": "sigma.js",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "graph",
+        "network",
+        "webgl",
+        "nodes"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Render and interact with large network graphs of thousands of nodes in the browser.",
+      "why": "WebGL graph renderer that scales far beyond SVG-based graph libraries.",
+      "npm": "sigma",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "streamlit/streamlit",
+      "name": "Streamlit",
+      "category": "charts-dataviz",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "data-apps",
+        "dashboards",
+        "python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Turn Python scripts into interactive data apps and dashboards",
+      "why": "The most popular Python data-app framework; works with every major charting library.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "leeoniya/uPlot",
+      "name": "uPlot",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "time-series",
+        "charts",
+        "performance",
+        "canvas"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Tiny, very fast canvas chart library for time series",
+      "why": "About 50 KB and renders millions of points quickly; used by Grafana-style dashboards and monitoring UIs",
+      "npm": "uplot",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vega/altair",
+      "name": "Vega-Altair",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "python",
+        "declarative",
+        "vega-lite",
+        "charts"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Declarative statistical visualization for Python, built on Vega-Lite",
+      "why": "Concise, grammar-based Python charts that work in Jupyter and export to Vega-Lite JSON",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vega/vega-lite",
+      "name": "Vega-Lite",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "grammar-of-graphics",
+        "declarative",
+        "json",
+        "charts"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Declarative JSON grammar for interactive charts, rendered with Vega",
+      "why": "Widely used declarative spec behind Altair, Jupyter and many BI tools; great for LLM-generated charts",
+      "npm": "vega-lite",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "airbnb/visx",
+      "name": "visx",
+      "category": "charts-dataviz",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "react",
+        "d3",
+        "low-level",
+        "svg"
+      ],
+      "ecosystems": [
+        "ts",
+        "js"
+      ],
+      "use_for": "Build custom React visualizations from low-level D3-powered primitives.",
+      "why": "Airbnb's modular primitives give D3 power with React rendering and small bundles.",
+      "npm": "@visx/visx",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

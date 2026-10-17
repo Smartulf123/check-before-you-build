@@ -1,0 +1,281 @@
+{
+  "category": "creative-coding",
+  "entries": [
+    {
+      "id": "mattdesl/canvas-sketch",
+      "name": "canvas-sketch",
+      "category": "creative-coding",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "generative-art",
+        "canvas",
+        "print"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Framework for making generative artwork in JS with export at print resolution",
+      "why": "Popular generative-art workflow with hot reload, exports and print-size output",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "css-doodle/css-doodle",
+      "name": "css-doodle",
+      "category": "creative-coding",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "css",
+        "web-component",
+        "generative-art",
+        "patterns"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Generate patterns and visual art with CSS rules inside a web component.",
+      "why": "Unique CSS-driven approach to generative art; drop in a single element with no canvas code.",
+      "npm": "css-doodle",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "patriciogonzalezvivo/glslViewer",
+      "name": "glslViewer",
+      "category": "creative-coding",
+      "kinds": [
+        "cli",
+        "app"
+      ],
+      "tags": [
+        "glsl",
+        "shaders",
+        "live-reload",
+        "opengl"
+      ],
+      "ecosystems": [
+        "cpp",
+        "any"
+      ],
+      "use_for": "Prototype and render GLSL shaders from the terminal with live reload.",
+      "why": "From the author of The Book of Shaders; renders 2D/3D shaders, exports frames and runs headless.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "hydra-synth/hydra",
+      "name": "Hydra",
+      "category": "creative-coding",
+      "kinds": [
+        "library",
+        "app"
+      ],
+      "tags": [
+        "live-coding",
+        "video-synth",
+        "webgl",
+        "visuals"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Live-code video synthesis and visuals in the browser for performances.",
+      "why": "Popular live-coding video synth with a chainable JS API that compiles to WebGL shaders; embeddable via hydra-synth.",
+      "npm": "hydra-synth",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "nannou-org/nannou",
+      "name": "nannou",
+      "category": "creative-coding",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "rust",
+        "generative-art",
+        "creative-coding"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Creative coding framework for Rust: graphics, audio, lasers and more",
+      "why": "The main Rust creative coding framework, inspired by Processing and openFrameworks",
+      "license_verified": {
+        "license": "MIT",
+        "note": "Crates are MIT OR Apache-2.0 per workspace Cargo.toml; license files live in crate folders",
+        "date": "2026-10-17"
+      },
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "openframeworks/openFrameworks",
+      "name": "openFrameworks",
+      "category": "creative-coding",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "cpp",
+        "creative-coding",
+        "opengl",
+        "installations"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Build high-performance interactive installations and visuals in C++.",
+      "why": "Long-running C++ toolkit for artists with addons for OpenCV, audio, Kinect and more; MIT licensed (verified).",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "processing/p5.js",
+      "name": "p5.js",
+      "category": "creative-coding",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "generative-art",
+        "canvas",
+        "sketching",
+        "processing"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Sketch interactive graphics, generative art and visual experiments in the browser.",
+      "why": "The best-known creative-coding library for the web, with a huge community, examples and an online editor.",
+      "npm": "p5",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "paper-design/shaders",
+      "name": "Paper Shaders",
+      "category": "creative-coding",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "shaders",
+        "webgl",
+        "react",
+        "gradients"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Drop ready-made animated shader effects (gradients, noise, patterns) into a web page.",
+      "why": "Zero-dependency canvas shaders installable from npm, with React components and tunable parameters.",
+      "npm": "@paper-design/shaders",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "williamngan/pts",
+      "name": "Pts",
+      "category": "creative-coding",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "visualization",
+        "canvas",
+        "geometry",
+        "typescript"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Create generative and interactive visualizations with geometry primitives on canvas.",
+      "why": "Lightweight TypeScript library that treats points and forms as composable primitives; clean API for sketching.",
+      "npm": "pts",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "sepandhaghighi/samila",
+      "name": "Samila",
+      "category": "creative-coding",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "generative-art",
+        "python",
+        "matplotlib",
+        "random"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate reproducible generative-art images from Python.",
+      "why": "Simple Python generator built on matplotlib; seeds make pieces reproducible and easy to export.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "thi-ng/umbrella",
+      "name": "thi.ng/umbrella",
+      "category": "creative-coding",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "generative-art",
+        "geometry",
+        "typescript",
+        "monorepo"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Monorepo of 200+ TypeScript packages for geometry, color, generative art and data",
+      "why": "Huge, well-documented toolkit for computational design and generative art in TS",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "fand/vfx-js",
+      "name": "VFX-JS",
+      "category": "creative-coding",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "webgl",
+        "effects",
+        "shaders",
+        "dom"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Apply WebGL shader effects to images, videos and text on a web page.",
+      "why": "Small library that overlays GLSL effects on DOM elements with a few lines of code.",
+      "npm": "@vfx-js/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    }
+  ]
+}

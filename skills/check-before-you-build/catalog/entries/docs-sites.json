@@ -1,0 +1,450 @@
+{
+  "category": "docs-sites",
+  "entries": [
+    {
+      "id": "docsifyjs/docsify",
+      "name": "docsify",
+      "category": "docs-sites",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "docs",
+        "markdown",
+        "no-build",
+        "spa"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Turn Markdown files into a docs site at runtime with no build step.",
+      "why": "Zero-build setup: drop an index.html next to your Markdown; ideal for small projects.",
+      "npm": "docsify",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "nuxt-content/docus",
+      "name": "Docus",
+      "category": "docs-sites",
+      "kinds": [
+        "framework",
+        "template"
+      ],
+      "tags": [
+        "docs",
+        "nuxt",
+        "markdown",
+        "vue"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Write documentation sites with Nuxt and Markdown.",
+      "why": "Nuxt-based docs theme from the Nuxt Content team; good fit for Vue/Nuxt projects.",
+      "npm": "docus",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "facebook/docusaurus",
+      "name": "Docusaurus",
+      "category": "docs-sites",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "docs",
+        "react",
+        "mdx",
+        "static-site",
+        "versioning"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build documentation websites with versioning, i18n and search from Markdown/MDX.",
+      "why": "Most widely used docs framework, maintained by Meta; strong plugin ecosystem.",
+      "npm": "@docusaurus/core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "doxygen/doxygen",
+      "name": "Doxygen",
+      "category": "docs-sites",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "api-docs",
+        "cpp",
+        "c"
+      ],
+      "ecosystems": [
+        "cpp"
+      ],
+      "use_for": "Generate API docs from annotated C, C++ and other sources",
+      "why": "The standard documentation generator for C/C++",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "fuma-nama/fumadocs",
+      "name": "Fumadocs",
+      "category": "docs-sites",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "docs",
+        "nextjs",
+        "react",
+        "mdx"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build documentation sites in Next.js (and other React frameworks) with MDX.",
+      "why": "Flexible docs framework that lives inside your app; popular in the Next.js ecosystem.",
+      "npm": "fumadocs-core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "jsdoc/jsdoc",
+      "name": "JSDoc",
+      "category": "docs-sites",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "api-docs",
+        "javascript",
+        "documentation-generator"
+      ],
+      "ecosystems": [
+        "js"
+      ],
+      "use_for": "Generate API documentation sites from JavaScript comments",
+      "why": "The original JS API doc generator; JSDoc comment syntax is also what TypeScript and editors understand.",
+      "npm": "jsdoc",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17"
+    },
+    {
+      "id": "jupyter-book/jupyter-book",
+      "name": "Jupyter Book",
+      "category": "docs-sites",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "docs",
+        "jupyter",
+        "notebooks",
+        "publishing"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Build publication-quality books and docs from Markdown and Jupyter notebooks.",
+      "why": "Best option when docs include executable notebooks or scientific content.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "squidfunk/mkdocs-material",
+      "name": "Material for MkDocs",
+      "category": "docs-sites",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "mkdocs",
+        "theme",
+        "markdown"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Feature-rich MkDocs theme and docs framework with search, versioning and blog",
+      "why": "The most popular docs framework in the Python world (used by FastAPI, Pydantic and many more)",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "rust-lang/mdBook",
+      "name": "mdBook",
+      "category": "docs-sites",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "markdown",
+        "book",
+        "rust"
+      ],
+      "ecosystems": [
+        "rust"
+      ],
+      "use_for": "Create online books and docs from Markdown",
+      "why": "Official Rust tool behind The Rust Book; fast single binary",
+      "official": true,
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mkdocstrings/mkdocstrings",
+      "name": "mkdocstrings",
+      "category": "docs-sites",
+      "kinds": [
+        "plugin"
+      ],
+      "tags": [
+        "mkdocs",
+        "api-docs",
+        "python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Auto-generate API reference pages in MkDocs from docstrings",
+      "why": "Standard API-docs plugin for MkDocs",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "shuding/nextra",
+      "name": "Nextra",
+      "category": "docs-sites",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "nextjs",
+        "mdx",
+        "docs"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Next.js-based docs and blog framework with MDX",
+      "why": "Popular Next.js docs framework from the Vercel ecosystem",
+      "npm": "nextra",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "mitmproxy/pdoc",
+      "name": "pdoc",
+      "category": "docs-sites",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "api-docs",
+        "python",
+        "docstrings"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Auto-generate API documentation for Python projects from docstrings and type hints.",
+      "why": "Zero-config and simple; good for library API references.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "Redocly/redoc",
+      "name": "Redoc",
+      "category": "docs-sites",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "openapi",
+        "api-docs",
+        "swagger",
+        "reference"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Render OpenAPI/Swagger specs as a three-panel API reference site.",
+      "why": "Battle-tested OpenAPI renderer with a CLI for static bundles.",
+      "npm": "redoc",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "web-infra-dev/rspress",
+      "name": "Rspress",
+      "category": "docs-sites",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "rspack",
+        "mdx",
+        "docs"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Fast static docs site generator built on Rsbuild/Rspack",
+      "why": "ByteDance's Rust-powered docs SSG with quick builds at scale",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "scalar/scalar",
+      "name": "Scalar",
+      "category": "docs-sites",
+      "kinds": [
+        "library",
+        "app"
+      ],
+      "tags": [
+        "openapi",
+        "api-reference",
+        "api-client",
+        "docs"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Interactive OpenAPI API reference with built-in API client, embeddable in many frameworks.",
+      "why": "Modern alternative to Swagger UI with integrations for Express, FastAPI, Next.js and more.",
+      "npm": "@scalar/api-reference",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "sphinx-doc/sphinx",
+      "name": "Sphinx",
+      "category": "docs-sites",
+      "kinds": [
+        "framework",
+        "cli"
+      ],
+      "tags": [
+        "docs",
+        "python",
+        "restructuredtext",
+        "api-docs"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "use_for": "Generate documentation sites, PDFs and API references for Python projects.",
+      "why": "The standard Python documentation tool behind Read the Docs and most Python libraries.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "withastro/starlight",
+      "name": "Starlight",
+      "category": "docs-sites",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "docs",
+        "astro",
+        "static-site",
+        "i18n"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Build documentation sites with Astro, including search, i18n and navigation out of the box.",
+      "why": "Astro's official docs theme; fast static output, accessible defaults, any UI framework.",
+      "npm": "@astrojs/starlight",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    },
+    {
+      "id": "swagger-api/swagger-ui",
+      "name": "Swagger UI",
+      "category": "docs-sites",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "openapi",
+        "api-docs"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Render interactive API docs from an OpenAPI spec",
+      "why": "The most widely deployed OpenAPI doc renderer",
+      "npm": "swagger-ui",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "TypeStrong/typedoc",
+      "name": "TypeDoc",
+      "category": "docs-sites",
+      "kinds": [
+        "cli"
+      ],
+      "tags": [
+        "typescript",
+        "api-docs"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Generate API reference docs from TypeScript sources",
+      "why": "Standard API doc generator for TypeScript",
+      "npm": "typedoc",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": false
+    },
+    {
+      "id": "vuejs/vitepress",
+      "name": "VitePress",
+      "category": "docs-sites",
+      "kinds": [
+        "framework"
+      ],
+      "tags": [
+        "docs",
+        "vue",
+        "vite",
+        "static-site"
+      ],
+      "ecosystems": [
+        "ts"
+      ],
+      "use_for": "Vite and Vue powered static site generator for documentation.",
+      "why": "Very fast builds and a clean default theme; used by Vue, Vite and many libraries.",
+      "npm": "vitepress",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "featured": true
+    }
+  ]
+}

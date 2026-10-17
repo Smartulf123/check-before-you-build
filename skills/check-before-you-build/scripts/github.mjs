@@ -50,9 +50,10 @@ export function buildSearchQuery(keywords, minStars) {
   return minStars > 0 && !/\bstars:/.test(q) ? `${q} stars:>${minStars}` : q;
 }
 
-export async function searchRepos(keywords, { limit = 20, minStars = 20 } = {}) {
+export async function searchRepos(keywords, { limit = 20, minStars = 20, sort } = {}) {
   const q = buildSearchQuery(keywords, minStars);
-  const url = `${API}/search/repositories?q=${encodeURIComponent(q)}&per_page=${Math.min(limit, 100)}`;
+  const sortParam = sort === 'stars' ? '&sort=stars&order=desc' : '';
+  const url = `${API}/search/repositories?q=${encodeURIComponent(q)}&per_page=${Math.min(limit, 100)}${sortParam}`;
   const { data } = await fetchJson(url, { headers: githubHeaders() });
   return {
     source: 'github',
