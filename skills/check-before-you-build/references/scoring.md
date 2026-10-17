@@ -37,7 +37,7 @@
 | # | Condition | Verdict | Shown as |
 |---|---|---|---|
 | 1 | demand < 3 | DROP | 📚 Already well covered |
-| 2 | saturation ≥ 7 and gap < 3 | DROP | 📚 Already well covered |
+| 2 | saturation ≥ 7 and gap < 3, or saturation ≥ 9 and gap < 5 | DROP | 📚 Already well covered |
 | 3 | a direct competitor active ≤ 90 days, permissive, coverage ≥ 80 %, popularity ≥ 0.6 | CONTRIBUTE | 🤝 You could join an existing project |
 | 4 | the most popular direct competitor is archived or inactive > 365 days, permissive, coverage ≥ 60 %, popularity ≥ 0.6 | FORK | 🍴 Revive an abandoned project |
 | 5 | saturation < 4 and demand ≥ 4 | BUILD | ✅ Open space: go build it |

@@ -200,3 +200,10 @@ test('demand older than three years counts a third', () => {
   assert.equal(s.demandWeight({ type: 'hn_story', points: 74, date: '2025-06-20' }, now), 1.5);
   assert.equal(s.demandWeight({ type: 'request' }, now), 1);
 });
+
+test('extreme saturation with only minor gaps is already well covered, even with a joinable project', () => {
+  const now = Date.parse('2026-10-17');
+  const leader = { id: 'github:a/b', match: 'direct', coverage_pct: 90, signals: { stars: 23000, license: 'MIT', pushed_at: '2026-10-16' } };
+  assert.equal(s.decideVerdict({ sat: 10, dem: 9.8, gapScore: 4, competitors: [leader], now }).code, 'DROP');
+  assert.equal(s.decideVerdict({ sat: 8.5, dem: 9.8, gapScore: 4, competitors: [leader], now }).code, 'CONTRIBUTE');
+});

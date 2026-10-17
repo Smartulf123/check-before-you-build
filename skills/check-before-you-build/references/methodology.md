@@ -37,7 +37,7 @@ Ask one clarifying question only if no meaningful keywords can be derived (e.g. 
 
 ## Phase 2: Supply
 
-1. `catalog.mjs search <keywords> --categories <slugs>`. Entries matching the *whole idea* are competitor candidates. Entries matching a component go to phase 5.
+1. `catalog.mjs search <keywords> --categories <slugs>`. Entries matching the *whole idea* are competitor candidates. Entries matching a component go to phase 5. The catalog holds building blocks, so for end-user apps (a todo app, a recipe site) expect few competitor hits there: find those through GitHub and web search.
 2. `github.mjs search` for each keyword set within budget, plus 1–2 `topic:<slug>` searches. Keep the default `stars:>20` filter. Lower it with `--min-stars 0` only when results are empty.
 3. Registries by form factor:
    - skill / plugin → `skills.mjs search`, `plugins.mjs search`

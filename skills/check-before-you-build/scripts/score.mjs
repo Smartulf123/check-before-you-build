@@ -119,7 +119,8 @@ export function decideVerdict({ sat, dem, gapScore, competitors, now }) {
   const permissive = (c) => licenseClass(c.signals?.license) === 'permissive';
 
   if (dem < 3) return { code: 'DROP', rule: 1, reason: 'Little evidence that people want this.' };
-  if (sat >= 7 && gapScore < 3) return { code: 'DROP', rule: 2, reason: 'Well covered by existing projects, with no clear open angle.' };
+  // In an extremely saturated space, minor gaps (rubric 3–4: polish, small features) don't open it up.
+  if ((sat >= 7 && gapScore < 3) || (sat >= 9 && gapScore < 5)) return { code: 'DROP', rule: 2, reason: 'Well covered by existing projects, with no clear open angle.' };
 
   const joinable = direct.find((c) => {
     const days = daysSincePush(c, now);
