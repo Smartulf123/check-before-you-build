@@ -124,3 +124,15 @@ test('a symlinked README inside .github is resolved relative to its folder', asy
   const r = await readme.getReadme('reduxjs/redux-toolkit');
   assert.match(r.excerpt, /official toolset/);
 });
+
+test('a deeply nested skill folder is found through the repo tree', async () => {
+  globalThis.fetch = async (url) => {
+    const u = String(url);
+    if (u.includes('/git/trees/')) return Response.json({ tree: [{ type: 'blob', path: 'plugins/utils/skills/design-md/SKILL.md' }] });
+    if (u.endsWith('/HEAD/plugins/utils/skills/design-md/SKILL.md')) return new Response('# design-md skill', { status: 200 });
+    return new Response('nf', { status: 404 });
+  };
+  const r = await readme.getReadme('acme/nested-skills/design-md');
+  assert.match(r.source_url, /plugins\/utils\/skills\/design-md\/SKILL\.md$/);
+  assert.equal(r.fallback, undefined);
+});

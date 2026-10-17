@@ -44,15 +44,15 @@ export async function runCli(handlers, usage) {
   const args = parseArgs(process.argv.slice(2));
   const [command, ...rest] = args._;
   if (!command || args.flags.help || !handlers[command]) {
-    process.stdout.write(JSON.stringify({ ok: false, error: { type: 'Usage', message: usage } }, null, 2) + '\n');
+    process.stdout.write(JSON.stringify({ ok: false, error: { type: 'Usage', message: usage } }) + '\n');
     process.exitCode = 1;
     return;
   }
   try {
     const result = await handlers[command](rest, args.flags);
-    process.stdout.write(JSON.stringify({ ok: true, ...result }, null, 2) + '\n');
+    process.stdout.write(JSON.stringify({ ok: true, ...result }) + '\n');
   } catch (err) {
-    process.stdout.write(JSON.stringify({ ok: false, error: errorObject(err) }, null, 2) + '\n');
+    process.stdout.write(JSON.stringify({ ok: false, error: errorObject(err) }) + '\n');
     process.exitCode = 1;
   }
 }

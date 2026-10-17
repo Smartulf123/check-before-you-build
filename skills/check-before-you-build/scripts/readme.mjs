@@ -4,12 +4,13 @@
 // repo: the intro, features, usage, limitations and comparisons. Installation walls, badges,
 // images and long code blocks are dropped so the agent's context stays small.
 import { posix } from 'node:path';
-import { fetchText } from './lib/http.mjs';
+import { fetchJson, fetchText } from './lib/http.mjs';
+import { githubHeaders } from './lib/gh.mjs';
 import { intFlag, isMain, runCli } from './lib/cli.mjs';
 
 const USAGE = `readme.mjs <command>
   get <owner/repo> [<owner/repo> ...] [--max-chars 5000] [--full]
-      condensed README per repo (raw.githubusercontent.com, no API calls)`;
+      condensed README per repo (raw.githubusercontent.com; one core API call only for deeply nested skill folders)`;
 
 const CANDIDATES = ['README.md', 'readme.md', 'Readme.md', 'README.MD', 'README.rst', 'README.markdown', 'README.asciidoc', 'README.adoc', 'README.txt', 'README', '.github/README.md', 'docs/README.md'];
 
@@ -134,6 +135,23 @@ export function subPathCandidates(sub) {
   return dirs.flatMap((d) => [`${d}/SKILL.md`, `${d}/README.md`, `${d}/readme.md`]);
 }
 
+/**
+ * Last resort for a skill or plugin folder nested deeper than the usual places
+ * (e.g. plugins/x/skills/<name>): one call to the git trees API (core quota, not search).
+ */
+export async function findNestedFolder(fullName, last) {
+  try {
+    const { data } = await fetchJson(`https://api.github.com/repos/${fullName}/git/trees/HEAD?recursive=1`, { headers: githubHeaders() });
+    const wanted = (path) => {
+      const parts = path.split('/');
+      return parts.length >= 2 && parts.at(-2).toLowerCase() === last.toLowerCase() && /^(SKILL|README)\.md$/i.test(parts.at(-1));
+    };
+    return (data?.tree || []).find((t) => t.type === 'blob' && wanted(t.path))?.path ?? null;
+  } catch {
+    return null;
+  }
+}
+
 export async function getReadme(id, { maxChars = 5000, full = false } = {}) {
   const m = /^([\w.-]+\/[\w.-]+)(?:\/([\w./-]+))?$/.exec(id || '');
   if (!m) throw new Error('expected owner/repo or owner/repo/path');
@@ -142,6 +160,10 @@ export async function getReadme(id, { maxChars = 5000, full = false } = {}) {
   for (const file of sub ? subPathCandidates(sub.replace(/\/+$/, '')) : CANDIDATES) {
     found = await fetchCandidate(fullName, file);
     if (found) break;
+  }
+  if (!found && sub) {
+    const nested = await findNestedFolder(fullName, sub.replace(/\/+$/, '').split('/').pop());
+    if (nested) found = await fetchCandidate(fullName, nested);
   }
   let fallback = false;
   if (!found && sub) {
