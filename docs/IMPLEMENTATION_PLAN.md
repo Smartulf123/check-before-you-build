@@ -109,6 +109,7 @@ Each milestone has **tasks**, **deliverables** and a **definition of done (DoD)*
 6. A minimal report template: verdict + competitor table + sources.
 7. Install the skill locally in Claude Code and run it on eval case #1 (design extractor).
 8. Decide the slash-command name (SPEC §21 Q5).
+9. Purpose detection in Phase 1 (`--for fun|me|launch`, inferred, or default `launch`; SPEC §4.1). Record it in `evidence.json`.
 
 ### Deliverables
 
@@ -194,6 +195,7 @@ Each milestone has **tasks**, **deliverables** and a **definition of done (DoD)*
 5. The chat summary format.
 6. Language handling: detect the user's language, `--lang` override (SPEC §16).
 7. Error handling for every row in SPEC §14.
+8. Purpose-based output (SPEC §6.8, §9.7, §11.1): friendly verdict labels, the fun/me report variants, and the "My next build" card for fun mode. The wording rule ("never say don't build") is enforced in the template and checked by `check-eval.mjs`.
 
 ### Deliverables
 
@@ -205,6 +207,7 @@ Each milestone has **tasks**, **deliverables** and a **definition of done (DoD)*
 - Fake repos injected into an evidence file are dropped by `verify.mjs`
 - The card renders correctly in Chrome and Edge at 1200×630
 - A Norwegian-language idea produces a Norwegian report
+- `--for fun` and `--for me` produce the right variants with no verdict shown
 
 ---
 
@@ -230,7 +233,7 @@ Each milestone has **tasks**, **deliverables** and a **definition of done (DoD)*
 
 ### DoD
 
-- Eval targets met (recall 100% on 1–4, verdict family ≥ 5/6, 0 hallucinated citations)
+- Eval targets met (recall 100% on 1–4, verdict family ≥ 5/6, purpose cases 2/2, 0 hallucinated citations)
 - A fresh install works on a clean machine via the skills CLI and the plugin marketplace
 - A non-technical reader understands the README's top section in 10 seconds
 

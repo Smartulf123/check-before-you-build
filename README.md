@@ -38,6 +38,18 @@ Next step: contribute a "verify" mode to designlang, or build verify-first.
 
 You also get a full Markdown report with every source, a machine-readable evidence file, and a shareable verdict card.
 
+### Building for fun? It won't stop you.
+
+Building something that already exists is how most people learn. The tool informs, it never forbids. Tell it why you're building and the report adapts:
+
+| | Purpose | What you get |
+|---|---|---|
+| 🎓 | `--for fun`: fun or learning | No verdict. Great projects to learn from, plus the right building blocks. |
+| 🛠️ | `--for me`: a tool for yourself | A gentle "these might save you time" hint, plus building blocks. |
+| 🚀 | `--for launch`: publishing for users | The full honest verdict, always with a way forward. |
+
+If you don't say, it works out the purpose from how you describe the idea.
+
 ## How it works
 
 1. **Understand** the idea: core concept, form factor, search terms, components.
@@ -45,7 +57,7 @@ You also get a full Markdown report with every source, a machine-readable eviden
 3. **Demand**: Hacker News, competitors' GitHub issues, the web.
 4. **Gaps**: what existing projects lack, with evidence.
 5. **Building blocks**: catalog first, then live search; license-aware recommendations.
-6. **Verdict**: computed by fixed rules from the evidence, not written by the model. `DROP` and `UNCLEAR` are real outcomes.
+6. **Verdict**: computed by fixed rules from the evidence, not written by the model. "Already well covered" and "Mixed signals" are real outcomes, and every verdict comes with a way forward.
 7. **Fact-check**: every cited repo and link is re-verified live before the report is written.
 
 The agent does the reasoning. Small, dependency-free Node scripts fetch the facts, so numbers come from APIs, not from model memory.

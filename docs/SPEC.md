@@ -1,6 +1,7 @@
 # check-before-you-build — Specification
 
-> **Status:** Draft v0.1 · 2026-10-17 · for review
+> **Status:** Draft v0.2 · 2026-10-17 · for review
+> **v0.2:** added build purposes (fun / for me / launch) and friendlier verdict labels: §4.1, §6.1, §6.6, §6.8, §9.7, §11.1, §13.1, §18, §19
 > **One-liner:** An open-source agent skill that answers *"Is this worth building — and what can I build it with?"* with hard, cited evidence in a few minutes.
 
 ---
@@ -75,6 +76,7 @@ Existing help falls short:
 | **Indie hacker** | Choosing what to build next | Demand evidence, open gaps, competitors' weaknesses |
 | **Developer starting a feature** | Wants to avoid reinventing a library | The best maintained building blocks, with license safety |
 | **Open-source contributor** | Wants to help rather than fork | Projects that already do 80% and would welcome a PR |
+| **Learner / hobbyist** | Building for fun or to practice, and doesn't care whether it exists | Good projects to learn from, and the right building blocks. No verdict (§4.1) |
 
 ## 4. User experience
 
@@ -84,9 +86,30 @@ Existing help falls short:
 /check "A skill that extracts a website's design into DESIGN.md"
 /check --quick "..."      # ~2 min: catalog + GitHub + verdict
 /check --deep "..."       # ~5–8 min: more queries, issue mining, deeper demand
+/check --for fun "..."    # building for fun or to learn: no verdict, inspiration + building blocks
+/check --for me "..."     # building a tool for yourself: gentle "this could save you time" hints
+/check --for launch "..." # publishing for users: full verdict (the default when unclear)
 ```
 
 The skill also triggers from natural language, for example *"check if this already exists: …"* or *"before I build X, what's out there?"*, through its description field.
+
+### 4.1 Build purpose: the tool informs, it never forbids
+
+Building something that already exists is fine, and it's how most people learn. The verdict answers **"Is there room for this out there?"**, never **"Are you allowed to build this?"** So the skill adapts to *why* the user is building:
+
+| Purpose | Flag | Typical phrasing | What the report focuses on |
+|---|---|---|---|
+| 🎓 **Fun / learning** | `--for fun` | "just for fun", "to learn X", "side project to practice" | **No verdict.** Well-built projects to learn from (💡), building blocks (🧱), a light "how common is this" note. Demand research is skipped. |
+| 🛠️ **For me** | `--for me` | "for myself", "for my own use", "for my team" | **Soft hint, no verdict.** "Existing tools that might save you time", then building blocks. Building your own is presented as a valid choice. |
+| 🚀 **Launch** | `--for launch` | "launch", "publish", "get users", "go viral", "sell" | **The full verdict** (§9), with friendly labels (§9.7) and always a way forward. |
+
+**How the purpose is set:**
+
+1. An explicit `--for` flag always wins.
+2. Otherwise the skill infers it from the idea text (Phase 1).
+3. If it's unclear, it uses **launch**. Every launch-mode report and chat summary then ends with one line: *"Just building for fun, to learn or for yourself? Ignore the verdict, and the building blocks below are for you."*
+
+The skill never asks the user about their purpose in order to continue. It infers, or uses the default.
 
 ### What the user sees
 
@@ -169,6 +192,7 @@ Each phase lists its **inputs**, **steps**, **outputs** and **rules**. Quick, st
    - **core concept**, e.g. "extract a website's design system into an agent-readable file"
    - **form factor**: one or more of `skill`, `plugin`, `mcp`, `cli`, `library`, `web-app`, `desktop-app`, `mobile-app`, `browser-extension`, `api`, `template`
    - **target user**
+   - **purpose**: `fun`, `me` or `launch` (§4.1). Use the `--for` flag if given, otherwise infer it from the phrasing, otherwise default to `launch`. Record whether it was `explicit`, `inferred` or `default`.
    - **search terms**: 8–15 queries including synonyms and jargon, e.g. "design tokens from url", "DESIGN.md generator", "brand extractor", "style guide extractor"
    - **components**: 2–6 technical building blocks, e.g. "headless browser automation", "computed CSS extraction", "markdown generation"
    - **catalog categories**: map the idea and each component to catalog category slugs (§8.3)
@@ -269,6 +293,12 @@ Each phase lists its **inputs**, **steps**, **outputs** and **rules**. Quick, st
 
 The agent writes all collected evidence to `evidence.json` and runs `score.mjs`. **The script computes scores and the verdict using the rules in §9.** The model may not override the verdict. It can only add context in the report under "What would change the verdict".
 
+The purpose (§4.1) controls how the result is presented, not the underlying computation:
+
+- **launch**: verdict shown with friendly labels (§9.7)
+- **me**: scores are computed but no verdict is shown; saturation is translated into the "might save you time" hint
+- **fun**: scores and verdict are not shown at all; `score.mjs` still records saturation, for the "how common is this" note
+
 ### 6.7 Phase 7 — Fact-check and write
 
 1. Run `verify.mjs evidence.json` (§10). It re-fetches every repo, package and URL, corrects numbers and marks dead items.
@@ -289,6 +319,16 @@ The agent writes all collected evidence to `evidence.json` and runs `score.mjs`.
 | Building blocks | catalog only | catalog + live | catalog + live, more candidates |
 | Sub-agents (Claude Code) | none | 3 parallel | 3 parallel |
 | Target time | ~2 min | ~5 min | ~8 min |
+
+**Purpose adjustments** (applied on top of the mode budget):
+
+| | fun | me | launch |
+|---|---|---|---|
+| Phase 3, demand | skipped | skipped | full |
+| Phase 4, gaps | skipped | short ("what existing tools lack, if you want it your way") | full |
+| Phase 5, building blocks | **emphasized**: more 💡 learn examples | full | full |
+| Verdict shown | no | no (soft hint) | yes |
+| Verdict card | "My next build" card: idea, building blocks, inspiration | none by default | full verdict card |
 
 ## 7. Sources
 
@@ -502,6 +542,29 @@ Low confidence is shown prominently. **Absence of evidence is not evidence of ab
 
 The model writes 1–3 concrete conditions, for example *"If designlang adds a verify mode, saturation of the angle rises and the verdict becomes DROP."*
 
+### 9.7 Friendly labels and purpose-based display
+
+The internal verdict codes stay strict, so scoring and evals are unchanged. What users see is friendlier, and every verdict comes with a way forward:
+
+| Internal code | Shown to the user (launch) | Always followed by |
+|---|---|---|
+| `BUILD` | ✅ **Open space: go build it** | The suggested plan |
+| `BUILD_WITH_ANGLE` | 🔀 **Build it with an angle** | The gap to lead with |
+| `CONTRIBUTE` | 🤝 **You could join an existing project** | Which project, and what you could add. Plus: "If you'd rather build your own, here's how to differ." |
+| `FORK` | 🍴 **Revive an abandoned project** | The project and its license. Plus: "Or start fresh using these building blocks." |
+| `DROP` | 📚 **Already well covered** | "If you build it anyway, here's how to stand out" (the strongest differentiator found), plus building blocks |
+| `UNCLEAR` | ❔ **Mixed signals** | What to research next |
+
+Display by purpose:
+
+| Purpose | Headline shown |
+|---|---|
+| fun | 🎓 **"Building for fun: great! Here's what helps."** No verdict. |
+| me | 🛠️ **"Building for yourself."** If saturation ≥ 7: "These existing tools might save you time: …". Otherwise: "Not much exists, so building your own makes sense." No verdict. |
+| launch | The friendly label from the table above, plus the scores |
+
+Wording rules for every purpose: never say "don't build this" or "you shouldn't". Describe the landscape and let the user decide.
+
 ## 10. Fact-checking
 
 `verify.mjs` runs over `evidence.json` before the report is written:
@@ -528,6 +591,34 @@ The model writes 1–3 concrete conditions, for example *"If designlang adds a v
 8. **What would change the verdict**
 9. **Method and coverage**: sources queried, what failed, number of candidates, verification stats
 10. **Sources**: every link used
+
+#### Report variants by purpose
+
+| Section | fun | me | launch |
+|---|---|---|---|
+| 1. Header | ✅ | ✅ | ✅ |
+| 2. Verdict box | replaced by the 🎓 headline | replaced by the 🛠️ headline + hint | ✅ friendly label + scores |
+| 3. Closest existing projects | renamed **"Projects to learn from"**, sorted by code quality and docs | renamed **"Existing tools that might save you time"** | ✅ |
+| 4. Demand evidence | — | — | ✅ |
+| 5. Gaps | — | short | ✅ |
+| 6. Building blocks | ✅ emphasized | ✅ | ✅ |
+| 7. Suggested plan | learning path (3–5 steps) | build plan | plan that follows from the verdict |
+| 8. What would change the verdict | — | — | ✅ |
+| 9. Method and coverage | ✅ | ✅ | ✅ |
+| 10. Sources | ✅ | ✅ | ✅ |
+
+Example, fun mode:
+
+```
+🎓 Building for fun: great! Here's what helps.
+
+Projects to learn from:
+  💡 tastejs/todomvc — the same app in 40+ frameworks
+  💡 ...
+Building blocks:
+  🧱 React · 🧱 Tailwind · 🧱 Zustand
+How common is this: very. Thousands of todo apps exist on GitHub. It's a classic learning project.
+```
 
 ### 11.2 Evidence file (`evidence.json`)
 
@@ -627,6 +718,8 @@ check-before-you-build/
     "summary": "...",
     "form_factors": ["skill", "cli"],
     "target_user": "vibe coders using coding agents",
+    "purpose": "launch",
+    "purpose_source": "default",
     "search_terms": ["design tokens from url", "DESIGN.md generator", "..."],
     "components": ["headless browser automation", "computed CSS extraction"],
     "categories": ["agent-skills", "browser-automation"]
@@ -738,11 +831,16 @@ Built from manual research done on 2026-10-15/17, plus control cases:
 | 4 | check-before-you-build itself | idea-reality-mcp, startup-skill | BUILD WITH AN ANGLE |
 | 5 | *Control (obvious DROP):* a todo-list web app | multiple mature projects | DROP |
 | 6 | *Control (open space):* to be chosen in Milestone 6 — a niche with demand and no direct competitor | — | BUILD |
+| 7 | *Purpose (fun):* "I want to build a todo app just for fun to learn React" | todomvc-style learning projects | No verdict shown; 🎓 headline; learning path |
+| 8 | *Purpose (me):* "A small tool for myself to organize my recipes" | existing recipe managers | No verdict shown; 🛠️ hint lists existing tools |
+
+Cases 7–8 also check the wording rule (§9.7): the report never contains "don't build" or "you shouldn't".
 
 ### 18.2 Metrics
 
 - **Recall of must-find competitors**: target 100% on cases 1–4.
-- **Verdict family match**: target 5/6.
+- **Verdict family match**: target 5/6 on cases 1–6.
+- **Purpose handling**: cases 7–8 show the correct variant and pass the wording rule (2/2).
 - **Hallucination rate**: cited items that fail verification. Target 0 in the final report.
 - **Runtime**: within the mode targets in §6.8.
 
@@ -753,6 +851,7 @@ Built from manual research done on 2026-10-15/17, plus control cases:
 ### v1 — launch target ~2026-11-20
 
 - All 7 phases; quick / standard / deep modes
+- Build purposes: fun / me / launch (flag or inferred; default launch) with friendly verdict labels
 - Sources: catalog, GitHub (repos + issues), skills.sh, plugin marketplaces, MCP registry, npm, PyPI (info), HN, web
 - Catalog: ~300 entries, ~35 categories, schema, validation
 - Maintainer tools: `scout.mjs`, `health.mjs`, `catalog-add.mjs`, `catalog-validate.mjs`
