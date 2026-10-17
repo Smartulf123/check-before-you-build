@@ -13,7 +13,7 @@ export function mapSmithery(s) {
     name: s.displayName || s.qualifiedName,
     url: `https://smithery.ai/server/${s.qualifiedName}`,
     source: 'smithery',
-    description: (s.description || '').slice(0, 400),
+    description: (s.description || '').replace(/\s+/g, ' ').trim().slice(0, 400),
     homepage: s.homepage || null,
     signals: { uses: s.useCount ?? 0, verified: Boolean(s.verified), created_at: s.createdAt || null },
   };
@@ -26,7 +26,7 @@ export function mapOfficial(entry) {
     name: s.title || s.name,
     url: s.repository?.url || s.websiteUrl || `https://registry.modelcontextprotocol.io/v0.1/servers?search=${encodeURIComponent(s.name)}`,
     source: 'mcp-registry',
-    description: s.description || '',
+    description: (s.description || '').replace(/\s+/g, ' ').trim().slice(0, 400),
     signals: { version: s.version || null },
   };
 }

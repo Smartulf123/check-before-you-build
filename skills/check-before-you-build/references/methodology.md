@@ -23,7 +23,7 @@ Produce the `idea` object:
 - `target_user`.
 - `purpose`, `purpose_source`.
 - `search_terms`: short keyword sets (2–4 words each), **not sentences**. Competitors are most often missed because they describe the same thing in different words, so cover **all five angles**:
-  1. **The user's own words**: `invoice generator freelancers`
+  1. **The user's own words**, plus other names for the same things (X = Twitter, HN = Hacker News, LLM = AI model): `invoice generator freelancers`
   2. **Developer jargon**: `pdf invoice library`, `invoice template engine`
   3. **Business or market words**: `billing software small business`, `invoicing saas`
   4. **The problem itself**: `get paid faster`, `track unpaid invoices`
@@ -51,14 +51,14 @@ Ask one clarifying question only if no meaningful keywords can be derived (e.g. 
    - `direct`: does essentially the same job for the same user
    - `partial`: big overlap but differs in form, scope or audience
    - `adjacent`: related, a building block or neighbour
-   Give `match_reason` (one line) for every direct/partial match. Estimate `coverage_pct` (0–100) for direct matches: how much of the idea this project already delivers.
+   Give `match_reason` (one line) for every direct/partial match. Estimate `coverage_pct` (0–100) for direct matches: list the idea's 3–6 core features (from `summary` and `components`), check each against the README, and set coverage to the share it delivers. Write the covered and missing features in `match_reason`. Rule 3 (CONTRIBUTE) needs ≥ 80, so only go that high when the README shows nearly every core feature.
 7. Keep **every direct match**, even if there are more than 15, plus partial and adjacent matches up to 15 entries in total, ranked by relevance × popularity. Set `candidates_evaluated` to the number of distinct projects whose description or README you actually judged (not raw search hits), and `readme_read: true` on each competitor whose README you read. Products without a public repo (commercial sites) don't need `readme_read`; read their site instead.
 
 **Judge relevance yourself.** npm and skills.sh rank by popularity, and GitHub search returns spam. Read descriptions. Fetch a README with web fetch when unsure.
 
 ## Phase 3: Demand (launch only)
 
-1. `hn.mjs search <keywords>` for the concept, and `--tags show_hn` for similar launches (points show how launches performed).
+1. `hn.mjs search <keywords>` for the concept, and `--tags show_hn` for similar launches (points show how launches performed). Count a launch as demand only when it is the same concept; a launch of a broader tool (a general research agent for a social-research idea) is context, not demand.
 2. `github.mjs issues <owner/repo>` for the top 3 (standard) or 5 (deep) direct/partial competitors. Feature requests and complaints are unmet demand. Titles matter even with few 👍.
 3. Web search: "how do I …", "is there a tool that …", forum and blog posts asking for this. A demand item must show people wanting, asking for or complaining about something. Background pages (laws, statistics, news about a market) are context: mention them in the report, but don't add them to `demand`.
 4. Each item: `type` (`hn_story` for anything on HN, including Ask HN | `github_issue` | `request` | `forum` | `web`), `date` (items over 3 years old count a third), `title`, `url`, `date`, engagement (`points`, `reactions_plus1`, `comments`; leave a field out when it's unknown, don't guess), and a verbatim `quote` of at most 25 words when there is one. An issue with no 👍 counts for little; prefer evidence that several people want the thing.
@@ -83,7 +83,7 @@ Competitor adoption is added automatically by `score.mjs`. Don't list it as a de
 4. **Read the README of every shortlisted candidate** (top 5 / 10 / 15 per component by mode, catalog entries included): `readme.mjs get a/b c/d …`. Use the catalog's `summary`, `best_for` and `not_for` fields to build the shortlist, and the README to confirm the fit: does it do what this idea needs, in the user's stack, and without the limitation that would rule it out? Drop candidates the README shows don't fit, even if they're featured. Set `readme_read: true` on each block you recommend.
 5. Rank by fit → maintenance → adoption → license.
 6. One recommendation type per block: `use` 🧱 · `fork` 🍴 · `learn` 💡 · `contribute` 🤝.
-7. License classes: permissive (MIT, Apache-2.0, BSD, ISC, MPL-2.0) → any type. Copyleft (GPL/AGPL/LGPL) → use/learn/contribute; fork only with a warning. None → learn only ("no license: you have no right to copy this code"). Other → learn only.
+7. License classes: permissive (MIT, Apache-2.0, BSD, ISC, MPL-2.0, Unlicense, CC0-1.0, 0BSD, Zlib) → any type. Copyleft (GPL/AGPL/LGPL) → use/learn/contribute; fork only with a warning. None → learn only ("no license: you have no right to copy this code"). Other → learn only.
 8. 2–4 blocks per component, at most 12 in total. For `fun`, include more 💡 learn examples (well-documented projects worth reading).
 
 ## Phase 6: Check facts, then score

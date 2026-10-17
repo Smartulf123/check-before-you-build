@@ -74,6 +74,40 @@
       ]
     },
     {
+      "id": "Panniantong/Agent-Reach",
+      "name": "Agent Reach",
+      "category": "agents",
+      "kinds": [
+        "cli",
+        "skill"
+      ],
+      "tags": [
+        "web-access",
+        "twitter",
+        "reddit",
+        "youtube",
+        "scraping",
+        "agent-tools"
+      ],
+      "use_for": "Give a coding agent read and search access to the web, YouTube, Twitter/X, Reddit, GitHub, RSS and Chinese platforms.",
+      "why": "Very widely adopted; free backends with automatic fallbacks and a doctor command.",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "One CLI that gives any command-line agent (Claude Code, Cursor, OpenClaw) internet access: read web pages, YouTube subtitles and search, RSS, GitHub, Twitter/X, Reddit, Bilibili, XiaoHongShu and more. Each platform has a preferred and a fallback backend, and `agent-reach doctor` shows what works.",
+      "best_for": "Letting an agent read and search social platforms and the web for free, for research or monitoring.",
+      "not_for": "Users who need English-first docs (the README is mainly Chinese), or platforms that require logins you do not want to hand over (Reddit and full Twitter search need cookies).",
+      "keywords": [
+        "twitter",
+        "x",
+        "reddit",
+        "youtube",
+        "social media",
+        "web access",
+        "scraping",
+        "research agent"
+      ]
+    },
+    {
       "id": "simular-ai/Agent-S",
       "name": "Agent S",
       "category": "agents",

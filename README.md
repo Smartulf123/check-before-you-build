@@ -17,7 +17,7 @@ Most idea validators give you an opinion about market size. This one shows you *
 - **Does it already exist?** Real repos, skills, MCP servers and packages, with live stars, last-commit dates and licenses. The agent reads their READMEs before judging them.
 - **Does anyone want it?** Hacker News threads, feature requests on competitors' issue trackers and questions on the web, each with a link.
 - **Where's the gap?** What existing projects lack, backed by evidence.
-- **What should I build it with?** A curated catalog of 1,174 quality-checked repos tells you what to 🧱 use, 🍴 fork, 💡 learn from or 🤝 contribute to.
+- **What should I build it with?** A curated catalog of 1,175 quality-checked repos tells you what to 🧱 use, 🍴 fork, 💡 learn from or 🤝 contribute to.
 
 ## Install
 
@@ -115,7 +115,7 @@ Rules and formulas: [scoring.md](skills/check-before-you-build/references/scorin
 
 ## The catalog
 
-1,174 repos in 50 building-block categories across 20 domains, from web frameworks and AI agents to audio, 3D printing and games. Every entry:
+1,175 repos in 50 building-block categories across 20 domains, from web frameworks and AI agents to audio, 3D printing and games. Every entry:
 
 - passes one quality gate: adoption (for example 1,000+ stars), a commit in the last 6 months (18 for stable, widely used projects), a real license, 3+ contributors and a fake-star check
 - has a summary, best-for and not-for written from its README, and checked against it
@@ -137,7 +137,7 @@ The skill is tested end to end by fresh agents on a fixed set of ideas, graded o
 ## Roadmap
 
 - [x] Fact scripts, rule-based scoring, fact-checking, verdict card
-- [x] Catalog: 1,174 repos with README-based descriptions
+- [x] Catalog: 1,175 repos with README-based descriptions
 - [x] v1.0.0
 - [ ] Weekly catalog updates in CI
 - [ ] More sources (Product Hunt, VS Code marketplace, crates.io)
