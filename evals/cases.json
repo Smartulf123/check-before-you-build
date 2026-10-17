@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "notes": "Cases 1–4 come from manual research on 2026-10-15/17. must_find entries are owner/repo and match competitor ids, URLs or linked GitHub repos (case-insensitive).",
+  "cases": [
+    {
+      "id": "1-design-extractor",
+      "idea": "A skill that extracts a website's design into DESIGN.md so my coding agent can build in the same style. I want to launch it on GitHub.",
+      "purpose": "launch",
+      "must_find": ["Manavarya09/design-extract", "dembrandt/dembrandt"],
+      "expected_verdicts": ["BUILD_WITH_ANGLE", "DROP", "CONTRIBUTE"]
+    },
+    {
+      "id": "2-agent-wrapped",
+      "idea": "A Spotify Wrapped style yearly recap for AI coding agents like Claude Code and Codex, made from local session logs, to share on social media.",
+      "purpose": "launch",
+      "must_find": ["junhoyeo/tokscale", "numman-ali/cc-wrapped"],
+      "expected_verdicts": ["DROP", "BUILD_WITH_ANGLE"]
+    },
+    {
+      "id": "3-social-research",
+      "idea": "An agent skill that does deep research across Reddit, X, YouTube and Hacker News and writes a cited report. Open source launch.",
+      "purpose": "launch",
+      "must_find": ["mvanhorn/last30days-skill", "Panniantong/Agent-Reach"],
+      "expected_verdicts": ["DROP", "BUILD_WITH_ANGLE", "CONTRIBUTE"]
+    },
+    {
+      "id": "4-check-before-you-build",
+      "idea": "An agent skill that checks if a software idea already exists on GitHub, skills.sh and MCP registries, checks demand, and recommends repos to build it with. I want to launch it.",
+      "purpose": "launch",
+      "must_find": ["mnemox-ai/idea-reality-mcp", "ferdinandobons/startup-skill"],
+      "expected_verdicts": ["BUILD_WITH_ANGLE"]
+    },
+    {
+      "id": "5-control-todo-app",
+      "idea": "A todo list web app that I want to launch to get users.",
+      "purpose": "launch",
+      "must_find": [],
+      "min_competitors": 3,
+      "expected_verdicts": ["DROP"]
+    },
+    {
+      "id": "6-control-open-space",
+      "idea": "TODO: pick a niche with real demand and no direct competitor (Milestone 6).",
+      "purpose": "launch",
+      "enabled": false,
+      "must_find": [],
+      "expected_verdicts": ["BUILD"]
+    },
+    {
+      "id": "7-purpose-fun",
+      "idea": "I want to build a todo app just for fun to learn React.",
+      "purpose": "fun",
+      "must_find": [],
+      "expect_display": { "show_verdict": false }
+    },
+    {
+      "id": "8-purpose-me",
+      "idea": "A small tool for myself to organize my recipes.",
+      "purpose": "me",
+      "must_find": [],
+      "expect_display": { "show_verdict": false }
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 # check-before-you-build — Specification
 
-> **Status:** Draft v0.3 · 2026-10-17 · for review
+> **Status:** Draft v0.4 · 2026-10-17 · for review
+> **v0.4:** catalog moved inside the skill folder (§12) so installed copies include it; popularity takes the strongest normalised signal across sources (§9.1)
 > **v0.3:** sources verified in M0. §7 rewritten with real endpoints and query-writing rules (§7.1); Smithery added; Glama deferred; open questions 1–3 resolved
 > **v0.2:** added build purposes (fun / for me / launch) and friendlier verdict labels: §4.1, §6.1, §6.6, §6.8, §9.7, §11.1, §13.1, §18, §19
 > **One-liner:** An open-source agent skill that answers *"Is this worth building — and what can I build it with?"* with hard, cited evidence in a few minutes.
@@ -491,7 +492,7 @@ For each competitor *c*:
 
 - **match weight** `m`: direct = 1.0 · partial = 0.5 · adjacent = 0.1
 - **activity** `a`: pushed ≤ 90 days = 1.0 · ≤ 365 days = 0.6 · older = 0.2 · archived = 0
-- **popularity** `p` (0–1), from its source's signal:
+- **popularity** `p` (0–1): each available signal is normalised on its own scale, and the strongest wins across the project's sources (`signals` and `other_signals`). Raw numbers are never mixed.
   - GitHub stars: `min(1, log10(stars + 1) / 4)` (10k stars → 1.0)
   - skills.sh installs: `min(1, log10(installs + 1) / 4.5)`
   - npm weekly downloads: `min(1, log10(downloads + 1) / 5)`
@@ -669,24 +670,24 @@ check-before-you-build/
 │       │   ├── scoring.md               formulas, rubric, verdict rules
 │       │   ├── report-template.md       report structure
 │       │   └── subagents.md             briefs for the 3 parallel research agents
-│       └── scripts/
-│           ├── lib/                     shared: http (retry/backoff), cache, gh detection
-│           ├── github.mjs               search · repo · issues
-│           ├── npm.mjs                  search · info · downloads
-│           ├── pypi.mjs                 info
-│           ├── mcp.mjs                  MCP registry search
-│           ├── skills.mjs               skills.sh search
-│           ├── plugins.mjs              plugin marketplace search
-│           ├── hn.mjs                   Hacker News search
-│           ├── catalog.mjs              catalog search · get
-│           ├── score.mjs                scores + verdict from evidence.json
-│           ├── verify.mjs               fact-check evidence.json
-│           └── card.mjs                 render card.html
-├── catalog/
-│   ├── schema.json                      JSON Schema for entries
-│   ├── categories.json                  category slugs, names, descriptions
-│   ├── entries/<category>.json          one file per category
-│   └── .cache/stats.json                weekly stats snapshot (fallback)
+│       ├── scripts/
+│       │   ├── lib/                     shared: http (retry/backoff), cache, gh, cli, license
+│       │   ├── github.mjs               search · repo · issues
+│       │   ├── npm.mjs                  search · info · downloads
+│       │   ├── pypi.mjs                 info
+│       │   ├── mcp.mjs                  Smithery + official MCP registry search
+│       │   ├── skills.mjs               skills.sh search
+│       │   ├── plugins.mjs              official plugin marketplace search
+│       │   ├── hn.mjs                   Hacker News search
+│       │   ├── catalog.mjs              catalog search · get · categories
+│       │   ├── score.mjs                scores + verdict from evidence.json
+│       │   ├── verify.mjs               fact-check evidence.json (M5)
+│       │   └── card.mjs                 render card.html (M5)
+│       └── catalog/                     inside the skill so installed copies include it
+│           ├── schema.json              JSON Schema for entries
+│           ├── categories.json          category slugs, names, descriptions
+│           ├── entries/<category>.json  one file per category
+│           └── .cache/stats.json        weekly stats snapshot (fallback)
 ├── scripts/                             maintainer tools (not part of the installed skill)
 │   ├── scout.mjs
 │   ├── health.mjs

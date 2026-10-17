@@ -11,7 +11,7 @@ test('required folders from SPEC §12 exist', () => {
     'docs',
     'skills/check-before-you-build/references',
     'skills/check-before-you-build/scripts/lib',
-    'catalog/entries',
+    'skills/check-before-you-build/catalog/entries',
     'scripts',
     'evals',
     'tests/fixtures',

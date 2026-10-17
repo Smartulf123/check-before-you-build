@@ -1,0 +1,58 @@
+// Tiny CLI helpers shared by every script: argument parsing and the JSON output contract.
+// Contract: stdout gets exactly one JSON object. Success → { ok: true, ... }, exit 0.
+// Failure → { ok: false, error: { type, message, ... } }, exit 1.
+import { pathToFileURL } from 'node:url';
+
+/** Parse argv into { _: [positionals], flags: { name: value|true } }. */
+export function parseArgs(argv) {
+  const out = { _: [], flags: {} };
+  for (let i = 0; i < argv.length; i++) {
+    const arg = argv[i];
+    if (arg.startsWith('--')) {
+      const [name, inline] = arg.slice(2).split('=', 2);
+      if (inline !== undefined) out.flags[name] = inline;
+      else if (argv[i + 1] !== undefined && !argv[i + 1].startsWith('--')) out.flags[name] = argv[++i];
+      else out.flags[name] = true;
+    } else {
+      out._.push(arg);
+    }
+  }
+  return out;
+}
+
+export function intFlag(flags, name, fallback) {
+  const value = Number.parseInt(flags[name], 10);
+  return Number.isFinite(value) ? value : fallback;
+}
+
+export function errorObject(err) {
+  return {
+    type: err?.name || 'Error',
+    message: err?.message || String(err),
+    ...(err?.status ? { status: err.status } : {}),
+    ...(err?.resetAt ? { resetAt: err.resetAt } : {}),
+  };
+}
+
+/** True when the module at `metaUrl` is the script being executed directly. */
+export function isMain(metaUrl) {
+  return process.argv[1] && metaUrl === pathToFileURL(process.argv[1]).href;
+}
+
+/** Run a command handler and print the JSON result. */
+export async function runCli(handlers, usage) {
+  const args = parseArgs(process.argv.slice(2));
+  const [command, ...rest] = args._;
+  if (!command || args.flags.help || !handlers[command]) {
+    process.stdout.write(JSON.stringify({ ok: false, error: { type: 'Usage', message: usage } }, null, 2) + '\n');
+    process.exitCode = 1;
+    return;
+  }
+  try {
+    const result = await handlers[command](rest, args.flags);
+    process.stdout.write(JSON.stringify({ ok: true, ...result }, null, 2) + '\n');
+  } catch (err) {
+    process.stdout.write(JSON.stringify({ ok: false, error: errorObject(err) }, null, 2) + '\n');
+    process.exitCode = 1;
+  }
+}

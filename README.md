@@ -87,11 +87,11 @@ Or as a Claude Code plugin:
 
 - [x] Research and spec
 - [x] Source verification and repo skeleton ([findings](docs/sources-findings.md))
-- [ ] Helper scripts (GitHub, npm, PyPI, MCP registry, skills.sh, HN)
-- [ ] End-to-end quick mode
-- [ ] Demand, gaps and building blocks
+- [x] Helper scripts (GitHub, npm, PyPI, Smithery + MCP registry, skills.sh, plugins, HN)
+- [x] Skill workflow (SKILL.md + methodology), rule-based scoring, eval set
+- [x] Demand, gaps and building blocks (instructions; tuning ongoing)
 - [ ] Catalog: ~300 repos in ~35 categories
-- [ ] Rule-based scoring, fact-checking, report and verdict card
+- [ ] Automated fact-checking script, report polish and verdict card
 - [ ] Evaluation set passing, packaging, v1.0.0
 
 See the [implementation plan](docs/IMPLEMENTATION_PLAN.md) for details.
