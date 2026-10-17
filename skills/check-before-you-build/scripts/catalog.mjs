@@ -58,7 +58,7 @@ export function searchEntries(entries, { keywords = [], categories = [], kinds =
       return { e, score };
     })
     .filter((x) => !terms.length || x.score > 0)
-    .sort((a, b) => b.score - a.score)
+    .sort((a, b) => Number(Boolean(b.e.featured)) - Number(Boolean(a.e.featured)) || b.score - a.score)
     .slice(0, limit)
     .map(({ e, score }) => ({ ...toResult(e), match_score: score }));
 }
@@ -75,6 +75,8 @@ export function toResult(e) {
     tags: e.tags || [],
     use_for: e.use_for,
     why: e.why,
+    featured: Boolean(e.featured),
+    ...(e.license_verified ? { license_verified: e.license_verified } : {}),
     alternatives: e.alternatives || [],
     signals: {},
   };

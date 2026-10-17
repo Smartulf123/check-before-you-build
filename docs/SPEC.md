@@ -1,6 +1,7 @@
 # check-before-you-build — Specification
 
-> **Status:** Draft v0.5 · 2026-10-17 · for review
+> **Status:** Draft v0.6 · 2026-10-17 · for review
+> **v0.6:** up to 20 entries per category with up to 5 `featured`; `license_verified` for hand-checked licenses (§8.2)
 > **v0.5:** catalog quality rules decided (tiers, freshness, alternative signals, contributors, fake-star check; §8.2–8.3); 20 domains + 50 building-block categories (§8.4)
 > **v0.4:** catalog moved inside the skill folder (§12) so installed copies include it; popularity takes the strongest normalised signal across sources (§9.1)
 > **v0.3:** sources verified in M0. §7 rewritten with real endpoints and query-writing rules (§7.1); Smithery added; Glama deferred; open questions 1–3 resolved
@@ -423,14 +424,14 @@ The **same rules apply to every entry**, including the maintainer's own favourit
 **Hard requirements (all entries):**
 
 1. **Not archived.**
-2. **Licensed**: permissive or copyleft license class. No license, or a custom license, is excluded. When GitHub reports `NOASSERTION` (a license file it can't classify, common for MIT with a custom header), the license is resolved from the npm package that points back to the same repo. If that fails, the entry is flagged *"verify by hand"* instead of being rejected.
+2. **Licensed**: permissive or copyleft license class. No license, or a custom license, is excluded. When GitHub reports `NOASSERTION` (a license file it can't classify, common for MIT with a custom header), the license is resolved from the npm package that points back to the same repo. If that fails, the entry is flagged *"verify by hand"* instead of being rejected. When GitHub detects **no** license (common for repos with per-folder licenses or a license stated only in the README, e.g. `anthropics/skills`, `vercel-labs/agent-skills`), the entry fails until a human reads the license and records it in `license_verified: { license, note, date }`. The `note` records exceptions (e.g. *"docx/pdf/pptx/xlsx skills are source-available"*), and the skill never recommends forking excepted parts.
 3. **≥ 3 contributors**: no single point of failure.
 4. **No signs of fake stars**: excluded when stars ≥ 1,000 but forks are under 1 % of stars **and** there are 2 or fewer contributors.
 5. **Clear use case**: `use_for` fits in one plain sentence.
 6. **Not a thin fork or clone** of another entry.
 7. **Documented**: a README that explains installation and usage.
 
-**Target size:** ~300 entries (250–350): at least 5 and at most 12 per category. The bar is never lowered to hit a number. A category with only 4 qualifying repos gets 4.
+**Size:** depth over a fixed number (decided 2026-10-17). At least 5 and **at most 20 per category** (up to ~1,000 entries). The bar is never lowered to fill a category. Up to **5 entries per category are `featured`**: the strongest picks, shown first in recommendations, so users get a short list even when a category is deep. The cap keeps weekly health checks within GitHub's API budget and stops the catalog from diluting.
 
 ### 8.3 Removal criteria
 

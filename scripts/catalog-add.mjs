@@ -2,13 +2,23 @@
 // Draft (and optionally add) a catalog entry after a live quality check.
 // Usage: node scripts/catalog-add.mjs <owner/repo> --category <slug>
 //          [--name N] [--use-for "…"] [--why "…"] [--kinds library,cli] [--tags a,b]
-//          [--npm pkg] [--skill owner/repo/skill] [--official] [--stable --stable-reason "…"] [--write]
+//          [--npm pkg] [--skill owner/repo/skill] [--official] [--stable --stable-reason "…"]
+//          [--license-verified SPDX --license-note "…"]   only after reading the license yourself
+//          [--featured] [--write]
 // Without --write it prints the draft only. It never writes an entry that fails the quality rules.
 import { parseArgs } from '../skills/check-before-you-build/scripts/lib/cli.mjs';
 import { checkRepo } from './lib/repo-check.mjs';
 import { readCategories, readCategoryFile, today, writeCategoryFile } from './lib/catalog-files.mjs';
 
 const list = (v) => (typeof v === 'string' ? v.split(',').map((s) => s.trim()).filter(Boolean) : undefined);
+
+export function licenseVerified(flags) {
+  return {
+    license: flags['license-verified'],
+    ...(typeof flags['license-note'] === 'string' ? { note: flags['license-note'] } : {}),
+    date: today(),
+  };
+}
 
 export function draftEntry(check, flags, category) {
   const kinds = list(flags.kinds) || ['library'];
@@ -23,7 +33,9 @@ export function draftEntry(check, flags, category) {
     ...(flags.npm ? { npm: flags.npm } : {}),
     ...(flags.skill ? { skill: flags.skill } : {}),
     ...(flags.official ? { official: true } : {}),
+    ...(flags.featured ? { featured: true } : {}),
     ...(flags.stable ? { stable: true, stable_reason: flags['stable-reason'] } : {}),
+    ...(flags['license-verified'] ? { license_verified: licenseVerified(flags) } : {}),
     added: today(),
     last_reviewed: today(),
   };
@@ -50,6 +62,7 @@ async function main() {
     official: Boolean(flags.official),
     stable: Boolean(flags.stable),
     stable_reason: flags['stable-reason'],
+    license_verified: flags['license-verified'] ? licenseVerified(flags) : undefined,
   });
   if (!check.found || !check.evaluation.pass) {
     out({ ok: false, id, evaluation: check.evaluation, error: { type: 'QualityRules', message: 'does not meet the catalog quality rules' } });

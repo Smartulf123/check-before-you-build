@@ -8,7 +8,8 @@ import { checkRepo } from './lib/repo-check.mjs';
 
 const KINDS = new Set(['library', 'framework', 'template', 'skill', 'plugin', 'mcp', 'cli', 'app', 'service', 'engine']);
 const REQUIRED = ['id', 'name', 'category', 'kinds', 'tags', 'use_for', 'why', 'added', 'last_reviewed'];
-const SIZE = { min: 5, max: 12 };
+const SIZE = { min: 5, max: 20 };
+const MAX_FEATURED = 5;
 
 export function validateStatic(files, categoriesDoc) {
   const errors = [];
@@ -28,6 +29,9 @@ export function validateStatic(files, categoriesDoc) {
     const n = data.entries.length;
     if (n > SIZE.max) errors.push(`${file}: ${n} entries (max ${SIZE.max})`);
     if (n > 0 && n < SIZE.min) warnings.push(`${file}: only ${n} entries (target ≥ ${SIZE.min})`);
+    const featured = data.entries.filter((e) => e.featured).length;
+    if (featured > MAX_FEATURED) errors.push(`${file}: ${featured} featured entries (max ${MAX_FEATURED})`);
+    if (n >= SIZE.min && featured === 0) warnings.push(`${file}: no featured entries`);
 
     data.entries.forEach((e, i) => {
       const where = `${file}[${i}] ${e.id || '?'}`;
@@ -40,6 +44,9 @@ export function validateStatic(files, categoriesDoc) {
       if ((e.why || '').length > 200) errors.push(`${where}: why over 200 chars`);
       if ((e.why || '').startsWith('TODO')) errors.push(`${where}: why is still TODO`);
       if (e.stable && !e.stable_reason) errors.push(`${where}: stable needs stable_reason`);
+      if (e.license_verified && (!e.license_verified.license || !e.license_verified.date)) {
+        errors.push(`${where}: license_verified needs license and date`);
+      }
       for (const d of e.domains || []) if (!domains.has(d)) errors.push(`${where}: unknown domain "${d}"`);
       const key = (e.id || '').toLowerCase();
       if (seen.has(key)) errors.push(`${where}: duplicate of ${seen.get(key)}`);

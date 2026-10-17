@@ -46,7 +46,8 @@ export function adoptionLevel(signals = {}, { official = false } = {}) {
 /**
  * Evaluate a repo against the quality rules.
  * @param {object} input  { signals: {stars, forks, pushed_at, license, archived, installs, downloads_weekly, uses},
- *                          contributors, official, stable, stable_reason }
+ *                          contributors, official, stable, stable_reason,
+ *                          license_verified: { license, note, date } }
  * @returns {{ pass, tier, freshness, reasons: string[], warnings: string[] }}
  */
 export function evaluate(input, now = Date.now()) {
@@ -59,9 +60,16 @@ export function evaluate(input, now = Date.now()) {
   if (s.missing) reasons.push('repository not found');
   if (s.archived) reasons.push('archived');
 
-  const cls = licenseClass(s.license);
-  if (cls === 'none') reasons.push('no license');
-  else if (s.license === 'NOASSERTION') {
+  // A human-verified license (per-folder licenses, README-only license, etc.) overrides detection.
+  const verified = input.license_verified;
+  const effectiveLicense = verified?.license || s.license;
+  const cls = licenseClass(effectiveLicense);
+  if (verified && !verified.license) reasons.push('license_verified needs a license');
+  if (cls === 'none') reasons.push('no license detected (verify by hand: it may be per-folder or stated only in the README)');
+  else if (verified) {
+    if (cls === 'other') reasons.push(`verified license not recognised (${verified.license})`);
+    if (verified.note) warnings.push(`license: ${verified.note}`);
+  } else if (s.license === 'NOASSERTION') {
     // A license file exists but GitHub couldn't classify it: needs a human look, not a rejection.
     warnings.push('license file present but not auto-detected: verify by hand');
   } else if (cls === 'other') reasons.push(`license not recognised (${s.license})`);

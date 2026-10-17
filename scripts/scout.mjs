@@ -13,6 +13,21 @@ import { readAllCategoryFiles, readCategories } from './lib/catalog-files.mjs';
 import { checkRepo } from './lib/repo-check.mjs';
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const CHECK_CONCURRENCY = 6; // core API allows 5,000 requests/hour; searches stay sequential
+
+/** Run `fn` over `items` with at most `limit` in flight. */
+export async function mapLimit(items, limit, fn) {
+  const results = new Array(items.length);
+  let next = 0;
+  const worker = async () => {
+    while (next < items.length) {
+      const i = next++;
+      results[i] = await fn(items[i], i);
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+  return results;
+}
 
 export function qualityQualifiers(now = Date.now()) {
   const since = new Date(now - RULES.freshness_days.ok * 86400000).toISOString().slice(0, 10);
@@ -69,11 +84,15 @@ async function main() {
     }
     const candidates = [...found.values()].sort((a, b) => b.signals.stars - a.signals.stars);
     if (flags.check) {
-      for (const c of candidates) {
-        const check = await checkRepo(c.full_name);
-        c.contributors = check.contributors;
-        c.evaluation = check.evaluation;
-      }
+      await mapLimit(candidates, CHECK_CONCURRENCY, async (c) => {
+        try {
+          const check = await checkRepo(c.full_name);
+          c.contributors = check.contributors;
+          c.evaluation = check.evaluation;
+        } catch (err) {
+          c.evaluation = { pass: false, tier: null, reasons: [`check failed: ${err.message}`], warnings: [] };
+        }
+      });
     }
     byCategory[cat.slug] = candidates;
     process.stderr.write(`scout: ${cat.slug} → ${candidates.length} candidates\n`);

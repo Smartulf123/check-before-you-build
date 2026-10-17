@@ -76,6 +76,17 @@ test('NOASSERTION license warns for manual review instead of rejecting', () => {
   assert.equal(evaluate(repo({ license: 'Custom-Proprietary' }), NOW).pass, false);
 });
 
+test('no detected license fails unless a human verified it', () => {
+  const none = evaluate(repo({ license: null }), NOW);
+  assert.equal(none.pass, false);
+  assert.match(none.reasons.join(), /verify by hand/);
+  const verified = evaluate(repo({ license: null }, { license_verified: { license: 'Apache-2.0', note: 'per-skill licenses', date: '2026-10-17' } }), NOW);
+  assert.equal(verified.pass, true);
+  assert.ok(verified.warnings.some((w) => w.includes('per-skill licenses')));
+  const bogus = evaluate(repo({ license: null }, { license_verified: { license: 'All-Rights-Reserved', date: '2026-10-17' } }), NOW);
+  assert.equal(bogus.pass, false);
+});
+
 test('unknown contributors or push date only warn', () => {
   const r = evaluate(repo({}, { contributors: undefined }), NOW);
   assert.equal(r.pass, true);

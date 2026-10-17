@@ -44,10 +44,17 @@ test('validateStatic catches missing fields, bad kinds, TODO why, duplicates, un
   assert.ok(errors.some((e) => e.includes('missing use_for')));
 });
 
-test('validateStatic enforces the 12-per-category maximum', () => {
-  const many = Array.from({ length: 13 }, (_, i) => entry({ id: `o/r${i}`, name: `R${i}` }));
+test('validateStatic enforces the 20-per-category and 5-featured maximums', () => {
+  const many = Array.from({ length: 21 }, (_, i) => entry({ id: `o/r${i}`, name: `R${i}`, featured: i < 6 }));
   const { errors } = validateStatic([{ file: 'testing.json', data: { category: 'testing', entries: many } }], categoriesDoc);
-  assert.ok(errors.some((e) => e.includes('13 entries (max 12)')));
+  assert.ok(errors.some((e) => e.includes('21 entries (max 20)')));
+  assert.ok(errors.some((e) => e.includes('6 featured entries (max 5)')));
+});
+
+test('validateStatic checks license_verified shape', () => {
+  const bad = entry({ license_verified: { license: 'MIT' } });
+  const { errors } = validateStatic([{ file: 'testing.json', data: { category: 'testing', entries: [bad] } }], categoriesDoc);
+  assert.ok(errors.some((e) => e.includes('license_verified needs license and date')));
 });
 
 test('draftEntry fills sensible defaults from the repo', () => {
@@ -61,6 +68,21 @@ test('draftEntry fills sensible defaults from the repo', () => {
 test('scout builds the quality floor into the query', () => {
   const q = qualityQualifiers(new Date('2026-10-17T00:00:00Z').getTime());
   assert.equal(q, 'stars:>=1000 pushed:>=2026-04-20 archived:false');
+});
+
+test('mapLimit keeps order and never exceeds the concurrency limit', async () => {
+  const { mapLimit } = await import('../scripts/scout.mjs');
+  let inFlight = 0;
+  let peak = 0;
+  const out = await mapLimit([5, 1, 4, 2, 3], 2, async (n) => {
+    inFlight++;
+    peak = Math.max(peak, inFlight);
+    await new Promise((r) => setTimeout(r, n));
+    inFlight--;
+    return n * 10;
+  });
+  assert.deepEqual(out, [50, 10, 40, 20, 30]);
+  assert.equal(peak, 2);
 });
 
 test('reports render tables', () => {

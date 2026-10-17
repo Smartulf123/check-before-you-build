@@ -31,6 +31,17 @@
           "npm": { "type": "string", "description": "npm package name, for the downloads signal" },
           "skill": { "type": "string", "description": "skills.sh id owner/repo/skill, for the installs signal" },
           "official": { "type": "boolean", "description": "Official repo of the vendor it integrates with" },
+          "featured": { "type": "boolean", "description": "One of the 3–5 best picks in its category; shown first in recommendations (max 5 per category)" },
+          "license_verified": {
+            "type": "object",
+            "description": "License checked by a human when detection fails (per-folder licenses, README-only license)",
+            "required": ["license", "date"],
+            "properties": {
+              "license": { "type": "string", "description": "SPDX id of the main license" },
+              "note": { "type": "string", "description": "Exceptions, e.g. folders under a different license" },
+              "date": { "type": "string", "format": "date" }
+            }
+          },
           "stable": { "type": "boolean" },
           "stable_reason": { "type": "string" },
           "added": { "type": "string", "format": "date" },

@@ -73,6 +73,7 @@ export async function checkRepo(id, meta = {}) {
     official: meta.official,
     stable: meta.stable,
     stable_reason: meta.stable_reason,
+    license_verified: meta.license_verified,
   });
   return {
     id,
