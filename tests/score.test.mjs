@@ -167,14 +167,16 @@ test('confidence: high needs verification; failures and thin results lower it', 
   assert.equal(s.confidence(evidence({ competitors: [comp()] })), 'low');
 });
 
-test('purpose changes what is shown, not the computed verdict', () => {
+test('fun and personal projects get no verdict, only a hint', () => {
   const base = { competitors: [comp(), comp({ id: 'github:c/d' })], gap_score: 1 };
   const fun = s.scoreEvidence(evidence({ ...base, idea: { text: 'x', purpose: 'fun' } }), NOW);
   assert.equal(fun.display.show_verdict, false);
   assert.match(fun.display.headline, /fun/);
   const me = s.scoreEvidence(evidence({ ...base, idea: { text: 'x', purpose: 'me' } }), NOW);
   assert.match(me.display.hint, /save you time/);
-  assert.equal(fun.verdict.code, me.verdict.code);
+  assert.equal(fun.verdict.code, null);
+  assert.equal(me.verdict.code, null);
+  assert.equal(me.scores.demand, null);
 });
 
 test('validation rejects incomplete evidence', () => {

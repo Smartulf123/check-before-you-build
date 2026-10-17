@@ -136,3 +136,11 @@ test('a deeply nested skill folder is found through the repo tree', async () => 
   assert.match(r.source_url, /plugins\/utils\/skills\/design-md\/SKILL\.md$/);
   assert.equal(r.fallback, undefined);
 });
+
+test('detectLicense recognises common licenses from their text', () => {
+  assert.equal(readme.detectLicense('MIT License\n\nPermission is hereby granted, free of charge, to any person obtaining a copy'), 'MIT');
+  assert.equal(readme.detectLicense('Apache License\n                Version 2.0, January 2004'), 'Apache-2.0');
+  assert.equal(readme.detectLicense('Apache License, Version 2.0'), 'Apache-2.0');
+  assert.equal(readme.detectLicense('GNU AFFERO GENERAL PUBLIC LICENSE Version 3'), 'AGPL-3.0');
+  assert.equal(readme.detectLicense('Redistribution and use in source and binary forms ... Neither the name of'), 'BSD-3-Clause');
+});

@@ -19,6 +19,7 @@ Every script prints one JSON object and exits 1 on failure. Run from any directo
 ### catalog.mjs
 ```
 catalog.mjs categories
+catalog.mjs domains          → project types (websites, mobile apps, agent tools, …) and the categories (stack layers) each needs
 catalog.mjs search <keywords...> [--categories a,b] [--kinds library,skill,mcp] [--limit 15] [--live]
 catalog.mjs get <owner/repo> [--live]
 ```
@@ -68,6 +69,8 @@ hn.mjs search <keywords...> [--limit 20] [--tags story|show_hn|ask_hn|comment] [
 readme.mjs get <owner/repo> [<owner/repo> ...] [--max-chars 5000] [--full]
 ```
 Fetches READMEs from raw.githubusercontent.com (**no GitHub API calls**), follows monorepo README links, and condenses them to the intro plus feature, usage, limitation and comparison sections (install guides, badges, images and long code blocks are dropped). Pass several repos per call. Use `--full` only when the condensed version leaves a key question open.
+
+`readme.mjs license <owner/repo> [...]` reads the license file (also no API quota) and detects common licenses. Use it when GitHub reports NOASSERTION or no license.
 
 Accepts `owner/repo/sub/path` for a skill or plugin folder inside a bigger repo (tries `SKILL.md` and `README.md` there and in `skills/` or `plugins/`, then looks the folder up in the repo tree with one core API call, and only then falls back to the repo README, flagged with `fallback: "repo-root"`). Output: `{ source: "readme", results: [{ id, found, source_url, chars_original, excerpt, headings }] }`. Read `excerpt`.
 

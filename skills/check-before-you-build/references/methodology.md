@@ -9,7 +9,7 @@ Building something that already exists is fine. The skill informs, it never forb
 | Purpose | Signals in the idea text | Effect |
 |---|---|---|
 | `fun` | "for fun", "to learn", "practice", "side project", "hobby" | No verdict shown. Skip demand and gaps. Emphasise projects to learn from and building blocks. |
-| `me` | "for myself", "my own use", "for my team", "personal tool" | No verdict shown. Skip demand; short gaps. Hint at existing tools that might save time. |
+| `me` | "for myself", "my own use", "which I can use", "just for me", "for my team", "personal tool" | No verdict shown. Skip demand; short gaps. Hint at existing tools that might save time. |
 | `launch` | "launch", "publish", "users", "sell", "viral", "startup", "open source it", "share on social media", "get stars" | Full verdict with friendly label. |
 
 Priority: `--for` flag → inferred from the text → default `launch`. Record `purpose_source` as `explicit`, `inferred` or `default`. With `default`, end the summary with: *"Just building for fun, to learn or for yourself? Ignore the verdict, and the building blocks below are for you."*
@@ -48,7 +48,8 @@ Ask one clarifying question only if no meaningful keywords can be derived (e.g. 
    - mcp → `mcp.mjs search`
    - library / cli (JS) → `npm.mjs search`
    - library / cli (Python) → web search `site:pypi.org <keywords>`, then `pypi.mjs info <pkg>`
-   - any → web search for commercial products: `<concept> tool`, `<concept> alternative`, `<concept> app`
+   - any → web search for commercial products: `<concept> tool`, `<concept> alternative`, `<concept> app`. Cite a product by the official site or store page you actually saw in a result, never a URL from memory.
+   - Skip skills.sh, plugins and MCP for end-user apps and websites unless the idea is itself agent-related.
 4. Deduplicate: the same project often appears as a GitHub repo, an npm package and a skill. Merge them under the GitHub id and keep each source's signal in `other_signals`.
 5. **Read the READMEs** of the strongest candidates before classifying them: `readme.mjs get <owner/repo> <owner/repo> …` (several at once). Classify direct/partial matches from what the README says the project does, not from its name or one-line description. Budget: see the mode table in SKILL.md.
 6. Classify every candidate:
@@ -56,7 +57,7 @@ Ask one clarifying question only if no meaningful keywords can be derived (e.g. 
    - `partial`: big overlap but differs in form, scope or audience
    - `adjacent`: related, a building block or neighbour
    Give `match_reason` (one line) for every direct/partial match. Estimate `coverage_pct` (0–100) for direct matches: list the idea's 3–6 core features (from `summary` and `components`), check each against the README, and set coverage to the share it delivers. Write the covered and missing features in `match_reason`. Rule 3 (CONTRIBUTE) needs ≥ 80, so only go that high when the README shows nearly every core feature.
-7. For `me` and `fun`, always include the mainstream options a person would otherwise use: the best-known free or built-in apps (for a health tracker: Apple Health, Google Fit, Samsung Health) and the most popular self-hosted project in the space, even when they only partly match. They are often the real time-saver.
+7. For `me` and `fun`, always include (as `partial`) the mainstream options a person would otherwise use: the best-known free or built-in apps (for a health tracker: Apple Health, Google Fit, Samsung Health) and the most popular self-hosted project in the space, even when they only partly match. They are often the real time-saver.
 8. Keep **every direct match**, even if there are more than 15, plus partial and adjacent matches up to 15 entries in total, ranked by relevance × popularity. In the report, order the table by match (direct, partial, adjacent) and within each match by popularity, so the established projects are easy to spot. Set `candidates_evaluated` to the number of distinct projects whose description or README you actually judged (not raw search hits), and `readme_read: true` on each competitor whose README you read. Products without a public repo (commercial sites) don't need `readme_read`; read their site instead.
 
 **Judge relevance yourself.** npm and skills.sh rank by popularity, and GitHub search returns spam. Read descriptions. Fetch a README with web fetch when unsure.
@@ -78,20 +79,20 @@ Competitor adoption is added automatically by `score.mjs`. Don't list it as a de
 - Stale competitors: archived, or no push in over 12 months.
 - Write 1–4 gap statements. Each needs `evidence` (URLs) and `checked` (where you confirmed the competitors lack it, e.g. "competitor-a README", "competitor-b issues").
 - "Better UX" is not a gap unless users complain about the UX.
-- Set `gap_score` (0–10) from the rubric in `scoring.md`. `score.mjs` caps it by the evidence: no evidenced gap → 2, one → 6, two or three → 8, four or more (or no active direct competitor) → 10. So write a separate statement for each distinct gap you can evidence.
+- For `me`, `gap_score` is optional (no verdict is computed). For `launch`, set `gap_score` (0–10) from the rubric in `scoring.md`. `score.mjs` caps it by the evidence: no evidenced gap → 2, one → 6, two or three → 8, four or more (or no active direct competitor) → 10. So write a separate statement for each distinct gap you can evidence.
 
 ## Phase 5: Building blocks
 
 The report should work as a build guide, so cover the whole stack, not only the features that make the idea special.
 
-1. **Layers.** For every layer from phase 1 (frontend framework, UI components, styling, forms, database, auth, hosting and deploy, testing, …), find a **top pick** and **one alternative**. Search the catalog by category: `catalog.mjs search <layer keywords> --categories <slug>`. Catalog entries come with stats from the weekly snapshot and are already quality-checked, so **don't spend GitHub calls on them**. Choose picks that work together (one framework, then UI and styling that fit it).
+1. **Layers.** For every layer from phase 1 (frontend framework, UI components, styling, forms, database, auth, hosting and deploy, testing, …), find a **top pick** and **one alternative**. A pick may be a pair that belongs together (database plus ORM, forms plus validation). If no good alternative exists, say so instead of padding. For hosting, a hosted service (Vercel, Netlify, Cloudflare) may be cited by its official site when no repo fits. Search the catalog by category: `catalog.mjs search <layer keywords> --categories <slug>`. Catalog entries come with stats from the weekly snapshot and are already quality-checked, so **don't spend GitHub calls on them**. Choose picks that work together (one framework, then UI and styling that fit it).
 2. **Components.** For each idea-specific component (charts, device sync, scraping, …), find 2–3 candidates the same way. Live search (`github.mjs search`, `npm.mjs search`) only where the catalog is thin, and live stats (`github.mjs repo`, `npm.mjs info`) only for candidates **outside** the catalog.
 3. **Look and feel.** If phase 1 found a look-and-feel layer, add 2–3 picks from `animation`, `creative-coding` and `3d-graphics` that match the words the user used (scroll-driven sites, motion, 3D scenes).
 4. **Study the competition.** If the user names a reference app, or the closest competitors are closed-source products, add tools for studying how they work: `morluto/rea` for apps and binaries, and the design extractors (`Manavarya09/design-extract`, `dembrandt/dembrandt`) for a website's look. Frame it as studying, not copying: code and designs stay under their owners' licenses. Skip this when nothing closed is worth studying.
 5. **Read the README of every shortlisted candidate** (per layer or component: top 2 / 3 / 5 by mode, catalog entries included): `readme.mjs get a/b c/d …`. Use the catalog's `summary`, `best_for` and `not_for` to build the shortlist and the README to confirm the fit. Drop candidates the README shows don't fit, even if they're featured. Set `readme_read: true` on each block you recommend.
 6. Rank by fit → maintenance → adoption → license.
-7. One recommendation type per block: `use`, `fork`, `learn` or `contribute`. Record `layer` (or `component`) and `role` (`pick` or `alternative`).
-8. License classes: permissive (MIT, Apache-2.0, BSD, ISC, MPL-2.0, Unlicense, CC0-1.0, 0BSD, Zlib) → any type. Copyleft (GPL/AGPL/LGPL) → use/learn/contribute; fork only with a warning. None → learn only ("no license: you have no right to copy this code"). Other → learn only.
+7. One recommendation type per block: `use`, `fork`, `learn` or `contribute`. Record `layer` (or `component`) and `role` (`pick` or `alternative`). A project may appear both as a competitor and as a building block (a repo to fork is often both).
+8. License classes: permissive (MIT, Apache-2.0, BSD, ISC, MPL-2.0, Unlicense, CC0-1.0, 0BSD, Zlib) → any type. Copyleft (GPL/AGPL/LGPL) → use/learn/contribute; fork only with a warning. None → learn only ("no license: you have no right to copy this code"). Other → learn only, with two exceptions. First, when GitHub reports NOASSERTION or nothing, run `readme.mjs license <owner/repo>`: it reads the license file and often finds a standard license (use that). Second, when the project's own license grants free use including commercial use (GSAP's standard license, for example), allow `use` with a warning to read the license, but never `fork`.
 9. At most 25 blocks in total. For `fun`, add well-documented projects worth reading as `learn`.
 
 ## Phase 6: Check facts, then score

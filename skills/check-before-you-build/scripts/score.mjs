@@ -208,12 +208,22 @@ export function scoreEvidence(evidence, now = Date.now()) {
   const sat = saturation(competitors, now);
   const dem = demand(evidence.demand || [], competitors, now);
   const g = gap(evidence, now);
+  const purpose = evidence.idea.purpose;
+  // Fun and personal projects skip demand research, so a verdict would be meaningless: none is computed.
+  if (purpose !== 'launch') {
+    return {
+      scores: { saturation: sat.score, demand: null, gap: null },
+      score_details: { coverage: sat.coverage },
+      verdict: { code: null, rule: null, reason: 'No verdict for fun or personal projects.', confidence: confidence(evidence) },
+      display: display(null, purpose, sat.score),
+    };
+  }
   const verdict = decideVerdict({ sat: sat.score, dem: dem.score, gapScore: g.score, competitors, now });
   return {
     scores: { saturation: sat.score, demand: dem.score, gap: g.score },
     score_details: { coverage: sat.coverage, demand_raw: dem.raw, evidenced_gaps: g.evidenced_gaps, gap_cap: g.cap },
     verdict: { ...verdict, label: LABELS[verdict.code], confidence: confidence(evidence) },
-    display: display(verdict.code, evidence.idea.purpose, sat.score),
+    display: display(verdict.code, purpose, sat.score),
   };
 }
 

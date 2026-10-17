@@ -10,7 +10,9 @@ import { intFlag, isMain, runCli } from './lib/cli.mjs';
 
 const USAGE = `readme.mjs <command>
   get <owner/repo> [<owner/repo> ...] [--max-chars 5000] [--full]
-      condensed README per repo (raw.githubusercontent.com; one core API call only for deeply nested skill folders)`;
+      condensed README per repo (raw.githubusercontent.com; one core API call only for deeply nested skill folders)
+  license <owner/repo> [<owner/repo> ...]
+      read the license file and detect common licenses (for NOASSERTION or missing licenses)`;
 
 const CANDIDATES = ['README.md', 'readme.md', 'Readme.md', 'README.MD', 'README.rst', 'README.markdown', 'README.asciidoc', 'README.adoc', 'README.txt', 'README', '.github/README.md', 'docs/README.md'];
 
@@ -188,6 +190,42 @@ export async function getReadme(id, { maxChars = 5000, full = false } = {}) {
   return { id: `github:${id}`, found: true, source_url: url, chars_original: text.length, ...note, excerpt, headings };
 }
 
+const LICENSE_FILES = ['LICENSE', 'LICENSE.md', 'LICENSE.txt', 'LICENCE', 'LICENCE.md', 'COPYING', 'license', 'license.md', 'LICENSE-MIT'];
+
+/** Recognise common licenses from their text. Returns an SPDX id or null. */
+export function detectLicense(text) {
+  const t = String(text || '').replace(/\s+/g, ' ');
+  if (/GNU AFFERO GENERAL PUBLIC LICENSE/i.test(t)) return 'AGPL-3.0';
+  if (/GNU LESSER GENERAL PUBLIC LICENSE/i.test(t)) return /Version 2\.1/i.test(t) ? 'LGPL-2.1' : 'LGPL-3.0';
+  if (/GNU GENERAL PUBLIC LICENSE/i.test(t)) return /Version 2,/i.test(t) ? 'GPL-2.0' : 'GPL-3.0';
+  if (/Mozilla Public License,? (Version|v\.?) ?2\.0/i.test(t)) return 'MPL-2.0';
+  if (/Apache License,? Version 2\.0/i.test(t)) return 'Apache-2.0';
+  if (/This is free and unencumbered software released into the public domain/i.test(t)) return 'Unlicense';
+  if (/Permission is hereby granted, free of charge, to any person obtaining a copy/i.test(t)) return 'MIT';
+  if (/Permission to use, copy, modify, and\/?or distribute this software for any purpose/i.test(t)) return 'ISC';
+  if (/Redistribution and use in source and binary forms/i.test(t)) return /Neither the name/i.test(t) ? 'BSD-3-Clause' : 'BSD-2-Clause';
+  if (/CC0 1\.0 Universal/i.test(t)) return 'CC0-1.0';
+  return null;
+}
+
+/** Read a repo's license file from raw.githubusercontent.com (no API quota). */
+export async function getLicense(fullName) {
+  for (const file of LICENSE_FILES) {
+    const url = `https://raw.githubusercontent.com/${fullName}/HEAD/${file}`;
+    const { status, text } = await fetchText(url);
+    if (status === 404 || !text) continue;
+    let body = text;
+    // a one-line file that only points to another file ("see LICENSE-MIT")
+    const pointer = /^\s*(?:see\s+)?([\w.-]+(?:\/[\w.-]+)+|[\w.-]+\.(?:md|txt)|LICENSE[\w.-]*)\s*$/i.exec(text.trim());
+    if (pointer && text.trim().length < 120) {
+      const next = await fetchText(`https://raw.githubusercontent.com/${fullName}/HEAD/${pointer[1].replace(/^\.?\//, '')}`);
+      if (next.text) body = next.text;
+    }
+    return { id: `github:${fullName}`, found: true, source_url: url, detected: detectLicense(body), excerpt: body.slice(0, 600) };
+  }
+  return { id: `github:${fullName}`, found: false };
+}
+
 if (isMain(import.meta.url)) {
   runCli(
     {
@@ -202,6 +240,18 @@ if (isMain(import.meta.url)) {
           }
         }
         return { source: 'readme', results };
+      },
+      license: async (ids) => {
+        if (!ids.length) throw new Error('license needs at least one owner/repo');
+        const results = [];
+        for (const id of ids) {
+          try {
+            results.push(await getLicense(id));
+          } catch (err) {
+            results.push({ id: `github:${id}`, found: false, error: err.message });
+          }
+        }
+        return { source: 'license', results };
       },
     },
     USAGE,
