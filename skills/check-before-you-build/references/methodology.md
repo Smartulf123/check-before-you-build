@@ -91,8 +91,13 @@ It validates the file, computes saturation, demand and gap, applies verdict rule
 
 ## Phase 7: Check facts and write
 
-1. For every GitHub repo you will cite that is **not** from the catalog (competitors and non-catalog building blocks): `github.mjs repo <owner/repo>`. Catalog entries are verified weekly by the maintainer's health check; mark them `verified: true` with `stats_source` from the snapshot. On `found:false`, set `verified: false` and remove it from the report. On `renamed:true`, update the id and URL. Refresh `signals`.
-2. Record `verification: { checked, passed, corrected, dropped }` in `evidence.json`.
-3. Re-run `score.mjs` if anything changed.
-4. Write `report.md` from `report-template.md`, using only items with `verified !== false`.
-5. Print the chat summary.
+1. Run `node <skill-dir>/scripts/verify.mjs check-reports/<dir>/evidence.json`. It:
+   - verifies catalog entries from the weekly snapshot (no GitHub calls)
+   - re-fetches every other GitHub repo and npm package: missing → `verified: false`; renamed → id and URL updated; numbers refreshed, with > 10 % drift logged as corrections
+   - checks demand and product URLs: dead demand links are dropped, unreachable product sites are kept with `link_status: "unreachable"`
+   - writes `verification: { checked, passed, corrected, dropped }` into the file
+   - lists `readme_missing`: recommended repos whose README you haven't read. Read them now (`readme.mjs get`), set `readme_read: true`, and re-run `verify.mjs`.
+2. Re-run `score.mjs` (verification affects confidence, and dropped items affect scores).
+3. Write `report.md` from `report-template.md`, using only items with `verified !== false`. Mention any corrections or dropped items in "Method and coverage".
+4. Run `node <skill-dir>/scripts/card.mjs check-reports/<dir>/evidence.json` to write `card.html`.
+5. Print the chat summary, including the report and card paths.

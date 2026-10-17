@@ -20,7 +20,9 @@ How common is this: <one honest, friendly line>
 <!-- launch: "Closest existing projects" · me: "Existing tools that might save you time" · fun: "Projects to learn from" -->
 | Project | Type | Popularity | Last update | License | Match | Note |
 |---|---|---|---|---|---|---|
-| [name](url) | repo / skill / MCP / package / product | 4.2k ⭐ · 33k installs · 790/wk | 3 days ago | MIT | direct | one line |
+| [name](url) | repo / skill / MCP / package / product | 4.2k ⭐ · 33k installs · 790/wk | 3 days ago | MIT | direct | what it does, from its README |
+
+Mark maintainer picks as "👤 maintainer pick" and featured catalog entries as "★". Use the catalog's `not_for` to explain why a strong project still leaves room for the idea.
 
 ## Demand *(launch)*
 - **Hacker News:** [title](url): 120 points, 2026-05. "short quote"
@@ -31,6 +33,8 @@ How common is this: <one honest, friendly line>
 1. **<gap statement>**: evidence: [link](url). Checked: <where>.
 
 ## Building blocks
+For each block: one line on why it fits *this* idea (from its README), and one line on what to watch out for (from `not_for`).
+
 **🧱 Use:** [name](url): <why> (stars · license)
 **🍴 Fork:** [name](url): <why> (license ✅/⚠️)
 **💡 Learn from:** [name](url): <what to look at>
@@ -50,8 +54,12 @@ How common is this: <one honest, friendly line>
 
 ## Method and coverage
 - Sources: <list with ok / failed / skipped>
-- Candidates evaluated: <n> · Fact-checked: <passed>/<checked> (corrected <c>, dropped <d>)
+- Candidates evaluated: <n> · READMEs read: <n> · Fact-checked: <passed>/<checked> (corrected <c>, dropped <d>)
+- Catalog stats as of <snapshot date>; other numbers fetched live
+- <dropped or corrected items, if any, in one line each>
 - <notes on rate limits or thin results; suggest `gh auth login` if unauthenticated>
+
+Shareable card: `card.html`
 
 ## Sources
 <every link used, one per line>
@@ -68,6 +76,7 @@ Open gap: <top gap>                                  ← launch / me
 Building blocks: 🧱 … · 🧱 … · 🍴 …
 Next step: <one line>
 Full report → check-reports/<dir>/report.md
+Shareable card → check-reports/<dir>/card.html
 ```
 
 Wording rule for every purpose: never write "don't build" or "you shouldn't". Describe the landscape and let the user decide.

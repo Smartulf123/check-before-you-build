@@ -32,7 +32,8 @@
       "match_reason": "…",                  // ✱ for direct and partial
       "coverage_pct": 85,                   // direct matches
       "notes": "…",
-      "verified": true                      // false = dropped by fact-checking
+      "readme_read": true,                  // required before recommending (hard rule 7)
+      "verified": true                      // false = dropped by fact-checking (set by verify.mjs)
     }
   ],
   "candidates_evaluated": 34,
@@ -63,6 +64,7 @@
       "license_class": "permissive",        // permissive | copyleft | none | other
       "signals": { "stars": 70000, "pushed_at": "…", "license": "Apache-2.0" },
       "from_catalog": true,
+      "readme_read": true,
       "why": "…",
       "warning": null,
       "verified": true
@@ -70,7 +72,7 @@
   ],
   "sources_status": { "catalog": "ok", "github": "ok", "skills": "ok", "plugins": "skipped", "mcp": "ok", "npm": "ok", "hn": "ok", "web": "ok" },
   "rate_limited": false,
-  "verification": { "checked": 31, "passed": 29, "corrected": 3, "dropped": 2 }
+  "verification": { "checked": 31, "passed": 29, "corrected": 3, "dropped": 2, "verified_at": "…" }  // written by verify.mjs
 
   // Written by score.mjs: scores, score_details, verdict, display, scored_at
 }

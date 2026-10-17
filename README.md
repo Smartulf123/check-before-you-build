@@ -91,7 +91,7 @@ Or as a Claude Code plugin:
 - [x] Skill workflow (SKILL.md + methodology), rule-based scoring, eval set
 - [x] Demand, gaps and building blocks (instructions; tuning ongoing)
 - [x] Catalog: 1,170 repos in 50 categories, 20 domains
-- [ ] Automated fact-checking script, report polish and verdict card
+- [x] Automated fact-checking (verify.mjs), report polish and shareable verdict card (card.mjs)
 - [ ] Evaluation set passing, packaging, v1.0.0
 
 See the [implementation plan](docs/IMPLEMENTATION_PLAN.md) for details.

@@ -52,7 +52,9 @@ Each script prints **one JSON object**: `{ "ok": true, ... }` or `{ "ok": false,
 | `npm.mjs search` · `info <pkg>` · `pypi.mjs info <pkg>` | Packages |
 | `hn.mjs search <keywords> [--tags show_hn]` | Hacker News demand and launches |
 | `readme.mjs get <owner/repo> [...]` | Condensed READMEs (intro, features, usage, limitations); no API calls |
+| `verify.mjs <evidence.json>` | Fact-check: drops missing repos/links, fixes renames and numbers (required) |
 | `score.mjs <evidence.json>` | Scores and verdict (required) |
+| `card.mjs <evidence.json>` | Shareable 1200×630 verdict card (`card.html`) |
 
 ## Workflow
 
@@ -64,7 +66,7 @@ Follow `references/methodology.md` for the full detail of each phase.
 4. **Gaps** (launch: full · me: short · fun: skip): evidenced weaknesses and unmet requests.
 5. **Building blocks:** catalog first, then live search, per component. Recommend 🧱 use · 🍴 fork · 💡 learn · 🤝 contribute, respecting license classes.
 6. **Score:** write `evidence.json` (schema in `references/evidence-schema.md`), run `score.mjs`.
-7. **Check facts and write:** re-check every cited GitHub repo **that is not from the catalog** with `github.mjs repo` (drop anything `found:false`, update numbers). Catalog entries are already verified weekly, so use their snapshot stats and don't spend GitHub calls on them. Re-run `score.mjs` if anything changed, then write the report from `references/report-template.md` and print the chat summary.
+7. **Check facts and write:** run `verify.mjs evidence.json`. It drops repos and links that don't exist, fixes renames and drifted numbers, uses the snapshot for catalog entries (no GitHub calls), and warns about recommended repos whose README you haven't read: read those before continuing. Then run `score.mjs` again, write `report.md` from `references/report-template.md`, run `card.mjs evidence.json`, and print the chat summary.
 
 In Claude Code, run phases 2, 3 and 5 as **three parallel sub-agents** using the briefs in `references/subagents.md`. Elsewhere, run them in sequence.
 
@@ -87,7 +89,8 @@ Purpose adjusts this further: `fun` and `me` skip demand; `fun` also skips gaps 
 
 Write to `check-reports/<YYYY-MM-DD>-<idea-slug>/` in the current working directory:
 
-- `evidence.json`: everything collected, plus the scores written by `score.mjs`
+- `evidence.json`: everything collected, plus the verification and scores written by `verify.mjs` and `score.mjs`
 - `report.md`: the full report (`references/report-template.md`)
+- `card.html`: the shareable verdict card (open it in a browser and screenshot it, or share the file)
 
-Then print the chat summary: headline, scores (launch only), closest existing project, top gap, top building blocks, next step, and the report path.
+Then print the chat summary: headline, scores (launch only), closest existing project, top gap, top building blocks, next step, and the paths to the report and card.
