@@ -14,14 +14,14 @@ A case passes when every `must_find` project appears among the competitors, the 
 |---|---|---|---|---|---|
 | 1 | Design extractor skill | launch | 2/2 (13 direct found) | DROP | ✅ |
 | 2 | Wrapped for coding agents | launch | 2/2 | CONTRIBUTE | ✅ |
-| 3 | Social deep-research skill | launch | 1/2 | CONTRIBUTE | ❌ missed Agent-Reach |
+| 3 | Social deep-research skill | launch | 2/2 | CONTRIBUTE | ✅ after catalog refresh |
 | 4 | Idea checker skill (this project) | launch | 2/2 | BUILD_WITH_ANGLE | ✅ |
 | 5 | Todo web app (control: crowded) | launch | 13 competitors | DROP | ✅ after tuning |
 | 6 | Norwegian accessibility audit skill (control: niche) | launch | – | BUILD_WITH_ANGLE | ✅ |
 | 7 | Todo app to learn React | fun | – | hidden | ✅ |
 | 8 | Recipe organizer for myself | me | – | hidden | ✅ |
 
-**7 of 8 pass.** Case 3 found last30days and landed on an expected verdict, but missed Agent-Reach (98.6k ⭐). The agent searched "X" instead of "Twitter", and the repo was not in the catalog. Both are fixed: the search checklist now asks for alternative names, and Agent-Reach is in the catalog. The case has not been rerun since.
+**8 of 8 pass.** Case 3 first missed Agent-Reach (98.6k ⭐): the agent searched "X" instead of "Twitter", and the repo was not in the catalog. The search checklist now asks for alternative names, and a catalog refresh added every qualifying repo with 3,000+ stars created since September 2025 (732 repos). The rerun found both known competitors.
 
 Every run also passed the fact-check: all cited repos, packages and links existed, with 0 corrections and 0 drops across the runs.
 
@@ -45,7 +45,7 @@ Wave 2 (cases 2, 4–8, after tuning):
 
 ## Known limits
 
-- **The catalog under-covers 2026's agent wave.** A check of repos with 15k+ stars created since September 2025 found most of them missing from the catalog. Live GitHub search still finds them, but the catalog-first step does not. A catalog refresh for recent repos is the top follow-up.
+- **The catalog needs regular refreshes.** Before the v1.0.0 refresh, most big 2026 repos were missing. Repos that become popular after a refresh are found by live search until the next weekly update adds them.
 - `coverage_pct` and `gap_score` are still the agent's judgement. The rules cap them by evidence, but a borderline coverage estimate (around 80 %) can still decide between CONTRIBUTE and BUILD_WITH_ANGLE.
 - The catalog holds building blocks, not end-user apps. For app ideas, competitors come from GitHub and web search.
 - GitHub's search limit is shared across everything using the same token. Parallel runs can hit it; the scripts wait for the reset.
