@@ -71,6 +71,23 @@ test('rstToMarkdown turns underlined titles into headings and drops image direct
   assert.match(text, /interface/);
 });
 
+test('sub-paths read a skill or plugin folder inside a bigger repo', async () => {
+  assert.deepEqual(readme.subPathCandidates('codex-wrapped').slice(0, 3), ['codex-wrapped/SKILL.md', 'codex-wrapped/README.md', 'codex-wrapped/readme.md']);
+  assert.ok(readme.subPathCandidates('codex-wrapped').includes('skills/codex-wrapped/SKILL.md'));
+  const calls = [];
+  globalThis.fetch = async (url) => {
+    calls.push(String(url));
+    return String(url).endsWith('/skills/codex-wrapped/SKILL.md')
+      ? new Response('# Codex Wrapped\n\nA yearly recap of your Codex sessions.', { status: 200 })
+      : new Response('nf', { status: 404 });
+  };
+  const r = await readme.getReadme('openai/skills/codex-wrapped');
+  assert.equal(r.found, true);
+  assert.equal(r.id, 'github:openai/skills/codex-wrapped');
+  assert.match(r.excerpt, /yearly recap/);
+  assert.ok(calls.every((u) => u.startsWith('https://raw.githubusercontent.com/openai/skills/HEAD/')));
+});
+
 test('getReadme tries README variants on raw.githubusercontent.com', async () => {
   const calls = [];
   globalThis.fetch = async (url) => {

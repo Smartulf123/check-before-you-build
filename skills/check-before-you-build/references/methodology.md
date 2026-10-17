@@ -22,7 +22,14 @@ Produce the `idea` object:
 - `form_factors`: from `skill`, `plugin`, `mcp`, `cli`, `library`, `web-app`, `desktop-app`, `mobile-app`, `browser-extension`, `api`, `template`.
 - `target_user`.
 - `purpose`, `purpose_source`.
-- `search_terms`: short keyword sets (2–4 words each), **not sentences**. Cover the function, synonyms, jargon and the problem itself. Example for "a skill that extracts a website's design into DESIGN.md": `extract design system website`, `design tokens url`, `design md generator`, `brand style extractor`, `website style guide`, `topic:design-tokens`.
+- `search_terms`: short keyword sets (2–4 words each), **not sentences**. Competitors are most often missed because they describe the same thing in different words, so cover **all five angles**:
+  1. **The user's own words**: `invoice generator freelancers`
+  2. **Developer jargon**: `pdf invoice library`, `invoice template engine`
+  3. **Business or market words**: `billing software small business`, `invoicing saas`
+  4. **The problem itself**: `get paid faster`, `track unpaid invoices`
+  5. **Bigger tools that may include this as a feature**: `accounting app`, `time tracking billing`. A recap card might live inside a usage tracker, an idea checker inside a startup-validation skill. Read those READMEs for the feature.
+
+  Example for "a CLI that turns time logs into invoices": `invoice generator cli`, `time tracking invoice`, `billing cli freelancers`, `invoicing open source`, `time tracker`, `topic:invoice`. Search terms are discovery hints only; never cite a project because you remember it.
 - `components`: 2–6 technical building blocks ("headless browser automation", "computed CSS extraction", "markdown generation").
 - `categories`: catalog category slugs for the idea and its components (`node scripts/catalog.mjs categories`).
 
@@ -45,7 +52,7 @@ Ask one clarifying question only if no meaningful keywords can be derived (e.g. 
    - `partial`: big overlap but differs in form, scope or audience
    - `adjacent`: related, a building block or neighbour
    Give `match_reason` (one line) for every direct/partial match. Estimate `coverage_pct` (0–100) for direct matches: how much of the idea this project already delivers.
-7. Keep at most 15 competitors by relevance × popularity. **Always keep every direct match.** Set `candidates_evaluated` to the total number looked at, and `readme_read: true` on each competitor whose README you read.
+7. Keep **every direct match**, even if there are more than 15, plus partial and adjacent matches up to 15 entries in total, ranked by relevance × popularity. Set `candidates_evaluated` to the number of distinct projects whose description or README you actually judged (not raw search hits), and `readme_read: true` on each competitor whose README you read. Products without a public repo (commercial sites) don't need `readme_read`; read their site instead.
 
 **Judge relevance yourself.** npm and skills.sh rank by popularity, and GitHub search returns spam. Read descriptions. Fetch a README with web fetch when unsure.
 
@@ -54,7 +61,7 @@ Ask one clarifying question only if no meaningful keywords can be derived (e.g. 
 1. `hn.mjs search <keywords>` for the concept, and `--tags show_hn` for similar launches (points show how launches performed).
 2. `github.mjs issues <owner/repo>` for the top 3 (standard) or 5 (deep) direct/partial competitors. Feature requests and complaints are unmet demand. Titles matter even with few 👍.
 3. Web search: "how do I …", "is there a tool that …", forum and blog posts asking for this.
-4. Each item: `type` (`hn_story` | `github_issue` | `request` | `forum` | `web`), `title`, `url`, `date`, engagement (`points`, `reactions_plus1`, `comments`), and a verbatim `quote` of at most 25 words when there is one.
+4. Each item: `type` (`hn_story` | `github_issue` | `request` | `forum` | `web`), `title`, `url`, `date`, engagement (`points`, `reactions_plus1`, `comments`; leave a field out when it's unknown, don't guess), and a verbatim `quote` of at most 25 words when there is one. An issue with no 👍 counts for little; prefer evidence that several people want the thing.
 
 Competitor adoption is added automatically by `score.mjs`. Don't list it as a demand item.
 
@@ -64,9 +71,9 @@ Competitor adoption is added automatically by `score.mjs`. Don't list it as a de
 - Collect weaknesses of the top competitors from READMEs (limitations sections), open issues and complaints.
 - Unmet requests: demand items that no direct competitor satisfies.
 - Stale competitors: archived, or no push in over 12 months.
-- Write 1–4 gap statements. Each needs `evidence` (URLs) and `checked` (where you confirmed the competitors lack it, e.g. "designlang README", "dembrandt issues").
+- Write 1–4 gap statements. Each needs `evidence` (URLs) and `checked` (where you confirmed the competitors lack it, e.g. "competitor-a README", "competitor-b issues").
 - "Better UX" is not a gap unless users complain about the UX.
-- Set `gap_score` (0–10) from the rubric in `scoring.md`. `score.mjs` caps it at 3 without evidenced gaps.
+- Set `gap_score` (0–10) from the rubric in `scoring.md`. `score.mjs` caps it by the evidence: no evidenced gap → 2, one → 6, two or three → 8, four or more (or no active direct competitor) → 10. So write a separate statement for each distinct gap you can evidence.
 
 ## Phase 5: Building blocks
 
@@ -79,25 +86,27 @@ Competitor adoption is added automatically by `score.mjs`. Don't list it as a de
 7. License classes: permissive (MIT, Apache-2.0, BSD, ISC, MPL-2.0) → any type. Copyleft (GPL/AGPL/LGPL) → use/learn/contribute; fork only with a warning. None → learn only ("no license: you have no right to copy this code"). Other → learn only.
 8. 2–4 blocks per component, at most 12 in total. For `fun`, include more 💡 learn examples (well-documented projects worth reading).
 
-## Phase 6: Score
+## Phase 6: Check facts, then score
 
-Write `evidence.json` following `evidence-schema.md`, then run:
+Write `evidence.json` following `evidence-schema.md`. Set `rate_limited: true` if a rate limit cut any search short even after retrying (a pause that recovered doesn't count). Then:
 
 ```
-node <skill-dir>/scripts/score.mjs check-reports/<dir>/evidence.json
+node <skill-dir>/scripts/verify.mjs check-reports/<dir>/evidence.json
+node <skill-dir>/scripts/score.mjs  check-reports/<dir>/evidence.json
 ```
 
-It validates the file, computes saturation, demand and gap, applies verdict rules 1–7 and writes the result back. If it reports `ValidationError`, fix the evidence and run it again. Never write the verdict yourself.
+Verify first: it drops what doesn't exist and refreshes the numbers that scoring uses (details in phase 7). If verify lists `readme_missing`, read those READMEs, set `readme_read: true`, and run verify again before scoring. `score.mjs` validates the file, computes saturation, demand and gap, applies verdict rules 1–7 and writes the result back. If it reports `ValidationError`, fix the evidence and run it again. Never write the verdict yourself.
 
-## Phase 7: Check facts and write
+## Phase 7: Write
 
-1. Run `node <skill-dir>/scripts/verify.mjs check-reports/<dir>/evidence.json`. It:
-   - verifies catalog entries from the weekly snapshot (no GitHub calls)
-   - re-fetches every other GitHub repo and npm package: missing → `verified: false`; renamed → id and URL updated; numbers refreshed, with > 10 % drift logged as corrections
-   - checks demand and product URLs: dead demand links are dropped, unreachable product sites are kept with `link_status: "unreachable"`
-   - writes `verification: { checked, passed, corrected, dropped }` into the file
-   - lists `readme_missing`: recommended repos whose README you haven't read. Read them now (`readme.mjs get`), set `readme_read: true`, and re-run `verify.mjs`.
-2. Re-run `score.mjs` (verification affects confidence, and dropped items affect scores).
-3. Write `report.md` from `report-template.md`, using only items with `verified !== false`. Mention any corrections or dropped items in "Method and coverage".
-4. Run `node <skill-dir>/scripts/card.mjs check-reports/<dir>/evidence.json` to write `card.html`.
-5. Print the chat summary, including the report and card paths.
+What `verify.mjs` (run in phase 6) does:
+- verifies catalog entries from the weekly snapshot (no GitHub calls)
+- re-fetches every other GitHub repo (`github:` ids) and npm package: missing → `verified: false`; renamed → id and URL updated; numbers refreshed, with > 10 % drift logged as corrections. Skills, plugins and MCP servers that live inside a bigger repo keep their own signals (they never inherit the host repo's stars).
+- checks demand and product URLs: dead demand links are dropped, unreachable product sites are kept with `link_status: "unreachable"`
+- writes `verification: { checked, passed, corrected, dropped }` into the file
+- lists `readme_missing` for shortlisted items that have a README you haven't read
+
+Then:
+1. Write `report.md` from `report-template.md`, using only items with `verified !== false`. Mention any corrections or dropped items in "Method and coverage". If your environment doesn't let you write files, print the full report in the chat instead.
+2. Run `node <skill-dir>/scripts/card.mjs check-reports/<dir>/evidence.json` to write `card.html`.
+3. Print the chat summary, including the report and card paths.

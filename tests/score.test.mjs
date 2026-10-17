@@ -120,10 +120,43 @@ test('rule 7: mixed evidence → UNCLEAR', () => {
   assert.equal(s.scoreEvidence(e, NOW).verdict.code, 'UNCLEAR');
 });
 
-test('gap is capped at 3 without evidenced gap statements', () => {
-  assert.equal(s.gap({ gap_score: 8, gaps: [] }).score, 3);
-  assert.equal(s.gap({ gap_score: 8, gaps: [{ statement: 'x', evidence: [] }] }).score, 3);
-  assert.equal(s.gap({ gap_score: 8, gaps: [{ statement: 'x', evidence: ['u'] }] }).score, 8);
+test('gap is capped by the amount of evidence', () => {
+  const active = [comp()];
+  const g = (n, score = 9, competitors = active) =>
+    s.gap({ gap_score: score, competitors, gaps: Array.from({ length: n }, (_, i) => ({ statement: `g${i}`, evidence: ['u'] })) }, NOW).score;
+  assert.equal(g(0), 2);
+  assert.equal(s.gap({ gap_score: 8, competitors: active, gaps: [{ statement: 'x', evidence: [] }] }, NOW).score, 2);
+  assert.equal(g(1), 6);
+  assert.equal(g(3), 8);
+  assert.equal(g(4), 9);
+  // no active direct competitor lifts the cap
+  assert.equal(g(0, 9, [comp({ signals: { pushed_at: daysAgo(700) } })]), 9);
+  assert.equal(s.gapCap(0, false), 2);
+});
+
+test('issues without reactions count little as demand', () => {
+  assert.equal(s.demandWeight({ type: 'github_issue', reactions_plus1: 0 }), 0.3);
+  assert.equal(s.demandWeight({ type: 'github_issue', reactions_plus1: 3 }), 0.6);
+  assert.equal(s.demandWeight({ type: 'github_issue', reactions_plus1: 12 }), 1.5);
+});
+
+test('CONTRIBUTE and FORK need a target with real adoption', () => {
+  const tinyActive = comp({ coverage_pct: 90, signals: { stars: 12 } });
+  const e = evidence({
+    competitors: [tinyActive, comp({ id: 'github:c/d', signals: { stars: 15 } })],
+    demand: [request(), request(), request()],
+    gaps: [{ statement: 'g', evidence: ['u'] }],
+    gap_score: 6,
+  });
+  const r = s.scoreEvidence(e, NOW);
+  assert.notEqual(r.verdict.code, 'CONTRIBUTE');
+  const tinyStale = evidence({
+    competitors: [comp({ coverage_pct: 80, signals: { stars: 20, pushed_at: daysAgo(700) } })],
+    demand: [request(), request(), request()],
+    gaps: [{ statement: 'g', evidence: ['u'] }],
+    gap_score: 6,
+  });
+  assert.notEqual(s.scoreEvidence(tinyStale, NOW).verdict.code, 'FORK');
 });
 
 test('confidence: high needs verification; failures and thin results lower it', () => {

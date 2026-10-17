@@ -67,7 +67,11 @@ export function saturation(competitors, now) {
 
 export function demandWeight(item) {
   if (item.type === 'hn_story') return (item.points ?? 0) >= 50 ? 1.5 : 0.3;
-  if (item.type === 'github_issue') return (item.reactions_plus1 ?? 0) >= 10 ? 1.5 : 1.0;
+  if (item.type === 'github_issue') {
+    // An issue nobody reacted to is one person's wish, not demand (tuned after the M6 eval runs).
+    const plus1 = item.reactions_plus1 ?? 0;
+    return plus1 >= 10 ? 1.5 : plus1 >= 1 ? 0.6 : 0.3;
+  }
   return 1.0; // request, forum, web, blog: an explicit request or complaint
 }
 
@@ -78,13 +82,28 @@ export function demand(items, competitors) {
   return { raw: round1(D), score: round1(10 * (1 - Math.exp(-D / 4))) };
 }
 
-/** Model-scored gap, capped at 3 when no evidenced gap statement exists. */
-export function gap(evidence) {
-  const evidenced = (evidence.gaps || []).filter((g) => g.statement && (g.evidence || []).length > 0);
-  const raw = Number(evidence.gap_score ?? 0);
-  const score = Math.max(0, Math.min(10, evidenced.length ? raw : Math.min(raw, 3)));
-  return { score, evidenced_gaps: evidenced.length };
+/**
+ * Model-scored gap, capped by the evidence so the verdict doesn't hinge on gut feel:
+ * no evidenced gap → ≤ 2 · one → ≤ 6 · two or three → ≤ 8 · four+, or no active direct competitor → ≤ 10.
+ */
+export function gapCap(evidencedCount, noActiveDirect) {
+  if (noActiveDirect || evidencedCount >= 4) return 10;
+  if (evidencedCount >= 2) return 8;
+  if (evidencedCount === 1) return 6;
+  return 2;
 }
+
+export function gap(evidence, now = Date.now()) {
+  const evidenced = (evidence.gaps || []).filter((g) => g.statement && (g.evidence || []).length > 0);
+  const direct = usable(evidence.competitors).filter((c) => c.match === 'direct');
+  const noActiveDirect = direct.every((c) => c.signals?.archived || (daysSincePush(c, now) ?? 0) > 365);
+  const cap = gapCap(evidenced.length, noActiveDirect);
+  const raw = Number(evidence.gap_score ?? 0);
+  return { score: Math.max(0, Math.min(cap, raw)), evidenced_gaps: evidenced.length, cap };
+}
+
+/** A project worth joining or reviving needs real adoption (≈ 250+ stars or equivalent). */
+export const MIN_ADOPTION_TO_JOIN = 0.6;
 
 export function decideVerdict({ sat, dem, gapScore, competitors, now }) {
   const direct = usable(competitors).filter((c) => c.match === 'direct');
@@ -95,7 +114,10 @@ export function decideVerdict({ sat, dem, gapScore, competitors, now }) {
 
   const joinable = direct.find((c) => {
     const days = daysSincePush(c, now);
-    return days !== null && days <= 90 && !c.signals?.archived && permissive(c) && (c.coverage_pct ?? 0) >= 80;
+    return (
+      days !== null && days <= 90 && !c.signals?.archived && permissive(c) &&
+      (c.coverage_pct ?? 0) >= 80 && popularity(c) >= MIN_ADOPTION_TO_JOIN
+    );
   });
   if (joinable) return { code: 'CONTRIBUTE', rule: 3, reason: `${joinable.name} is active and already covers most of the idea.`, target: joinable.id };
 
@@ -103,7 +125,7 @@ export function decideVerdict({ sat, dem, gapScore, competitors, now }) {
   if (best) {
     const days = daysSincePush(best, now);
     const inactive = best.signals?.archived || (days !== null && days > 365);
-    if (inactive && permissive(best) && (best.coverage_pct ?? 60) >= 60) {
+    if (inactive && permissive(best) && (best.coverage_pct ?? 60) >= 60 && popularity(best) >= MIN_ADOPTION_TO_JOIN) {
       return { code: 'FORK', rule: 4, reason: `${best.name} fits well but is no longer maintained.`, target: best.id };
     }
   }
@@ -175,11 +197,11 @@ export function scoreEvidence(evidence, now = Date.now()) {
   const competitors = evidence.competitors || [];
   const sat = saturation(competitors, now);
   const dem = demand(evidence.demand || [], competitors);
-  const g = gap(evidence);
+  const g = gap(evidence, now);
   const verdict = decideVerdict({ sat: sat.score, dem: dem.score, gapScore: g.score, competitors, now });
   return {
     scores: { saturation: sat.score, demand: dem.score, gap: g.score },
-    score_details: { coverage: sat.coverage, demand_raw: dem.raw, evidenced_gaps: g.evidenced_gaps },
+    score_details: { coverage: sat.coverage, demand_raw: dem.raw, evidenced_gaps: g.evidenced_gaps, gap_cap: g.cap },
     verdict: { ...verdict, label: LABELS[verdict.code], confidence: confidence(evidence) },
     display: display(verdict.code, evidence.idea.purpose, sat.score),
   };

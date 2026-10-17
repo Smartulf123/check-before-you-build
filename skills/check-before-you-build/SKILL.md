@@ -65,8 +65,8 @@ Follow `references/methodology.md` for the full detail of each phase.
 3. **Demand** (launch only): HN, competitor issues sorted by 👍, web.
 4. **Gaps** (launch: full · me: short · fun: skip): evidenced weaknesses and unmet requests.
 5. **Building blocks:** catalog first, then live search, per component. Recommend 🧱 use · 🍴 fork · 💡 learn · 🤝 contribute, respecting license classes.
-6. **Score:** write `evidence.json` (schema in `references/evidence-schema.md`), run `score.mjs`.
-7. **Check facts and write:** run `verify.mjs evidence.json`. It drops repos and links that don't exist, fixes renames and drifted numbers, uses the snapshot for catalog entries (no GitHub calls), and warns about recommended repos whose README you haven't read: read those before continuing. Then run `score.mjs` again, write `report.md` from `references/report-template.md`, run `card.mjs evidence.json`, and print the chat summary.
+6. **Check facts, then score:** write `evidence.json` (schema in `references/evidence-schema.md`) and run `verify.mjs evidence.json`. It drops repos and links that don't exist, fixes renames and drifted numbers, uses the snapshot for catalog entries (no GitHub calls), and lists shortlisted repos whose README you haven't read: read those, then verify again. Then run `score.mjs evidence.json` once.
+7. **Write:** `report.md` from `references/report-template.md` (if you can't write files, print the report in the chat), run `card.mjs evidence.json`, and print the chat summary.
 
 In Claude Code, run phases 2, 3 and 5 as **three parallel sub-agents** using the briefs in `references/subagents.md`. Elsewhere, run them in sequence.
 

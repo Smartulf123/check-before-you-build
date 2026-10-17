@@ -124,23 +124,39 @@ async function fetchCandidate(fullName, file) {
   return { url, text };
 }
 
-export async function getReadme(fullName, { maxChars = 5000, full = false } = {}) {
-  if (!/^[\w.-]+\/[\w.-]+$/.test(fullName || '')) throw new Error('expected owner/repo');
+/** Files to try for a sub-path: a skill or plugin folder inside a bigger repo. */
+export function subPathCandidates(sub) {
+  const last = sub.split('/').pop();
+  const dirs = [...new Set([sub, `skills/${last}`, `plugins/${last}`])];
+  return dirs.flatMap((d) => [`${d}/SKILL.md`, `${d}/README.md`, `${d}/readme.md`]);
+}
+
+export async function getReadme(id, { maxChars = 5000, full = false } = {}) {
+  const m = /^([\w.-]+\/[\w.-]+)(?:\/([\w./-]+))?$/.exec(id || '');
+  if (!m) throw new Error('expected owner/repo or owner/repo/path');
+  const [, fullName, sub] = m;
   let found = null;
-  for (const file of CANDIDATES) {
+  for (const file of sub ? subPathCandidates(sub.replace(/\/+$/, '')) : CANDIDATES) {
     found = await fetchCandidate(fullName, file);
     if (found) break;
   }
+  if (!found && sub) {
+    // fall back to the repo README when the folder has none
+    for (const file of CANDIDATES) {
+      found = await fetchCandidate(fullName, file);
+      if (found) break;
+    }
+  }
   // A tiny root README (contributor notes, a pointer) often has a fuller sibling in .github/.
-  if (found && found.text.length < 800 && !found.url.includes('/.github/')) {
+  if (!sub && found && found.text.length < 800 && !found.url.includes("/.github/")) {
     const alt = await fetchCandidate(fullName, '.github/README.md');
     if (alt && alt.text.length > found.text.length) found = alt;
   }
-  if (!found) return { id: `github:${fullName}`, found: false };
+  if (!found) return { id: `github:${id}`, found: false };
   const { url, text } = found;
-  if (full) return { id: `github:${fullName}`, found: true, source_url: url, chars_original: text.length, excerpt: text };
+  if (full) return { id: `github:${id}`, found: true, source_url: url, chars_original: text.length, excerpt: text };
   const { text: excerpt, headings } = condense(text, maxChars);
-  return { id: `github:${fullName}`, found: true, source_url: url, chars_original: text.length, excerpt, headings };
+  return { id: `github:${id}`, found: true, source_url: url, chars_original: text.length, excerpt, headings };
 }
 
 if (isMain(import.meta.url)) {

@@ -36,7 +36,7 @@ Limits: 30 searches/min with a token (from `gh auth token` or `GITHUB_TOKEN`), 1
 ```
 skills.mjs search <keywords...> [--limit 30]
 ```
-Signal: `installs`. No descriptions. Use the name and `github` repo, and fetch the repo when unsure. The endpoint is undocumented: a failure means the source failed, not that no skills exist.
+Signal: `signals.installs`. No descriptions. Use the name and `github` repo, and fetch the repo when unsure. The endpoint is undocumented: a failure means the source failed, not that no skills exist.
 
 ### plugins.mjs
 ```
@@ -68,6 +68,8 @@ hn.mjs search <keywords...> [--limit 20] [--tags story|show_hn|ask_hn|comment] [
 readme.mjs get <owner/repo> [<owner/repo> ...] [--max-chars 5000] [--full]
 ```
 Fetches READMEs from raw.githubusercontent.com (**no GitHub API calls**), follows monorepo README links, and condenses them to the intro plus feature, usage, limitation and comparison sections (install guides, badges, images and long code blocks are dropped). Pass several repos per call. Use `--full` only when the condensed version leaves a key question open.
+
+Accepts `owner/repo/sub/path` for a skill or plugin folder inside a bigger repo (tries `SKILL.md` and `README.md` there, then the repo README). Output: `{ source: "readme", results: [{ id, found, source_url, chars_original, excerpt, headings }] }`. Read `excerpt`.
 
 ### score.mjs
 ```

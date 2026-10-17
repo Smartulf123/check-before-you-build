@@ -22,14 +22,14 @@
 | 7–8 | Several evidenced gaps, or top competitors are stale |
 | 9–10 | No real competitor, or all stale/archived, while demand exists |
 
-Capped at 3 if there are no gap statements with evidence.
+`score.mjs` caps the score by the number of gap statements that have evidence: none → 2, one → 6, two or three → 8, four or more → 10. With no active direct competitor the cap is lifted (10).
 
 ## Formulas
 
 - **popularity** (0–1): each signal is normalised on its own scale (stars `log10(n+1)/4` · installs `/4.5` · npm weekly downloads `/5` · Smithery uses `/4`), and the **strongest** across `signals` and `other_signals` wins. Raw numbers are never mixed. Commercial products: 0.7 with traction, else 0.4
 - **activity:** archived 0 · pushed ≤ 90 days 1.0 · ≤ 365 days 0.6 · older 0.2 · unknown 0.6
 - **saturation** = `10 × (1 − e^(−Σ match_weight × activity × popularity))`, with match weights direct 1.0 · partial 0.5 · adjacent 0.1
-- **demand** = `10 × (1 − e^(−D/4))`. D sums: request/forum/web 1.0 · GitHub issue 1.0 (1.5 with ≥ 10 👍) · HN story 0.3 (1.5 with ≥ 50 points) · plus 2.0 for each direct competitor with popularity ≥ 0.8 (max 2)
+- **demand** = `10 × (1 − e^(−D/4))`. D sums: request/forum/web 1.0 · GitHub issue 0.3 (0.6 with ≥ 1 👍, 1.5 with ≥ 10 👍) · HN story 0.3 (1.5 with ≥ 50 points) · plus 2.0 for each direct competitor with popularity ≥ 0.8 (max 2)
 - Items with `verified: false` are ignored.
 
 ## Verdict rules (first match wins)
@@ -38,8 +38,8 @@ Capped at 3 if there are no gap statements with evidence.
 |---|---|---|---|
 | 1 | demand < 3 | DROP | 📚 Already well covered |
 | 2 | saturation ≥ 7 and gap < 3 | DROP | 📚 Already well covered |
-| 3 | a direct competitor active ≤ 90 days, permissive, coverage ≥ 80 % | CONTRIBUTE | 🤝 You could join an existing project |
-| 4 | the most popular direct competitor is archived or inactive > 365 days, permissive, coverage ≥ 60 % | FORK | 🍴 Revive an abandoned project |
+| 3 | a direct competitor active ≤ 90 days, permissive, coverage ≥ 80 %, popularity ≥ 0.6 | CONTRIBUTE | 🤝 You could join an existing project |
+| 4 | the most popular direct competitor is archived or inactive > 365 days, permissive, coverage ≥ 60 %, popularity ≥ 0.6 | FORK | 🍴 Revive an abandoned project |
 | 5 | saturation < 4 and demand ≥ 4 | BUILD | ✅ Open space: go build it |
 | 6 | gap ≥ 5 | BUILD_WITH_ANGLE | 🔀 Build it with an angle |
 | 7 | otherwise | UNCLEAR | ❔ Mixed signals |

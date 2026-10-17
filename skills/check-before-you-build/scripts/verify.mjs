@@ -23,10 +23,15 @@ async function loadSnapshot() {
   }
 }
 
+// Only items that ARE a GitHub repo are verified as one. A skill, plugin or MCP server that lives
+// inside a bigger repo (e.g. a plugin in a marketplace repo) must not inherit that repo's stars.
 const repoOf = (item) => {
-  const m = /^github:([\w.-]+\/[\w.-]+)$/.exec(item.id || '') || /github\.com\/([\w.-]+\/[\w.-]+?)(?:[/#?]|$)/.exec(item.url || '');
+  const m = /^github:([\w.-]+\/[\w.-]+)$/.exec(item.id || '');
   return m ? m[1] : null;
 };
+
+/** Items that have a README to read: GitHub repos, or packages/skills that link one. */
+const hasReadme = (item) => Boolean(repoOf(item) || item.github);
 
 /** Compare numeric signals; replace drifted values and return the corrections made. */
 export function correctDrift(item, live, fields = ['stars', 'installs', 'downloads_weekly', 'uses']) {
@@ -125,10 +130,12 @@ export async function verifyEvidence(evidence, { snapshot = null, catalogIds = n
     if (b.verified === false) continue;
     const handled = await verifyRepoItem(b);
     if (handled === null && (b.id || '').startsWith('npm:')) await verifyNpmItem(b);
-    if (b.verified !== false && !b.readme_read) log.readme_missing.push(b.id);
+    else if (handled === null && b.url) await verifyUrlItem(b, { dropDead: true });
+    if (b.verified !== false && hasReadme(b) && !b.readme_read) log.readme_missing.push(b.id);
   }
   for (const c of evidence.competitors || []) {
-    if (c.verified !== false && (c.match === 'direct' || c.match === 'partial') && !c.readme_read) log.readme_missing.push(c.id);
+    const shortlisted = c.match === 'direct' || c.match === 'partial';
+    if (c.verified !== false && shortlisted && hasReadme(c) && !c.readme_read) log.readme_missing.push(c.id);
   }
   for (const d of evidence.demand || []) {
     if (d.verified === false) continue;

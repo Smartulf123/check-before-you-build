@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "check-before-you-build",
+  "owner": {
+    "name": "Smartulf123",
+    "url": "https://github.com/Smartulf123"
+  },
+  "description": "Install check-before-you-build as a Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "check-before-you-build",
+      "source": "./",
+      "description": "Check whether an idea already exists and what to build it with: cited verdict, demand evidence and a curated catalog of 1,170 building-block repos.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["idea-validation", "research", "github", "agent-skills", "mcp", "building-blocks", "vibe-coding"]
+    }
+  ]
+}

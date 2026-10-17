@@ -75,6 +75,20 @@ test('dead demand links are dropped; unreachable product sites are kept and labe
   assert.equal(log.labelled.length, 1);
 });
 
+test('plugins inside a bigger repo keep their own signals; products and non-repo items need no README', async () => {
+  const calls = mockFetch([['github.com/anthropics/claude-plugins-official', { status: 200 }], ['acme.example', { status: 200 }]]);
+  const evidence = {
+    competitors: [
+      { id: 'plugin:receipts', url: 'https://github.com/anthropics/claude-plugins-official/tree/main/plugins/receipts', match: 'direct', signals: {} },
+      { id: 'commercial:acme', url: 'https://acme.example', source: 'commercial', match: 'direct' },
+    ],
+  };
+  const { log } = await verifyEvidence(evidence);
+  assert.equal(evidence.competitors[0].signals.stars, undefined); // no marketplace-repo stars
+  assert.ok(!calls.some((u) => u.includes('api.github.com')));
+  assert.deepEqual(log.readme_missing, []);
+});
+
 test('recommended repos without a read README are flagged', async () => {
   const evidence = {
     competitors: [{ id: 'github:a/b', url: 'https://github.com/a/b', match: 'direct', from_catalog: true }],

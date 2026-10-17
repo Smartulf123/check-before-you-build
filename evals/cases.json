@@ -6,29 +6,54 @@
       "id": "1-design-extractor",
       "idea": "A skill that extracts a website's design into DESIGN.md so my coding agent can build in the same style. I want to launch it on GitHub.",
       "purpose": "launch",
-      "must_find": ["Manavarya09/design-extract", "dembrandt/dembrandt"],
-      "expected_verdicts": ["BUILD_WITH_ANGLE", "DROP", "CONTRIBUTE"]
+      "must_find": [
+        "Manavarya09/design-extract",
+        "dembrandt/dembrandt"
+      ],
+      "expected_verdicts": [
+        "BUILD_WITH_ANGLE",
+        "DROP",
+        "CONTRIBUTE"
+      ]
     },
     {
       "id": "2-agent-wrapped",
       "idea": "A Spotify Wrapped style yearly recap for AI coding agents like Claude Code and Codex, made from local session logs, to share on social media.",
       "purpose": "launch",
-      "must_find": ["junhoyeo/tokscale", "numman-ali/cc-wrapped"],
-      "expected_verdicts": ["DROP", "BUILD_WITH_ANGLE"]
+      "must_find": [
+        "junhoyeo/tokscale",
+        "numman-ali/cc-wrapped"
+      ],
+      "expected_verdicts": [
+        "DROP",
+        "BUILD_WITH_ANGLE"
+      ]
     },
     {
       "id": "3-social-research",
       "idea": "An agent skill that does deep research across Reddit, X, YouTube and Hacker News and writes a cited report. Open source launch.",
       "purpose": "launch",
-      "must_find": ["mvanhorn/last30days-skill", "Panniantong/Agent-Reach"],
-      "expected_verdicts": ["DROP", "BUILD_WITH_ANGLE", "CONTRIBUTE"]
+      "must_find": [
+        "mvanhorn/last30days-skill",
+        "Panniantong/Agent-Reach"
+      ],
+      "expected_verdicts": [
+        "DROP",
+        "BUILD_WITH_ANGLE",
+        "CONTRIBUTE"
+      ]
     },
     {
       "id": "4-check-before-you-build",
       "idea": "An agent skill that checks if a software idea already exists on GitHub, skills.sh and MCP registries, checks demand, and recommends repos to build it with. I want to launch it.",
       "purpose": "launch",
-      "must_find": ["mnemox-ai/idea-reality-mcp", "ferdinandobons/startup-skill"],
-      "expected_verdicts": ["BUILD_WITH_ANGLE"]
+      "must_find": [
+        "mnemox-ai/idea-reality-mcp",
+        "ferdinandobons/startup-skill"
+      ],
+      "expected_verdicts": [
+        "BUILD_WITH_ANGLE"
+      ]
     },
     {
       "id": "5-control-todo-app",
@@ -36,29 +61,39 @@
       "purpose": "launch",
       "must_find": [],
       "min_competitors": 3,
-      "expected_verdicts": ["DROP"]
+      "expected_verdicts": [
+        "DROP"
+      ]
     },
     {
       "id": "6-control-open-space",
-      "idea": "TODO: pick a niche with real demand and no direct competitor (Milestone 6).",
+      "idea": "An agent skill that checks a Norwegian company website against the Norwegian universal design (WCAG/uu-forskriften) rules and writes a prioritised fix list in Norwegian. I want to launch it.",
       "purpose": "launch",
-      "enabled": false,
+      "enabled": true,
       "must_find": [],
-      "expected_verdicts": ["BUILD"]
+      "expected_verdicts": [
+        "BUILD",
+        "BUILD_WITH_ANGLE"
+      ],
+      "notes": "Niche, regulation-driven demand; general accessibility tools exist but none Norwegian-specific as an agent skill."
     },
     {
       "id": "7-purpose-fun",
       "idea": "I want to build a todo app just for fun to learn React.",
       "purpose": "fun",
       "must_find": [],
-      "expect_display": { "show_verdict": false }
+      "expect_display": {
+        "show_verdict": false
+      }
     },
     {
       "id": "8-purpose-me",
       "idea": "A small tool for myself to organize my recipes.",
       "purpose": "me",
       "must_find": [],
-      "expect_display": { "show_verdict": false }
+      "expect_display": {
+        "show_verdict": false
+      }
     }
   ]
 }
