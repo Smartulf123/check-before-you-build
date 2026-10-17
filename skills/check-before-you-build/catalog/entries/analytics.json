@@ -20,7 +20,21 @@
       "why": "Lightweight, cookie-free Node analytics; simple to run alongside a site.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Self-hosted Node.js and MongoDB analytics that keeps tracked data anonymized, has no cookies, tracks events, offers a minimal UI and a documented GraphQL API. Runs via Docker Compose or environment configuration.",
+      "best_for": "Small sites wanting simple, cookie-free self-hosted analytics.",
+      "not_for": "Not a full marketing suite (use Matomo); requires running Node and MongoDB.",
+      "keywords": [
+        "web analytics",
+        "self-hosted",
+        "privacy",
+        "cookieless",
+        "graphql api",
+        "mongodb",
+        "gdpr",
+        "node",
+        "events"
+      ]
     },
     {
       "id": "DavidWells/analytics",
@@ -43,7 +57,21 @@
       "npm": "analytics",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Lightweight analytics abstraction for page views, events and identify calls, using plugins to send data to providers such as Google Analytics or Customer.io. Isomorphic, queues events until libraries load, supports lifecycle hooks, offline mode and TypeScript.",
+      "best_for": "Apps that want to swap or combine analytics vendors without rewriting tracking code.",
+      "not_for": "A client-side abstraction, not an analytics backend or dashboard; you still need providers.",
+      "keywords": [
+        "analytics abstraction",
+        "plugins",
+        "google analytics",
+        "segment alternative",
+        "event tracking",
+        "page views",
+        "identify",
+        "isomorphic",
+        "vendor lock-in"
+      ]
     },
     {
       "id": "aptabase/aptabase",
@@ -67,7 +95,21 @@
       "why": "Fills the gap for app (not website) analytics, with SDKs for Tauri, Electron, Flutter and Swift.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source, privacy-first analytics for mobile, desktop and web apps, with SDKs for Swift, React Native, Flutter, Electron, Kotlin and more. Tracks sessions without unique identifiers, includes a dashboard; managed cloud or self-hosted.",
+      "best_for": "Usage analytics for apps like Tauri/Electron/Flutter without user tracking.",
+      "not_for": "Minimal metrics by design (no per-user tracking, funnels or replay); self-hosting means you maintain it.",
+      "keywords": [
+        "app analytics",
+        "mobile analytics",
+        "electron",
+        "tauri",
+        "flutter",
+        "privacy",
+        "gdpr",
+        "sdk",
+        "firebase alternative"
+      ]
     },
     {
       "id": "allinurl/goaccess",
@@ -89,7 +131,21 @@
       "why": "No tracking script needed; works straight from Nginx/Apache logs.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Real-time web log analyzer that parses server access logs and displays stats in a terminal or live HTML dashboard, with response-time tracking and WebSocket auth. Needs minimal configuration.",
+      "best_for": "Quick traffic and error insight from Nginx or Apache logs without tracking scripts.",
+      "not_for": "Log-based, so no client-side events, funnels or user behavior; bot traffic and caching affect counts.",
+      "keywords": [
+        "log analyzer",
+        "nginx",
+        "apache",
+        "access log",
+        "terminal dashboard",
+        "real-time",
+        "html report",
+        "web stats",
+        "devops"
+      ]
     },
     {
       "id": "growthbook/growthbook",
@@ -116,7 +172,21 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source feature flags and experimentation platform with 24 SDKs, advanced targeting, gradual rollouts and a stats engine (CUPED, sequential, Bayesian, SRM checks). Warehouse-native: SQL-defined metrics over sources like BigQuery and Snowflake. Self-host via Docker or use cloud.",
+      "best_for": "A/B testing and feature flagging with analysis on your existing data warehouse.",
+      "not_for": "Needs a data warehouse/event pipeline for analysis; more setup than simple flag libraries.",
+      "keywords": [
+        "feature flags",
+        "ab testing",
+        "experimentation",
+        "warehouse native",
+        "bayesian",
+        "sdk",
+        "cuped",
+        "rollouts",
+        "growthbook"
+      ]
     },
     {
       "id": "jitsucom/jitsu",
@@ -137,7 +207,21 @@
       "why": "Open MIT-licensed Segment alternative for event ingestion into ClickHouse, BigQuery and more.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "MIT-licensed event data platform (Segment alternative) that collects events from web, mobile and servers and delivers them to warehouses and tools such as ClickHouse, BigQuery, Snowflake, Postgres and S3. Offers JavaScript functions to transform events and a Segment proxy.",
+      "best_for": "Streaming event data into your warehouse with self-hosting and volume-based billing.",
+      "not_for": "A pipeline, not a dashboard or analysis tool. Self-hosting adds operational burden.",
+      "keywords": [
+        "event collection",
+        "segment alternative",
+        "data warehouse",
+        "clickhouse",
+        "bigquery",
+        "cdp",
+        "etl",
+        "event streaming",
+        "self-hosted"
+      ]
     },
     {
       "id": "matomo-org/matomo",
@@ -160,7 +244,21 @@
       "why": "The most complete open analytics platform with goals, funnels, heatmaps and full data ownership.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Full-featured PHP/MySQL web analytics you host yourself as a Google Analytics alternative, with a JavaScript tracking tag and real-time reports. Used on 1.4M+ sites; cloud trial available.",
+      "best_for": "Complete self-hosted web analytics with data ownership.",
+      "not_for": "Needs PHP 8.1+ and MySQL 8/MariaDB 10.6 and ongoing maintenance; heavier than lightweight tools like Ackee. Some features are paid plugins.",
+      "keywords": [
+        "web analytics",
+        "google analytics alternative",
+        "self-hosted",
+        "php",
+        "mysql",
+        "privacy",
+        "piwik",
+        "reports",
+        "tracking"
+      ]
     },
     {
       "id": "Openpanel-dev/openpanel",
@@ -182,7 +280,21 @@
       "why": "Combines product and web analytics in one self-hostable AGPL stack with a clean SDK.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source web and product analytics combining Mixpanel-style funnels, cohorts and profiles with simple web analytics, session replay, A/B testing, revenue tracking and cookieless tracking. Self-hostable, with SDKs for web, mobile and server and an MCP server.",
+      "best_for": "Product and web analytics in one self-hosted stack.",
+      "not_for": "AGPL licensing may matter for some companies; full self-hosting is heavier than a simple web-analytics tool.",
+      "keywords": [
+        "product analytics",
+        "mixpanel alternative",
+        "funnels",
+        "retention",
+        "session replay",
+        "ab testing",
+        "self-hosted",
+        "cookieless",
+        "mcp"
+      ]
     },
     {
       "id": "openreplay/openreplay",
@@ -210,7 +322,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Self-hosted session replay and product analytics platform. It records user sessions with DevTools-style technical context (network, console, errors), adds product analytics, and supports live co-browsing. Privacy controls mask or skip data at capture time, before it reaches your servers.",
+      "best_for": "Teams that cannot send user data to third-party vendors and want replay, debugging context and analytics in one self-hosted stack.",
+      "not_for": "Small projects wanting a one-container setup; it is a multi-service platform to operate. Core is open-source under AGPL, with some features in an open-core/paid tier.",
+      "keywords": [
+        "session replay",
+        "self-hosted",
+        "cobrowsing",
+        "devtools",
+        "product analytics",
+        "privacy",
+        "user session recording",
+        "frontend debugging"
+      ]
     },
     {
       "id": "every-app/open-seo",
@@ -233,7 +358,21 @@
       "category": "analytics",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Self-hosted SEO toolkit covering keyword research, rank tracking, competitor insights, backlinks, site audits and AI visibility. It uses your own DataForSEO API key on a pay-as-you-go basis and exposes an MCP server and agent skills so AI agents can run SEO workflows.",
+      "best_for": "Solo makers and small teams who want Semrush/Ahrefs-style workflows without a subscription, or want SEO tasks driven by Claude Code or other agents.",
+      "not_for": "Teams needing Semrush-scale proprietary data or a mature enterprise suite. Data comes from DataForSEO, which you pay for per use; a hosted version is $10/month.",
+      "keywords": [
+        "seo",
+        "keyword research",
+        "rank tracking",
+        "backlinks",
+        "site audit",
+        "semrush alternative",
+        "ahrefs alternative",
+        "mcp server",
+        "dataforseo"
+      ]
     },
     {
       "id": "plausible/analytics",
@@ -256,7 +395,20 @@
       "why": "Tiny script, GDPR-friendly, clean dashboard; self-host (AGPL) or use the hosted service.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Lightweight, cookie-free web analytics with a single-page dashboard. It stores no personal data or IPs, tracks goals, conversions, revenue and funnels via custom events, and supports SPAs out of the box plus an events API. Available self-hosted or as a paid hosted service.",
+      "best_for": "Content sites, blogs and SaaS marketing sites wanting GDPR/CCPA-friendly traffic stats and goal tracking as a Google Analytics replacement.",
+      "not_for": "Deep product analytics, per-user journeys or session replay; it intentionally measures traffic, not individuals. Self-hosting is AGPL and the community edition lacks some hosted features.",
+      "keywords": [
+        "web analytics",
+        "google analytics alternative",
+        "cookieless",
+        "gdpr",
+        "privacy-friendly",
+        "goals",
+        "conversion tracking",
+        "self-hosted analytics"
+      ]
     },
     {
       "id": "PostHog/posthog",
@@ -281,7 +433,21 @@
       "npm": "posthog-js",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "All-in-one product platform: product and web analytics, session replay, heatmaps, feature flags, experiments, error tracking, logs and surveys. It offers SDKs for most platforms, autocapture and SQL access to data, and can be self-hosted or used as a cloud service.",
+      "best_for": "Startups and product teams wanting analytics, replay, feature flags and A/B tests in one tool with a single event pipeline.",
+      "not_for": "Minimal traffic-counting needs, where it is heavy; a simple tool like Plausible or Umami fits better. Self-hosting is a larger operational footprint and some features are cloud/paid.",
+      "keywords": [
+        "product analytics",
+        "session replay",
+        "feature flags",
+        "ab testing",
+        "experiments",
+        "heatmaps",
+        "error tracking",
+        "event tracking",
+        "funnels"
+      ]
     },
     {
       "id": "rrweb-io/rrweb",
@@ -303,7 +469,19 @@
       "npm": "rrweb",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Browser session recording and replay engine. It serializes the DOM into a snapshot with unique IDs, records mutations and user interactions incrementally, and replays them in a sandboxed player. Used as the underlying engine in several replay tools.",
+      "best_for": "Building your own session-replay, bug-reproduction or user-behavior features, or embedding replay in a product.",
+      "not_for": "A ready-made dashboard with search, funnels and storage; rrweb is only the recording/replay library, so you build or pair it with a backend (or use PostHog/OpenReplay).",
+      "keywords": [
+        "session replay",
+        "dom recording",
+        "record and replay",
+        "user session recording",
+        "dom snapshot",
+        "mutation observer",
+        "bug reproduction"
+      ]
     },
     {
       "id": "rybbit-io/rybbit",
@@ -326,7 +504,21 @@
       "why": "Fast-growing open alternative that covers both web and product analytics in one tool.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Privacy-friendly web and product analytics, self-hostable or hosted. Covers sessions, pageviews, bounce rate, session replay, goals, funnels, retention, user journeys, custom events with JSON properties, a real-time dashboard and multi-org/multi-site support, without cookies.",
+      "best_for": "One tool for web analytics plus funnels and session replay, self-hosted on a VPS across many sites.",
+      "not_for": "Teams wanting a long-established ecosystem or minimal footprint; it is a newer project with its own client and backend stack. Some features may be limited to the hosted plan.",
+      "keywords": [
+        "web analytics",
+        "session replay",
+        "funnels",
+        "cookieless",
+        "self-hosted",
+        "retention",
+        "user journeys",
+        "custom events",
+        "real-time dashboard"
+      ]
     },
     {
       "id": "Swetrix/swetrix",
@@ -349,7 +541,21 @@
       "why": "Privacy-first analytics that adds page speed and error data alongside traffic.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Cookieless, privacy-first analytics that also includes error tracking, performance monitoring, session replays, funnels and custom events. Offers traffic stats, geolocation, devices and UTM campaigns in a real-time dashboard; self-host with Docker or use Swetrix Cloud.",
+      "best_for": "Sites wanting traffic analytics plus page-speed and error data from a single lightweight script, without consent banners.",
+      "not_for": "Deep product analytics at large scale. Some features (e.g. network intelligence by ISP/organisation) are marked Cloud-only.",
+      "keywords": [
+        "web analytics",
+        "error tracking",
+        "performance monitoring",
+        "cookieless",
+        "session replay",
+        "funnels",
+        "gdpr",
+        "self-hosted",
+        "utm"
+      ]
     },
     {
       "id": "msgbyte/tianji",
@@ -372,7 +578,20 @@
       "why": "One lightweight app for analytics, uptime checks and server status.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "All-in-one self-hosted monitoring: website analytics (like Umami/GA), uptime monitoring, server status reporting and telemetry collection. Includes notifications, Lighthouse reports, team collaboration, OpenAPI and Helm/Docker install options.",
+      "best_for": "Indie developers and small teams who want website analytics, uptime checks and server metrics in one deployment, or telemetry for open-source apps.",
+      "not_for": "Heavy analytics, replay or enterprise-grade observability; it is a broad but lightweight tool. Use dedicated tools for deep APM or product analytics.",
+      "keywords": [
+        "website analytics",
+        "uptime monitor",
+        "server status",
+        "telemetry",
+        "self-hosted",
+        "lighthouse",
+        "status page",
+        "monitoring"
+      ]
     },
     {
       "id": "umami-software/umami",
@@ -395,7 +614,21 @@
       "why": "MIT licensed, simple to deploy on Postgres and a lightweight tracking script.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Simple, privacy-focused website analytics that uses no cookies. Runs as a Node.js app on a PostgreSQL database with a small tracking script; creates an admin login on first build and supports optional two-factor authentication.",
+      "best_for": "Self-hosting straightforward, GDPR-friendly traffic analytics for several sites on Node and Postgres with MIT licensing.",
+      "not_for": "Session replay, deep funnel/product analytics or a no-database setup; it focuses on core traffic and event metrics. You must host and maintain Node and Postgres yourself.",
+      "keywords": [
+        "web analytics",
+        "cookieless",
+        "privacy",
+        "google analytics alternative",
+        "self-hosted",
+        "postgresql",
+        "nextjs",
+        "gdpr",
+        "page views"
+      ]
     }
   ]
 }

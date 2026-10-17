@@ -22,7 +22,20 @@
       "npm": "cesium",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "JavaScript library for 3D globes and 2D maps in the browser using WebGL, designed for dynamic data and 3D Tiles.",
+      "best_for": "Web 3D geospatial apps with terrain and 3D Tiles.",
+      "not_for": "Heavy for simple 2D maps; some data services require Cesium ion.",
+      "keywords": [
+        "cesium",
+        "3d globe",
+        "3d tiles",
+        "webgl",
+        "terrain",
+        "geospatial",
+        "virtual globe",
+        "maps"
+      ]
     },
     {
       "id": "visgl/deck.gl",
@@ -46,7 +59,20 @@
       "npm": "deck.gl",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "GPU-accelerated WebGL2/WebGPU visualization framework composing layers over maps for large datasets.",
+      "best_for": "Large-scale geospatial visualization with MapLibre, Google Maps or React.",
+      "not_for": "Visualization layer only; you need a basemap library, and it is overkill for a few markers.",
+      "keywords": [
+        "deck.gl",
+        "geospatial visualization",
+        "webgl",
+        "large datasets",
+        "map layers",
+        "vis.gl",
+        "gpu",
+        "react"
+      ]
     },
     {
       "id": "OSGeo/gdal",
@@ -75,7 +101,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Geospatial Data Abstraction Library for reading, writing and converting raster and vector data in 200+ formats.",
+      "best_for": "Geodata conversion and processing foundation, e.g. via Python or CLI tools.",
+      "not_for": "Large C++ toolkit with heavy install; not a web map renderer.",
+      "keywords": [
+        "gdal",
+        "raster",
+        "vector",
+        "geospatial formats",
+        "ogr",
+        "gis conversion",
+        "geotiff",
+        "reprojection"
+      ]
     },
     {
       "id": "geopandas/geopandas",
@@ -97,7 +136,20 @@
       "why": "Core of the Python GIS stack: spatial joins, overlays, reprojection with a pandas API.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "GeoPandas adds geographic data support to pandas through GeoSeries and GeoDataFrame types, subclasses of pandas Series and DataFrame. It works with shapely geometry objects for geometric operations, stores a coordinate reference system on objects, and reprojects with to_crs().",
+      "best_for": "Python geospatial analysis of vector data (points, lines, polygons) in a pandas-style workflow, including reading files and reprojecting CRS.",
+      "not_for": "Interactive web maps or raster processing. Geometry operations are cartesian, and like coordinates are not enforced across operations.",
+      "keywords": [
+        "geospatial",
+        "geopandas",
+        "pandas",
+        "shapely",
+        "geodataframe",
+        "crs",
+        "gis",
+        "python"
+      ]
     },
     {
       "id": "graphhopper/graphhopper",
@@ -121,7 +173,20 @@
       "why": "Fast, mature open-source routing engine usable as a Java library or HTTP server.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Fast, memory-efficient routing engine on OpenStreetMap data, as Java library or web server, with turn-by-turn directions, snap to road and isochrones.",
+      "best_for": "Self-hosted routing, matrix and isochrone calculation.",
+      "not_for": "Java-based; some features are in the commercial offering.",
+      "keywords": [
+        "graphhopper",
+        "routing engine",
+        "openstreetmap",
+        "isochrones",
+        "distance matrix",
+        "directions",
+        "map matching",
+        "java"
+      ]
     },
     {
       "id": "uber/h3",
@@ -145,7 +210,19 @@
       "why": "Uber's hex grid system with bindings for most languages; widely used for spatial aggregation.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Hexagonal hierarchical geospatial indexing system that subdivides into finer hexagonal grids, with bindings in many languages.",
+      "best_for": "Spatial aggregation and bucketing of locations.",
+      "not_for": "Hex cells only approximate shapes; not a routing or mapping tool.",
+      "keywords": [
+        "h3",
+        "hexagonal grid",
+        "geospatial index",
+        "spatial aggregation",
+        "uber",
+        "geohash alternative",
+        "hex bins"
+      ]
     },
     {
       "id": "keplergl/kepler.gl",
@@ -168,7 +245,19 @@
       "why": "Open-source geo analysis tool built on deck.gl, usable as a React component; MIT.",
       "npm": "kepler.gl",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "High-performance web application and React component for exploring large geolocation datasets, built on MapLibre GL and deck.gl using Redux.",
+      "best_for": "Interactive visual exploration of big geodata, embeddable in React.",
+      "not_for": "Application-style tool with Redux state; heavy for simple map displays.",
+      "keywords": [
+        "kepler.gl",
+        "geospatial exploration",
+        "deck.gl",
+        "react map",
+        "data visualization",
+        "trips",
+        "large datasets"
+      ]
     },
     {
       "id": "Leaflet/Leaflet",
@@ -191,7 +280,19 @@
       "npm": "leaflet",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Leaflet is an open-source JavaScript library for building interactive maps, around 40 kB of gzipped JS plus 3.2 kB of CSS. It works across desktop and mobile browsers, is extended through many plugins, and has a documented API.",
+      "best_for": "Adding lightweight, interactive tile-based maps with markers and layers to a website or web app, with plugins for extra features.",
+      "not_for": "3D globes or WebGL rendering of very large datasets; it is a 2D browser mapping library, and map tiles come from a separate provider.",
+      "keywords": [
+        "maps",
+        "leaflet",
+        "interactive maps",
+        "javascript",
+        "mobile",
+        "plugins",
+        "web mapping"
+      ]
     },
     {
       "id": "maplibre/maplibre-gl-js",
@@ -215,7 +316,19 @@
       "npm": "maplibre-gl",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Open-source, BSD-licensed GPU-accelerated library for interactive vector-tile maps, forked from Mapbox GL JS.",
+      "best_for": "Vector maps without vendor lock-in.",
+      "not_for": "Needs a tile source and style; heavier than Leaflet for simple maps.",
+      "keywords": [
+        "maplibre",
+        "vector tiles",
+        "webgl maps",
+        "mapbox gl fork",
+        "web maps",
+        "3d terrain",
+        "map styles"
+      ]
     },
     {
       "id": "maplibre/martin",
@@ -237,7 +350,20 @@
       "why": "MapLibre's tile server (~4k stars); generates tiles from PostGIS on the fly.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Rust tile server that generates vector tiles on the fly from PostGIS and serves MBTiles and PMTiles.",
+      "best_for": "Serving vector tiles from PostgreSQL/PostGIS.",
+      "not_for": "Server to run; static hosting is easier with PMTiles.",
+      "keywords": [
+        "martin",
+        "tile server",
+        "vector tiles",
+        "postgis",
+        "mbtiles",
+        "pmtiles",
+        "maplibre",
+        "rust"
+      ]
     },
     {
       "id": "openlayers/openlayers",
@@ -260,7 +386,20 @@
       "npm": "ol",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "High-performance JavaScript mapping library for tiles, vector data and markers with many formats, projections and OGC services.",
+      "best_for": "GIS-grade web maps with WMS/WFS and reprojection.",
+      "not_for": "Steeper learning curve and larger API than Leaflet.",
+      "keywords": [
+        "openlayers",
+        "web gis",
+        "wms",
+        "wfs",
+        "projections",
+        "vector layers",
+        "ogc services",
+        "maps"
+      ]
     },
     {
       "id": "gboeing/osmnx",
@@ -282,7 +421,19 @@
       "why": "Standard Python tool for OSM network analysis, built on NetworkX and GeoPandas.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python package to download, model, analyze and visualize street networks and other features from OpenStreetMap.",
+      "best_for": "Network analysis, routing studies and urban research.",
+      "not_for": "Python research tool; not a production routing server.",
+      "keywords": [
+        "osmnx",
+        "openstreetmap",
+        "street network",
+        "networkx",
+        "routing analysis",
+        "urban analysis",
+        "python gis"
+      ]
     },
     {
       "id": "Project-OSRM/osrm-backend",
@@ -305,7 +456,20 @@
       "why": "High-performance OSM routing (~8k stars, BSD-2) with routes, tables, map matching.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "High-performance C++ routing engine for OpenStreetMap data with Nearest, Route, Table, Match and Trip services.",
+      "best_for": "Fast self-hosted routing and map matching.",
+      "not_for": "Requires preprocessing per profile and extra memory; dynamic costing is limited.",
+      "keywords": [
+        "osrm",
+        "routing engine",
+        "openstreetmap",
+        "map matching",
+        "distance table",
+        "c++",
+        "navigation",
+        "trip"
+      ]
     },
     {
       "id": "protomaps/PMTiles",
@@ -334,7 +498,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Single-file archive format for tiled data hosted on S3 or a CDN, enabling serverless maps with no tile server.",
+      "best_for": "Cheap, zero-maintenance map hosting.",
+      "not_for": "Static archives need regeneration to update; no dynamic queries.",
+      "keywords": [
+        "pmtiles",
+        "protomaps",
+        "serverless maps",
+        "tile archive",
+        "vector tiles",
+        "s3",
+        "cdn",
+        "static hosting"
+      ]
     },
     {
       "id": "visgl/react-map-gl",
@@ -358,7 +535,19 @@
       "npm": "react-map-gl",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Suite of React components providing a React API for mapbox-gl or maplibre-gl.",
+      "best_for": "React apps using MapLibre or Mapbox maps.",
+      "not_for": "React only wrapper; Mapbox GL usage needs a token.",
+      "keywords": [
+        "react-map-gl",
+        "react maps",
+        "maplibre",
+        "mapbox gl",
+        "vis.gl",
+        "map components",
+        "markers"
+      ]
     },
     {
       "id": "shapely/shapely",
@@ -380,7 +569,20 @@
       "why": "Standard Python geometry library (GEOS bindings) underlying GeoPandas.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python library for manipulating and analysing planar geometries, based on GEOS.",
+      "best_for": "Geometry operations in Python and as a base for GeoPandas.",
+      "not_for": "Planar only, with no spherical geometry or data I/O.",
+      "keywords": [
+        "shapely",
+        "geometry",
+        "geos",
+        "python gis",
+        "polygons",
+        "buffer",
+        "intersection",
+        "spatial operations"
+      ]
     },
     {
       "id": "mapbox/supercluster",
@@ -403,7 +605,19 @@
       "npm": "supercluster",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Very fast JavaScript point clustering for browsers and Node, tested with millions of points.",
+      "best_for": "Clustering large marker sets on maps.",
+      "not_for": "Points only and static data; no UI.",
+      "keywords": [
+        "supercluster",
+        "point clustering",
+        "map markers",
+        "geospatial",
+        "leaflet",
+        "maplibre",
+        "javascript"
+      ]
     },
     {
       "id": "tidwall/tile38",
@@ -426,7 +640,20 @@
       "why": "Purpose-built in-memory geospatial DB with geofencing webhooks and a Redis-like protocol.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "In-memory geolocation data store, spatial index and realtime geofencing server with Nearby, Within and Intersects queries.",
+      "best_for": "Tracking moving objects and triggering geofence events.",
+      "not_for": "In-memory, so memory-bound; not a general-purpose database.",
+      "keywords": [
+        "tile38",
+        "geofencing",
+        "spatial index",
+        "moving objects",
+        "geolocation database",
+        "realtime",
+        "webhooks",
+        "redis protocol"
+      ]
     },
     {
       "id": "felt/tippecanoe",
@@ -448,7 +675,20 @@
       "why": "Maintained fork of Mapbox's tippecanoe by Felt; the standard tool for making vector tiles.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Builds vector tilesets from large GeoJSON, FlatGeobuf or CSV data.",
+      "best_for": "Preparing data for vector tile maps.",
+      "not_for": "CLI tool with no tile serving; self-hosted API version requires contacting Felt.",
+      "keywords": [
+        "tippecanoe",
+        "vector tiles",
+        "geojson",
+        "mbtiles",
+        "pmtiles",
+        "tileset",
+        "felt",
+        "cli"
+      ]
     },
     {
       "id": "Turfjs/turf",
@@ -472,7 +712,20 @@
       "npm": "@turf/turf",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Modular geospatial analysis for JavaScript on GeoJSON: buffers, distances, intersections and more.",
+      "best_for": "Client or server geospatial calculations in JS.",
+      "not_for": "In-memory GeoJSON; not for very large datasets or databases.",
+      "keywords": [
+        "turf",
+        "geojson",
+        "buffer",
+        "distance",
+        "intersection",
+        "geospatial analysis",
+        "javascript",
+        "point in polygon"
+      ]
     },
     {
       "id": "valhalla/valhalla",
@@ -500,7 +753,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source routing engine on OSM data with multimodal routing, isochrones, map matching and dynamic costing.",
+      "best_for": "Flexible self-hosted routing with transit and custom costing.",
+      "not_for": "Complex setup and tile build; heavier than OSRM for basic car routing.",
+      "keywords": [
+        "valhalla",
+        "routing",
+        "isochrones",
+        "map matching",
+        "multimodal",
+        "openstreetmap",
+        "transit",
+        "costing"
+      ]
     }
   ]
 }

@@ -10,7 +10,30 @@ const USAGE = `readme.mjs <command>
   get <owner/repo> [<owner/repo> ...] [--max-chars 5000] [--full]
       condensed README per repo (raw.githubusercontent.com, no API calls)`;
 
-const CANDIDATES = ['README.md', 'readme.md', 'Readme.md', 'README.MD', 'README.rst', 'README.markdown', 'README', 'docs/README.md'];
+const CANDIDATES = ['README.md', 'readme.md', 'Readme.md', 'README.MD', 'README.rst', 'README.markdown', 'README.asciidoc', 'README.adoc', 'README.txt', 'README', '.github/README.md', 'docs/README.md'];
+
+/** reStructuredText: turn underlined/overlined titles into markdown headings, drop directives. */
+export function rstToMarkdown(rst) {
+  const lines = rst.split('\n');
+  const out = [];
+  const levels = [];
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const next = lines[i + 1] ?? '';
+    const underline = /^([=\-~^"'`#*+.:_])\1{2,}\s*$/.exec(next);
+    if (line.trim() && underline && next.trim().length >= line.trim().length - 2 && !/^\s/.test(line)) {
+      const ch = underline[1];
+      if (!levels.includes(ch)) levels.push(ch);
+      out.push(`${'#'.repeat(Math.min(levels.indexOf(ch) + 1, 4))} ${line.trim()}`);
+      i++; // skip the underline
+      continue;
+    }
+    if (/^([=\-~^"'`#*+])\1{2,}\s*$/.test(line)) continue; // overlines
+    if (/^\.\.\s+(image|figure|raw|\|)/i.test(line) || /^\s+:(target|alt|width|height|align):/.test(line)) continue;
+    out.push(line.replace(/`([^`<]+)\s*<[^>]+>`_+/g, '$1').replace(/``([^`]+)``/g, '`$1`'));
+  }
+  return out.join('\n');
+}
 
 /** Section headings worth keeping when condensing. */
 const KEEP_HEADING = /feature|why|overview|about|what|introduc|highlight|usage|getting started|quick ?start|example|limitation|caveat|known issue|compar|vs\.?|alternative|when (to|not)|use case|faq|status|roadmap|philosophy|design|how it works|concept/i;
@@ -30,7 +53,9 @@ export function cleanMarkdown(md) {
     .replace(/&[a-z#0-9]+;/gi, (e) => ENTITIES[e.toLowerCase()] ?? ' ')
     .replace(/<!--[\s\S]*?-->/g, '')
     .replace(/<(picture|img|source|svg|video|iframe)[\s\S]*?>/gi, '')
+    .replace(/<(script|style)[\s\S]*?<\/\1>/gi, '')
     .replace(/<\/?(p|div|a|br|h\d|b|strong|em|i|span|center|sup|sub|details|summary|table|tr|td|th|thead|tbody)[^>]*>/gi, '\n')
+    .replace(/<\/?[a-z][a-z0-9-]*(\s[^>]*)?\/?>/gi, '') // any other HTML tag (link, meta, …)
     .replace(/!\[[^\]]*\]\([^)]*\)/g, '') // images
     .replace(/\[!\[[^\]]*\]\([^)]*\)\]\([^)]*\)/g, '') // linked badges
     .replace(/\[([^\]]+)\]\((?:[^)]+)\)/g, '$1') // keep link text, drop URLs
@@ -85,23 +110,37 @@ export function condense(md, maxChars = 5000) {
   return { text: kept.join('\n\n'), headings: sections.filter((s) => s.level > 0).map((s) => s.heading) };
 }
 
+async function fetchCandidate(fullName, file) {
+  const url = `https://raw.githubusercontent.com/${fullName}/HEAD/${file}`;
+  let { status, text } = await fetchText(url);
+  if (status === 404 || !text) return null;
+  // Monorepos often symlink the root README; raw serves the link target path as text.
+  const link = text.trim();
+  if (link.length < 200 && !link.includes('\n') && /\.(md|markdown|rst)$/i.test(link)) {
+    const target = await fetchText(`https://raw.githubusercontent.com/${fullName}/HEAD/${link.replace(/^\.?\//, '')}`);
+    if (target.text) text = target.text;
+  }
+  if (/\.rst$/i.test(file)) text = rstToMarkdown(text);
+  return { url, text };
+}
+
 export async function getReadme(fullName, { maxChars = 5000, full = false } = {}) {
   if (!/^[\w.-]+\/[\w.-]+$/.test(fullName || '')) throw new Error('expected owner/repo');
+  let found = null;
   for (const file of CANDIDATES) {
-    const url = `https://raw.githubusercontent.com/${fullName}/HEAD/${file}`;
-    let { status, text } = await fetchText(url);
-    if (status === 404 || !text) continue;
-    // Monorepos often symlink the root README; raw serves the link target path as text.
-    const link = text.trim();
-    if (link.length < 200 && !link.includes('\n') && /\.(md|markdown|rst)$/i.test(link)) {
-      const target = await fetchText(`https://raw.githubusercontent.com/${fullName}/HEAD/${link.replace(/^\.?\//, '')}`);
-      if (target.text) text = target.text;
-    }
-    if (full) return { id: `github:${fullName}`, found: true, source_url: url, chars_original: text.length, excerpt: text };
-    const { text: excerpt, headings } = condense(text, maxChars);
-    return { id: `github:${fullName}`, found: true, source_url: url, chars_original: text.length, excerpt, headings };
+    found = await fetchCandidate(fullName, file);
+    if (found) break;
   }
-  return { id: `github:${fullName}`, found: false };
+  // A tiny root README (contributor notes, a pointer) often has a fuller sibling in .github/.
+  if (found && found.text.length < 800 && !found.url.includes('/.github/')) {
+    const alt = await fetchCandidate(fullName, '.github/README.md');
+    if (alt && alt.text.length > found.text.length) found = alt;
+  }
+  if (!found) return { id: `github:${fullName}`, found: false };
+  const { url, text } = found;
+  if (full) return { id: `github:${fullName}`, found: true, source_url: url, chars_original: text.length, excerpt: text };
+  const { text: excerpt, headings } = condense(text, maxChars);
+  return { id: `github:${fullName}`, found: true, source_url: url, chars_original: text.length, excerpt, headings };
 }
 
 if (isMain(import.meta.url)) {

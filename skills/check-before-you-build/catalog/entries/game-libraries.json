@@ -25,7 +25,21 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "C++ library that loads 40+ 3D file formats into one in-memory scene structure, with a smaller set of export formats. Handles formats like FBX, glTF, OBJ and Collada.",
+      "best_for": "Engines, tools and viewers that must import many 3D model formats into a unified structure.",
+      "not_for": "Import fidelity varies by format and it is C++ native; for glTF-only pipelines a dedicated loader is lighter.",
+      "keywords": [
+        "3d model loader",
+        "asset import",
+        "fbx",
+        "gltf",
+        "obj",
+        "collada",
+        "model formats",
+        "c++ importer",
+        "scene graph"
+      ]
     },
     {
       "id": "avianphysics/avian",
@@ -48,7 +62,20 @@
       "why": "Physics designed for Bevy ECS from the ground up; a leading Bevy physics option.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "ECS-driven 2D and 3D physics engine built specifically for Bevy, without wrapping an existing engine. Uses the Bevy ECS directly with an ergonomic API.",
+      "best_for": "Bevy games that want native-feeling 2D or 3D physics.",
+      "not_for": "Bevy only; for other engines or non-Rust stacks use Rapier, Box2D or Jolt.",
+      "keywords": [
+        "bevy physics",
+        "rust physics",
+        "ecs physics",
+        "avian",
+        "2d 3d physics",
+        "rigid body",
+        "collision",
+        "xpbd"
+      ]
     },
     {
       "id": "bkaradzic/bgfx",
@@ -69,7 +96,20 @@
       "why": "Bring-your-own-engine renderer used by many shipped games and tools.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Cross-platform, graphics-API-agnostic rendering library in a bring-your-own-engine style. Supports multiple backends (Direct3D 11/12, Vulkan, Metal, OpenGL, WebGPU via Dawn) across many platforms.",
+      "best_for": "Custom engines or tools needing one rendering abstraction over many graphics APIs.",
+      "not_for": "Low-level renderer only; no scene, asset or game framework, and you manage shaders and engine structure yourself.",
+      "keywords": [
+        "graphics api",
+        "renderer",
+        "vulkan",
+        "metal",
+        "direct3d",
+        "opengl",
+        "cross-platform rendering",
+        "bgfx"
+      ]
     },
     {
       "id": "NateTheGreatt/bitECS",
@@ -91,7 +131,20 @@
       "npm": "bitecs",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Minimal, data-oriented ECS library for TypeScript with a declarative API, powerful querying, relational entity modeling and serialization. About 5kb minzipped with zero dependencies.",
+      "best_for": "JS/TS games and simulations (e.g. with three.js) needing a lightweight, performant ECS.",
+      "not_for": "Only an ECS, with no rendering, physics or engine; design is less opinionated, so you structure the rest yourself.",
+      "keywords": [
+        "ecs",
+        "entity component system",
+        "typescript",
+        "javascript games",
+        "data-oriented",
+        "bitecs",
+        "three.js",
+        "queries"
+      ]
     },
     {
       "id": "erincatto/box2d",
@@ -113,7 +166,19 @@
       "why": "The classic 2D physics engine used by countless games and ported to most languages; v3 rewrite is fast and multithreaded.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Widely used 2D rigid-body physics engine in C. Features continuous collision detection, contact events and various shapes; v3 is a multithreaded rewrite.",
+      "best_for": "2D games and simulations needing a proven, fast physics engine, with ports available in most languages.",
+      "not_for": "2D only; C API, so web or other-language use goes through ports or bindings.",
+      "keywords": [
+        "2d physics",
+        "box2d",
+        "rigid body",
+        "collision detection",
+        "game physics",
+        "continuous collision",
+        "c physics engine"
+      ]
     },
     {
       "id": "bulletphysics/bullet3",
@@ -141,7 +206,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official C++ Bullet Physics SDK for real-time collision detection and multi-physics simulation across games, VR, effects, robotics and machine learning. Includes PyBullet and an example browser.",
+      "best_for": "3D physics in games, robotics research or ML simulation, especially with the Python PyBullet interface.",
+      "not_for": "Development is less active than newer engines like Jolt; C++ SDK is large for small 2D needs.",
+      "keywords": [
+        "bullet physics",
+        "pybullet",
+        "3d physics",
+        "rigid body",
+        "soft body",
+        "robotics simulation",
+        "collision detection",
+        "c++"
+      ]
     },
     {
       "id": "ocornut/imgui",
@@ -163,7 +241,19 @@
       "why": "The standard for game tooling UIs, renderer-agnostic and used across the games industry.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Dear ImGui is an immediate-mode GUI library for C++. The core is a few platform-agnostic source files you compile into your app with no build process, and backends for many graphics APIs and platforms are provided. UI is declared each frame with calls like ImGui::Button and ImGui::SliderFloat.",
+      "best_for": "Debug tools, editors, and in-engine tooling for games and graphics apps written in C++, where you already render textured triangles.",
+      "not_for": "Consumer-facing, heavily styled or accessible end-user UIs, or web apps. It is C++ only natively (other languages need third-party bindings), and the maintainer asks companies to fund it.",
+      "keywords": [
+        "immediate mode gui",
+        "imgui",
+        "c++",
+        "debug ui",
+        "game tools",
+        "graphics backends",
+        "editor ui"
+      ]
     },
     {
       "id": "skypjack/entt",
@@ -184,7 +274,20 @@
       "why": "Header-only, very fast ECS used in Minecraft (Bedrock) and many engines.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Header-only, fast entity component system for modern C++, used in Minecraft (Bedrock) and ArcGIS Runtime SDKs. Provides game programming utilities beyond ECS.",
+      "best_for": "C++ games and simulations needing a high-performance, header-only ECS.",
+      "not_for": "C++ only and ECS-focused; no engine, rendering or physics included.",
+      "keywords": [
+        "ecs",
+        "entt",
+        "entity component system",
+        "c++ game",
+        "header-only",
+        "game architecture",
+        "registry",
+        "c++17"
+      ]
     },
     {
       "id": "SanderMertens/flecs",
@@ -206,7 +309,20 @@
       "why": "Feature-rich ECS with queries, relationships, systems and a web explorer; MIT licensed.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Fast, lightweight ECS with C99 and C++17 APIs, entity relationships, queries, systems and a web-based explorer. Handles millions of entities.",
+      "best_for": "C or C++ games and simulations needing a feature-rich ECS with relationships and tooling.",
+      "not_for": "Heavier concept set than minimal ECS libraries; learning curve around relationships and queries.",
+      "keywords": [
+        "ecs",
+        "flecs",
+        "entity relationships",
+        "c game",
+        "c++ game",
+        "queries",
+        "systems",
+        "simulation"
+      ]
     },
     {
       "id": "glfw/glfw",
@@ -228,7 +344,19 @@
       "why": "Minimal, ubiquitous window/input library for custom renderers and engines.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Multi-platform library for OpenGL, OpenGL ES and Vulkan development that creates windows, contexts and surfaces and handles input and events. C99, supports Windows, macOS, Linux (Wayland and X11).",
+      "best_for": "Custom renderers or engines needing a minimal windowing and input layer.",
+      "not_for": "No audio, GUI or rendering; not a game framework. SDL covers audio and gamepads more broadly.",
+      "keywords": [
+        "glfw",
+        "window creation",
+        "opengl context",
+        "vulkan surface",
+        "input handling",
+        "cross-platform window",
+        "c library"
+      ]
     },
     {
       "id": "jrouwe/JoltPhysics",
@@ -250,7 +378,20 @@
       "why": "Used in Horizon Forbidden West and integrated into Godot; JS/WASM builds available.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Multicore-friendly 3D rigid body physics and collision detection library, used in Horizon Forbidden West and Death Stranding 2 and integrated into Godot.",
+      "best_for": "Games and VR apps needing fast multithreaded 3D physics, including via JS/WASM builds.",
+      "not_for": "3D rigid-body focus in C++; no 2D physics and requires integration work with your renderer or engine.",
+      "keywords": [
+        "jolt physics",
+        "3d physics",
+        "rigid body",
+        "collision detection",
+        "multithreaded physics",
+        "vr",
+        "godot physics",
+        "c++ physics"
+      ]
     },
     {
       "id": "tesselode/kira",
@@ -271,7 +412,20 @@
       "why": "Game-focused audio library with smooth parameter tweening and timing, usable with Bevy.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Rust audio library for games with expressive features such as tweening of parameters, clocks for precise timing, mixer tracks and effects. Works with Bevy.",
+      "best_for": "Rust games that need smooth, timed audio control such as dynamic music and effects.",
+      "not_for": "Rust only and audio-only; simpler needs may be fine with built-in engine audio.",
+      "keywords": [
+        "rust audio",
+        "game audio",
+        "tweening",
+        "audio mixer",
+        "clocks",
+        "bevy audio",
+        "sound effects",
+        "kira"
+      ]
     },
     {
       "id": "liabru/matter-js",
@@ -294,7 +448,20 @@
       "npm": "matter-js",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "JavaScript 2D rigid-body physics engine for the web with compound/composite bodies, concave and convex hulls, restitution, constraints and a built-in debug renderer.",
+      "best_for": "Browser games and interactive pages that need simple 2D physics with a straightforward API.",
+      "not_for": "2D only and less precise or performant than Box2D ports for large stacks; limited ongoing development.",
+      "keywords": [
+        "2d physics",
+        "javascript physics",
+        "matter.js",
+        "rigid body",
+        "browser games",
+        "collision",
+        "constraints",
+        "interactive"
+      ]
     },
     {
       "id": "NVIDIA-Omniverse/PhysX",
@@ -316,7 +483,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "NVIDIA's repository for the PhysX SDK, a real-time physics simulation engine, plus ovphysx, a C API with Python bindings for USD physics simulation with DLPack tensor interop. It also contains the Blast SDK for destruction/fracture and the Flow SDK for fluid and fire simulation, with releases mapped to Isaac Sim versions.",
+      "best_for": "Adding real-time physics to C++ games, simulators, or robotics tools, or USD-based physics from Python via ovphysx.",
+      "not_for": "Web or lightweight 2D games; it is a large native SDK aimed at NVIDIA's Omniverse/Isaac Sim ecosystem. License files differ per subfolder, so check each one.",
+      "keywords": [
+        "physics engine",
+        "physx",
+        "real-time simulation",
+        "usd",
+        "omniverse",
+        "isaac sim",
+        "destruction",
+        "fluid simulation"
+      ]
     },
     {
       "id": "piqnt/planck.js",
@@ -338,7 +518,19 @@
       "npm": "planck",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "JavaScript/TypeScript rewrite of Box2D for cross-platform HTML5 game development, designed to be readable and idiomatic.",
+      "best_for": "JS/TS games that want Box2D behavior and semantics in the browser or Node.",
+      "not_for": "2D only; Matter.js may be simpler for casual use, and performance is below native Box2D.",
+      "keywords": [
+        "planck.js",
+        "box2d javascript",
+        "2d physics",
+        "html5 games",
+        "typescript physics",
+        "rigid body",
+        "collision"
+      ]
     },
     {
       "id": "viblo/pymunk",
@@ -360,7 +552,19 @@
       "why": "Pythonic wrapper over Chipmunk2D, works well with pygame and pyglet.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Pythonic 2D rigid-body physics library built on Munk2D, a Chipmunk2D fork. Works with pygame and pyglet for games, demos and simulations.",
+      "best_for": "Python projects needing 2D physics, e.g. pygame games and educational simulations.",
+      "not_for": "2D only and not suited to large-scale or 3D simulation; pure game-logic Python overhead.",
+      "keywords": [
+        "pymunk",
+        "python physics",
+        "2d physics",
+        "chipmunk",
+        "pygame physics",
+        "rigid body",
+        "simulation"
+      ]
     },
     {
       "id": "dimforge/rapier",
@@ -385,7 +589,20 @@
       "npm": "@dimforge/rapier3d",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Set of 2D and 3D physics engines written in Rust (rapier2d/3d, f32 and f64) for games, animation and robotics, with official JS/WASM bindings.",
+      "best_for": "Rust or web games needing fast 2D or 3D physics, popular with Bevy and three.js.",
+      "not_for": "Rust-centered; Bevy users may prefer Avian for tighter ECS integration.",
+      "keywords": [
+        "rapier",
+        "rust physics",
+        "wasm physics",
+        "2d 3d physics",
+        "bevy",
+        "three.js physics",
+        "rigid body",
+        "robotics"
+      ]
     },
     {
       "id": "recastnavigation/recastnavigation",
@@ -408,7 +625,20 @@
       "stable_reason": "Industry-standard navmesh generation/pathfinding; algorithms are settled and the code is mature",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Navigation mesh generation (Recast) and pathfinding (Detour) toolkit that builds navmeshes automatically from level geometry. Dependency-free and modular.",
+      "best_for": "Game AI needing automatic navmesh generation and pathfinding on 3D levels.",
+      "not_for": "Navmesh-based only and C++; not for grid-based or purely 2D pathfinding.",
+      "keywords": [
+        "navmesh",
+        "pathfinding",
+        "recast detour",
+        "game ai",
+        "navigation mesh",
+        "crowd",
+        "c++",
+        "level geometry"
+      ]
     },
     {
       "id": "libsdl-org/SDL",
@@ -430,7 +660,21 @@
       "why": "The foundation under countless engines and games; SDL3 adds a modern cross-platform GPU API.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Cross-platform library for windowing, input, audio and graphics access, designed for games and multimedia. SDL3 adds a modern GPU API. zlib licensed.",
+      "best_for": "Foundation layer for custom engines, emulators and games across desktop, mobile and consoles.",
+      "not_for": "Low-level; not a game engine, so you build scenes, assets and tools yourself.",
+      "keywords": [
+        "sdl",
+        "sdl3",
+        "windowing",
+        "input handling",
+        "audio",
+        "gpu api",
+        "cross-platform",
+        "game framework",
+        "emulator"
+      ]
     },
     {
       "id": "nothings/stb",
@@ -457,7 +701,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Collection of single-file public domain/MIT C and C++ libraries for image loading and writing, font rasterization, audio decoding and more.",
+      "best_for": "Easily embedded asset loading in C/C++ projects without build dependencies.",
+      "not_for": "Maintainers discuss security bugs publicly and fixes can be slow, so avoid for untrusted input in high-risk projects.",
+      "keywords": [
+        "stb_image",
+        "stb_truetype",
+        "single-file library",
+        "image loading",
+        "font rendering",
+        "audio decoding",
+        "header-only",
+        "c library"
+      ]
     }
   ]
 }

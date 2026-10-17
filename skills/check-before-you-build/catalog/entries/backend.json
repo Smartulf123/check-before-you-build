@@ -23,7 +23,20 @@
       "npm": "@apollo/server",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Spec-compliant GraphQL server for Node.js. The @apollo/server package (v4+) offers a standalone server for quick start and integrations with web frameworks, with federation support.",
+      "best_for": "Building GraphQL APIs in Node.js, especially with Apollo Federation or Apollo tooling.",
+      "not_for": "Edge runtimes or minimal setups (consider GraphQL Yoga); not for non-Node stacks. Standalone vs framework middleware requires choice.",
+      "keywords": [
+        "graphql server",
+        "apollo",
+        "node.js",
+        "federation",
+        "graphql api",
+        "schema",
+        "resolvers",
+        "typescript"
+      ]
     },
     {
       "id": "appwrite/appwrite",
@@ -46,7 +59,21 @@
       "why": "Mature open-source Firebase alternative with SDKs for most platforms and an active community.",
       "category": "backend",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Self-hostable backend platform with auth, databases, storage, functions, messaging, realtime and hosting, plus SDKs and a hosted MCP server for coding agents. Available as managed cloud or self-hosted.",
+      "best_for": "A Firebase-style backend for web and mobile apps, with the option to self-host.",
+      "not_for": "Highly custom backends or minimal APIs; it is a multi-service platform to operate. Go with a lightweight option like PocketBase for tiny projects.",
+      "keywords": [
+        "backend as a service",
+        "firebase alternative",
+        "auth",
+        "database",
+        "storage",
+        "functions",
+        "self-hosted",
+        "mcp",
+        "realtime"
+      ]
     },
     {
       "id": "tokio-rs/axum",
@@ -68,7 +95,21 @@
       "why": "The default choice for Rust web backends, maintained by the Tokio team",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Rust HTTP routing and request-handling library built on Tokio, Tower and Hyper. Macro-free routing, declarative request extractors, a simple error model, and reuse of tower and tower-http middleware for timeouts, tracing and compression.",
+      "best_for": "Rust web backends and APIs that want ergonomic handlers and the Tower middleware ecosystem.",
+      "not_for": "Teams new to Rust/async or wanting batteries-included features (ORM, auth, admin); axum is a thin routing layer.",
+      "keywords": [
+        "rust web framework",
+        "tokio",
+        "tower",
+        "hyper",
+        "extractors",
+        "http server",
+        "rest api",
+        "async rust",
+        "middleware"
+      ]
     },
     {
       "id": "vitalik/django-ninja",
@@ -90,7 +131,20 @@
       "why": "FastAPI-style DX inside Django with automatic OpenAPI; actively maintained.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Framework for building typed REST APIs on top of Django using Python type hints, with automatic OpenAPI docs and Pydantic-style schemas. Integrates with Django's ORM and core.",
+      "best_for": "Adding fast, FastAPI-style APIs to an existing or new Django project.",
+      "not_for": "Non-Django projects, or heavy use of DRF ecosystem features (browsable API, many third-party packages).",
+      "keywords": [
+        "django api",
+        "rest api",
+        "type hints",
+        "openapi",
+        "pydantic",
+        "fastapi style",
+        "django",
+        "swagger"
+      ]
     },
     {
       "id": "encode/django-rest-framework",
@@ -115,7 +169,20 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Toolkit for building web APIs on Django. Provides serializers for ORM and non-ORM data, authentication policies including OAuth packages, a browsable API and customizable views and permissions.",
+      "best_for": "Django REST APIs needing mature serialization, permissions and a large package ecosystem.",
+      "not_for": "Async-first or type-hint-driven APIs with automatic OpenAPI, where Django Ninja or FastAPI feel lighter; verbose for small APIs.",
+      "keywords": [
+        "django rest api",
+        "serializers",
+        "browsable api",
+        "viewsets",
+        "permissions",
+        "authentication",
+        "django",
+        "drf"
+      ]
     },
     {
       "id": "elysiajs/elysia",
@@ -138,7 +205,20 @@
       "npm": "elysia",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Ergonomic web framework for TypeScript with end-to-end type safety and an Eden client for type inference, optimized for Bun. The README provided is minimal.",
+      "best_for": "Bun-based APIs where high throughput and shared types between server and client matter.",
+      "not_for": "Node-only deployments, since it is Bun-first; the ecosystem is smaller than Express or Fastify.",
+      "keywords": [
+        "bun",
+        "typescript",
+        "web framework",
+        "type safety",
+        "eden",
+        "rest api",
+        "end-to-end types",
+        "http server"
+      ]
     },
     {
       "id": "expressjs/express",
@@ -161,7 +241,20 @@
       "npm": "express",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Minimal, unopinionated web framework for Node.js with robust routing, HTTP helpers, content negotiation and a view system supporting 14+ template engines. Express 5 is actively maintained; express-generator scaffolds apps.",
+      "best_for": "Node.js APIs and web apps wanting the most widely used framework and the biggest middleware ecosystem.",
+      "not_for": "Built-in structure, validation or TypeScript-first typing; Fastify, NestJS or Hono offer those. Not designed for edge runtimes.",
+      "keywords": [
+        "node.js",
+        "web framework",
+        "rest api",
+        "middleware",
+        "routing",
+        "http server",
+        "express",
+        "template engine"
+      ]
     },
     {
       "id": "fastapi/fastapi",
@@ -183,7 +276,21 @@
       "why": "The most popular modern Python API framework, built on Starlette and Pydantic.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Python web framework for APIs based on type hints, using Starlette and Pydantic. Provides validation, automatic OpenAPI and interactive docs, dependency injection and editor completion.",
+      "best_for": "Modern Python REST APIs and microservices with validation and generated docs.",
+      "not_for": "Full-stack server-rendered apps with admin/ORM included (use Django). Async knowledge helps; not a batteries-included framework.",
+      "keywords": [
+        "python api",
+        "rest api",
+        "pydantic",
+        "openapi",
+        "swagger",
+        "async python",
+        "type hints",
+        "starlette",
+        "validation"
+      ]
     },
     {
       "id": "fastify/fastify",
@@ -207,7 +314,20 @@
       "npm": "fastify",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Low-overhead Node.js web framework with schema-based validation and serialization, a plugin architecture and strong TypeScript support. OpenJS Foundation project, inspired by Hapi and Express; main branch is v6.",
+      "best_for": "High-throughput Node APIs and services wanting validation, encapsulated plugins and low overhead.",
+      "not_for": "Quick prototypes where Express familiarity matters, or edge runtimes (Hono). Plugin encapsulation has a learning curve.",
+      "keywords": [
+        "node.js",
+        "web framework",
+        "json schema validation",
+        "plugins",
+        "high performance",
+        "typescript",
+        "rest api",
+        "logging pino"
+      ]
     },
     {
       "id": "gofiber/fiber",
@@ -229,7 +349,20 @@
       "why": "One of the most popular Go web frameworks, built on fasthttp.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Go web framework with an Express-like API, built on fasthttp, focused on zero memory allocation and performance. Features robust routing, static files and middleware.",
+      "best_for": "Go HTTP APIs where Express-style ergonomics and raw speed matter.",
+      "not_for": "Projects needing net/http compatibility (fasthttp is not net/http compatible); use Gin, Echo or the standard library for that.",
+      "keywords": [
+        "go web framework",
+        "fasthttp",
+        "express-like",
+        "rest api",
+        "middleware",
+        "routing",
+        "golang",
+        "high performance"
+      ]
     },
     {
       "id": "pallets/flask",
@@ -251,7 +384,20 @@
       "why": "Battle-tested Python microframework with a huge extension ecosystem",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Lightweight WSGI web framework built on Werkzeug and Jinja. It enforces no project layout or dependencies and scales via a large extension ecosystem.",
+      "best_for": "Small to medium Python web apps and APIs where you choose the components yourself.",
+      "not_for": "Async-first or auto-documented API projects (FastAPI), or batteries-included apps (Django); you assemble ORM, auth and validation yourself.",
+      "keywords": [
+        "python web framework",
+        "wsgi",
+        "jinja",
+        "microframework",
+        "rest api",
+        "werkzeug",
+        "flask extensions",
+        "web app"
+      ]
     },
     {
       "id": "frappe/frappe",
@@ -273,7 +419,21 @@
       "use_for": "Build metadata-driven business apps with auto-generated REST APIs and admin UI",
       "why": "Powers ERPNext; batteries-included Python/JS framework with 1,000+ contributors.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Low-code, metadata-driven web framework in Python and JavaScript. Define DocTypes to get database tables, forms, auto-generated REST APIs and admin UI; it powers ERPNext.",
+      "best_for": "Business apps such as ERP/CRM/internal tools where CRUD, permissions and workflows should be generated from metadata.",
+      "not_for": "Custom consumer-facing frontends or lean APIs; it is opinionated and heavy, and bound to its own conventions, MariaDB and bench tooling.",
+      "keywords": [
+        "low code",
+        "erpnext",
+        "metadata driven",
+        "doctype",
+        "business apps",
+        "python framework",
+        "admin ui",
+        "internal tools",
+        "rest api"
+      ]
     },
     {
       "id": "gin-gonic/gin",
@@ -295,7 +455,20 @@
       "why": "The most popular Go web framework; simple API and large middleware ecosystem",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "High-performance HTTP web framework for Go with routing, middleware and request binding. Powers apps such as gorush and photoprism; 1.12.0 is the current release noted.",
+      "best_for": "Go REST APIs and web services wanting a simple API and a big middleware ecosystem.",
+      "not_for": "Strict OpenAPI-first design or built-in microservice features (Huma, go-zero); minimalists may prefer the standard library router.",
+      "keywords": [
+        "go web framework",
+        "gin",
+        "rest api",
+        "routing",
+        "middleware",
+        "json binding",
+        "golang",
+        "http server"
+      ]
     },
     {
       "id": "zeromicro/go-zero",
@@ -318,7 +491,21 @@
       "why": "Batteries-included cloud-native microservice framework with goctl codegen; 33k stars.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Go web and RPC framework with built-in engineering practices for resilience. Includes goctl, a code generator that creates Go, iOS, Android, Kotlin, Dart, TypeScript and JavaScript from .api files; CNCF landscape listed.",
+      "best_for": "Go microservices at scale with rate limiting, breakers and generated boilerplate.",
+      "not_for": "Small apps or teams that dislike code generation and framework conventions; goctl-driven structure is opinionated.",
+      "keywords": [
+        "go microservices",
+        "rpc framework",
+        "goctl",
+        "code generation",
+        "api gateway",
+        "resilience",
+        "circuit breaker",
+        "golang",
+        "rest api"
+      ]
     },
     {
       "id": "gofr-dev/gofr",
@@ -338,7 +525,21 @@
       "use_for": "Build Go microservices with built-in DB, pub/sub and tracing support",
       "why": "Opinionated Go framework with observability, migrations and health checks out of the box.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Opinionated Go microservice framework. Built-in configuration, observability (logs, traces, metrics), auth middleware, gRPC, pub/sub, circuit breaker, health checks, database migrations, cron jobs, websockets and Swagger rendering; CNCF landscape listed.",
+      "best_for": "Go microservices where observability, migrations and health checks should work out of the box.",
+      "not_for": "Minimal routers or teams wanting free choice of libraries; the framework is opinionated and smaller than Gin in community.",
+      "keywords": [
+        "go microservices",
+        "observability",
+        "pub/sub",
+        "grpc",
+        "migrations",
+        "cron jobs",
+        "health checks",
+        "golang",
+        "circuit breaker"
+      ]
     },
     {
       "id": "99designs/gqlgen",
@@ -361,7 +562,20 @@
       "why": "The standard schema-first GraphQL library for Go.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Go library for building GraphQL servers using a schema-first approach with type safety and code generation, avoiding map[string]interface{}. Quickstart uses go get -tool and config-driven model generation.",
+      "best_for": "Type-safe GraphQL servers in Go from an SDL schema.",
+      "not_for": "Code-first schema definition or projects wanting no code generation step; requires regenerating after schema changes.",
+      "keywords": [
+        "graphql go",
+        "schema first",
+        "code generation",
+        "golang",
+        "type safety",
+        "graphql server",
+        "resolvers",
+        "sdl"
+      ]
     },
     {
       "id": "ruby-grape/grape",
@@ -381,7 +595,21 @@
       "use_for": "Build REST-like APIs in Ruby, standalone or mounted in Rails",
       "why": "Long-standing Rack API DSL with versioning, validation and entity presenters.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "REST-like API framework for Ruby on Rack, usable standalone or mounted in Rails and Sinatra. DSL covers versioning, multiple formats, content negotiation, prefix restriction and parameter validation.",
+      "best_for": "Ruby APIs, standalone or within a Rails app, that want a focused API DSL.",
+      "not_for": "Full-stack web apps or Rails-native API-only mode with its own conventions; not for non-Ruby projects.",
+      "keywords": [
+        "ruby api",
+        "rack",
+        "rest api",
+        "versioning",
+        "content negotiation",
+        "rails",
+        "dsl",
+        "validation",
+        "grape"
+      ]
     },
     {
       "id": "graphql-hive/graphql-yoga",
@@ -405,7 +633,21 @@
       "npm": "graphql-yoga",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Full-featured GraphQL server focused on easy setup and performance. Built on the WHATWG Fetch API so it runs on Node, Bun, Deno, Workers and serverless; includes subscriptions via SSE and supports envelop plugins.",
+      "best_for": "GraphQL APIs on edge or serverless runtimes, or anywhere you want a small, plugin-based server.",
+      "not_for": "Apollo Federation-specific workflows or non-JavaScript stacks; consider Apollo Server or Hive Gateway for federation.",
+      "keywords": [
+        "graphql server",
+        "server-sent events",
+        "subscriptions",
+        "envelop",
+        "edge",
+        "serverless",
+        "cloudflare workers",
+        "fetch api",
+        "the guild"
+      ]
     },
     {
       "id": "hasura/graphql-engine",
@@ -426,7 +668,21 @@
       "why": "Removes most API boilerplate; widely used in production for GraphQL over existing databases.",
       "category": "backend",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Engine that gives instant GraphQL and REST APIs over databases with built-in permissions. V3 (Hasura DDN) supports PostgreSQL, MongoDB, ClickHouse and MS SQL Server and custom logic via TypeScript, Python and Go connectors.",
+      "best_for": "Quickly exposing existing databases as secured GraphQL with minimal backend code.",
+      "not_for": "Heavy custom business logic in a single codebase, or teams wanting to avoid a separate engine; v3 vs v2 differences and cloud-centric DDN affect self-hosting.",
+      "keywords": [
+        "graphql",
+        "instant api",
+        "postgres",
+        "permissions",
+        "realtime",
+        "rest api",
+        "database api",
+        "mongodb",
+        "ddn"
+      ]
     },
     {
       "id": "honojs/hono",
@@ -450,7 +706,21 @@
       "npm": "hono",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Small, ultrafast web framework built on Web Standards. Runs on Cloudflare Workers, Fastly Compute, Deno, Bun, Vercel, AWS Lambda and Node. Includes a fast RegExpRouter, a hono/tiny preset under 12kB, zero dependencies and TypeScript support.",
+      "best_for": "APIs and web apps targeting edge or multiple runtimes with small bundles.",
+      "not_for": "Large opinionated back-end structure (NestJS) or Node-centric plugin ecosystems, where Fastify/Express offer more batteries.",
+      "keywords": [
+        "edge framework",
+        "cloudflare workers",
+        "web standards",
+        "typescript",
+        "bun",
+        "deno",
+        "rest api",
+        "lightweight",
+        "middleware"
+      ]
     },
     {
       "id": "ChilliCream/graphql-platform",
@@ -472,7 +742,20 @@
       "why": "The leading GraphQL platform for .NET, including server, client and gateway.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "GraphQL platform for .NET covering server (Hot Chocolate), gateway and client. Strongly typed schemas, efficient data fetching and self-documenting APIs.",
+      "best_for": "Building GraphQL servers, federated gateways or clients in C#/.NET.",
+      "not_for": "Non-.NET stacks; the README gives few details on pricing, so check which components (e.g. Fusion gateway tooling) are commercial.",
+      "keywords": [
+        "graphql .net",
+        "hot chocolate",
+        "c#",
+        "graphql server",
+        "gateway",
+        "federation",
+        "dotnet",
+        "strawberry shake"
+      ]
     },
     {
       "id": "danielgtaylor/huma",
@@ -494,7 +777,20 @@
       "why": "Router-agnostic, schema-first Go API framework with strong typing.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Go micro-framework for REST/RPC APIs described by OpenAPI 3.1 and JSON Schema. Router-agnostic (bring your own router, middleware, logging), with declarative operations, request params and validation, aimed at incremental adoption in existing services.",
+      "best_for": "Go APIs that need auto-generated OpenAPI docs and validation on top of chi, Gin, Fiber or net/http.",
+      "not_for": "GraphQL, full-stack or batteries-included microservice features; it is an API layer, not a complete framework.",
+      "keywords": [
+        "go api",
+        "openapi",
+        "json schema",
+        "rest api",
+        "validation",
+        "golang",
+        "router agnostic",
+        "api documentation"
+      ]
     },
     {
       "id": "javalin/javalin",
@@ -517,7 +813,20 @@
       "why": "Lightweight, unopinionated JVM web framework with a small API surface.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Javalin is a lightweight web framework for Java and Kotlin with support for WebSockets, HTTP2 and async requests. It works more like a library than a framework: no class extension, no annotations, no reflection. The root README targets contributors (Maven build and release steps); the user-facing README lives in .github/README.md.",
+      "best_for": "JVM developers who want a small, explicit HTTP and WebSocket server in Java or Kotlin without annotation-driven frameworks.",
+      "not_for": "Teams wanting a batteries-included framework with DI, ORM and annotation-based configuration such as Spring Boot. Not for non-JVM stacks.",
+      "keywords": [
+        "java",
+        "kotlin",
+        "web framework",
+        "http server",
+        "websockets",
+        "rest api",
+        "jvm",
+        "lightweight"
+      ]
     },
     {
       "id": "nestjs/nest",
@@ -540,7 +849,21 @@
       "npm": "@nestjs/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Opinionated Node.js framework for modular, testable server-side apps in TypeScript, built around dependency injection and decorators with an Angular-inspired architecture.",
+      "best_for": "Larger TypeScript back-ends, microservices and teams wanting consistent structure.",
+      "not_for": "Small APIs or quick scripts, where its boilerplate and decorator-heavy style add overhead; Hono, Fastify or Express are lighter.",
+      "keywords": [
+        "nestjs",
+        "typescript backend",
+        "dependency injection",
+        "decorators",
+        "microservices",
+        "modular architecture",
+        "node.js",
+        "graphql",
+        "rest api"
+      ]
     },
     {
       "id": "parse-community/parse-server",
@@ -562,7 +885,21 @@
       "use_for": "Self-host a backend-as-a-service with data, auth, files and push on Node.js",
       "why": "Mature open BaaS with REST/GraphQL APIs and SDKs for every platform.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source backend for Node.js that provides data storage, auth, files, push and Cloud Code with REST and GraphQL APIs and SDKs for many platforms. Runs standalone or mounted in Express; typically with MongoDB or Postgres.",
+      "best_for": "Self-hosting a mature BaaS with client SDKs across mobile and web.",
+      "not_for": "Modern edge-native setups or very small projects; you operate Node plus a database, and the project has a legacy architecture.",
+      "keywords": [
+        "backend as a service",
+        "parse",
+        "self-hosted",
+        "cloud code",
+        "push notifications",
+        "mongodb",
+        "graphql",
+        "sdk",
+        "express"
+      ]
     },
     {
       "id": "pocketbase/pocketbase",
@@ -585,7 +922,21 @@
       "why": "Simplest way to get a full backend for a side project or MVP; single binary, also usable as a Go framework.",
       "category": "backend",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source Go backend in a single binary: embedded SQLite with realtime subscriptions, user and file management, admin dashboard and REST-ish API. Can also be used as a Go framework.",
+      "best_for": "Side projects, MVPs and small apps needing auth, database, files and realtime without infrastructure.",
+      "not_for": "Large-scale or multi-node deployments (SQLite single instance), or stable APIs: README warns backward compatibility is not guaranteed before v1.0.0.",
+      "keywords": [
+        "backend",
+        "sqlite",
+        "single binary",
+        "realtime",
+        "auth",
+        "file storage",
+        "admin ui",
+        "firebase alternative",
+        "go framework"
+      ]
     },
     {
       "id": "spring-projects/spring-boot",
@@ -607,7 +958,21 @@
       "why": "The dominant JVM backend framework, with integrations for nearly every database, queue and cloud",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Framework for building production-ready Java and Kotlin applications and REST services with auto-configuration and starters for databases, queues and cloud. No README content was provided; description relies on general knowledge.",
+      "best_for": "JVM back-ends, enterprise services and microservices needing a mature ecosystem.",
+      "not_for": "Tiny services or fast startup scenarios without extra tuning, or teams outside the JVM; has a steeper learning curve and larger footprint.",
+      "keywords": [
+        "java",
+        "kotlin",
+        "spring",
+        "rest api",
+        "microservices",
+        "auto-configuration",
+        "jvm",
+        "dependency injection",
+        "enterprise"
+      ]
     },
     {
       "id": "trpc/trpc",
@@ -630,7 +995,21 @@
       "npm": "@trpc/server",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "End-to-end typesafe APIs in TypeScript with no schemas or code generation. The client imports only type declarations from the server; includes adapters for React, Next.js, Express and Fastify, subscriptions and request batching.",
+      "best_for": "TypeScript monorepos or full-stack apps where one team owns both client and server.",
+      "not_for": "Public APIs for third parties or non-TypeScript clients (use REST/GraphQL/OpenAPI), and projects not sharing a TS codebase.",
+      "keywords": [
+        "typesafe api",
+        "typescript",
+        "rpc",
+        "nextjs",
+        "react query",
+        "no codegen",
+        "end-to-end types",
+        "zod",
+        "monorepo"
+      ]
     }
   ]
 }

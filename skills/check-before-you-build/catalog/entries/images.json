@@ -22,7 +22,20 @@
       "why": "The most capable open diffusion backend; huge custom-node ecosystem and a workflow API you can call from apps.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Modular node-based engine for building and running image generation and other AI content workflows locally, with an API for automation and a large custom-node ecosystem.",
+      "best_for": "Local diffusion pipelines needing fine control and scriptable workflow execution from apps.",
+      "not_for": "Needs capable GPU and setup; graph workflows are complex and not a simple turnkey generator API.",
+      "keywords": [
+        "comfyui",
+        "stable diffusion",
+        "node-based workflow",
+        "image generation",
+        "diffusion",
+        "workflow api",
+        "custom nodes",
+        "local ai"
+      ]
     },
     {
       "id": "fengyuanchen/cropperjs",
@@ -44,7 +57,19 @@
       "npm": "cropperjs",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Dependency-free JavaScript image cropper; v2 is rewritten as web components.",
+      "best_for": "Adding crop UI for avatars and uploads in web apps.",
+      "not_for": "Client-side cropping only; v1 and v2 APIs differ; no server-side processing.",
+      "keywords": [
+        "image cropper",
+        "crop",
+        "javascript",
+        "web components",
+        "avatar upload",
+        "image editing",
+        "cropperjs"
+      ]
     },
     {
       "id": "huggingface/diffusers",
@@ -66,7 +91,20 @@
       "why": "The standard library for diffusion pipelines with 1,000+ contributors and support for most open image models.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Modular Python library of pretrained diffusion models for generating images, audio and 3D structures, supporting both inference and training.",
+      "best_for": "Running or fine-tuning Stable Diffusion, Flux and similar models in Python.",
+      "not_for": "Needs GPU and model weights; designed for usability over raw performance and not a GUI.",
+      "keywords": [
+        "diffusers",
+        "stable diffusion",
+        "flux",
+        "image generation",
+        "diffusion models",
+        "huggingface",
+        "text to image",
+        "fine-tuning"
+      ]
     },
     {
       "id": "image-rs/image",
@@ -87,7 +125,19 @@
       "why": "The standard Rust imaging crate, used across the Rust ecosystem.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Rust crate for encoding, decoding and manipulating images, with feature flags for formats such as AVIF, BMP and more.",
+      "best_for": "Rust apps needing image I/O and basic transforms.",
+      "not_for": "Basic manipulation only; Rust-only and not for advanced computer vision.",
+      "keywords": [
+        "rust image",
+        "image decoding",
+        "image encoding",
+        "png jpeg",
+        "rust imaging",
+        "image processing",
+        "avif"
+      ]
     },
     {
       "id": "ImageMagick/ImageMagick",
@@ -110,7 +160,20 @@
       "why": "The Swiss-army knife for image formats, available everywhere and scriptable.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Software suite to create, edit, compose and convert bitmap images in 200+ formats, via command line or language bindings.",
+      "best_for": "Scripted format conversion and batch editing across many image types.",
+      "not_for": "Slower and heavier than libvips/sharp for web pipelines; historic security issues from untrusted input, so sandbox policies are advised.",
+      "keywords": [
+        "imagemagick",
+        "image conversion",
+        "convert",
+        "batch image processing",
+        "cli",
+        "image formats",
+        "compose",
+        "resize"
+      ]
     },
     {
       "id": "cshum/imagor",
@@ -131,7 +194,20 @@
       "why": "Modern Go alternative to Thumbor/imgproxy; Apache-2.0 with URL signing and S3 support.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Fast, secure image processing server and Go library using libvips, with Thumbor-compatible URLs, URL signing and S3 support.",
+      "best_for": "Self-hosted on-the-fly image resizing behind a CDN as a Thumbor replacement.",
+      "not_for": "Server to operate; for in-process processing use a library like sharp.",
+      "keywords": [
+        "imagor",
+        "image server",
+        "libvips",
+        "thumbor",
+        "url signing",
+        "resize on the fly",
+        "s3",
+        "go"
+      ]
     },
     {
       "id": "imgproxy/imgproxy",
@@ -154,7 +230,19 @@
       "why": "Fast, secure (signed URLs) libvips-based server; a self-hosted replacement for paid image CDNs.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Standalone server for resizing, processing and converting images on the fly, focused on speed, security and simplicity.",
+      "best_for": "Self-hosted replacement for paid image CDNs or in-app resizing code.",
+      "not_for": "Separate service to run; some advanced features are in the paid Pro edition.",
+      "keywords": [
+        "imgproxy",
+        "image resizing server",
+        "on-the-fly images",
+        "signed urls",
+        "image optimization",
+        "libvips",
+        "webp avif"
+      ]
     },
     {
       "id": "Intervention/image",
@@ -175,7 +263,20 @@
       "use_for": "PHP image processing with GD, Imagick or libvips drivers",
       "why": "The de facto PHP/Laravel image library for resizing, cropping, watermarking and encoding.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "PHP image processing library with GD, Imagick or libvips drivers for resizing, cropping, watermarking and encoding.",
+      "best_for": "PHP and Laravel apps handling uploads and thumbnails.",
+      "not_for": "PHP only; not for advanced computer vision or high-volume streaming pipelines.",
+      "keywords": [
+        "php image",
+        "laravel image",
+        "resize",
+        "crop",
+        "watermark",
+        "gd",
+        "imagick",
+        "thumbnails"
+      ]
     },
     {
       "id": "jimp-dev/jimp",
@@ -199,7 +300,19 @@
       "stable_reason": "Mature pure-JS image library (v1 rewrite done); covers its scope without needing frequent releases",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Image processing library written entirely in JavaScript with zero native dependencies, for Node and the browser, with a plugin system.",
+      "best_for": "Serverless or browser environments where native modules like sharp can't be installed.",
+      "not_for": "Slower than native libraries like sharp for large images.",
+      "keywords": [
+        "jimp",
+        "javascript image processing",
+        "no native dependencies",
+        "node image",
+        "browser image",
+        "resize",
+        "serverless"
+      ]
     },
     {
       "id": "kornia/kornia",
@@ -220,7 +333,19 @@
       "why": "GPU-native image processing that plugs into training pipelines, unlike OpenCV.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Differentiable computer vision library for PyTorch with image processing and geometric vision ops that run on GPU.",
+      "best_for": "Image augmentation and vision operations inside PyTorch training pipelines.",
+      "not_for": "Needs PyTorch; for plain image edits Pillow or OpenCV are simpler.",
+      "keywords": [
+        "kornia",
+        "pytorch",
+        "differentiable vision",
+        "image augmentation",
+        "gpu image processing",
+        "computer vision",
+        "geometry"
+      ]
     },
     {
       "id": "libvips/libvips",
@@ -243,7 +368,20 @@
       "why": "Streaming architecture that is many times faster than ImageMagick for typical pipelines.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Demand-driven, horizontally threaded image processing library that is fast and low in memory, used via bindings like pyvips, sharp and ruby-vips.",
+      "best_for": "High-volume or large-image pipelines needing speed and low memory.",
+      "not_for": "Less format and operation breadth than ImageMagick; C API unless using a binding.",
+      "keywords": [
+        "libvips",
+        "image processing",
+        "low memory",
+        "pyvips",
+        "streaming",
+        "thumbnails",
+        "fast resize",
+        "sharp"
+      ]
     },
     {
       "id": "opencv/opencv",
@@ -266,7 +404,18 @@
       "why": "The most widely used CV library with thousands of algorithms and bindings for Python, Java and JS.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Main repository of OpenCV, the open source computer vision library. Its README is only a list of links (homepage, docs, forum, issue tracker) and contribution guidelines; extra modules live in the separate opencv_contrib repo.",
+      "best_for": "Computer vision and image processing work such as image manipulation, feature detection and video analysis, from C++ or its language bindings.",
+      "not_for": "Simple image resizing or format conversion where a lightweight library is enough. Some additional functionality lives in opencv_contrib rather than this repo.",
+      "keywords": [
+        "computer vision",
+        "opencv",
+        "image processing",
+        "video analysis",
+        "c++",
+        "opencv_contrib"
+      ]
     },
     {
       "id": "oxipng/oxipng",
@@ -289,7 +438,19 @@
       "why": "Fast multithreaded Rust PNG optimizer, a modern replacement for optipng.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Multithreaded lossless PNG/APNG optimizer written in Rust, usable as a CLI or Rust library.",
+      "best_for": "Shrinking PNGs in build steps or CI without quality loss.",
+      "not_for": "PNG only and lossless, so gains are modest compared with lossy quantization.",
+      "keywords": [
+        "oxipng",
+        "png optimizer",
+        "lossless compression",
+        "optipng alternative",
+        "build step",
+        "rust cli",
+        "apng"
+      ]
     },
     {
       "id": "nodeca/pica",
@@ -311,7 +472,19 @@
       "npm": "pica",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Browser image resizer using Lanczos filtering with Web Workers, WebAssembly and createImageBitmap, picking the best available technology.",
+      "best_for": "Client-side shrinking of uploads before sending to a server.",
+      "not_for": "Browser-focused resize only; not general editing.",
+      "keywords": [
+        "pica",
+        "browser image resize",
+        "lanczos",
+        "webassembly",
+        "web workers",
+        "client-side resize",
+        "upload size"
+      ]
     },
     {
       "id": "python-pillow/Pillow",
@@ -332,7 +505,19 @@
       "why": "The standard Python imaging library, supported by nearly every Python tool that touches images.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "The Python Imaging Library fork providing image opening, editing, conversion and saving with wide format support.",
+      "best_for": "General Python image manipulation and format conversion.",
+      "not_for": "Not suited to heavy computer vision or very large image pipelines.",
+      "keywords": [
+        "pillow",
+        "pil",
+        "python image",
+        "image conversion",
+        "thumbnails",
+        "image editing",
+        "python imaging"
+      ]
     },
     {
       "id": "danielgatis/rembg",
@@ -354,7 +539,20 @@
       "why": "Easy, local background removal with several U2Net/ISNet models; no API key needed.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Tool to remove image backgrounds using U2Net/ISNet models, usable as CLI, Python library, HTTP server or Docker container.",
+      "best_for": "Local background removal for product photos, batch processing or an API.",
+      "not_for": "Quality varies on hair and complex edges; model downloads and CPU speed.",
+      "keywords": [
+        "rembg",
+        "background removal",
+        "remove background",
+        "u2net",
+        "image segmentation",
+        "cli",
+        "http server",
+        "docker"
+      ]
     },
     {
       "id": "scikit-image/scikit-image",
@@ -376,7 +574,19 @@
       "why": "Well-documented, peer-reviewed algorithms that integrate with the SciPy stack.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python library of image processing algorithms for NumPy arrays, including segmentation, filters and feature detection.",
+      "best_for": "Scientific and analytical image processing in the SciPy stack.",
+      "not_for": "Not optimized for production image serving or deep learning.",
+      "keywords": [
+        "scikit-image",
+        "python image processing",
+        "segmentation",
+        "filters",
+        "numpy",
+        "feature detection",
+        "scientific imaging"
+      ]
     },
     {
       "id": "facebookresearch/sam2",
@@ -397,7 +607,20 @@
       "why": "Meta foundation model and code for cut-outs, masking and annotation pipelines.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Meta's Segment Anything Model 2 for promptable segmentation of objects in images and video.",
+      "best_for": "Object cut-outs, masking and annotation tools.",
+      "not_for": "Needs GPU and large model weights; research code rather than a turnkey product.",
+      "keywords": [
+        "sam2",
+        "segment anything",
+        "image segmentation",
+        "video segmentation",
+        "promptable",
+        "masks",
+        "annotation",
+        "meta"
+      ]
     },
     {
       "id": "lovell/sharp",
@@ -420,7 +643,20 @@
       "npm": "sharp",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "High-speed Node.js module for converting large images to web-friendly JPEG, PNG, WebP, GIF and AVIF at various sizes, based on libvips.",
+      "best_for": "Resizing and optimizing images in Node servers and build pipelines.",
+      "not_for": "Needs native binaries (libvips), which can complicate some serverless or browser targets.",
+      "keywords": [
+        "sharp",
+        "node image processing",
+        "resize",
+        "webp",
+        "avif",
+        "libvips",
+        "image optimization",
+        "thumbnails"
+      ]
     },
     {
       "id": "roboflow/supervision",
@@ -441,7 +677,20 @@
       "use_for": "Reusable computer vision utilities: annotate, track, count and filter detections",
       "why": "Model-agnostic toolkit that turns raw detector outputs into boxes, masks, zones and tracks with a few lines.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Model-agnostic Python toolkit for turning detector outputs into annotated boxes, masks, zones and tracks, with counting and filtering.",
+      "best_for": "Building video analytics with any detection model.",
+      "not_for": "Utility layer only; does not train detectors itself.",
+      "keywords": [
+        "supervision",
+        "object detection",
+        "annotation",
+        "tracking",
+        "zone counting",
+        "computer vision utilities",
+        "roboflow",
+        "detections"
+      ]
     },
     {
       "id": "thumbor/thumbor",
@@ -462,7 +711,19 @@
       "why": "Veteran open image service with face/feature-aware cropping; drop-in behind a CDN.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Smart imaging service for on-demand cropping, resizing and filters, with face and feature aware cropping.",
+      "best_for": "Self-hosted image service behind a CDN with smart crops.",
+      "not_for": "Python server to operate; slower than libvips-based servers like imgproxy.",
+      "keywords": [
+        "thumbor",
+        "smart crop",
+        "image server",
+        "face detection crop",
+        "on-demand resize",
+        "filters",
+        "cdn"
+      ]
     }
   ]
 }

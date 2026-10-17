@@ -22,7 +22,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Python client for the Claude API: messages, streaming, tool helpers (@beta_tool and the tool runner), browser and computer toolsets, and OpenTelemetry spans per API call.",
+      "best_for": "Calling Claude from Python.",
+      "not_for": "Claude only. For multiple providers use LiteLLM or a framework; agent loops need the Agent SDK or your own code.",
+      "keywords": [
+        "anthropic",
+        "claude api",
+        "python sdk",
+        "streaming",
+        "tool use",
+        "messages api",
+        "opentelemetry",
+        "batches"
+      ]
     },
     {
       "id": "anthropics/anthropic-sdk-typescript",
@@ -48,7 +61,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Official TypeScript client for the Claude API: streaming, structured outputs, tool helpers and tool runner, browser and computer toolsets. Supports Node 20+, Deno, Bun, Cloudflare Workers, Vercel Edge.",
+      "best_for": "Server-side TS/JS apps calling Claude.",
+      "not_for": "Browser use is disabled by default (dangerouslyAllowBrowser required) to avoid exposing keys. Claude only; React Native not supported.",
+      "keywords": [
+        "anthropic",
+        "claude api",
+        "typescript sdk",
+        "streaming",
+        "tool runner",
+        "structured outputs",
+        "node",
+        "cloudflare workers"
+      ]
     },
     {
       "id": "ax-llm/ax",
@@ -72,7 +98,20 @@
       "npm": "@ax-llm/ax",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "DSPy-style library for TypeScript: typed signatures (string DSL or Zod/Valibot/ArkType), agents, flows as typed graphs and optimizers such as GEPA, across many providers. Also generated for Python, Java, C++, Go and Rust.",
+      "best_for": "TypeScript LLM programs with typed signatures and automatic prompt optimization.",
+      "not_for": "Other language ports are generated libraries; smaller community than DSPy. Needs eval data to benefit from optimizers.",
+      "keywords": [
+        "dspy typescript",
+        "signatures",
+        "prompt optimization",
+        "gepa",
+        "zod",
+        "agents",
+        "flows",
+        "structured generation"
+      ]
     },
     {
       "id": "microsoft/BitNet",
@@ -95,7 +134,20 @@
       "why": "Microsoft's official inference framework for BitNet b1.58 models; optimized kernels make large models usable on commodity CPUs.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Official inference framework (bitnet.cpp) for 1-bit LLMs such as BitNet b1.58, with optimized CPU kernels (and a GPU kernel) for fast, lossless inference; also supports 1-bit embedding models.",
+      "best_for": "Running 1.58-bit models efficiently on CPUs or edge hardware.",
+      "not_for": "Only for BitNet-type models, not arbitrary open LLMs (use llama.cpp). NPU support is described as coming.",
+      "keywords": [
+        "bitnet",
+        "1-bit llm",
+        "cpu inference",
+        "ternary",
+        "bitnet.cpp",
+        "quantization",
+        "edge inference",
+        "i2_s"
+      ]
     },
     {
       "id": "googleapis/js-genai",
@@ -119,7 +171,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Google Gen AI SDK for TypeScript/JavaScript to call Gemini via the Gemini Developer API or Vertex AI, including Live API. Notes upcoming changes to automatic function calling and Node 22+ in v3.",
+      "best_for": "JS/TS apps using Gemini models.",
+      "not_for": "Google-only; v3 will require Node 22 and change AFC behavior, so pin <3.0.0 if needed. Avoid exposing API keys client-side.",
+      "keywords": [
+        "gemini",
+        "google genai",
+        "typescript sdk",
+        "vertex ai",
+        "live api",
+        "function calling",
+        "node",
+        "javascript"
+      ]
     },
     {
       "id": "googleapis/python-genai",
@@ -142,7 +207,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Google Gen AI Python SDK for Gemini via the Gemini Developer API or Vertex AI, including Live API and video generation. Replaces google-generativeai; the README warns of breaking changes to AFC and Live methods.",
+      "best_for": "Python apps calling Gemini.",
+      "not_for": "Google-only; upcoming major version removes several methods, so pin <3.0.0 to avoid breakage.",
+      "keywords": [
+        "gemini",
+        "google genai",
+        "python sdk",
+        "vertex ai",
+        "live api",
+        "function calling",
+        "genai",
+        "video generation"
+      ]
     },
     {
       "id": "huggingface/huggingface.js",
@@ -165,7 +243,21 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Collection of JS libraries for the Hugging Face ecosystem: hub (repos, files), inference (Inference Providers and Endpoints), mcp-client, gguf parser, jinja, tasks and more, all typed.",
+      "best_for": "Calling HF models or managing Hub repos from JS/TS, or parsing GGUF remotely.",
+      "not_for": "Hub-centric; for local inference use other runtimes. Some packages are niche.",
+      "keywords": [
+        "hugging face",
+        "inference providers",
+        "hub",
+        "gguf",
+        "mcp client",
+        "javascript",
+        "jinja",
+        "typescript",
+        "inference endpoints"
+      ]
     },
     {
       "id": "567-labs/instructor",
@@ -186,7 +278,20 @@
       "why": "Most widely used structured-output layer for LLMs; works across OpenAI, Anthropic, Gemini and local models",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Structured-output library that returns validated Pydantic objects from LLMs, with retries on validation errors and a unified from_provider interface across providers including OpenAI, Anthropic and Gemini.",
+      "best_for": "Reliable typed extraction from LLM responses with minimal code.",
+      "not_for": "Extraction-focused; for agents and observability use PydanticAI. Python-first, relying on provider tool/JSON modes plus validation retries.",
+      "keywords": [
+        "structured output",
+        "pydantic",
+        "json extraction",
+        "llm validation",
+        "retries",
+        "python",
+        "function calling",
+        "instructor"
+      ]
     },
     {
       "id": "kvcache-ai/ktransformers",
@@ -208,7 +313,21 @@
       "use_for": "Run huge MoE LLMs locally with hybrid CPU/GPU offloading",
       "why": "Heterogeneous inference that runs DeepSeek-class MoE models on a single GPU plus system RAM; exposes OpenAI-compatible APIs.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Research framework for CPU-GPU heterogeneous inference and fine-tuning of large MoE LLMs, with AMX/AVX-optimized CPU kernels, NUMA-aware memory, INT4/INT8 quantization and SGLang integration; supports LoRA fine-tuning.",
+      "best_for": "Running very large MoE models like DeepSeek-class on a single GPU plus lots of system RAM.",
+      "not_for": "Research-grade and hardware-specific (best with Intel AMX/AVX512 and large RAM); not for small models or turnkey serving.",
+      "keywords": [
+        "moe",
+        "cpu gpu hybrid",
+        "deepseek",
+        "local llm",
+        "amx",
+        "lora",
+        "kt-kernel",
+        "sglang",
+        "large model inference"
+      ]
     },
     {
       "id": "BerriAI/litellm",
@@ -232,7 +351,21 @@
       "why": "Widely adopted unified client/proxy with cost tracking, fallbacks and rate limits; MIT outside its enterprise/ folder.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Python SDK and self-hosted AI Gateway giving one OpenAI-format interface to 100+ LLM providers. Proxy adds virtual keys, spend tracking, guardrails, load balancing and admin UI; supports chat, responses, embeddings, images, audio and more.",
+      "best_for": "Provider-agnostic LLM calls or a central gateway with cost tracking and fallbacks.",
+      "not_for": "An enterprise folder and tier is separately licensed; running the proxy adds infrastructure. SDK-only users may not need the gateway.",
+      "keywords": [
+        "llm gateway",
+        "openai compatible",
+        "proxy",
+        "multi provider",
+        "cost tracking",
+        "load balancing",
+        "virtual keys",
+        "litellm",
+        "fallbacks"
+      ]
     },
     {
       "id": "Lightning-AI/litgpt",
@@ -256,7 +389,21 @@
       "why": "Lightning AI's hackable from-scratch implementations of popular LLMs with LoRA/QLoRA, FSDP and serving recipes.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "From-scratch, readable implementations of 20+ LLMs with recipes to pretrain, fine-tune (LoRA, QLoRA, adapters) and deploy, with Flash Attention, FSDP, quantization and configs for 1 to 1000+ GPUs.",
+      "best_for": "Learning, hacking or fine-tuning open LLMs with simple, transparent code.",
+      "not_for": "Not an optimized production server (use vLLM). Focus is on supported model architectures.",
+      "keywords": [
+        "fine-tuning",
+        "lora",
+        "qlora",
+        "pretrain llm",
+        "fsdp",
+        "flash attention",
+        "llm training",
+        "litgpt",
+        "adapters"
+      ]
     },
     {
       "id": "ggml-org/llama.cpp",
@@ -280,7 +427,21 @@
       "why": "The engine under Ollama, LM Studio and most local-LLM tools; broadest hardware and model support",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "C/C++ LLM and VLM inference with no dependencies, using GGUF models and quantization from 1.5 to 8 bits on a wide hardware range (Apple silicon, x86, RISC-V, GPUs). Includes a CLI, OpenAI-compatible server and web UI.",
+      "best_for": "Running open-weight models locally on CPU or GPU, or embedding inference in native apps.",
+      "not_for": "Lower-level than Ollama; models must be GGUF. Not designed for maximum multi-user GPU throughput (vLLM).",
+      "keywords": [
+        "llama.cpp",
+        "gguf",
+        "local llm",
+        "cpu inference",
+        "quantization",
+        "openai compatible server",
+        "apple silicon",
+        "llama-server",
+        "vlm"
+      ]
     },
     {
       "id": "lmstudio-ai/lmstudio-js",
@@ -304,7 +465,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official LM Studio TypeScript SDK to chat with local models, define tools for local agents, load/configure/unload models, use embeddings and structured output, in Node or browser.",
+      "best_for": "JS/TS apps controlling models running in LM Studio.",
+      "not_for": "Requires LM Studio running; unlike the OpenAI SDK it is not for hosted providers. Major versions had breaking changes.",
+      "keywords": [
+        "lm studio",
+        "local llm",
+        "typescript sdk",
+        "model loading",
+        "tools",
+        "embeddings",
+        "speculative decoding",
+        "structured output"
+      ]
     },
     {
       "id": "mistralai/client-ts",
@@ -327,7 +501,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official TypeScript client for Mistral AI: chat, embeddings, OCR, agents and prompts. v2 is ESM-only with Zod v4, shorter type names and a migration guide.",
+      "best_for": "Calling Mistral models from TS/JS.",
+      "not_for": "Mistral-only. v2 is ESM-only and has breaking changes from v1.",
+      "keywords": [
+        "mistral",
+        "typescript sdk",
+        "chat completions",
+        "embeddings",
+        "ocr",
+        "agents",
+        "la plateforme",
+        "esm"
+      ]
     },
     {
       "id": "alibaba/MNN",
@@ -354,7 +541,21 @@
       "why": "Alibaba's battle-tested lightweight inference engine; powers on-device LLMs in production apps with CPU/GPU/NPU backends.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Lightweight deep learning framework for on-device inference and training with CPU/GPU/NPU backends, used in 30+ Alibaba apps. Supports LLMs (Qwen series), vision-language models and has a Hexagon DSP backend; includes a Workbench and mobile chat apps.",
+      "best_for": "Deploying LLMs and other models on mobile, embedded and IoT devices.",
+      "not_for": "Requires converting/exporting models to MNN; ecosystem smaller than PyTorch/ONNX. Documentation partly China-focused.",
+      "keywords": [
+        "on-device inference",
+        "mobile llm",
+        "android",
+        "embedded",
+        "qwen",
+        "npu",
+        "inference engine",
+        "edge ai",
+        "mnn"
+      ]
     },
     {
       "id": "ollama/ollama",
@@ -378,7 +579,21 @@
       "why": "The most popular way to pull and serve local models; large model library and SDKs for JS and Python.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Runs open-weight models locally or in the cloud via a simple CLI, REST API (port 11434) and OpenAI-compatible endpoints. Includes a model library, JS and Python libraries, and ollama launch integrations for Claude Code, Codex and others.",
+      "best_for": "Easiest way to run and serve local models for dev tools and apps.",
+      "not_for": "Not for high-throughput multi-GPU serving (vLLM). Models come from its library or imports, and larger models need substantial hardware.",
+      "keywords": [
+        "ollama",
+        "local llm",
+        "rest api",
+        "openai compatible",
+        "run models locally",
+        "gemma",
+        "model library",
+        "docker",
+        "self-hosted llm"
+      ]
     },
     {
       "id": "openai/openai-node",
@@ -403,7 +618,21 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official TypeScript/JavaScript client for the OpenAI API, generated from the OpenAPI spec. Primary API is Responses, with helpers like toResponseInputItems for multi-turn replay.",
+      "best_for": "Calling OpenAI from Node or TS, also usable with OpenAI-compatible servers.",
+      "not_for": "OpenAI-focused and low-level; agent features are in the separate Agents SDK. Do not expose keys in browsers.",
+      "keywords": [
+        "openai",
+        "typescript sdk",
+        "responses api",
+        "chat completions",
+        "embeddings",
+        "node",
+        "audio",
+        "images",
+        "streaming"
+      ]
     },
     {
       "id": "openai/openai-python",
@@ -426,7 +655,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Official Python client for the OpenAI API with sync and async clients and full typings, generated from the OpenAPI spec. Responses API is primary; Chat Completions remains supported.",
+      "best_for": "Calling OpenAI or any OpenAI-compatible backend from Python.",
+      "not_for": "OpenAI-specific and low-level; use the Agents SDK for orchestration. Requires Python 3.10+.",
+      "keywords": [
+        "openai",
+        "python sdk",
+        "responses api",
+        "chat completions",
+        "async",
+        "openai compatible",
+        "embeddings",
+        "api client"
+      ]
     },
     {
       "id": "bentoml/OpenLLM",
@@ -449,7 +691,20 @@
       "why": "One command turns Llama, DeepSeek, Qwen etc. into an OpenAI-compatible server, built on BentoML for cloud deployment.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "CLI that serves open-source LLMs (Llama, Qwen, Phi and custom models) as OpenAI-compatible APIs with one command, includes a chat UI, and deploys via Docker, Kubernetes or BentoCloud using BentoML.",
+      "best_for": "Quickly self-hosting open models behind an OpenAI-style endpoint with cloud deployment paths.",
+      "not_for": "Does not store weights (HF token for gated models); BentoML-tied. For maximum throughput use vLLM directly.",
+      "keywords": [
+        "openllm",
+        "self-host llm",
+        "openai compatible",
+        "bentoml",
+        "llm serving",
+        "kubernetes",
+        "chat ui",
+        "llama"
+      ]
     },
     {
       "id": "dottxt-ai/outlines",
@@ -470,7 +725,21 @@
       "why": "Leading constrained-decoding library; its approach is used inside vLLM and other servers for structured generation",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Guarantees LLM output matches a type, JSON schema, regex or grammar by constraining generation, via model(prompt, output_type) with Pydantic models and Literals. Works with OpenAI, Ollama, vLLM and others.",
+      "best_for": "Guaranteed-valid structured output, especially with local models.",
+      "not_for": "Strongest with local/self-hosted inference. For hosted APIs, simpler retry libraries like Instructor may suffice. The .txt API is early access.",
+      "keywords": [
+        "structured generation",
+        "constrained decoding",
+        "json schema",
+        "regex",
+        "grammar",
+        "pydantic",
+        "vllm",
+        "outlines",
+        "guided generation"
+      ]
     },
     {
       "id": "TanStack/ai",
@@ -494,7 +763,21 @@
       "npm": "@tanstack/ai",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Type-safe, provider-agnostic TypeScript SDK for streaming chat, tool calling, structured output, realtime voice, media generation and agents, with React, Solid, Vue, Svelte, Preact bindings, devtools and OpenTelemetry. Code Mode lets an LLM run TypeScript in a sandbox.",
+      "best_for": "TS apps wanting a framework-agnostic alternative to the Vercel AI SDK with typed tools.",
+      "not_for": "Newer and smaller ecosystem than the Vercel AI SDK; adapters per provider are separate.",
+      "keywords": [
+        "tanstack ai",
+        "typescript",
+        "streaming chat",
+        "tool calling",
+        "structured output",
+        "realtime voice",
+        "devtools",
+        "react",
+        "provider adapters"
+      ]
     },
     {
       "id": "NVIDIA/TensorRT-LLM",
@@ -524,7 +807,21 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "NVIDIA's open library for optimized LLM inference on NVIDIA GPUs: custom kernels, in-flight batching, paged KV cache, FP8/FP4, speculative decoding, disaggregated prefill/decode, and a PyTorch-based Python LLM API from single GPU to multi-node.",
+      "best_for": "Maximum-throughput LLM serving on NVIDIA hardware.",
+      "not_for": "NVIDIA GPUs only; heavier setup than vLLM or Ollama.",
+      "keywords": [
+        "tensorrt-llm",
+        "nvidia gpu",
+        "inference optimization",
+        "fp8",
+        "speculative decoding",
+        "kv cache",
+        "triton",
+        "dynamo",
+        "llm serving"
+      ]
     },
     {
       "id": "toon-format/toon",
@@ -548,7 +845,20 @@
       "why": "Token-Oriented Object Notation spec with TS SDK and CLI; cuts prompt tokens for tabular/structured data vs JSON, with benchmarks.",
       "npm": "@toon-format/toon",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Token-Oriented Object Notation: a compact, lossless encoding of the JSON data model combining indentation for nesting with CSV-style tables for uniform arrays, to cut LLM prompt tokens. Has a spec, TS SDK and CLI.",
+      "best_for": "Feeding uniform, tabular JSON data to LLMs with fewer tokens.",
+      "not_for": "Gains shrink for deeply nested or non-uniform data, where JSON may be better. Format is stable but still evolving.",
+      "keywords": [
+        "toon",
+        "token efficient",
+        "json alternative",
+        "prompt compression",
+        "llm input format",
+        "tabular data",
+        "token savings",
+        "serialization"
+      ]
     },
     {
       "id": "vercel/ai",
@@ -572,7 +882,21 @@
       "npm": "ai",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Provider-agnostic TypeScript toolkit (AI SDK): generateText, streaming, tool calling, structured output and agents, with UI hooks for React, Svelte, Vue, Angular. Defaults to the Vercel AI Gateway or connects directly via provider packages.",
+      "best_for": "AI features in Next.js or other JS apps with streaming chat UIs.",
+      "not_for": "TypeScript/JS only. The default gateway routing is a Vercel service, though direct provider packages avoid it.",
+      "keywords": [
+        "ai sdk",
+        "vercel ai",
+        "streaming",
+        "generatetext",
+        "tool calling",
+        "structured output",
+        "nextjs",
+        "react hooks",
+        "provider agnostic"
+      ]
     },
     {
       "id": "vllm-project/vllm",
@@ -595,7 +919,21 @@
       "why": "De facto standard for self-hosted GPU LLM serving (PagedAttention, continuous batching)",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "High-throughput LLM inference and serving engine with PagedAttention, continuous batching, prefix caching, many quantization formats, speculative decoding and an OpenAI-compatible server across NVIDIA, AMD and other hardware.",
+      "best_for": "Self-hosted production serving of open-weight models on GPUs.",
+      "not_for": "Needs GPU infrastructure and tuning; overkill for laptop use (Ollama, llama.cpp).",
+      "keywords": [
+        "vllm",
+        "llm serving",
+        "pagedattention",
+        "continuous batching",
+        "openai compatible",
+        "quantization",
+        "gpu inference",
+        "throughput",
+        "speculative decoding"
+      ]
     },
     {
       "id": "mlc-ai/web-llm",
@@ -620,7 +958,20 @@
       "npm": "@mlc-ai/web-llm",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "In-browser LLM inference using WebGPU, with an OpenAI-compatible API (streaming, JSON mode, seeding) and no server. Companion to MLC LLM, with example apps and WebLLM Chat.",
+      "best_for": "Private or offline AI features running entirely client-side in the browser.",
+      "not_for": "Needs WebGPU-capable browsers and downloads model weights to the client; limited to smaller models. Function calling is listed as work in progress.",
+      "keywords": [
+        "webgpu",
+        "in-browser llm",
+        "client side inference",
+        "offline ai",
+        "openai compatible",
+        "mlc",
+        "privacy",
+        "json mode"
+      ]
     }
   ]
 }

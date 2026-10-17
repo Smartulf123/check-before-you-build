@@ -21,7 +21,20 @@
       "why": "Popular async Telegram framework with FSM, routers and middlewares.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "aiogram is a fully asynchronous Python 3.10+ framework for the Telegram Bot API, built on asyncio and aiohttp. Its API bindings are code-generated so they track new Bot API versions quickly. It provides an update router, a finite state machine, magic filters, middlewares, webhook replies and gettext/Fluent i18n.",
+      "best_for": "Building Telegram bots in async Python, especially ones needing conversation state (FSM), routing and middlewares.",
+      "not_for": "Developers new to asyncio; the README strongly advises prior asyncio experience. Telegram-only, so not for multi-platform chat bots.",
+      "keywords": [
+        "telegram",
+        "bot",
+        "python",
+        "asyncio",
+        "aiohttp",
+        "telegram bot api",
+        "fsm",
+        "middleware"
+      ]
     },
     {
       "id": "WhiskeySockets/Baileys",
@@ -42,7 +55,20 @@
       "npm": "baileys",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "TypeScript library using WebSockets to talk to the WhatsApp Web API without a browser. Version 7.0.0 introduced breaking changes; an example script demonstrates common use cases and a new guide is at baileys.wiki.",
+      "best_for": "WhatsApp automation in Node without Puppeteer overhead.",
+      "not_for": "Production use needing official support: it is unofficial, risks account bans and breaks when WhatsApp changes; use the official WhatsApp Business API for compliance.",
+      "keywords": [
+        "whatsapp",
+        "whatsapp web api",
+        "websockets",
+        "typescript",
+        "baileys",
+        "whatsapp bot",
+        "multi-device",
+        "node.js"
+      ]
     },
     {
       "id": "slackapi/bolt-js",
@@ -67,7 +93,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Slack's official JavaScript framework for building Slack apps. Handles authentication, events, commands and interactivity, and supports Socket Mode and HTTP receivers.",
+      "best_for": "Slack bots and apps in Node.js/TypeScript.",
+      "not_for": "Other chat platforms (see Chat SDK) or Python stacks (use Bolt for Python). Requires a Slack app and tokens.",
+      "keywords": [
+        "slack bot",
+        "slack app",
+        "bolt",
+        "events api",
+        "slash commands",
+        "socket mode",
+        "interactivity",
+        "node.js"
+      ]
     },
     {
       "id": "slackapi/bolt-python",
@@ -88,7 +127,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Slack's official Python framework for building Slack apps with the latest platform features. Supports sync and async apps and listeners for events, commands and interactivity.",
+      "best_for": "Python-based Slack bots and apps with first-party support.",
+      "not_for": "Other platforms or JavaScript stacks; requires Slack app credentials. Requires Python 3.7+ per README.",
+      "keywords": [
+        "slack bot",
+        "slack app",
+        "python",
+        "bolt",
+        "events",
+        "slash commands",
+        "socket mode",
+        "async"
+      ]
     },
     {
       "id": "vercel/chat",
@@ -110,7 +162,21 @@
       "why": "Unified TypeScript bot SDK from Vercel",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Unified TypeScript SDK to build chat bots once and deploy to Slack, Microsoft Teams, Google Chat, Discord, Telegram, GitHub, Linear, WhatsApp and more via adapters. Features event handlers (mentions, reactions, buttons, modals), AI streaming and pluggable state such as Redis.",
+      "best_for": "Multi-platform bots, especially AI agents, sharing one codebase across chat services.",
+      "not_for": "Single-platform bots needing every platform-specific feature, where official SDKs go deeper; adapters may not expose all capabilities.",
+      "keywords": [
+        "chatbot sdk",
+        "multi-platform bot",
+        "slack",
+        "teams",
+        "discord",
+        "telegram",
+        "ai streaming",
+        "adapters",
+        "typescript"
+      ]
     },
     {
       "id": "discordjs/discord.js",
@@ -133,7 +199,20 @@
       "npm": "discord.js",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Node.js module for the Discord API with full API coverage. The monorepo includes discord.js plus tooling such as create-discord-bot and other packages.",
+      "best_for": "Discord bots in JavaScript or TypeScript with the biggest community.",
+      "not_for": "Other languages, or lightweight HTTP-only interaction bots; the library is feature-rich and can be heavy for tiny bots.",
+      "keywords": [
+        "discord bot",
+        "node.js",
+        "discord api",
+        "slash commands",
+        "gateway",
+        "typescript",
+        "interactions",
+        "voice"
+      ]
     },
     {
       "id": "discord-net/Discord.Net",
@@ -153,7 +232,20 @@
       "why": "Most popular C# Discord library",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Unofficial .NET wrapper for the Discord API, split into NuGet packages for REST, WebSocket, webhooks, commands and interactions.",
+      "best_for": "C# Discord bots with slash command and interaction services.",
+      "not_for": "Non-.NET stacks; being unofficial it may lag API changes. Pick packages deliberately.",
+      "keywords": [
+        "discord bot",
+        "c#",
+        "dotnet",
+        "nuget",
+        "slash commands",
+        "interactions",
+        "discord api",
+        "webhook"
+      ]
     },
     {
       "id": "Rapptz/discord.py",
@@ -175,7 +267,20 @@
       "why": "The most popular Python Discord library, with slash commands and extensions.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Async Python library for the Discord API with support for slash commands, extensions and optional voice (discord.py[voice]).",
+      "best_for": "Python Discord bots with a mature, widely used library.",
+      "not_for": "Non-async code or non-Python stacks; voice needs the voice extra and extra dependencies.",
+      "keywords": [
+        "discord bot",
+        "python",
+        "asyncio",
+        "slash commands",
+        "discord api",
+        "cogs",
+        "voice",
+        "extension"
+      ]
     },
     {
       "id": "grammyjs/grammY",
@@ -198,7 +303,21 @@
       "npm": "grammy",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Telegram bot framework for TypeScript running on Node, Deno, Bun or serverless. Provides middleware, filtered handlers such as bot.on('message:text'), long polling or webhooks, and a plugin ecosystem with documentation.",
+      "best_for": "Modern Telegram bots in TypeScript across multiple runtimes.",
+      "not_for": "Python or other language bots; Telegraf is an alternative with a more established userbase.",
+      "keywords": [
+        "telegram bot",
+        "typescript",
+        "deno",
+        "bun",
+        "middleware",
+        "webhooks",
+        "long polling",
+        "plugins",
+        "serverless"
+      ]
     },
     {
       "id": "koishijs/koishi",
@@ -218,7 +337,20 @@
       "why": "Popular multi-platform bot framework",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Koishi is a cross-platform, extensible chatbot framework written in TypeScript. It ships a web console with an online plugin market so bots can be set up and extended without coding, and supports QQ, Telegram, Discord, Feishu and others with multi-account, cross-platform data. Over 3000 official and community plugins exist, with hot module reload for plugin development.",
+      "best_for": "Running or developing chat bots across several platforms (especially QQ and other Chinese platforms) with a console UI and a large plugin ecosystem, in TypeScript/Node.js.",
+      "not_for": "Readers who need English documentation; the README and much of the ecosystem are in Chinese. Not for Python-based bot stacks.",
+      "keywords": [
+        "chatbot",
+        "bot framework",
+        "typescript",
+        "qq",
+        "telegram",
+        "discord",
+        "plugins",
+        "cross-platform"
+      ]
     },
     {
       "id": "langbot-app/LangBot",
@@ -243,7 +375,22 @@
       "why": "Production IM bot platform with agent/knowledge-base orchestration and a plugin system across many chat platforms.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source platform for building LLM-powered instant-messaging bots across Discord, Slack, Telegram, LINE, WeChat and more. Provides agent and knowledge-base orchestration, a plugin system and a management UI; cloud option available.",
+      "best_for": "Connecting LLMs and agents to chat platforms with a ready platform rather than SDK code.",
+      "not_for": "Custom bot logic in code or only one platform, where a platform SDK is simpler; it is a full platform to deploy.",
+      "keywords": [
+        "llm bot",
+        "chatbot platform",
+        "wechat",
+        "discord",
+        "slack",
+        "telegram",
+        "line",
+        "knowledge base",
+        "agent",
+        "plugins"
+      ]
     },
     {
       "id": "nonebot/nonebot2",
@@ -265,7 +412,20 @@
       "why": "One plugin system across many chat platforms via adapters.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "NoneBot2 is a cross-platform, extensible Python chatbot framework built on type annotations and asyncio. It talks to existing protocol adapters for different chat platforms and handles the events they deliver, with 100% type-annotation coverage. The nb-cli scaffold creates and runs projects, and a plugin store offers official and third-party plugins.",
+      "best_for": "Building async Python chat bots that target multiple platforms through adapters, with a CLI scaffold and plugin ecosystem.",
+      "not_for": "Getting a platform's protocol implemented: NoneBot2 only consumes existing adapters. Docs and community are primarily Chinese. Not a drop-in replacement for NoneBot1.",
+      "keywords": [
+        "chatbot",
+        "bot framework",
+        "python",
+        "asyncio",
+        "nb-cli",
+        "plugins",
+        "cross-platform",
+        "adapters"
+      ]
     },
     {
       "id": "eternnoir/pyTelegramBotAPI",
@@ -286,7 +446,20 @@
       "why": "Easy to start with and widely used; GPL-2.0 licensed.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Simple, extensible Python implementation of the Telegram Bot API, both synchronous and asynchronous. Tested on Python 3.11-3.15 and PyPy 3.",
+      "best_for": "Quick Telegram bots in Python with a low learning curve.",
+      "not_for": "Strict-typed, router-heavy or FSM-focused designs (aiogram) and GPL-2.0 compatibility concerns for closed-source code.",
+      "keywords": [
+        "telegram bot",
+        "python",
+        "telebot",
+        "bot api",
+        "sync",
+        "async",
+        "long polling",
+        "webhook"
+      ]
     },
     {
       "id": "python-telegram-bot/python-telegram-bot",
@@ -306,7 +479,20 @@
       "why": "The most popular Telegram bot library",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "python-telegram-bot is a pure-Python, asynchronous interface to the Telegram Bot API for Python 3.10+. Besides the raw API it provides shortcut methods and high-level classes in telegram.ext for building bots, with webhook and polling support and full static type hints. Releases are signed with sigstore.",
+      "best_for": "Writing Telegram bots in Python with a well-documented, typed library that covers the full Bot API plus a high-level application framework.",
+      "not_for": "Projects that cannot accept the LGPLv3 license or need other chat platforms. Pre-3.10 Python versions are not supported.",
+      "keywords": [
+        "telegram",
+        "bot",
+        "python",
+        "telegram bot api",
+        "asyncio",
+        "webhooks",
+        "polling",
+        "lgpl"
+      ]
     },
     {
       "id": "serenity-rs/serenity",
@@ -326,7 +512,20 @@
       "why": "Leading Rust Discord library",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Rust library for the Discord API with event handler traits and a Client builder. For slash/text commands the README points to the poise framework; for voice to songbird.",
+      "best_for": "Discord bots in Rust with strong type safety.",
+      "not_for": "Quick command-framework bots, where poise (built on serenity) is the recommended layer; Rust learning curve.",
+      "keywords": [
+        "discord bot",
+        "rust",
+        "discord api",
+        "poise",
+        "songbird",
+        "event handler",
+        "async",
+        "gateway"
+      ]
     },
     {
       "id": "telegraf/telegraf",
@@ -349,7 +548,20 @@
       "npm": "telegraf",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Telegram Bot API framework for Node.js in JavaScript or TypeScript with middleware, filters and typings. README states full Bot API 7.1 support and webhooks via http, fastify, Connect or Express.",
+      "best_for": "Node.js Telegram bots with middleware style.",
+      "not_for": "Newer Bot API features beyond 7.1 or multi-runtime (Deno/Bun) use; grammY is a more recent alternative.",
+      "keywords": [
+        "telegram bot",
+        "node.js",
+        "typescript",
+        "middleware",
+        "webhooks",
+        "telegraf",
+        "bot api",
+        "express"
+      ]
     },
     {
       "id": "irazasyed/telegram-bot-sdk",
@@ -371,7 +583,19 @@
       "why": "Most used PHP Telegram SDK.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "PHP SDK for the Telegram Bot API with Laravel integration out of the box.",
+      "best_for": "Telegram bots in PHP, especially inside Laravel apps.",
+      "not_for": "Non-PHP stacks; check maintenance and Bot API version coverage in the docs before relying on newer features.",
+      "keywords": [
+        "telegram bot",
+        "php",
+        "laravel",
+        "bot api",
+        "sdk",
+        "webhook",
+        "commands"
+      ]
     },
     {
       "id": "TelegramBots/Telegram.Bot",
@@ -393,7 +617,20 @@
       "why": "The standard C# Telegram library, kept current with Bot API releases.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Most popular .NET client for the Telegram Bot API, published as NuGet packages by the Telegram Bots team. It points to WTelegramClient for the Client API.",
+      "best_for": "C# and .NET Telegram bots kept current with Bot API releases.",
+      "not_for": "User-account automation (it uses the Bot API only, not the Client API); other languages.",
+      "keywords": [
+        "telegram bot",
+        "c#",
+        "dotnet",
+        "nuget",
+        "bot api",
+        "csharp",
+        "webhook",
+        "long polling"
+      ]
     },
     {
       "id": "rubenlagus/TelegramBots",
@@ -415,7 +652,20 @@
       "why": "The standard Java Telegram library, with a Spring Boot starter.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Java library for Telegram bots supporting both webhooks and long polling (long polling recommended). Includes example bots and a Spring Boot starter.",
+      "best_for": "Java Telegram bots, including Spring Boot setups.",
+      "not_for": "Non-JVM stacks, or very new Bot API features; check release state of the current version.",
+      "keywords": [
+        "telegram bot",
+        "java",
+        "spring boot",
+        "long polling",
+        "webhook",
+        "bot api",
+        "maven",
+        "inline bot"
+      ]
     },
     {
       "id": "wwebjs/whatsapp-web.js",
@@ -438,7 +688,20 @@
       "npm": "whatsapp-web.js",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Node.js library that automates WhatsApp Web through Puppeteer, exposing most web client features as an API in a managed browser instance.",
+      "best_for": "Prototyping WhatsApp bots and automations in Node with broad feature access.",
+      "not_for": "Production or compliance-sensitive use: it is unofficial and can violate WhatsApp terms; Puppeteer makes it heavy. Use the official WhatsApp Business API instead.",
+      "keywords": [
+        "whatsapp",
+        "whatsapp web",
+        "puppeteer",
+        "node.js",
+        "whatsapp bot",
+        "automation",
+        "unofficial api",
+        "chat"
+      ]
     },
     {
       "id": "tulir/whatsmeow",
@@ -458,7 +721,20 @@
       "why": "Robust Go WhatsApp library used by Matrix bridges",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Go library for the WhatsApp web multidevice API. Supports sending and receiving text/media messages, groups, invite links, typing and read receipts, app state sync and retry receipts.",
+      "best_for": "WhatsApp bots and bridges in Go (used by Matrix bridges).",
+      "not_for": "Official or supported integrations: unofficial, can break and risks bans; non-Go stacks.",
+      "keywords": [
+        "whatsapp",
+        "go",
+        "golang",
+        "multidevice",
+        "whatsapp bridge",
+        "matrix bridge",
+        "messaging",
+        "unofficial api"
+      ]
     }
   ]
 }

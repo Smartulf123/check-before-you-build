@@ -20,7 +20,20 @@
       "why": "The standard self-hosted crypto payment gateway with e-commerce plugins and APIs",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Free, self-hosted Bitcoin payment processor that lets merchants accept Bitcoin directly with no fees or intermediaries. It provides APIs (Greenfield), plugins and e-commerce integrations.",
+      "best_for": "Merchants or developers who want to accept Bitcoin and Lightning without a third-party processor, with their own server.",
+      "not_for": "You operate the server and wallet infrastructure yourself; crypto-only, not a card or fiat payments solution.",
+      "keywords": [
+        "bitcoin payments",
+        "lightning network",
+        "self-hosted payment processor",
+        "crypto checkout",
+        "greenfield api",
+        "woocommerce plugin",
+        "invoices",
+        "merchant"
+      ]
     },
     {
       "id": "dj-stripe/dj-stripe",
@@ -42,7 +55,20 @@
       "why": "Keeps a local copy of Stripe objects as Django models, simplifying queries and webhook handling.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Django package that implements Stripe models as Django models and keeps them in sync via a webhook endpoint. Covers Stripe core, Billing (subscriptions, invoices, prices), Payment Intents and multiple accounts.",
+      "best_for": "Django projects using Stripe Billing that want local queryable copies of customers, subscriptions and invoices.",
+      "not_for": "Django only and Stripe only; Stripe Connect support is partial. Adds many tables and tracks Stripe API versions, which adds upgrade work.",
+      "keywords": [
+        "django stripe",
+        "stripe webhooks",
+        "subscriptions",
+        "stripe models",
+        "billing",
+        "payment intents",
+        "django payments",
+        "invoices"
+      ]
     },
     {
       "id": "juspay/hyperswitch",
@@ -65,7 +91,20 @@
       "why": "Open-source payment orchestrator from Juspay: smart routing, retries and unified API for 50+ processors.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Open-source modular payments infrastructure that orchestrates payments across many processors via one API. Modules include smart routing, revenue recovery (retry strategies) and cost observability, and it is self-hostable.",
+      "best_for": "Businesses using multiple payment processors who want routing, retries and one integration, with control over their payment stack.",
+      "not_for": "Heavy to run for a single-processor shop; use the processor's own SDK instead. It is orchestration, not a processor itself.",
+      "keywords": [
+        "payment orchestration",
+        "payment routing",
+        "multiple processors",
+        "smart retries",
+        "revenue recovery",
+        "unified payments api",
+        "self-hosted payments",
+        "juspay"
+      ]
     },
     {
       "id": "killbill/killbill",
@@ -88,7 +127,20 @@
       "why": "Mature, plugin-based billing platform in production for over a decade; Apache-2.0.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source subscription billing and payments platform, in production since 2010. Handles catalogs, subscriptions, usage metering, invoicing, payments across gateways, credits, tax and dunning, with a modular plugin architecture.",
+      "best_for": "Running your own subscription billing engine with complex catalogs, trials and multiple gateways, owning the data.",
+      "not_for": "Java platform with significant ops footprint; overkill for a small SaaS where Stripe Billing suffices. Not all-in-one; plugins are needed for gateways and tax.",
+      "keywords": [
+        "subscription billing",
+        "invoicing",
+        "dunning",
+        "usage metering",
+        "billing platform",
+        "payment gateways",
+        "catalog",
+        "self-hosted billing"
+      ]
     },
     {
       "id": "getlago/lago",
@@ -110,7 +162,21 @@
       "why": "Leading open-source metering and billing API; self-host or cloud, integrates with Stripe and other gateways.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Open-source metering and billing system. Ingests usage events, turns them into billable metrics, applies pricing, credits and entitlements, then generates invoices and collects payments through gateways such as Stripe.",
+      "best_for": "Usage-based or hybrid pricing for AI and API products (tokens, compute, API calls), self-hosted or on Lago Cloud.",
+      "not_for": "Full platform to deploy and run; not needed for simple flat-fee subscriptions. Payment collection depends on integrated gateways.",
+      "keywords": [
+        "usage-based billing",
+        "metering",
+        "billable metrics",
+        "invoicing",
+        "credits",
+        "entitlements",
+        "stripe integration",
+        "ai billing",
+        "pricing plans"
+      ]
     },
     {
       "id": "laravel/cashier-stripe",
@@ -132,7 +198,20 @@
       "why": "Official Laravel package with a fluent API over Stripe Billing; the default choice for Laravel SaaS.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Laravel package giving a fluent interface to Stripe subscription billing. Handles coupons, plan swaps, subscription quantities, cancellation grace periods and invoice PDFs.",
+      "best_for": "Laravel apps selling subscriptions through Stripe.",
+      "not_for": "Laravel and Stripe only. For other processors or frameworks use a different library such as Omnipay or Pay for Rails.",
+      "keywords": [
+        "laravel",
+        "stripe subscriptions",
+        "billing",
+        "invoices pdf",
+        "coupons",
+        "php",
+        "cashier",
+        "grace period"
+      ]
     },
     {
       "id": "thephpleague/omnipay",
@@ -152,7 +231,20 @@
       "why": "The standard PHP payments abstraction with many gateway drivers",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Framework-agnostic multi-gateway payment library for PHP with a consistent API across gateway drivers. Includes unit tests and an example application.",
+      "best_for": "PHP projects that need to support several payment gateways or switch gateways without rewriting code.",
+      "not_for": "Lowest-common-denominator API may hide gateway-specific features; each gateway needs its own driver package of varying maintenance quality. PHP only.",
+      "keywords": [
+        "php payments",
+        "payment gateway",
+        "omnipay",
+        "gateway abstraction",
+        "checkout",
+        "composer",
+        "multiple gateways",
+        "ecommerce"
+      ]
     },
     {
       "id": "openmeterio/openmeter",
@@ -175,7 +267,21 @@
       "why": "Real-time metering built for AI/API products, with entitlements and Stripe sync.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source monetization infrastructure for AI, API and usage-based products. Ingests CloudEvents, aggregates usage in real time, models plans and prices, calculates entitlements and handles subscriptions, credits and invoices, working with your existing payment and tax providers.",
+      "best_for": "Metering API calls or tokens per customer and enforcing usage limits or billing from usage, optionally syncing to Stripe.",
+      "not_for": "A multi-service platform to deploy; overkill for flat subscriptions. Payments and tax still come from external providers.",
+      "keywords": [
+        "usage metering",
+        "usage-based billing",
+        "cloudevents",
+        "entitlements",
+        "api billing",
+        "ai tokens billing",
+        "stripe sync",
+        "invoices",
+        "real-time usage"
+      ]
     },
     {
       "id": "pay-rails/pay",
@@ -197,7 +303,21 @@
       "why": "Rails engine that unifies multiple processors behind one model API, including webhooks.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Payments engine for Ruby on Rails 6+ that puts several processors (Stripe, Paddle, Braintree and others) behind one model API, including webhook handling and subscription helpers.",
+      "best_for": "Rails apps that need subscriptions with Stripe, Paddle or Braintree and want ready-made models and webhooks.",
+      "not_for": "Rails only. A thin abstraction, so processor-specific features may need the processor's own gem; not for non-Rails stacks.",
+      "keywords": [
+        "rails payments",
+        "stripe",
+        "paddle",
+        "braintree",
+        "subscriptions",
+        "webhooks",
+        "rails engine",
+        "billing",
+        "ruby"
+      ]
     },
     {
       "id": "Payum/Payum",
@@ -219,7 +339,20 @@
       "why": "Framework-agnostic PHP payment library with gateways for Stripe, PayPal and more; used by Sylius.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Framework-agnostic PHP payment library that integrates 50+ payment services behind one abstraction. Used by Sylius and friendly to major PHP frameworks.",
+      "best_for": "PHP projects (Symfony, Sylius, custom) integrating several gateways such as Stripe and PayPal through a single API.",
+      "not_for": "PHP only. The README is thin and the abstraction is fairly heavy; for a single gateway the official SDK is simpler.",
+      "keywords": [
+        "php payments",
+        "payment gateways",
+        "paypal",
+        "stripe",
+        "sylius",
+        "payment abstraction",
+        "symfony",
+        "ecommerce"
+      ]
     },
     {
       "id": "polarsource/polar",
@@ -242,7 +375,21 @@
       "why": "Open-source billing platform with SDKs and framework adapters; handles global sales tax as MoR.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Open-source billing platform for software and AI products, built around usage billing, subscriptions, seats, credits, trials and discounts. Acts as a merchant of record handling global sales tax, with SDKs and framework adapters.",
+      "best_for": "Indie developers and AI startups selling subscriptions, digital products or usage-based plans who want tax handled for them.",
+      "not_for": "You depend on Polar as merchant of record and its fees; not for owning the payment stack or for physical goods. Self-hosting is a heavy option.",
+      "keywords": [
+        "merchant of record",
+        "billing",
+        "subscriptions",
+        "usage billing",
+        "sales tax",
+        "digital products",
+        "saas payments",
+        "credits",
+        "license keys"
+      ]
     },
     {
       "id": "hyodotdev/openiap",
@@ -265,7 +412,20 @@
       "npm": "react-native-iap",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Home of the OpenIAP protocols: a Client Protocol for a unified in-app purchase API across stores and a Commerce Protocol for backend verification and entitlements. Also hosts react-native-iap, the open-source IAP library for React Native.",
+      "best_for": "React Native or Expo apps that need in-app purchases and subscriptions on iOS and Android without a paid third-party service.",
+      "not_for": "You handle receipt validation and entitlements yourself unless you add a backend; RevenueCat offers a managed alternative.",
+      "keywords": [
+        "in-app purchases",
+        "react native iap",
+        "expo",
+        "subscriptions",
+        "storekit",
+        "google play billing",
+        "ios android",
+        "iap"
+      ]
     },
     {
       "id": "RevenueCat/react-native-purchases",
@@ -289,7 +449,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official RevenueCat SDK for React Native. Wraps StoreKit, Google Play Billing and RevenueCat Web Billing to fetch products, make purchases and check subscription status, backed by RevenueCat's hosted server.",
+      "best_for": "React Native apps wanting subscriptions with server-side receipt validation, remote product config, analytics and webhooks handled for you.",
+      "not_for": "Requires a RevenueCat account and backend (free tier, then revenue-based pricing); not usable standalone for pure DIY IAP.",
+      "keywords": [
+        "in-app subscriptions",
+        "revenuecat",
+        "react native purchases",
+        "receipt validation",
+        "storekit",
+        "google play billing",
+        "paywall",
+        "entitlements"
+      ]
     },
     {
       "id": "stripe/ai",
@@ -313,7 +486,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Stripe repo of SDKs for building AI products on Stripe, including @stripe/ai-sdk for the Vercel AI SDK and @stripe/token-meter for metering OpenAI, Anthropic and Gemini usage into Stripe billing, plus agent toolkit and MCP support.",
+      "best_for": "Letting LLM agents call Stripe tools or billing AI token usage through Stripe in Vercel AI SDK or native-SDK apps.",
+      "not_for": "Stripe only and mostly JS/TS-focused; not a general payment SDK. Agents with Stripe write access need careful permission scoping.",
+      "keywords": [
+        "stripe agent toolkit",
+        "mcp",
+        "function calling",
+        "vercel ai sdk",
+        "token metering",
+        "llm billing",
+        "langchain",
+        "ai agents payments"
+      ]
     },
     {
       "id": "stripe/stripe-cli",
@@ -335,7 +521,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Stripe command-line tool to build, test and manage integrations. Forwards webhooks to localhost, triggers or resends test events, tails API request logs and creates or updates API objects from the terminal.",
+      "best_for": "Local development and testing of Stripe webhooks, triggering test events and quick API calls.",
+      "not_for": "A development tool, not a library to ship in your app; only works with Stripe.",
+      "keywords": [
+        "stripe webhooks",
+        "webhook testing",
+        "localhost forwarding",
+        "trigger events",
+        "api logs",
+        "stripe cli",
+        "test mode",
+        "terminal"
+      ]
     },
     {
       "id": "stripe/stripe-node",
@@ -360,7 +559,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Official typed Stripe SDK for server-side JavaScript. Provides access to the Stripe API (customers, payments, subscriptions, webhooks) and is kept in step with Stripe API versions.",
+      "best_for": "Node.js or TypeScript backends calling the Stripe API.",
+      "not_for": "Server-side only; use Stripe.js (stripe-js) for collecting card details in the browser. Stripe only.",
+      "keywords": [
+        "stripe",
+        "node.js",
+        "typescript",
+        "payments api",
+        "subscriptions",
+        "webhooks",
+        "checkout sessions",
+        "customers"
+      ]
     },
     {
       "id": "stripe/stripe-php",
@@ -382,7 +594,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Stripe PHP library providing classes for API resources that initialize from API responses. Supports a StripeClient service pattern as well as legacy static patterns.",
+      "best_for": "PHP backends (Laravel, Symfony, plain PHP) integrating with the Stripe API.",
+      "not_for": "Stripe only and server-side; for Laravel subscription conveniences consider Cashier on top.",
+      "keywords": [
+        "stripe php",
+        "payments",
+        "stripeclient",
+        "composer",
+        "subscriptions",
+        "webhooks",
+        "customers",
+        "php sdk"
+      ]
     },
     {
       "id": "stripe/stripe-python",
@@ -405,7 +630,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Stripe SDK for Python with typed API resources and a StripeClient class (introduced in v8) alongside a legacy module-level pattern, including async support.",
+      "best_for": "Python backends such as Django, Flask or FastAPI calling the Stripe API.",
+      "not_for": "Stripe only and server-side; Django users wanting local models may add dj-stripe. Legacy and client patterns coexist, so pick one.",
+      "keywords": [
+        "stripe python",
+        "payments api",
+        "stripeclient",
+        "django",
+        "fastapi",
+        "subscriptions",
+        "webhooks",
+        "async"
+      ]
     },
     {
       "id": "stripe/stripe-js",
@@ -429,7 +667,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Official ES/CommonJS wrapper that loads Stripe.js from js.stripe.com via loadStripe and provides TypeScript types for Elements and Checkout. Stripe.js itself must be loaded from Stripe for PCI compliance.",
+      "best_for": "Frontend apps in any bundler setup that collect payments with Stripe Elements or Checkout and want typed APIs.",
+      "not_for": "Cannot bundle or self-host Stripe.js (PCI requirement); front-end only and requires a backend such as stripe-node for secrets.",
+      "keywords": [
+        "stripe elements",
+        "stripe checkout",
+        "loadstripe",
+        "typescript types",
+        "pci compliance",
+        "payment form",
+        "browser payments",
+        "frontend"
+      ]
     }
   ]
 }

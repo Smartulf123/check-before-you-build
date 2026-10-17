@@ -21,7 +21,19 @@
       "why": "Apache top-level RTOS with a Linux-like API; used in PX4 drones and commercial products",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Apache NuttX is a real-time operating system focused on standards compliance and small footprint, scaling from 8-bit to 64-bit microcontrollers. It follows POSIX and ANSI standards, borrowing APIs from Unix and other RTOSs where needed, and includes a simulator you can run in a terminal.",
+      "best_for": "Embedded projects that want a POSIX-like RTOS on microcontrollers, easing porting of Unix-style code, with a simulator for development without hardware.",
+      "not_for": "Linux-class applications or projects wanting an Arduino-style environment; functionality unsuited to deeply embedded systems, such as fork(), is not part of it.",
+      "keywords": [
+        "rtos",
+        "embedded",
+        "posix",
+        "microcontroller",
+        "real-time operating system",
+        "apache",
+        "simulator"
+      ]
     },
     {
       "id": "espressif/arduino-esp32",
@@ -44,7 +56,19 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "The Arduino core for Espressif's ESP32 family of SoCs, letting you program ESP32 chips with the Arduino API and libraries. It can also be used as an ESP-IDF component, with docs covering installation, libraries and migration from 2.x to 3.x.",
+      "best_for": "Programming ESP32 boards with the Arduino IDE or API, reusing Arduino libraries for Wi-Fi/Bluetooth IoT projects.",
+      "not_for": "Non-Espressif microcontrollers, or projects needing full low-level ESP-IDF control without the Arduino layer. Upgrading from 2.x to 3.x requires following the migration guide.",
+      "keywords": [
+        "esp32",
+        "arduino",
+        "espressif",
+        "esp-idf",
+        "iot",
+        "microcontroller",
+        "arduino core"
+      ]
     },
     {
       "id": "bblanchon/ArduinoJson",
@@ -66,7 +90,19 @@
       "why": "Fast, memory-efficient, header-only JSON library used across the Arduino ecosystem.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "A C++ JSON library for Arduino and IoT devices that handles JSON and MessagePack serialization and deserialization. It is designed for low memory use, with input filtering, string deduplication, custom allocators, and stream support.",
+      "best_for": "Parsing and generating JSON or MessagePack on memory-constrained microcontrollers in Arduino or embedded C++ projects.",
+      "not_for": "Desktop or server apps with plenty of memory, where general C++ JSON libraries are simpler; non-C++ projects.",
+      "keywords": [
+        "json",
+        "arduino",
+        "c++",
+        "iot",
+        "messagepack",
+        "embedded",
+        "serialization"
+      ]
     },
     {
       "id": "adafruit/circuitpython",
@@ -93,7 +129,19 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "A beginner-friendly, open-source version of Python for microcontrollers. You install it on a supported USB board, edit code.py on the CIRCUITPY drive, and the code reloads automatically, with no software beyond a text editor. Some boards connect over BLE instead of USB.",
+      "best_for": "Beginners, education and hobby prototyping on supported microcontroller boards where quick Python iteration matters more than raw performance.",
+      "not_for": "Unsupported boards or performance-critical, hard real-time firmware where C/C++ or Rust fits better.",
+      "keywords": [
+        "circuitpython",
+        "python",
+        "microcontroller",
+        "adafruit",
+        "beginner",
+        "embedded",
+        "micropython"
+      ]
     },
     {
       "id": "eclipse-mosquitto/mosquitto",
@@ -120,7 +168,19 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "An open-source MQTT broker supporting MQTT 5.0, 3.1.1 and 3.1. It also ships C/C++ client libraries plus mosquitto_pub, mosquitto_sub and admin tools like mosquitto_passwd and mosquitto_ctrl, with a dynamic security plugin for authentication.",
+      "best_for": "Running a lightweight MQTT broker for IoT messaging, and testing publish/subscribe from the command line.",
+      "not_for": "Public deployments left on the default configuration; out of the box it allows anonymous access from localhost only, so production needs listener and authentication setup.",
+      "keywords": [
+        "mqtt",
+        "broker",
+        "iot",
+        "pub/sub",
+        "mosquitto",
+        "messaging",
+        "eclipse"
+      ]
     },
     {
       "id": "embassy-rs/embassy",
@@ -142,7 +202,20 @@
       "why": "The leading way to write async firmware in Rust, with HALs, networking and USB stacks",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "A Rust framework for embedded applications built on async/await, where tasks compile into cooperatively scheduled state machines on a single stack with no dynamic allocation. Provides libraries and examples for nRF, STM32, RP2040/RP235x and NXP MCX chips, flashed with probe-rs.",
+      "best_for": "Writing safe, energy-efficient async firmware in Rust on supported microcontrollers without a traditional RTOS.",
+      "not_for": "C/C++ codebases or chips outside its supported HALs; requires Rust and probe-rs tooling.",
+      "keywords": [
+        "rust",
+        "embedded",
+        "async",
+        "firmware",
+        "stm32",
+        "nrf52",
+        "rp2040",
+        "probe-rs"
+      ]
     },
     {
       "id": "espressif/esp-idf",
@@ -165,7 +238,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "ESP-IDF is Espressif's official development framework for its SoCs (ESP32 family), usable on Windows, Linux and macOS. Projects are configured and built with the idf.py tool (set-target, menuconfig, build), and the repo ships example projects to copy as a starting point. Each SoC series and release has its own documentation and support schedule.",
+      "best_for": "Writing native C/C++ firmware for ESP32-series chips with full access to Espressif's SDK, menuconfig configuration and official examples.",
+      "not_for": "ESP8266/ESP8285 (handled by the separate RTOS SDK), non-Espressif chips, or users wanting a no-code/YAML firmware approach; release versions have their own support windows and end-of-life dates.",
+      "keywords": [
+        "esp32",
+        "espressif",
+        "sdk",
+        "firmware",
+        "idf.py",
+        "menuconfig",
+        "embedded",
+        "iot"
+      ]
     },
     {
       "id": "esphome/esphome",
@@ -189,7 +275,20 @@
       "why": "Fastest way to make DIY sensors and devices; MIT (Python) and GPLv3 (C++), verified.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "ESPHome is an Open Home Foundation project that generates firmware for microcontrollers such as ESP32/ESP8266 from YAML configuration files and integrates the resulting devices with Home Assistant. The repository README itself only links to documentation at esphome.io, issues and feature requests.",
+      "best_for": "Building custom sensors, switches and other DIY smart-home devices on ESP boards that should appear in Home Assistant without writing firmware code by hand.",
+      "not_for": "Native C/C++ firmware development with full SDK control, or projects outside the smart-home/Home Assistant ecosystem; the README carries no feature detail, so check esphome.io docs for supported hardware.",
+      "keywords": [
+        "esphome",
+        "esp32",
+        "esp8266",
+        "home assistant",
+        "yaml",
+        "firmware",
+        "smart home",
+        "open home foundation"
+      ]
     },
     {
       "id": "FastLED/FastLED",
@@ -211,7 +310,20 @@
       "why": "The standard LED library for Arduino with wide chipset support.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "FastLED is an Arduino/embedded C++ library for driving addressable LED strips across 50+ platforms and nearly every LED chipset. It scales from tiny ATtiny chips to tens of thousands of LEDs on Teensy 4.1 with parallel output drivers such as ObjectFLED, and offers background rendering on ESP32/Teensy plus 8-bit math and brightness helpers. A Cookbook provides tutorials and recipes.",
+      "best_for": "Programming LED effects in C++ on Arduino-compatible boards (Teensy, ESP32, AVR, etc.) with WS2812 and other addressable LED chipsets.",
+      "not_for": "Users who want ready-made LED firmware with a web UI or app (it is a library, not firmware like WLED), or non-C++/non-microcontroller environments.",
+      "keywords": [
+        "fastled",
+        "led",
+        "ws2812",
+        "arduino",
+        "teensy",
+        "esp32",
+        "addressable leds",
+        "c++"
+      ]
     },
     {
       "id": "FreeRTOS/FreeRTOS-Kernel",
@@ -233,7 +345,20 @@
       "why": "The most widely deployed MCU RTOS (MIT licensed); ships inside ESP-IDF and many vendor SDKs",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "This repository contains only the FreeRTOS real-time kernel source/header files and kernel ports; pre-configured demo projects live in the separate FreeRTOS/FreeRTOS repository. It can be consumed via CMake FetchContent or as a git submodule, with a port selected (e.g. GCC_POSIX). Kernel V11.1.0 is part of the FreeRTOS 202406.00 LTS release.",
+      "best_for": "Adding a small, widely used RTOS kernel to microcontroller firmware in C, integrated via CMake or a submodule.",
+      "not_for": "Getting started without setup: demos, libraries and examples are in the separate FreeRTOS/FreeRTOS repo. It is a kernel only, not a full OS with drivers, networking or a build environment.",
+      "keywords": [
+        "freertos",
+        "rtos",
+        "kernel",
+        "real-time",
+        "microcontroller",
+        "embedded",
+        "cmake",
+        "c"
+      ]
     },
     {
       "id": "blakeblackshear/frigate",
@@ -255,7 +380,20 @@
       "use_for": "Run a local NVR with real-time object detection for IP cameras",
       "why": "Core smart-home component with MQTT events and deep Home Assistant integration; runs on Coral/OpenVINO.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Frigate is a local network video recorder (NVR) for IP cameras that uses OpenCV and TensorFlow for realtime object detection, designed to integrate tightly with Home Assistant. It runs low-overhead motion detection to decide where to run object detection, records 24/7 or based on detected objects, communicates over MQTT, re-streams via RTSP and offers WebRTC/MSE live view.",
+      "best_for": "Self-hosted camera surveillance with local AI object detection and Home Assistant/MQTT integration, without cloud services.",
+      "not_for": "Low-power hardware without acceleration: a GPU or AI accelerator is highly recommended. Not a general-purpose computer-vision library or a cloud camera service.",
+      "keywords": [
+        "nvr",
+        "object detection",
+        "ip camera",
+        "home assistant",
+        "mqtt",
+        "rtsp",
+        "tensorflow",
+        "surveillance"
+      ]
     },
     {
       "id": "home-assistant/core",
@@ -278,7 +416,20 @@
       "why": "The largest open-source home automation platform with thousands of integrations.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Home Assistant is open source home automation software focused on local control and privacy, designed to run on a Raspberry Pi or a local server. It has a modular architecture where support for devices and actions is added through integrations, and users can create their own components.",
+      "best_for": "Running a self-hosted smart-home hub that ties together many devices and automations locally, or developing a custom integration for it.",
+      "not_for": "Embedding automation into your own app as a library, or cloud-only setups; it is a full application meant to run on dedicated local hardware.",
+      "keywords": [
+        "home automation",
+        "smart home",
+        "local control",
+        "raspberry pi",
+        "integrations",
+        "privacy",
+        "iot",
+        "python"
+      ]
     },
     {
       "id": "lvgl/lvgl",
@@ -300,7 +451,20 @@
       "why": "The leading free embedded graphics library; MIT and runs from tiny MCUs up.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "LVGL is a free, MIT-licensed C graphics library for building GUIs on MCUs and MPUs from any vendor. It has no external dependencies, needs roughly 100kB RAM and 200-300kB flash for a typical UI, and provides 30+ widgets, a style system, flexbox/grid layouts, data bindings and support for many display and input types. An optional LVGL Pro toolkit generates C code from XML.",
+      "best_for": "Embedded devices with a display (TFT, OLED, ePaper) needing a portable C UI toolkit that works with or without an RTOS.",
+      "not_for": "Desktop or web app UIs, or teams wanting a fully free visual editor: LVGL Pro is free only for non-commercial use and evaluation, though the core library is MIT.",
+      "keywords": [
+        "gui",
+        "embedded ui",
+        "graphics library",
+        "mcu",
+        "display",
+        "widgets",
+        "c",
+        "lvgl"
+      ]
     },
     {
       "id": "micropython/micropython",
@@ -323,7 +487,20 @@
       "why": "Lean, well-maintained Python implementation for MCUs; MIT (verified).",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "MicroPython is an implementation of Python 3.x for microcontrollers, embedded systems and other constrained platforms. It implements Python 3.4 syntax plus async/await and selected later features, with core datatypes and modules such as os, sys, time and re, and runs scripts from .py source or precompiled .mpy bytecode, either from a device filesystem or frozen into the firmware.",
+      "best_for": "Programming microcontrollers in Python for prototyping, education or hardware control where interactive scripting matters more than raw performance.",
+      "not_for": "Code that depends on full CPython or its libraries: only a subset of Python 3 functionality is implemented for datatypes and modules. Hard real-time or very tight memory budgets may need C.",
+      "keywords": [
+        "micropython",
+        "python",
+        "microcontroller",
+        "embedded",
+        "interpreter",
+        "firmware",
+        "bytecode",
+        "iot"
+      ]
     },
     {
       "id": "node-red/node-red",
@@ -347,7 +524,20 @@
       "npm": "node-red",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Node-RED is a low-code programming tool for event-driven applications, built on Node.js. It is installed via npm and runs a browser-based flow editor at localhost:1880, with a library of community custom nodes, shared flows and node collections. It is an OpenJS Foundation project under the Apache 2.0 license.",
+      "best_for": "Wiring together devices, APIs and online services with visual flows, e.g. IoT data pipelines and home automation glue, without writing a full application.",
+      "not_for": "Complex application logic best kept in conventional code, or environments without Node.js; it is a running server and editor rather than an embeddable library.",
+      "keywords": [
+        "node-red",
+        "low-code",
+        "flow-based programming",
+        "event-driven",
+        "iot",
+        "node.js",
+        "automation",
+        "visual editor"
+      ]
     },
     {
       "id": "platformio/platformio-core",
@@ -370,7 +560,20 @@
       "why": "Cross-platform embedded build system covering 1,000+ boards and frameworks.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "PlatformIO Core is the CLI and build system behind PlatformIO, an ecosystem for embedded software development. It provides a multi-platform, multi-architecture build system, library management, a unified debugger, static code analysis, remote unit testing and CI integration, with a registry of libraries, development platforms and tools. It is Apache 2.0 licensed.",
+      "best_for": "Building, testing and managing dependencies for firmware across many boards and frameworks from one CLI or IDE integration.",
+      "not_for": "Teams that must avoid telemetry without configuring it: usage diagnostics are enabled by default. It is tooling around vendor SDKs, not a firmware or RTOS itself.",
+      "keywords": [
+        "platformio",
+        "embedded",
+        "build system",
+        "cli",
+        "library manager",
+        "debugger",
+        "unit testing",
+        "firmware"
+      ]
     },
     {
       "id": "raspberrypi/pico-sdk",
@@ -392,7 +595,20 @@
       "why": "Official SDK for one of the most popular hobbyist and commercial MCU families",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "The Raspberry Pi Pico SDK provides headers, libraries and a build system for writing C, C++ or assembly programs for RP-series microcontrollers such as the Raspberry Pi Pico and Pico 2. It offers APIs for all hardware including PIO, plus higher-level libraries for timers, synchronization, Wi-Fi/Bluetooth, USB and multicore, and supports a RISC-V toolchain on RP2350.",
+      "best_for": "Native C/C++ firmware for Raspberry Pi Pico/RP2040/RP2350 boards, including low-level PIO and multicore work.",
+      "not_for": "Non-RP-series microcontrollers, or users who want to program in Python (MicroPython) or a higher-level framework instead of C/C++.",
+      "keywords": [
+        "raspberry pi pico",
+        "rp2040",
+        "rp2350",
+        "sdk",
+        "c",
+        "pio",
+        "microcontroller",
+        "risc-v"
+      ]
     },
     {
       "id": "arendst/Tasmota",
@@ -414,7 +630,20 @@
       "why": "Mature, widely deployed firmware supporting a huge range of off-the-shelf devices.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Tasmota is alternative open-source firmware for ESP8266 and ESP32-family devices, written for PlatformIO. It provides web UI configuration, OTA updates, timers and rules, and local control over MQTT, HTTP, serial or KNX, with optional TLS connection to AWS IoT Core or Azure IoT Hub. It integrates with Home Assistant, openHAB, Node-RED and others, supports Matter on ESP32 and 150+ sensors.",
+      "best_for": "Reflashing off-the-shelf ESP-based smart plugs, switches and sensors for local, cloud-free control via MQTT or Matter.",
+      "not_for": "Non-ESP hardware or writing custom firmware logic from scratch. Flashing mains-powered devices carries electrocution risk, as the README warns.",
+      "keywords": [
+        "tasmota",
+        "esp8266",
+        "esp32",
+        "firmware",
+        "mqtt",
+        "matter",
+        "smart home",
+        "ota"
+      ]
     },
     {
       "id": "tinygo-org/tinygo",
@@ -437,7 +666,20 @@
       "why": "LLVM-based Go compiler supporting many boards; BSD-3 (verified).",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "TinyGo is a Go compiler for small places such as microcontrollers, WebAssembly (wasm/wasi) and command-line tools. It reuses Go language tool libraries alongside LLVM to compile Go programs, keeps the Go memory model including garbage collection, and targets small systems with a single processor core.",
+      "best_for": "Writing microcontroller firmware or compact WebAssembly modules in Go.",
+      "not_for": "Programs needing full standard Go toolchain behaviour on servers, or multi-core embedded targets; it is aimed at small single-core systems.",
+      "keywords": [
+        "tinygo",
+        "go",
+        "compiler",
+        "microcontroller",
+        "webassembly",
+        "wasm",
+        "llvm",
+        "embedded"
+      ]
     },
     {
       "id": "wled/WLED",
@@ -458,7 +700,20 @@
       "use_for": "Flash ESP32/ESP8266 boards to drive addressable RGB LEDs over WiFi",
       "why": "The standard LED firmware: 100+ effects, JSON/MQTT/E1.31 APIs and Home Assistant integration.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "WLED is firmware for ESP32 microcontrollers that controls addressable LEDs, from simple strips to 2D matrices and HUB75 panels. It includes 200+ effects including audio-reactive ones, segments, up to 250 presets and playlists, and connectivity via Android/iOS app, JSON/HTTP APIs, MQTT with Home Assistant discovery, E1.31/Art-Net/DDP, ESP-NOW sync, Alexa and Hue sync.",
+      "best_for": "Ready-to-flash LED controller firmware with a phone app and smart-home integrations, without writing code.",
+      "not_for": "Custom LED programming in your own sketch (use a library such as FastLED instead) or microcontrollers other than ESP32.",
+      "keywords": [
+        "wled",
+        "led",
+        "esp32",
+        "addressable leds",
+        "firmware",
+        "home assistant",
+        "art-net",
+        "effects"
+      ]
     },
     {
       "id": "78/xiaozhi-esp32",
@@ -479,7 +734,20 @@
       "use_for": "Build an ESP32 voice assistant that talks to LLMs and controls devices via MCP",
       "why": "Popular open firmware (163 contributors) supporting many ESP32 boards, wake word and MCP device control.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "XiaoZhi is an open-source, MIT-licensed ESP32 voice chatbot that uses large models such as Qwen and DeepSeek and controls devices via the MCP protocol. It supports offline wake words with ESP-SR, streaming ASR + LLM + TTS or realtime voice models over WebSocket or MQTT+UDP, speaker recognition, displays and camera input, plus device-side and cloud-side MCP tools.",
+      "best_for": "Building an AI voice assistant on ESP32 hardware that can control local peripherals and call cloud-side tools via MCP.",
+      "not_for": "Projects on older toolchains: it now requires ESP-IDF v6.0.1 or later and dropped ESP-IDF 5.x. Not for non-ESP32 chips; relies on external LLM services.",
+      "keywords": [
+        "esp32",
+        "voice assistant",
+        "chatbot",
+        "mcp",
+        "llm",
+        "tts",
+        "asr",
+        "ai hardware"
+      ]
     },
     {
       "id": "zephyrproject-rtos/zephyr",
@@ -502,7 +770,20 @@
       "why": "Linux Foundation RTOS with broad board support and strong vendor backing; Apache-2.0.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Zephyr is a scalable real-time operating system for resource-constrained devices, built with security in mind. Its small-footprint kernel targets everything from simple sensors and wearables to smart watches and IoT gateways, and supports ARM, x86, ARC, Xtensa, RISC-V, SPARC, MIPS and a large number of boards.",
+      "best_for": "Products needing a full-featured, portable RTOS across many architectures and boards, especially connected IoT devices.",
+      "not_for": "Very quick hobby prototypes where an Arduino-style framework suffices; it brings its own build and toolchain setup and a learning curve.",
+      "keywords": [
+        "zephyr",
+        "rtos",
+        "real-time",
+        "embedded",
+        "iot",
+        "kernel",
+        "arm",
+        "risc-v"
+      ]
     },
     {
       "id": "Koenkk/zigbee2mqtt",
@@ -524,7 +805,20 @@
       "why": "Supports thousands of Zigbee devices; the standard open Zigbee bridge for Home Assistant and other platforms",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Zigbee2MQTT lets you use Zigbee devices without the vendor's bridge or gateway by bridging their events and control to MQTT. It works with most home automation systems, with notable integrations for Home Assistant, Homey, Domoticz, Gladys and ioBroker. It is written in TypeScript and built on zigbee-herdsman (adapter communication) and zigbee-herdsman-converters (device mapping).",
+      "best_for": "Running a vendor-neutral Zigbee network with a coordinator adapter and controlling the devices from any MQTT-based smart-home setup.",
+      "not_for": "Wi-Fi, Z-Wave or Thread devices, or setups without an MQTT broker and a supported Zigbee adapter.",
+      "keywords": [
+        "zigbee",
+        "mqtt",
+        "bridge",
+        "home assistant",
+        "smart home",
+        "zigbee-herdsman",
+        "typescript",
+        "iot"
+      ]
     }
   ]
 }

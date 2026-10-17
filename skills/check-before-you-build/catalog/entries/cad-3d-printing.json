@@ -21,7 +21,20 @@
       "why": "The most comprehensive OpenSCAD standard library; dramatically shortens real-world models.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "BOSL2 is a large OpenSCAD library of shapes, transforms, masks, math and helpers that make OpenSCAD models shorter and easier to write. Key features include attachments for placing parts relative to each other, and rounding and filleting modules such as cuboid() and offset_sweep(). It requires OpenSCAD 2021.01 or later.",
+      "best_for": "OpenSCAD users who want rounding, fillets, relative positioning and readable shorthand transforms without writing those utilities themselves.",
+      "not_for": "Only useful inside OpenSCAD. The README marks it beta code that is still being reorganized, and code written for BOSL v1 does not work with BOSL2.",
+      "keywords": [
+        "openscad",
+        "library",
+        "3d modeling",
+        "fillets",
+        "rounding",
+        "attachments",
+        "cad",
+        "3d printing"
+      ]
     },
     {
       "id": "gumyr/build123d",
@@ -43,7 +56,20 @@
       "why": "Evolution of CadQuery ideas with builder and algebra modes, type hints and strong docs; same OCCT kernel.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "build123d is a Python framework for parametric boundary-representation (BREP) CAD in 2D and 3D, built on the Open Cascade kernel. Models are written as code using explicit geometry classes and algebraic operators, and can be exported to formats used by tools such as FreeCAD and SolidWorks for 3D printing, CNC machining and laser cutting.",
+      "best_for": "Writing precise, maintainable CAD-as-code in modern, typed Python, especially for parts headed to 3D printing, CNC or laser cutting.",
+      "not_for": "Not a GUI modeler. Requires the Open Cascade kernel as a dependency. Designers who prefer interactive sketching should use a desktop CAD app instead.",
+      "keywords": [
+        "cad",
+        "python",
+        "brep",
+        "parametric",
+        "open cascade",
+        "3d printing",
+        "cnc",
+        "cad-as-code"
+      ]
     },
     {
       "id": "CadQuery/cadquery",
@@ -65,7 +91,20 @@
       "why": "Mature Python CAD library on OpenCascade with a fluent API; exports precise B-rep STEP files, not just meshes.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "CadQuery is a Python library for building parametric 3D CAD models from short scripts, built on an OCCT wrapper (OCP). It runs without a GUI, so it fits servers and engineering scripts, and it exports STEP and DXF as well as STL, VRML, AMF and 3MF. Fillets, lofts, parametric curves and nested assemblies are supported.",
+      "best_for": "Scripted or server-side generation of parametric CAD models that end users can customize, when you need lossless STEP/DXF output from Python.",
+      "not_for": "Not an interactive GUI modeler (CQ-editor is a separate project). The README says conda-based installation is the better-supported route than pip, so setup can be heavier.",
+      "keywords": [
+        "cad",
+        "python",
+        "parametric",
+        "step",
+        "stl",
+        "3d modeling",
+        "occt",
+        "assemblies"
+      ]
     },
     {
       "id": "Ultimaker/Cura",
@@ -87,7 +126,19 @@
       "why": "One of the most used slicers with a Python plugin system and CuraEngine backend",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Ultimaker Cura is a desktop slicer that prepares 3D models for printing on a 3D printer. The README highlights hundreds of settings and community-managed print profiles, and links to docs on plugins and supported machines.",
+      "best_for": "Turning 3D models into print-ready files with a mature desktop slicer that offers many settings and community printer profiles.",
+      "not_for": "An end-user desktop app, not a library to embed in your own code. Building from source requires the project's Conan-based setup. Does not design or model parts.",
+      "keywords": [
+        "slicer",
+        "3d printing",
+        "gcode",
+        "print profiles",
+        "desktop app",
+        "ultimaker",
+        "plugins"
+      ]
     },
     {
       "id": "FreeCAD/FreeCAD",
@@ -110,7 +161,20 @@
       "why": "The leading open-source parametric CAD application; full Python API and macros for automation.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "FreeCAD is an open-source parametric 3D modeler for designing real-world objects: you change a design by editing parameters in its model history. It builds 3D parts from constrained 2D sketches, creates production drawings, and offers a broad Python API. It is built on OpenCASCADE, Coin3D and Qt, and runs on Windows, macOS and Linux.",
+      "best_for": "A free desktop CAD application for product design, mechanical engineering or architecture, when you want parametric GUI modeling with Python scripting available.",
+      "not_for": "A full desktop application rather than a lightweight library to embed. For pure code-only modeling, a scripting library like CadQuery or build123d is lighter.",
+      "keywords": [
+        "cad",
+        "parametric modeling",
+        "3d modeler",
+        "open source",
+        "opencascade",
+        "python api",
+        "mechanical engineering",
+        "technical drawings"
+      ]
     },
     {
       "id": "jscad/OpenJSCAD.org",
@@ -134,7 +198,20 @@
       "npm": "@jscad/modeling",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "JSCAD is a set of modular browser and command-line tools for writing parametric 2D and 3D designs in JavaScript. It can be used online with no install, self-hosted as a web UI, from a Node.js CLI, or as individual @jscad npm packages for building custom renderers and UIs.",
+      "best_for": "JavaScript developers who want code-based parametric CAD in the browser or Node.js, or need embeddable modeling, rendering and file-format packages for a web app.",
+      "not_for": "Not a GUI modeler. The README calls the desktop app pre-alpha. Its CSG geometry is aimed at code-driven designs rather than precise BREP engineering CAD.",
+      "keywords": [
+        "jscad",
+        "javascript",
+        "parametric",
+        "cad",
+        "3d modeling",
+        "browser",
+        "node.js",
+        "npm"
+      ]
     },
     {
       "id": "Klipper3d/klipper",
@@ -157,7 +234,18 @@
       "why": "High-speed firmware with input shaping and pressure advance; configured in text files and extensible in Python.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Klipper is 3D printer firmware that pairs a general-purpose computer with one or more microcontrollers to control the printer. Full details on features and installation are in the external documentation.",
+      "best_for": "3D printer owners who want to run their printer's firmware with help from a separate host computer alongside the printer's microcontroller boards.",
+      "not_for": "Needs a separate general-purpose computer in addition to the printer's board. It is firmware, not a slicer or a web interface (those come from separate projects such as Moonraker clients).",
+      "keywords": [
+        "3d printer",
+        "firmware",
+        "microcontroller",
+        "klipper",
+        "3d printing",
+        "printer control"
+      ]
     },
     {
       "id": "LibreCAD/LibreCAD",
@@ -182,7 +270,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "LibreCAD is a free 2D CAD drawing application based on the community edition of QCAD and built with Qt, so it runs on most operating systems. Its command line converts DXF and DWG drawings to PDF, PNG and SVG without opening the editor. It is licensed under GPLv2.",
+      "best_for": "Free, cross-platform 2D drafting and DXF editing, or batch-converting DXF/DWG drawings to PDF, PNG or SVG from the command line.",
+      "not_for": "2D only, with no 3D modeling. DWG input and output require a build with DWGSUPPORT enabled. GPLv2 licensing matters if you embed its code. The master branch is pre-release.",
+      "keywords": [
+        "2d cad",
+        "dxf",
+        "dwg",
+        "drafting",
+        "qt",
+        "gplv2",
+        "cad converter",
+        "open source"
+      ]
     },
     {
       "id": "elalish/manifold",
@@ -205,7 +306,21 @@
       "why": "Guaranteed-manifold booleans; adopted by OpenSCAD and Blender for speed",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Manifold is a geometry library for creating and operating on manifold triangle meshes, which represent solid objects. Its main goal is guaranteed manifold output, and its second is performance through parallelization. It has a C++ core with JS/TS/WASM and Python (manifold3d) bindings, and supports vertex properties for mapping materials.",
+      "best_for": "Reliable, fast mesh Boolean and solid operations inside your own CAD, 3D printing or modeling tools, from C++, JavaScript/WASM or Python.",
+      "not_for": "A low-level geometry library, not an end-user modeling app. It works on triangle meshes, not BREP/NURBS, so it does not suit exact STEP-style engineering geometry.",
+      "keywords": [
+        "mesh",
+        "geometry library",
+        "manifold",
+        "boolean operations",
+        "csg",
+        "wasm",
+        "python",
+        "c++",
+        "3d printing"
+      ]
     },
     {
       "id": "MarlinFirmware/Marlin",
@@ -227,7 +342,20 @@
       "why": "The most widely deployed 3D printer firmware, supporting 8- and 32-bit boards and a vast hardware range.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Marlin is 3D printer firmware that runs on 32-bit ARM and 8-bit AVR boards, supporting up to 9 coordinated axes and 8 extruders. You build it for your specific hardware from a matching configuration, usually with PlatformIO in Visual Studio Code, with Arduino IDE also possible.",
+      "best_for": "Building and flashing firmware that runs directly on a 3D printer's controller board, using one of the hundreds of community-tested hardware configurations.",
+      "not_for": "Requires a correct per-machine configuration and a firmware build/flash step. The bugfix branch is marked not for production use. Some newer features need a 32-bit board.",
+      "keywords": [
+        "3d printer",
+        "firmware",
+        "arduino",
+        "platformio",
+        "arm",
+        "avr",
+        "extruder",
+        "3d printing"
+      ]
     },
     {
       "id": "Arksine/moonraker",
@@ -248,7 +376,20 @@
       "why": "The API layer you build on to talk to Klipper printers",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Moonraker is a Python 3 web server built on Tornado that exposes APIs for client applications to interact with Klipper 3D printer firmware. It talks to the Klippy host over a Unix domain socket. Frontends such as Mainsail, Fluidd and KlipperScreen use it, and it ships preinstalled in MainsailOS and FluiddPi images.",
+      "best_for": "Building or running a web, mobile or bot client that controls a Klipper-based 3D printer over an API.",
+      "not_for": "Only works with Klipper. It comes without a client, so you must install a frontend such as Mainsail or Fluidd separately.",
+      "keywords": [
+        "klipper",
+        "api",
+        "web server",
+        "3d printing",
+        "python",
+        "tornado",
+        "mainsail",
+        "fluidd"
+      ]
     },
     {
       "id": "OctoPrint/OctoPrint",
@@ -269,7 +410,19 @@
       "why": "The standard printer host with REST API and a huge plugin ecosystem",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "OctoPrint is a web interface for controlling consumer 3D printers. It is commonly installed on a Raspberry Pi through the OctoPi distribution and can be extended through an official plugin repository. It is free software under the AGPLv3.",
+      "best_for": "Monitoring and controlling a consumer 3D printer from a browser, with a large plugin ecosystem and active community.",
+      "not_for": "AGPLv3 licensing matters if you modify it and offer it as a network service. It is a printer host and interface, not a slicer or firmware.",
+      "keywords": [
+        "3d printer",
+        "web interface",
+        "raspberry pi",
+        "octopi",
+        "plugins",
+        "printer control",
+        "agpl"
+      ]
     },
     {
       "id": "Open-Cascade-SAS/OCCT",
@@ -290,7 +443,20 @@
       "why": "The geometry kernel under FreeCAD, CadQuery and build123d",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open CASCADE Technology (OCCT) is a C++ software development platform for 3D surface and solid modeling, CAD data exchange and visualization. It serves as a foundation for CAD, CAM and CAE applications and is distributed as Git snapshots, source archives and platform-specific binary packages.",
+      "best_for": "C++ developers building their own CAD/CAM/CAE software who need an industrial-grade BREP geometry kernel with data exchange and visualization.",
+      "not_for": "Low-level C++ libraries rather than a ready-to-use modeler. The README notes you usually need to rebuild it for your platform and compiler. Higher-level wrappers such as CadQuery or build123d are easier for scripting.",
+      "keywords": [
+        "geometry kernel",
+        "cad",
+        "c++",
+        "brep",
+        "solid modeling",
+        "cam",
+        "cae",
+        "data exchange"
+      ]
     },
     {
       "id": "openscad/openscad",
@@ -313,7 +479,20 @@
       "why": "The classic programmer CAD tool; huge library ecosystem and the de facto format for parametric printables.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "OpenSCAD is free software that creates solid 3D CAD models from script files. Rather than interactive modeling, it compiles a description of the object using constructive solid geometry and extrusion of 2D outlines. It reads DXF, reads and writes STL and OFF, and runs on Linux, Windows and macOS.",
+      "best_for": "Script-defined, parametric machine parts and 3D-printable objects where you want full control through code and configurable parameters.",
+      "not_for": "Not an interactive modeler and, per its README, not for artistic modeling or animation. Its mesh/CSG approach lacks native fillets (libraries such as BOSL2 fill that gap).",
+      "keywords": [
+        "openscad",
+        "cad",
+        "csg",
+        "3d modeling",
+        "parametric",
+        "stl",
+        "3d printing",
+        "script"
+      ]
     },
     {
       "id": "OrcaSlicer/OrcaSlicer",
@@ -335,7 +514,20 @@
       "why": "Popular PrusaSlicer/Bambu Studio fork with built-in calibration tools and broad printer profiles.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "OrcaSlicer is an open-source desktop slicer for 3D printing. It offers calibration tools (temperature, flow, retraction), wall and seam control, support optimization, and fine control over speed, layer height and temperature. It integrates with Klipper, PrusaLink and OctoPrint, and has profiles for Bambu Lab, Prusa, Creality, Voron and other printers.",
+      "best_for": "Hobbyists who want a feature-rich slicer with built-in calibration tools and network printing to Klipper, PrusaLink or OctoPrint across many printer brands.",
+      "not_for": "An end-user desktop app, not a library. The README warns that fake OrcaSlicer websites exist, so download only from the official site or the GitHub releases.",
+      "keywords": [
+        "slicer",
+        "3d printing",
+        "calibration",
+        "klipper",
+        "bambu lab",
+        "prusa",
+        "gcode",
+        "open source"
+      ]
     },
     {
       "id": "prusa3d/PrusaSlicer",
@@ -357,7 +549,20 @@
       "why": "Upstream of many slicer forks (incl. Bambu Studio/Orca lineage); CLI for scripted slicing",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "PrusaSlicer turns 3D models into printing instructions and sends them to the printer, supporting both FDM and mSLA printers from many manufacturers. It offers per-layer settings, painting, cutting and arranging of objects, multi-material printing, multiple beds per project, a 3D G-code preview, and a command-line interface for headless automation.",
+      "best_for": "Slicing for FDM or resin (mSLA) printers, especially Prusa machines, or automating slicing with the CLI in scripts and pipelines.",
+      "not_for": "A desktop slicer, not a modeling tool or embeddable library. PrusaConnect and Printables integrations are tied to Prusa's services.",
+      "keywords": [
+        "slicer",
+        "3d printing",
+        "fdm",
+        "msla",
+        "gcode",
+        "multi-material",
+        "cli",
+        "prusa"
+      ]
     },
     {
       "id": "fogleman/sdf",
@@ -379,7 +584,20 @@
       "why": "Tiny, expressive API for organic and smooth-blended shapes that are awkward in CSG tools.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "sdf is a small Python library that generates 3D meshes from signed distance functions. You combine primitives with operators for union, intersection and difference, then save to STL. It meshes with marching cubes, using numpy batching and multiple threads for speed.",
+      "best_for": "Quickly scripting organic or CSG-style 3D-printable shapes in Python with a minimal API, including blends and patterns that are awkward in traditional CAD.",
+      "not_for": "Produces triangle meshes, not precise BREP CAD. Detailed meshes can be large. Using meshes as SDFs requires building OpenVDB, which cannot easily be installed via pip.",
+      "keywords": [
+        "sdf",
+        "signed distance functions",
+        "python",
+        "mesh",
+        "marching cubes",
+        "stl",
+        "3d printing",
+        "csg"
+      ]
     },
     {
       "id": "solvespace/solvespace",
@@ -399,7 +617,19 @@
       "why": "Lightweight constraint-based CAD; its solver library is reused in other tools",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "SolveSpace is a parametric 2D/3D CAD application. Official releases are available for macOS and Windows and as Flatpak and Snap packages on Linux, and the website offers tutorials, a reference manual and a forum.",
+      "best_for": "A lightweight, free parametric CAD desktop app for 2D sketches and 3D parts on Windows, macOS or Linux.",
+      "not_for": "A desktop app rather than a scripting library. Edge builds can be unstable, and 64-bit Windows builds do not support 6DOF controllers such as SpaceMouse.",
+      "keywords": [
+        "cad",
+        "parametric",
+        "2d",
+        "3d modeling",
+        "desktop app",
+        "open source",
+        "constraints"
+      ]
     }
   ]
 }

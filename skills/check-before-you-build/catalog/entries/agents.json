@@ -21,7 +21,21 @@
       "why": "Community continuation of the original AutoGen; established multi-agent conversation patterns.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python agent framework (continuation of AutoGen) whose v1 is a protocol-driven package imported as ag2: agents that call tools, human-in-the-loop pauses, and multi-agent orchestration over a Network with typed channels. The classic autogen API now lives in ag2-classic.",
+      "best_for": "Multi-agent systems in Python where agents converse and use tools, or migrating AutoGen-style projects.",
+      "not_for": "v1 no longer ships the autogen import or ConversableAgent/GroupChat; those are in ag2-classic. Python only.",
+      "keywords": [
+        "multi-agent",
+        "autogen",
+        "agents",
+        "python",
+        "tools",
+        "human in the loop",
+        "orchestration",
+        "conversational agents",
+        "network"
+      ]
     },
     {
       "id": "google/adk-python",
@@ -43,7 +57,21 @@
       "why": "Google's official agent toolkit; built-in eval, dev UI and deployment to Vertex/Cloud Run, model-agnostic.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Code-first Python framework for building, evaluating and deploying agents. Offers a graph-based workflow runtime (routing, fan-out, loops, retry), a Task API for delegation, multi-agent hierarchies, tools including OpenAPI and MCP, and deployment tooling. Optimized for Gemini but model-agnostic.",
+      "best_for": "Python agents and multi-agent systems with built-in eval, dev UI and Google Cloud deployment.",
+      "not_for": "Tightest integration is with Google/Gemini and Vertex; heavier than minimal agent libraries. Python (other languages have separate repos).",
+      "keywords": [
+        "agent development kit",
+        "adk",
+        "gemini",
+        "multi-agent",
+        "workflow",
+        "evaluation",
+        "vertex ai",
+        "mcp",
+        "python agents"
+      ]
     },
     {
       "id": "simular-ai/Agent-S",
@@ -63,7 +91,20 @@
       "use_for": "Build computer-use agents that operate desktop GUIs like a human",
       "why": "Open computer-use agent framework with state-of-the-art OSWorld results; Apache-2.0.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source computer-use agent framework that sees the screen and operates a real GUI with mouse and keyboard on macOS, Windows and Linux, with OpenAI, Anthropic and open-weight models. Agent S3 reports 72.60% on OSWorld.",
+      "best_for": "Research and prototypes of agents that automate arbitrary desktop and web apps without per-app APIs.",
+      "not_for": "Research framework: GUI automation is slow, costly and fragile versus API integration. A hosted product (Sai) is promoted for production use.",
+      "keywords": [
+        "computer use agent",
+        "gui automation",
+        "osworld",
+        "desktop agent",
+        "screen control",
+        "multimodal agent",
+        "automation",
+        "mouse keyboard"
+      ]
     },
     {
       "id": "agentscope-ai/agentscope",
@@ -85,7 +126,21 @@
       "why": "Actively developed (33k stars) multi-agent framework from Alibaba with strong visibility into agent runs.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Agent framework from Alibaba that leans on model reasoning and tool use rather than rigid prompts. Provides agents, MCP and tool support, TeamPipeline leader/member delegation, model routing, SOPs and an agent service with realtime voice (experimental).",
+      "best_for": "Observable multi-agent apps in Python with MCP, team delegation and a deployable service layer.",
+      "not_for": "Several features are marked experimental. Python only; ecosystem is smaller than LangChain.",
+      "keywords": [
+        "multi-agent",
+        "agentscope",
+        "mcp",
+        "agent framework",
+        "team pipeline",
+        "model routing",
+        "python",
+        "observability",
+        "alibaba"
+      ]
     },
     {
       "id": "agno-agi/agno",
@@ -107,7 +162,21 @@
       "why": "Fast-growing Python agent framework (~43k stars) with teams, memory, RAG and a production runtime.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Framework and runtime for agent platforms: build agents with the SDK, serve them via AgentOS (50+ API endpoints, SSE/websockets, sessions, memory, knowledge, traces in your database) and manage via a UI. Includes 100+ toolkits, RBAC, approvals and scheduling.",
+      "best_for": "Taking Python agents to production as a self-hosted service with storage, auth and chat interfaces.",
+      "not_for": "More platform than library; heavier than a simple agent loop. Python and container-based deployment assumed.",
+      "keywords": [
+        "agents",
+        "agentos",
+        "multi-agent",
+        "memory",
+        "rag",
+        "python",
+        "production runtime",
+        "rbac",
+        "scheduling"
+      ]
     },
     {
       "id": "OpenPipe/ART",
@@ -128,7 +197,20 @@
       "use_for": "Train multi-step agents with reinforcement learning (GRPO)",
       "why": "Agent Reinforcement Trainer: plugs RL fine-tuning into existing agent code to improve reliability on real tasks.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Reinforcement-learning framework that trains multi-step agents with GRPO. An OpenAI-compatible client plugs into existing Python code while a server handles training, locally or on an ephemeral GPU environment; integrates with W&B, Langfuse and OpenPipe.",
+      "best_for": "Improving agent reliability on a real task by training an LLM with RL from experience.",
+      "not_for": "Needs GPU training infrastructure and a reward/eval design; not for prompt-only agent building.",
+      "keywords": [
+        "reinforcement learning",
+        "grpo",
+        "agent training",
+        "rl",
+        "fine-tuning agents",
+        "llm training",
+        "openpipe",
+        "multi-step agents"
+      ]
     },
     {
       "id": "camel-ai/camel",
@@ -148,7 +230,21 @@
       "use_for": "Build role-playing multi-agent systems and agent societies in Python",
       "why": "One of the earliest multi-agent frameworks; 238 contributors, toolkits, memory and workforce orchestration, Apache-2.0.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source multi-agent framework and research community for role-playing agent societies, with ChatAgent, toolkits, memory, workforce orchestration, synthetic data generation and many cookbooks. Apache-2.0.",
+      "best_for": "Research and prototyping of role-playing or multi-agent systems and synthetic datasets in Python.",
+      "not_for": "Research-oriented with a broad surface; heavier than minimal frameworks for a simple single agent.",
+      "keywords": [
+        "multi-agent",
+        "role playing",
+        "agent society",
+        "python",
+        "synthetic data",
+        "toolkits",
+        "workforce",
+        "research",
+        "chatagent"
+      ]
     },
     {
       "id": "anthropics/claude-agent-sdk-python",
@@ -171,7 +267,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python SDK exposing the Claude Code agent harness: query() streams messages, ClaudeSDKClient supports conversations, with built-in tools, custom tools, MCP and hook callbacks (for example blocking a Bash command).",
+      "best_for": "Building Python agents on Claude Code's loop with file, shell and MCP tools.",
+      "not_for": "Claude-only and relies on the Claude Code runtime; not provider-agnostic.",
+      "keywords": [
+        "claude agent sdk",
+        "claude code sdk",
+        "python agent",
+        "hooks",
+        "mcp",
+        "tools",
+        "query",
+        "agent loop"
+      ]
     },
     {
       "id": "crewAIInc/crewAI",
@@ -193,7 +302,20 @@
       "why": "Popular multi-agent framework (60k stars) with a simple crew/task model, independent of LangChain.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Python multi-agent framework with role-based Crews of agents and event-driven Flows, built independently of LangChain with a lightweight core. A separate paid enterprise platform adds tracing and a control plane.",
+      "best_for": "Role-based agent teams collaborating on tasks with a simple crew/task model.",
+      "not_for": "Observability, control plane and support are in the paid CrewAI AMP product. Python only.",
+      "keywords": [
+        "multi-agent",
+        "crew",
+        "flows",
+        "role based agents",
+        "python",
+        "orchestration",
+        "automation",
+        "agents"
+      ]
     },
     {
       "id": "stanfordnlp/dspy",
@@ -215,7 +337,21 @@
       "why": "Stanford's framework (~39k stars) that replaces hand-written prompts with optimisable modules.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Framework for programming rather than prompting LMs: write compositional Python modules and use optimizers to tune prompts and weights for classifiers, RAG pipelines or agent loops.",
+      "best_for": "Systematic quality improvement of LLM pipelines with metrics and optimization instead of hand-tuned prompts.",
+      "not_for": "Requires eval data/metrics and a different mental model; unnecessary for simple one-off calls. Python only.",
+      "keywords": [
+        "dspy",
+        "prompt optimization",
+        "declarative",
+        "rag",
+        "signatures",
+        "optimizers",
+        "llm pipelines",
+        "stanford",
+        "modules"
+      ]
     },
     {
       "id": "langchain-ai/langchain",
@@ -237,7 +373,21 @@
       "why": "The most widely adopted LLM framework (148k stars, 3.7k contributors); largest integration ecosystem.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python framework for LLM apps and agents with standard interfaces and a large integration library for models, embeddings, vector stores, retrievers and tools. Higher-level Deep Agents and low-level LangGraph build on it.",
+      "best_for": "Rapid LLM app development needing many provider and vector store integrations.",
+      "not_for": "Large abstraction surface and frequent API change; simple apps may prefer provider SDKs. LangSmith tracing is a separate hosted product.",
+      "keywords": [
+        "langchain",
+        "llm framework",
+        "agents",
+        "rag",
+        "vector stores",
+        "retrievers",
+        "integrations",
+        "python",
+        "chains"
+      ]
     },
     {
       "id": "langchain-ai/langchainjs",
@@ -261,7 +411,21 @@
       "npm": "langchain",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "TypeScript/JavaScript version of LangChain with a standard interface for agents, models, embeddings and vector stores and many integrations. Deep Agents and LangGraph.js are companion packages.",
+      "best_for": "JS/TS LLM apps and agents needing broad integrations.",
+      "not_for": "Abstraction-heavy; for lighter needs consider the Vercel AI SDK or provider SDKs. Integrations are separate packages.",
+      "keywords": [
+        "langchain",
+        "javascript",
+        "typescript",
+        "llm",
+        "agents",
+        "rag",
+        "vector store",
+        "integrations",
+        "langgraph"
+      ]
     },
     {
       "id": "langchain4j/langchain4j",
@@ -282,7 +446,21 @@
       "use_for": "Build LLM apps, tools and agents on the JVM with a unified provider API",
       "why": "The de facto Java LLM/agent library: 500+ contributors, 20+ model providers, RAG, tools and Spring/Quarkus integrations.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Java library for LLM apps on the JVM with unified APIs over 20+ LLM providers and 30+ embedding stores, plus prompt templating, chat memory, function calling, agents and RAG. Examples for plain Java, Quarkus and Spring Boot.",
+      "best_for": "Java and JVM teams adding LLM, RAG or agent features.",
+      "not_for": "JVM only. For Python/JS use other libraries; some features track LangChain concepts rather than Spring AI conventions.",
+      "keywords": [
+        "java",
+        "jvm",
+        "llm",
+        "rag",
+        "quarkus",
+        "spring boot",
+        "embedding store",
+        "function calling",
+        "agents"
+      ]
     },
     {
       "id": "langchain-ai/langgraph",
@@ -304,7 +482,20 @@
       "why": "Low-level, controllable orchestration with durable state; the production agent runtime of the LangChain ecosystem.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Low-level orchestration framework for stateful, long-running agents modeled as graphs, with durable execution, human-in-the-loop state inspection, short and long-term memory, streaming and deployment infrastructure.",
+      "best_for": "Controllable production agent workflows that need persistence, resumption and human oversight.",
+      "not_for": "Low-level: you design the graph yourself. Debugging UI is LangSmith, a separate product; for quick agents consider higher-level packages.",
+      "keywords": [
+        "langgraph",
+        "stateful agents",
+        "durable execution",
+        "human in the loop",
+        "graph workflow",
+        "memory",
+        "orchestration",
+        "python"
+      ]
     },
     {
       "id": "letta-ai/letta",
@@ -327,7 +518,20 @@
       "why": "Formerly MemGPT (~25k stars); agents with self-editing memory, served via an API server.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Stateful agents with self-editing long-term memory (formerly MemGPT). Current source lives in letta-code, offering a terminal UI, App Server, desktop and web apps, channels and an Agent SDK; the old V1 API server is archived.",
+      "best_for": "Persistent agents with memory across sessions via CLI, server or SDK.",
+      "not_for": "This repo is mostly a pointer; the retired V1 server is on an archive branch. Cloud features are hosted.",
+      "keywords": [
+        "memgpt",
+        "letta",
+        "agent memory",
+        "stateful agents",
+        "long-term memory",
+        "persistent agents",
+        "agent sdk",
+        "app server"
+      ]
     },
     {
       "id": "livekit/agents",
@@ -350,7 +554,21 @@
       "why": "Production voice-agent framework from LiveKit with turn detection, telephony and many provider plugins; 540+ contributors.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Framework for realtime voice and video AI agents on WebRTC. Mix STT, LLM, TTS and realtime APIs; includes job dispatch, telephony, semantic turn detection, MCP support and a test framework.",
+      "best_for": "Production voice agents including phone calls, with low-latency streaming.",
+      "not_for": "Built around LiveKit (WebRTC server and clients). Python (JS in AgentsJS); heavier than a text-only agent setup.",
+      "keywords": [
+        "voice agent",
+        "webrtc",
+        "realtime",
+        "telephony",
+        "stt tts",
+        "turn detection",
+        "livekit",
+        "voice ai",
+        "sip"
+      ]
     },
     {
       "id": "mastra-ai/mastra",
@@ -373,7 +591,21 @@
       "npm": "@mastra/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "TypeScript framework for AI apps and agents: model routing across 40+ providers, agents, graph-based workflows (.then/.branch/.parallel), human-in-the-loop suspend/resume, memory/context management, RAG, evals and tracing. Integrates with React, Next.js and Node.",
+      "best_for": "TypeScript teams building agents and workflows with memory, evals and observability.",
+      "not_for": "TypeScript only; a full framework, heavier than the plain AI SDK for simple chat features.",
+      "keywords": [
+        "typescript agents",
+        "workflows",
+        "rag",
+        "memory",
+        "evals",
+        "human in the loop",
+        "model routing",
+        "nextjs",
+        "mastra"
+      ]
     },
     {
       "id": "microsoft/agent-framework",
@@ -396,7 +628,21 @@
       "why": "Microsoft successor to Semantic Kernel and AutoGen; first-class .NET and Python support.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open multi-language framework for production agents and multi-agent workflows in .NET and Python (Go in a separate repo), with middleware, multiple provider support and hosting patterns. Successor to Semantic Kernel and AutoGen.",
+      "best_for": "Teams on .NET or Python needing production agents with Microsoft/Azure ecosystem support.",
+      "not_for": "Go SDK lives elsewhere. Strongest in Microsoft/Azure ecosystems; heavier than minimal SDKs.",
+      "keywords": [
+        "agent framework",
+        "dotnet",
+        "c#",
+        "python",
+        "multi-agent",
+        "workflows",
+        "azure",
+        "semantic kernel",
+        "middleware"
+      ]
     },
     {
       "id": "openai/openai-agents-python",
@@ -419,7 +665,21 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Lightweight SDK for multi-agent workflows with agents, handoffs, guardrails, sessions, tools (functions, MCP, hosted), human in the loop, tracing, realtime and voice agents. Supports Responses and Chat Completions APIs and 100+ LLMs.",
+      "best_for": "Simple multi-agent apps with handoffs, guardrails and tracing, with OpenAI or other providers.",
+      "not_for": "Best tuned for OpenAI APIs; some features (hosted tools, realtime) are OpenAI-specific. Python only.",
+      "keywords": [
+        "openai agents",
+        "handoffs",
+        "guardrails",
+        "tracing",
+        "multi-agent",
+        "voice agents",
+        "sessions",
+        "mcp",
+        "python"
+      ]
     },
     {
       "id": "openai/openai-agents-js",
@@ -444,7 +704,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "TypeScript version of the OpenAI Agents SDK: agents, sandbox agents, realtime/voice agents, handoffs, tools, guardrails, human in the loop, sessions and tracing; provider-agnostic.",
+      "best_for": "TypeScript or Node multi-agent workflows with guardrails and tracing, including voice.",
+      "not_for": "Some capabilities are OpenAI-specific. Smaller ecosystem than LangChain.js.",
+      "keywords": [
+        "openai agents",
+        "typescript",
+        "handoffs",
+        "guardrails",
+        "realtime voice",
+        "tracing",
+        "multi-agent",
+        "sandbox agents"
+      ]
     },
     {
       "id": "pipecat-ai/pipecat",
@@ -465,7 +738,21 @@
       "use_for": "Build realtime voice and multimodal conversational agents",
       "why": "Daily-maintained pipeline framework with 360+ contributors and plug-in STT/LLM/TTS and transport services.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Python framework for realtime voice and multimodal agents using composable pipelines of STT, LLM, TTS and transports. Supports multi-agent handoffs and a CLI quickstart.",
+      "best_for": "Voice assistants, support bots and multimodal conversational apps with pluggable AI services.",
+      "not_for": "Python only and focused on realtime audio/video; not for text-only agents.",
+      "keywords": [
+        "voice assistant",
+        "realtime",
+        "multimodal",
+        "pipelines",
+        "stt",
+        "tts",
+        "conversational ai",
+        "webrtc",
+        "pipecat"
+      ]
     },
     {
       "id": "The-Pocket/PocketFlow",
@@ -486,7 +773,21 @@
       "use_for": "Tiny 100-line graph framework for agents, workflows and RAG",
       "why": "Deliberately minimal, zero-dependency LLM framework that is easy to read and fork; popular base for agent-coded projects.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Minimalist 100-line LLM framework with zero dependencies, expressing agents, workflows and RAG as graphs. Ports exist in TypeScript, Java, C++, Go, Rust and PHP; designed for agentic coding.",
+      "best_for": "Small, readable foundations you can copy or fork, with no vendor wrappers.",
+      "not_for": "Deliberately has no built-in integrations (LLM, vector DB, tools); you write them. Not for batteries-included needs.",
+      "keywords": [
+        "minimal framework",
+        "100 lines",
+        "llm framework",
+        "workflow",
+        "rag",
+        "agents",
+        "zero dependency",
+        "graph",
+        "pocketflow"
+      ]
     },
     {
       "id": "pydantic/pydantic-ai",
@@ -508,7 +809,21 @@
       "why": "From the Pydantic team; model-agnostic, strongly typed, with dependency injection and evals built in.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Typed Python agent framework from the Pydantic team: model-agnostic agent loop with structured outputs, tools, dependency injection, voice, embeddings and image generation. Companion packages cover evals, graphs and a harness for memory and guardrails.",
+      "best_for": "Python agents needing validated structured outputs and strong typing.",
+      "not_for": "Python only; Logfire and Gateway are separate commercial products. Heavier than the Instructor library for pure extraction.",
+      "keywords": [
+        "pydantic",
+        "typed agents",
+        "structured output",
+        "tools",
+        "dependency injection",
+        "evals",
+        "python",
+        "opentelemetry",
+        "agent framework"
+      ]
     },
     {
       "id": "microsoft/semantic-kernel",
@@ -532,7 +847,21 @@
       "why": "Microsoft's model-agnostic SDK (~29k stars), strongest choice for .NET agent and plugin orchestration.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Model-agnostic SDK for agents, plugins and multi-agent orchestration in .NET, Python and Java. Now succeeded by Microsoft Agent Framework 1.0, with a migration guide.",
+      "best_for": "Maintaining existing Semantic Kernel apps, especially in .NET.",
+      "not_for": "Microsoft directs new work to Agent Framework; start there for new projects.",
+      "keywords": [
+        "semantic kernel",
+        "dotnet",
+        "plugins",
+        "agents",
+        "multi-agent",
+        "azure openai",
+        "orchestration",
+        "java",
+        "python"
+      ]
     },
     {
       "id": "huggingface/smolagents",
@@ -554,7 +883,21 @@
       "why": "Hugging Face's minimal agent library (~30k stars); code-first agents, any model, sandboxed execution.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Minimal agent library (~1,000 lines of core logic) where CodeAgent writes actions as Python code, with sandboxed execution via Blaxel, E2B, Modal or Docker. Model-, modality- and tool-agnostic with Hub sharing and MCP tools.",
+      "best_for": "Lightweight code-writing agents with any model and sandboxed execution.",
+      "not_for": "Code-as-action requires sandboxing for safety; smaller ecosystem than LangChain. Python only.",
+      "keywords": [
+        "smolagents",
+        "code agent",
+        "hugging face",
+        "sandbox",
+        "e2b",
+        "mcp tools",
+        "python",
+        "lightweight agents",
+        "tool use"
+      ]
     },
     {
       "id": "alibaba/spring-ai-alibaba",
@@ -575,7 +918,21 @@
       "use_for": "Build graph-based multi-agent workflows in Spring Boot apps",
       "why": "Alibaba's agentic framework on top of Spring AI, with graph orchestration and multi-agent patterns for Java teams.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Java framework on Spring AI for agentic, workflow and multi-agent apps: Sequential, Parallel, Routing and Loop agents, graph workflows, context engineering policies, A2A with Nacos, voice agent and MCP support.",
+      "best_for": "Spring Boot teams building agents and graph workflows, especially in the Alibaba cloud ecosystem.",
+      "not_for": "Java and Spring only; tied to Spring AI conventions and Alibaba/Nacos integrations.",
+      "keywords": [
+        "spring ai",
+        "java",
+        "spring boot",
+        "multi-agent",
+        "graph workflow",
+        "a2a",
+        "nacos",
+        "mcp",
+        "react agent"
+      ]
     },
     {
       "id": "strands-agents/harness-sdk",
@@ -597,7 +954,21 @@
       "why": "Open-source agent SDK from AWS (Apache-2.0, 300+ contributors); minimal code, any model provider.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source SDK from AWS for building agents in Python and TypeScript with a model-driven loop, tools, structured output, MCP, multi-agent patterns, memory, guardrails, tracing and evals. Runs in your process with no hosted control plane.",
+      "best_for": "Production agents with minimal code across model providers, including AWS Bedrock.",
+      "not_for": "You assemble hosting yourself; AWS-leaning examples. Python and TypeScript only.",
+      "keywords": [
+        "strands agents",
+        "aws",
+        "model driven",
+        "agents",
+        "mcp",
+        "tools",
+        "python",
+        "typescript",
+        "multi-agent"
+      ]
     },
     {
       "id": "VoltAgent/voltagent",
@@ -620,7 +991,21 @@
       "npm": "@voltagent/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "TypeScript agent framework with core runtime, tools, memory, RAG, guardrails, MCP, voice, workflows and supervisor/sub-agent teams, plus the VoltOps console for observability and evals (cloud or self-hosted).",
+      "best_for": "TypeScript agent apps wanting built-in tracing and a console.",
+      "not_for": "Some operations features are in the VoltOps console, which has cloud and self-hosted tiers. TypeScript only.",
+      "keywords": [
+        "typescript agents",
+        "voltagent",
+        "observability",
+        "workflows",
+        "supervisor agents",
+        "rag",
+        "mcp",
+        "guardrails",
+        "memory"
+      ]
     }
   ]
 }

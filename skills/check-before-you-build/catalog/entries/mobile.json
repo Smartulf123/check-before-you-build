@@ -21,7 +21,21 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Microsoft's .NET Multi-platform App UI: a C# and XAML framework to build native apps for Android, iOS, iPadOS, macOS and Windows from a single codebase.",
+      "best_for": "C#/.NET teams building cross-platform mobile and desktop apps with shared code.",
+      "not_for": "Tied to the .NET ecosystem; no Linux desktop target, and web developers are better served by React Native or Capacitor.",
+      "keywords": [
+        "maui",
+        "dotnet",
+        "c#",
+        "xaml",
+        "cross-platform",
+        "mobile",
+        "desktop",
+        "android",
+        "ios"
+      ]
     },
     {
       "id": "ionic-team/capacitor",
@@ -44,7 +58,20 @@
       "npm": "@capacitor/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Cross-platform native runtime that wraps a web app as an iOS or Android app, with a plugin API for native SDKs and first-class PWA support.",
+      "best_for": "Shipping an existing web app (any framework) to app stores with access to native APIs.",
+      "not_for": "The UI runs in a WebView, so not truly native rendering; heavy animation or complex native UI may suffer.",
+      "keywords": [
+        "capacitor",
+        "hybrid app",
+        "webview",
+        "ios",
+        "android",
+        "pwa",
+        "native plugins",
+        "web to mobile"
+      ]
     },
     {
       "id": "JetBrains/compose-multiplatform",
@@ -66,7 +93,20 @@
       "why": "JetBrains framework that extends Jetpack Compose to iOS, letting Kotlin teams share UI and logic.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Declarative Kotlin UI framework based on Jetpack Compose for sharing UI code across Android, iOS, desktop (Windows, macOS, Linux) and web (beta).",
+      "best_for": "Kotlin teams sharing UI between Android, iOS and desktop.",
+      "not_for": "Requires Kotlin; web target is beta and the iOS ecosystem is less mature than Flutter or React Native.",
+      "keywords": [
+        "kotlin",
+        "compose",
+        "multiplatform",
+        "android",
+        "ios",
+        "desktop",
+        "declarative ui",
+        "jetpack compose"
+      ]
     },
     {
       "id": "wix/Detox",
@@ -88,7 +128,20 @@
       "why": "Synchronises with the app runtime to avoid flaky waits; the standard E2E tool for RN on simulators and devices.",
       "npm": "detox",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Gray-box end-to-end testing and automation framework for mobile apps, mainly React Native, running tests on simulators and devices and synchronizing with the app.",
+      "best_for": "E2E testing of React Native apps in CI with reduced flakiness.",
+      "not_for": "Aimed at React Native; setup is involved, and it is not a unit-testing tool.",
+      "keywords": [
+        "detox",
+        "e2e testing",
+        "react native",
+        "mobile testing",
+        "gray box",
+        "automation",
+        "simulator",
+        "jest"
+      ]
     },
     {
       "id": "expo/expo",
@@ -113,7 +166,20 @@
       "npm": "expo",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Open-source platform for universal React Native apps: Expo SDK and Modules API, Router, CLI and Expo Go, with EAS cloud services for builds and updates.",
+      "best_for": "Starting or scaling React Native apps with managed native modules, file-based routing and cloud builds.",
+      "not_for": "EAS hosted services have paid tiers; apps with unusual native needs may need prebuild or custom dev clients.",
+      "keywords": [
+        "expo",
+        "react native",
+        "expo router",
+        "eas",
+        "mobile app",
+        "ios",
+        "android",
+        "universal app"
+      ]
     },
     {
       "id": "fastlane/fastlane",
@@ -135,7 +201,20 @@
       "why": "The standard mobile release automation tool, used across native, Flutter and React Native apps.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Ruby tool automating iOS and Android tasks: building, code signing and provisioning profiles, screenshots and store releases, scripted via Fastfiles.",
+      "best_for": "Automating repeatable mobile build, signing and store-release pipelines in CI.",
+      "not_for": "Ruby-based and requires Apple/Google credentials; not a build system itself.",
+      "keywords": [
+        "fastlane",
+        "ios",
+        "android",
+        "code signing",
+        "app store",
+        "release automation",
+        "screenshots",
+        "ci"
+      ]
     },
     {
       "id": "Shopify/flash-list",
@@ -157,7 +236,20 @@
       "npm": "@shopify/flash-list",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "High-performance list component for React Native that recycles cells; v2 is a JS-only rewrite for the new architecture and a drop-in FlatList replacement.",
+      "best_for": "Long or complex React Native lists where FlatList shows blank cells or stutters.",
+      "not_for": "v2 targets the new architecture; overkill for short lists.",
+      "keywords": [
+        "flashlist",
+        "react native",
+        "list",
+        "flatlist",
+        "performance",
+        "virtualization",
+        "recycling",
+        "scroll"
+      ]
     },
     {
       "id": "flutter/flutter",
@@ -179,7 +271,21 @@
       "why": "Google-backed, own rendering engine for pixel-consistent UI and fast hot reload; very large package ecosystem.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Google's UI toolkit for building natively compiled apps for mobile, web and desktop from a single Dart codebase, with its own rendering engine.",
+      "best_for": "Teams wanting one codebase with consistent custom UI across iOS, Android, web and desktop.",
+      "not_for": "Requires Dart; own renderer means non-native widgets and larger app size, and web is weaker for SEO-heavy sites.",
+      "keywords": [
+        "flutter",
+        "dart",
+        "cross-platform",
+        "mobile",
+        "ios",
+        "android",
+        "ui toolkit",
+        "desktop",
+        "web"
+      ]
     },
     {
       "id": "FaridSafi/react-native-gifted-chat",
@@ -201,7 +307,19 @@
       "why": "Drop-in chat screen with bubbles, input toolbar, avatars and load-earlier; saves weeks of messaging UI.",
       "npm": "react-native-gifted-chat",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Chat UI component set for React Native and web with customizable components, composer and message rendering. The README says it is now in maintenance mode, with development moved to a fork.",
+      "best_for": "Quickly adding a chat interface to a React Native app (existing projects).",
+      "not_for": "In maintenance mode with no new features; the README points new projects to the @kesha-antonov/react-native-chat fork. UI only, no backend.",
+      "keywords": [
+        "chat ui",
+        "react native",
+        "gifted chat",
+        "messaging",
+        "chat interface",
+        "composer",
+        "web"
+      ]
     },
     {
       "id": "ionic-team/ionic-framework",
@@ -224,7 +342,20 @@
       "npm": "@ionic/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Web-component-based UI toolkit with mobile-styled components for building hybrid mobile apps and PWAs with Angular, React or Vue, typically packaged with Capacitor.",
+      "best_for": "Web teams building mobile-styled hybrid apps or PWAs from one JS codebase.",
+      "not_for": "Hybrid WebView rendering rather than native widgets; not for apps needing platform-native UI.",
+      "keywords": [
+        "ionic",
+        "hybrid app",
+        "pwa",
+        "web components",
+        "angular",
+        "react",
+        "vue",
+        "mobile ui"
+      ]
     },
     {
       "id": "lynx-family/lynx",
@@ -246,7 +377,21 @@
       "why": "ByteDance open-sourced engine behind TikTok features; dual-threaded native rendering for web developers.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "ByteDance's family of technologies for writing native mobile and web UIs with web-style markup and CSS, including ReactLynx, rendered natively on Android, iOS and web.",
+      "best_for": "Web developers wanting native rendering from CSS and React-style code.",
+      "not_for": "Younger ecosystem with fewer libraries and community answers than React Native or Flutter.",
+      "keywords": [
+        "lynx",
+        "native ui",
+        "reactlynx",
+        "css",
+        "cross-platform",
+        "android",
+        "ios",
+        "web skills",
+        "bytedance"
+      ]
     },
     {
       "id": "NativeScript/NativeScript",
@@ -267,7 +412,20 @@
       "why": "OpenJS project; lets JS/Angular/Vue/Svelte devs call platform APIs directly without bridges.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Framework that exposes native iOS, Android and visionOS APIs directly to JavaScript/TypeScript runtimes for building native apps, with CLI and framework flavors.",
+      "best_for": "Developers wanting direct access to native platform APIs from JS/TS without writing bridges.",
+      "not_for": "Smaller community than React Native or Flutter; fewer ready-made third-party plugins.",
+      "keywords": [
+        "nativescript",
+        "native apis",
+        "typescript",
+        "ios",
+        "android",
+        "visionos",
+        "cross-platform",
+        "mobile"
+      ]
     },
     {
       "id": "nativewind/nativewind",
@@ -289,7 +447,20 @@
       "npm": "nativewind",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Styling library bringing Tailwind CSS classes to React Native, choosing the right style engine per platform; it is not a component library.",
+      "best_for": "React Native or Expo projects where the team already uses Tailwind.",
+      "not_for": "Provides styling only; you still need components, and the Tailwind-to-native mapping has limitations.",
+      "keywords": [
+        "nativewind",
+        "tailwind",
+        "react native",
+        "styling",
+        "expo",
+        "css",
+        "utility classes",
+        "universal"
+      ]
     },
     {
       "id": "react/react-native",
@@ -313,7 +484,20 @@
       "npm": "react-native",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Framework for building native Android and iOS apps with React; JavaScript components render to native platform UI views.",
+      "best_for": "Teams with React skills building native mobile apps with shared logic.",
+      "not_for": "Needs native tooling and occasional native code; Expo is the usual recommended starting point.",
+      "keywords": [
+        "react native",
+        "mobile",
+        "ios",
+        "android",
+        "react",
+        "javascript",
+        "native ui",
+        "cross-platform"
+      ]
     },
     {
       "id": "wix/react-native-calendars",
@@ -335,7 +519,20 @@
       "why": "Pure-JS, customizable calendar and agenda views used widely for booking and scheduling screens.",
       "npm": "react-native-calendars",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Pure-JS calendar, agenda and date-marking components for React Native with dot, multi-dot and period marking, swipeable calendars, customization and locale support.",
+      "best_for": "Adding calendars, agendas and date range selection to a React Native app.",
+      "not_for": "Not a scheduling or full event-calendar system; UI components only.",
+      "keywords": [
+        "calendar",
+        "react native",
+        "agenda",
+        "date picker",
+        "date marking",
+        "period",
+        "timeline",
+        "locale"
+      ]
     },
     {
       "id": "react-native-elements/react-native-elements",
@@ -356,7 +553,20 @@
       "why": "Long-standing, themeable RN component kit (buttons, inputs, lists, cards).",
       "npm": "@rneui/themed",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Cross-platform React Native UI toolkit of customizable components such as buttons, inputs and lists, split into packages (@rneui/base, @rneui/themed).",
+      "best_for": "Quickly assembling standard React Native screens with themeable components.",
+      "not_for": "Less actively favored than newer kits; not Material Design-specific and not a design system in itself.",
+      "keywords": [
+        "react native",
+        "ui kit",
+        "components",
+        "rneui",
+        "theming",
+        "buttons",
+        "cross-platform",
+        "design system"
+      ]
     },
     {
       "id": "invertase/react-native-firebase",
@@ -378,7 +588,20 @@
       "why": "Modular, well-tested wrappers for Auth, Firestore, Messaging, Crashlytics and more on iOS and Android.",
       "npm": "@react-native-firebase/app",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "React Native modules connecting to native Firebase SDKs on iOS and Android as a thin JS layer, covering auth, Firestore, messaging, analytics and more.",
+      "best_for": "React Native apps using Firebase services natively, including push notifications.",
+      "not_for": "Needs native setup, so no Expo Go (dev builds required); tied to Firebase.",
+      "keywords": [
+        "firebase",
+        "react native",
+        "firestore",
+        "auth",
+        "push notifications",
+        "analytics",
+        "crashlytics",
+        "native sdk"
+      ]
     },
     {
       "id": "necolas/react-native-web",
@@ -400,7 +623,19 @@
       "npm": "react-native-web",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Compatibility layer that runs React Native components and APIs in the browser, built on react-dom, to share code between native and web.",
+      "best_for": "Sharing UI code between React Native apps and web (used by Expo web and Tamagui).",
+      "not_for": "Web output is not a full web-idiomatic design; some native-only APIs are unsupported.",
+      "keywords": [
+        "react native web",
+        "web",
+        "cross-platform",
+        "react dom",
+        "universal app",
+        "components",
+        "code sharing"
+      ]
     },
     {
       "id": "software-mansion/react-native-gesture-handler",
@@ -422,7 +657,20 @@
       "npm": "react-native-gesture-handler",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Declarative API exposing the platform's native touch and gesture system to React Native, running gestures natively for smooth and reliable interactions.",
+      "best_for": "Complex gestures (pan, pinch, swipe) in React Native, often with Reanimated.",
+      "not_for": "Requires native install and setup; unnecessary for simple tap-only interfaces.",
+      "keywords": [
+        "gestures",
+        "react native",
+        "touch",
+        "pan",
+        "pinch",
+        "swipe",
+        "reanimated",
+        "native driven"
+      ]
     },
     {
       "id": "wix/react-native-navigation",
@@ -443,7 +691,20 @@
       "why": "Wix library using real native navigation stacks and tabs instead of JS-driven ones.",
       "npm": "react-native-navigation",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Navigation library for React Native providing fully native navigation on iOS and Android with a cross-platform JS API.",
+      "best_for": "Apps that want truly native navigation stacks and tabs.",
+      "not_for": "Native integration is more complex; most new projects use React Navigation or Expo Router, and Expo support is limited.",
+      "keywords": [
+        "navigation",
+        "react native",
+        "native navigation",
+        "stack",
+        "tabs",
+        "ios",
+        "android",
+        "screens"
+      ]
     },
     {
       "id": "callstack/react-native-paper",
@@ -465,7 +726,20 @@
       "why": "Callstack-maintained, themeable Material 3 components with good accessibility.",
       "npm": "react-native-paper",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Material Design component library for React Native with themeable, production-ready components that follow Material specs on both platforms.",
+      "best_for": "Apps wanting a Material Design look with theming and dark mode.",
+      "not_for": "Material styling by default; a less natural fit for iOS-native look or heavy brand customization.",
+      "keywords": [
+        "material design",
+        "react native",
+        "paper",
+        "ui library",
+        "components",
+        "theming",
+        "dark mode",
+        "android"
+      ]
     },
     {
       "id": "founded-labs/react-native-reusables",
@@ -487,7 +761,20 @@
       "why": "Brings the shadcn copy-paste model and look to React Native, built on accessible primitives.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "shadcn/ui-style, copy-paste component collection for React Native styled with NativeWind, so you own the component code.",
+      "best_for": "Expo/React Native projects using NativeWind that want shadcn-style components.",
+      "not_for": "Depends on NativeWind; not a packaged npm component library, and README documentation is thin.",
+      "keywords": [
+        "shadcn",
+        "react native",
+        "nativewind",
+        "components",
+        "ui",
+        "tailwind",
+        "copy paste",
+        "expo"
+      ]
     },
     {
       "id": "oblador/react-native-vector-icons",
@@ -509,7 +796,20 @@
       "npm": "react-native-vector-icons",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Vector icon sets (Material, FontAwesome, Ionicons and more) for React Native, usable in buttons, tab bars and navigation, now split into per-set packages.",
+      "best_for": "Adding standard icon fonts to React Native UIs.",
+      "not_for": "Font-based icons; for native SVG use a different package, and bundling many sets adds size.",
+      "keywords": [
+        "icons",
+        "react native",
+        "vector icons",
+        "fontawesome",
+        "material icons",
+        "ionicons",
+        "tab bar",
+        "icon fonts"
+      ]
     },
     {
       "id": "react-navigation/react-navigation",
@@ -536,7 +836,20 @@
         "note": "MIT license files live in each package folder (e.g. packages/native/LICENSE).",
         "date": "2026-10-17"
       },
-      "featured": false
+      "featured": false,
+      "summary": "Routing and navigation library for React Native with stack, tab and drawer navigators; this branch is v8, with 7.x being the latest stable.",
+      "best_for": "Standard in-app navigation for React Native apps (JS-based, widely used).",
+      "not_for": "Navigation is JS-driven, not native stacks; this branch is a pre-release major version.",
+      "keywords": [
+        "react navigation",
+        "react native",
+        "stack navigator",
+        "tabs",
+        "drawer",
+        "routing",
+        "screens",
+        "deep linking"
+      ]
     },
     {
       "id": "react-native-maps/react-native-maps",
@@ -558,7 +871,20 @@
       "why": "The standard RN map component with markers, polygons and overlays on Google and Apple Maps.",
       "npm": "react-native-maps",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Native map components (Apple Maps and Google Maps) for React Native on iOS and Android, with markers, polygons and overlays declared as children of MapView.",
+      "best_for": "Showing maps with markers and shapes in React Native apps.",
+      "not_for": "Mobile only; Google Maps needs API keys, and web support is not part of it.",
+      "keywords": [
+        "maps",
+        "react native",
+        "mapview",
+        "markers",
+        "google maps",
+        "apple maps",
+        "polygons",
+        "location"
+      ]
     },
     {
       "id": "infinitered/reactotron",
@@ -580,7 +906,20 @@
       "npm": "reactotron-react-native",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Desktop debugging app for React and React Native that shows state, network requests, logs and performance metrics from your running app.",
+      "best_for": "Inspecting state, API calls and logs while developing React Native apps.",
+      "not_for": "A development tool only, not production monitoring; some features need the app configured with the client.",
+      "keywords": [
+        "reactotron",
+        "debugger",
+        "react native",
+        "redux",
+        "network inspector",
+        "logging",
+        "devtools",
+        "state"
+      ]
     },
     {
       "id": "tamagui/tamagui",
@@ -603,7 +942,20 @@
       "npm": "tamagui",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Universal style library, UI kit and optimizing compiler for React and React Native that extracts styles at build time for web and native sharing.",
+      "best_for": "Sharing UI and design system between web and native with strong performance.",
+      "not_for": "Complex configuration and compiler setup; steeper learning curve than simpler style libraries.",
+      "keywords": [
+        "tamagui",
+        "react native",
+        "universal ui",
+        "style compiler",
+        "design system",
+        "cross-platform",
+        "web",
+        "components"
+      ]
     },
     {
       "id": "NervJS/taro",
@@ -625,7 +977,20 @@
       "why": "The leading framework for Chinese mini-program platforms with React Native and web targets.",
       "npm": "@tarojs/taro",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Taro is a cross-platform framework for writing one codebase in React, Vue or Nerv and running it as WeChat, JD, Baidu, Alipay, ByteDance or QQ mini-programs, H5 web, or React Native apps. It has a UI library ecosystem such as taro-ui and NutUI.",
+      "best_for": "Teams targeting Chinese mini-program platforms (WeChat and others) plus web and React Native from a single React or Vue codebase.",
+      "not_for": "Apps that do not target mini-programs, where plain React Native or Flutter may fit better. Docs and community are mostly Chinese, and Taro 1/2 projects need migration to Taro 3.",
+      "keywords": [
+        "cross-platform",
+        "mini program",
+        "wechat",
+        "react",
+        "vue",
+        "react native",
+        "h5",
+        "taro"
+      ]
     },
     {
       "id": "akveo/react-native-ui-kitten",
@@ -647,7 +1012,19 @@
       "why": "30+ accessible components with runtime theme switching driven by design tokens.",
       "npm": "@ui-kitten/components",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Themeable React Native UI library on the Eva Design System with 30+ components, light and dark themes and runtime theme switching; v6 supports React 19.",
+      "best_for": "Apps wanting a themeable component set with Eva design and runtime theme changes.",
+      "not_for": "Smaller community than Paper or Tamagui; v5 to v6 requires migration.",
+      "keywords": [
+        "ui kitten",
+        "react native",
+        "eva design",
+        "theming",
+        "components",
+        "dark mode",
+        "ui library"
+      ]
     },
     {
       "id": "margelo/react-native-vision-camera",
@@ -669,7 +1046,20 @@
       "npm": "react-native-vision-camera",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "High-performance React Native camera library for photo and video capture, QR/barcode scanning, multi-camera, and frame processors (JS worklets) for ML and shaders.",
+      "best_for": "Camera features, barcode scanning or real-time frame processing (face detection, AI) in React Native.",
+      "not_for": "Requires native setup and dev builds (no Expo Go); frame processors need Reanimated worklets.",
+      "keywords": [
+        "camera",
+        "react native",
+        "barcode scanner",
+        "qr code",
+        "frame processor",
+        "video",
+        "photo",
+        "vision"
+      ]
     },
     {
       "id": "Nozbe/WatermelonDB",
@@ -691,7 +1081,20 @@
       "why": "Lazy-loaded SQLite-backed DB that stays fast with tens of thousands of records, with a sync protocol.",
       "npm": "@nozbe/watermelondb",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Reactive, lazy-loading, offline-first database for React and React Native that scales to tens of thousands of records and syncs with your own backend.",
+      "best_for": "Data-heavy React Native apps needing fast launch, observables and offline sync.",
+      "not_for": "You must implement sync endpoints on your own backend; heavier than AsyncStorage or SQLite wrappers for small apps.",
+      "keywords": [
+        "watermelondb",
+        "react native",
+        "offline first",
+        "database",
+        "sqlite",
+        "sync",
+        "reactive",
+        "observables"
+      ]
     }
   ]
 }

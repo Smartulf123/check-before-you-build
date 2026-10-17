@@ -21,7 +21,21 @@
       "use_for": "Self-hosted RAG workspace with built-in vector DB, agents and a developer API",
       "why": "MIT all-in-one RAG platform: document ingestion, many vector DB and LLM backends, plus an API and embeddable chat widget.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "All-in-one self-hosted AI application for chatting with documents, using agents and building workspaces. Connects local or cloud LLMs and many vector databases, is multi-user and offers a developer API and embeddable chat widget; also ships as a desktop app.",
+      "best_for": "A ready-made private ChatGPT-over-your-docs with agents and API, without building RAG plumbing.",
+      "not_for": "A full application rather than a library; deep customization of the retrieval pipeline is limited compared with frameworks like LlamaIndex or Haystack.",
+      "keywords": [
+        "rag",
+        "chat with documents",
+        "self-hosted",
+        "ai agents",
+        "multi-user",
+        "vector database",
+        "embeddable chat widget",
+        "local llm",
+        "desktop app"
+      ]
     },
     {
       "id": "chroma-core/chroma",
@@ -46,7 +60,21 @@
       "npm": "chromadb",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Open-source embedding database with a small core API (create collection, add, query, update, delete). Runs embedded in-process for prototypes or in client-server mode, with Python and JS clients and an optional hosted Chroma Cloud.",
+      "best_for": "Prototyping and small-to-medium RAG apps needing a simple local vector store with few lines of code.",
+      "not_for": "Less suited to billion-scale or heavy distributed workloads than Milvus or Qdrant clusters; managed option is paid (Chroma Cloud).",
+      "keywords": [
+        "vector database",
+        "embeddings",
+        "rag",
+        "semantic search",
+        "python",
+        "collection api",
+        "local vector store",
+        "chromadb",
+        "hybrid search"
+      ]
     },
     {
       "id": "topoteretes/cognee",
@@ -67,7 +95,20 @@
       "use_for": "Turn documents and data into a queryable knowledge graph memory for agents",
       "why": "Combines vector search and graph extraction (ECL pipelines) to give agents structured long-term memory; self-hostable.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source AI memory platform that turns documents, code and conversations into a self-hostable knowledge graph combined with vector search, using ECL (extract, cognify, load) pipelines to give agents persistent memory.",
+      "best_for": "Agents needing structured long-term memory across sessions with graph plus vector retrieval, running locally.",
+      "not_for": "Heavier than a plain vector store; graph extraction adds LLM cost and complexity, so skip it for simple chunk-and-embed RAG.",
+      "keywords": [
+        "agent memory",
+        "knowledge graph",
+        "long-term memory",
+        "graph rag",
+        "vector search",
+        "self-hosted",
+        "ai agents",
+        "ontology"
+      ]
     },
     {
       "id": "docling-project/docling",
@@ -90,7 +131,21 @@
       "why": "IBM-originated LF AI project; accurate layout, table and reading-order extraction, the hard part of RAG ingestion.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Document parsing toolkit that converts PDF, DOCX, PPTX, XLSX, HTML, images, audio and more into a unified DoclingDocument, with layout, reading order, table and formula understanding and export to Markdown, HTML or JSON for GenAI pipelines.",
+      "best_for": "Ingestion step in RAG pipelines needing accurate PDF layout and table extraction, with integrations into the GenAI ecosystem.",
+      "not_for": "Layout and OCR models make it heavier and slower than plain text extractors; it only parses documents, not retrieval or generation.",
+      "keywords": [
+        "pdf parsing",
+        "document conversion",
+        "table extraction",
+        "rag ingestion",
+        "markdown export",
+        "layout analysis",
+        "ocr",
+        "docx",
+        "document ai"
+      ]
     },
     {
       "id": "facebookresearch/faiss",
@@ -113,7 +168,21 @@
       "why": "The reference ANN library from Meta; powers many vector DBs and is the default for local, embedded vector indexes.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Library for efficient similarity search and clustering of dense vectors, written in C++ with Python/numpy wrappers. Supports L2 and dot-product search over sets that may not fit in RAM, with some algorithms on GPU.",
+      "best_for": "In-process nearest-neighbour search, local embedded vector indexes and research or large-scale offline ANN with CPU or GPU.",
+      "not_for": "A raw index library, not a database: no built-in metadata filtering, persistence service, or auth; vectors are identified by integer IDs only.",
+      "keywords": [
+        "similarity search",
+        "vector index",
+        "nearest neighbor",
+        "ann",
+        "gpu",
+        "clustering",
+        "embeddings",
+        "c++ python",
+        "quantization"
+      ]
     },
     {
       "id": "qdrant/fastembed",
@@ -135,7 +204,21 @@
       "why": "ONNX-based and small, so it fits serverless and CI; supports popular open embedding and SPLADE models.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Lightweight Python library for generating dense and sparse text embeddings locally using ONNX runtime, without PyTorch. Default model is a Flag Embedding BGE model and it integrates directly with Qdrant.",
+      "best_for": "Local or serverless embedding generation on CPU with a small install, including sparse models like SPLADE.",
+      "not_for": "Limited to the supported model list (open an issue to request models); no GPU-centric training or fine-tuning, for which sentence-transformers is better.",
+      "keywords": [
+        "embeddings",
+        "onnx",
+        "cpu",
+        "sparse embeddings",
+        "splade",
+        "qdrant",
+        "text embedding",
+        "serverless",
+        "bge"
+      ]
     },
     {
       "id": "FlagOpen/FlagEmbedding",
@@ -157,7 +240,21 @@
       "why": "Home of the BGE models that rank near the top of MTEB; includes training and reranking tooling.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Toolkit around the BGE family of embedding and reranker models for retrieval, with inference APIs for encoding text and tooling for fine-tuning and evaluation.",
+      "best_for": "Using or fine-tuning BGE embedding and reranker models for search and RAG, including multilingual retrieval.",
+      "not_for": "Research-oriented PyTorch toolkit with a heavier install; if you only need to run an embedding model, a lighter runtime may suffice.",
+      "keywords": [
+        "bge",
+        "embedding models",
+        "reranker",
+        "retrieval",
+        "fine-tuning",
+        "rag",
+        "multilingual embeddings",
+        "mteb",
+        "sentence embeddings"
+      ]
     },
     {
       "id": "microsoft/graphrag",
@@ -179,7 +276,20 @@
       "why": "Microsoft Research reference implementation of graph-based RAG; strong for whole-corpus questions plain vector search misses.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Data pipeline and transformation suite from Microsoft Research that uses LLMs to extract structured knowledge graphs from unstructured text, then answers questions using graph-based context, including corpus-wide queries.",
+      "best_for": "Whole-corpus or thematic questions over a document set where plain vector search falls short.",
+      "not_for": "The README states it is a research project in maintenance mode with no new features; indexing is LLM-heavy and costly. Use LightRAG or similar for lighter graph RAG.",
+      "keywords": [
+        "graph rag",
+        "knowledge graph",
+        "microsoft research",
+        "global search",
+        "llm extraction",
+        "community summaries",
+        "rag",
+        "corpus questions"
+      ]
     },
     {
       "id": "deepset-ai/haystack",
@@ -201,7 +311,21 @@
       "why": "Mature, modular RAG framework (since 2019) with explicit pipelines and integrations for every major vector store.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Modular framework for building RAG, search and agent pipelines with explicit, pluggable components: retrievers, rankers, generators and many vector store and LLM integrations. Includes agent lifecycle hooks and token tracking.",
+      "best_for": "Production RAG and search systems where you want explicit pipeline control and swappable components.",
+      "not_for": "More boilerplate than higher-level apps like AnythingLLM; Python only and you assemble the pipeline yourself.",
+      "keywords": [
+        "rag framework",
+        "pipelines",
+        "retrievers",
+        "rerankers",
+        "agents",
+        "vector stores",
+        "semantic search",
+        "llm orchestration",
+        "python"
+      ]
     },
     {
       "id": "nmslib/hnswlib",
@@ -223,7 +347,20 @@
       "why": "Canonical HNSW implementation by the algorithm author; used inside Chroma and many other systems.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Header-only C++ implementation of the HNSW algorithm with Python bindings, supporting insertions, updates and deletions for fast approximate nearest-neighbour search.",
+      "best_for": "Embedding a simple, fast in-memory ANN index directly in C++ or Python code.",
+      "not_for": "Just an index: no metadata filtering, query language or server; the README notes the current version is a release candidate. Memory-resident graph.",
+      "keywords": [
+        "hnsw",
+        "approximate nearest neighbor",
+        "vector index",
+        "header-only",
+        "c++",
+        "python bindings",
+        "similarity search",
+        "embeddings"
+      ]
     },
     {
       "id": "lancedb/lancedb",
@@ -249,7 +386,21 @@
       "npm": "@lancedb/lancedb",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Serverless vector database built on the Lance columnar format. Stores and searches vectors and multimodal data from local disk or object storage with no server to run, aimed at AI/ML workloads.",
+      "best_for": "Embedded vector search in apps and pipelines that scales from a laptop to object storage like S3, including multimodal data.",
+      "not_for": "Embedded/file-based model suits fewer concurrent-server needs; if you want a standalone always-on cluster service, Qdrant or Milvus fit better.",
+      "keywords": [
+        "vector database",
+        "serverless",
+        "lance format",
+        "embedded",
+        "multimodal",
+        "object storage",
+        "s3",
+        "rag",
+        "vector search"
+      ]
     },
     {
       "id": "StarTrail-org/LEANN",
@@ -270,7 +421,20 @@
       "use_for": "Storage-efficient vector index for local RAG on laptops",
       "why": "MLSys best paper: recomputes embeddings on the fly to cut index storage about 97%, making personal-scale RAG cheap.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Vector index for local RAG that reduces storage by about 97 percent by recomputing embeddings on the fly instead of storing them. Aims to let a laptop index and search millions of documents; telemetry-free.",
+      "best_for": "Personal-scale RAG on a laptop where disk space is the constraint, for notes, emails and files.",
+      "not_for": "Recomputation trades storage for query-time compute; less suited to high-QPS server workloads. Newer, less established project.",
+      "keywords": [
+        "local rag",
+        "vector index",
+        "storage efficient",
+        "personal ai",
+        "laptop",
+        "embeddings recompute",
+        "private search",
+        "vector database"
+      ]
     },
     {
       "id": "HKUDS/LightRAG",
@@ -292,7 +456,20 @@
       "why": "Simpler and cheaper graph RAG than heavier alternatives, with a server, web UI and multiple storage backends.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Retrieval-augmented generation framework using graph-structured indexing and dual-level retrieval for deeper context. Supports incremental updates, multiple storage backends and ships a server with web UI.",
+      "best_for": "Graph-based RAG on a budget, especially over domain-specific corpora (legal, financial) needing relational context.",
+      "not_for": "Graph extraction requires many LLM calls at indexing time; for simple FAQ-style retrieval plain vector RAG is cheaper.",
+      "keywords": [
+        "graph rag",
+        "knowledge graph",
+        "rag",
+        "dual-level retrieval",
+        "incremental update",
+        "lightrag",
+        "web ui",
+        "entity extraction"
+      ]
     },
     {
       "id": "run-llama/llama_index",
@@ -316,7 +493,21 @@
       "why": "The most widely used RAG-focused framework, with hundreds of loaders, vector store integrations and 2,000+ contributors.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Widely used RAG-focused framework with hundreds of data loaders, index types, vector store integrations and query engines for ingesting documents and querying them with an LLM. The company's focus has shifted toward LlamaParse document parsing.",
+      "best_for": "Building custom RAG and document-agent apps in Python or TypeScript with broad integration choice.",
+      "not_for": "Large API surface that changes often; the README says current company focus is document parsing (LlamaParse is a paid service).",
+      "keywords": [
+        "rag",
+        "llm framework",
+        "data loaders",
+        "vector store integrations",
+        "query engine",
+        "document agents",
+        "indexing",
+        "python",
+        "llamaparse"
+      ]
     },
     {
       "id": "mem0ai/mem0",
@@ -340,7 +531,20 @@
       "why": "Most adopted agent memory layer: extracts, stores and retrieves user facts across sessions on top of vector and graph stores.",
       "npm": "mem0ai",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Memory layer for AI assistants and agents that extracts user facts and preferences, stores them and retrieves them across sessions on top of vector and graph stores. Offers a hosted platform and open-source library.",
+      "best_for": "Adding persistent personalization and long-term memory to chatbots and agents.",
+      "not_for": "Adds an LLM extraction step and storage to maintain; unnecessary for stateless bots. Some features are tied to the hosted platform.",
+      "keywords": [
+        "agent memory",
+        "long-term memory",
+        "personalization",
+        "user preferences",
+        "chat memory",
+        "vector store",
+        "llm memory",
+        "assistants"
+      ]
     },
     {
       "id": "milvus-io/milvus",
@@ -364,7 +568,21 @@
       "why": "Built for very large collections with GPU indexes and horizontal scaling; Milvus Lite covers local development.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Distributed, Kubernetes-native vector database written in Go and C++ with CPU and GPU acceleration, designed for billions of vectors and real-time streaming updates. Milvus Lite covers local development.",
+      "best_for": "Very large-scale similarity search and production vector workloads that need horizontal scaling.",
+      "not_for": "Heavy to operate for small projects (many components); use Chroma, pgvector or Qdrant for modest datasets.",
+      "keywords": [
+        "vector database",
+        "billion scale",
+        "distributed",
+        "kubernetes",
+        "gpu index",
+        "similarity search",
+        "milvus lite",
+        "hybrid search",
+        "embeddings"
+      ]
     },
     {
       "id": "volcengine/OpenViking",
@@ -385,7 +603,21 @@
       "use_for": "Context database unifying agent memory, knowledge RAG and skills",
       "why": "ByteDance Volcengine project that organises agent context as a filesystem-like hierarchy with tiered retrieval; AGPL-3.0.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Context database for AI agents that organizes memory, knowledge and skills as a virtual filesystem under viking://, navigable with ls, tree, read and grep and with tiered retrieval. Developed by ByteDance Volcengine.",
+      "best_for": "Agents needing inspectable, hierarchical context where you can see and edit what the agent knows.",
+      "not_for": "AGPL-3.0 license limits use in closed-source network services; newer and less proven than mainstream vector stores.",
+      "keywords": [
+        "agent memory",
+        "context database",
+        "filesystem",
+        "knowledge base",
+        "skills",
+        "rag",
+        "tiered retrieval",
+        "ai agents",
+        "agpl"
+      ]
     },
     {
       "id": "PaddlePaddle/PaddleOCR",
@@ -406,7 +638,21 @@
       "use_for": "OCR and document parsing to turn PDFs and images into structured data for RAG",
       "why": "Mature multilingual OCR + layout/table parsing (PP-Structure) that feeds clean text into retrieval pipelines; Apache-2.0.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "OCR and document parsing toolkit that converts PDFs and images into structured JSON or Markdown, with multilingual text recognition and layout/table parsing. Models can be exported to ONNX and run on engines like OpenVINO and TensorRT.",
+      "best_for": "Feeding RAG pipelines with text from scanned PDFs and images, multilingual OCR, and layout or table extraction.",
+      "not_for": "Built on the PaddlePaddle ecosystem, so setup is heavier than lightweight OCR tools; only extraction, not retrieval or chat.",
+      "keywords": [
+        "ocr",
+        "pdf to markdown",
+        "document parsing",
+        "table recognition",
+        "multilingual ocr",
+        "layout analysis",
+        "pp-structure",
+        "onnx",
+        "paddlepaddle"
+      ]
     },
     {
       "id": "VectifyAI/PageIndex",
@@ -427,7 +673,20 @@
       "use_for": "Vectorless, reasoning-based RAG over long documents via a tree index",
       "why": "Builds a table-of-contents style tree and lets the LLM navigate it, a strong alternative to chunk+embed for long structured docs.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Vectorless, reasoning-based RAG that builds a table-of-contents style tree index of a long document and has the LLM navigate it, with no vector DB or chunking. The SDK has a local mode using your own LLM key or a cloud option.",
+      "best_for": "Long, structured documents (reports, filings, manuals) where chunk-and-embed loses context.",
+      "not_for": "Relies on LLM calls to index and navigate, so costs and latency are higher; best for structured docs, less for huge unstructured corpora.",
+      "keywords": [
+        "vectorless rag",
+        "tree index",
+        "reasoning rag",
+        "long documents",
+        "no chunking",
+        "pdf",
+        "table of contents",
+        "retrieval"
+      ]
     },
     {
       "id": "pgvector/pgvector",
@@ -449,7 +708,21 @@
       "why": "Keeps vectors next to your relational data with HNSW/IVFFlat indexes; supported by nearly every managed Postgres provider.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Postgres extension for vector similarity search. Supports exact and approximate (HNSW, IVFFlat) search with several vector types and distance metrics while keeping ACID, joins and point-in-time recovery.",
+      "best_for": "Adding semantic search to an existing Postgres app so vectors live beside relational data, available on most managed Postgres services.",
+      "not_for": "Not as specialized or scalable as dedicated vector DBs for very large collections; ANN index builds and tuning use Postgres resources.",
+      "keywords": [
+        "postgres",
+        "vector search",
+        "hnsw",
+        "ivfflat",
+        "embeddings",
+        "cosine distance",
+        "semantic search",
+        "sql",
+        "extension"
+      ]
     },
     {
       "id": "zylon-ai/private-gpt",
@@ -470,7 +743,20 @@
       "use_for": "Private RAG API layer over local models for document Q&A",
       "why": "OpenAI-style API with ingestion, retrieval and chat over local models, a ready backend for private document assistants.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source API layer that turns local models into production AI applications, offering ingestion, retrieval and chat primitives with an API modeled on the Claude API. Powers Zylon's on-premise AI platform.",
+      "best_for": "Building private, on-premise document assistants and RAG backends without sending data to cloud APIs.",
+      "not_for": "A backend API rather than a polished end-user product; you bring or host local models and hardware.",
+      "keywords": [
+        "private rag",
+        "local llm",
+        "on-premise",
+        "document q&a",
+        "api layer",
+        "ingestion",
+        "privacy",
+        "self-hosted ai"
+      ]
     },
     {
       "id": "qdrant/qdrant",
@@ -494,7 +780,21 @@
       "why": "Fast Rust engine with strong metadata filtering, quantization and simple REST/gRPC APIs; easy to self-host or use as cloud.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Vector similarity search engine and database written in Rust, offering a service with REST and gRPC APIs. Stores points with payloads and supports extended filtering, quantization, and hybrid search.",
+      "best_for": "Dedicated, self-hosted or cloud vector database for semantic and hybrid search with strong metadata filtering.",
+      "not_for": "Another service to run; for small prototypes an embedded store (Chroma, LanceDB) or pgvector may be simpler.",
+      "keywords": [
+        "vector database",
+        "payload filtering",
+        "semantic search",
+        "rust",
+        "hybrid search",
+        "quantization",
+        "rest grpc",
+        "similarity search",
+        "faceted search"
+      ]
     },
     {
       "id": "HKUDS/RAG-Anything",
@@ -515,7 +815,20 @@
       "use_for": "All-in-one multimodal RAG over PDFs, images, tables and equations",
       "why": "From the LightRAG team: parses mixed-content documents and builds a multimodal knowledge graph for retrieval in one pipeline.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Multimodal RAG framework built on LightRAG that parses documents containing text, images, tables and equations and builds a multimodal knowledge graph for retrieval in a single pipeline.",
+      "best_for": "RAG over PDFs and reports with figures, tables and formulas where text-only pipelines drop information.",
+      "not_for": "Heavier than text RAG (parsers plus vision/LLM calls); depends on LightRAG, so inherits graph-indexing cost.",
+      "keywords": [
+        "multimodal rag",
+        "pdf images tables",
+        "equations",
+        "knowledge graph",
+        "lightrag",
+        "document parsing",
+        "vision",
+        "rag pipeline"
+      ]
     },
     {
       "id": "infiniflow/ragflow",
@@ -538,7 +851,21 @@
       "why": "Most-starred open RAG engine; strong layout-aware parsing of PDFs/tables, deployable via Docker with an API.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source RAG engine combining deep document understanding with agent capabilities. Parses layout-heavy PDFs and tables, produces citation-grounded answers, deploys via Docker and exposes an API.",
+      "best_for": "A self-hosted RAG product with strong layout-aware parsing and citations for enterprise knowledge bases.",
+      "not_for": "A full application stack with notable resource needs (Docker, several services); not a lightweight library to embed.",
+      "keywords": [
+        "rag engine",
+        "document understanding",
+        "pdf parsing",
+        "citations",
+        "docker",
+        "knowledge base",
+        "agents",
+        "self-hosted",
+        "table extraction"
+      ]
     },
     {
       "id": "huggingface/sentence-transformers",
@@ -560,7 +887,21 @@
       "why": "The standard Python library for embedding and cross-encoder models, with thousands of compatible models on Hugging Face.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python framework for computing embeddings with Sentence Transformer models, scoring with Cross-Encoder rerankers and generating sparse embeddings, with training support for all three. Works with thousands of models on Hugging Face.",
+      "best_for": "Generating embeddings, reranking results and fine-tuning embedding models in Python, with GPU support.",
+      "not_for": "Requires PyTorch (heavy install); for lightweight CPU-only embedding, FastEmbed is smaller. No vector storage.",
+      "keywords": [
+        "embeddings",
+        "sentence embeddings",
+        "reranker",
+        "cross-encoder",
+        "semantic similarity",
+        "fine-tuning",
+        "hugging face",
+        "sparse encoder",
+        "pytorch"
+      ]
     },
     {
       "id": "asg017/sqlite-vec",
@@ -584,7 +925,21 @@
       "why": "Runs anywhere SQLite runs (incl. WASM, mobile); successor to sqlite-vss and the go-to for local-first vector search.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Very small SQLite extension in pure C with no dependencies for vector search. Stores float, int8 and binary vectors in vec0 virtual tables with metadata columns, runs anywhere SQLite does including WASM; successor to sqlite-vss.",
+      "best_for": "Local-first, mobile, browser or edge apps that need vector search inside SQLite.",
+      "not_for": "Pre-v1 with expected breaking changes; brute-force style search ('fast enough') rather than large-scale ANN indexes.",
+      "keywords": [
+        "sqlite",
+        "vector search",
+        "sqlite extension",
+        "wasm",
+        "local-first",
+        "embeddings",
+        "vec0",
+        "mobile",
+        "edge"
+      ]
     },
     {
       "id": "RyanCodrai/turbovec",
@@ -606,7 +961,21 @@
       "use_for": "Compressed vector index using TurboQuant quantization",
       "why": "Rust ANN index with Python bindings built on TurboQuant, giving high recall at a fraction of FAISS-style memory.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "In-process vector index for Python and Rust that stores each vector at 2 or 4 bits per dimension using TurboQuant and searches the compressed form with SIMD kernels. README claims 10M 768-d embeddings fit in 4 GB.",
+      "best_for": "Memory-constrained, large embedding sets needing a compressed in-process index with high recall.",
+      "not_for": "In-process index library, not a database service; the README has its own 'when to use something else' section, and the project is new.",
+      "keywords": [
+        "vector index",
+        "quantization",
+        "turboquant",
+        "compressed embeddings",
+        "simd",
+        "rust python",
+        "ann",
+        "memory efficient",
+        "faiss alternative"
+      ]
     },
     {
       "id": "neuml/txtai",
@@ -628,7 +997,21 @@
       "why": "Single package combining vector index, SQL, graph and pipelines; lightweight alternative to running a separate vector DB.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "All-in-one AI framework centered on an embeddings database that combines sparse and dense vector indexes, graph networks and relational databases. Supports semantic search with SQL, RAG, agents and multi-model workflows.",
+      "best_for": "Single-package semantic search and RAG where you want vector index, SQL and graph without a separate vector DB.",
+      "not_for": "Opinionated all-in-one stack, so less flexible than assembling best-of-breed parts; Python only.",
+      "keywords": [
+        "embeddings database",
+        "semantic search",
+        "rag",
+        "sql",
+        "graph",
+        "llm workflows",
+        "agents",
+        "vector index",
+        "python"
+      ]
     },
     {
       "id": "Unstructured-IO/unstructured",
@@ -650,7 +1033,21 @@
       "why": "Widely used ingestion layer with partitioning and chunking strategies; integrated into LangChain and LlamaIndex.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source components for ingesting and pre-processing images and documents (PDF, HTML, Word, email, Office) into structured elements and chunks for LLMs, with connectors and partitioning strategies; integrated with LangChain and LlamaIndex.",
+      "best_for": "Normalizing messy mixed-format documents into elements and chunks before embedding.",
+      "not_for": "Best accuracy on hard PDFs requires heavier models or the paid API; dependencies can be large. Docling is an alternative for layout-heavy PDFs.",
+      "keywords": [
+        "document ingestion",
+        "partitioning",
+        "chunking",
+        "pdf parsing",
+        "preprocessing",
+        "etl for llms",
+        "html",
+        "office documents",
+        "langchain"
+      ]
     },
     {
       "id": "weaviate/weaviate",
@@ -674,7 +1071,21 @@
       "why": "Combines BM25 and vector search out of the box and can call embedding models for you; mature clients for Python, TS, Go and Java.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Cloud-native vector database that stores objects and vectors with hybrid (BM25 plus vector) search, filtering, reranking and RAG in one query interface. Can vectorize at import via integrated model modules.",
+      "best_for": "Production semantic and hybrid search where you want built-in vectorizers and mature clients (Python, TS, Go, Java).",
+      "not_for": "Heavier to run than embedded stores; schema/collection concepts add learning curve for small prototypes.",
+      "keywords": [
+        "vector database",
+        "hybrid search",
+        "bm25",
+        "vectorizer modules",
+        "semantic search",
+        "rag",
+        "graphql",
+        "cloud-native",
+        "reranking"
+      ]
     },
     {
       "id": "Tencent/WeKnora",
@@ -702,7 +1113,21 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "LLM-powered framework for enterprise document understanding and knowledge-base Q&A. Offers multimodal parsing, hybrid retrieval, an agent with skills and a wiki, deployable as a service with a web UI.",
+      "best_for": "Standing up a team knowledge base with RAG, agent and wiki features as a self-hosted service.",
+      "not_for": "A full service with web UI rather than a small library; stack and docs are Tencent-centric, so check maturity before depending on it.",
+      "keywords": [
+        "knowledge base",
+        "rag",
+        "document understanding",
+        "hybrid retrieval",
+        "agent",
+        "wiki",
+        "self-hosted",
+        "multimodal parsing",
+        "enterprise search"
+      ]
     },
     {
       "id": "alibaba/zvec",
@@ -725,7 +1150,20 @@
       "use_for": "Lightweight in-process vector database embedded in your app",
       "why": "Alibaba-built embedded vector DB: SQLite-style, no server to run, fast ANN search for local and edge RAG.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Lightweight in-process vector database from Alibaba that embeds directly into applications SQLite-style with no server. Battle-tested internally, with low-latency similarity search; recent releases add a zvec-grep local search CLI.",
+      "best_for": "Embedded or edge vector search for local RAG without running a separate server.",
+      "not_for": "In-process only, so no standalone multi-client server; young project with fast-moving versions (v0.x).",
+      "keywords": [
+        "embedded vector database",
+        "in-process",
+        "ann search",
+        "local rag",
+        "edge",
+        "sqlite-style",
+        "similarity search",
+        "alibaba"
+      ]
     }
   ]
 }

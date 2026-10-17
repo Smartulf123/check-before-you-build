@@ -20,7 +20,20 @@
       "npm": "ajv",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Ajv is a JSON Schema validator for Node.js and browsers supporting drafts 06/07/2019-09/2020-12 (draft-04 via ajv-draft-04) and JSON Type Definition (RFC8927). It supports remote and recursive references, OpenAPI keywords like discriminator and nullable, all-errors mode, removing additional properties, defaults, type coercion and i18n error messages.",
+      "best_for": "Validating JSON data against standard JSON Schema or JTD in JavaScript/TypeScript services, APIs and config loaders where speed and standards compliance matter.",
+      "not_for": "Defining schemas with a TypeScript-first fluent API (Zod-style). Formats need the ajv-formats plugin, and Node versions below 18 are not supported.",
+      "keywords": [
+        "json schema",
+        "validator",
+        "ajv",
+        "jtd",
+        "openapi",
+        "node.js",
+        "validation",
+        "javascript"
+      ]
     },
     {
       "id": "arktypeio/arktype",
@@ -42,7 +55,19 @@
       "npm": "arktype",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "ArkType is a TypeScript runtime validation library that parses optimized validators from familiar, type-safe syntax. It is used to check external data such as JSON payloads or forms at the boundaries of your code, similar to Zod. MIT licensed; full documentation is on arktype.io.",
+      "best_for": "TypeScript projects that want validators written in TypeScript-like syntax with static type inference and runtime checking.",
+      "not_for": "Plain JavaScript projects or teams needing standard JSON Schema interoperability; the README is minimal, so features beyond basic validation should be checked in the docs.",
+      "keywords": [
+        "typescript",
+        "runtime validation",
+        "validator",
+        "type-safe",
+        "schema",
+        "zod alternative",
+        "arktype"
+      ]
     },
     {
       "id": "vantezzen/autoform",
@@ -64,7 +89,20 @@
       "why": "Generates forms from schemas with shadcn/ui and other UI adapters, saving boilerplate for admin and CRUD forms.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "AutoForm automatically renders forms from an existing data schema, such as a Zod schema via @autoform/zod. It maps schema fields to input components, connects them to your form library and sets up validation, with fieldConfig options and escape hatches for customization. An optional AI coding-assistant skill is provided.",
+      "best_for": "Quickly generating internal tools, admin panels and simple forms from schemas you already have.",
+      "not_for": "Complex, highly customized forms: the README says it does not aim to be a full-featured form builder or support every schema edge case.",
+      "keywords": [
+        "form generator",
+        "schema",
+        "zod",
+        "react",
+        "admin panel",
+        "forms",
+        "autoform",
+        "validation"
+      ]
     },
     {
       "id": "typestack/class-validator",
@@ -88,7 +126,19 @@
       "stable_reason": "Feature-complete decorator validation library; stable API that NestJS relies on",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "class-validator validates objects using decorators (or non-decorator schemas) on TypeScript class properties, internally using validator.js. You annotate a class with decorators like IsEmail or Length, call validate or validateOrReject, and get an array of ValidationError objects including nested errors. Options include whitelisting and groups; works in browser and Node.js.",
+      "best_for": "TypeScript backends using classes and decorators (e.g. DTO validation) that want declarative property validation.",
+      "not_for": "Codebases avoiding classes/decorators or wanting schema-first type inference. Disabling forbidUnknownValues lets unknown objects pass validation, per the README warning.",
+      "keywords": [
+        "class-validator",
+        "typescript",
+        "decorators",
+        "validation",
+        "dto",
+        "validator.js",
+        "node.js"
+      ]
     },
     {
       "id": "edmundhung/conform",
@@ -111,7 +161,20 @@
       "npm": "@conform-to/react",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Conform is a React form library that progressively enhances HTML forms using web standards. It offers schema-based type safety with Standard Schema support and enhanced Zod and Valibot integration, native Server Actions support for Remix and Next.js, accessibility features, nested objects/arrays and intent buttons. MIT licensed.",
+      "best_for": "Server-first React apps (Remix, Next.js Server Actions) that want forms that work without JavaScript and validate with Zod or Valibot.",
+      "not_for": "Non-React frameworks, or purely client-side forms where a client-state form library may fit better.",
+      "keywords": [
+        "react",
+        "forms",
+        "progressive enhancement",
+        "server actions",
+        "remix",
+        "next.js",
+        "zod",
+        "valibot"
+      ]
     },
     {
       "id": "flutter-form-builder-ecosystem/flutter_form_builder",
@@ -133,7 +196,19 @@
       "why": "The most used Flutter form package, reducing boilerplate for field state, validation and value collection.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "flutter_form_builder is a Flutter package that removes boilerplate for building forms, validating fields, reacting to changes and collecting user input. It includes ready-made FormBuilder input fields so you do not have to write each FormBuilderField yourself, and supports dynamic and conditional forms.",
+      "best_for": "Flutter apps with data-entry forms that need validation and easy value retrieval.",
+      "not_for": "Non-Flutter projects. The roadmap mainly lists solving open issues, so expect maintenance rather than major new features.",
+      "keywords": [
+        "flutter",
+        "dart",
+        "forms",
+        "form builder",
+        "validation",
+        "input fields",
+        "mobile"
+      ]
     },
     {
       "id": "jaredpalmer/formik",
@@ -156,7 +231,18 @@
       "stable_reason": "Mature, feature-complete React form library in maintenance mode; API unchanged for years and still widely downloaded",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Formik is a React library for building forms. The GitHub README is minimal and points to formik.org for documentation; it is Apache 2.0 licensed and maintained as a yarn monorepo.",
+      "best_for": "React codebases already using Formik, or teams wanting a well-known form-state library with broad community examples.",
+      "not_for": "Non-React projects. The README gives almost no feature detail, so check formik.org for current status and API before choosing it for new work.",
+      "keywords": [
+        "formik",
+        "react",
+        "forms",
+        "form state",
+        "validation",
+        "javascript"
+      ]
     },
     {
       "id": "hapijs/joi",
@@ -178,7 +264,19 @@
       "npm": "joi",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "joi is a schema description language and data validator for JavaScript, installed via npm install joi. You describe the shape of data with a schema and validate values against it; documentation, API reference and version status are on joi.dev.",
+      "best_for": "Validating request payloads, configuration and other data in Node.js/JavaScript services with a schema API.",
+      "not_for": "TypeScript-first projects wanting static type inference from schemas, or standard JSON Schema interoperability; the README itself is only a pointer to joi.dev.",
+      "keywords": [
+        "joi",
+        "schema",
+        "validation",
+        "javascript",
+        "node.js",
+        "data validator",
+        "hapi"
+      ]
     },
     {
       "id": "pydantic/pydantic",
@@ -200,7 +298,20 @@
       "why": "The standard Python validation library (Rust core), used by FastAPI and most LLM tooling.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Python data validation library driven by type hints. You declare models as classes with annotated fields (BaseModel) and Pydantic validates and coerces input data against them. V2 is a ground-up rewrite and still ships V1 as pydantic.v1 for incremental upgrades.",
+      "best_for": "Validating and parsing request bodies, config, or external data in Python 3.10+ code using standard type annotations, with IDE and linter support.",
+      "not_for": "Non-Python stacks or browser form handling. V2 has breaking changes from V1, so older codebases need a migration path (the bundled pydantic.v1 helps).",
+      "keywords": [
+        "data validation",
+        "python",
+        "type hints",
+        "basemodel",
+        "parsing",
+        "schema",
+        "serialization",
+        "pydantic v2"
+      ]
     },
     {
       "id": "react-hook-form/react-hook-form",
@@ -223,7 +334,20 @@
       "npm": "react-hook-form",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "React form library built on hooks and uncontrolled inputs, so typing causes few re-renders. Embraces native HTML validation and offers resolvers for Yup, Zod, AJV, Superstruct, Joi and others. Small with no dependencies.",
+      "best_for": "React or React Native apps needing performant forms with schema validation (Zod/Yup/Valibot) and easy integration with UI component libraries.",
+      "not_for": "Not for non-React frameworks (Vue, Svelte, Angular) or generating forms from a JSON schema; heavily controlled-input patterns need Controller wrappers.",
+      "keywords": [
+        "react forms",
+        "form validation",
+        "hooks",
+        "zod resolver",
+        "yup",
+        "uncontrolled inputs",
+        "react native forms",
+        "form state"
+      ]
     },
     {
       "id": "rjsf-team/react-jsonschema-form",
@@ -245,7 +369,20 @@
       "npm": "@rjsf/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "React component that builds and customizes web forms declaratively from a JSON Schema. Split into packages for utils and several validators (AJV8, cfworker), with theme packages and a live playground.",
+      "best_for": "Schema-driven forms where the form structure comes from JSON Schema, e.g. admin UIs, config editors, and dynamic forms generated from backend schemas.",
+      "not_for": "Not for hand-designed, highly custom form layouts or non-React stacks; heavy-weight compared to hook-based form libraries for simple forms.",
+      "keywords": [
+        "json schema form",
+        "react form generator",
+        "dynamic forms",
+        "schema-driven ui",
+        "form builder",
+        "mui form",
+        "ajv",
+        "config editor"
+      ]
     },
     {
       "id": "ciscoheat/sveltekit-superforms",
@@ -268,7 +405,20 @@
       "npm": "sveltekit-superforms",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "SvelteKit form library with server- and client-side validation via many validator libraries (Zod, Valibot, Yup, Joi, TypeBox, ArkType, VineJS, etc.). Merges PageData and ActionData, focuses invalid fields, detects tainted forms, and supports progressive enhancement.",
+      "best_for": "SvelteKit apps needing typed forms with form actions, server validation and progressive enhancement, with your choice of validator.",
+      "not_for": "SvelteKit only; not for React/Vue or other meta-frameworks.",
+      "keywords": [
+        "sveltekit forms",
+        "form validation",
+        "form actions",
+        "progressive enhancement",
+        "zod",
+        "valibot",
+        "svelte forms",
+        "tainted form"
+      ]
     },
     {
       "id": "TanStack/form",
@@ -291,7 +441,20 @@
       "npm": "@tanstack/react-form",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Headless, framework-agnostic form state library with full TypeScript typing. Provides reactive hooks, sync and async validation with debouncing, nested fields, and adapters for React, Vue, Solid, Angular and Lit.",
+      "best_for": "Teams wanting deeply typed, headless forms that work across multiple frameworks with custom UI and complex validation workflows.",
+      "not_for": "Ships no UI components or prebuilt layouts; more setup than simpler form libraries if you only need basic forms in one framework.",
+      "keywords": [
+        "tanstack form",
+        "headless forms",
+        "typescript forms",
+        "form state",
+        "async validation",
+        "nested fields",
+        "standard schema",
+        "react vue solid"
+      ]
     },
     {
       "id": "sinclairzx81/typebox",
@@ -313,7 +476,20 @@
       "npm": "@sinclair/typebox",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Runtime type system that builds in-memory JSON Schema objects while statically resolving matching TypeScript types. Schemas are standard JSON Schema, so they work with validators and OpenAPI tooling.",
+      "best_for": "Fastify/Elysia-style APIs or anywhere you need JSON Schema as the single source of truth for both TypeScript types and runtime validation.",
+      "not_for": "Not for teams wanting a Zod-style chained parse/transform API; targets JSON Schema semantics rather than coercion-heavy form parsing.",
+      "keywords": [
+        "json schema",
+        "typescript types",
+        "runtime validation",
+        "schema builder",
+        "fastify schema",
+        "openapi",
+        "static type inference",
+        "type-safe"
+      ]
     },
     {
       "id": "open-circle/valibot",
@@ -336,7 +512,20 @@
       "npm": "valibot",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Modular schema validation library with static TypeScript type inference and a functional API that tree-shakes well. Validates data on servers, in forms and in config files, with zero dependencies and many transformation/validation actions.",
+      "best_for": "Frontends or edge/serverless code where bundle size matters, and you want Zod-like typing with a pipe-based API.",
+      "not_for": "Smaller ecosystem and fewer integrations than Zod; functional pipe style may feel unfamiliar if you prefer chained methods.",
+      "keywords": [
+        "schema validation",
+        "typescript",
+        "tree-shakable",
+        "bundle size",
+        "form validation",
+        "parse",
+        "type inference",
+        "zod alternative"
+      ]
     },
     {
       "id": "go-playground/validator",
@@ -357,7 +546,20 @@
       "why": "The de facto Go validation library, used by Gin and many APIs",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Go package that validates structs and fields using struct tags. Supports cross-field and cross-struct validation, slice/array/map diving, custom validators and translatable error messages.",
+      "best_for": "Go APIs (e.g. with Gin) that need declarative request-struct validation with minimal boilerplate.",
+      "not_for": "Go only; tag-based rules live in strings and are checked at runtime, not compile time; not a schema/JSON Schema validator.",
+      "keywords": [
+        "go validation",
+        "struct tags",
+        "gin validation",
+        "request validation",
+        "golang validator",
+        "cross field",
+        "custom validators",
+        "error translation"
+      ]
     },
     {
       "id": "logaretm/vee-validate",
@@ -381,7 +583,20 @@
       "stable_reason": "Mature v4 Vue form library with a settled API; releases are infrequent because it is feature-complete",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Vue form validation library with composition API support. Offers declarative field- and form-level, sync and async validation, UI-agnostic components, and integrates with schema libraries such as Zod, Yup and Valibot.",
+      "best_for": "Vue 3 apps needing flexible validation that works with native inputs or any UI library.",
+      "not_for": "Vue only; it handles validation and state rather than providing form UI.",
+      "keywords": [
+        "vue forms",
+        "vue validation",
+        "composition api",
+        "zod",
+        "yup",
+        "valibot",
+        "form state",
+        "async validation"
+      ]
     },
     {
       "id": "ealush/vest",
@@ -404,7 +619,19 @@
       "npm": "vest",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Form validation framework where rules are written like unit-test suites, independent of UI framework. Runs only tests for the changed field, remembers prior results, and discards stale async results.",
+      "best_for": "Complex, conditional or async validation logic that should stay readable and be shared across frameworks or server and client.",
+      "not_for": "Not a form state manager or UI binding; you pair it with your own form handling. Test-style syntax is less compact than schema libraries for simple shapes.",
+      "keywords": [
+        "form validation",
+        "validation suites",
+        "async validation",
+        "conditional validation",
+        "unit test style",
+        "framework agnostic",
+        "stale async"
+      ]
     },
     {
       "id": "jquense/yup",
@@ -426,7 +653,20 @@
       "npm": "yup",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Schema builder for runtime parsing and validation. Define schemas, transform values, and assert shapes, with TypeScript type inference and built-in async validation.",
+      "best_for": "Existing Formik/React forms or projects already using Yup, and cases needing expressive interdependent validation plus value transformation.",
+      "not_for": "Newer projects often prefer Zod or Valibot for stricter TypeScript inference; not a form state library.",
+      "keywords": [
+        "schema validation",
+        "formik",
+        "yup schema",
+        "runtime validation",
+        "async validation",
+        "typescript inference",
+        "transform",
+        "form validation"
+      ]
     },
     {
       "id": "colinhacks/zod",
@@ -449,7 +689,21 @@
       "npm": "zod",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "TypeScript-first schema validation library with static type inference. Define a schema, parse untrusted data, and get typed results. Zero dependencies, about 2kb core, works in Node and browsers, includes JSON Schema conversion.",
+      "best_for": "TypeScript apps validating API input, env vars, forms or LLM outputs, especially alongside tRPC, react-hook-form and AI SDKs.",
+      "not_for": "Larger bundle than modular alternatives like Valibot; not intended as a form state manager or for non-JS stacks.",
+      "keywords": [
+        "zod",
+        "schema validation",
+        "typescript",
+        "runtime validation",
+        "type inference",
+        "parse",
+        "trpc",
+        "json schema",
+        "api validation"
+      ]
     }
   ]
 }

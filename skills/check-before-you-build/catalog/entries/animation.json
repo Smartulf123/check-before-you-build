@@ -23,7 +23,20 @@
       "npm": "animejs",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Lightweight JavaScript animation engine (v4) that animates CSS properties, SVG, DOM attributes and plain JS objects. Provides a timeline-based API, with v4 adding scroll-driven features and a migration path from v3.",
+      "best_for": "Animating DOM, SVG and arbitrary values with timelines in vanilla JS or any framework, with a small bundle.",
+      "not_for": "React-native-style declarative components, layout/gesture animations or physics-first springs; consider Motion or react-spring. Not a Lottie/Rive playback tool.",
+      "keywords": [
+        "javascript animation",
+        "svg animation",
+        "css animation",
+        "timeline",
+        "stagger",
+        "tween",
+        "scroll animation",
+        "dom animation"
+      ]
     },
     {
       "id": "formkit/auto-animate",
@@ -47,7 +60,20 @@
       "npm": "@formkit/auto-animate",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Zero-config utility that adds smooth transitions when child elements are added, removed or moved in a container. One call on a parent element animates list and layout changes, with usage for React, Vue, Solid or vanilla JS and a plugin system.",
+      "best_for": "Quickly polishing lists, accordions, toasts and dynamic UI with no animation code.",
+      "not_for": "Custom choreographed or timeline-based animations, scroll effects or gesture-driven motion; use Motion or GSAP-style tools for that.",
+      "keywords": [
+        "auto animate",
+        "list animation",
+        "enter exit animation",
+        "transitions",
+        "zero config",
+        "add remove animation",
+        "react animation",
+        "vue animation"
+      ]
     },
     {
       "id": "darkroomengineering/lenis",
@@ -69,7 +95,20 @@
       "npm": "lenis",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Small, dependency-free smooth-scroll library that wraps native browser scroll, so sticky positioning, anchors and accessibility keep working. Supports vertical, horizontal and nested scrolling, a snap plugin, and adapters for React, Vue and Framer; syncs with GSAP ScrollTrigger and WebGL.",
+      "best_for": "Design-heavy marketing sites, portfolios and WebGL scenes needing smooth scroll synced to scroll-driven animation.",
+      "not_for": "Doing the animations themselves; it only smooths scroll and exposes scroll values. Pair it with GSAP/Motion. Smooth scrolling can hurt UX on content-heavy or accessibility-critical sites if overused.",
+      "keywords": [
+        "smooth scroll",
+        "scroll animation",
+        "scroll sync",
+        "gsap scrolltrigger",
+        "parallax",
+        "webgl scroll",
+        "inertia scroll",
+        "scroll snap"
+      ]
     },
     {
       "id": "lottie-react-native/lottie-react-native",
@@ -89,7 +128,20 @@
       "why": "Standard Lottie player for React Native",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "React Native component that plays Lottie animations (After Effects exported as JSON) natively on iOS, Android and other platforms. Offers a declarative LottieView with autoPlay and an imperative API, and progress can be driven by Animated or Reanimated.",
+      "best_for": "Shipping designer-made vector animations (loaders, onboarding, micro-interactions) in React Native apps.",
+      "not_for": "Web projects (use lottie-web) or interactive state-machine animations (consider Rive). Animations must be authored in After Effects/Lottie format.",
+      "keywords": [
+        "lottie",
+        "react native animation",
+        "after effects",
+        "bodymovin",
+        "vector animation",
+        "animated json",
+        "loading animation",
+        "expo"
+      ]
     },
     {
       "id": "airbnb/lottie-web",
@@ -113,7 +165,20 @@
       "stable_reason": "Mature After Effects/Bodymovin JSON player; format and API are settled and widely deployed",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Lottie player for the web that renders After Effects animations exported as JSON via the Bodymovin plugin, in SVG, canvas or HTML renderers. Animation instances expose playback methods such as play, pause and seek.",
+      "best_for": "Embedding designer-authored After Effects animations on websites without recreating them in code.",
+      "not_for": "Heavy animations where file size or CPU matters, or interactive state-driven graphics (consider Rive). Needs After Effects plus Bodymovin to author content.",
+      "keywords": [
+        "lottie",
+        "after effects",
+        "bodymovin",
+        "json animation",
+        "svg animation",
+        "canvas animation",
+        "vector animation",
+        "web animation player"
+      ]
     },
     {
       "id": "mojs/mojs",
@@ -135,7 +200,20 @@
       "npm": "@mojs/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Declarative JavaScript motion-graphics library with a different syntax from tween-style libraries. Provides built-in components such as html, shape, swirl, burst and stagger, plus tools for timelines and tweens, aimed at bursts, shapes and micro-interactions.",
+      "best_for": "Adding playful click bursts, shape effects and micro-interactions to a site with a declarative API.",
+      "not_for": "General page, layout or scroll animation, or React-integrated motion. Its API is unconventional and ecosystem smaller than GSAP/Motion.",
+      "keywords": [
+        "motion graphics",
+        "burst",
+        "micro-interactions",
+        "shape animation",
+        "stagger",
+        "swirl",
+        "particles",
+        "javascript animation"
+      ]
     },
     {
       "id": "motiondivision/motion",
@@ -158,7 +236,21 @@
       "npm": "motion",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Animation library (formerly Framer Motion) for React, Vue and vanilla JS. Includes springs, gestures, layout transitions, scroll-linked effects and timelines, with hardware-accelerated animation, tree-shaking and TypeScript. Imports from motion/react; Vue via motion-v.",
+      "best_for": "UI animation in React, Vue or plain JS apps needing springs, drag/gestures, layout and exit animations, scroll effects.",
+      "not_for": "React Native (use Reanimated) or timeline/SVG-heavy sequencing, where GSAP may fit better. Svelte and other frameworks are only covered via the vanilla core.",
+      "keywords": [
+        "framer motion",
+        "react animation",
+        "spring animation",
+        "layout animation",
+        "gestures",
+        "scroll animation",
+        "exit animation",
+        "vue animation",
+        "drag"
+      ]
     },
     {
       "id": "barvian/number-flow",
@@ -179,7 +271,20 @@
       "why": "Smooth, accessible number animations",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Animated number transitions component for React, Vue and Svelte. Smoothly animates digits as values change, with accessibility considered.",
+      "best_for": "Counters, prices, stats and dashboards where numbers should roll smoothly between values.",
+      "not_for": "General-purpose animation or non-number text effects; it does one thing. Not for frameworks outside React, Vue and Svelte (aside from a vanilla web component).",
+      "keywords": [
+        "animated number",
+        "number transition",
+        "counter animation",
+        "react number",
+        "svelte number",
+        "vue number",
+        "odometer",
+        "price animation"
+      ]
     },
     {
       "id": "software-mansion/react-native-reanimated",
@@ -202,7 +307,20 @@
       "npm": "react-native-reanimated",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Animation library for React Native that runs animations and interactions on the UI thread. The repo contains Reanimated and React Native Worklets (multi-threaded JS). Reanimated 4 requires the New Architecture.",
+      "best_for": "Smooth gesture-driven and layout animations in React Native or Expo apps.",
+      "not_for": "Web-only projects, or apps still on the old React Native architecture (Reanimated 4 supports only the New Architecture; use Reanimated 3). Requires native setup.",
+      "keywords": [
+        "react native animation",
+        "worklets",
+        "ui thread",
+        "gesture animation",
+        "shared values",
+        "expo",
+        "layout animation",
+        "reanimated"
+      ]
     },
     {
       "id": "pmndrs/react-spring",
@@ -223,7 +341,19 @@
       "npm": "@react-spring/web",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Spring-physics animation library for React with packages for react-dom, React Native and react-three-fiber. Offers hooks such as useSpring, supports declarative or imperative control, and also durations with easings.",
+      "best_for": "Fluid, interruptible physics-based UI animation in React, including three.js scenes via react-three-fiber.",
+      "not_for": "Timeline-sequenced or scroll-choreographed animation, or non-React frameworks; consider Motion or GSAP. Fewer built-in gesture and layout features than Motion.",
+      "keywords": [
+        "react spring",
+        "spring animation",
+        "physics animation",
+        "react hooks animation",
+        "react three fiber",
+        "usespring",
+        "interactive animation"
+      ]
     },
     {
       "id": "rive-app/rive-wasm",
@@ -245,7 +375,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Rive web runtime in JavaScript/TypeScript and WebAssembly. Loads Rive files with multiple artboards, animations and state machines, with a high-level API for interactions and a low-level API to drive your own render loop.",
+      "best_for": "Interactive, state-machine-driven animations authored in the Rive editor, running on websites and web apps.",
+      "not_for": "Playing After Effects/Lottie files, or hand-coding animation without the Rive editor. Content must be authored in Rive; WASM runtime adds payload.",
+      "keywords": [
+        "rive",
+        "state machine animation",
+        "interactive animation",
+        "wasm",
+        "vector animation",
+        "web runtime",
+        "artboards",
+        "canvas"
+      ]
     },
     {
       "id": "nateherkai/scroll-craft",
@@ -275,7 +418,20 @@
       "category": "animation",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Agent skill (also a Claude Code plugin) for building scroll-driven websites with layered heroes, pointer response and scroll transitions. Bundles a design workflow, references, its own scroll engine, verification tools and ten approved worked example sites.",
+      "best_for": "Having Claude Code or Codex produce distinctive scroll-driven marketing or portfolio sites with checked contrast and mobile behavior.",
+      "not_for": "Conventional app UIs, dashboards or content sites, and projects without a coding agent; it is a workflow/skill, not a runtime component library.",
+      "keywords": [
+        "agent skill",
+        "scroll-driven website",
+        "scroll animation",
+        "claude code plugin",
+        "landing page",
+        "hero section",
+        "web design",
+        "parallax"
+      ]
     },
     {
       "id": "jeremyckahn/shifty",
@@ -298,7 +454,19 @@
       "npm": "shifty",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Low-level, dependency-free TypeScript tweening engine. Provides playback control of individual tweens, extensibility hooks at lifecycle points and Promise support for async/await, designed to be wrapped by higher-level animation tools.",
+      "best_for": "Building custom animation tooling or tweening arbitrary values with minimal overhead.",
+      "not_for": "Out-of-the-box DOM, SVG or scroll animation; it has no high-level API, so use Motion, GSAP or Anime.js for that.",
+      "keywords": [
+        "tween",
+        "tweening engine",
+        "typescript animation",
+        "easing",
+        "promise animation",
+        "animation engine",
+        "lightweight animation"
+      ]
     },
     {
       "id": "svgdotjs/svg.js",
@@ -320,7 +488,19 @@
       "npm": "@svgdotjs/svg.js",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Dependency-free library for creating, manipulating and animating SVG with a readable chainable API. MIT licensed and available via npm and CDNs.",
+      "best_for": "Drawing and animating SVG graphics programmatically in vanilla JS projects.",
+      "not_for": "Canvas/WebGL graphics, full charting, or general DOM/CSS animation; it is SVG-specific and not a framework component library.",
+      "keywords": [
+        "svg",
+        "svg animation",
+        "svg manipulation",
+        "vector graphics",
+        "svg drawing",
+        "javascript svg",
+        "dom svg"
+      ]
     },
     {
       "id": "swup/swup",
@@ -342,7 +522,20 @@
       "npm": "swup",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Page transition library for server-rendered websites. Manages the page load lifecycle, auto-detects CSS transitions, preserves history and scroll position, caches and preloads pages, and offers hooks and a plugin system.",
+      "best_for": "Static, CMS-driven or server-rendered sites (WordPress, Astro, etc.) wanting SPA-like animated page transitions.",
+      "not_for": "Client-side SPAs with their own router (use framework transitions or View Transitions), or in-page element animation.",
+      "keywords": [
+        "page transitions",
+        "server-rendered",
+        "ajax navigation",
+        "preload",
+        "view transitions",
+        "cms",
+        "history api",
+        "static site"
+      ]
     },
     {
       "id": "tweenjs/tween.js",
@@ -365,7 +558,20 @@
       "npm": "@tweenjs/tween.js",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Tweening engine that interpolates numeric properties of JavaScript objects with Robert Penner easing functions. It does not run its own animation loop, does not append CSS units and does not interpolate colors.",
+      "best_for": "Animating numeric values in canvas/WebGL/three.js scenes where you control the render loop.",
+      "not_for": "Out-of-the-box CSS or SVG animation (units, colors), scroll effects or declarative UI motion; use Motion or GSAP.",
+      "keywords": [
+        "tween",
+        "easing",
+        "three.js animation",
+        "interpolation",
+        "animation loop",
+        "penner easing",
+        "tweening",
+        "canvas animation"
+      ]
     },
     {
       "id": "mattboldt/typed.js",
@@ -388,7 +594,19 @@
       "stable_reason": "Feature-complete, dependency-free typewriter effect; small API that needs no ongoing changes",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Typed.js is a JavaScript library that animates text as if it were being typed: it types each string at a set speed, backspaces it, and moves to the next. It installs via npm, yarn or a CDN script tag and works in plain JS or React; community wrappers exist for Vue and Web Components.",
+      "best_for": "Adding a typewriter-style text animation to a landing page or hero section with a few lines of JavaScript.",
+      "not_for": "Commercial projects without buying a license: it is GPL-3.0 and free only for personal and open source use, with paid single- and unlimited-project commercial licenses. Not a general animation library.",
+      "keywords": [
+        "typing animation",
+        "typewriter",
+        "text animation",
+        "javascript",
+        "react",
+        "landing page",
+        "gpl"
+      ]
     }
   ]
 }

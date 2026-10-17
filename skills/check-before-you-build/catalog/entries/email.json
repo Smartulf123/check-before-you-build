@@ -20,7 +20,20 @@
       "why": "One Django API across 20+ email providers incl. tracking webhooks and inbound",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Lets Django send and receive email through a choice of transactional email providers. Extends django.core.mail with common ESP features through one consistent API, supporting Amazon SES, Brevo, Mailgun, Postmark, Resend and others.",
+      "best_for": "Django apps that send transactional email and want to avoid lock-in to one ESP.",
+      "not_for": "Django only; it integrates with external ESPs and is not itself a mail server or marketing platform.",
+      "keywords": [
+        "django",
+        "email",
+        "transactional email",
+        "esp",
+        "amazon ses",
+        "mailgun",
+        "postmark",
+        "python"
+      ]
     },
     {
       "id": "Billionmail/BillionMail",
@@ -41,7 +54,19 @@
       "use_for": "Self-hosted mail server plus newsletter and email-marketing platform",
       "why": "All-in-one open source mail server with campaigns and analytics; AGPL-3.0.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Self-hosted, open-source mail server and email marketing platform for newsletters, promotional and transactional email. Provides campaigns with lists and tags, templates, delivery and open/click analytics, domain DNS verification with SSL, a bm management script and integrated RoundCube webmail.",
+      "best_for": "Self-hosting newsletters and email marketing campaigns with your own domain and no sending limits from a vendor.",
+      "not_for": "Requires running and maintaining your own mail server and DNS; README describes it as a community-driven project still evolving.",
+      "keywords": [
+        "email marketing",
+        "mail server",
+        "newsletter",
+        "self-hosted",
+        "roundcube",
+        "campaigns",
+        "analytics"
+      ]
     },
     {
       "id": "docker-mailserver/docker-mailserver",
@@ -62,7 +87,20 @@
       "why": "The simplest way to self-host a full mail stack with config files only",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "A containerized mail server bundling SMTP, IMAP, LDAP, anti-spam and anti-virus into one Docker image. It is configured through files only, with no SQL database, so setups can be versioned and upgraded easily. Maintained by volunteers since January 2021.",
+      "best_for": "Self-hosting a complete mail server with Docker when you want plain config files under version control instead of a web admin UI and database.",
+      "not_for": "Teams wanting a GUI admin panel or webmail out of the box, or anyone unwilling to manage DNS, deliverability and mail server operations themselves. Community support is limited; the issue tracker is not for personal support.",
+      "keywords": [
+        "mail server",
+        "docker",
+        "smtp",
+        "imap",
+        "anti-spam",
+        "anti-virus",
+        "ldap",
+        "self-hosted"
+      ]
     },
     {
       "id": "forwardemail/email-templates",
@@ -84,7 +122,18 @@
       "npm": "email-templates",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "A Node.js package for creating, previewing and sending custom email templates. In development it renders emails to a temp directory and opens them in the browser or iOS Simulator via preview-email, and it sends through nodemailer.",
+      "best_for": "Node.js apps that need templated transactional emails with locals, built-in browser previews during development, and nodemailer-based sending.",
+      "not_for": "Non-Node stacks, or projects wanting component-based (React/MJML) email authoring or a hosted sending service; it handles templating and sending, not deliverability.",
+      "keywords": [
+        "email templates",
+        "node.js",
+        "nodemailer",
+        "email preview",
+        "transactional email",
+        "templating"
+      ]
     },
     {
       "id": "haraka/Haraka",
@@ -108,7 +157,19 @@
       "npm": "Haraka",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "A scalable Node.js SMTP server built around plugins: every SMTP transaction step (connect, helo, mail, rcpt, data, queue) is a hook you can extend in async JavaScript. Often deployed as a filtering MTA or as an authenticated submission server with DKIM, and includes outbound delivery.",
+      "best_for": "Building a custom, high-throughput SMTP front end, spam-filtering MTA or submission server where you want to script mail handling in JavaScript.",
+      "not_for": "A complete mailbox system: Haraka is not a mail store, LDA or IMAP server and must be paired with those for user mailboxes.",
+      "keywords": [
+        "smtp server",
+        "node.js",
+        "mta",
+        "plugins",
+        "spam filtering",
+        "dkim",
+        "outbound delivery"
+      ]
     },
     {
       "id": "lettre/lettre",
@@ -130,7 +191,19 @@
       "why": "The standard Rust mailer crate with async SMTP, TLS and message building.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "A Rust mailer library for building and sending email. It offers multiple transports, secure SMTP delivery with encryption and authentication, email builders, Unicode support and async support. Requires Rust 1.74 or newer.",
+      "best_for": "Rust applications that need to compose and send email over SMTP (sync or async) with TLS and authentication.",
+      "not_for": "Parsing incoming email (not supported, per the README), or non-Rust projects. It is a client library, not a mail server.",
+      "keywords": [
+        "rust",
+        "email",
+        "smtp",
+        "mailer",
+        "async",
+        "email builder",
+        "tls"
+      ]
     },
     {
       "id": "knadh/listmonk",
@@ -154,7 +227,19 @@
       "why": "Single Go binary with Postgres; very fast at large lists and exposes a full API for app integration.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "A self-hosted newsletter and mailing list manager distributed as a single binary, with PostgreSQL as its data store. Runs via Docker Compose or the binary and serves a web UI. Backend in Go, frontend in Vue.",
+      "best_for": "Running your own newsletters and mailing lists with a lightweight single-binary deployment instead of paying for a hosted email marketing service.",
+      "not_for": "Setups without PostgreSQL, or anyone needing built-in delivery infrastructure or a full marketing automation suite. The AGPLv3 license matters for modified hosted versions.",
+      "keywords": [
+        "newsletter",
+        "mailing list",
+        "self-hosted",
+        "postgresql",
+        "go",
+        "email campaigns",
+        "single binary"
+      ]
     },
     {
       "id": "mailcow/mailcow-dockerized",
@@ -176,7 +261,18 @@
       "why": "Popular self-hosted mail suite with admin UI, SOGo webmail and ActiveSync",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "mailcow: dockerized is a mail server suite shipped as a set of Docker containers, combining various open-source mail components with a web UI. The README itself is mostly community links; it is GPLv3 and maintained by The Infrastructure Company GmbH.",
+      "best_for": "Self-hosting a full mail server suite with Docker Compose when you want a maintained bundle with a web admin interface rather than wiring components yourself.",
+      "not_for": "Lightweight or single-binary setups; it runs many containers. Bundled third-party software carries its own licenses, which the README asks you to check before use.",
+      "keywords": [
+        "mail server",
+        "docker",
+        "self-hosted",
+        "email suite",
+        "groupware",
+        "gplv3"
+      ]
     },
     {
       "id": "jstedfast/MailKit",
@@ -198,7 +294,20 @@
       "why": "Microsoft-recommended replacement for System.Net.Mail; robust, standards-compliant and cross-platform.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "A cross-platform .NET mail client library built on MimeKit. It provides SMTP, POP3 and IMAP clients with broad SASL authentication (including OAUTHBEARER and XOAUTH2), SOCKS/HTTP proxy support, SSL/TLS, and cancellable async APIs.",
+      "best_for": ".NET applications that need to send mail over SMTP or read mailboxes over IMAP/POP3 with robust authentication and MIME handling.",
+      "not_for": "Non-.NET stacks, or anyone wanting a hosted email API or mail server; it is a client library only.",
+      "keywords": [
+        "mailkit",
+        "mimekit",
+        ".net",
+        "c#",
+        "smtp client",
+        "imap",
+        "pop3",
+        "sasl"
+      ]
     },
     {
       "id": "axllent/mailpit",
@@ -222,7 +331,19 @@
       "why": "Modern successor to MailHog: single binary, fast UI, API for automated tests and HTML compatibility checks.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "An email testing tool that acts as an SMTP server, captures messages, and shows them in a web UI with search, HTML/source/headers views and attachments. Includes a REST API for integration testing, HTML compatibility, link and spam checks, and optional POP3 and SMTP relay. Ships as a single static binary or Docker images.",
+      "best_for": "Catching and inspecting outgoing email in local development, CI or staging, and asserting on messages in automated tests via its API; a maintained MailHog replacement.",
+      "not_for": "Delivering real email to recipients in production; it is a testing sink (relay is only an optional message-release feature).",
+      "keywords": [
+        "email testing",
+        "smtp",
+        "mailhog alternative",
+        "rest api",
+        "integration testing",
+        "web ui",
+        "docker"
+      ]
     },
     {
       "id": "maizzle/framework",
@@ -244,7 +365,18 @@
       "npm": "@maizzle/framework",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "The core of Maizzle, a Vite-powered framework for building HTML emails with Vue and Tailwind CSS. This repo holds the framework code; new projects should start from the separate Starter repository.",
+      "best_for": "Developers who want to build HTML emails using Tailwind CSS utility classes and Vue templating with a modern Vite build pipeline.",
+      "not_for": "Sending email, or teams outside a Node/Tailwind toolchain. To start a project, use the Starter repo rather than this core repository.",
+      "keywords": [
+        "html email",
+        "tailwind css",
+        "vue",
+        "vite",
+        "email framework",
+        "email templates"
+      ]
     },
     {
       "id": "mautic/mautic",
@@ -269,7 +401,18 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "An open-source marketing automation platform you can self-host, positioned on privacy. It runs multi-channel campaigns with segmentation and automation, using your own database so you keep your data, and is customizable on frontend and backend.",
+      "best_for": "Organizations that want self-hosted marketing automation (campaigns, segmentation, email marketing) as an alternative to SaaS tools, with full data ownership.",
+      "not_for": "Simple transactional email or a lightweight newsletter tool; it is a full marketing platform that needs hosting and administration. Hosted trials exist, but self-hosting is the free path.",
+      "keywords": [
+        "marketing automation",
+        "email marketing",
+        "self-hosted",
+        "campaigns",
+        "segmentation",
+        "open source"
+      ]
     },
     {
       "id": "mjmlio/mjml",
@@ -294,7 +437,19 @@
       "npm": "mjml",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "MJML is a markup language from Mailjet for writing responsive emails with semantic components. Its open-source engine compiles MJML into responsive HTML via a CLI or the mjml2html function in Node.js, with editor plugins and a free online editor.",
+      "best_for": "Producing responsive HTML emails that render across clients without hand-writing table layouts, from any build pipeline that can run Node or the CLI.",
+      "not_for": "Sending email or React-component-based authoring; MJML only compiles markup to HTML.",
+      "keywords": [
+        "mjml",
+        "responsive email",
+        "html email",
+        "markup language",
+        "email templates",
+        "node.js",
+        "cli"
+      ]
     },
     {
       "id": "nodemailer/nodemailer",
@@ -318,7 +473,18 @@
       "npm": "nodemailer",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "A Node.js library for sending email, typically over SMTP. Version 10+ requires Node.js 20 or newer and ships both ESM and CommonJS builds. Its README is mainly troubleshooting guidance (Gmail, timeouts, TLS).",
+      "best_for": "Sending email from Node.js applications through SMTP without depending on a specific email provider's SDK.",
+      "not_for": "Older Node.js versions (stay on 9.x), receiving mail, or teams who would rather call an HTTP API than manage SMTP connections; it does not handle deliverability or templating.",
+      "keywords": [
+        "nodemailer",
+        "node.js",
+        "send email",
+        "smtp",
+        "email library",
+        "transport"
+      ]
     },
     {
       "id": "novuhq/novu",
@@ -343,7 +509,20 @@
       "npm": "@novu/api",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Open-source notification and communication infrastructure: one API to send messages across Inbox/In-App, Email, SMS, Push and Chat, with workflows, digests and an embeddable inbox component. It also connects AI agents to channels like Slack, Teams, Telegram and WhatsApp through one conversation model.",
+      "best_for": "Products that need multi-channel notifications with workflows and an in-app inbox, without integrating each provider separately.",
+      "not_for": "Simple single-channel email sending where a mail library suffices. Getting started points to a hosted account, so self-hosting takes extra work.",
+      "keywords": [
+        "notifications",
+        "multi-channel",
+        "in-app inbox",
+        "email",
+        "sms",
+        "push",
+        "notification workflows",
+        "open source"
+      ]
     },
     {
       "id": "PHPMailer/PHPMailer",
@@ -365,7 +544,19 @@
       "why": "The classic, most-used PHP mail library with SMTP auth, TLS, attachments and HTML mail.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "A full-featured email creation and transfer class for PHP with an integrated SMTP client, so you can send without a local mail server. Supports attachments, HTML/multipart messages, UTF-8, SMTP auth including XOAUTH2, DKIM and S/MIME signing, and header-injection protection. Compatible with PHP 5.5 through 8.5.",
+      "best_for": "PHP applications that need reliable email sending with SMTP auth, attachments and HTML, instead of PHP's limited mail() function.",
+      "not_for": "Non-PHP projects, receiving or parsing mail, or bulk campaign management; it is a sending library.",
+      "keywords": [
+        "php",
+        "email",
+        "smtp",
+        "phpmailer",
+        "attachments",
+        "dkim",
+        "send email"
+      ]
     },
     {
       "id": "postalserver/postal",
@@ -387,7 +578,18 @@
       "why": "Full mail delivery platform with HTTP API, webhooks, click/open tracking and multiple organizations.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Postal is an open-source mail server for websites and web servers, positioned as a self-hosted alternative to Sendgrid, Mailgun or Postmark. You run it on your own servers to send email from your applications.",
+      "best_for": "Teams that want a self-hosted platform for sending email from websites and apps instead of paying for a hosted sending service.",
+      "not_for": "Personal mailboxes or IMAP-based user email; it targets sending from websites and apps. You take on server operations and deliverability yourself.",
+      "keywords": [
+        "mail server",
+        "self-hosted",
+        "sendgrid alternative",
+        "mailgun alternative",
+        "transactional email",
+        "smtp"
+      ]
     },
     {
       "id": "resend/react-email",
@@ -410,7 +612,19 @@
       "npm": "@react-email/components",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "A collection of unstyled React and TypeScript components for building emails, handling responsive layout, dark mode, and inconsistencies between clients such as Gmail and Outlook. Also includes a TipTap/ProseMirror-based editor that exports email-ready HTML and plain text. Output can be sent with any email provider.",
+      "best_for": "React/TypeScript teams who want to write email templates as components and render them to HTML for any sending provider.",
+      "not_for": "Non-React stacks or sending email itself; it only builds templates.",
+      "keywords": [
+        "react",
+        "email templates",
+        "typescript",
+        "html email",
+        "components",
+        "dark mode",
+        "email editor"
+      ]
     },
     {
       "id": "unlayer/react-email-editor",
@@ -433,7 +647,18 @@
       "npm": "react-email-editor",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "The official React component for embedding Unlayer's drag-and-drop email editor in your app. It lets you load and save designs, listen to editor events, configure the editor, and export responsive HTML. Version 2 requires React 16.8+ and Node 18+.",
+      "best_for": "Apps that must let end users design email templates visually, without building a drag-and-drop editor from scratch.",
+      "not_for": "Projects that need the editor itself to be open source or self-contained; this component wraps Unlayer's editor service. Not for non-React apps.",
+      "keywords": [
+        "email editor",
+        "drag and drop",
+        "react",
+        "unlayer",
+        "email builder",
+        "html export"
+      ]
     },
     {
       "id": "resend/resend-node",
@@ -456,7 +681,19 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "The Node.js SDK for the Resend email API. It sends email with plain text, custom HTML, or React components, and supports request options like abort signals, timeouts and custom headers.",
+      "best_for": "Node.js or Next.js apps already using, or choosing, Resend as their hosted email sending service.",
+      "not_for": "Self-hosted sending or other providers; it requires a Resend account and a verified domain to send from your own address.",
+      "keywords": [
+        "resend",
+        "node.js",
+        "email api",
+        "sdk",
+        "send email",
+        "react email",
+        "next.js"
+      ]
     },
     {
       "id": "stalwartlabs/stalwart",
@@ -483,7 +720,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "An open-source mail and collaboration server written in Rust, supporting JMAP, IMAP4, POP3, SMTP, CalDAV, CardDAV and WebDAV. SMTP includes DMARC, DKIM, SPF and ARC, DANE and MTA-STS, automated DKIM rotation, and sieve-based filtering. Described as feature complete, with 1.0 pending schema finalization.",
+      "best_for": "Self-hosting a modern, all-in-one mail server with JMAP and calendar/contacts support in a single Rust codebase.",
+      "not_for": "Anyone needing a stable 1.0 database schema today; the README says schema finalization is still ahead. Also overkill if you only need to send app email.",
+      "keywords": [
+        "mail server",
+        "rust",
+        "jmap",
+        "imap",
+        "smtp",
+        "caldav",
+        "carddav",
+        "self-hosted"
+      ]
     }
   ]
 }

@@ -60,6 +60,17 @@ test('long code blocks are shortened', () => {
   assert.doesNotMatch(text, /line25/);
 });
 
+test('rstToMarkdown turns underlined titles into headings and drops image directives', () => {
+  const rst = 'python-telegram-bot\n===================\n\n.. image:: https://x/badge.svg\n   :target: https://x\n\nWe have made you a wrapper.\n\nIntroduction\n------------\nThis library provides an interface.';
+  const md = readme.rstToMarkdown(rst);
+  assert.match(md, /^# python-telegram-bot/m);
+  assert.match(md, /^## Introduction/m);
+  assert.doesNotMatch(md, /badge\.svg|:target:/);
+  const { text } = readme.condense(md);
+  assert.match(text, /wrapper/);
+  assert.match(text, /interface/);
+});
+
 test('getReadme tries README variants on raw.githubusercontent.com', async () => {
   const calls = [];
   globalThis.fetch = async (url) => {

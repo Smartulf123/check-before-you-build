@@ -20,7 +20,21 @@
       "why": "Popular, actively maintained CLI for automated rough cuts; exports to Premiere, Resolve and FCP.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Command-line tool that analyzes audio loudness (and other methods) to cut silence and dead space from video and audio, with a margin option to tune pacing. Exports edits to editors or renders files, and ships agent skills.",
+      "best_for": "Automating first-pass rough cuts for talking-head videos, podcasts and lectures.",
+      "not_for": "Only removes or speeds sections based on analysis; it is not a full editor or creative tool. Judgment on content still needs manual editing.",
+      "keywords": [
+        "remove silence",
+        "auto cut video",
+        "jump cut",
+        "video editing cli",
+        "rough cut",
+        "podcast editing",
+        "premiere export",
+        "davinci resolve",
+        "dead air"
+      ]
     },
     {
       "id": "hao-ai-lab/FastVideo",
@@ -42,7 +56,21 @@
       "why": "Unified, actively developed framework for accelerated video generation; Apache-2.0.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Framework for post-training and real-time inference of video diffusion models. Supports full and LoRA fine-tuning, data preprocessing, DMD2 distillation, sparse attention, and FSDP2 scalable training.",
+      "best_for": "Researchers and teams fine-tuning or serving open video DiT models like Wan or Hunyuan faster on GPUs.",
+      "not_for": "Needs substantial GPU resources and ML expertise; not an end-user video editor or hosted generation service.",
+      "keywords": [
+        "video diffusion",
+        "video generation",
+        "lora finetuning",
+        "distillation",
+        "sparse attention",
+        "inference acceleration",
+        "wan",
+        "hunyuan",
+        "gpu"
+      ]
     },
     {
       "id": "FFmpeg/FFmpeg",
@@ -66,7 +94,21 @@
       "why": "The de facto media processing engine underneath most video tools; LGPL-2.1+ by default (verified LICENSE.md).",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Collection of libraries (libavcodec, libavformat, libavutil, libavfilter and others) and command-line tools to decode, encode, transcode, mux, stream and filter audio, video and subtitles.",
+      "best_for": "Any server, app or script needing format conversion, transcoding, trimming, thumbnailing or streaming prep.",
+      "not_for": "CLI flags are complex and it is C code, so embedding requires care. Licensing depends on build options (LGPL or GPL), and it is not a GUI or editor.",
+      "keywords": [
+        "ffmpeg",
+        "video transcoding",
+        "audio conversion",
+        "libav",
+        "media processing",
+        "encode decode",
+        "mux",
+        "filters",
+        "streaming"
+      ]
     },
     {
       "id": "BtbN/FFmpeg-Builds",
@@ -86,7 +128,20 @@
       "use_for": "Download up-to-date static/shared FFmpeg builds for Windows and Linux in CI or apps",
       "why": "Widely used source of nightly and release FFmpeg binaries (GPL/LGPL variants) built reproducibly via GitHub Actions.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Automatically built static and shared FFmpeg binaries for Windows and Linux x86_64 (master and latest release), produced via GitHub Actions in GPL and LGPL variants.",
+      "best_for": "Getting up-to-date FFmpeg binaries for CI, Docker images or bundled apps on Windows and Linux.",
+      "not_for": "Builds only for x86_64 Windows and Linux (no macOS); it distributes binaries, not an API. Check GPL versus LGPL variants for licensing.",
+      "keywords": [
+        "ffmpeg binaries",
+        "static build",
+        "ffmpeg download",
+        "windows ffmpeg",
+        "linux ffmpeg",
+        "nightly build",
+        "gpl lgpl",
+        "ci ffmpeg"
+      ]
     },
     {
       "id": "ffmpegwasm/ffmpeg.wasm",
@@ -110,7 +165,19 @@
       "npm": "@ffmpeg/ffmpeg",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Pure WebAssembly and JavaScript port of FFmpeg that records, converts and streams audio and video directly in browsers or Node.",
+      "best_for": "Client-side video or audio conversion, trimming and thumbnailing without sending files to a server.",
+      "not_for": "Slower than native FFmpeg and memory-limited in browsers; large files and heavy transcodes are impractical. README is brief and docs are external.",
+      "keywords": [
+        "ffmpeg wasm",
+        "browser video conversion",
+        "webassembly",
+        "client side transcoding",
+        "video trim",
+        "thumbnail",
+        "javascript ffmpeg"
+      ]
     },
     {
       "id": "AlexxIT/go2rtc",
@@ -133,7 +200,22 @@
       "why": "Zero-dependency streaming server widely used with Frigate/Home Assistant for low-latency camera video.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Zero-dependency camera streaming app that ingests many formats and protocols, outputs to popular formats, and restreams with low latency. Transcodes via FFmpeg only when needed, with two-way audio support.",
+      "best_for": "Restreaming IP cameras (RTSP to WebRTC, HLS, MSE), including Home Assistant and Frigate setups.",
+      "not_for": "Focused on camera-style streams; not a full media server with recording library or a general video platform. Some features depend on external FFmpeg.",
+      "keywords": [
+        "rtsp",
+        "webrtc",
+        "camera streaming",
+        "restream",
+        "hls",
+        "mse",
+        "home assistant",
+        "frigate",
+        "ip camera",
+        "low latency"
+      ]
     },
     {
       "id": "GStreamer/gstreamer",
@@ -162,7 +244,19 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "GStreamer is a framework for streaming media; this repo holds all official community modules. It builds with Meson, which pulls mandatory dependencies (glib, zlib, libffi, libintl) and optional ones like ffmpeg, x264 and openh264 as subprojects. Docs, tutorials and API reference are on gstreamer.freedesktop.org.",
+      "best_for": "Building native media pipelines for playback, capture, transcoding or streaming in desktop, embedded or server apps.",
+      "not_for": "Simple one-off video conversion where the ffmpeg CLI is enough, or browser-only apps. Some plugins need system-provided optional dependencies to build.",
+      "keywords": [
+        "multimedia",
+        "gstreamer",
+        "streaming media",
+        "media pipeline",
+        "meson",
+        "video",
+        "audio"
+      ]
     },
     {
       "id": "CarGuo/GSYVideoPlayer",
@@ -184,7 +278,21 @@
       "use_for": "Add a full-featured video player to an Android app",
       "why": "Wraps IJKPlayer, ExoPlayer and MediaPlayer behind one API with caching, danmaku, filters and fullscreen handling.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Android video player library that unifies IJKPlayer, ExoPlayer, MediaPlayer and optionally AliPlayer behind one API, with caching, danmaku, filters, fullscreen handling and optional DLNA casting.",
+      "best_for": "Android apps that need a feature-rich video player with list playback, caching and multiple engine options.",
+      "not_for": "Android only. The README is partly Chinese-oriented, and wrapping several engines adds size compared with using Media3/ExoPlayer directly.",
+      "keywords": [
+        "android video player",
+        "exoplayer",
+        "ijkplayer",
+        "video cache",
+        "danmaku",
+        "fullscreen",
+        "dlna cast",
+        "gsyvideoplayer",
+        "mediaplayer"
+      ]
     },
     {
       "id": "video-dev/hls.js",
@@ -208,7 +316,20 @@
       "npm": "hls.js",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "JavaScript library that plays HLS streams via Media Source Extensions in browsers without native HLS. Supports VOD, live with DVR, low-latency HLS, fMP4 and MPEG-TS, and codecs such as HEVC and AV1 subject to runtime support.",
+      "best_for": "Adding HLS (m3u8) playback to a web video element or custom player.",
+      "not_for": "Playback engine only with no UI or DRM tooling (use Shaka or Video.js for more). HLS only, not DASH.",
+      "keywords": [
+        "hls",
+        "m3u8",
+        "hls playback",
+        "media source extensions",
+        "live streaming",
+        "low latency hls",
+        "video player engine",
+        "adaptive streaming"
+      ]
     },
     {
       "id": "heygen-com/hyperframes",
@@ -232,7 +353,21 @@
       "why": "Apache-2.0 HTML-to-video renderer designed for coding agents; a permissive alternative to Remotion-style workflows.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Open-source framework that turns HTML, CSS, media and seekable animations into deterministic MP4 videos. Used through a CLI, agent skills, or as a rendering core; targets uses like product videos, captions, chart animations and docs-to-video.",
+      "best_for": "Programmatic or AI-agent-authored videos where you can describe scenes in web tech and need repeatable renders.",
+      "not_for": "Renders compositions you author; it does not generate footage or act as a timeline editor. Requires a headless browser rendering pipeline and web-skill authoring.",
+      "keywords": [
+        "html to video",
+        "video rendering",
+        "programmatic video",
+        "ai agent video",
+        "mp4 render",
+        "deterministic",
+        "motion graphics",
+        "remotion alternative",
+        "captions"
+      ]
     },
     {
       "id": "KlingAIResearch/LivePortrait",
@@ -257,7 +392,20 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Official PyTorch implementation of a portrait animation model that drives a still image with a video or expressions, with stitching and retargeting control.",
+      "best_for": "Animating portraits and avatars from a reference face or driving video in research or creative pipelines.",
+      "not_for": "Requires GPU and model downloads, and face-animation misuse (deepfakes) raises ethical and legal concerns. Check model weight licensing before commercial use.",
+      "keywords": [
+        "portrait animation",
+        "face reenactment",
+        "talking head",
+        "liveportrait",
+        "image to video",
+        "retargeting",
+        "pytorch",
+        "avatar"
+      ]
     },
     {
       "id": "Vanilagy/mediabunny",
@@ -281,7 +429,20 @@
       "npm": "mediabunny",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Zero-dependency pure TypeScript toolkit for reading, writing and converting media (MP4, MOV, WebM, MKV, MP3, HLS and more) in the browser using WebCodecs. Highly tree-shakable.",
+      "best_for": "Client-side video trimming, conversion and muxing in web apps without bundling FFmpeg.",
+      "not_for": "Relies on browser WebCodecs support, so formats and codecs follow what the runtime allows; not as format-complete as FFmpeg. Check its license terms.",
+      "keywords": [
+        "webcodecs",
+        "mp4 muxer",
+        "webm",
+        "browser transcoding",
+        "video conversion",
+        "typescript media",
+        "client side video",
+        "demux"
+      ]
     },
     {
       "id": "bluenviron/mediamtx",
@@ -304,7 +465,21 @@
       "why": "Single binary that converts between all common live-streaming protocols; the default self-hosted relay for cameras and live video",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Zero-dependency live media server and proxy that publishes, reads, proxies, records and plays back streams across protocols such as SRT, WebRTC, RTSP, RTMP, HLS and MPEG-TS.",
+      "best_for": "Self-hosted relay for cameras and live video, converting between streaming protocols in a single binary.",
+      "not_for": "Not a transcoding pipeline or CDN and has no built-in app or UI. Large-scale distribution needs extra infrastructure.",
+      "keywords": [
+        "rtsp server",
+        "rtmp",
+        "srt",
+        "webrtc",
+        "hls",
+        "media server",
+        "live streaming",
+        "camera proxy",
+        "stream recording"
+      ]
     },
     {
       "id": "motion-canvas/motion-canvas",
@@ -327,7 +502,19 @@
       "npm": "@motion-canvas/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "TypeScript library that programs vector animations with generator functions, paired with a real-time preview editor for syncing animations to voice-overs.",
+      "best_for": "Explainer and educational vector animation videos authored in code.",
+      "not_for": "Aimed at 2D informative animations, not general video editing or live-action footage. Requires TypeScript coding and a browser-based editor workflow.",
+      "keywords": [
+        "motion canvas",
+        "programmatic animation",
+        "explainer video",
+        "typescript animation",
+        "vector animation",
+        "generators",
+        "code to video"
+      ]
     },
     {
       "id": "Zulko/moviepy",
@@ -349,7 +536,21 @@
       "why": "Long-standing, simple Python API for programmatic editing; MIT licensed and actively maintained.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Python library for video editing: cuts, concatenation, titles, compositing and custom effects, reading and writing common formats including GIF. v2.0 introduced breaking changes, and v1 is unmaintained.",
+      "best_for": "Scripted video edits and batch processing in Python.",
+      "not_for": "Not real-time and can be slow on long videos; v1 code needs migration to v2. Heavy editing or precise frame work may be better with FFmpeg or PyAV directly.",
+      "keywords": [
+        "python video editing",
+        "moviepy",
+        "video compositing",
+        "gif",
+        "concatenate clips",
+        "titles",
+        "effects",
+        "ffmpeg python",
+        "automation"
+      ]
     },
     {
       "id": "mpv-player/mpv",
@@ -375,7 +576,20 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Free command-line media player supporting many formats, codecs and subtitles. Can be embedded via libmpv and scripted with Lua or JavaScript.",
+      "best_for": "Embedding a capable player in native apps or scripting playback from the CLI.",
+      "not_for": "Minimal built-in GUI and not for web embedding; GPL/LGPL licensing depends on build. Not an editor or streaming server.",
+      "keywords": [
+        "mpv",
+        "libmpv",
+        "video player",
+        "command line player",
+        "embed player",
+        "lua scripting",
+        "gpu rendering",
+        "subtitles"
+      ]
     },
     {
       "id": "AcademySoftwareFoundation/OpenTimelineIO",
@@ -398,7 +612,20 @@
       "why": "ASWF industry-standard API and format for editorial timeline interchange.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "OpenTimelineIO is an Academy Software Foundation framework and API for editorial timeline data, widely deployed in film and television. It is natively supported in most non-linear editing applications and integrated in game engines and content creation tools. It ships a Python package built on a C++ core.",
+      "best_for": "Exchanging or programmatically processing editorial timelines (cuts, clips, tracks) between NLEs and pipeline tools in VFX and post-production.",
+      "not_for": "Rendering or encoding video; it handles timeline structure, not media. The license grants no rights to Pixar or contributor trademarks.",
+      "keywords": [
+        "editorial timeline",
+        "opentimelineio",
+        "otio",
+        "nle",
+        "vfx pipeline",
+        "post-production",
+        "python",
+        "c++"
+      ]
     },
     {
       "id": "PyAV-Org/PyAV",
@@ -420,7 +647,20 @@
       "why": "Direct access to FFmpeg packets and frames from Python without shelling out; used by torchvision, auto-editor and many ML pipelines",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Pythonic binding for FFmpeg libraries giving direct access to containers, streams, packets, codecs and frames, with helpers to move data to NumPy and Pillow.",
+      "best_for": "Frame-level decoding, encoding and muxing in Python without shelling out to ffmpeg, such as ML data pipelines.",
+      "not_for": "Lower-level than MoviePy and requires understanding of codecs and FFmpeg concepts. Not for simple one-off conversions where the ffmpeg CLI suffices.",
+      "keywords": [
+        "pyav",
+        "python ffmpeg",
+        "frame decoding",
+        "video encoding",
+        "muxing",
+        "numpy video",
+        "libav",
+        "video io"
+      ]
     },
     {
       "id": "shaka-project/shaka-player",
@@ -443,7 +683,21 @@
       "npm": "shaka-player",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "JavaScript library for adaptive DASH and HLS playback in browsers via MSE and EME, with offline storage in IndexedDB, DRM support and a goal of staying light and simple.",
+      "best_for": "Web video with adaptive streaming, DRM (Widevine, PlayReady) or offline playback.",
+      "not_for": "Playback library rather than a full player skin and heavier than hls.js for simple HLS. DRM requires license servers and browser support.",
+      "keywords": [
+        "dash",
+        "hls",
+        "adaptive streaming",
+        "drm",
+        "widevine",
+        "offline playback",
+        "shaka player",
+        "mse",
+        "eme"
+      ]
     },
     {
       "id": "browser-use/video-use",
@@ -464,7 +718,20 @@
       "use_for": "Let a coding agent edit videos (cuts, captions, overlays) from natural language",
       "why": "From the browser-use team: gives Claude Code/Codex a toolkit to transcribe, cut and render edits programmatically.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Toolkit that lets a coding agent such as Claude Code edit videos from natural language: cuts filler words and dead space, color grades, adds audio fades and burns subtitles, producing a final.mp4.",
+      "best_for": "Letting an AI coding agent do talking-head or montage editing from a folder of raw footage.",
+      "not_for": "Agent-driven pipeline, not a GUI editor; quality depends on the agent and transcription. A cloud-hosted version is only a waitlist per the README.",
+      "keywords": [
+        "ai video editing",
+        "claude code",
+        "filler word removal",
+        "auto subtitles",
+        "color grade",
+        "agent skills",
+        "ffmpeg",
+        "video automation"
+      ]
     },
     {
       "id": "videojs/video.js",
@@ -488,7 +755,20 @@
       "npm": "video.js",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Modular, composable media player framework for web and React (v10 is stable). Supports HLS/DASH and plugins; the repo also offers an AI skill for version-matched docs.",
+      "best_for": "Web video players needing a customizable, skinnable UI and plugin ecosystem.",
+      "not_for": "v10 is a new modular design, so v7/v8 plugins and code may not carry over. Heavier than a bare engine like hls.js if you only need playback.",
+      "keywords": [
+        "video.js",
+        "html5 video player",
+        "web player",
+        "hls dash",
+        "player plugins",
+        "react video player",
+        "skin",
+        "media framework"
+      ]
     },
     {
       "id": "vidstack/player",
@@ -511,7 +791,20 @@
       "npm": "vidstack",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Accessible, customizable audio/video player components for React and web components with HLS, YouTube and Vimeo providers. README states it is in security-only maintenance with patches until January 2028.",
+      "best_for": "Keeping existing Vidstack players secure while migrating to Video.js 10.",
+      "not_for": "New projects should not start here: only security patches are merged and teams moved to Video.js 10.",
+      "keywords": [
+        "vidstack",
+        "video player",
+        "react player",
+        "web components",
+        "hls",
+        "youtube vimeo",
+        "media player",
+        "maintenance mode"
+      ]
     },
     {
       "id": "Wan-Video/Wan2.2",
@@ -533,7 +826,21 @@
       "why": "Leading open-weight video generation model family under Apache-2.0.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-weight video generation models from Wan, using a Mixture-of-Experts diffusion design; supports text-to-video and image-to-video with code and weights hosted on GitHub, Hugging Face and ModelScope.",
+      "best_for": "Self-hosting open text- or image-to-video generation with local GPUs.",
+      "not_for": "Requires large GPU memory and setup; results and speed trail hosted services for casual users. Review model license terms for your use.",
+      "keywords": [
+        "text to video",
+        "image to video",
+        "video generation",
+        "wan2.2",
+        "diffusion",
+        "open weights",
+        "self hosted",
+        "moe",
+        "hugging face"
+      ]
     },
     {
       "id": "yt-dlp/yt-dlp",
@@ -556,7 +863,20 @@
       "why": "The maintained youtube-dl successor with the broadest site coverage; embeddable as a Python module.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Feature-rich command-line audio and video downloader supporting thousands of sites, forked from youtube-dl. Offers format selection, subtitles, post-processing, SponsorBlock, output templates and a Python API.",
+      "best_for": "Downloading or archiving media from supported sites in scripts or apps.",
+      "not_for": "Site extractors break when sites change, requiring frequent updates. Downloading may violate site terms or copyright; it is a downloader, not a player.",
+      "keywords": [
+        "video downloader",
+        "youtube download",
+        "audio extract",
+        "yt-dlp",
+        "youtube-dl",
+        "subtitles download",
+        "media archive",
+        "playlist download"
+      ]
     }
   ]
 }

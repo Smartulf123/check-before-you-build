@@ -23,7 +23,20 @@
       "npm": "@antv/g6",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "G6 is a TypeScript graph visualization engine for drawing, laying out, analyzing and interacting with relational node-edge data. It includes built-in node, edge and combo elements, 10+ layouts (some accelerated with GPU and Rust), interaction behaviors, plugins, and light and dark themes. It renders to Canvas, SVG or WebGL.",
+      "best_for": "Building interactive network or relationship graph visualizations and graph analysis apps in the browser with TypeScript or JavaScript.",
+      "not_for": "Focused on graphs (nodes and edges), not standard statistical charts like bar or line charts. Uses its own API rather than a React-first component model.",
+      "keywords": [
+        "graph visualization",
+        "typescript",
+        "network graph",
+        "layout",
+        "canvas",
+        "webgl",
+        "svg",
+        "antv"
+      ]
     },
     {
       "id": "apache/echarts",
@@ -47,7 +60,20 @@
       "npm": "echarts",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Apache ECharts is a JavaScript charting and visualization library for adding interactive, highly customizable charts to web products. It is written in pure JavaScript on top of zrender, a lightweight canvas library, and installs via npm or CDN. Extensions add 3D/WebGL plots (ECharts GL), word clouds, liquid fill and map wrappers.",
+      "best_for": "Web apps needing a broad set of interactive, configurable chart types from one framework-agnostic JS library, including commercial products under Apache-2.0.",
+      "not_for": "Not a React-native declarative component set (wrappers like vue-echarts exist separately); 3D/globe needs the separate ECharts GL extension. Not a BI tool or data backend.",
+      "keywords": [
+        "charts",
+        "javascript",
+        "canvas",
+        "zrender",
+        "interactive",
+        "visualization",
+        "npm",
+        "webgl"
+      ]
     },
     {
       "id": "apache/superset",
@@ -70,7 +96,20 @@
       "use_for": "Self-host BI dashboards and embed charts in your product",
       "why": "Apache project with 40+ chart types, SQL Lab and an embedding SDK; 1,700+ contributors.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Superset is a web-based business intelligence application for data exploration and visualization. It offers a no-code chart builder, a SQL editor, a lightweight semantic layer for metrics, caching, role-based security and an API, and connects to nearly any SQL database.",
+      "best_for": "Teams wanting a self-hosted, open-source BI platform with dashboards and SQL exploration over existing SQL databases, as an alternative to proprietary BI tools.",
+      "not_for": "A full server application to deploy and operate, not an embeddable chart library. Overkill for a single chart in an app; needs a SQL-speaking data source.",
+      "keywords": [
+        "business intelligence",
+        "bi",
+        "dashboards",
+        "sql editor",
+        "data exploration",
+        "semantic layer",
+        "self-hosted",
+        "python"
+      ]
     },
     {
       "id": "bokeh/bokeh",
@@ -92,7 +131,20 @@
       "why": "NumFOCUS project for interactive web plots from Python without writing JavaScript",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Bokeh is a Python interactive visualization library that renders in modern web browsers. It constructs versatile graphics concisely and supports high-performance interactivity over large or streaming datasets, for plots, dashboards and data applications.",
+      "best_for": "Python users building interactive browser-based plots, dashboards or data apps, including with streaming or large data, often from Jupyter notebooks.",
+      "not_for": "Python-centric; not a drop-in JavaScript chart library for frontend-only apps. Less suited to static publication figures than matplotlib-style tools.",
+      "keywords": [
+        "python",
+        "interactive",
+        "plots",
+        "dashboards",
+        "streaming",
+        "browser",
+        "jupyter",
+        "visualization"
+      ]
     },
     {
       "id": "chartjs/Chart.js",
@@ -116,7 +168,19 @@
       "npm": "chart.js",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Chart.js is a JavaScript charting library described as simple yet flexible for designers and developers. It renders common chart types on HTML5 canvas, is currently at version 4, and has a set of popular extensions and samples documented on chartjs.org.",
+      "best_for": "Adding standard charts (line, bar, pie, etc.) to a web page quickly with a simple, framework-agnostic JavaScript API.",
+      "not_for": "Canvas-based, so less suited to very large or high-frequency streaming datasets or highly custom bespoke graphics; not a Python or BI tool.",
+      "keywords": [
+        "javascript",
+        "charts",
+        "canvas",
+        "html5",
+        "line chart",
+        "bar chart",
+        "frontend"
+      ]
     },
     {
       "id": "cytoscape/cytoscape.js",
@@ -139,7 +203,20 @@
       "npm": "cytoscape",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Cytoscape.js is a graph theory (network) library for visualization and analysis. It includes a graph model and an optional renderer for interactive graphs, and runs both server-side in Node.js and in browser UIs. It originated at the University of Toronto and is published in Oxford Bioinformatics.",
+      "best_for": "Modeling, analyzing and interactively visualizing relational data such as biological networks or social graphs in JavaScript apps, in browser or Node.js.",
+      "not_for": "Network/graph focused, not a general chart library for bar or line charts. Very large graphs may favor WebGL renderers like sigma.js.",
+      "keywords": [
+        "graph",
+        "network",
+        "graph theory",
+        "javascript",
+        "visualization",
+        "node.js",
+        "bioinformatics",
+        "analysis"
+      ]
     },
     {
       "id": "d3/d3",
@@ -162,7 +239,19 @@
       "npm": "d3",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "D3 is a free, open-source JavaScript library for visualizing data. Its low-level approach built on web standards gives full flexibility to author dynamic, data-driven graphics, and it serves as a building block for many higher-level chart libraries.",
+      "best_for": "Custom, bespoke or novel visualizations where you need fine-grained control over web-standard graphics (SVG, Canvas) rather than prebuilt chart types.",
+      "not_for": "Low-level: no ready-made chart components, so simple dashboards take more code than higher-level libraries; steeper learning curve.",
+      "keywords": [
+        "d3",
+        "javascript",
+        "data visualization",
+        "svg",
+        "low-level",
+        "custom charts",
+        "web standards"
+      ]
     },
     {
       "id": "plotly/dash",
@@ -182,7 +271,20 @@
       "use_for": "Build interactive analytical dashboards in Python on top of Plotly",
       "why": "Production-grade dashboard framework with callbacks and a large component ecosystem.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Dash is a Python framework for building ML and data science web apps, built on Plotly.js, React and Flask. It ties UI elements like dropdowns, sliders and graphs to analytical Python code with declarative, reactive callbacks, and supports about 50 Plotly chart types including maps.",
+      "best_for": "Python data scientists building interactive analytical web apps or dashboards without writing JavaScript.",
+      "not_for": "Open-source Dash runs locally and is not easily shared across an organization; hosting, deployment and auth features are in paid Dash Enterprise. Python-centric.",
+      "keywords": [
+        "python",
+        "dashboards",
+        "web apps",
+        "plotly",
+        "flask",
+        "react",
+        "data science",
+        "callbacks"
+      ]
     },
     {
       "id": "tradingview/lightweight-charts",
@@ -206,7 +308,20 @@
       "npm": "lightweight-charts",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "TradingView Lightweight Charts is a small, fast HTML5 charting library for displaying financial data as interactive charts on web pages. It installs via npm or CDN, offers a createChart/addSeries API, and can be extended with custom plugins.",
+      "best_for": "Embedding interactive financial/time-series price charts (e.g. line or candlestick-style series) in a web page with minimal bundle size and load impact.",
+      "not_for": "Focused on financial charting; not a general-purpose library for arbitrary chart types like pie charts or network graphs.",
+      "keywords": [
+        "financial charts",
+        "trading",
+        "html5",
+        "canvas",
+        "time series",
+        "javascript",
+        "plugins",
+        "lightweight"
+      ]
     },
     {
       "id": "mermaid-js/mermaid",
@@ -229,7 +344,20 @@
       "npm": "mermaid",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Mermaid is a JavaScript diagramming and charting tool that renders diagrams from Markdown-inspired text definitions. It supports 20+ diagram types such as flowcharts, sequence, class, state, ER, Gantt and mindmaps, and has a Live Editor and integrations including GitHub.",
+      "best_for": "Keeping diagrams in documentation as version-controlled text, e.g. flowcharts or sequence diagrams in Markdown, READMEs and docs sites.",
+      "not_for": "Not a data-driven charting library for interactive dashboards; layout control is limited compared with drag-and-drop design tools.",
+      "keywords": [
+        "diagrams",
+        "markdown",
+        "flowchart",
+        "sequence diagram",
+        "documentation",
+        "text to diagram",
+        "javascript",
+        "gantt"
+      ]
     },
     {
       "id": "plouc/nivo",
@@ -252,7 +380,20 @@
       "npm": "@nivo/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "nivo provides React components for building data visualization apps, built on top of d3. It offers SVG, HTML and Canvas charts with motion via react-spring, theming, responsive charts, patterns and gradients, plus server-side rendering and an HTTP API.",
+      "best_for": "React apps that want declarative, themeable prebuilt chart components, especially where server-side rendering is needed.",
+      "not_for": "React-only; not usable from plain JS, Vue or Python. Less low-level control than using d3 or visx directly.",
+      "keywords": [
+        "react",
+        "d3",
+        "charts",
+        "svg",
+        "canvas",
+        "server side rendering",
+        "dataviz",
+        "components"
+      ]
     },
     {
       "id": "observablehq/plot",
@@ -275,7 +416,19 @@
       "npm": "@observablehq/plot",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Observable Plot is a free, open-source JavaScript library for visualizing tabular data, focused on accelerating exploratory data analysis. It uses a concise API of scales and layered marks in the grammar-of-graphics style.",
+      "best_for": "Quick exploratory charts of tabular data in JavaScript or Observable notebooks with minimal code and a grammar-of-graphics model.",
+      "not_for": "Aimed at exploratory analysis rather than highly interactive app dashboards or bespoke graphics; not a React component library.",
+      "keywords": [
+        "javascript",
+        "grammar of graphics",
+        "exploratory data analysis",
+        "tabular data",
+        "marks",
+        "scales",
+        "observable"
+      ]
     },
     {
       "id": "perspective-dev/perspective",
@@ -299,7 +452,20 @@
       "why": "WebAssembly engine built for real-time, large-data analytics; Apache-2.0.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Perspective is an open-source data grid, pivot table and charting component for large, real-time and streaming datasets. A C++ streaming query engine runs in-browser via WebAssembly or server-side in Python, Node.js and Rust, with a Custom Element UI offering drag-and-drop configuration, an editable grid and WebGL charts.",
+      "best_for": "Embedded analytics, trading-style or real-time dashboards needing pivoting and charting over large or streaming data (Arrow, CSV, JSON) in the browser or via a server.",
+      "not_for": "Heavier footprint (WebAssembly engine) than a simple chart library; overkill for a few static charts.",
+      "keywords": [
+        "data grid",
+        "pivot table",
+        "streaming",
+        "webassembly",
+        "real-time",
+        "apache arrow",
+        "analytics",
+        "webgl"
+      ]
     },
     {
       "id": "plotly/plotly.py",
@@ -321,7 +487,19 @@
       "why": "The most popular interactive plotting library in Python, with Plotly Express for one-line charts",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "plotly.py is an interactive, open-source, browser-based graphing library for Python built on plotly.js. It offers Graph Objects and the higher-level Plotly Express API across 30+ chart types including 3D, statistical, map and financial charts, viewable in Jupyter, marimo, standalone HTML or Dash apps.",
+      "best_for": "Python users who want interactive charts in notebooks or HTML files, or as the charting layer of Dash apps.",
+      "not_for": "Static image export needs the separate kaleido package plus Chrome/Chromium. Plotly Express requires a supported dataframe library.",
+      "keywords": [
+        "python",
+        "plotly",
+        "interactive charts",
+        "jupyter",
+        "plotly express",
+        "3d",
+        "graphing"
+      ]
     },
     {
       "id": "plotly/plotly.js",
@@ -344,7 +522,19 @@
       "npm": "plotly.js",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Plotly.js is a standalone JavaScript data visualization library that also powers the Python and R plotly modules. It produces dozens of chart types including statistical, 3D, scientific, SVG and tile maps and financial charts, drawn from JSON-like data and layout objects.",
+      "best_for": "Web apps needing many chart types, especially scientific, 3D or map charts, from a declarative JSON spec, or sharing figure specs with Python/R.",
+      "not_for": "Large bundle compared with lightweight libraries (partial bundles exist); not React-idiomatic on its own.",
+      "keywords": [
+        "javascript",
+        "plotly",
+        "charts",
+        "3d",
+        "scientific",
+        "maps",
+        "statistical charts"
+      ]
     },
     {
       "id": "recharts/recharts",
@@ -368,7 +558,19 @@
       "npm": "recharts",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Recharts is a chart library built with React and D3. Charts are composed from independent, declarative React components (axes, tooltip, grid, lines), with native SVG output and minimal dependencies.",
+      "best_for": "React SPAs needing standard charts written as composable JSX components.",
+      "not_for": "React-only; SVG rendering can slow with very large datasets. Requires react-is matching your React version.",
+      "keywords": [
+        "react",
+        "charts",
+        "svg",
+        "d3",
+        "declarative",
+        "components",
+        "line chart"
+      ]
     },
     {
       "id": "getredash/redash",
@@ -389,7 +591,20 @@
       "use_for": "Query any data source with SQL and share dashboards",
       "why": "Lightweight open BI tool with many connectors, alerts and shareable visualizations.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Redash is a browser-based tool for querying, visualizing and sharing data from many data sources. It has a SQL/NoSQL query editor with schema browser, drag-and-drop visualizations and dashboards, scheduled refreshes, alerts and a REST API.",
+      "best_for": "Teams that want a self-hosted, SQL-first tool to query databases, build shareable dashboards and set alerts.",
+      "not_for": "A server application to host and maintain, not an embeddable chart library; query authoring assumes SQL users.",
+      "keywords": [
+        "sql",
+        "dashboards",
+        "query editor",
+        "bi",
+        "alerts",
+        "self-hosted",
+        "data sources",
+        "visualization"
+      ]
     },
     {
       "id": "rerun-io/rerun",
@@ -413,7 +628,20 @@
       "use_for": "Log and visualize multimodal data (3D, images, time series) from robotics or CV code",
       "why": "SDKs for Python, Rust and C++ with a fast viewer for streaming spatial and temporal data.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Rerun is a data layer for physical AI that logs, queries, visualizes and streams multimodal data such as images, point clouds, transforms, time series and video. A built-in viewer renders data in sync in realtime, data is queryable via dataframes or SQL, and SDKs exist for Python, Rust and C++.",
+      "best_for": "Robotics, computer vision and simulation work needing a visual, temporal debugger for multi-sensor data and pipelines feeding training.",
+      "not_for": "In active development with breaking API changes expected; viewer slows with many entities and multi-million point clouds. Not a business charting library.",
+      "keywords": [
+        "robotics",
+        "multimodal",
+        "point clouds",
+        "computer vision",
+        "viewer",
+        "time series",
+        "python",
+        "rust"
+      ]
     },
     {
       "id": "mwaskom/seaborn",
@@ -435,7 +663,19 @@
       "why": "The standard high-level statistical plotting library on top of matplotlib.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Seaborn is a Python statistical visualization library based on matplotlib, offering a high-level interface for attractive statistical graphics. It requires numpy, pandas and matplotlib, with optional scipy/statsmodels for advanced statistics.",
+      "best_for": "Python data analysis needing quick, attractive statistical plots (distributions, relationships, categorical comparisons) from pandas data.",
+      "not_for": "Produces static matplotlib figures, not interactive web charts or dashboards. Requires Python 3.10+.",
+      "keywords": [
+        "python",
+        "statistics",
+        "matplotlib",
+        "pandas",
+        "statistical graphics",
+        "plotting",
+        "data analysis"
+      ]
     },
     {
       "id": "jacomyal/sigma.js",
@@ -459,7 +699,20 @@
       "npm": "sigma",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Sigma.js is an open-source JavaScript library for visualizing graphs of thousands of nodes and edges using WebGL, built on top of graphology. Companion packages add node image/piechart renderers, Leaflet/MapLibre background layers and image export.",
+      "best_for": "Rendering large network graphs interactively in the browser with WebGL performance.",
+      "not_for": "Rendering only: graph model and algorithms come from graphology. Not for general bar/line charts.",
+      "keywords": [
+        "graph",
+        "network",
+        "webgl",
+        "graphology",
+        "javascript",
+        "typescript",
+        "nodes",
+        "edges"
+      ]
     },
     {
       "id": "streamlit/streamlit",
@@ -479,7 +732,19 @@
       "use_for": "Turn Python scripts into interactive data apps and dashboards",
       "why": "The most popular Python data-app framework; works with every major charting library.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Streamlit turns Python scripts into interactive web apps such as dashboards, reports and chat apps. Apps are written as plain Python with widgets, dataframes, charts and multi-page layouts, update live while editing, and can be deployed on the free Community Cloud.",
+      "best_for": "Quickly prototyping and sharing Python data apps or internal tools without frontend code.",
+      "not_for": "Script re-run model and Python-only stack limit fine-grained UI control; not a JavaScript chart library.",
+      "keywords": [
+        "python",
+        "data apps",
+        "dashboards",
+        "web apps",
+        "prototyping",
+        "widgets",
+        "chat apps"
+      ]
     },
     {
       "id": "leeoniya/uPlot",
@@ -502,7 +767,20 @@
       "npm": "uplot",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "uPlot is a small (~50 KB), fast, memory-efficient Canvas 2D chart for time series, lines, areas, OHLC and bars. It supports multiple series and y-axes, zoom, cursor sync, live streaming and a hooks/plugin API.",
+      "best_for": "High-performance time-series charts with many points or live updates where bundle size and CPU use matter.",
+      "not_for": "Deliberately lean: no data aggregation or statistics, no animations, no label collision avoidance; may struggle beyond ~100k in-view points.",
+      "keywords": [
+        "time series",
+        "canvas",
+        "charts",
+        "performance",
+        "streaming",
+        "ohlc",
+        "javascript",
+        "lightweight"
+      ]
     },
     {
       "id": "vega/altair",
@@ -524,7 +802,19 @@
       "why": "Concise, grammar-based Python charts that work in Jupyter and export to Vega-Lite JSON",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Vega-Altair is a declarative statistical visualization library for Python built on the Vega-Lite JSON specification. It displays charts in JupyterLab, Notebook, VS Code and more, exports to PNG/SVG or standalone HTML, and serializes charts as JSON.",
+      "best_for": "Python users wanting concise, declarative grammar-of-graphics charts in notebooks with JSON-serializable specs.",
+      "not_for": "Bound to what Vega-Lite can express; not affiliated with Altair Engineering. Not a dashboard app framework.",
+      "keywords": [
+        "python",
+        "vega-lite",
+        "declarative",
+        "statistical visualization",
+        "jupyter",
+        "json",
+        "grammar of graphics"
+      ]
     },
     {
       "id": "vega/vega-lite",
@@ -547,7 +837,19 @@
       "npm": "vega-lite",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Vega-Lite is a high-level grammar for visual analysis that compiles concise JSON specifications into complete Vega specifications. It is developed by the UW Interactive Data Lab and can be tried in the online Vega Editor.",
+      "best_for": "Declarative, JSON-spec charts for analysis, or as a target format generated by tools and other languages (e.g. Altair).",
+      "not_for": "Spec-based grammar rather than imperative drawing, so very bespoke graphics may need full Vega or D3.",
+      "keywords": [
+        "vega",
+        "grammar of graphics",
+        "json",
+        "declarative",
+        "visual analysis",
+        "charts",
+        "specification"
+      ]
     },
     {
       "id": "airbnb/visx",
@@ -571,7 +873,19 @@
       "npm": "@visx/visx",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "visx is a collection of reusable low-level visualization components that combines d3 for computing visualizations with React for updating the DOM. Packages are installed individually (e.g. @visx/shape, @visx/scale), and v4 requires React 18 or 19.",
+      "best_for": "React teams building their own custom chart library or bespoke visualizations with d3 math and React rendering.",
+      "not_for": "Low-level: no ready-made charts and no built-in animation by design. Requires React 18/19.",
+      "keywords": [
+        "react",
+        "d3",
+        "visualization components",
+        "low-level",
+        "svg",
+        "charts",
+        "modular"
+      ]
     }
   ]
 }

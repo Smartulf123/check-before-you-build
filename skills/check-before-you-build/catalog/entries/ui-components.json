@@ -23,7 +23,21 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Angular team's component packages: Angular Material (Material Design components), the CDK for building custom components, headless ARIA directives (@angular/aria), Google Maps and more.",
+      "best_for": "Angular apps wanting official Material components or the CDK primitives (overlay, a11y, drag-drop, virtual scroll) to build a custom design system.",
+      "not_for": "Angular only. Material's look is hard to restyle away from Material Design, and it lacks the data-heavy enterprise widgets of suites like PrimeNG.",
+      "keywords": [
+        "angular material",
+        "angular cdk",
+        "material design",
+        "angular ui",
+        "component library",
+        "overlay",
+        "drag drop",
+        "accessibility",
+        "angular"
+      ]
     },
     {
       "id": "ant-design/ant-design",
@@ -46,7 +60,21 @@
       "npm": "antd",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Enterprise-focused React UI library and design language with a large set of components written in TypeScript, i18n for dozens of languages, and design resources and tooling.",
+      "best_for": "Admin dashboards, back-office tools and data-heavy enterprise React apps needing tables, forms and pickers quickly.",
+      "not_for": "React only with an opinionated visual style; bundle size and heavy customization can be a burden for lightweight or highly branded consumer sites.",
+      "keywords": [
+        "react ui library",
+        "enterprise ui",
+        "admin dashboard",
+        "ant design",
+        "data table",
+        "form components",
+        "design system",
+        "i18n",
+        "typescript"
+      ]
     },
     {
       "id": "vueComponent/ant-design-vue",
@@ -68,7 +96,20 @@
       "why": "Vue implementation of Ant Design with tables, forms and data-heavy admin components.",
       "npm": "ant-design-vue",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Vue implementation of the Ant Design system, offering enterprise-style components for desktop apps and sharing Ant Design resources with the React version.",
+      "best_for": "Vue admin panels and data-heavy internal tools that want Ant Design's look and component set.",
+      "not_for": "Desktop-oriented and tied to Ant Design's visual language; check Vue 3 compatibility and release cadence versus Element Plus or Naive UI.",
+      "keywords": [
+        "ant design vue",
+        "vue ui library",
+        "admin panel",
+        "enterprise components",
+        "vue components",
+        "data table",
+        "form",
+        "vue 3"
+      ]
     },
     {
       "id": "assistant-ui/assistant-ui",
@@ -90,7 +131,21 @@
       "why": "Composable, shadcn-style primitives for chat UIs with streaming, tool calls and attachments; works with AI SDK and LangGraph.",
       "npm": "@assistant-ui/react",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "TypeScript/React library for AI chat interfaces with composable primitives (Thread, Message, Composer, ThreadList). Handles streaming, auto-scroll and retries, offers shadcn-style themes via CLI, and connects to Vercel AI SDK, LangGraph or custom runtimes.",
+      "best_for": "React or Next.js apps needing a ChatGPT-like UI on top of AI SDK, LangGraph or your own backend.",
+      "not_for": "React only and focused on chat UX; it is not an LLM backend or agent framework. Non-chat AI interfaces will need other components.",
+      "keywords": [
+        "ai chat ui",
+        "react chat",
+        "chatgpt ui",
+        "streaming chat",
+        "llm interface",
+        "vercel ai sdk",
+        "langgraph",
+        "shadcn",
+        "assistant"
+      ]
     },
     {
       "id": "mui/base-ui",
@@ -113,7 +168,19 @@
       "npm": "@base-ui-components/react",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Unstyled, accessible React component library from the creators of Radix, Floating UI and Material UI. Provides headless building blocks you style yourself.",
+      "best_for": "Building a custom design system in React where accessibility is handled but styling is fully yours (CSS, Tailwind, CSS-in-JS).",
+      "not_for": "Provides no visual styling, so it is slower than a styled kit for quick prototypes. React only; the README gives little detail on component coverage.",
+      "keywords": [
+        "headless components",
+        "unstyled react",
+        "accessible components",
+        "design system",
+        "radix alternative",
+        "react primitives",
+        "floating ui"
+      ]
     },
     {
       "id": "palantir/blueprint",
@@ -136,7 +203,21 @@
       "npm": "@blueprintjs/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "React UI toolkit for complex, data-dense desktop web interfaces, with components such as tables, trees, date pickers, selects and icons, organized as multiple packages.",
+      "best_for": "Desktop-style dashboards and tools with dense data views in modern browsers.",
+      "not_for": "Explicitly not mobile-first and React only. Its distinct visual identity may not suit consumer-facing or heavily branded products.",
+      "keywords": [
+        "react ui toolkit",
+        "data dense ui",
+        "desktop web app",
+        "table",
+        "dashboard",
+        "blueprint",
+        "tree",
+        "date picker",
+        "palantir"
+      ]
     },
     {
       "id": "chakra-ui/chakra-ui",
@@ -159,7 +240,21 @@
       "npm": "@chakra-ui/react",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Accessible React component system with style props and themeable components. The README mentions Next.js RSC support and install via @chakra-ui/react with Emotion; docs exist for v0 to latest.",
+      "best_for": "React and Next.js projects wanting fast UI building with accessible, themeable components and style-prop ergonomics.",
+      "not_for": "React only and relies on Emotion CSS-in-JS runtime (per the install instructions). Major version migrations (v2 to v3) can be significant.",
+      "keywords": [
+        "react components",
+        "style props",
+        "accessible ui",
+        "design system",
+        "theming",
+        "next.js",
+        "emotion",
+        "component library",
+        "chakra"
+      ]
     },
     {
       "id": "element-plus/element-plus",
@@ -182,7 +277,20 @@
       "npm": "element-plus",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Vue 3 UI library written in TypeScript using the Composition API, with a broad component set and a migration path and tooling from Element UI.",
+      "best_for": "Vue 3 admin panels and desktop-oriented business apps, including projects migrating from Element UI.",
+      "not_for": "Vue 3 only and desktop-focused; not a headless or Tailwind-native kit. Customizing the default look takes theme overrides.",
+      "keywords": [
+        "vue 3 ui",
+        "element ui",
+        "admin panel",
+        "component library",
+        "typescript",
+        "vue components",
+        "element plus",
+        "desktop ui"
+      ]
     },
     {
       "id": "microsoft/fluentui",
@@ -210,7 +318,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Microsoft's Fluent UI web repo with three projects: React v9 components, mature React v8, and Fluent Web Components. v9 and v8 can be mixed for gradual migration.",
+      "best_for": "Apps that should look and feel like Microsoft 365, Teams or Office, including add-ins, or that need Fluent web components.",
+      "not_for": "Strongly Microsoft-styled and tied to Fluent design. Multiple generations (v8, v9) create migration choices; not ideal for a distinctive brand look.",
+      "keywords": [
+        "fluent ui",
+        "microsoft design",
+        "react components",
+        "web components",
+        "office add-in",
+        "teams app",
+        "design system",
+        "fluent"
+      ]
     },
     {
       "id": "tailwindlabs/headlessui",
@@ -236,7 +357,22 @@
       "stable_reason": "v2 is feature-complete unstyled primitives maintained by Tailwind Labs; low churn by design",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Set of completely unstyled, accessible UI components for React and Vue designed to pair with Tailwind CSS, such as menus, dialogs, listboxes and comboboxes.",
+      "best_for": "Tailwind projects needing accessible interactive primitives (dropdowns, modals, tabs, comboboxes) styled with utility classes.",
+      "not_for": "Limited to React and Vue and only offers a modest set of primitives; no tables, date pickers or full design system.",
+      "keywords": [
+        "headless ui",
+        "tailwind",
+        "accessible components",
+        "dialog",
+        "menu",
+        "combobox",
+        "listbox",
+        "react",
+        "vue",
+        "unstyled"
+      ]
     },
     {
       "id": "heroui-inc/heroui",
@@ -259,7 +395,20 @@
       "npm": "@heroui/react",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "React component library (formerly NextUI) built on React Aria and Tailwind CSS v4 with a compound component API, no provider wrapper, React 19 support, and MCP server/llms.txt for AI assistants.",
+      "best_for": "Next.js and React projects wanting a polished Tailwind-based look with accessibility from React Aria.",
+      "not_for": "React only and tied to Tailwind v4. Migrating from NextUI or older HeroUI versions may involve API changes; smaller component set than MUI or Ant Design.",
+      "keywords": [
+        "nextui",
+        "heroui",
+        "react components",
+        "tailwind css",
+        "react aria",
+        "next.js",
+        "component library",
+        "accessible ui"
+      ]
     },
     {
       "id": "layui/layui",
@@ -281,7 +430,18 @@
       "why": "No-build component kit popular for admin backends; plain HTML/JS usage without a framework.",
       "npm": "layui",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Layui is an open source, MIT-licensed web UI component library built with plain HTML, CSS and JavaScript, without a framework. It aims to make building web interfaces easy for non-frontend developers. Layui 2 is current and Layui 3 is in development.",
+      "best_for": "Admin panels and internal web pages built without a frontend framework, especially by backend developers.",
+      "not_for": "React/Vue or modern SPA projects; the maintainers themselves recommend mainstream frameworks. Docs are mainly Chinese.",
+      "keywords": [
+        "ui components",
+        "layui",
+        "vanilla javascript",
+        "web ui",
+        "admin panel",
+        "html css"
+      ]
     },
     {
       "id": "lucide-icons/lucide",
@@ -303,7 +463,21 @@
       "why": "Default icon set of shadcn/ui; 1,500+ icons, tree-shakable packages for React, Vue, Svelte and more.",
       "npm": "lucide-react",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source icon library with 1600+ SVG icons and official packages for React, Vue, Svelte and other frameworks, plus plain SVG and web font options. Does not accept brand logos.",
+      "best_for": "Consistent line icons in React, Vue, Svelte or vanilla projects, including shadcn/ui setups.",
+      "not_for": "Does not include brand or logo icons and its single outline style is not suited if you need multiple weights or filled icon variants.",
+      "keywords": [
+        "icons",
+        "svg icons",
+        "icon set",
+        "react icons",
+        "lucide",
+        "vue icons",
+        "svelte icons",
+        "shadcn icons",
+        "feather fork"
+      ]
     },
     {
       "id": "magicuidesign/magicui",
@@ -326,7 +500,20 @@
       "why": "Most popular open animated-component collection in the shadcn ecosystem; installs through the shadcn CLI.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Collection of animated React components, shadcn/ui compatible, aimed at design engineers building landing pages. The README is minimal and points to magicui.design/docs.",
+      "best_for": "Landing pages and marketing sites that want ready-made animated effects installed via the shadcn CLI.",
+      "not_for": "Decorative marketing components, not a general UI kit for apps. React with Tailwind assumed; README gives little detail, so check the docs before adopting.",
+      "keywords": [
+        "animated components",
+        "landing page",
+        "shadcn",
+        "react animation",
+        "tailwind",
+        "marketing site",
+        "magic ui",
+        "ui effects"
+      ]
     },
     {
       "id": "mantinedev/mantine",
@@ -349,7 +536,21 @@
       "npm": "@mantine/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "React component library with 100+ components plus separate packages for hooks (80+), forms, charts, notifications, spotlight command palette, code highlight and a Tiptap rich-text editor.",
+      "best_for": "React apps wanting a batteries-included kit with forms, hooks and notifications and easy theming without Tailwind.",
+      "not_for": "React only. Ships its own styling system, so it pairs less naturally with Tailwind-first workflows than headless or copy-paste kits.",
+      "keywords": [
+        "react components",
+        "react hooks",
+        "form management",
+        "notifications",
+        "command palette",
+        "rich text editor",
+        "mantine",
+        "theming",
+        "charts"
+      ]
     },
     {
       "id": "mui/material-ui",
@@ -372,7 +573,20 @@
       "npm": "@mui/material",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Large React component library implementing Google's Material Design, extended by MUI X for advanced components. Long development history with extensive docs, examples and theming.",
+      "best_for": "React apps and dashboards that want a mature, widely adopted component set and Material Design look.",
+      "not_for": "React only and Material-styled by default, so heavy restyling is work. Advanced components (data grid, pickers) partly sit in MUI X, with commercial tiers.",
+      "keywords": [
+        "material ui",
+        "mui",
+        "react components",
+        "material design",
+        "theming",
+        "react ui library",
+        "data grid",
+        "design system"
+      ]
     },
     {
       "id": "MudBlazor/MudBlazor",
@@ -394,7 +608,20 @@
       "why": "The most popular Blazor component library, pure C# with minimal JavaScript.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Material Design component framework for Blazor written entirely in C#, designed so .NET developers can build web apps without writing much CSS or JavaScript. Has docs and an interactive playground.",
+      "best_for": "Blazor Server or WebAssembly apps in .NET that need a full Material-styled component set.",
+      "not_for": "Blazor/.NET only and Material-styled. Teams not using Blazor, or needing non-Material designs, should look elsewhere.",
+      "keywords": [
+        "blazor",
+        "mudblazor",
+        "material design",
+        "dotnet ui",
+        "c# components",
+        "blazor components",
+        "razor",
+        "wasm"
+      ]
     },
     {
       "id": "tusen-ai/naive-ui",
@@ -416,7 +643,19 @@
       "why": "Around 90 components, fully typed, with CSS-in-JS theme overrides and no extra CSS import needed.",
       "npm": "naive-ui",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Vue 3 component library with 90+ TypeScript components, theme customization via overrides and no additional CSS import required.",
+      "best_for": "Vue 3 apps wanting a fairly complete, themeable, typed component set with a modern look.",
+      "not_for": "Vue 3 only and desktop-oriented. Community channels and docs are partly Chinese-oriented; ecosystem is smaller than Element Plus.",
+      "keywords": [
+        "naive ui",
+        "vue 3 components",
+        "typescript ui",
+        "vue theme",
+        "component library",
+        "vue admin",
+        "css in js"
+      ]
     },
     {
       "id": "primefaces/primeng",
@@ -443,7 +682,20 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Large Angular UI suite with 90+ components including advanced tables and charts. The repo now carries a notice that it is no longer under active development and gets security fixes only; development moved to PrimeUI. Existing MIT releases stay MIT.",
+      "best_for": "Maintaining existing Angular apps already using PrimeNG, which stay on MIT releases with security fixes.",
+      "not_for": "Poor choice for new projects here: the repo is security-only and development continues under PrimeUI. Check licensing and the successor before adopting.",
+      "keywords": [
+        "primeng",
+        "angular ui",
+        "angular components",
+        "data table",
+        "primeui",
+        "enterprise angular",
+        "angular charts",
+        "component suite"
+      ]
     },
     {
       "id": "primefaces/primereact",
@@ -465,7 +717,20 @@
       "npm": "primereact",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Large React component suite with data tables, charts and form inputs, themeable or unstyled for Tailwind. The repo notice says it is no longer actively developed and receives security fixes only; work continues in PrimeUI.",
+      "best_for": "Existing React projects already built on PrimeReact that rely on its MIT releases and security patches.",
+      "not_for": "Not recommended for new projects from this repo: security-fix-only, with new features at PrimeUI. Read the migration notes first.",
+      "keywords": [
+        "primereact",
+        "react components",
+        "data table",
+        "react ui",
+        "primeui",
+        "tailwind unstyled",
+        "admin ui",
+        "component suite"
+      ]
     },
     {
       "id": "primefaces/primevue",
@@ -488,7 +753,20 @@
       "npm": "primevue",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Vue UI suite with 90+ components including an advanced DataTable, offering styled and unstyled (Tailwind) modes. The README warns the repo is security-fixes-only and development continues at PrimeUI.",
+      "best_for": "Maintaining existing Vue apps built on PrimeVue's MIT releases.",
+      "not_for": "New projects should be careful: the repo is no longer actively developed and moved to PrimeUI. Consider current alternatives or the successor.",
+      "keywords": [
+        "primevue",
+        "vue components",
+        "data table",
+        "vue ui",
+        "primeui",
+        "tailwind unstyled",
+        "vue admin",
+        "component suite"
+      ]
     },
     {
       "id": "radix-ui/primitives",
@@ -511,7 +789,21 @@
       "npm": "radix-ui",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Low-level, unstyled React component library focused on accessibility, customization and developer experience. Usable as the base layer of a design system and adoptable incrementally.",
+      "best_for": "Building your own design system in React with correct focus, keyboard and ARIA handling; also the base under shadcn/ui.",
+      "not_for": "No styling and React only, so you write all visuals yourself. Not a ready-made kit for fast prototypes without something like shadcn/ui on top.",
+      "keywords": [
+        "radix ui",
+        "headless components",
+        "accessible primitives",
+        "react",
+        "design system",
+        "dialog",
+        "dropdown",
+        "aria",
+        "unstyled"
+      ]
     },
     {
       "id": "adobe/react-spectrum",
@@ -534,7 +826,21 @@
       "npm": "react-aria-components",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Collection of libraries including React Aria hooks and components for accessible, adaptive, internationalized UI, plus the React Spectrum design system. Follows WAI-ARIA patterns with screen reader and keyboard support across devices.",
+      "best_for": "Accessibility-critical or internationalized React apps, or custom design systems built on React Aria with your own styling.",
+      "not_for": "React only. The Spectrum design system has a distinct Adobe look, and building from React Aria hooks takes more assembly work than a styled kit.",
+      "keywords": [
+        "react aria",
+        "react spectrum",
+        "accessibility",
+        "a11y",
+        "internationalization",
+        "headless hooks",
+        "adobe",
+        "design system",
+        "wai-aria"
+      ]
     },
     {
       "id": "DouyinFE/semi-design",
@@ -556,7 +862,21 @@
       "why": "Production design system from ByteDance with 70+ components, design-token theming and an a11y focus.",
       "npm": "@douyinfe/semi-ui",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "ByteDance's React design system and UI library with design-token theming, Figma resources and DesignOps tooling. Described as modern, comprehensive and flexible.",
+      "best_for": "React enterprise or content apps needing a themeable design system with Figma design tooling.",
+      "not_for": "React only with Douyin/ByteDance styling and a mainly Chinese-speaking community; smaller Western ecosystem than MUI or Ant Design.",
+      "keywords": [
+        "semi design",
+        "react ui",
+        "design system",
+        "design tokens",
+        "figma",
+        "bytedance",
+        "component library",
+        "theming",
+        "enterprise ui"
+      ]
     },
     {
       "id": "unovue/shadcn-vue",
@@ -579,7 +899,20 @@
       "why": "The community standard for shadcn-style components in Vue/Nuxt; same CLI workflow as shadcn/ui.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Vue port of shadcn/ui: a set of components you copy into your project via CLI, built on Reka UI and Tailwind so you own and customize the code.",
+      "best_for": "Vue and Nuxt projects wanting shadcn-style editable, accessible components with Tailwind.",
+      "not_for": "Not an installable package with auto-updates; copied code is yours to maintain. Requires Tailwind and is Vue-only.",
+      "keywords": [
+        "shadcn vue",
+        "vue components",
+        "nuxt ui",
+        "tailwind",
+        "reka ui",
+        "copy paste components",
+        "radix vue",
+        "headless"
+      ]
     },
     {
       "id": "shadcn-ui/ui",
@@ -604,7 +937,21 @@
       "npm": "shadcn",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Set of accessible components you copy into your project through a CLI, built on Radix and Tailwind. Code lives in your repo so you can customize it; it is meant as a base for your own component library.",
+      "best_for": "New React or Next.js projects using Tailwind that want editable components and a large community of examples.",
+      "not_for": "React and Tailwind only; no automatic upgrades since code is copied, and no data-heavy widgets such as advanced data grids out of the box.",
+      "keywords": [
+        "shadcn ui",
+        "react components",
+        "tailwind",
+        "radix",
+        "copy paste components",
+        "next.js",
+        "design system",
+        "cli",
+        "customizable"
+      ]
     },
     {
       "id": "stenciljs/core",
@@ -627,7 +974,20 @@
       "why": "Powers Ionic: write components once in TSX and ship them as standard web components with React/Vue/Angular wrappers.",
       "npm": "@stencil/core",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Compiler that generates standard Web Components from TypeScript and JSX class-style components, built by the Ionic team. Output works in any framework or none.",
+      "best_for": "Framework-agnostic design systems or component libraries that must be consumed from React, Angular, Vue and plain HTML.",
+      "not_for": "Not an app framework; adds a compiler step and its own conventions. For single-framework apps, native components in that framework are simpler.",
+      "keywords": [
+        "web components",
+        "stencil",
+        "design system",
+        "ionic",
+        "custom elements",
+        "typescript jsx",
+        "component compiler",
+        "framework agnostic"
+      ]
     },
     {
       "id": "storybookjs/storybook",
@@ -650,7 +1010,20 @@
       "why": "Industry-standard workshop for design systems; works with React, Vue, Angular, Svelte and web components.",
       "npm": "storybook",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Frontend workshop for building, documenting and testing UI components and pages in isolation, with an addon system for design, docs and interaction testing. Supports React, Vue, Angular, Svelte and web components.",
+      "best_for": "Component libraries and design systems needing living documentation, visual review and isolated development.",
+      "not_for": "Not a component library itself; adds config and build overhead. Small apps with few shared components may not need it.",
+      "keywords": [
+        "component workshop",
+        "storybook",
+        "ui documentation",
+        "design system",
+        "visual testing",
+        "isolated components",
+        "addons",
+        "interaction testing"
+      ]
     },
     {
       "id": "vuetifyjs/vuetify",
@@ -673,7 +1046,20 @@
       "npm": "vuetify",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Material Design component framework for Vue with hand-crafted components and a project scaffold command (create vuetify). Works with Nuxt or Laravel and has a large contributor base.",
+      "best_for": "Vue applications wanting a full Material Design look with many ready components.",
+      "not_for": "Vue only and Material-styled, so custom brand looks need effort. Not a headless or Tailwind-based option.",
+      "keywords": [
+        "vuetify",
+        "vue material design",
+        "vue components",
+        "vue ui framework",
+        "material design",
+        "nuxt",
+        "component library",
+        "vue 3"
+      ]
     }
   ]
 }

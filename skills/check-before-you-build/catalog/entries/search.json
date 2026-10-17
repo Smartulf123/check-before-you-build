@@ -21,7 +21,20 @@
       "why": "The search library under Elasticsearch, OpenSearch and Solr; the reference implementation.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "High-performance, full-featured text search engine library written in Java; the engine underneath Elasticsearch, OpenSearch and Solr.",
+      "best_for": "Embedding full-text indexing and search directly in a Java application with full control.",
+      "not_for": "A low-level library, not a server: no REST API, clustering or ops tooling, so use Elasticsearch, OpenSearch or Solr for a ready service. Java only.",
+      "keywords": [
+        "full-text search",
+        "java",
+        "indexing",
+        "search library",
+        "bm25",
+        "inverted index",
+        "analyzers",
+        "lucene"
+      ]
     },
     {
       "id": "apache/solr",
@@ -43,7 +56,21 @@
       "why": "Long-established Lucene-based search platform; Apache-2.0 alternative to Elasticsearch.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source, multi-modal search platform built on Apache Lucene, offering full-text, vector and geospatial search. Includes faceting, replication and SolrCloud clustering, built with Gradle.",
+      "best_for": "A mature self-hosted search server with faceting and replication, as an Apache-2.0 option.",
+      "not_for": "JVM service with more operational weight and a smaller ecosystem momentum than Elasticsearch/OpenSearch; overkill for small sites (consider Meilisearch or Typesense).",
+      "keywords": [
+        "search server",
+        "solr",
+        "lucene",
+        "faceting",
+        "solrcloud",
+        "full-text search",
+        "geospatial",
+        "vector search",
+        "java"
+      ]
     },
     {
       "id": "blevesearch/bleve",
@@ -64,7 +91,21 @@
       "why": "The main Go full-text search library (~11k stars); powers Couchbase search.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Full-text indexing and search library for Go. Indexes Go structures or JSON with field types including text, number, datetime, boolean, geo and vector, and supports term, phrase, fuzzy, wildcard, regexp, range and compound boolean queries plus a query string syntax.",
+      "best_for": "Embedding full-text search in a Go program without running a separate search server.",
+      "not_for": "Go only and an embedded library; clustering, REST API and ops tooling are not included, so use Elasticsearch, Meilisearch or Typesense for a standalone service.",
+      "keywords": [
+        "go search",
+        "full-text search",
+        "indexing",
+        "bleve",
+        "fuzzy search",
+        "geo search",
+        "query string",
+        "embedded search",
+        "scorch"
+      ]
     },
     {
       "id": "elastic/elasticsearch",
@@ -88,7 +129,18 @@
       "why": "The most deployed search engine; available under AGPL-3.0 (or SSPL/ELv2), with official clients everywhere.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Source repository of Elasticsearch, the distributed search and analytics engine. The README text available is the docs guide, which explains that reference docs live in this repo while API docs live in the Elasticsearch specification, and how docs are built and previewed for 9.0+.",
+      "best_for": "Full-text search, log and analytics workloads that need a scalable search engine with a REST API.",
+      "not_for": "Small apps where an embedded or lightweight search library is enough; it is a heavy JVM service to operate. Check the license terms of the version you deploy.",
+      "keywords": [
+        "search engine",
+        "elasticsearch",
+        "full-text search",
+        "analytics",
+        "distributed",
+        "rest api"
+      ]
     },
     {
       "id": "nextapps-de/flexsearch",
@@ -111,7 +163,20 @@
       "npm": "flexsearch",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Full-text search library for the browser and Node.js with three index types: flat Index, Worker index running in a thread, and multi-field Document index for JSON. Supports persistent indexes.",
+      "best_for": "Fast in-memory client-side or Node search over moderate datasets, including multi-field documents.",
+      "not_for": "Not a server and holds data in memory by default; fewer relevance features (typo tolerance, facets UI) than Meilisearch or Typesense.",
+      "keywords": [
+        "full-text search",
+        "javascript",
+        "browser search",
+        "node.js",
+        "in-memory index",
+        "web worker",
+        "document index",
+        "client-side search"
+      ]
     },
     {
       "id": "krisk/Fuse",
@@ -135,7 +200,20 @@
       "npm": "fuse.js",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Lightweight, zero-dependency fuzzy-search library written in TypeScript for browser and server. Designed for small to medium client-side datasets, with typo tolerance and a token search option for multi-word queries.",
+      "best_for": "Adding typo-tolerant search over a small in-memory list (autocomplete, command palettes, filters) without a backend.",
+      "not_for": "Scans the dataset on each search, so it does not scale to large collections; no inverted index, persistence or server.",
+      "keywords": [
+        "fuzzy search",
+        "typo tolerance",
+        "client-side search",
+        "javascript",
+        "typescript",
+        "autocomplete",
+        "zero dependency",
+        "small datasets"
+      ]
     },
     {
       "id": "algolia/instantsearch",
@@ -159,7 +237,21 @@
       "npm": "instantsearch.js",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "JavaScript library for building instant-search UIs (search box, facets, hits) in vanilla JS, with React and Vue wrappers. Built for Algolia's API, with adapters available for Typesense and Meilisearch.",
+      "best_for": "Front-end search interfaces with widgets for facets, pagination and highlighting, on Algolia or a compatible engine.",
+      "not_for": "UI layer only, needs a search backend; native support targets Algolia (paid). Other engines depend on third-party adapters.",
+      "keywords": [
+        "search ui",
+        "instantsearch",
+        "facets",
+        "react instantsearch",
+        "vue instantsearch",
+        "algolia",
+        "search widgets",
+        "typesense adapter",
+        "meilisearch adapter"
+      ]
     },
     {
       "id": "manticoresoftware/manticoresearch",
@@ -183,7 +275,20 @@
       "why": "Lightweight, fast Sphinx successor with MySQL protocol support; low resource use.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source database designed for search, offering full-text, vector and hybrid search with a SQL interface and MySQL protocol support. A Sphinx successor positioned as a lighter Elasticsearch alternative.",
+      "best_for": "Search workloads that want low resource use and SQL/MySQL-protocol access, such as large text collections or log search.",
+      "not_for": "Smaller ecosystem and fewer integrations than Elasticsearch; benchmark claims in the README are vendor-run. Needs its own server.",
+      "keywords": [
+        "full-text search",
+        "sql",
+        "mysql protocol",
+        "sphinx",
+        "elasticsearch alternative",
+        "vector search",
+        "hybrid search",
+        "search database"
+      ]
     },
     {
       "id": "meilisearch/meilisearch",
@@ -207,7 +312,21 @@
       "why": "Easiest-to-run search server with great relevance defaults; core is MIT (some enterprise features BUSL).",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Search engine server with typo tolerance and as-you-type results. Offers hybrid and semantic search, faceting and good relevance defaults out of the box, with SDKs for many languages.",
+      "best_for": "Adding instant, typo-tolerant search to a site or app with minimal tuning.",
+      "not_for": "Core is MIT but some enterprise features use BUSL; best for modest to mid-sized datasets and not a log or analytics engine.",
+      "keywords": [
+        "typo tolerance",
+        "instant search",
+        "search as you type",
+        "hybrid search",
+        "faceted search",
+        "semantic search",
+        "self-hosted search",
+        "relevance",
+        "rest api"
+      ]
     },
     {
       "id": "opensearch-project/OpenSearch",
@@ -231,7 +350,20 @@
       "why": "Apache-2.0 fork of Elasticsearch under the Linux Foundation; large plugin ecosystem.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Open-source search and observability suite under the Linux Foundation, a fork of Elasticsearch. Provides distributed full-text search and analytics at scale with a large plugin ecosystem.",
+      "best_for": "Distributed search, log analytics and observability with a permissive Apache-2.0 license.",
+      "not_for": "Heavy JVM cluster to operate; overkill for small search needs where Meilisearch, Typesense or pgvector-style options are simpler.",
+      "keywords": [
+        "opensearch",
+        "full-text search",
+        "log analytics",
+        "distributed search",
+        "elasticsearch fork",
+        "observability",
+        "aggregations",
+        "plugins"
+      ]
     },
     {
       "id": "oramasearch/orama",
@@ -254,7 +386,21 @@
       "npm": "@orama/orama",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Tiny dependency-free TypeScript search engine that runs in the browser, server or edge. Supports full-text, vector and hybrid search, filters, geosearch, stemming in 30 languages, pinning rules and GenAI chat sessions via a plugin system.",
+      "best_for": "Client-side or edge search, including RAG-style hybrid search, with no infrastructure.",
+      "not_for": "In-memory engine suited to small and mid datasets; huge indexes need a server-based engine. Some advanced features tie to Orama Cloud.",
+      "keywords": [
+        "full-text search",
+        "vector search",
+        "hybrid search",
+        "typescript",
+        "browser",
+        "edge",
+        "stemming",
+        "geosearch",
+        "rag"
+      ]
     },
     {
       "id": "Pagefind/pagefind",
@@ -279,7 +425,21 @@
       "npm": "pagefind",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Fully static search library for sites. Indexes built HTML after any static site generator and loads only the index chunks needed for a query, keeping bandwidth low with no server infrastructure.",
+      "best_for": "Adding search to static sites and documentation, including large sites, with no hosted service.",
+      "not_for": "Static, build-time index only: no live updates or typo-tolerant server features, and not for dynamic app data.",
+      "keywords": [
+        "static site search",
+        "full-text search",
+        "no server",
+        "documentation search",
+        "html indexing",
+        "wasm",
+        "client-side",
+        "jamstack",
+        "chunked index"
+      ]
     },
     {
       "id": "paradedb/paradedb",
@@ -302,7 +462,21 @@
       "why": "Keeps search in your Postgres instead of a separate cluster; built on Tantivy (AGPL-3.0).",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Postgres extension adding a custom index for fast full-text and vector search with BM25 scoring, filters, facets, aggregations and joins, keeping search inside your database with standard SQL and ACID transactions. Built on Tantivy.",
+      "best_for": "Elasticsearch-quality search without running a separate cluster, when your data already lives in Postgres.",
+      "not_for": "AGPL-3.0 license; adds load to your Postgres and works only with Postgres, so it may not suit very large dedicated search workloads.",
+      "keywords": [
+        "postgres",
+        "full-text search",
+        "bm25",
+        "hybrid search",
+        "vector search",
+        "tantivy",
+        "sql",
+        "faceting",
+        "elasticsearch alternative"
+      ]
     },
     {
       "id": "tobi/qmd",
@@ -322,7 +496,21 @@
       "use_for": "Local hybrid search over markdown docs and notes",
       "why": "Small on-device search engine combining BM25, vectors and reranking; also exposes an MCP server.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "On-device search engine for markdown notes, transcripts and docs. Combines BM25 full-text, vector semantic search and LLM re-ranking, with query expansion, all running locally via node-llama-cpp and GGUF models; also exposes an MCP server.",
+      "best_for": "Local, private search over personal notes and knowledge bases for agentic workflows.",
+      "not_for": "Aimed at personal markdown collections, not multi-user or web-scale search; needs local GGUF models and compute.",
+      "keywords": [
+        "markdown search",
+        "local search",
+        "bm25",
+        "vector search",
+        "reranking",
+        "mcp server",
+        "notes",
+        "gguf",
+        "on-device"
+      ]
     },
     {
       "id": "quickwit-oss/quickwit",
@@ -344,7 +532,21 @@
       "why": "Cloud-native search engine on Tantivy (~12k stars, Apache-2.0); cheap search over S3.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Cloud-native search engine for observability data (logs and traces) built on Tantivy. Searches directly on object storage such as S3, supports full-text search and aggregations, and works with Grafana and Jaeger.",
+      "best_for": "Cheap, large-scale log management and distributed trace search on object storage.",
+      "not_for": "Focused on observability; metrics support was only on the roadmap. Not a general app-search engine with typo-tolerant UX.",
+      "keywords": [
+        "log search",
+        "distributed tracing",
+        "object storage",
+        "s3",
+        "observability",
+        "tantivy",
+        "jaeger",
+        "grafana",
+        "log management"
+      ]
     },
     {
       "id": "searxng/searxng",
@@ -364,7 +566,18 @@
       "use_for": "Self-hosted metasearch engine with a JSON API",
       "why": "Aggregates 200+ search engines; a common search backend for AI agents and research tools; AGPL-3.0.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "SearXNG is a self-hostable metasearch engine that aggregates results from other search engines without tracking or profiling users. The README links to installation and configuration guides; it is licensed AGPL-3.0-or-later.",
+      "best_for": "Running a private, self-hosted search front end, or a search backend for tools and agents, without user tracking.",
+      "not_for": "Building a search index over your own content, since it queries other engines. AGPL-3.0 obligations apply if you modify and serve it.",
+      "keywords": [
+        "metasearch engine",
+        "privacy",
+        "self-hosted",
+        "search",
+        "agpl",
+        "searxng"
+      ]
     },
     {
       "id": "valeriansaliou/sonic",
@@ -386,7 +599,20 @@
       "why": "Very low-memory Rust search server (~21k stars) with autocomplete and typo tolerance.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Fast, lightweight, schema-less search backend written in Rust. Ingests text with identifier tuples and returns IDs, with query normalization, autocomplete and typo tolerance. It is an identifier index, not a document store.",
+      "best_for": "A tiny-footprint search backend for apps that keep documents elsewhere, as a simple alternative to Elasticsearch.",
+      "not_for": "Returns only IDs (you fetch documents from your own DB); no faceting, rich ranking or distributed clustering.",
+      "keywords": [
+        "search backend",
+        "rust",
+        "autocomplete",
+        "typo tolerance",
+        "low memory",
+        "identifier index",
+        "elasticsearch alternative",
+        "lightweight"
+      ]
     },
     {
       "id": "quickwit-oss/tantivy",
@@ -408,7 +634,21 @@
       "why": "Fast, mature Rust search library powering Quickwit, ParadeDB and others; MIT.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Fast Lucene-style full-text search engine library in Rust. Features BM25 scoring, configurable tokenizers with stemming, natural query language, phrase queries and sub-10ms startup, suitable for command-line tools.",
+      "best_for": "Embedding full-text search in Rust applications, or building a custom search service.",
+      "not_for": "A library, not a server: you build the API, clustering and ops yourself. Rust only.",
+      "keywords": [
+        "rust",
+        "full-text search",
+        "bm25",
+        "tantivy",
+        "search library",
+        "tokenizers",
+        "stemming",
+        "lucene alternative",
+        "embedded"
+      ]
     },
     {
       "id": "typesense/typesense",
@@ -432,7 +672,20 @@
       "why": "Fast, simple in-memory search engine with official clients; open-source alternative to Algolia (GPL-3.0).",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Fast, typo-tolerant search engine serving results from memory. Positioned as an open-source Algolia alternative and easier Elasticsearch alternative, with vector search and official clients.",
+      "best_for": "Instant search for e-commerce, docs and catalogs with simple setup and Algolia-like features.",
+      "not_for": "Mostly in-memory, so RAM scales with dataset; GPL-3.0 license; not intended for log analytics.",
+      "keywords": [
+        "typo tolerance",
+        "instant search",
+        "algolia alternative",
+        "vector search",
+        "faceted search",
+        "in-memory search",
+        "self-hosted search",
+        "search as you type"
+      ]
     },
     {
       "id": "vespa-engine/vespa",
@@ -456,7 +709,21 @@
       "why": "Battle-tested at Yahoo scale; combines text, vector and ML ranking in one engine.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Engine for serving search, recommendation and inference at scale, combining text, vector, tensor and structured data with ML-model ranking. Apache-2.0, battle-tested at Yahoo, with daily releases.",
+      "best_for": "Large-scale search, recommendation and ranking systems that need ML ranking and real-time serving in one engine.",
+      "not_for": "Steep learning curve and heavy operational footprint; unnecessary for ordinary site search.",
+      "keywords": [
+        "search engine",
+        "recommendation",
+        "ml ranking",
+        "vector search",
+        "tensors",
+        "real-time serving",
+        "hybrid retrieval",
+        "yahoo",
+        "large scale"
+      ]
     }
   ]
 }

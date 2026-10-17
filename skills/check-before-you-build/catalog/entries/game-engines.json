@@ -21,7 +21,20 @@
       "why": "Leading Rust engine with a fast-moving ecosystem and modular plugin design.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Data-driven game engine in Rust using the Entity Component System paradigm. Provides 2D and 3D features in a modular plugin architecture, aimed to be simple for newcomers and flexible for power users.",
+      "best_for": "Rust developers building 2D/3D games or simulations who want code-first ECS architecture and a growing plugin ecosystem.",
+      "not_for": "Fast-moving APIs with frequent breaking changes and no full visual editor; not for teams wanting an editor-driven workflow.",
+      "keywords": [
+        "rust game engine",
+        "ecs",
+        "bevy",
+        "2d 3d games",
+        "entity component system",
+        "plugins",
+        "data-driven",
+        "game development"
+      ]
     },
     {
       "id": "hajimehoshi/ebiten",
@@ -43,7 +56,20 @@
       "why": "The standard Go game engine; simple API, ships on Nintendo Switch.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open source 2D game engine for Go with a simple API. Supports 2D graphics with matrix transforms, offscreen rendering, text, audio and input, and deploys to desktop, mobile, web and consoles.",
+      "best_for": "Go developers making 2D games that should ship across desktop, mobile, web and consoles with minimal dependencies.",
+      "not_for": "2D only and code-only with no editor; not for 3D or teams wanting a built-in scene tool.",
+      "keywords": [
+        "go game engine",
+        "2d games",
+        "golang",
+        "ebitengine",
+        "cross-platform games",
+        "webassembly games",
+        "pixel art",
+        "game loop"
+      ]
     },
     {
       "id": "excaliburjs/Excalibur",
@@ -66,7 +92,20 @@
       "npm": "excalibur",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Free TypeScript game engine for 2D games on HTML5 canvas. Offers scenes, actors, physics, input and tooling, aimed at both newcomers and experienced developers.",
+      "best_for": "TypeScript developers building 2D browser games who want a typed, structured engine with scenes and physics.",
+      "not_for": "2D web only; smaller community than Phaser and no 3D support.",
+      "keywords": [
+        "typescript game engine",
+        "html5 2d games",
+        "canvas",
+        "scenes",
+        "physics",
+        "browser games",
+        "game engine",
+        "actors"
+      ]
     },
     {
       "id": "flame-engine/flame",
@@ -88,7 +127,20 @@
       "why": "The main Flutter game engine with components, collisions and many bridge packages.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Flutter-based 2D game engine providing a game loop, component system, effects and particles, collision detection, gesture and input handling, and sprite/animation support. Extended by bridge packages for other libraries.",
+      "best_for": "Flutter developers building 2D games for mobile, web and desktop within the Flutter toolchain.",
+      "not_for": "Tied to Flutter/Dart and 2D; not for 3D or heavy graphics-intensive games.",
+      "keywords": [
+        "flutter game engine",
+        "dart",
+        "2d games",
+        "flame",
+        "sprites",
+        "collision detection",
+        "mobile games",
+        "component system"
+      ]
     },
     {
       "id": "FyroxEngine/Fyrox",
@@ -110,7 +162,19 @@
       "why": "Feature-rich Rust engine that ships with a full editor, unlike most Rust engines.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "General purpose 2D/3D game engine in Rust with a built-in scene editor. Includes browser-runnable examples and an official book.",
+      "best_for": "Rust developers who want an editor-based workflow for 2D and 3D games rather than assembling plugins.",
+      "not_for": "Smaller community and ecosystem than Bevy or Godot; Rust-only scripting.",
+      "keywords": [
+        "rust game engine",
+        "scene editor",
+        "2d 3d games",
+        "fyrox",
+        "rg3d",
+        "game development",
+        "rust gamedev"
+      ]
     },
     {
       "id": "4ian/GDevelop",
@@ -140,7 +204,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "No-code, open-source game engine for 2D, 3D and multiplayer games using an event-based system and modular behaviors. Exports to mobile, desktop and web, with AI assistance features.",
+      "best_for": "Beginners, designers and prototypers who want to make games without writing code, or quickly ship web and mobile games.",
+      "not_for": "Not for code-first teams or very large or complex games; event-sheet logic can get unwieldy and some AI/cloud features are tied to a hosted service.",
+      "keywords": [
+        "no-code game engine",
+        "event-based",
+        "2d games",
+        "visual game editor",
+        "mobile games",
+        "html5 games",
+        "behaviors",
+        "game maker"
+      ]
     },
     {
       "id": "godotengine/godot",
@@ -163,7 +240,20 @@
       "why": "Most popular open-source game engine (119k stars); MIT, no royalties, exports to all major platforms.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Cross-platform 2D and 3D game engine with a unified editor, GDScript and C# scripting, and one-click export to desktop, mobile, web and consoles. MIT licensed with no royalties.",
+      "best_for": "General game development from solo indie to small teams, with a full editor and broad platform export.",
+      "not_for": "Not for AAA-scale 3D fidelity; console export requires third-party porting, and the engine has a large footprint versus lightweight code-only libraries.",
+      "keywords": [
+        "game engine",
+        "godot",
+        "gdscript",
+        "2d 3d games",
+        "scene editor",
+        "cross-platform export",
+        "indie games",
+        "c# games"
+      ]
     },
     {
       "id": "kaplayjs/kaplay",
@@ -188,7 +278,20 @@
       "npm": "kaplay",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Fun-first 2D game library for JavaScript and TypeScript, successor to Kaboom.js. Composes game objects from simple components and ships a web editor (KAPLAYGROUND) with 90+ examples.",
+      "best_for": "Beginners, game jams and quick browser game prototypes in JS/TS.",
+      "not_for": "2D only with a simple component model; not suited to large complex games or 3D.",
+      "keywords": [
+        "2d game library",
+        "javascript games",
+        "typescript games",
+        "kaboom",
+        "browser games",
+        "game jam",
+        "beginner game dev",
+        "sprites"
+      ]
     },
     {
       "id": "libgdx/libgdx",
@@ -211,7 +314,20 @@
       "why": "Long-standing, mature JVM game framework with a large community.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Cross-platform Java game framework based on OpenGL (ES) targeting Windows, Linux, macOS, Android, web and iOS. Provides low-level building blocks without imposing a specific structure.",
+      "best_for": "Java/Kotlin developers building 2D or simple 3D games across desktop and mobile with a mature framework.",
+      "not_for": "Code-only framework with no editor and you assemble your own architecture; web and iOS backends are more involved than native tooling.",
+      "keywords": [
+        "java game framework",
+        "libgdx",
+        "android games",
+        "opengl",
+        "kotlin games",
+        "cross-platform",
+        "2d games",
+        "jvm game development"
+      ]
     },
     {
       "id": "love2d/love",
@@ -239,7 +355,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Framework for making 2D games in Lua, running on Windows, macOS, Linux, Android and iOS. Documented via a wiki, with forums and an active community.",
+      "best_for": "Small 2D games, prototypes and jam projects written in Lua with a minimal API.",
+      "not_for": "2D only, code-first with no editor; main branch is for the next major release and is not stable.",
+      "keywords": [
+        "lua game framework",
+        "love2d",
+        "2d games",
+        "indie games",
+        "game jam",
+        "lua",
+        "cross-platform",
+        "prototyping"
+      ]
     },
     {
       "id": "MonoGame/MonoGame",
@@ -261,7 +390,20 @@
       "why": "Proven framework behind Stardew Valley and Celeste; Ms-PL licensed.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source .NET framework for cross-platform 2D and 3D games in C#, a re-implementation of Microsoft XNA. Targets desktop, consoles and mobile, and has shipped titles like Celeste and Stardew Valley.",
+      "best_for": "C# developers wanting a code-first, XNA-style framework for 2D games across desktop, console and mobile.",
+      "not_for": "Framework, not an editor-driven engine; you build tooling and scene management yourself, and console targets require platform access.",
+      "keywords": [
+        "csharp game framework",
+        "monogame",
+        "xna",
+        "dotnet games",
+        "2d games",
+        "cross-platform",
+        "indie games",
+        "c# game development"
+      ]
     },
     {
       "id": "o3de/o3de",
@@ -288,7 +430,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source, real-time, multi-platform 3D engine for AAA games, cinematic 3D worlds and high-fidelity simulations, without fees. Linux Foundation project derived from Amazon Lumberyard.",
+      "best_for": "Teams building high-fidelity 3D games or simulations that need a large open engine with no royalties and C++ extensibility.",
+      "not_for": "Heavy footprint and steep learning curve; overkill for small or 2D projects.",
+      "keywords": [
+        "3d game engine",
+        "o3de",
+        "lumberyard",
+        "aaa games",
+        "simulation",
+        "c++ engine",
+        "open 3d engine",
+        "real-time 3d"
+      ]
     },
     {
       "id": "panda3d/panda3d",
@@ -315,7 +470,19 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Game engine and framework for 3D rendering and game development using Python and C++. Free for any purpose, including commercial use, under a liberal license, with docs and samples.",
+      "best_for": "Python developers building 3D games, simulations or visualizations who want a mature engine with a C++ core.",
+      "not_for": "No full visual editor and fewer modern rendering features than major commercial engines; smaller community.",
+      "keywords": [
+        "python 3d engine",
+        "panda3d",
+        "3d games",
+        "python game engine",
+        "simulation",
+        "c++ core",
+        "3d rendering"
+      ]
     },
     {
       "id": "phaserjs/phaser",
@@ -339,7 +506,20 @@
       "npm": "phaser",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "HTML5 game framework with WebGL and Canvas rendering for desktop and mobile browsers. Supports JavaScript or TypeScript, many front-end frameworks, and targets like Discord Activities and YouTube Playables.",
+      "best_for": "Browser-based 2D games in JS/TS with a large example library and community.",
+      "not_for": "2D only; native mobile/desktop distribution relies on third-party wrappers; code-only without a built-in editor.",
+      "keywords": [
+        "html5 game framework",
+        "phaser",
+        "webgl",
+        "canvas",
+        "2d browser games",
+        "javascript games",
+        "typescript games",
+        "mobile web games"
+      ]
     },
     {
       "id": "pygame-community/pygame-ce",
@@ -366,7 +546,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Community fork of pygame for 2D games in Python on top of SDL, with active maintenance and drop-in compatibility with pygame.",
+      "best_for": "Python developers building 2D games, prototypes or teaching projects, including migrating from pygame.",
+      "not_for": "Low-level and 2D-focused; not suited to 3D or very performance-heavy games, and has no editor.",
+      "keywords": [
+        "pygame",
+        "python game development",
+        "2d games",
+        "sdl",
+        "pygame ce",
+        "game prototyping",
+        "python games",
+        "sprites"
+      ]
     },
     {
       "id": "raysan5/raylib",
@@ -390,7 +583,20 @@
       "why": "Famously easy to learn; great for prototypes, jams and teaching. Zlib license.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Simple, dependency-free C library for game programming, inspired by Borland BGI and XNA, with bindings for 70+ languages. Suited to prototyping, tooling, education and embedded systems.",
+      "best_for": "Learning game programming, jams, prototypes and graphical tools in C or many other languages.",
+      "not_for": "No editor, visual tools or built-in scene system; you write everything in code.",
+      "keywords": [
+        "raylib",
+        "c game library",
+        "game programming",
+        "prototyping",
+        "education",
+        "bindings",
+        "graphics",
+        "2d 3d games"
+      ]
     },
     {
       "id": "renpy/renpy",
@@ -416,7 +622,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Visual novel engine with a Python-based scripting language. The standard tool for story-driven games, with a fix branch for stable releases and docs on renpy.org.",
+      "best_for": "Visual novels and dialogue-heavy story games, including commercial releases.",
+      "not_for": "Specialized for visual novels; not for action, physics-heavy or general 3D games.",
+      "keywords": [
+        "visual novel engine",
+        "renpy",
+        "python scripting",
+        "story games",
+        "dialogue",
+        "interactive fiction",
+        "vn",
+        "narrative games"
+      ]
     },
     {
       "id": "stride3d/stride",
@@ -438,7 +657,20 @@
       "why": "MIT-licensed C# engine with editor; an open alternative for Unity developers.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source C# game engine for realistic rendering and VR, with a visual editor (Game Studio) for managing content. Modular design.",
+      "best_for": "C# developers wanting an editor-based 3D engine with strong rendering, as an open alternative to Unity.",
+      "not_for": "Smaller community and fewer learning resources than Unity or Godot; heavier for simple 2D games.",
+      "keywords": [
+        "csharp game engine",
+        "stride",
+        "3d games",
+        "vr",
+        "game studio editor",
+        "dotnet",
+        "xenko",
+        "open source unity alternative"
+      ]
     }
   ]
 }

@@ -22,7 +22,21 @@
       "npm": "@angular/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "TypeScript platform for building web apps, with a component and template system, forms, routing, dependency injection, SSR and Angular Elements. Maintained by Google.",
+      "best_for": "Large, long-lived applications and enterprise teams that value an opinionated, batteries-included structure.",
+      "not_for": "Steep learning curve and verbose compared with lighter libraries. Overkill for small sites or content pages.",
+      "keywords": [
+        "angular",
+        "typescript framework",
+        "spa",
+        "dependency injection",
+        "ssr",
+        "enterprise web app",
+        "forms",
+        "routing",
+        "frontend framework"
+      ]
     },
     {
       "id": "dotnet/aspnetcore",
@@ -44,7 +58,21 @@
       "why": "Microsoft's full-stack .NET framework: MVC, Razor Pages, Blazor, minimal APIs and SignalR.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source, cross-platform .NET framework for web apps, APIs and mobile backends: MVC, Razor Pages, Blazor, minimal APIs and SignalR, with modular components.",
+      "best_for": "C#/.NET teams building web apps, REST APIs, realtime services or Blazor UIs on Windows, Linux or macOS.",
+      "not_for": "Requires the .NET stack; not for teams in other ecosystems. Breadth of options (MVC, Razor, Blazor) can be confusing for simple needs.",
+      "keywords": [
+        "asp.net core",
+        "dotnet",
+        "c# web",
+        "blazor",
+        "minimal api",
+        "razor pages",
+        "signalr",
+        "mvc",
+        "web api"
+      ]
     },
     {
       "id": "withastro/astro",
@@ -67,7 +95,19 @@
       "npm": "astro",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Astro is a website build tool for the modern web that aims to pair a strong developer experience with lightweight output. The MIT-licensed monorepo holds the core astro package plus its official integration packages, each with its own release notes.",
+      "best_for": "Building content-focused websites such as blogs, docs or marketing pages where you want lightweight output and a JavaScript build tool with official integrations.",
+      "not_for": "Not a backend or workflow tool. The README itself is a short directory of packages; most usage guidance lives in the external documentation site.",
+      "keywords": [
+        "astro",
+        "website build tool",
+        "static site",
+        "web framework",
+        "javascript",
+        "integrations",
+        "lightweight output"
+      ]
     },
     {
       "id": "DioxusLabs/dioxus",
@@ -89,7 +129,21 @@
       "why": "Very active Rust UI framework; one codebase across web, desktop and mobile with hot reload.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Rust framework for building web, desktop and mobile apps from one codebase with a React-like, signals-based API, hot reloading, server functions and a CLI for bundling.",
+      "best_for": "Rust developers wanting a single full-stack Rust UI across platforms.",
+      "not_for": "Requires Rust and a smaller ecosystem than JS frameworks. Mobile and desktop rendering paths are younger than mature alternatives.",
+      "keywords": [
+        "rust ui",
+        "dioxus",
+        "rust web framework",
+        "cross platform",
+        "wasm",
+        "desktop app rust",
+        "signals",
+        "hot reload",
+        "fullstack rust"
+      ]
     },
     {
       "id": "django/django",
@@ -112,7 +166,21 @@
       "why": "The most widely used Python web framework; batteries included, very stable, huge ecosystem and excellent docs.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "High-level Python web framework with ORM, admin site, authentication, forms and templating built in, aimed at rapid, clean development with extensive docs.",
+      "best_for": "Database-backed Python web apps, CMS-style sites and admin-heavy products where batteries-included matters.",
+      "not_for": "Monolithic and synchronous-leaning by tradition; for tiny APIs or async-first services, FastAPI or Flask may be lighter.",
+      "keywords": [
+        "django",
+        "python web framework",
+        "orm",
+        "admin panel",
+        "authentication",
+        "mvt",
+        "templates",
+        "full stack python",
+        "rapid development"
+      ]
     },
     {
       "id": "gatsbyjs/gatsby",
@@ -135,7 +203,20 @@
       "npm": "gatsby",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "React-based framework combining static generation with dynamic rendering, pulling data from many sources through a data layer and plugins.",
+      "best_for": "Maintaining existing Gatsby content sites that rely on its plugin and data ecosystem.",
+      "not_for": "Build times grow with site size, and the ecosystem has lost momentum versus Next.js and Astro; consider alternatives for new projects.",
+      "keywords": [
+        "gatsby",
+        "react static site",
+        "ssg",
+        "graphql data layer",
+        "plugins",
+        "content site",
+        "jamstack",
+        "headless cms"
+      ]
     },
     {
       "id": "bigskysoftware/htmx",
@@ -162,7 +243,21 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Small, dependency-free library that gives HTML attributes access to AJAX, CSS transitions, WebSockets and server-sent events, enabling partial page updates driven by server-rendered HTML.",
+      "best_for": "Adding interactivity to server-rendered apps with any backend without a JS build or SPA framework.",
+      "not_for": "Not suited to complex client-side state or offline-first apps. Server must return HTML fragments.",
+      "keywords": [
+        "htmx",
+        "hypermedia",
+        "ajax",
+        "server rendered html",
+        "partial updates",
+        "sse",
+        "websockets",
+        "no build",
+        "html attributes"
+      ]
     },
     {
       "id": "gohugoio/hugo",
@@ -184,7 +279,21 @@
       "why": "Most-starred static site generator; builds thousands of pages in seconds",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Static site generator in Go distributed as a single binary, with templating, content management and asset pipelines, known for very fast builds.",
+      "best_for": "Blogs, documentation and large content sites needing fast builds and simple hosting.",
+      "not_for": "Go template syntax has a learning curve, and it is not for dynamic server-rendered apps. Some features need extended or Dart Sass builds.",
+      "keywords": [
+        "hugo",
+        "static site generator",
+        "go",
+        "markdown",
+        "blog",
+        "docs site",
+        "fast builds",
+        "ssg",
+        "themes"
+      ]
     },
     {
       "id": "laravel/framework",
@@ -205,7 +314,21 @@
       "why": "Most popular PHP framework with a large first-party ecosystem",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Core code of the Laravel PHP framework: routing, dependency injection container, sessions and cache backends, database ORM and migrations, queues and more with expressive syntax.",
+      "best_for": "Full-stack PHP web apps and APIs with a large first-party ecosystem.",
+      "not_for": "PHP only and convention-heavy. This repo is the framework core; start new apps from the main laravel/laravel skeleton instead.",
+      "keywords": [
+        "laravel",
+        "php framework",
+        "eloquent",
+        "routing",
+        "queues",
+        "mvc",
+        "web app",
+        "artisan",
+        "full stack php"
+      ]
     },
     {
       "id": "vercel/next.js",
@@ -228,7 +351,21 @@
       "npm": "next",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Full-stack React framework adding server-side rendering, static generation, server components and API routes, with Rust-based tooling for builds.",
+      "best_for": "Production React sites and apps needing SEO, hybrid rendering and strong hosting support.",
+      "not_for": "React only and increasingly complex (app router, caching). Overkill for simple static pages and best experienced on Vercel-like platforms.",
+      "keywords": [
+        "next.js",
+        "react framework",
+        "ssr",
+        "ssg",
+        "server components",
+        "app router",
+        "api routes",
+        "full stack react",
+        "vercel"
+      ]
     },
     {
       "id": "nuxt/nuxt",
@@ -251,7 +388,21 @@
       "npm": "nuxt",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Full-stack Vue framework with SSR, static and hybrid rendering, file-based routing, data fetching, SEO helpers, auto-imports and server routes.",
+      "best_for": "Vue apps and sites needing SSR, SEO and a module ecosystem.",
+      "not_for": "Vue only. Smaller scope than React meta-frameworks in some areas, and SSR adds server complexity for purely client apps.",
+      "keywords": [
+        "nuxt",
+        "vue framework",
+        "ssr",
+        "vue ssg",
+        "file routing",
+        "auto imports",
+        "nitro",
+        "server routes",
+        "full stack vue"
+      ]
     },
     {
       "id": "phoenixframework/phoenix",
@@ -273,7 +424,21 @@
       "why": "Proven productivity and scalability; LiveView builds interactive apps without a JS SPA.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Elixir web framework with LiveView for realtime, server-rendered interactive UIs, plus channels and a mix-based project generator.",
+      "best_for": "Realtime, high-concurrency apps and teams wanting interactive UIs without a JS SPA.",
+      "not_for": "Requires Elixir/Erlang knowledge and a smaller hiring pool and ecosystem than mainstream stacks.",
+      "keywords": [
+        "phoenix",
+        "elixir",
+        "liveview",
+        "realtime",
+        "channels",
+        "web framework",
+        "websockets",
+        "concurrency",
+        "erlang vm"
+      ]
     },
     {
       "id": "quasarframework/quasar",
@@ -296,7 +461,21 @@
       "npm": "quasar",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Vue framework that builds SPAs, SSR/SSG sites, PWAs, browser extensions, hybrid mobile apps and Electron apps from one codebase, with a large Material component set.",
+      "best_for": "Vue teams wanting one codebase across web, mobile (Capacitor/Cordova) and desktop.",
+      "not_for": "Vue only with its own CLI and component conventions; a heavier commitment than using plain Vue plus a UI kit.",
+      "keywords": [
+        "quasar",
+        "vue framework",
+        "pwa",
+        "electron",
+        "mobile app vue",
+        "spa",
+        "ssr",
+        "cross platform",
+        "material components"
+      ]
     },
     {
       "id": "react/react",
@@ -318,7 +497,21 @@
       "npm": "react",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "JavaScript library for building user interfaces with declarative, component-based views. Foundation for frameworks such as Next.js and React Router.",
+      "best_for": "Interactive UIs of any size where you choose your own routing, data and build tooling or use a framework on top.",
+      "not_for": "Only the view layer: routing, data fetching and SSR need other tools or a framework. Not ideal for static content sites.",
+      "keywords": [
+        "react",
+        "ui library",
+        "components",
+        "jsx",
+        "hooks",
+        "declarative ui",
+        "frontend",
+        "virtual dom",
+        "spa"
+      ]
     },
     {
       "id": "remix-run/react-router",
@@ -340,7 +533,21 @@
       "npm": "react-router",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Multi-strategy React router usable minimally as a library or maximally as a framework (Remix merged into v7), with loaders, actions and SSR.",
+      "best_for": "React SPAs needing routing, or full-stack React apps using framework mode as the Remix successor.",
+      "not_for": "React only. Framework mode has its own conventions and tooling; Next.js has a bigger ecosystem and hosting integration.",
+      "keywords": [
+        "react router",
+        "remix",
+        "routing",
+        "loaders",
+        "actions",
+        "ssr",
+        "react framework",
+        "nested routes",
+        "spa"
+      ]
     },
     {
       "id": "marmelab/react-admin",
@@ -363,7 +570,21 @@
       "npm": "react-admin",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Frontend framework for building admin single-page apps on REST or GraphQL APIs using React, TypeScript and Material UI, with data providers, auth, i18n and ready CRUD components.",
+      "best_for": "Admin panels and back-office UIs on top of existing APIs.",
+      "not_for": "Tied to Material UI styling and React; some advanced features are in the paid Enterprise Edition. Not for public marketing sites.",
+      "keywords": [
+        "react admin",
+        "admin panel",
+        "crud",
+        "rest graphql",
+        "data provider",
+        "material ui",
+        "back office",
+        "dashboard",
+        "internal tools"
+      ]
     },
     {
       "id": "refinedev/refine",
@@ -386,7 +607,21 @@
       "npm": "@refinedev/core",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Headless React meta-framework for CRUD-heavy apps, with data providers for REST, GraphQL, Supabase and more, plus auth, access control and UI-agnostic hooks.",
+      "best_for": "Internal tools, admin panels and B2B dashboards where you want to choose your UI kit.",
+      "not_for": "React only; headless means you wire UI yourself. Some enterprise features and an AI agent are tied to Refine's commercial offering.",
+      "keywords": [
+        "refine",
+        "admin panel",
+        "internal tools",
+        "crud",
+        "headless",
+        "react",
+        "data provider",
+        "b2b app",
+        "dashboard"
+      ]
     },
     {
       "id": "remix-run/remix",
@@ -407,7 +642,20 @@
       "why": "The Remix team's full-stack framework (v3) built on web Fetch APIs; companion to React Router.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Remix 3 repository: a full-stack framework in active development built on web-standard Fetch APIs, with principles such as model-first development and optimization for LLMs. Companion to React Router.",
+      "best_for": "Experimenting with the new Remix direction on web standards.",
+      "not_for": "Under active development, so not a stable production choice. For current Remix-style apps use React Router framework mode.",
+      "keywords": [
+        "remix 3",
+        "web standards",
+        "fetch api",
+        "full stack framework",
+        "react router",
+        "ssr",
+        "llm friendly",
+        "remix"
+      ]
     },
     {
       "id": "rails/rails",
@@ -428,7 +676,20 @@
       "why": "The defining full-stack framework; Hotwire for modern UIs",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Full-stack Ruby MVC web framework including database-backed models, controllers and views, with generators, Hotwire for modern UIs and convention over configuration.",
+      "best_for": "CRUD-driven web apps and startups wanting fast development with strong conventions.",
+      "not_for": "Ruby only and opinionated. High-throughput or CPU-bound services may fit other stacks better; heavy JS SPAs need extra work.",
+      "keywords": [
+        "ruby on rails",
+        "rails",
+        "mvc",
+        "activerecord",
+        "hotwire",
+        "full stack ruby",
+        "web framework",
+        "convention over configuration"
+      ]
     },
     {
       "id": "solidjs/solid-start",
@@ -451,7 +712,20 @@
       "npm": "@solidjs/start",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Full-stack meta-framework for SolidJS built on Vite and Nitro. The default branch is the 2.0.0-alpha under heavy development, while 1.x is the maintained release.",
+      "best_for": "Solid projects wanting SSR, routing and server functions.",
+      "not_for": "This branch is alpha and unstable, so use the 1.x line for production. Solid-only and a smaller ecosystem.",
+      "keywords": [
+        "solidstart",
+        "solidjs",
+        "meta framework",
+        "ssr",
+        "vite",
+        "nitro",
+        "fine grained reactivity",
+        "full stack"
+      ]
     },
     {
       "id": "sveltejs/svelte",
@@ -473,7 +747,21 @@
       "npm": "svelte",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Compiler-based UI framework that turns declarative components into efficient JavaScript that updates the DOM directly, with a minimal runtime.",
+      "best_for": "Small-to-medium interactive UIs and apps where bundle size and simple syntax matter; base of SvelteKit.",
+      "not_for": "Library-level only: routing and SSR need SvelteKit. Smaller ecosystem and hiring pool than React.",
+      "keywords": [
+        "svelte",
+        "compiler",
+        "ui framework",
+        "reactive",
+        "small bundle",
+        "components",
+        "runes",
+        "frontend",
+        "sveltekit"
+      ]
     },
     {
       "id": "sveltejs/kit",
@@ -496,7 +784,21 @@
       "npm": "@sveltejs/kit",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Official full-stack framework for Svelte with routing, SSR, data loading and adapters for Cloudflare, Netlify, Node, static hosting and more.",
+      "best_for": "Svelte apps and sites needing SSR or static output with simple data loading.",
+      "not_for": "Svelte only; smaller ecosystem than Next.js. Adapter choice and hosting specifics must be handled per platform.",
+      "keywords": [
+        "sveltekit",
+        "svelte",
+        "ssr",
+        "adapters",
+        "file routing",
+        "full stack",
+        "load functions",
+        "static site",
+        "vite"
+      ]
     },
     {
       "id": "TanStack/router",
@@ -520,7 +822,20 @@
       "npm": "@tanstack/react-router",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Type-safe router for React and Solid with validated search params, loaders, caching, prefetching, nested layouts, and TanStack Start for SSR and server functions.",
+      "best_for": "SPAs and full-stack apps where end-to-end route and search-param type safety matters.",
+      "not_for": "React and Solid only. TanStack Start is newer than established frameworks, and strict typing adds setup overhead.",
+      "keywords": [
+        "tanstack router",
+        "type safe routing",
+        "search params",
+        "react router alternative",
+        "loaders",
+        "tanstack start",
+        "ssr",
+        "nested layouts"
+      ]
     },
     {
       "id": "umijs/umi",
@@ -542,7 +857,18 @@
       "npm": "umi",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Umi is a framework in the React community, maintained by sorrycc and a group of core maintainers. The README is brief and mostly covers maintainers, contributors and community channels, which are largely in Chinese.",
+      "best_for": "Teams building React applications who want an opinionated framework from the umi community, especially those comfortable with Chinese-language community support.",
+      "not_for": "React-only, so not for Vue, Svelte or other stacks. The README gives little feature detail, and its community channels are mainly Chinese-language, which may limit English support.",
+      "keywords": [
+        "umi",
+        "react",
+        "react framework",
+        "frontend framework",
+        "web app",
+        "javascript"
+      ]
     },
     {
       "id": "vikejs/vike",
@@ -565,7 +891,20 @@
       "npm": "vike",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Vike positions itself as a replacement for Next.js/Nuxt, aimed at building mission-critical applications with stability and development freedom. The monorepo publishes the vike package and create-vike-core; separate repos provide vike-react, vike-vue and vike-solid bindings with add-ons such as zustand, pinia and query integrations.",
+      "best_for": "Building web apps when you want an alternative to Next.js or Nuxt that works with React, Vue or Solid through official vike-react, vike-vue and vike-solid packages.",
+      "not_for": "UI framework bindings live in separate repos, so you need to pick and add those packages. Documentation is on vike.dev rather than in the README.",
+      "keywords": [
+        "vike",
+        "nextjs alternative",
+        "nuxt alternative",
+        "react",
+        "vue",
+        "solid",
+        "web framework",
+        "ssr"
+      ]
     },
     {
       "id": "vuejs/core",
@@ -587,7 +926,20 @@
       "npm": "vue",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Source repo of Vue 3, a progressive framework for building web UIs. README only points to docs on vuejs.org and notes that issues are for bugs and feature requests.",
+      "best_for": "Interactive web UIs from small widgets to full SPAs, with Nuxt for SSR.",
+      "not_for": "Core only: routing, state and SSR need extra packages or Nuxt. Smaller job market than React.",
+      "keywords": [
+        "vue",
+        "vue 3",
+        "frontend framework",
+        "reactivity",
+        "composition api",
+        "components",
+        "single file components",
+        "spa"
+      ]
     },
     {
       "id": "wasp-lang/wasp",
@@ -609,7 +961,20 @@
       "why": "Batteries-included framework: a config DSL generates routes, auth, jobs and typesafe RPC, cutting boilerplate.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Rails-like framework for React, Node.js and Prisma: a declarative config language generates routes, auth, jobs and typed RPC, with one-command deploys.",
+      "best_for": "Quickly building full-stack React and Node apps with auth and CRUD, such as SaaS prototypes.",
+      "not_for": "Locks you into its DSL and stack (React, Node, Prisma). Less flexible than assembling your own architecture.",
+      "keywords": [
+        "wasp",
+        "full stack framework",
+        "react node prisma",
+        "auth",
+        "saas starter",
+        "declarative config",
+        "boilerplate",
+        "typesafe rpc"
+      ]
     },
     {
       "id": "yewstack/yew",
@@ -631,7 +996,20 @@
       "why": "Most popular Rust/Wasm frontend framework: component model, hooks, SSR and JS interop.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Rust framework for front-end web apps compiled to WebAssembly, with a macro for HTML templates, components, hooks, SSR and JS interop.",
+      "best_for": "Rust teams building browser UIs with Wasm.",
+      "not_for": "Requires Rust and Wasm toolchain with larger bundles and a smaller ecosystem than JS frameworks. Not for SEO-first content sites.",
+      "keywords": [
+        "yew",
+        "rust wasm",
+        "webassembly",
+        "rust frontend",
+        "components",
+        "hooks",
+        "rust web",
+        "spa"
+      ]
     }
   ]
 }

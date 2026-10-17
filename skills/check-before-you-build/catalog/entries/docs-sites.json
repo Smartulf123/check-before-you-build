@@ -22,7 +22,20 @@
       "npm": "docsify",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Documentation site generator that renders Markdown files into a website at runtime, with no build step and no statically built HTML. It includes a full-text search plugin, multiple themes, emoji support and a plugin API, and can be served from any static server or GitHub Pages.",
+      "best_for": "Quickly publishing lightweight docs from Markdown on GitHub Pages or a static host without any build pipeline.",
+      "not_for": "Sites that need prebuilt static HTML for SEO or no-JavaScript readers, since pages are rendered in the browser rather than generated at build time.",
+      "keywords": [
+        "docsify",
+        "documentation",
+        "markdown",
+        "static site",
+        "github pages",
+        "no build",
+        "search",
+        "themes"
+      ]
     },
     {
       "id": "nuxt-content/docus",
@@ -46,7 +59,21 @@
       "npm": "docus",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Docs framework and CLI (npx create-docus) that scaffolds a documentation site built on Nuxt 4, Nuxt UI and Tailwind CSS, written in Markdown with Vue/MDC components. It includes dark mode, i18n, search, SEO helpers, llms.txt generation, a built-in MCP server at /mcp, Agent Skills publishing and an optional AI assistant powered by Vercel AI Gateway.",
+      "best_for": "Teams in the Vue/Nuxt ecosystem wanting a modern docs site with built-in AI features (MCP server, llms.txt, chat assistant).",
+      "not_for": "React-based teams or anyone avoiding Nuxt/Vue. The AI assistant depends on Vercel AI Gateway, so that part requires an external service.",
+      "keywords": [
+        "docus",
+        "nuxt",
+        "vue",
+        "documentation",
+        "markdown",
+        "mcp server",
+        "llms.txt",
+        "ai assistant",
+        "tailwind"
+      ]
     },
     {
       "id": "facebook/docusaurus",
@@ -70,7 +97,20 @@
       "npm": "@docusaurus/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Tool for building, deploying and maintaining open source project websites, handling the site build so authors focus on content. It ships a home page, docs section, blog and support pages out of the box, is customizable, and supports localization via Crowdin.",
+      "best_for": "Open source projects and teams wanting a documentation site with a docs section, a blog and translation support.",
+      "not_for": "Minimal single-page docs where a full site generator is overkill, or teams avoiding a React/Node-based toolchain.",
+      "keywords": [
+        "docusaurus",
+        "documentation",
+        "static site",
+        "open source",
+        "blog",
+        "localization",
+        "crowdin",
+        "website"
+      ]
     },
     {
       "id": "doxygen/doxygen",
@@ -91,7 +131,20 @@
       "why": "The standard documentation generator for C/C++",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Generates documentation from annotated source code, primarily C++ but also C, Objective-C, C#, PHP, Java, Python, Fortran, VHDL and others. It outputs HTML and LaTeX, plus RTF, PDF, DocBook and man pages, can extract structure from undocumented code, and draws include, inheritance and collaboration graphs.",
+      "best_for": "API reference documentation for C/C++ and other compiled-language codebases, or exploring the structure of large unfamiliar source trees.",
+      "not_for": "Modern Markdown-first docs websites or guides; it is focused on reference docs extracted from source comments.",
+      "keywords": [
+        "doxygen",
+        "c++",
+        "api documentation",
+        "code documentation",
+        "latex",
+        "html",
+        "inheritance diagrams",
+        "docs generator"
+      ]
     },
     {
       "id": "fuma-nama/fumadocs",
@@ -114,7 +167,20 @@
       "npm": "fumadocs-core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Framework for building documentation websites inside React frameworks and Astro. It officially supports Next.js, Astro with React, and Vite-based Tanstack Start, Waku and React Router; all packages are ESM only.",
+      "best_for": "Adding a documentation site to an existing Next.js or other React-framework app, or building docs within Astro using React.",
+      "not_for": "Projects that cannot use ESM-only packages, or non-React stacks such as Vue. The README is brief; feature details are on its documentation site.",
+      "keywords": [
+        "fumadocs",
+        "documentation",
+        "react",
+        "next.js",
+        "astro",
+        "docs framework",
+        "esm",
+        "tanstack start"
+      ]
     },
     {
       "id": "jsdoc/jsdoc",
@@ -135,7 +201,18 @@
       "why": "The original JS API doc generator; JSDoc comment syntax is also what TypeScript and editors understand.",
       "npm": "jsdoc",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "API documentation generator for JavaScript that builds docs from JSDoc comments in source code. A community ecosystem adds templates (e.g. better-docs), Grunt/Gulp plugins, a GitHub Action, and jsdoc-to-markdown for Markdown output.",
+      "best_for": "Generating HTML API reference docs for JavaScript libraries from JSDoc comments.",
+      "not_for": "Narrative documentation sites or guides; it generates API reference only. TypeScript projects may prefer TypeScript-native doc generators.",
+      "keywords": [
+        "jsdoc",
+        "javascript",
+        "api documentation",
+        "doc comments",
+        "documentation generator",
+        "templates"
+      ]
     },
     {
       "id": "jupyter-book/jupyter-book",
@@ -158,7 +235,20 @@
       "why": "Best option when docs include executable notebooks or scientific content.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source tool for building publication-quality books and documents from Markdown files or Jupyter notebooks containing code cells. A single command executes the code, caches outputs, and produces a web-based interactive book and a PDF, with citations, cross-references and numbered equations.",
+      "best_for": "Scientific, educational or data-analysis content that mixes prose with executable code and needs both a web book and a PDF.",
+      "not_for": "Plain product docs without computational content. The current version differs from the Sphinx-based v1, which now lives in the v1 branch.",
+      "keywords": [
+        "jupyter book",
+        "jupyter notebooks",
+        "markdown",
+        "publishing",
+        "pdf",
+        "scientific writing",
+        "citations",
+        "computational"
+      ]
     },
     {
       "id": "squidfunk/mkdocs-material",
@@ -179,7 +269,20 @@
       "why": "The most popular docs framework in the Python world (used by FastAPI, Pydantic and many more)",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Theme and documentation framework on top of MkDocs that turns Markdown into a professional static site. Installed with pip and enabled in mkdocs.yml, it provides search, responsive layouts, support for over 60 languages, and configuration of colors, fonts, icons and logo. MIT licensed.",
+      "best_for": "Teams wanting a polished, searchable static docs site from Markdown with minimal configuration and self-hosted output.",
+      "not_for": "Docs needing React/Vue components embedded in pages; it requires the Python-based MkDocs toolchain.",
+      "keywords": [
+        "mkdocs",
+        "material",
+        "documentation",
+        "markdown",
+        "static site",
+        "theme",
+        "search",
+        "python"
+      ]
     },
     {
       "id": "rust-lang/mdBook",
@@ -201,7 +304,19 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Command-line utility from the Rust project that creates online books from Markdown files. Its User Guide documents features, installation and usage, and is itself an example of a generated book.",
+      "best_for": "Book-style technical documentation or tutorials written in Markdown, especially in Rust projects, deployed as a static site.",
+      "not_for": "Docs sites needing blogs, landing pages or component-rich layouts; it is focused on book-style output. The README is minimal, so check the User Guide for features.",
+      "keywords": [
+        "mdbook",
+        "markdown",
+        "book",
+        "documentation",
+        "rust",
+        "static site",
+        "cli"
+      ]
     },
     {
       "id": "mkdocstrings/mkdocstrings",
@@ -222,7 +337,20 @@
       "why": "Standard API-docs plugin for MkDocs",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "MkDocs plugin that generates documentation automatically from source code. It is language-agnostic through handlers (including Python and shell scripts), supports multiple themes per handler, and enables cross-references between pages and across sites similar to Sphinx's intersphinx.",
+      "best_for": "Adding auto-generated API reference pages to an MkDocs (often Material for MkDocs) site, especially for Python libraries.",
+      "not_for": "Projects not using MkDocs, or languages without an available handler. It produces API reference inside MkDocs, not a standalone site.",
+      "keywords": [
+        "mkdocstrings",
+        "mkdocs",
+        "api documentation",
+        "docstrings",
+        "python",
+        "plugin",
+        "cross-references",
+        "autodoc"
+      ]
     },
     {
       "id": "shuding/nextra",
@@ -244,7 +372,19 @@
       "npm": "nextra",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Site generation framework built on Next.js, distributed as the nextra package with a nextra-theme-docs theme for documentation sites. The README is brief and points to nextra.site for documentation.",
+      "best_for": "Building a documentation site with Next.js using the nextra-theme-docs theme.",
+      "not_for": "Teams not using Next.js or React. The repository README gives little feature detail; check nextra.site before relying on specific capabilities.",
+      "keywords": [
+        "nextra",
+        "next.js",
+        "documentation",
+        "static site",
+        "docs theme",
+        "react",
+        "site generator"
+      ]
     },
     {
       "id": "mitmproxy/pdoc",
@@ -265,7 +405,19 @@
       "why": "Zero-config and simple; good for library API references.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Generates API documentation for Python projects from modules and docstrings, focused on simplicity. It supports type annotations, numpydoc and Google-style docstrings, auto-links identifiers, respects __all__, has a built-in live-reloading web server and outputs standalone HTML with customizable templates.",
+      "best_for": "Quickly producing clean API reference docs for a Python package with a single command and no configuration.",
+      "not_for": "Complex documentation needs; the README recommends Sphinx for those. Not affiliated with the separate pdoc3 project.",
+      "keywords": [
+        "pdoc",
+        "python",
+        "api documentation",
+        "docstrings",
+        "type annotations",
+        "html",
+        "documentation generator"
+      ]
     },
     {
       "id": "Redocly/redoc",
@@ -288,7 +440,20 @@
       "npm": "redoc",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open source tool that generates API reference documentation from OpenAPI (3.2/3.1/3.0, Swagger 2.0), AsyncAPI 3.x and GraphQL SDL definitions in a responsive three-panel layout with search, navigation and request/response examples. It is available as an HTML tag, React component, Redocly CLI and Docker image, with theming, dark mode and code samples.",
+      "best_for": "Publishing read-only API reference docs from an OpenAPI, AsyncAPI or GraphQL spec, embedded in an existing site or built as static HTML.",
+      "not_for": "Try-it consoles, mock servers, automated code samples, lint or SOAP; the README lists these under Redocly's hosted offering, not the community edition.",
+      "keywords": [
+        "redoc",
+        "openapi",
+        "swagger",
+        "asyncapi",
+        "graphql",
+        "api documentation",
+        "react",
+        "redocly"
+      ]
     },
     {
       "id": "web-infra-dev/rspress",
@@ -309,7 +474,20 @@
       "why": "ByteDance's Rust-powered docs SSG with quick builds at scale",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Static site generator built on Rsbuild and an MDX compiler, aimed at documentation. It lets you use React components in Markdown via MDX, builds a full-text search index automatically, outputs static HTML, supports component demo previews, and has a plugin system for customizing build and theme.",
+      "best_for": "React/MDX-based documentation sites, including component library docs, that want fast builds and built-in search.",
+      "not_for": "Non-React stacks. It is tied to the Rsbuild/Rstack toolchain.",
+      "keywords": [
+        "rspress",
+        "static site generator",
+        "documentation",
+        "mdx",
+        "rsbuild",
+        "react",
+        "full-text search",
+        "component docs"
+      ]
     },
     {
       "id": "scalar/scalar",
@@ -333,7 +511,19 @@
       "npm": "@scalar/api-reference",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Renders OpenAPI/Swagger documents as an interactive API reference with a built-in API testing tool and generated code examples for many languages. Also ships an offline-first, open-source API client for OpenAPI. Can be dropped into a single HTML file from a CDN or added through framework integrations such as ASP.NET Core.",
+      "best_for": "Publishing interactive API reference docs from an existing OpenAPI/Swagger spec, or testing APIs with an OpenAPI-aware desktop/browser client.",
+      "not_for": "Needs an OpenAPI/Swagger document; not a general prose documentation site generator. Managed hosting with custom domains and team features is a hosted service, partly paid.",
+      "keywords": [
+        "openapi",
+        "swagger",
+        "api reference",
+        "api documentation",
+        "api client",
+        "code examples",
+        "api testing"
+      ]
     },
     {
       "id": "sphinx-doc/sphinx",
@@ -356,7 +546,20 @@
       "why": "The standard Python documentation tool behind Read the Docs and most Python libraries.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python documentation generator that uses reStructuredText and Docutils to build documentation. Outputs HTML, PDF, plain text, EPUB, TeX, man pages and more, with cross-references, automatic indices, a document tree, Pygments code highlighting and Jinja2 templating.",
+      "best_for": "Technical and API documentation for Python projects or any project needing multi-format output (HTML, PDF, EPUB) with rich cross-referencing.",
+      "not_for": "Built around reStructuredText rather than plain Markdown; not a JavaScript/React-style modern docs site framework or an interactive API reference renderer.",
+      "keywords": [
+        "documentation generator",
+        "restructuredtext",
+        "docutils",
+        "python",
+        "pdf",
+        "epub",
+        "cross-references",
+        "static html"
+      ]
     },
     {
       "id": "withastro/starlight",
@@ -379,7 +582,17 @@
       "npm": "@astrojs/starlight",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Starlight is a documentation website framework built for Astro. Its own documentation site is built with Starlight.",
+      "best_for": "Building a documentation website when you are using or willing to use Astro.",
+      "not_for": "Tied to the Astro framework; it is a docs site framework, not an API reference generator or general app framework.",
+      "keywords": [
+        "documentation",
+        "docs site",
+        "astro",
+        "static site",
+        "documentation framework"
+      ]
     },
     {
       "id": "swagger-api/swagger-ui",
@@ -400,7 +613,19 @@
       "npm": "swagger-ui",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Generates interactive visual documentation from an OpenAPI (formerly Swagger) specification so users can explore and call API resources without implementation logic. Published as npm modules: swagger-ui for bundled single-page apps and swagger-ui-dist, a dependency-free build for serving from server-side projects.",
+      "best_for": "Embedding or serving interactive API docs directly from an OpenAPI/Swagger spec in a web app or backend.",
+      "not_for": "Requires an OpenAPI spec; not a general docs site. README lists known 3.x gaps such as no JSON Form Editor, partial collectionFormat support and no l10n.",
+      "keywords": [
+        "openapi",
+        "swagger",
+        "api documentation",
+        "interactive api",
+        "npm",
+        "swagger-ui-dist",
+        "rest api"
+      ]
     },
     {
       "id": "TypeStrong/typedoc",
@@ -421,7 +646,19 @@
       "npm": "typedoc",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Documentation generator for TypeScript projects. It reads tsconfig.json and package.json to find entry points and compiler options, then writes HTML docs (or JSON) via a CLI or config file, with themes and a packages mode for monorepos.",
+      "best_for": "Generating API reference docs from TypeScript source code, including merged docs for monorepo packages.",
+      "not_for": "Only for TypeScript projects; produces API reference from code, not a hand-written docs/guide site framework.",
+      "keywords": [
+        "typescript",
+        "documentation generator",
+        "api docs",
+        "tsconfig",
+        "monorepo",
+        "cli",
+        "json output"
+      ]
     },
     {
       "id": "vuejs/vitepress",
@@ -444,7 +681,18 @@
       "npm": "vitepress",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "VitePress is a Vue-powered static site generator built on top of Vite and a spiritual successor to VuePress. It is commonly used to build documentation sites.",
+      "best_for": "Fast documentation or content sites for teams comfortable with Vue and Vite.",
+      "not_for": "Vue/Vite stack; teams standardized on React or another framework may prefer alternatives. Not an API reference renderer.",
+      "keywords": [
+        "static site generator",
+        "vue",
+        "vite",
+        "vuepress",
+        "documentation",
+        "docs site"
+      ]
     }
   ]
 }

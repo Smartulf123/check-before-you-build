@@ -20,7 +20,20 @@
       "use_for": "Audio synthesis, processing and analysis for iOS and macOS apps",
       "why": "The main Swift audio framework: oscillators, effects, sequencing and analysis on top of AVAudioEngine.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Swift audio synthesis, processing and analysis platform for iOS, macOS and tvOS with oscillators, effects, sequencing and a Cookbook of examples.",
+      "best_for": "Apple-platform apps with synthesis, effects or audio analysis.",
+      "not_for": "Apple platforms only; not for cross-platform or web audio.",
+      "keywords": [
+        "audiokit",
+        "swift",
+        "ios",
+        "macos",
+        "synthesizer",
+        "audio effects",
+        "audio analysis",
+        "sequencer"
+      ]
     },
     {
       "id": "DBraun/DawDreamer",
@@ -42,7 +55,20 @@
       "why": "Scriptable DAW engine for batch rendering and ML dataset generation.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python digital audio workstation framework that renders audio graphs with VST instruments/effects and Faust DSP scripts offline.",
+      "best_for": "Scripted audio rendering, plugin automation and dataset generation in Python.",
+      "not_for": "Offline-oriented; not a live audio engine or GUI DAW.",
+      "keywords": [
+        "python",
+        "vst",
+        "daw",
+        "faust",
+        "audio rendering",
+        "plugin host",
+        "audio synthesis",
+        "dsp"
+      ]
     },
     {
       "id": "MTG/essentia",
@@ -65,7 +91,20 @@
       "why": "Rich MIR toolkit (key, tempo, features, models) from the UPF Music Technology Group.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "C++ audio analysis and music information retrieval library with Python bindings and JS/WASM, with many spectral, tonal and rhythm descriptors and pretrained models.",
+      "best_for": "Music analysis tasks such as tempo, key, features and tagging.",
+      "not_for": "AGPLv3 license, a caveat for closed-source use; heavier to build than librosa.",
+      "keywords": [
+        "essentia",
+        "music information retrieval",
+        "audio analysis",
+        "features",
+        "c++",
+        "python",
+        "tempo",
+        "key detection"
+      ]
     },
     {
       "id": "grame-cncm/faust",
@@ -87,7 +126,20 @@
       "why": "Write DSP once and target VST/AU, web and embedded; LGPL-2.1+ compiler.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Functional programming language for real-time signal processing that compiles DSP programs to C++, C, Java, LLVM, WebAssembly, plugins and more.",
+      "best_for": "Writing DSP and synth/effects once and exporting to many targets.",
+      "not_for": "Needs learning a DSP-specific language; compiler tool rather than a ready-made audio app.",
+      "keywords": [
+        "faust",
+        "dsp",
+        "functional language",
+        "audio plugin",
+        "webassembly",
+        "synthesis",
+        "compiler",
+        "signal processing"
+      ]
     },
     {
       "id": "FluidSynth/fluidsynth",
@@ -108,7 +160,19 @@
       "why": "The go-to way to turn MIDI into sound with SoundFonts; embedded in many apps.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Real-time software synthesizer for SoundFont 2 files, usable as a library or CLI, with MIDI input and cross-platform support.",
+      "best_for": "Playing MIDI with SoundFont instruments in apps, games or on the command line.",
+      "not_for": "Sample-based SoundFont synthesis only; not a general synth design environment.",
+      "keywords": [
+        "fluidsynth",
+        "soundfont",
+        "midi",
+        "synthesizer",
+        "sf2",
+        "audio library",
+        "c"
+      ]
     },
     {
       "id": "goldfire/howler.js",
@@ -132,7 +196,19 @@
       "stable_reason": "Mature, feature-complete Web Audio/HTML5 playback wrapper; API stable for years and widely depended on",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "JavaScript audio library defaulting to Web Audio API with HTML5 Audio fallback, handling cross-browser quirks, sprites, grouping and caching.",
+      "best_for": "Games and websites needing simple reliable audio playback.",
+      "not_for": "Playback-focused; Tone.js is better for synthesis and sequencing, and the repo is lightly maintained.",
+      "keywords": [
+        "howler",
+        "web audio",
+        "audio playback",
+        "sound sprites",
+        "javascript",
+        "html5 audio",
+        "games"
+      ]
     },
     {
       "id": "juce-framework/JUCE",
@@ -154,7 +230,20 @@
       "why": "Industry standard for audio plugin development; AGPLv3 or commercial license.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "C++ framework for desktop and mobile apps and audio plug-ins (VST, VST3, AU, AAX, LV2), with CMake and Projucer project generation.",
+      "best_for": "Building commercial audio plugins and audio applications in C++.",
+      "not_for": "Dual-licensed; paid or restricted terms for closed-source commercial use; heavy for non-audio apps.",
+      "keywords": [
+        "juce",
+        "c++",
+        "vst",
+        "audio plugin",
+        "au",
+        "aax",
+        "audio app",
+        "gui"
+      ]
     },
     {
       "id": "kfrlib/kfr",
@@ -176,7 +265,20 @@
       "why": "SIMD-optimized DSP framework with fast FFT; GPL or commercial license.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "C++ DSP framework with high-performance FFT, filters, convolution and sample-rate conversion. Dual-licensed GPLv2+ or commercial.",
+      "best_for": "Performance-critical C++ DSP code.",
+      "not_for": "GPLv2+ unless you buy a commercial license; C++ only.",
+      "keywords": [
+        "kfr",
+        "c++",
+        "dsp",
+        "fft",
+        "filters",
+        "resampling",
+        "simd",
+        "signal processing"
+      ]
     },
     {
       "id": "librosa/librosa",
@@ -198,7 +300,20 @@
       "why": "The standard Python library for music information retrieval and audio features.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Python library for audio and music analysis providing spectrograms, beat tracking, pitch, features and loading utilities as building blocks for MIR.",
+      "best_for": "Audio feature extraction and ML preprocessing in Python.",
+      "not_for": "Analysis-only and offline; not for real-time audio or plugins.",
+      "keywords": [
+        "librosa",
+        "python",
+        "spectrogram",
+        "mfcc",
+        "beat tracking",
+        "audio features",
+        "mir",
+        "music analysis"
+      ]
     },
     {
       "id": "libsndfile/libsndfile",
@@ -219,7 +334,20 @@
       "why": "Foundational audio file I/O used by Audacity, python-soundfile and more.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "C library for reading and writing sampled audio files such as WAV, FLAC and Ogg.",
+      "best_for": "Reading/writing audio file formats from C/C++ programs.",
+      "not_for": "File I/O only: no playback, DSP or MP3 beyond what formats it supports.",
+      "keywords": [
+        "libsndfile",
+        "wav",
+        "flac",
+        "ogg",
+        "audio file",
+        "c library",
+        "audio io",
+        "sample rate"
+      ]
     },
     {
       "id": "mackron/miniaudio",
@@ -246,7 +374,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Single-file C library for audio playback, capture, decoding and mixing with no dependencies and broad platform support.",
+      "best_for": "Embedding cross-platform audio I/O in games or apps with minimal setup.",
+      "not_for": "Low-level engine; no high-level music or synth features.",
+      "keywords": [
+        "miniaudio",
+        "c",
+        "audio playback",
+        "audio capture",
+        "decoding",
+        "single header",
+        "mixing",
+        "cross-platform"
+      ]
     },
     {
       "id": "cuthbertLab/music21",
@@ -268,7 +409,20 @@
       "why": "The standard for computational musicology and symbolic music generation.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python toolkit for computational musicology: parse, analyze, create and convert symbolic music such as scores, MIDI and MusicXML.",
+      "best_for": "Symbolic music analysis, corpus studies and score generation.",
+      "not_for": "Works on notation, not audio signals; can be slow on large corpora.",
+      "keywords": [
+        "music21",
+        "musicxml",
+        "midi",
+        "music theory",
+        "score",
+        "python",
+        "symbolic music",
+        "musicology"
+      ]
     },
     {
       "id": "spotify/pedalboard",
@@ -290,7 +444,20 @@
       "why": "Spotify fast JUCE-based library; reads/writes audio and runs plugins from Python (GPL-3.0).",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python library for audio file I/O and effects, with built-in effects and support for loading VST3 and Audio Unit plugins, built by Spotify.",
+      "best_for": "Applying studio effects and plugins in Python pipelines and ML data augmentation.",
+      "not_for": "Not a real-time DAW; plugin hosting depends on platform.",
+      "keywords": [
+        "pedalboard",
+        "python",
+        "audio effects",
+        "vst3",
+        "audio unit",
+        "reverb",
+        "audio processing",
+        "spotify"
+      ]
     },
     {
       "id": "jiaaro/pydub",
@@ -312,7 +479,20 @@
       "stable_reason": "Small, finished ffmpeg-backed audio manipulation API; behaviour stable for years",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python library with a simple API to slice, concatenate, convert, and apply basic effects to audio, using ffmpeg for most formats.",
+      "best_for": "Quick scripts for editing and converting audio files.",
+      "not_for": "Basic operations only; not for heavy DSP or real-time use, and needs ffmpeg for non-WAV.",
+      "keywords": [
+        "pydub",
+        "python",
+        "audio editing",
+        "mp3",
+        "convert",
+        "slice",
+        "concatenate",
+        "ffmpeg"
+      ]
     },
     {
       "id": "cycfi/q",
@@ -334,7 +514,20 @@
       "why": "Clean C++ DSP building blocks including pitch detection, MIT licensed.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Modern C++ audio DSP library emphasizing simple, functional-style design, efficient enough for microcontrollers.",
+      "best_for": "Writing audio effects and synths in modern C++, including embedded.",
+      "not_for": "C++ only and smaller ecosystem than JUCE or Faust.",
+      "keywords": [
+        "c++",
+        "dsp",
+        "audio",
+        "q library",
+        "synth",
+        "embedded",
+        "pitch detection",
+        "effects"
+      ]
     },
     {
       "id": "sonic-pi-net/sonic-pi",
@@ -358,7 +551,19 @@
       "why": "The most popular music live-coding environment, used widely in education and performance.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Live-coding music environment with a Ruby-based language and SuperCollider synths, for creating and performing music through code.",
+      "best_for": "Learning programming through music and live-coding performance.",
+      "not_for": "A standalone app, not an embeddable library.",
+      "keywords": [
+        "sonic pi",
+        "live coding",
+        "ruby",
+        "supercollider",
+        "music programming",
+        "education",
+        "synth"
+      ]
     },
     {
       "id": "speechbrain/speechbrain",
@@ -379,7 +584,19 @@
       "use_for": "PyTorch toolkit for speech recognition, enhancement and speaker tasks",
       "why": "All-in-one speech toolkit with pretrained recipes for ASR, separation, diarization and enhancement.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "PyTorch toolkit for speech and conversational AI: ASR, speech enhancement, speaker recognition, TTS and more, with recipes and pretrained models.",
+      "best_for": "Training or fine-tuning speech models in PyTorch.",
+      "not_for": "Research-oriented and PyTorch-only.",
+      "keywords": [
+        "speechbrain",
+        "speech recognition",
+        "asr",
+        "speaker recognition",
+        "pytorch",
+        "speech enhancement",
+        "tts"
+      ]
     },
     {
       "id": "deezer/spleeter",
@@ -402,7 +619,18 @@
       "why": "Deezer pretrained separation models, fast and simple to use from CLI or Python.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Deezer's TensorFlow library with pretrained models to separate music into stems such as vocals, drums and bass.",
+      "best_for": "Quick vocal and instrument stem separation.",
+      "not_for": "Older TensorFlow-based project; newer models often outperform it.",
+      "keywords": [
+        "spleeter",
+        "stem separation",
+        "vocal remover",
+        "tensorflow",
+        "music source separation",
+        "karaoke"
+      ]
     },
     {
       "id": "supercollider/supercollider",
@@ -423,7 +651,19 @@
       "why": "The classic sound-synthesis engine that TidalCycles, Sonic Pi and others build on.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Platform for audio synthesis and algorithmic composition with scsynth real-time server, supernova multicore server and sclang language.",
+      "best_for": "Experimental synthesis, generative music and sound art.",
+      "not_for": "Steep learning curve; custom client/server architecture and language.",
+      "keywords": [
+        "supercollider",
+        "synthesis",
+        "algorithmic composition",
+        "scsynth",
+        "sclang",
+        "live coding",
+        "audio server"
+      ]
     },
     {
       "id": "Tonejs/Tone.js",
@@ -446,7 +686,20 @@
       "npm": "tone",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Web Audio framework for interactive music in the browser, with a transport for scheduling, prebuilt synths and effects, and audio building blocks.",
+      "best_for": "Browser-based synths, sequencers and interactive music.",
+      "not_for": "Web Audio only, so browser or JS runtimes; not for simple sound-effect playback.",
+      "keywords": [
+        "tone.js",
+        "web audio",
+        "synth",
+        "sequencer",
+        "browser music",
+        "transport",
+        "effects",
+        "javascript"
+      ]
     },
     {
       "id": "pytorch/audio",
@@ -468,7 +721,20 @@
       "why": "Official PyTorch audio library with GPU-accelerated transforms and I/O.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "PyTorch library for audio I/O, transforms, datasets, augmentation and models; per its README, TorchAudio is now maintained to work with all newer torch releases.",
+      "best_for": "Audio preprocessing and model pipelines in PyTorch.",
+      "not_for": "PyTorch-bound, and the README notes some features were removed or transitioned out.",
+      "keywords": [
+        "torchaudio",
+        "pytorch",
+        "audio transforms",
+        "spectrogram",
+        "augmentation",
+        "datasets",
+        "speech",
+        "ml"
+      ]
     },
     {
       "id": "katspaugh/wavesurfer.js",
@@ -491,7 +757,20 @@
       "npm": "wavesurfer.js",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Interactive audio waveform rendering and playback library for web apps, with regions, timeline and other plugins.",
+      "best_for": "Waveform display and audio editing UIs in the browser.",
+      "not_for": "Visualization and playback only; not an audio editor or synth.",
+      "keywords": [
+        "wavesurfer",
+        "waveform",
+        "audio player",
+        "web audio",
+        "regions",
+        "timeline",
+        "javascript",
+        "visualization"
+      ]
     }
   ]
 }

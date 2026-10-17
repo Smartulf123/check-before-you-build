@@ -23,7 +23,20 @@
       "npm": "decap-cms-app",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Decap CMS (formerly Netlify CMS) is a Git-based CMS for static site generators. It is a single-page app added at /admin that gives authenticated users a UI to create and edit content stored in a Git repository, with the content model defined in a YAML config.",
+      "best_for": "Static sites (Hugo, Jekyll, Eleventy, etc.) where non-developers need an editing UI and content should stay in the Git repo.",
+      "not_for": "Dynamic sites that need a database-backed CMS or API-first headless content delivery; content lives in Git and changes go through the repository.",
+      "keywords": [
+        "cms",
+        "static site generator",
+        "git",
+        "headless",
+        "netlify cms",
+        "content editing",
+        "yaml",
+        "jamstack"
+      ]
     },
     {
       "id": "django-cms/django-cms",
@@ -48,7 +61,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "django CMS is an open-source content management system built on Django. It offers internationalisation and multi-site support, front-end inline editing on rendered pages, a placeholder and plugin system for reusable content components, multiple rich-text editors and content versioning. It is backed by the non-profit django CMS Association.",
+      "best_for": "Python/Django teams building multilingual or multi-site content websites with inline editing and editorial workflows.",
+      "not_for": "Non-Django stacks or static sites; it requires running a Django application and database.",
+      "keywords": [
+        "django",
+        "python",
+        "cms",
+        "content management",
+        "inline editing",
+        "i18n",
+        "multi-site",
+        "plugins"
+      ]
     },
     {
       "id": "codex-team/editor.js",
@@ -70,7 +96,20 @@
       "npm": "@editorjs/editorjs",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Editor.js is an open-source block-style text editor for the web where each block type (text, images, lists, quotes, etc.) is provided by a separate plugin. It outputs clean JSON instead of HTML, so content can be sanitized and rendered on web, mobile and other targets.",
+      "best_for": "Apps that need a block-based rich text editor and want structured JSON content to store and render on multiple platforms.",
+      "not_for": "A full CMS; it is only the editor component. Collaborative editing, undo/redo manager and block drag-and-drop are still on the roadmap.",
+      "keywords": [
+        "editor",
+        "block editor",
+        "rich text",
+        "json",
+        "wysiwyg",
+        "plugins",
+        "javascript",
+        "content"
+      ]
     },
     {
       "id": "emdash-cms/emdash",
@@ -91,7 +130,20 @@
       "use_for": "Full-stack TypeScript CMS built on Astro",
       "why": "Modern Astro-based CMS positioned as a WordPress successor; MIT, TypeScript end to end, fast-growing.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "EmDash is a full-stack TypeScript CMS delivered as an Astro integration, providing an admin panel, REST API, authentication, media library and plugin system. Plugins run in sandboxed Worker isolates with declared capability manifests, rich text is stored as Portable Text, and content types are defined in the database with generated TypeScript types.",
+      "best_for": "Astro sites wanting a WordPress-like CMS with admin UI and plugins on serverless, type-safe foundations, e.g. Cloudflare D1.",
+      "not_for": "Non-Astro stacks or teams needing the WordPress plugin and theme ecosystem; it is a rebuild, not a WordPress-compatible drop-in. Plugin sandboxing relies on Worker isolates.",
+      "keywords": [
+        "cms",
+        "astro",
+        "typescript",
+        "wordpress alternative",
+        "plugins",
+        "sandbox",
+        "serverless",
+        "portable text"
+      ]
     },
     {
       "id": "TryGhost/Ghost",
@@ -114,7 +166,20 @@
       "why": "Leading open-source publishing platform with a Content API for headless use and native email/subscription features.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Ghost is an open-source publishing platform that can be self-hosted or run on the official Ghost(Pro) managed service, which includes CDN, backups, security and maintenance. Ghost(Pro) revenue funds the Ghost Foundation, and support comes from the Ghost forum.",
+      "best_for": "Publishers, blogs and newsletters wanting an open-source publishing platform, either self-hosted or fully managed via Ghost(Pro).",
+      "not_for": "Embedding a CMS inside an existing app or static-site workflow. The README pushes Ghost(Pro) as the easy production path; 24/7 email support is only for paying Ghost(Pro) customers.",
+      "keywords": [
+        "ghost",
+        "publishing",
+        "blog",
+        "cms",
+        "newsletter",
+        "self-hosted",
+        "managed hosting",
+        "open source"
+      ]
     },
     {
       "id": "getgrav/grav",
@@ -137,7 +202,20 @@
       "why": "Markdown files instead of a database, with an admin plugin and a large theme/plugin ecosystem.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Grav is a file-based (flat-file) web platform and CMS written in PHP that needs no database or installer: you extract the ZIP and it runs. Content is written in Markdown, configuration in YAML, and templates in Twig, with a built-in package manager for installing and updating plugins, themes and Grav itself.",
+      "best_for": "Small to mid-size websites, blogs and docs where you want a self-hosted PHP CMS without a database, with content kept as Markdown files and Twig themes.",
+      "not_for": "Projects needing a headless API-first CMS, a JavaScript/Node stack, or large relational content models that benefit from a database backend.",
+      "keywords": [
+        "flat-file cms",
+        "php",
+        "markdown",
+        "twig",
+        "yaml",
+        "no database",
+        "plugins",
+        "themes"
+      ]
     },
     {
       "id": "halo-dev/halo",
@@ -158,7 +236,20 @@
       "use_for": "Self-hosted CMS and website builder for blogs, docs and company sites",
       "why": "Most popular Java CMS (40k stars) with themes, plugin system and REST APIs; GPL-3.0.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Halo is an open-source website builder/CMS for personal blogs, knowledge bases, company sites and online shops. It runs as a server application (quick trial via Docker) with an admin console and a marketplace of themes and plugins.",
+      "best_for": "Self-hosting a blog or company site with a themeable admin UI, especially for Chinese-language users; the community edition is free under GPLv3 with 100+ free themes and plugins.",
+      "not_for": "Teams wanting English-first docs or a headless library to embed in their own app; mobile app, AI site builder, paid plugin market and shop features are in paid Pro/Commerce editions. GPLv3.",
+      "keywords": [
+        "blog",
+        "cms",
+        "website builder",
+        "docker",
+        "themes",
+        "plugins",
+        "gplv3",
+        "self-hosted"
+      ]
     },
     {
       "id": "Thinkmill/keystatic",
@@ -181,7 +272,21 @@
       "npm": "@keystatic/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Keystatic is a CMS with a TypeScript API that stores content as Markdown, YAML or JSON files instead of a database. It connects directly to GitHub and is designed for front-end frameworks such as Next.js, Remix and Astro.",
+      "best_for": "Next.js, Remix or Astro sites that want a Git-backed editing UI over Markdown/JSON content files, with no database to run.",
+      "not_for": "Production-critical setups wanting a stable, mature product (the README calls it experimental), or apps needing a database-backed CMS or non-JS frameworks.",
+      "keywords": [
+        "git-based cms",
+        "markdown",
+        "yaml",
+        "json",
+        "typescript",
+        "next.js",
+        "astro",
+        "remix",
+        "no database"
+      ]
     },
     {
       "id": "keystonejs/keystone",
@@ -204,7 +309,20 @@
       "npm": "@keystone-6/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Keystone 6 is a Node.js CMS and app framework: you describe your schema in code and it generates a GraphQL API and an admin Management UI for your content and data. It is published as @keystone-6/* npm packages and scaffolded with the create-keystone-app CLI.",
+      "best_for": "Building a custom back-end or headless CMS in Node/TypeScript where a schema-driven GraphQL API and auto-generated admin UI save boilerplate.",
+      "not_for": "Non-Node stacks or teams wanting a no-code hosted CMS; targets Node LTS versions only. Keystone 5 is a separate repo in maintenance mode.",
+      "keywords": [
+        "headless cms",
+        "graphql",
+        "node.js",
+        "admin ui",
+        "schema",
+        "app framework",
+        "typescript",
+        "keystone 6"
+      ]
     },
     {
       "id": "facebook/lexical",
@@ -226,7 +344,20 @@
       "npm": "lexical",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Lexical is an extensible text editor framework with a framework-agnostic core and official React bindings. It uses an immutable state model with undo/redo, a plugin architecture, Yjs-based collaborative editing, and JSON/Markdown/HTML import and export, supporting tables, lists, code blocks, images and custom nodes.",
+      "best_for": "Embedding a reliable, accessible rich text editor in a web app (especially React) where you need custom nodes, plugins or real-time collaboration.",
+      "not_for": "Anyone wanting a ready-made full CMS or a drop-in editor with no setup; it is a framework you assemble with plugins. Older browsers below Firefox 115/Safari 15/Chrome 86 aren't supported.",
+      "keywords": [
+        "rich text editor",
+        "text editor framework",
+        "react",
+        "typescript",
+        "collaborative editing",
+        "yjs",
+        "accessibility",
+        "markdown"
+      ]
     },
     {
       "id": "mdx-editor/editor",
@@ -249,7 +380,20 @@
       "npm": "@mdxeditor/editor",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "MDXEditor is an open-source React component for editing Markdown documents in a WYSIWYG way, similar to Google Docs or Notion. It supports core Markdown plus extensions such as tables, images and code blocks, and lets users edit JSX components with a built-in or custom editor, configured via plugins.",
+      "best_for": "React apps that need a WYSIWYG Markdown or MDX editing component for end users, including editing embedded JSX components.",
+      "not_for": "Non-React projects, or cases needing a full CMS or a general rich text (non-Markdown) document model.",
+      "keywords": [
+        "markdown editor",
+        "mdx",
+        "react component",
+        "wysiwyg",
+        "jsx",
+        "tables",
+        "code blocks",
+        "plugins"
+      ]
     },
     {
       "id": "Milkdown/milkdown",
@@ -272,7 +416,19 @@
       "npm": "@milkdown/kit",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Milkdown is a plugin-driven WYSIWYG Markdown editor inspired by Typora. It is built on top of ProseMirror and remark and written in TypeScript.",
+      "best_for": "Embedding a Typora-style WYSIWYG Markdown editor in a web app where you want to compose features from plugins.",
+      "not_for": "Projects needing a full CMS, non-Markdown rich text documents, or a zero-config editor; you assemble it from plugins.",
+      "keywords": [
+        "markdown editor",
+        "wysiwyg",
+        "prosemirror",
+        "remark",
+        "typora",
+        "plugins",
+        "typescript"
+      ]
     },
     {
       "id": "nuxt/content",
@@ -295,7 +451,20 @@
       "npm": "@nuxt/content",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Nuxt Content is a Nuxt module that reads the content/ directory, parses Markdown, YAML, CSV and JSON files and exposes them as a typed data layer with a query builder on top of SQLite. It supports Vue components in Markdown via MDC syntax, navigation generation, Shiki code highlighting, and serverless/edge deployment.",
+      "best_for": "Nuxt sites (blogs, docs, marketing) that keep content as Markdown/YAML/JSON files in the repo and want typed queries and Vue components inside Markdown.",
+      "not_for": "Non-Nuxt or non-Vue projects, or teams that need a standalone admin CMS with a database and user roles (visual editing is via the separate Nuxt Studio).",
+      "keywords": [
+        "nuxt",
+        "vue",
+        "markdown",
+        "mdc",
+        "content",
+        "sqlite",
+        "file-based",
+        "static site"
+      ]
     },
     {
       "id": "payloadcms/payload",
@@ -319,7 +488,20 @@
       "npm": "payload",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Payload is an open-source, TypeScript headless CMS and app framework that installs natively inside a Next.js /app folder. It provides a customizable React admin, auth, versions and drafts, localization, a block layout builder, Lexical rich text, granular access control and hooks, and lets you query the database directly in React Server Components.",
+      "best_for": "Next.js projects that want a self-hosted, code-first CMS and back-end living in the same app, with full TypeScript types and an extensible admin.",
+      "not_for": "Non-Next.js or non-JavaScript stacks, or teams that want a hosted no-code SaaS CMS rather than owning the code and database.",
+      "keywords": [
+        "headless cms",
+        "next.js",
+        "typescript",
+        "react",
+        "admin panel",
+        "access control",
+        "app framework",
+        "open source"
+      ]
     },
     {
       "id": "sanity-io/sanity",
@@ -342,7 +524,20 @@
       "npm": "sanity",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "This repo holds Sanity Studio, an open-source real-time CMS single-page app customizable with JavaScript and React. Content is stored in Sanity's hosted real-time data store, Content Lake, and queried with GROQ or GraphQL; the Studio supports custom components, validation and a block editor for structured content.",
+      "best_for": "Teams wanting a highly customizable React editing studio for structured content with real-time collaboration, and who are fine with a hosted backend.",
+      "not_for": "Fully self-hosted or offline setups: content lives in Sanity's hosted Content Lake with a free plan and pay-as-you-go overages, so there is vendor dependency.",
+      "keywords": [
+        "headless cms",
+        "sanity studio",
+        "react",
+        "groq",
+        "graphql",
+        "structured content",
+        "real-time",
+        "content lake"
+      ]
     },
     {
       "id": "strapi/strapi",
@@ -370,7 +565,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Strapi is an open-source, self-hosted headless CMS in JavaScript/TypeScript. You define content types (visually via the Content-Type Builder) and it auto-generates REST and GraphQL APIs, with roles and permissions, media library, i18n, draft and publish, and support for SQLite, PostgreSQL, MySQL and MariaDB.",
+      "best_for": "Building a content API quickly for any frontend or mobile app, with a friendly admin for editors and a self-hosted Node backend you can extend via plugins.",
+      "not_for": "Non-Node stacks or static Git-based content; there are no official Docker images, and some offerings (Cloud hosting, Strapi AI) are commercial add-ons.",
+      "keywords": [
+        "headless cms",
+        "node.js",
+        "typescript",
+        "rest api",
+        "graphql",
+        "self-hosted",
+        "content types",
+        "admin panel"
+      ]
     },
     {
       "id": "sveltia/sveltia-cms",
@@ -393,7 +601,20 @@
       "npm": "@sveltia/cms",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Sveltia CMS is a free, open-source Git-based headless CMS for Jamstack sites, built as a modern rewrite of Netlify CMS / Decap CMS with high compatibility for existing installs. It is a single-page app served from a CDN with i18n support and works with static site generators like Astro, Eleventy and Hugo.",
+      "best_for": "Static sites that store content in a Git repo and want an editor UI, especially projects migrating from Netlify/Decap CMS.",
+      "not_for": "Apps needing a database-backed CMS, a content API server, or dynamic server-side content; it edits files in Git.",
+      "keywords": [
+        "git-based cms",
+        "headless cms",
+        "jamstack",
+        "decap cms",
+        "netlify cms",
+        "static site generator",
+        "i18n",
+        "hugo"
+      ]
     },
     {
       "id": "tinacms/tinacms",
@@ -416,7 +637,20 @@
       "npm": "tinacms",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "TinaCMS is a Git-backed headless CMS for Markdown, MDX, JSON and YAML content. It exposes a GraphQL API with references between documents, works with static and server-rendered pages, and offers an optional live visual preview for editing.",
+      "best_for": "Sites whose content lives in Markdown/MDX files in Git where non-technical editors need live preview editing and developers want a GraphQL query layer.",
+      "not_for": "Projects wanting a database-first CMS independent of Git; some hosting features rely on the TinaCloud service.",
+      "keywords": [
+        "headless cms",
+        "git",
+        "markdown",
+        "mdx",
+        "graphql",
+        "live preview",
+        "visual editing",
+        "tinacloud"
+      ]
     },
     {
       "id": "ueberdosis/tiptap",
@@ -439,7 +673,20 @@
       "npm": "@tiptap/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Tiptap Editor is a headless, framework-agnostic rich text editor built on ProseMirror and extended through extensions. It ships without a UI so you design your own, works with Vue, React or plain JavaScript, and pairs with the open-source Hocuspocus backend for collaboration.",
+      "best_for": "Web apps that need a customizable rich text editor with their own UI, from simple formatting to block editing and real-time collaboration.",
+      "not_for": "Teams wanting a ready-made styled editor with no UI work; some features (Content AI, Tiptap Cloud, advanced extensions) are paid.",
+      "keywords": [
+        "rich text editor",
+        "headless",
+        "prosemirror",
+        "react",
+        "vue",
+        "extensions",
+        "collaboration",
+        "hocuspocus"
+      ]
     },
     {
       "id": "umbraco/Umbraco-CMS",
@@ -461,7 +708,20 @@
       "why": "The most widely used open-source .NET CMS, MIT licensed, with a Delivery API for headless setups.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Umbraco is a free, open-source content management system for .NET. Projects are created from the Umbraco dotnet templates and run with dotnet run on Windows, Linux or macOS, then extended through its extension points and backoffice UI.",
+      "best_for": ".NET/C# teams building content-managed websites who want a mature, extensible open-source CMS with an editor backoffice.",
+      "not_for": "Non-.NET stacks or lightweight static sites; the README advises installing via templates rather than running from this source repo.",
+      "keywords": [
+        "cms",
+        ".net",
+        "c#",
+        "dotnet",
+        "open source",
+        "backoffice",
+        "nuget",
+        "mit"
+      ]
     },
     {
       "id": "Vanessa219/vditor",
@@ -482,7 +742,20 @@
       "why": "Drop-in Markdown editor component with Typora-like instant rendering, math, diagrams and upload hooks; MIT.",
       "npm": "vditor",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Vditor is a browser-side Markdown editor in TypeScript with three modes: WYSIWYG, instant rendering (Typora-like) and split-screen preview. It supports CommonMark and GFM plus math, Mermaid/ECharts/Graphviz diagrams, uploads, themes and localization, and works with plain JavaScript, Vue, React, Angular and Svelte.",
+      "best_for": "Embedding a feature-rich Markdown editor in a web app that needs switchable WYSIWYG/instant-render/preview modes, diagrams and math, especially for Chinese-language content.",
+      "not_for": "Projects needing a general rich text (non-Markdown) document model or a full CMS; README docs are primarily in Chinese.",
+      "keywords": [
+        "markdown editor",
+        "wysiwyg",
+        "typescript",
+        "instant rendering",
+        "split preview",
+        "mermaid",
+        "katex",
+        "gfm"
+      ]
     },
     {
       "id": "wagtail/wagtail",
@@ -504,7 +777,20 @@
       "why": "The leading Python CMS: StreamField flexible content, strong editor UX and a REST/GraphQL API option.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Wagtail is an open-source CMS built on Django and Python, focused on the editor experience and precise front-end control. It offers StreamField for flexible structured content, integrated search via Elasticsearch or PostgreSQL, image handling, multi-site and multi-language support, and a content API for headless sites.",
+      "best_for": "Python/Django teams building content-heavy sites (from small to millions of pages) who want a polished editor UI and full control of templates.",
+      "not_for": "Non-Python stacks, or anyone wanting a no-code site builder; it requires Django and a supported database (PostgreSQL, MySQL, MariaDB, SQLite).",
+      "keywords": [
+        "cms",
+        "django",
+        "python",
+        "streamfield",
+        "headless",
+        "content api",
+        "multi-site",
+        "search"
+      ]
     },
     {
       "id": "WordPress/wordpress-develop",
@@ -526,7 +812,19 @@
       "why": "Official development repo of WordPress core; huge plugin ecosystem and headless use via its REST API",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "This is the WordPress core development repository, used to contribute patches, run PHP, end-to-end and QUnit tests, and work on core files with a local environment and WP-CLI via npm scripts. It is the source of WordPress itself, not a site starter.",
+      "best_for": "Contributing to or testing WordPress core, or studying how WordPress is built and tested.",
+      "not_for": "Simply running a WordPress website or building a theme/plugin; this repo is the core dev tooling and source, not an install package.",
+      "keywords": [
+        "wordpress",
+        "php",
+        "cms",
+        "core development",
+        "wp-cli",
+        "phpunit",
+        "contributing"
+      ]
     }
   ]
 }

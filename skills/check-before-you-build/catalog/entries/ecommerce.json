@@ -22,7 +22,20 @@
       "why": "Add full commerce (catalog, basket, checkout, admin) to any Laravel app; scales to millions of products",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Laravel e-commerce package that installs into an existing Laravel application. Provides multi-vendor, multi-channel and multi-warehouse commerce, subscriptions, vouchers, block pricing, an admin backend, a JSON REST API and a GraphQL admin API, with a modular, extensible structure.",
+      "best_for": "Adding a full-featured shop or marketplace, including multi-tenant SaaS commerce, to a Laravel application.",
+      "not_for": "Requires PHP/Laravel; heavy feature set may be overkill for a simple storefront.",
+      "keywords": [
+        "laravel",
+        "ecommerce",
+        "php",
+        "multi vendor",
+        "marketplace",
+        "rest api",
+        "graphql",
+        "subscriptions"
+      ]
     },
     {
       "id": "bagisto/bagisto",
@@ -45,7 +58,20 @@
       "why": "Popular Laravel commerce platform with marketplace and headless options; MIT.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source Laravel and Vue.js e-commerce and multi-vendor marketplace platform. Can be installed with or without Composer or run as a single Docker image with migrations, seed data and search indexes baked in, with images for Nginx/Apache and MySQL, MariaDB or PostgreSQL. Offers a B2B extension for company purchasing and quotes.",
+      "best_for": "Launching a single-vendor store, B2B shop or multi-vendor marketplace on a Laravel/PHP stack with a ready admin and storefront.",
+      "not_for": "Laravel/PHP and Vue stack lock-in; managed Bagisto Cloud Hosting is a commercial offering.",
+      "keywords": [
+        "laravel",
+        "ecommerce",
+        "vue",
+        "marketplace",
+        "multi vendor",
+        "b2b",
+        "docker",
+        "php"
+      ]
     },
     {
       "id": "evershopcommerce/evershop",
@@ -68,7 +94,20 @@
       "npm": "@evershop/evershop",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "TypeScript-first e-commerce platform built with GraphQL and React. Offers essential commerce features in a modular, customizable architecture, with documented extension and theme development.",
+      "best_for": "Node.js/TypeScript developers wanting a modular, React-based store they can extend with custom extensions and themes.",
+      "not_for": "Covers essential commerce features rather than enterprise depth; Node.js/React stack. A hosted EverShop Cloud is being built separately.",
+      "keywords": [
+        "ecommerce",
+        "typescript",
+        "graphql",
+        "react",
+        "nodejs",
+        "storefront",
+        "extensions",
+        "themes"
+      ]
     },
     {
       "id": "Shopify/hydrogen",
@@ -92,7 +131,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Shopify's toolkit for building headless storefronts in an existing JavaScript framework. A framework-independent core provides a typed Storefront API client, request handlers, cart, products, search, money formatting, analytics, Shop Pay and customer accounts, with React and Vue bindings and a Vite plugin.",
+      "best_for": "Building a custom headless storefront on top of a Shopify store using React or Vue.",
+      "not_for": "Requires Shopify as the commerce backend; not a standalone e-commerce platform. Hydrogen 2026-04 and earlier live on a separate branch.",
+      "keywords": [
+        "shopify",
+        "headless commerce",
+        "storefront",
+        "storefront api",
+        "react",
+        "vue",
+        "cart",
+        "vite"
+      ]
     },
     {
       "id": "lunarphp/lunar",
@@ -114,7 +166,19 @@
       "why": "Laravel package approach rather than a full platform; MIT.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Set of Laravel packages providing Shopify-like e-commerce functionality inside Laravel. Includes a core package with models, actions and utilities and a Filament-based admin panel for products, orders and staff, leaving the storefront for you to build.",
+      "best_for": "Laravel developers who want a commerce backend and admin but full freedom to build their own storefront.",
+      "not_for": "Laravel/PHP only; no ready-made storefront is provided.",
+      "keywords": [
+        "laravel",
+        "ecommerce",
+        "php",
+        "filament",
+        "admin panel",
+        "headless",
+        "monorepo"
+      ]
     },
     {
       "id": "magento/magento2",
@@ -136,7 +200,18 @@
       "why": "Long-established enterprise-grade platform with a large extension ecosystem; OSL-3.0.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Magento Open Source delivers basic e-commerce capabilities for building an online store from the ground up. It is maintained by Adobe with community maintainers and licensed under OSL 3.0.",
+      "best_for": "Building a PHP online store on the established Magento platform with its ecosystem.",
+      "not_for": "Open Source edition covers basic capabilities; Adobe recommends paid Adobe Commerce for full features, cloud hosting and AI merchandising. OSL 3.0 license.",
+      "keywords": [
+        "magento",
+        "ecommerce",
+        "php",
+        "online store",
+        "adobe commerce",
+        "osl"
+      ]
     },
     {
       "id": "medusajs/medusa",
@@ -160,7 +235,20 @@
       "npm": "@medusajs/medusa",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Commerce platform with a built-in customization framework and modules for building custom commerce applications without reimplementing core commerce logic. Core modules are open source on npm; can run locally or on the managed Medusa Cloud.",
+      "best_for": "Custom B2B or DTC stores, marketplaces, distributor platforms or PoS systems needing commerce primitives in a Node.js stack.",
+      "not_for": "Some Enterprise Edition features are separate; managed Medusa Cloud is a hosted service. Requires building your own frontend/customizations.",
+      "keywords": [
+        "ecommerce",
+        "commerce platform",
+        "headless",
+        "nodejs",
+        "b2b",
+        "marketplace",
+        "modules",
+        "npm"
+      ]
     },
     {
       "id": "vercel/commerce",
@@ -182,7 +270,19 @@
       "why": "Official Vercel reference storefront using App Router and server components; easy to adapt to other backends",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Server-rendered Next.js App Router e-commerce template using React Server Components, Server Actions, Suspense and useOptimistic. The maintained version targets Shopify; other providers fork it and replace the lib/shopify file.",
+      "best_for": "Starting a fast Next.js storefront on top of Shopify, deployable on Vercel.",
+      "not_for": "Vercel only maintains the Shopify version; it is a frontend template, not a commerce backend. Requires environment variables for a commerce provider.",
+      "keywords": [
+        "nextjs",
+        "ecommerce",
+        "shopify",
+        "template",
+        "react server components",
+        "storefront",
+        "vercel"
+      ]
     },
     {
       "id": "opencart/opencart",
@@ -207,7 +307,18 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Free, open-source PHP e-commerce platform for online merchants. The repository runs locally via Docker and make commands (init, build, up), serving the store at localhost.",
+      "best_for": "Small to mid-size merchants wanting a free, self-hosted PHP online store.",
+      "not_for": "PHP stack; local dev setup expects Docker, Docker Compose v2 and make, with WSL 2 recommended on Windows.",
+      "keywords": [
+        "opencart",
+        "ecommerce",
+        "php",
+        "online store",
+        "docker",
+        "shopping cart"
+      ]
     },
     {
       "id": "PrestaShop/PrestaShop",
@@ -235,7 +346,19 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source PHP e-commerce web application with customizable storefront and back office, major payment service support, translations and localization, and responsive design. The repository is the development source; stable releases (currently 9.0) are downloaded separately. Docker compose is provided for local setup.",
+      "best_for": "Merchants or agencies wanting a full-featured, self-hosted PHP shopping cart with broad localization.",
+      "not_for": "The GitHub repo is intended for development and preview only, not production downloads; PHP stack.",
+      "keywords": [
+        "prestashop",
+        "ecommerce",
+        "php",
+        "shopping cart",
+        "back office",
+        "docker",
+        "localization"
+      ]
     },
     {
       "id": "saleor/saleor",
@@ -257,7 +380,19 @@
       "why": "GraphQL-first, composable commerce platform; BSD-3.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "GraphQL-native, API-only headless commerce platform. Extended through webhooks, apps, metadata and API extensions rather than plugins, with native multichannel control of pricing, currencies and stock; the dashboard is a separate project.",
+      "best_for": "Teams needing scalable composable commerce with a GraphQL API, frequent deploys and multi-channel, multi-currency requirements.",
+      "not_for": "README notes API-only, service-oriented design can feel more complex for a single developer or small low-traffic business. No built-in storefront.",
+      "keywords": [
+        "graphql",
+        "headless commerce",
+        "api-only",
+        "composable commerce",
+        "multichannel",
+        "webhooks",
+        "ecommerce"
+      ]
     },
     {
       "id": "shopware/shopware",
@@ -279,7 +414,20 @@
       "why": "Major European commerce platform; MIT core.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Shopware 6 is an open headless commerce platform built on Symfony 7 and Vue.js 3. It works as a ready-to-use shopping cart or as an e-commerce framework dependency, is API-first, and is extensible through Symfony bundle plugins or lightweight apps.",
+      "best_for": "Merchants and agencies wanting a Symfony-based, API-first shop with a large extension store.",
+      "not_for": "PHP/Symfony and Vue stack; check the license and commercial editions for advanced features.",
+      "keywords": [
+        "shopware",
+        "ecommerce",
+        "symfony",
+        "vue",
+        "headless",
+        "api-first",
+        "plugins",
+        "php"
+      ]
     },
     {
       "id": "solidusio/solidus",
@@ -300,7 +448,19 @@
       "why": "Community-driven Spree fork focused on stability and customization.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source e-commerce solution built with Ruby on Rails and forked from Spree. Installed as a set of gems: a REST API, an admin backend, core models and mailers, and sample data, with a separate storefront.",
+      "best_for": "Ruby on Rails teams wanting full control over a custom online store.",
+      "not_for": "Ruby on Rails only; requires ImageMagick for Paperclip.",
+      "keywords": [
+        "solidus",
+        "ruby on rails",
+        "ecommerce",
+        "gems",
+        "spree fork",
+        "rest api",
+        "admin"
+      ]
     },
     {
       "id": "spree/spree",
@@ -323,7 +483,20 @@
       "why": "Mature Rails commerce platform; BSD-3.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source commerce platform with a REST API, TypeScript SDKs, a React admin dashboard and a Next.js storefront, BSD 3-Clause licensed. Supports multi-vendor marketplaces with seller panel and payouts, B2B and headless DTC; set up via npx create-spree-app.",
+      "best_for": "Building marketplaces, B2B/wholesale or headless DTC stores with an API-first backend and a ready Next.js storefront.",
+      "not_for": "Local setup needs Node.js 24+ and Docker; a full platform that may be heavy for a simple shop.",
+      "keywords": [
+        "spree",
+        "ecommerce",
+        "marketplace",
+        "b2b",
+        "rest api",
+        "nextjs",
+        "typescript sdk",
+        "headless"
+      ]
     },
     {
       "id": "Sylius/Sylius",
@@ -345,7 +518,19 @@
       "why": "Developer-focused Symfony commerce framework; MIT.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source e-commerce framework on top of Symfony, developed with full-stack BDD using PHPUnit and Behat. Provides a REST API for integrations; installed with Composer.",
+      "best_for": "Symfony developers building custom e-commerce applications tailored to specific business requirements.",
+      "not_for": "Symfony/PHP stack; features like OnePageCheckout, B2B suite and multi-store are in paid Sylius Plus.",
+      "keywords": [
+        "sylius",
+        "symfony",
+        "ecommerce",
+        "php",
+        "rest api",
+        "bdd",
+        "framework"
+      ]
     },
     {
       "id": "vendurehq/vendure",
@@ -369,7 +554,20 @@
       "npm": "@vendure/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Headless commerce backend on Node.js, NestJS and GraphQL. Core covers catalog, orders, stock, promotions, payments and multi-channel; any service or entity can be extended or overridden via plugins. Scaffold with npx @vendure/create.",
+      "best_for": "Complex B2B, marketplace or omnichannel commerce in a TypeScript stack needing deep customization through a GraphQL API.",
+      "not_for": "Backend only; needs Node.js 20.19+/22.12+ and a SQL database, and you supply the frontend.",
+      "keywords": [
+        "vendure",
+        "headless commerce",
+        "graphql",
+        "typescript",
+        "nestjs",
+        "b2b",
+        "plugins",
+        "nodejs"
+      ]
     },
     {
       "id": "woocommerce/woocommerce",
@@ -391,7 +589,19 @@
       "why": "The most deployed open-source e-commerce plugin; GPLv2+ (verified).",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Monorepo with the core WooCommerce plugin plus packages and tools used to develop WooCommerce and its extensions. Built with PNPM, Node.js and PHP 7.4+.",
+      "best_for": "Contributing to WooCommerce or building WooCommerce extensions; WooCommerce itself adds a store to WordPress.",
+      "not_for": "Tied to WordPress and PHP; this repo is the development monorepo rather than a standalone app.",
+      "keywords": [
+        "woocommerce",
+        "wordpress",
+        "ecommerce",
+        "plugin",
+        "php",
+        "monorepo",
+        "pnpm"
+      ]
     }
   ]
 }

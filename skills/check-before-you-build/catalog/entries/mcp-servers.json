@@ -22,7 +22,20 @@
       "category": "mcp-servers",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Apify MCP server (mcp.apify.com) giving AI agents access to thousands of Apify Store scrapers and crawlers, with OAuth for clients like Claude.ai.",
+      "best_for": "Agents needing web data from social media, maps, search and e-commerce.",
+      "not_for": "Depends on the Apify platform and its pricing; third-party actors vary in quality.",
+      "keywords": [
+        "apify",
+        "mcp server",
+        "web scraping",
+        "crawlers",
+        "social media data",
+        "google maps",
+        "e-commerce data",
+        "ai agents"
+      ]
     },
     {
       "id": "awslabs/mcp",
@@ -44,7 +57,19 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Suite of official MCP servers for AWS services, documentation, CDK and cost analysis. Notes that the Agent Toolkit for AWS is the successor.",
+      "best_for": "Agents working with AWS services and docs.",
+      "not_for": "README points to a successor toolkit, so check which suite is current; needs AWS credentials.",
+      "keywords": [
+        "aws mcp",
+        "mcp servers",
+        "cdk",
+        "aws docs",
+        "cost analysis",
+        "awslabs",
+        "cloud agents"
+      ]
     },
     {
       "id": "ahujasid/mcp-for-blender",
@@ -65,7 +90,19 @@
       "why": "The most popular creative-tool MCP server",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Third-party MCP integration that connects Blender to LLMs for prompt-assisted 3D modeling and scene manipulation. Formerly blender-mcp; PyPI package is mcp-for-blender.",
+      "best_for": "Letting Claude or other agents drive Blender scenes.",
+      "not_for": "Not made by Blender; needs a running Blender with the addon.",
+      "keywords": [
+        "blender mcp",
+        "3d modeling",
+        "llm blender",
+        "scene creation",
+        "mcp-for-blender",
+        "ai 3d",
+        "python bpy"
+      ]
     },
     {
       "id": "ChromeDevTools/chrome-devtools-mcp",
@@ -89,7 +126,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "MCP server letting coding agents control and inspect a live Chrome with DevTools capabilities such as DOM, console, network and performance traces.",
+      "best_for": "Browser debugging, performance analysis and automation by agents.",
+      "not_for": "Chrome only and needs a running browser; exposes live browser data.",
+      "keywords": [
+        "chrome devtools",
+        "mcp server",
+        "browser debugging",
+        "performance traces",
+        "console",
+        "network",
+        "puppeteer",
+        "coding agents"
+      ]
     },
     {
       "id": "zilliztech/claude-context",
@@ -111,7 +161,20 @@
       "why": "Zilliz's MCP server that indexes code into a vector DB (Milvus/Zilliz) for hybrid search, cutting tokens for agents.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "MCP server that indexes a codebase into a vector database (Milvus/Zilliz) for hybrid semantic code search, reducing tokens agents spend reading files.",
+      "best_for": "Agents searching large codebases semantically.",
+      "not_for": "Requires a vector DB and embeddings provider (Zilliz Cloud or Milvus), adding setup and cost.",
+      "keywords": [
+        "claude-context",
+        "semantic code search",
+        "mcp server",
+        "vector database",
+        "milvus",
+        "zilliz",
+        "codebase indexing",
+        "embeddings"
+      ]
     },
     {
       "id": "cloudflare/mcp-server-cloudflare",
@@ -133,7 +196,19 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official remote MCP servers from Cloudflare covering Workers, observability, DNS, docs and browser rendering through natural language.",
+      "best_for": "Managing Cloudflare accounts from MCP clients.",
+      "not_for": "Cloudflare only; needs account authorization.",
+      "keywords": [
+        "cloudflare mcp",
+        "workers",
+        "observability",
+        "dns",
+        "browser rendering",
+        "remote mcp",
+        "cloudflare docs"
+      ]
     },
     {
       "id": "DeusData/codebase-memory-mcp",
@@ -154,7 +229,20 @@
       "use_for": "Give coding agents a persistent code knowledge graph via MCP",
       "why": "High-performance MCP server indexing repos into a queryable graph (162 languages) so agents navigate code without re-reading files.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Local MCP server that indexes repositories into a queryable code knowledge graph across many languages, lowering token use and offering visualization.",
+      "best_for": "Giving agents persistent structural code context.",
+      "not_for": "Newer project; index must stay current and is language-parser dependent.",
+      "keywords": [
+        "codebase memory",
+        "mcp server",
+        "code knowledge graph",
+        "code search",
+        "token reduction",
+        "lsp",
+        "visualization",
+        "coding agents"
+      ]
     },
     {
       "id": "upstash/context7",
@@ -179,7 +267,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "MCP server that fetches current, version-specific library documentation and code examples and injects them into the coding agent's prompt (triggered by adding 'use context7'). Aims to avoid outdated or hallucinated APIs.",
+      "best_for": "Coding agents (Cursor, Claude Code, etc.) working with fast-moving frameworks and SDKs where training data is stale.",
+      "not_for": "Not a general web search or private-docs indexer; relies on the Context7 hosted index and its coverage of public libraries.",
+      "keywords": [
+        "mcp",
+        "documentation",
+        "up-to-date docs",
+        "hallucinated apis",
+        "version-specific",
+        "coding agent",
+        "library docs",
+        "cursor"
+      ]
     },
     {
       "id": "wonderwhy-er/DesktopCommanderMCP",
@@ -201,7 +302,21 @@
       "why": "Popular MCP server for local shell commands, long-running processes, file search and surgical edits.",
       "npm": "@wonderwhy-er/desktop-commander",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "MCP server giving AI clients terminal control with interactive process management, file reading/search, diff-based editing, in-memory code execution (Python, Node, R), and Excel/PDF handling. Also offers a remote MCP option.",
+      "best_for": "Letting Claude Desktop or other MCP clients run shell commands, edit files surgically and analyze local CSV/JSON/Excel data.",
+      "not_for": "Grants broad local shell and filesystem access, so a security risk on shared or sensitive machines; not a sandboxed execution environment.",
+      "keywords": [
+        "mcp",
+        "terminal",
+        "shell commands",
+        "file editing",
+        "diff edit",
+        "excel",
+        "pdf",
+        "process control",
+        "claude desktop"
+      ]
     },
     {
       "id": "exa-labs/exa-mcp-server",
@@ -225,7 +340,19 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "MCP server connecting agents to Exa's search API for web search, content fetching and multi-step research. Distributed as an agent plugin and a hosted MCP endpoint, installable in Claude, Codex and other clients.",
+      "best_for": "Agents needing neural web search and page content retrieval through MCP.",
+      "not_for": "Requires an Exa API key and is tied to the paid Exa service; not a self-hosted search engine.",
+      "keywords": [
+        "mcp",
+        "web search",
+        "exa",
+        "research",
+        "content fetch",
+        "agent plugin",
+        "search api"
+      ]
     },
     {
       "id": "PrefectHQ/fastmcp",
@@ -247,7 +374,20 @@
       "why": "Most popular high-level Python MCP framework; adds auth, composition, proxying and testing.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Python framework for building MCP servers, clients and interactive apps. Tools are declared as ordinary decorated Python functions, with schemas, validation and transport handled by the framework.",
+      "best_for": "Python developers who want to expose functions or APIs to LLMs as MCP tools quickly, with less boilerplate than the raw SDK.",
+      "not_for": "Python only; if your stack is TypeScript use an MCP TypeScript framework instead.",
+      "keywords": [
+        "mcp",
+        "python",
+        "mcp server",
+        "mcp client",
+        "decorator",
+        "tools",
+        "llm tools",
+        "framework"
+      ]
     },
     {
       "id": "firecrawl/firecrawl-mcp-server",
@@ -271,7 +411,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "MCP server exposing Firecrawl's web search, scraping, crawling, page interaction and deep-research features to agents, returning clean structured content. Includes search over an index of GitHub issues, PRs and docs.",
+      "best_for": "Agents that need to read arbitrary live web pages or crawl sites into LLM-ready markdown/JSON.",
+      "not_for": "Depends on the Firecrawl API (key and usage-based pricing); not a standalone local scraper.",
+      "keywords": [
+        "mcp",
+        "web scraping",
+        "crawl",
+        "firecrawl",
+        "search",
+        "markdown",
+        "structured extraction",
+        "deep research"
+      ]
     },
     {
       "id": "GLips/Figma-Context-MCP",
@@ -292,7 +445,20 @@
       "why": "Widely used Figma MCP for one-shot UI implementation",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "MCP server that fetches Figma file, frame or group data via the Figma API and passes simplified layout and style info to coding agents like Cursor. Gives better design-to-code results than pasted screenshots.",
+      "best_for": "Implementing Figma designs in any framework using an AI coding agent from a shared Figma link.",
+      "not_for": "Read-only access to Figma data; needs a Figma API token and does not edit designs or generate Figma files.",
+      "keywords": [
+        "figma",
+        "mcp",
+        "design to code",
+        "cursor",
+        "ui implementation",
+        "frame",
+        "layout data",
+        "framelink"
+      ]
     },
     {
       "id": "LaurieWired/GhidraMCP",
@@ -315,7 +481,19 @@
       "use_for": "Let LLMs drive Ghidra to decompile and analyze binaries",
       "why": "Ghidra plugin plus MCP bridge exposing decompilation, renaming and xrefs to agents for autonomous reverse engineering.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Ghidra plugin plus MCP server that lets LLMs decompile and analyze binaries, list methods, classes, imports and exports, and automatically rename functions and data.",
+      "best_for": "AI-assisted reverse engineering of native binaries inside Ghidra.",
+      "not_for": "Requires a running Ghidra install with the plugin; limited to what Ghidra exposes and not for dynamic or runtime analysis.",
+      "keywords": [
+        "ghidra",
+        "mcp",
+        "reverse engineering",
+        "decompile",
+        "binary analysis",
+        "malware analysis",
+        "rename functions"
+      ]
     },
     {
       "id": "github/github-mcp-server",
@@ -338,7 +516,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "GitHub's official MCP server that lets agents read repos and code, manage issues and pull requests, analyze code and automate workflows through natural language. Available as a hosted endpoint or local server.",
+      "best_for": "Giving AI assistants authenticated access to GitHub repos, issues, PRs and Actions.",
+      "not_for": "GitHub only; needs a token with appropriate scopes, and write tools carry risk if broad permissions are granted.",
+      "keywords": [
+        "github",
+        "mcp",
+        "issues",
+        "pull requests",
+        "actions",
+        "repository",
+        "code search",
+        "official"
+      ]
     },
     {
       "id": "modelcontextprotocol/inspector",
@@ -366,7 +557,19 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Developer tool for testing and debugging MCP servers, offering a web UI, a scriptable CLI, a terminal UI and an experimental connection CLI.",
+      "best_for": "Interactively exploring and testing an MCP server's tools, resources and prompts during development or in CI.",
+      "not_for": "A debugging tool, not a runtime client or framework for production agents.",
+      "keywords": [
+        "mcp",
+        "inspector",
+        "debug mcp server",
+        "test mcp",
+        "cli",
+        "web ui",
+        "mcp development"
+      ]
     },
     {
       "id": "modelcontextprotocol/python-sdk",
@@ -390,7 +593,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Python SDK for the Model Context Protocol, for building MCP servers and clients that expose tools, resources and prompts to LLM applications.",
+      "best_for": "Python projects implementing MCP servers or clients on the official SDK.",
+      "not_for": "Lower-level than FastMCP-style frameworks; Python only.",
+      "keywords": [
+        "mcp",
+        "python sdk",
+        "mcp server",
+        "mcp client",
+        "official sdk",
+        "tools",
+        "resources",
+        "prompts"
+      ]
     },
     {
       "id": "modelcontextprotocol/servers",
@@ -415,7 +631,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Collection of reference MCP server implementations (filesystem, git, fetch, memory and others) maintained by the MCP steering group, plus links to community servers.",
+      "best_for": "Learning MCP by example or using basic filesystem, git or fetch servers as starting points.",
+      "not_for": "The README says these are reference implementations, not production-ready solutions; the registry is the place to find published servers.",
+      "keywords": [
+        "mcp",
+        "reference servers",
+        "filesystem",
+        "git",
+        "fetch",
+        "memory",
+        "examples",
+        "model context protocol"
+      ]
     },
     {
       "id": "googleapis/mcp-toolbox",
@@ -437,7 +666,21 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source MCP server for databases such as Postgres, MySQL, BigQuery and AlloyDB. Offers prebuilt generic tools for schema exploration and queries, and a framework for defining custom tools with pooling and auth.",
+      "best_for": "Connecting AI agents or IDEs to enterprise databases safely, or building custom database tools for agents.",
+      "not_for": "Heavier than a simple DB driver wrapper; best suited to the supported database list, with Google-oriented ecosystem ties.",
+      "keywords": [
+        "mcp",
+        "database",
+        "postgres",
+        "mysql",
+        "bigquery",
+        "alloydb",
+        "text to sql",
+        "custom tools",
+        "connection pooling"
+      ]
     },
     {
       "id": "modelcontextprotocol/typescript-sdk",
@@ -462,7 +705,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Official TypeScript SDK (v2 on main) for building MCP servers and clients, implementing the current MCP spec. v1.x remains on a separate branch with security fixes.",
+      "best_for": "TypeScript/Node projects building MCP servers or clients with the official SDK.",
+      "not_for": "v2 has a migration path from v1 and different package names; lower-level than full-stack MCP frameworks.",
+      "keywords": [
+        "mcp",
+        "typescript",
+        "sdk",
+        "mcp server",
+        "mcp client",
+        "node",
+        "official",
+        "model context protocol"
+      ]
     },
     {
       "id": "mcp-use/mcp-use",
@@ -488,7 +744,20 @@
       "npm": "mcp-use",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "TypeScript full-stack framework for building MCP servers, MCP Apps and ChatGPT/Claude connectors, with typed APIs, built-in Inspector, and tooling to connect agents to MCP servers.",
+      "best_for": "TypeScript teams wanting a batteries-included framework with views, inspector and deployment for MCP servers.",
+      "not_for": "TypeScript-centric and a framework layer on top of MCP; v2 requires migration from v1.",
+      "keywords": [
+        "mcp",
+        "typescript",
+        "mcp apps",
+        "framework",
+        "inspector",
+        "chatgpt apps",
+        "claude connectors",
+        "agent"
+      ]
     },
     {
       "id": "czlonkowski/n8n-mcp",
@@ -509,7 +778,20 @@
       "why": "MCP server exposing n8n node docs, properties and validation so agents can generate working n8n workflows.",
       "npm": "n8n-mcp",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "MCP server giving AI assistants structured knowledge of n8n's workflow nodes (3,000+ core and community), their properties and operations, so they can design and build n8n workflows.",
+      "best_for": "Letting Claude or Cursor design, validate and build n8n automations accurately.",
+      "not_for": "Specific to n8n; it supplies node knowledge, not a workflow runtime, and it is a third-party project.",
+      "keywords": [
+        "n8n",
+        "mcp",
+        "workflow automation",
+        "nodes",
+        "ai workflow builder",
+        "claude",
+        "cursor",
+        "automation"
+      ]
     },
     {
       "id": "microsoft/playwright-mcp",
@@ -533,7 +815,19 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "MCP server for browser automation using Playwright, where agents interact with pages through structured accessibility snapshots rather than screenshots.",
+      "best_for": "Agents that need to navigate and interact with real web pages through an MCP client.",
+      "not_for": "README notes coding agents may prefer the Playwright CLI plus skills for token efficiency; not a test-runner replacement.",
+      "keywords": [
+        "playwright",
+        "mcp",
+        "browser automation",
+        "accessibility snapshot",
+        "web agent",
+        "browser control",
+        "scraping"
+      ]
     },
     {
       "id": "morluto/rea",
@@ -556,7 +850,21 @@
       "category": "mcp-servers",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "MCP server that lets agents reverse engineer apps and native binaries, from runtime behaviour down to disassembly, driving tools such as Ghidra, JADX and firmware and Electron analysis.",
+      "best_for": "Agent-driven reverse engineering of native, Android, Electron or firmware targets.",
+      "not_for": "Heavy toolchain prerequisites (Ghidra, JADX); not for ordinary source-code architecture analysis.",
+      "keywords": [
+        "reverse engineering",
+        "mcp",
+        "ghidra",
+        "jadx",
+        "electron",
+        "firmware",
+        "disassembly",
+        "binary analysis",
+        "decompile"
+      ]
     },
     {
       "id": "oraios/serena",
@@ -582,7 +890,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Coding-agent toolkit exposing IDE-like semantic code retrieval, editing, refactoring and debugging at the symbol level via language servers (LSP), usable through MCP in any client.",
+      "best_for": "Giving coding agents precise symbol-level navigation and edits in medium to large codebases.",
+      "not_for": "Needs language servers set up per language; extra overhead for tiny projects or one-off scripts.",
+      "keywords": [
+        "lsp",
+        "mcp",
+        "semantic code search",
+        "refactoring",
+        "symbol",
+        "coding agent",
+        "code navigation",
+        "ide"
+      ]
     },
     {
       "id": "supabase/mcp",
@@ -603,7 +924,20 @@
       "why": "Supabase's maintained MCP server",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Supabase MCP server letting AI assistants manage projects: run SQL, apply migrations, view logs and advisors, manage edge functions and fetch config.",
+      "best_for": "Developers using Cursor or Claude to build against Supabase projects.",
+      "not_for": "Supabase only; gives agents powerful database access, so use dev projects or read-only mode and not production data.",
+      "keywords": [
+        "supabase",
+        "mcp",
+        "sql",
+        "migrations",
+        "edge functions",
+        "postgres",
+        "logs",
+        "database management"
+      ]
     },
     {
       "id": "CoplayDev/unity-mcp",
@@ -627,7 +961,20 @@
       "why": "The most used Unity bridge for agents, actively maintained with many contributors.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Unity package plus Python MCP bridge that lets AI assistants control the Unity Editor: create scenes and GameObjects, edit C# scripts, manage assets, run tests, profile and build.",
+      "best_for": "Unity developers who want an AI client to drive the editor in natural language.",
+      "not_for": "Unity Editor only (2021.3 to 6.x) and requires Python 3.10+; not for runtime or in-game AI.",
+      "keywords": [
+        "unity",
+        "mcp",
+        "game development",
+        "gameobject",
+        "c# scripts",
+        "editor automation",
+        "assets",
+        "unity editor"
+      ]
     },
     {
       "id": "xpzouying/xiaohongshu-mcp",
@@ -648,7 +995,19 @@
       "use_for": "Search, read and publish Xiaohongshu (RED) posts from agents",
       "why": "Widely used MCP server for Xiaohongshu: login, feed/search, post details and publishing image/video notes.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "MCP server that lets AI assistants access Xiaohongshu (RedNote) data. It handles login and login-status checks and can publish image-and-text posts with titles, descriptions and images from URLs or local paths. Prebuilt binaries cover macOS Apple Silicon, Windows x64 and Linux x64, and a Docker image is available.",
+      "best_for": "Letting an AI agent publish to or read from a Xiaohongshu account through MCP, for content automation on that platform.",
+      "not_for": "Other social platforms. macOS Intel and Linux ARM64 are unsupported, it needs a logged-in account, and the README is mostly Chinese; deployment can be finicky (the author points to a browser-plugin alternative).",
+      "keywords": [
+        "mcp server",
+        "xiaohongshu",
+        "rednote",
+        "social media automation",
+        "publishing",
+        "ai agent",
+        "docker"
+      ]
     }
   ]
 }

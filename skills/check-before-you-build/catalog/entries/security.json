@@ -21,7 +21,20 @@
       "why": "The standard Python security linter from PyCQA.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Security linter for Python that analyzes code for common security issues. It is the standard PyCQA static analysis tool used in CI and pre-commit.",
+      "best_for": "Quick static security checks on Python codebases in CI.",
+      "not_for": "Python only and pattern-based: it produces false positives and does not check dependencies, secrets or runtime behavior.",
+      "keywords": [
+        "python security",
+        "static analysis",
+        "security linter",
+        "sast",
+        "bandit",
+        "pycqa",
+        "ci",
+        "vulnerabilities"
+      ]
     },
     {
       "id": "bridgecrewio/checkov",
@@ -43,7 +56,21 @@
       "why": "Leading open IaC scanner with 1000+ built-in policies and CI integrations",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Static analysis tool for infrastructure as code that also does software composition analysis. Scans Terraform, CloudFormation, Kubernetes, Helm, Dockerfile, Bicep, ARM, OpenAPI and more with graph-based policies and 1000+ built-in policies.",
+      "best_for": "Catching cloud misconfigurations and compliance issues in IaC during CI or pre-commit.",
+      "not_for": "Static scanning only, no runtime visibility; some advanced features are tied to Prisma Cloud, and policy tuning is needed to cut noise.",
+      "keywords": [
+        "iac security",
+        "terraform scanning",
+        "kubernetes",
+        "misconfiguration",
+        "compliance",
+        "helm",
+        "dockerfile",
+        "sca",
+        "policy as code"
+      ]
     },
     {
       "id": "crowdsecurity/crowdsec",
@@ -65,7 +92,21 @@
       "why": "Modern fail2ban successor with shared blocklists and bouncers for Nginx, Traefik, Cloudflare and more",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source IDS/IPS, WAF and bot detection that parses logs, detects attacks and shares malicious IPs through a community blocklist. Detection and remediation are decoupled, with bouncers for firewalls, Nginx, Traefik, Cloudflare and others.",
+      "best_for": "Protecting self-hosted servers and web apps with crowd-sourced IP blocking, as a modern fail2ban replacement.",
+      "not_for": "Mostly IP-reputation and log-based; not a full application-layer security suite, and sharing signals with the community network is part of the model.",
+      "keywords": [
+        "intrusion prevention",
+        "fail2ban alternative",
+        "ip blocklist",
+        "waf",
+        "bot detection",
+        "bouncers",
+        "log parsing",
+        "brute force",
+        "nginx"
+      ]
     },
     {
       "id": "cure53/DOMPurify",
@@ -88,7 +129,21 @@
       "npm": "dompurify",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "DOM-only, fast XSS sanitizer for HTML, MathML and SVG, written in JavaScript. Works in modern browsers and, via a DOM implementation, on the server; maintained by security firm Cure53.",
+      "best_for": "Safely rendering untrusted or user-supplied HTML in the browser.",
+      "not_for": "Sanitizes markup only; it is not a general security layer, and Node usage needs jsdom or similar. Legacy browsers are unsupported (it does nothing there).",
+      "keywords": [
+        "xss",
+        "html sanitizer",
+        "sanitize",
+        "svg",
+        "mathml",
+        "untrusted html",
+        "dom",
+        "cure53",
+        "security"
+      ]
     },
     {
       "id": "falcosecurity/falco",
@@ -111,7 +166,21 @@
       "why": "CNCF graduated project; eBPF-based detection of suspicious behavior at runtime",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Cloud-native runtime security agent for Linux that watches kernel events (syscalls) against custom rules and enriches them with container and Kubernetes metadata, alerting on suspicious behavior. CNCF graduated project.",
+      "best_for": "Real-time threat detection on hosts, containers and Kubernetes clusters.",
+      "not_for": "Detection and alerting only, not prevention or blocking; Linux only and needs rule tuning and a downstream SIEM or alert pipeline.",
+      "keywords": [
+        "runtime security",
+        "ebpf",
+        "kubernetes security",
+        "syscalls",
+        "threat detection",
+        "container security",
+        "cncf",
+        "falco rules",
+        "intrusion detection"
+      ]
     },
     {
       "id": "gitleaks/gitleaks",
@@ -134,7 +203,21 @@
       "why": "The most popular open-source secret scanner, easy to run in pre-commit and CI.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Tool that detects hardcoded secrets such as API keys and passwords in git repositories and files, easy to run in pre-commit and CI. The README says it is feature complete and receives only security patches, with the author's focus moving to Betterleaks.",
+      "best_for": "Scanning repos and history for leaked secrets in CI or pre-commit hooks.",
+      "not_for": "Maintenance mode (no new features per its README); it detects but does not verify whether a secret is live, unlike Kingfisher.",
+      "keywords": [
+        "secret scanning",
+        "api keys",
+        "git history",
+        "pre-commit",
+        "ci",
+        "hardcoded secrets",
+        "credentials leak",
+        "gitleaks",
+        "betterleaks"
+      ]
     },
     {
       "id": "anchore/grype",
@@ -156,7 +239,21 @@
       "why": "Fast, accurate CVE scanning that pairs with Syft SBOMs; easy to drop into CI",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Vulnerability scanner for container images, filesystems and SBOMs. Supports major OS and language ecosystems and Docker, OCI and Singularity formats, and prioritizes findings with EPSS, KEV and risk scoring; pairs with Syft SBOMs.",
+      "best_for": "Fast CVE scanning in CI for images and dependencies.",
+      "not_for": "Reports known vulnerabilities only: no secrets, IaC or runtime analysis, and results depend on the vulnerability database.",
+      "keywords": [
+        "vulnerability scanning",
+        "container images",
+        "sbom",
+        "cve",
+        "syft",
+        "epss",
+        "kev",
+        "ci",
+        "package ecosystems"
+      ]
     },
     {
       "id": "helmetjs/helmet",
@@ -179,7 +276,20 @@
       "npm": "helmet",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Express/Node middleware that sets HTTP security response headers such as Content-Security-Policy and Strict-Transport-Security. app.use(helmet()) sets 13 headers by default.",
+      "best_for": "One-line baseline header hardening for Express and Connect-style Node apps.",
+      "not_for": "Headers only: does not replace input validation, auth or CSRF protection. Default CSP may need tuning, and it targets Node middleware stacks.",
+      "keywords": [
+        "security headers",
+        "express",
+        "csp",
+        "hsts",
+        "node.js middleware",
+        "hardening",
+        "http headers",
+        "x-frame-options"
+      ]
     },
     {
       "id": "mongodb/kingfisher",
@@ -202,7 +312,20 @@
       "why": "MongoDB-maintained scanner that adds live validation and blast-radius mapping.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Rust secret scanner maintained by MongoDB that detects leaked secrets with hundreds of built-in rules, validates which credentials are live, maps the blast radius of each leak and helps revoke exposed secrets. Apache-2.0.",
+      "best_for": "Secret scanning that tells you which found credentials are actually active, across code and history.",
+      "not_for": "Live validation makes outbound calls to providers, which needs care in sensitive environments; newer than gitleaks or trufflehog.",
+      "keywords": [
+        "secret scanning",
+        "secret validation",
+        "blast radius",
+        "credential revocation",
+        "rust",
+        "leaked keys",
+        "git history",
+        "devsecops"
+      ]
     },
     {
       "id": "CISOfy/lynis",
@@ -224,7 +347,21 @@
       "why": "Long-standing, agentless host auditing tool with actionable hardening suggestions.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Security auditing tool for Unix-based systems (Linux, macOS, BSD) that runs on the host itself. It performs an in-depth scan of system configuration, installed packages and defenses, then reports findings with hardening suggestions.",
+      "best_for": "Sysadmins and auditors checking Linux/Unix servers for hardening and compliance gaps (e.g. before audits), without installing agents.",
+      "not_for": "Not a network or web-app vulnerability scanner and not for Windows hosts. Output is advice to act on manually; it does not auto-remediate. Some features are in the paid Lynis Enterprise.",
+      "keywords": [
+        "linux hardening",
+        "security audit",
+        "compliance",
+        "unix",
+        "macos",
+        "host scanning",
+        "cis benchmark",
+        "pentest",
+        "configuration audit"
+      ]
     },
     {
       "id": "projectdiscovery/nuclei",
@@ -247,7 +384,21 @@
       "why": "Fast template-driven scanner with a huge community template library.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Vulnerability scanner driven by simple YAML templates that describe detection steps for HTTP, DNS, TCP, SSL, WHOIS and other protocols. A large community template library ships with it, and scans run in parallel with request clustering.",
+      "best_for": "Scanning web apps, APIs and infrastructure for known CVEs and misconfigurations, writing custom checks, and running regression scans in CI/CD.",
+      "not_for": "Detects what templates cover; it is not a code analyzer or full manual pentest tool. Scanning targets you do not own is illegal, and results depend on template quality.",
+      "keywords": [
+        "vulnerability scanner",
+        "yaml templates",
+        "cve",
+        "dast",
+        "web security",
+        "api security",
+        "pentest",
+        "ci security",
+        "misconfiguration"
+      ]
     },
     {
       "id": "google/osv-scanner",
@@ -270,7 +421,21 @@
       "why": "Google's SCA scanner backed by the open, multi-ecosystem OSV.dev database.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "CLI frontend to the OSV.dev vulnerability database and OSV-Scalibr. It reads lockfiles, SBOMs and project dependency lists across many languages and package managers and reports known vulnerabilities affecting them.",
+      "best_for": "Software composition analysis in CI or locally: finding known vulnerable dependencies across multi-language repos using an open database.",
+      "not_for": "Only finds known, published vulnerabilities in dependencies; it does not analyze your own code for bugs (use a SAST tool) or scan running hosts.",
+      "keywords": [
+        "dependency scanning",
+        "sca",
+        "vulnerabilities",
+        "osv",
+        "lockfile",
+        "sbom",
+        "supply chain",
+        "cve",
+        "package audit"
+      ]
     },
     {
       "id": "OWASP/Nettacker",
@@ -293,7 +458,20 @@
       "why": "OWASP-maintained modular scanning framework; Apache-2.0.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "OWASP Python framework for automated network and web reconnaissance and vulnerability scanning. It uses modular scan and brute-force modules, supports multiple targets and outputs, and can run from CLI, API or Docker.",
+      "best_for": "Automating information gathering, port/service scans and basic vulnerability checks during authorized penetration tests or security assessments.",
+      "not_for": "Intended only for authorized testing; not a defensive monitoring or code-scanning tool. Coverage and accuracy are narrower than commercial scanners.",
+      "keywords": [
+        "penetration testing",
+        "reconnaissance",
+        "port scanner",
+        "vulnerability scanner",
+        "owasp",
+        "network scan",
+        "brute force",
+        "information gathering"
+      ]
     },
     {
       "id": "semgrep/semgrep",
@@ -315,7 +493,21 @@
       "why": "Lightweight, multi-language SAST with a large rule registry; CE is LGPL-2.1.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Static analysis tool that searches code with patterns that look like the source language itself rather than ASTs or regexes. Supports 30+ languages, a large rule registry, and runs in the IDE, pre-commit hooks or CI.",
+      "best_for": "Fast SAST in CI and pre-commit: custom bug and security rules, enforcing coding standards, and finding insecure patterns across many languages.",
+      "not_for": "Community Edition analyzes within single files/functions, so it misses cross-file data-flow issues that the paid platform handles. LGPL-2.1 core; some rules have separate licenses.",
+      "keywords": [
+        "sast",
+        "static analysis",
+        "code scanning",
+        "security rules",
+        "pattern matching",
+        "linter",
+        "ci",
+        "custom rules",
+        "vulnerability detection"
+      ]
     },
     {
       "id": "NVIDIA/SkillSpector",
@@ -337,7 +529,20 @@
       "why": "NVIDIA-maintained scanner for the agent-skill supply chain; Apache-2.0.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Security scanner for AI agent skills (as used by Claude Code, Codex CLI, Gemini CLI). It analyzes skill packages for vulnerabilities, malicious patterns and risky behavior before they are installed, as part of NVIDIA's verified-skills pipeline.",
+      "best_for": "Vetting third-party agent skills before installing them, or adding a pre-install safety check to an agent skill supply chain.",
+      "not_for": "Scoped to agent skills only; it is not a general code, dependency or container scanner. Heuristic detection cannot guarantee a skill is safe.",
+      "keywords": [
+        "agent skills",
+        "security scanner",
+        "malicious skills",
+        "claude code",
+        "supply chain",
+        "prompt injection",
+        "ai agent security",
+        "skill vetting"
+      ]
     },
     {
       "id": "anchore/syft",
@@ -360,7 +565,20 @@
       "why": "The most used open SBOM generator; the foundation for supply-chain scanning pipelines",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "CLI tool and Go library that generates a Software Bill of Materials from container images, filesystems and archives. Supports many packaging ecosystems and image formats, and outputs CycloneDX, SPDX or Syft JSON.",
+      "best_for": "Producing SBOMs for images and repos in CI, and as the input to a vulnerability scanner such as Grype.",
+      "not_for": "Only inventories packages; it does not find vulnerabilities by itself (pair with Grype or Trivy). Not a runtime monitoring tool.",
+      "keywords": [
+        "sbom",
+        "software bill of materials",
+        "cyclonedx",
+        "spdx",
+        "container image",
+        "supply chain",
+        "package inventory",
+        "dependency list"
+      ]
     },
     {
       "id": "aquasecurity/trivy",
@@ -383,7 +601,21 @@
       "why": "All-in-one, widely adopted scanner that drops easily into CI; Apache-2.0.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Versatile scanner that targets container images, filesystems, remote git repos, VM images and Kubernetes. It finds vulnerable OS and language packages, IaC misconfigurations, secrets and license issues, and can generate SBOMs.",
+      "best_for": "One tool in CI for container, IaC and dependency scanning across Docker, Kubernetes and repos.",
+      "not_for": "Detection depth per area is shallower than specialized tools (dedicated SAST, secrets verification, DAST). It is not a runtime protection or web-app pentest tool.",
+      "keywords": [
+        "container scanning",
+        "vulnerability scanner",
+        "iac misconfiguration",
+        "kubernetes security",
+        "sbom",
+        "docker image",
+        "ci security",
+        "secrets",
+        "license scanning"
+      ]
     },
     {
       "id": "trufflesecurity/trufflehog",
@@ -405,7 +637,20 @@
       "why": "Verifies detected secrets against live APIs to cut false positives; 800+ detectors",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Secrets scanner that finds leaked credentials in git history, CI, cloud storage, chat and other sources. It has 800+ detectors and verifies findings against live APIs to reduce false positives, plus can analyze key permissions.",
+      "best_for": "Auditing repos and org data for leaked API keys and passwords, pre-commit/CI secret scanning, and incident response on suspected leaks.",
+      "not_for": "Only looks for secrets, not code or dependency vulnerabilities. Verification makes live calls to third-party APIs, which may be unwanted. Enterprise features are separate.",
+      "keywords": [
+        "secret scanning",
+        "leaked credentials",
+        "api keys",
+        "git history",
+        "credential detection",
+        "devsecops",
+        "secrets verification",
+        "pre-commit"
+      ]
     },
     {
       "id": "future-architect/vuls",
@@ -428,7 +673,20 @@
       "why": "Agentless vulnerability scanner for server fleets with multiple data sources.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Agentless vulnerability scanner for Linux and FreeBSD written in Go. It checks servers, containers and libraries against multiple vulnerability data sources and reports known CVEs over SSH without installing software on targets.",
+      "best_for": "Teams managing fleets of Linux/FreeBSD servers who want agentless CVE reporting and notifications.",
+      "not_for": "Report-only: it does not update vulnerable packages. Not for Windows or web-app testing, and requires setting up vulnerability databases.",
+      "keywords": [
+        "vulnerability scanner",
+        "agentless",
+        "linux",
+        "freebsd",
+        "cve",
+        "server scanning",
+        "package vulnerabilities",
+        "patch management"
+      ]
     },
     {
       "id": "zaproxy/zaproxy",
@@ -452,7 +710,19 @@
       "why": "The most widely used free DAST tool, scriptable and CI-friendly.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "ZAP (Zed Attack Proxy) by Checkmarx is a free, open source web app security scanner. It automatically finds security vulnerabilities in web applications during development and testing, and also supports manual testing by pentesters. Apache 2.0 licensed.",
+      "best_for": "Scanning your own web applications for vulnerabilities during development or CI, and manual penetration testing.",
+      "not_for": "Static code analysis or dependency scanning; it tests running web apps. Only scan applications you are authorized to test.",
+      "keywords": [
+        "security scanner",
+        "zap",
+        "dast",
+        "web app security",
+        "penetration testing",
+        "vulnerabilities",
+        "proxy"
+      ]
     }
   ]
 }

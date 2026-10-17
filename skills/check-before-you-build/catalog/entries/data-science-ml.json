@@ -23,7 +23,19 @@
       "why": "Extensible Arrow-native query engine used as the core of many data products.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Apache DataFusion is an extensible query engine written in Rust, distributed as a crate, with SQL parsing and planning and Apache Parquet reading. You start from a working engine and customize it; optional Cargo features add nested, datetime, crypto, regex, unicode and compression support.",
+      "best_for": "Building domain-specific query engines, new database platforms, data pipelines or query languages in Rust on top of an embeddable SQL engine.",
+      "not_for": "A library for engine builders, not a ready-to-run database server or BI tool. Rust-centric; using it from other languages needs separate bindings.",
+      "keywords": [
+        "query engine",
+        "sql",
+        "rust",
+        "parquet",
+        "database",
+        "data pipelines",
+        "crate"
+      ]
     },
     {
       "id": "apache/hamilton",
@@ -45,7 +57,21 @@
       "why": "Lightweight dataflow framework with built-in lineage, now an Apache project.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Lightweight Python library for building data transformation DAGs from plain functions: function parameters declare dependencies and the DAG is built automatically. Supports data validation, lineage, visualization and runs anywhere Python runs (scripts, notebooks, Airflow, FastAPI). Apache incubating project.",
+      "best_for": "Structuring feature engineering, data and ML pipelines as testable, modular, self-documenting Python functions with lineage.",
+      "not_for": "Large distributed orchestration or scheduling (it is a transformation framework, not a scheduler) or non-Python stacks. Still in Apache incubation.",
+      "keywords": [
+        "dag",
+        "dataflow",
+        "data pipeline",
+        "feature engineering",
+        "python functions",
+        "lineage",
+        "ml pipeline",
+        "modular",
+        "data transformation"
+      ]
     },
     {
       "id": "tracel-ai/burn",
@@ -66,7 +92,22 @@
       "use_for": "Train and run deep learning models in Rust across CPU, CUDA, Metal and WebGPU",
       "why": "Flexible Rust DL framework with swappable backends, autodiff and kernel fusion; 351 contributors.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Rust tensor library and deep learning framework with a single API over swappable backends (CPU, CUDA, Metal, WebGPU). Keeps PyTorch-like dynamic graphs while JIT-compiling tensor streams with automatic kernel fusion; the same code is used for training and inference.",
+      "best_for": "Training and deploying neural networks in Rust, on-device or browser inference, avoiding a Python-to-ONNX export step.",
+      "not_for": "Teams needing the broad model zoo and tutorials of PyTorch/Hugging Face. Smaller ecosystem and Rust learning curve.",
+      "keywords": [
+        "rust",
+        "deep learning",
+        "tensor",
+        "autodiff",
+        "wgpu",
+        "cuda",
+        "metal",
+        "inference",
+        "kernel fusion",
+        "neural network"
+      ]
     },
     {
       "id": "NVIDIA/cudf",
@@ -89,7 +130,21 @@
       "why": "RAPIDS GPU DataFrame library, with a drop-in pandas accelerator mode.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "GPU-accelerated DataFrame library from NVIDIA RAPIDS. Includes libcudf (CUDA C++), pylibcudf, a pandas-like cudf API, cudf.pandas for zero-code-change acceleration of existing pandas code, a Polars GPU engine and a Dask backend.",
+      "best_for": "Speeding up pandas-style ETL and groupby/join workloads on large tabular data when you have an NVIDIA GPU.",
+      "not_for": "Machines without a CUDA-capable NVIDIA GPU, small datasets where transfer overhead dominates, or full pandas API parity guarantees.",
+      "keywords": [
+        "gpu",
+        "dataframe",
+        "pandas",
+        "cuda",
+        "rapids",
+        "nvidia",
+        "parquet",
+        "groupby",
+        "cudf.pandas"
+      ]
     },
     {
       "id": "unit8co/darts",
@@ -110,7 +165,21 @@
       "why": "One unified API over statistical and neural forecasting models; Apache-2.0.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python library for time series forecasting and anomaly detection with a scikit-learn-style fit()/predict() API across models from ARIMA to deep neural networks. Supports backtesting, ensembling, covariates, multivariate and probabilistic forecasts, and PyOD-based anomaly scoring.",
+      "best_for": "Time series forecasting where you want to compare statistical and neural models behind one API, with backtesting and probabilistic output.",
+      "not_for": "Streaming or real-time inference at scale, or tabular non-temporal ML. Deep models need PyTorch and extra dependencies.",
+      "keywords": [
+        "time series",
+        "forecasting",
+        "anomaly detection",
+        "arima",
+        "backtesting",
+        "probabilistic forecast",
+        "multivariate",
+        "python",
+        "prophet alternative"
+      ]
     },
     {
       "id": "debezium/debezium",
@@ -131,7 +200,21 @@
       "use_for": "Stream row-level database changes (CDC) into Kafka or other sinks",
       "why": "De facto open-source change data capture for Postgres, MySQL, MongoDB and more; 900+ contributors.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source change data capture platform that streams row-level database changes (inserts, updates, deletes) from databases such as Postgres, MySQL and MongoDB to Kafka or other sinks. Builds and integration tests use Docker to start the source databases.",
+      "best_for": "Event streaming from existing databases, keeping caches/search indexes in sync, outbox pattern, replication to a data lake.",
+      "not_for": "Simple apps without Kafka-style infrastructure, or needing only periodic batch exports. Java/Kafka Connect-centric and operationally heavy.",
+      "keywords": [
+        "cdc",
+        "change data capture",
+        "kafka",
+        "postgres",
+        "mysql",
+        "mongodb",
+        "event streaming",
+        "outbox",
+        "replication"
+      ]
     },
     {
       "id": "deepspeedai/DeepSpeed",
@@ -153,7 +236,20 @@
       "why": "ZeRO optimizations and parallelism used to train many large models; Apache-2.0.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "DeepSpeed is a deep learning optimization library for PyTorch aimed at making large-scale training efficient. It provides system innovations including ZeRO, ZeRO-Infinity, 3D-Parallelism, Ulysses Sequence Parallelism and DeepSpeed-MoE, installs via pip, and compiles C++/CUDA/HIP extension ops.",
+      "best_for": "Training or serving very large models across many GPUs where memory partitioning, offloading and parallelism strategies are needed.",
+      "not_for": "Requires PyTorch installed first and a CUDA or ROCm compiler; tested mainly on NVIDIA and AMD datacenter GPUs. Some features (async IO, GDS) are unsupported on Windows. Overkill for small single-GPU models.",
+      "keywords": [
+        "deep learning",
+        "distributed training",
+        "zero",
+        "pytorch",
+        "large models",
+        "model parallelism",
+        "gpu",
+        "inference"
+      ]
     },
     {
       "id": "fastai/fastai",
@@ -175,7 +271,21 @@
       "why": "Proven high-level API with good defaults and a well-known course ecosystem.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "High-level deep learning library on PyTorch with a layered architecture: fast defaults for vision, text, tabular and collaborative filtering, plus lower-level components (optimizer, callbacks, type dispatch) for researchers. Tied to the fast.ai course.",
+      "best_for": "Learning deep learning or quickly getting strong baselines on standard vision, text and tabular tasks with minimal code.",
+      "not_for": "Custom research needing full control and the latest architectures, or production serving stacks; PyTorch-based and less actively adopted than raw PyTorch/Hugging Face.",
+      "keywords": [
+        "deep learning",
+        "pytorch",
+        "fast.ai",
+        "transfer learning",
+        "computer vision",
+        "tabular",
+        "callbacks",
+        "training loop",
+        "high-level api"
+      ]
     },
     {
       "id": "alteryx/featuretools",
@@ -196,7 +306,21 @@
       "why": "The best-known automated feature engineering library; BSD-3.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python library for automated feature engineering. Deep Feature Synthesis (DFS) takes a multi-table EntitySet of related, timestamped dataframes and generates a feature matrix of aggregations and transformations for a target dataframe.",
+      "best_for": "Generating many candidate features from relational or temporal data (customers, sessions, transactions) before modeling.",
+      "not_for": "Single flat tables or deep learning on unstructured data. Can generate very large feature sets needing selection.",
+      "keywords": [
+        "feature engineering",
+        "deep feature synthesis",
+        "dfs",
+        "entityset",
+        "relational data",
+        "automl",
+        "pandas",
+        "feature matrix",
+        "temporal"
+      ]
     },
     {
       "id": "ggml-org/ggml",
@@ -218,7 +342,21 @@
       "use_for": "Build lightweight on-device ML inference with quantized tensors",
       "why": "The tensor library behind llama.cpp and whisper.cpp; no dependencies and broad hardware support.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Plain C/C++ tensor library for machine learning with no dependencies. Provides integer quantization (2-8 bit plus MXFP4/NVFP4), SIMD kernels, and CPU, GPU and WebAssembly backends. It underlies llama.cpp and whisper.cpp and defines the GGUF file format.",
+      "best_for": "Embedding lightweight on-device inference, running quantized models on CPU or edge hardware, building llama.cpp-style engines.",
+      "not_for": "Model training or high-level APIs. Low-level library; for ready-made LLM running use llama.cpp.",
+      "keywords": [
+        "tensor library",
+        "quantization",
+        "gguf",
+        "on-device inference",
+        "c++",
+        "llama.cpp",
+        "edge ml",
+        "webassembly",
+        "cpu inference"
+      ]
     },
     {
       "id": "gradio-app/gradio",
@@ -239,7 +377,21 @@
       "use_for": "Wrap an ML model in a shareable web UI or API in a few lines of Python",
       "why": "Standard for ML demos and Hugging Face Spaces; auto-generates API endpoints and client libraries.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Python package for turning an ML model, API or any Python function into a web UI in a few lines (Interface, Blocks). Provides sharing links, auto-generated API endpoints and client libraries, and runs in notebooks, Colab or standalone.",
+      "best_for": "Quick ML demos, internal tools and Hugging Face Spaces without writing JavaScript or CSS.",
+      "not_for": "Polished, custom-branded production web apps or complex multi-page apps; it is demo/tool oriented.",
+      "keywords": [
+        "ml demo",
+        "web ui",
+        "python",
+        "hugging face spaces",
+        "interface",
+        "blocks",
+        "share link",
+        "model demo",
+        "chatbot ui"
+      ]
     },
     {
       "id": "jupyterlab/jupyterlab",
@@ -263,7 +415,21 @@
       "why": "The standard notebook interface for data work, with a large extension ecosystem",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Web-based interactive computing environment built on the Jupyter Notebook: notebooks, terminal, text editor, file browser and rich outputs in a flexible layout. Extensible through npm-based extensions, distributed via PyPI or conda.",
+      "best_for": "Exploratory data science, teaching and reproducible research in notebooks, with a large extension ecosystem.",
+      "not_for": "Production pipelines or clean version control of notebooks (JSON diffs, hidden state). Consider marimo for reactive, git-friendly notebooks.",
+      "keywords": [
+        "notebook",
+        "jupyter",
+        "ipynb",
+        "interactive computing",
+        "data science",
+        "extensions",
+        "ide",
+        "kernel",
+        "rich output"
+      ]
     },
     {
       "id": "kedro-org/kedro",
@@ -288,7 +454,20 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Python framework for production-ready data engineering and data science pipelines. Provides a project template, a Data Catalog of connectors across file formats and storage, modular pipelines and pipeline visualization, applying software engineering practices. Hosted by LF AI & Data.",
+      "best_for": "Structuring reproducible, maintainable ML/data projects in teams, moving notebook code into modular pipelines.",
+      "not_for": "Quick one-off analysis, or workflow scheduling (it is not an orchestrator; pair with Airflow or similar). Imposes project conventions.",
+      "keywords": [
+        "data pipeline",
+        "data catalog",
+        "reproducible",
+        "ml project template",
+        "modular pipelines",
+        "python",
+        "data engineering",
+        "pipeline visualization"
+      ]
     },
     {
       "id": "marimo-team/marimo",
@@ -311,7 +490,21 @@
       "why": "Fixes Jupyter hidden-state and git-diff pain: reactive execution, pure Python files, built-in UI elements",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Reactive Python notebook where running a cell or changing a UI element reruns dependent cells automatically. Notebooks are stored as plain .py files (with SQL support), runnable as scripts and deployable as apps; positioned as replacing Jupyter, Streamlit and papermill.",
+      "best_for": "Reproducible, git-friendly notebooks and quick data apps in Python without hidden state.",
+      "not_for": "Teams tied to .ipynb workflows and Jupyter extensions, or R/Julia kernels. Reactive execution model differs from Jupyter.",
+      "keywords": [
+        "reactive notebook",
+        "python",
+        "jupyter alternative",
+        "streamlit alternative",
+        "reproducible",
+        "git-friendly",
+        "notebook app",
+        "sql",
+        "ui elements"
+      ]
     },
     {
       "id": "matplotlib/matplotlib",
@@ -338,7 +531,21 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Foundational Python plotting library for static, animated and interactive figures. Produces publication-quality output in many formats and works in scripts, IPython, web servers and GUI toolkits; underlies many higher-level plotting libraries.",
+      "best_for": "Publication-quality static charts and full control over figure details in Python and scientific workflows.",
+      "not_for": "Interactive web dashboards or quick attractive defaults (use Plotly, Altair or seaborn). API is verbose.",
+      "keywords": [
+        "plotting",
+        "charts",
+        "python",
+        "figures",
+        "visualization",
+        "publication quality",
+        "animation",
+        "scientific",
+        "graphs"
+      ]
     },
     {
       "id": "mlflow/mlflow",
@@ -361,7 +568,21 @@
       "why": "The most widely used open MLOps platform for experiment tracking and model lifecycle management",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source platform for the AI/ML lifecycle: experiment tracking, model packaging and registry, plus LLM and agent observability, evaluation, prompt management and an AI Gateway. Works with many ML and GenAI frameworks.",
+      "best_for": "Tracking experiments, versioning models and monitoring or evaluating LLM apps, from solo use to team servers.",
+      "not_for": "Pure workflow orchestration or feature stores. Self-hosted tracking server needs setup and backing storage.",
+      "keywords": [
+        "experiment tracking",
+        "model registry",
+        "mlops",
+        "llm observability",
+        "evaluation",
+        "prompt management",
+        "ai gateway",
+        "model packaging",
+        "tracing"
+      ]
     },
     {
       "id": "numpy/numpy",
@@ -388,7 +609,21 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Fundamental Python package for scientific computing: N-dimensional array object, broadcasting functions, linear algebra, Fourier transform and random number tools, and C/C++/Fortran integration. The base of the scientific Python stack.",
+      "best_for": "Any numeric or array computing in Python, and the foundation for pandas, SciPy and scikit-learn.",
+      "not_for": "GPU or autodiff workloads (use PyTorch/JAX/CuPy), or labeled tabular data (use pandas/Polars).",
+      "keywords": [
+        "ndarray",
+        "arrays",
+        "numerical computing",
+        "linear algebra",
+        "broadcasting",
+        "fft",
+        "random",
+        "scientific python",
+        "vectorization"
+      ]
     },
     {
       "id": "pandas-dev/pandas",
@@ -410,7 +645,21 @@
       "why": "The standard Python dataframe library with the largest ecosystem of integrations.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Python package providing labeled data structures (Series, DataFrame) for loading, cleaning, transforming and analyzing tabular data. It is the standard high-level building block for data analysis in Python with the widest ecosystem of integrations.",
+      "best_for": "Everyday data wrangling, analysis and I/O (CSV, Excel, SQL, Parquet) on datasets that fit in memory.",
+      "not_for": "Larger-than-memory or very large datasets and maximum speed (consider Polars or DuckDB); memory-heavy.",
+      "keywords": [
+        "dataframe",
+        "data analysis",
+        "tabular data",
+        "csv",
+        "data cleaning",
+        "python",
+        "groupby",
+        "time series",
+        "series"
+      ]
     },
     {
       "id": "pola-rs/polars",
@@ -435,7 +684,21 @@
       "why": "Rust-based, much faster than pandas on many workloads, with Python, Rust and Node APIs.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Analytical query engine for DataFrames written in Rust, with multi-threaded vectorized execution, lazy and eager modes with query optimization, a streaming engine for larger-than-RAM data and an expression API. Has Python, Rust, Node.js and R bindings.",
+      "best_for": "Fast processing of large tabular datasets and ETL where pandas is too slow or memory hungry.",
+      "not_for": "Code deeply tied to pandas APIs or libraries expecting pandas objects; different API requires rewriting.",
+      "keywords": [
+        "dataframe",
+        "lazy",
+        "rust",
+        "larger than memory",
+        "streaming",
+        "query engine",
+        "pandas alternative",
+        "expressions",
+        "parquet"
+      ]
     },
     {
       "id": "Kanaries/pygwalker",
@@ -456,7 +719,21 @@
       "use_for": "Explore a DataFrame with a Tableau-style drag-and-drop UI inside Jupyter",
       "why": "Turns pandas/polars DataFrames into an interactive visual analysis UI in notebooks and Streamlit.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Python library that turns a pandas or polars DataFrame into a Tableau-style drag-and-drop visual exploration UI inside Jupyter, with Streamlit and other app integrations.",
+      "best_for": "Quick interactive exploratory data analysis and chart building in notebooks without writing plotting code.",
+      "not_for": "Publication-ready custom charts, scripted/reproducible plots, or large-scale BI dashboards.",
+      "keywords": [
+        "eda",
+        "visual analysis",
+        "drag and drop",
+        "jupyter",
+        "dataframe",
+        "tableau alternative",
+        "streamlit",
+        "pandas",
+        "interactive charts"
+      ]
     },
     {
       "id": "yzhao062/pyod",
@@ -476,7 +753,20 @@
       "use_for": "Detect anomalies and outliers in tabular, time series or other data",
       "why": "60+ detectors behind a scikit-learn-style API; the go-to Python anomaly detection library.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "PyOD is a Python library for outlier and anomaly detection with 61 detectors across tabular, time series, graph, text, image and audio data behind one fit/predict API. PyOD 3 adds ADEngine to choose, compare and assess detectors automatically, plus an od-expert agent skill and an optional MCP server.",
+      "best_for": "Detecting anomalies or outliers in Python data with many interchangeable algorithms, or letting an AI agent run anomaly-detection investigations.",
+      "not_for": "Focused on anomaly detection only, not general ML. The agentic and MCP layers need extra installs; a Python library rather than a hosted monitoring service.",
+      "keywords": [
+        "anomaly detection",
+        "outlier detection",
+        "python",
+        "machine learning",
+        "time series",
+        "mcp",
+        "agent",
+        "detectors"
+      ]
     },
     {
       "id": "pytorch/pytorch",
@@ -499,7 +789,21 @@
       "why": "The dominant deep learning framework in research and production; BSD-style license (verified).",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Python deep learning framework providing NumPy-like tensor computation with GPU acceleration and tape-based autograd for dynamic neural networks. Python-first, extensible with NumPy/SciPy/Cython, widely used in research and production.",
+      "best_for": "Building and training custom neural networks, research, and most modern deep learning and LLM work.",
+      "not_for": "Classical tabular ML (use scikit-learn/XGBoost) or tiny edge targets. Large install, and low-level training loops are manual.",
+      "keywords": [
+        "deep learning",
+        "tensor",
+        "autograd",
+        "gpu",
+        "neural networks",
+        "python",
+        "cuda",
+        "machine learning",
+        "dynamic graph"
+      ]
     },
     {
       "id": "ray-project/ray",
@@ -521,7 +825,21 @@
       "why": "Standard compute engine for scaling ML from a laptop to a cluster; powers training and inference at many large labs",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Distributed compute framework for scaling Python and ML workloads across clusters, with libraries for distributed training, hyperparameter tuning, data processing, reinforcement learning and model serving.",
+      "best_for": "Scaling Python or ML jobs from a laptop to a cluster: distributed training, tuning, batch inference, serving.",
+      "not_for": "Single-machine workloads where multiprocessing or Dask suffice; cluster operations add complexity.",
+      "keywords": [
+        "distributed computing",
+        "ray serve",
+        "ray tune",
+        "ray train",
+        "cluster",
+        "hyperparameter tuning",
+        "distributed training",
+        "python parallel",
+        "model serving"
+      ]
     },
     {
       "id": "scikit-learn/scikit-learn",
@@ -543,7 +861,20 @@
       "why": "The default library for classical ML in Python, with a consistent, well-documented API.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "scikit-learn is a Python module for machine learning built on top of SciPy and distributed under the 3-Clause BSD license. It depends on NumPy, SciPy, joblib and threadpoolctl, installs via pip or conda, and offers plotting helpers when Matplotlib is available.",
+      "best_for": "Classical machine learning in Python: classification, regression, clustering, preprocessing and model evaluation on tabular data.",
+      "not_for": "Not a deep learning framework; no GPU-centric neural network training. Python only.",
+      "keywords": [
+        "machine learning",
+        "python",
+        "scipy",
+        "numpy",
+        "classification",
+        "regression",
+        "clustering",
+        "bsd"
+      ]
     },
     {
       "id": "tensorflow/tfjs",
@@ -567,7 +898,21 @@
       "npm": "@tensorflow/tfjs",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "JavaScript library for training and deploying ML models in the browser or Node.js with WebGL/WebGPU acceleration. Offers a low-level linear algebra API and a high-level layers API, model converters for existing TensorFlow models, and retraining.",
+      "best_for": "Running or fine-tuning ML models client-side in browsers or Node.js, using pretrained models and converters.",
+      "not_for": "Large-scale training or cutting-edge LLMs; better served by Python frameworks or ONNX/transformers.js runtimes.",
+      "keywords": [
+        "tensorflow",
+        "javascript",
+        "browser ml",
+        "node.js",
+        "webgl",
+        "webgpu",
+        "model converter",
+        "on-device",
+        "neural network"
+      ]
     },
     {
       "id": "huggingface/transformers",
@@ -589,7 +934,21 @@
       "why": "The de-facto model-definition library: thousands of architectures and direct access to the Hugging Face Hub",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Model-definition library for pretrained text, vision, audio, video and multimodal models, supporting inference and training. Central model definitions are compatible with training frameworks and inference engines (vLLM, SGLang, llama.cpp, etc.) and the Hugging Face Hub.",
+      "best_for": "Loading, fine-tuning and running pretrained models for NLP, vision, audio and LLMs with the Hugging Face ecosystem.",
+      "not_for": "Lean production serving (use vLLM/TGI/ONNX) or tabular ML. Heavy dependencies and large model downloads.",
+      "keywords": [
+        "pretrained models",
+        "llm",
+        "fine-tuning",
+        "hugging face",
+        "nlp",
+        "pipeline",
+        "pytorch",
+        "multimodal",
+        "tokenizer"
+      ]
     },
     {
       "id": "dmlc/xgboost",
@@ -613,7 +972,21 @@
       "why": "Still the strongest default for tabular data; GPU and distributed training, scikit-learn compatible API",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Optimized gradient boosting library implementing parallel tree boosting (GBDT/GBM). Runs on Kubernetes, Hadoop, Spark, Dask and GPUs, scales beyond billions of examples, with a scikit-learn-compatible API.",
+      "best_for": "Tabular classification, regression and ranking where gradient boosting is the strong default, including distributed or GPU training.",
+      "not_for": "Unstructured data like images, text or audio (use deep learning), or extrapolating time trends.",
+      "keywords": [
+        "gradient boosting",
+        "gbdt",
+        "tabular",
+        "classification",
+        "regression",
+        "ranking",
+        "gpu",
+        "distributed",
+        "scikit-learn api"
+      ]
     },
     {
       "id": "Data-Centric-AI-Community/fg-data-profiling",
@@ -634,7 +1007,21 @@
       "use_for": "Generate a full EDA and data-quality report from a DataFrame in one line",
       "why": "Formerly pandas-profiling; HTML reports with correlations, missing values and alerts for Pandas and Spark.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Renamed successor of ydata-profiling (pandas-profiling). Generates an extended one-line exploratory data analysis report from a DataFrame, with HTML reports covering correlations, missing values, distributions and data quality alerts; supports pandas and Spark.",
+      "best_for": "Quick automated EDA and data-quality checks at the start of a data project.",
+      "not_for": "Deep custom analysis or very large data (reports are slow on wide/huge frames). Old ydata-profiling package no longer receives updates.",
+      "keywords": [
+        "eda",
+        "data profiling",
+        "data quality",
+        "pandas-profiling",
+        "ydata-profiling",
+        "html report",
+        "dataframe",
+        "missing values",
+        "correlations"
+      ]
     }
   ]
 }

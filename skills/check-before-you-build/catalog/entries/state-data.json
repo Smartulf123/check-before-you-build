@@ -22,7 +22,20 @@
       "npm": "@apollo/client",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "GraphQL client for TypeScript/JavaScript with an intelligent normalized cache, React hooks and developer tools. Works with React, Vue, Angular and others.",
+      "best_for": "GraphQL-heavy front ends that want automatic caching, hooks and devtools.",
+      "not_for": "GraphQL only and sizable compared with lighter clients like urql; its normalized cache adds complexity for simple REST-like needs.",
+      "keywords": [
+        "graphql",
+        "apollo",
+        "cache",
+        "react hooks",
+        "normalized cache",
+        "graphql client",
+        "typescript",
+        "devtools"
+      ]
     },
     {
       "id": "axios/axios",
@@ -46,7 +59,21 @@
       "npm": "axios",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Promise-based HTTP client for the browser and Node.js. Offers interceptors, request cancellation, automatic JSON handling and consistent behavior across environments.",
+      "best_for": "General HTTP requests in JS apps, especially where interceptors and a uniform API for browser and Node are useful.",
+      "not_for": "Adds bundle weight versus native fetch for simple calls; no built-in caching or retry/state management (pair with TanStack Query or SWR for server state).",
+      "keywords": [
+        "http client",
+        "ajax",
+        "fetch",
+        "interceptors",
+        "promise",
+        "request",
+        "xhr",
+        "node.js",
+        "cancellation"
+      ]
     },
     {
       "id": "felangel/bloc",
@@ -68,7 +95,20 @@
       "why": "Mature, predictable state management for Flutter with strong tooling.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Predictable state management library implementing the BLoC pattern to separate presentation from business logic in Dart/Flutter. Packages include bloc, flutter_bloc, hydrated_bloc, replay_bloc and bloc_test.",
+      "best_for": "Flutter apps that want structured, testable event/state-driven logic with strong tooling.",
+      "not_for": "More boilerplate than lightweight options like Riverpod or GetX; Dart/Flutter only and can feel heavy for small apps.",
+      "keywords": [
+        "flutter",
+        "bloc",
+        "state management",
+        "dart",
+        "cubit",
+        "hydrated bloc",
+        "business logic",
+        "testing"
+      ]
     },
     {
       "id": "graphql/dataloader",
@@ -90,7 +130,20 @@
       "why": "Canonical batching/caching utility from the GraphQL Foundation, used across GraphQL servers.",
       "npm": "dataloader",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Generic utility that batches and caches data-fetching calls within a single request tick, giving a simple consistent API over databases or web services. A port of Facebook's Loader API.",
+      "best_for": "GraphQL servers and other data layers needing to avoid N+1 queries by batching key lookups.",
+      "not_for": "A batching/caching helper only, not a full data layer; its cache is per-instance and typically per-request, so it is not a shared or persistent cache.",
+      "keywords": [
+        "dataloader",
+        "batching",
+        "n+1",
+        "graphql",
+        "caching",
+        "data fetching",
+        "key loading",
+        "batch requests"
+      ]
     },
     {
       "id": "jonataslaw/getx",
@@ -111,7 +164,20 @@
       "use_for": "Manage state, routes and dependencies in Flutter with minimal boilerplate",
       "why": "One of the most used Flutter state packages, bundling reactive state, DI and navigation.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Flutter package bundling reactive state management, dependency injection and route management with minimal boilerplate, plus utilities such as internationalization and middleware.",
+      "best_for": "Quick Flutter development where one package for state, routes and DI is convenient.",
+      "not_for": "All-in-one approach is opinionated and less aligned with Flutter's recommended patterns; Flutter only, and large community debates exist about long-term maintainability.",
+      "keywords": [
+        "flutter",
+        "getx",
+        "state management",
+        "route management",
+        "dependency injection",
+        "reactive",
+        "dart",
+        "i18n"
+      ]
     },
     {
       "id": "hey-api/hey-api",
@@ -135,7 +201,20 @@
       "npm": "@hey-api/openapi-ts",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "OpenAPI code generator ecosystem that turns API specs into typed TypeScript SDKs, Zod schemas and TanStack Query hooks. Offers a plugin system for clients and validators and runs on Node.js 22+.",
+      "best_for": "Generating type-safe API clients and validation schemas from OpenAPI specs in TypeScript projects.",
+      "not_for": "Needs an OpenAPI spec and Node 22+; TypeScript-oriented, so not for other client languages. Generated output requires regenerating when the spec changes.",
+      "keywords": [
+        "openapi",
+        "codegen",
+        "typescript sdk",
+        "zod",
+        "tanstack query",
+        "api client",
+        "swagger",
+        "openapi generator"
+      ]
     },
     {
       "id": "pmndrs/jotai",
@@ -159,7 +238,20 @@
       "npm": "jotai",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Atomic state management for React. State is split into small composable atoms, with a minimal core API (about 2kb) and no string keys.",
+      "best_for": "React apps wanting fine-grained state and few unnecessary re-renders, scaling from useState replacement to larger apps.",
+      "not_for": "React only; atom graphs can be harder to reason about globally than a single store. Not a server-state cache (use TanStack Query).",
+      "keywords": [
+        "react state",
+        "atoms",
+        "jotai",
+        "state management",
+        "hooks",
+        "derived state",
+        "typescript",
+        "global state"
+      ]
     },
     {
       "id": "LegendApp/legend-state",
@@ -182,7 +274,20 @@
       "npm": "@legendapp/state",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "State and sync library with fine-grained reactivity for React and React Native (about 4kb). Includes persistence plugins for local storage and sync plugins such as Supabase.",
+      "best_for": "Local-first React or React Native apps needing performant state with built-in persistence and sync.",
+      "not_for": "Smaller ecosystem than Redux or Zustand and a distinct observable API to learn; React-oriented.",
+      "keywords": [
+        "legend state",
+        "signals",
+        "fine-grained reactivity",
+        "react native",
+        "persistence",
+        "sync",
+        "local-first",
+        "observable"
+      ]
     },
     {
       "id": "mobxjs/mobx",
@@ -205,7 +310,20 @@
       "npm": "mobx",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Signal-based state management using transparent reactive observables. State changes are plain JS assignments, and derived values and views update automatically.",
+      "best_for": "Apps wanting minimal-boilerplate, mutable-style reactive state with React, Vue or plain JS.",
+      "not_for": "Implicit reactivity ('magic') can be harder to debug than explicit stores; less strict structure than Redux for large teams.",
+      "keywords": [
+        "mobx",
+        "observable",
+        "reactive state",
+        "state management",
+        "react",
+        "computed",
+        "signals",
+        "mutable state"
+      ]
     },
     {
       "id": "nanostores/nanostores",
@@ -227,7 +345,20 @@
       "npm": "nanostores",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Tiny state manager (351 to 844 bytes) using many atomic stores and derived stores. Framework-agnostic with bindings for React, Vue, Svelte, Solid, Lit, Angular and vanilla JS.",
+      "best_for": "Shared state across multiple frameworks or Astro islands where bundle size matters.",
+      "not_for": "Minimal feature set and tooling compared with Redux or Zustand; you must design store structure yourself.",
+      "keywords": [
+        "nanostores",
+        "atomic stores",
+        "state management",
+        "astro",
+        "framework agnostic",
+        "tiny",
+        "derived store",
+        "svelte"
+      ]
     },
     {
       "id": "47ng/nuqs",
@@ -250,7 +381,21 @@
       "npm": "nuqs",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Type-safe search-param state for React, working like useState but stored in the URL query string. Includes built-in parsers, useQueryStates and adapters for Next.js (app and pages), Remix, React Router, TanStack Router and plain React.",
+      "best_for": "Filters, pagination, tabs and other shareable UI state that should live in the URL.",
+      "not_for": "Only handles URL query state; not general application state. Parsing and URL length limits make it unsuited to large or sensitive data.",
+      "keywords": [
+        "url state",
+        "search params",
+        "query string",
+        "nextjs",
+        "react",
+        "usequerystate",
+        "type safe",
+        "router",
+        "pagination"
+      ]
     },
     {
       "id": "orval-labs/orval",
@@ -274,7 +419,20 @@
       "npm": "orval",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Generates typed TypeScript API clients from OpenAPI specifications, including TanStack Query and SWR hooks and mocks.",
+      "best_for": "Teams with OpenAPI specs wanting generated clients that plug into data-fetching libraries.",
+      "not_for": "Depends on a quality OpenAPI spec; generated code must be regenerated on spec changes, and TypeScript-focused.",
+      "keywords": [
+        "openapi",
+        "typescript client",
+        "codegen",
+        "tanstack query",
+        "swr",
+        "swagger",
+        "api client generator",
+        "react query"
+      ]
     },
     {
       "id": "vuejs/pinia",
@@ -298,7 +456,20 @@
       "npm": "pinia",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Vue state management library with type-safe, modular stores, devtools support and a Nuxt module. Replaces Vuex.",
+      "best_for": "Global state in Vue 3 and Nuxt apps.",
+      "not_for": "Vue only (v2 branch exists for Vue 2); overkill when component state or composables suffice.",
+      "keywords": [
+        "vue",
+        "pinia",
+        "state management",
+        "vuex",
+        "nuxt",
+        "stores",
+        "typescript",
+        "devtools"
+      ]
     },
     {
       "id": "preactjs/signals",
@@ -322,7 +493,19 @@
       "npm": "@preact/signals-core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Fine-grained reactive state using signals, with bindings for Preact, React and vanilla JS. Signals are lazy and update only the parts that depend on them without selectors or wrappers.",
+      "best_for": "Preact apps or React apps wanting signal-style reactivity with minimal re-renders.",
+      "not_for": "React integration modifies how rendering works and is less standard; ecosystem smaller than Redux or Zustand.",
+      "keywords": [
+        "signals",
+        "preact",
+        "fine-grained reactivity",
+        "state management",
+        "computed",
+        "effect",
+        "react signals"
+      ]
     },
     {
       "id": "reduxjs/redux",
@@ -343,7 +526,19 @@
       "why": "The original predictable state container underlying Redux Toolkit and many other libraries.",
       "npm": "redux",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Predictable global state container with a single store and reducers. The core is about 2kB, works with React or any view library, and has devtools including time travel debugging.",
+      "best_for": "Existing Redux apps, or learning the core pattern behind Redux Toolkit.",
+      "not_for": "Redux itself requires boilerplate; the docs recommend Redux Toolkit for new code. Overkill for small apps.",
+      "keywords": [
+        "redux",
+        "state container",
+        "reducers",
+        "flux",
+        "time travel debugging",
+        "global state",
+        "predictable state"
+      ]
     },
     {
       "id": "reduxjs/redux-toolkit",
@@ -367,7 +562,19 @@
       "npm": "@reduxjs/toolkit",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Redux Toolkit is the official toolset for writing Redux logic, including APIs such as createSlice and RTK Query for data fetching. The README text available describes the repo's docs folder, whose pages are published on the combined Redux docs site at redux.js.org/toolkit.",
+      "best_for": "React or JS apps that use Redux for global state and want less boilerplate, plus RTK Query for API data fetching and caching.",
+      "not_for": "Apps whose state needs are covered by local component state or lighter stores; it is tied to the Redux model.",
+      "keywords": [
+        "redux",
+        "redux toolkit",
+        "state management",
+        "createslice",
+        "rtk query",
+        "react",
+        "typescript"
+      ]
     },
     {
       "id": "rrousselGit/riverpod",
@@ -389,7 +596,20 @@
       "why": "Compile-safe successor to Provider, widely used in Flutter.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Reactive caching and data-binding framework for Flutter and Dart, with built-in loading/error handling, pull-to-refresh support and logic separated from UI. Packages include flutter_riverpod and hooks_riverpod.",
+      "best_for": "Flutter or Dart apps with async data and testable, scalable state.",
+      "not_for": "Dart/Flutter only; concepts such as providers and code generation have a learning curve versus simpler options.",
+      "keywords": [
+        "riverpod",
+        "flutter",
+        "dart",
+        "state management",
+        "provider",
+        "async data",
+        "caching",
+        "dependency injection"
+      ]
     },
     {
       "id": "vercel/swr",
@@ -413,7 +633,20 @@
       "npm": "swr",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "React Hooks library for data fetching using the stale-while-revalidate strategy: returns cached data, revalidates, then updates. Transport and protocol agnostic.",
+      "best_for": "Simple remote data fetching with caching and revalidation in React and Next.js.",
+      "not_for": "React only; fewer features than TanStack Query for complex mutations and cache control.",
+      "keywords": [
+        "swr",
+        "data fetching",
+        "react hooks",
+        "stale-while-revalidate",
+        "cache",
+        "revalidation",
+        "nextjs",
+        "fetch"
+      ]
     },
     {
       "id": "TanStack/query",
@@ -437,7 +670,21 @@
       "npm": "@tanstack/react-query",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Async state library for fetching, caching, synchronizing and updating server state. Protocol-agnostic, with pagination, infinite scroll, mutations, prefetching, cancellation and devtools for React, Vue, Solid, Svelte and Angular.",
+      "best_for": "Server-state management in front ends with caching, refetching and mutations.",
+      "not_for": "Not for client-only UI state; adds concepts and bundle weight for apps with trivial fetching needs.",
+      "keywords": [
+        "tanstack query",
+        "react query",
+        "server state",
+        "caching",
+        "data fetching",
+        "mutations",
+        "pagination",
+        "infinite scroll",
+        "refetch"
+      ]
     },
     {
       "id": "urql-graphql/urql",
@@ -460,7 +707,20 @@
       "npm": "urql",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Customizable GraphQL client for React, Preact, Vue, Solid and Svelte. Behavior is configured through exchanges, with document caching by default and optional normalized caching via Graphcache.",
+      "best_for": "GraphQL apps wanting a lighter, extensible alternative to Apollo Client.",
+      "not_for": "GraphQL only; smaller ecosystem than Apollo, and normalized caching needs the extra Graphcache package.",
+      "keywords": [
+        "graphql client",
+        "urql",
+        "exchanges",
+        "graphcache",
+        "react",
+        "vue",
+        "svelte",
+        "caching"
+      ]
     },
     {
       "id": "pmndrs/valtio",
@@ -482,7 +742,19 @@
       "npm": "valtio",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Proxy-based state for React and vanilla JS. Wrap an object with proxy(), mutate it directly and read via useSnapshot so components re-render only when used parts change.",
+      "best_for": "Teams who prefer mutable-style state with automatic render optimization.",
+      "not_for": "Proxy-based approach has pitfalls (snapshots versus source, no IE), and it is less explicit than reducer patterns.",
+      "keywords": [
+        "valtio",
+        "proxy state",
+        "mutable state",
+        "react state",
+        "usesnapshot",
+        "state management",
+        "pmndrs"
+      ]
     },
     {
       "id": "statelyai/xstate",
@@ -506,7 +778,20 @@
       "npm": "xstate",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "State management and orchestration using state machines, statecharts and the actor model. Zero dependencies, usable in frontend and backend, with visual tooling.",
+      "best_for": "Complex workflows, UI flows and logic with many states that benefit from explicit modeling.",
+      "not_for": "Heavy conceptual overhead for simple state; verbose compared with Zustand or similar.",
+      "keywords": [
+        "xstate",
+        "state machine",
+        "statechart",
+        "actors",
+        "workflow",
+        "finite state machine",
+        "orchestration",
+        "visualizer"
+      ]
     },
     {
       "id": "pmndrs/zustand",
@@ -530,7 +815,20 @@
       "npm": "zustand",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Small, hook-based global state store for React using simplified flux principles. Minimal boilerplate and unopinionated, handling concurrency pitfalls like zombie children.",
+      "best_for": "Lightweight global client state in React apps.",
+      "not_for": "React-focused; not a server-state cache and offers less structure than Redux for very large teams.",
+      "keywords": [
+        "zustand",
+        "react state",
+        "global state",
+        "hooks",
+        "store",
+        "state management",
+        "flux",
+        "pmndrs"
+      ]
     }
   ]
 }

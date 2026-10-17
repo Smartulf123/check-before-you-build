@@ -21,7 +21,20 @@
       "npm": "better-sqlite3",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Node.js SQLite binding with a synchronous API, full transactions, user-defined functions, aggregates, virtual tables, extensions, 64-bit integers and worker thread support. Claims higher performance than async SQLite drivers.",
+      "best_for": "Embedded SQLite in Node apps, CLI tools, Electron apps and servers with local data where simplicity and speed matter.",
+      "not_for": "Environments needing async drivers, serverless/edge runtimes without native modules, or multi-writer network databases. Native addon.",
+      "keywords": [
+        "sqlite",
+        "node.js",
+        "synchronous",
+        "embedded database",
+        "transactions",
+        "native addon",
+        "electron",
+        "sqlite3 alternative"
+      ]
     },
     {
       "id": "citusdata/citus",
@@ -44,7 +57,21 @@
       "why": "Postgres extension for sharding and parallel distributed queries with full Postgres compatibility (multi-tenant SaaS, analytics).",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "PostgreSQL extension that turns Postgres into a distributed database: distributed tables sharded across nodes, reference tables replicated to all nodes, and a distributed query engine for parallel execution, while staying Postgres-compatible.",
+      "best_for": "Scaling Postgres horizontally for multi-tenant SaaS or real-time analytics while keeping SQL and extensions.",
+      "not_for": "Small apps on a single node, or workloads with heavy cross-shard transactions; requires choosing distribution keys and running a cluster.",
+      "keywords": [
+        "postgres",
+        "sharding",
+        "distributed",
+        "multi-tenant",
+        "scale out",
+        "extension",
+        "analytics",
+        "horizontal scaling",
+        "citus"
+      ]
     },
     {
       "id": "ClickHouse/ClickHouse",
@@ -65,7 +92,21 @@
       "why": "Leading open-source OLAP database (Apache-2.0)",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Column-oriented database management system for real-time analytical reports over very large datasets, with SQL, clustering and a managed ClickHouse Cloud offering from its maintainers.",
+      "best_for": "Fast OLAP analytics, log/event/metrics analysis and dashboards over billions of rows.",
+      "not_for": "Transactional OLTP workloads with frequent row updates and deletes; operating clusters needs expertise.",
+      "keywords": [
+        "olap",
+        "columnar",
+        "analytics",
+        "real-time",
+        "sql",
+        "big data",
+        "log analytics",
+        "time series",
+        "data warehouse"
+      ]
     },
     {
       "id": "diesel-rs/diesel",
@@ -86,7 +127,21 @@
       "why": "Mature, type-safe Rust ORM; complements SQLx already listed",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Safe, extensible ORM and query builder for Rust that uses the type system to catch query errors at compile time with low overhead. Backends (PostgreSQL, MySQL, SQLite) are selected via Cargo features.",
+      "best_for": "Rust applications wanting compile-time checked, type-safe queries with a query-builder DSL and migrations.",
+      "not_for": "Fully async-first code (core is synchronous; async via separate crate) or those preferring raw SQL checking (see SQLx).",
+      "keywords": [
+        "rust",
+        "orm",
+        "query builder",
+        "postgres",
+        "mysql",
+        "sqlite",
+        "type-safe",
+        "migrations",
+        "compile-time"
+      ]
     },
     {
       "id": "drizzle-team/drizzle-orm",
@@ -110,7 +165,22 @@
       "npm": "drizzle-orm",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Lightweight TypeScript ORM with zero dependencies (~7kb gzipped) supporting PostgreSQL, MySQL and SQLite, including serverless drivers like Neon, Turso, D1 and Supabase. SQL-like query API; migrations via drizzle-kit.",
+      "best_for": "TypeScript apps on serverless or edge runtimes wanting SQL-first, type-safe access with a small footprint.",
+      "not_for": "Teams wanting a heavy ORM with active-record or unit-of-work patterns, or non-SQL databases like MongoDB.",
+      "keywords": [
+        "typescript",
+        "orm",
+        "sql",
+        "postgres",
+        "mysql",
+        "sqlite",
+        "serverless",
+        "edge",
+        "drizzle-kit",
+        "migrations"
+      ]
     },
     {
       "id": "duckdb/duckdb",
@@ -135,7 +205,22 @@
       "why": "The SQLite of analytics: fast columnar queries with bindings for Python, Node, R, WASM and more.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "In-process analytical SQL database with a rich SQL dialect (window functions, nested types, correlated subqueries). Runs as a CLI or embedded via Python, R, Java, Wasm and more, and queries Parquet, CSV and dataframes directly.",
+      "best_for": "Local analytics on files and dataframes, data science and embedded OLAP without a server.",
+      "not_for": "High-concurrency transactional workloads or multi-user server deployments; single-process by design.",
+      "keywords": [
+        "olap",
+        "embedded",
+        "analytics",
+        "parquet",
+        "csv",
+        "sql",
+        "in-process",
+        "columnar",
+        "wasm",
+        "pandas"
+      ]
     },
     {
       "id": "etcd-io/etcd",
@@ -157,7 +242,21 @@
       "why": "Raft-based KV store behind Kubernetes; watch API, leases and transactions for service discovery and leader election.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Distributed, reliable key-value store written in Go that uses Raft consensus. Provides a gRPC API with watches, leases and transactions, automatic TLS, and is used for configuration, service discovery and leader election (notably in Kubernetes).",
+      "best_for": "Storing critical coordination and configuration data across a cluster, leader election, service discovery.",
+      "not_for": "General application database or large data volumes; it is for small, critical metadata and the main branch may be unstable.",
+      "keywords": [
+        "key-value",
+        "raft",
+        "consensus",
+        "service discovery",
+        "leader election",
+        "kubernetes",
+        "configuration",
+        "distributed",
+        "watch api"
+      ]
     },
     {
       "id": "FerretDB/FerretDB",
@@ -179,7 +278,20 @@
       "why": "Open-source MongoDB alternative: speaks the Mongo wire protocol so existing drivers work, stores data in Postgres.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source MongoDB alternative: a proxy that translates MongoDB 5.0+ wire protocol queries into SQL and stores data in PostgreSQL with the DocumentDB extension, so existing Mongo drivers work.",
+      "best_for": "Keeping MongoDB drivers and apps while avoiding MongoDB licensing by running on PostgreSQL.",
+      "not_for": "Apps relying on full MongoDB feature parity or Mongo-specific features; compatibility is not complete.",
+      "keywords": [
+        "mongodb alternative",
+        "postgres",
+        "wire protocol",
+        "documentdb",
+        "document database",
+        "proxy",
+        "bson",
+        "mongo compatible"
+      ]
     },
     {
       "id": "pressly/goose",
@@ -205,7 +317,21 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Database migration tool as both a CLI and Go library. Migrations are SQL files or Go functions, supports embedded migrations, out-of-order migrations, seeding and env var substitution across Postgres, MySQL, SQLite, ClickHouse, MSSQL and more.",
+      "best_for": "Managing schema migrations in Go projects, including Go-code migrations and embedding via io/fs.",
+      "not_for": "Automatic schema diffing or ORM-driven migrations; migrations are hand-written.",
+      "keywords": [
+        "database migrations",
+        "go",
+        "golang",
+        "sql migrations",
+        "schema",
+        "cli",
+        "embedded migrations",
+        "postgres",
+        "sqlite"
+      ]
     },
     {
       "id": "go-gorm/gorm",
@@ -226,7 +352,21 @@
       "why": "The most popular Go ORM",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Full-featured ORM for Go with associations, hooks, eager loading (Preload/Joins), transactions and savepoints, batch insert, auto-migrations, SQL builder, prepared statements, logger and extensible plugins.",
+      "best_for": "Go applications wanting a batteries-included, developer-friendly ORM across common SQL databases.",
+      "not_for": "Teams who want explicit SQL with compile-time checking (sqlc/sqlx), or minimal reflection overhead.",
+      "keywords": [
+        "go",
+        "golang",
+        "orm",
+        "associations",
+        "hooks",
+        "auto migration",
+        "preload",
+        "transactions",
+        "sql"
+      ]
     },
     {
       "id": "influxdata/influxdb",
@@ -248,7 +388,21 @@
       "why": "Purpose-built time-series database (v3 core in Rust on Arrow/Parquet) with SQL querying.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Time series database for real-time events and metrics. InfluxDB 3 Core is written in Rust on Apache Arrow, DataFusion and Parquet, with fast ingest and SQL querying for monitoring, sensor and analytics use cases.",
+      "best_for": "Storing and querying metrics, IoT/sensor data, application and infrastructure monitoring.",
+      "not_for": "Relational or general-purpose workloads; the open Core edition is narrower than the commercial editions.",
+      "keywords": [
+        "time series",
+        "metrics",
+        "monitoring",
+        "iot",
+        "sensor data",
+        "sql",
+        "arrow",
+        "parquet",
+        "real-time ingest"
+      ]
     },
     {
       "id": "knex/knex",
@@ -270,7 +424,22 @@
       "npm": "knex",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Multi-dialect SQL query builder for Node.js (PostgreSQL, MySQL/MariaDB, SQLite3, MSSQL, CockroachDB, Oracle) with migrations, seeds, transactions, connection pooling, streaming, and promise or callback APIs.",
+      "best_for": "Node apps needing portable SQL building with migrations and seeds, or a base layer for ORMs like Objection.",
+      "not_for": "Strong end-to-end TypeScript type inference (consider Kysely/Drizzle) or full ORM features.",
+      "keywords": [
+        "query builder",
+        "node.js",
+        "sql",
+        "migrations",
+        "seeds",
+        "postgres",
+        "mysql",
+        "sqlite",
+        "connection pool",
+        "transactions"
+      ]
     },
     {
       "id": "kysely-org/kysely",
@@ -293,7 +462,21 @@
       "npm": "kysely",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Type-safe, autocompletion-friendly TypeScript SQL query builder inspired by Knex. Infers table and column types without code generation; runs on Node, Deno, Bun, Cloudflare Workers and browsers.",
+      "best_for": "TypeScript projects wanting full SQL control with compile-time safety and no ORM layer.",
+      "not_for": "Teams wanting an ORM with relations, entity mapping or built-in migration tooling and schema modeling.",
+      "keywords": [
+        "typescript",
+        "query builder",
+        "type-safe sql",
+        "postgres",
+        "mysql",
+        "sqlite",
+        "knex alternative",
+        "no codegen",
+        "edge"
+      ]
     },
     {
       "id": "golang-migrate/migrate",
@@ -319,7 +502,21 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Database migration tool as a CLI and Go library. Reads versioned migrations from files, S3, GitHub and other sources and applies them to many databases (Postgres, MySQL, SQLite, Mongo, ClickHouse). No config files or hidden env magic.",
+      "best_for": "Language-agnostic versioned migrations run from CLI, Docker or Go code in CI and deployments.",
+      "not_for": "Auto-generated migrations or ORM integration; migrations are hand-written up/down files.",
+      "keywords": [
+        "database migrations",
+        "go",
+        "cli",
+        "docker",
+        "postgres",
+        "mysql",
+        "versioned",
+        "up down",
+        "schema"
+      ]
     },
     {
       "id": "mikro-orm/mikro-orm",
@@ -342,7 +539,21 @@
       "npm": "@mikro-orm/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "TypeScript ORM for Node.js based on Data Mapper, Unit of Work and Identity Map patterns, inspired by Doctrine and Hibernate. Supports MongoDB, MySQL, MariaDB, PostgreSQL, SQLite, libSQL, MSSQL and Oracle via per-driver packages.",
+      "best_for": "Domain-heavy TypeScript apps needing transactional unit-of-work semantics and entity mapping.",
+      "not_for": "Simple CRUD or serverless-lean apps where a lighter query builder suffices; more concepts to learn.",
+      "keywords": [
+        "typescript",
+        "orm",
+        "data mapper",
+        "unit of work",
+        "identity map",
+        "postgres",
+        "mongodb",
+        "entities",
+        "node.js"
+      ]
     },
     {
       "id": "Automattic/mongoose",
@@ -364,7 +575,21 @@
       "npm": "mongoose",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "MongoDB object modeling tool for Node.js (and alpha Deno) providing schemas, validation, middleware, population and a large plugin ecosystem. Version 9 was released in November 2025.",
+      "best_for": "Node.js apps using MongoDB that want schema validation, middleware hooks and model abstractions.",
+      "not_for": "SQL databases, or projects wanting schemaless raw driver access with minimal abstraction.",
+      "keywords": [
+        "mongodb",
+        "odm",
+        "node.js",
+        "schema",
+        "validation",
+        "middleware",
+        "populate",
+        "models",
+        "plugins"
+      ]
     },
     {
       "id": "neondatabase/neon",
@@ -387,7 +612,19 @@
       "why": "Separates Postgres storage and compute for instant database branching and autoscaling; the open core behind Neon.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source serverless Postgres platform that separates storage and compute: stateless Postgres compute nodes over a custom storage engine, enabling branching and autoscaling. Hosted free tier available or compile and run locally.",
+      "best_for": "Understanding or self-hosting serverless Postgres with branching and scale-to-zero.",
+      "not_for": "Simple self-hosting; running the full storage stack yourself is complex (use hosted Neon or plain Postgres).",
+      "keywords": [
+        "serverless postgres",
+        "branching",
+        "scale to zero",
+        "storage compute separation",
+        "postgres",
+        "autoscaling",
+        "database platform"
+      ]
     },
     {
       "id": "brianc/node-postgres",
@@ -410,7 +647,21 @@
       "npm": "pg",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Non-blocking PostgreSQL client for Node.js (also Bun, Deno, Cloudflare) in pure JavaScript with optional native libpq bindings. Features pooling, parameterized queries, named statements, LISTEN/NOTIFY and COPY.",
+      "best_for": "Direct, low-level Postgres access in Node, or the driver under ORMs and query builders.",
+      "not_for": "ORM-like conveniences or type-safe queries out of the box; you write raw SQL.",
+      "keywords": [
+        "postgres",
+        "pg",
+        "node.js",
+        "client",
+        "connection pool",
+        "listen notify",
+        "copy",
+        "parameterized queries",
+        "driver"
+      ]
     },
     {
       "id": "electric-sql/pglite",
@@ -434,7 +685,21 @@
       "npm": "@electric-sql/pglite",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "WASM build of Postgres packaged as a TypeScript library (~3MB gzipped) that runs in the browser, Node, Bun and Deno with no installs. Supports extensions like pgvector and PostGIS.",
+      "best_for": "Tests, local-first apps, browser-based and embedded Postgres prototypes without a server.",
+      "not_for": "Production multi-connection servers or heavy workloads; single-user in-process WASM Postgres.",
+      "keywords": [
+        "postgres wasm",
+        "embedded postgres",
+        "browser",
+        "local-first",
+        "pgvector",
+        "testing",
+        "in-memory",
+        "node",
+        "bun"
+      ]
     },
     {
       "id": "porsager/postgres",
@@ -456,7 +721,21 @@
       "npm": "postgres",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Fast, full-featured PostgreSQL client for Node, Deno and Bun built around ES6 tagged template SQL strings, with dynamic queries, pooling, subscriptions via logical replication and LISTEN/NOTIFY.",
+      "best_for": "Postgres from JS with a concise tagged-template API; also a common Drizzle driver.",
+      "not_for": "Other databases (Postgres only) or ORM-style modeling.",
+      "keywords": [
+        "postgres",
+        "tagged template",
+        "node.js",
+        "deno",
+        "bun",
+        "client",
+        "sql",
+        "subscribe",
+        "driver"
+      ]
     },
     {
       "id": "postgres/postgres",
@@ -483,7 +762,20 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Source of PostgreSQL, an advanced object-relational database supporting an extended SQL standard with transactions, foreign keys, subqueries, triggers, user-defined types and functions. Highly extensible with JSONB, full-text search and a large extension ecosystem.",
+      "best_for": "Default relational database for most new applications, from small apps to large deployments.",
+      "not_for": "Embedded/zero-ops use (SQLite) or massive horizontal write scale without extensions. Needs server administration.",
+      "keywords": [
+        "postgresql",
+        "relational database",
+        "sql",
+        "jsonb",
+        "full-text search",
+        "extensions",
+        "acid",
+        "database server"
+      ]
     },
     {
       "id": "prisma/orm",
@@ -507,7 +799,21 @@
       "npm": "prisma",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Schema-first ORM for Node.js and TypeScript with a declarative schema, generated type-safe client, Prisma Migrate and Prisma Studio. Prisma 7 remains supported; Prisma 8 is in release candidate per the README.",
+      "best_for": "TypeScript apps wanting strong developer experience, generated types and managed migrations.",
+      "not_for": "Fine-grained SQL control or minimal bundles; major version transition (7 to 8) may involve upgrades.",
+      "keywords": [
+        "orm",
+        "typescript",
+        "prisma",
+        "migrations",
+        "type-safe client",
+        "schema",
+        "postgres",
+        "mysql",
+        "studio"
+      ]
     },
     {
       "id": "redis/redis",
@@ -535,7 +841,21 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "In-memory data structure server used as cache, queue, pub/sub broker and document/vector query engine. Redis 8+ is under AGPLv3 (tri-licensed with RSALv2/SSPL).",
+      "best_for": "Caching, sessions, rate limiting, queues, leaderboards and real-time data with sub-millisecond latency.",
+      "not_for": "Teams requiring a permissive license (consider Valkey) or primary durable storage of large datasets that exceed memory.",
+      "keywords": [
+        "cache",
+        "in-memory",
+        "pub/sub",
+        "queue",
+        "key-value",
+        "vector search",
+        "session store",
+        "redis",
+        "data structures"
+      ]
     },
     {
       "id": "facebook/rocksdb",
@@ -559,7 +879,21 @@
       "why": "Meta's LSM-tree storage engine used inside TiKV, Kafka Streams and many databases; dual GPLv2/Apache-2.0.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Embeddable persistent key-value store library with an LSM-tree design, multi-threaded compaction and tunable write/read/space amplification, optimized for flash and RAM. Built on LevelDB; dual GPLv2/Apache-2.0 licensed.",
+      "best_for": "Embedding a high-throughput storage engine in a database or service (used within TiKV, Kafka Streams).",
+      "not_for": "Applications needing queries, SQL or networking; it is a low-level library with significant tuning complexity.",
+      "keywords": [
+        "key-value store",
+        "lsm tree",
+        "embedded",
+        "storage engine",
+        "persistent",
+        "flash",
+        "compaction",
+        "c++",
+        "write-heavy"
+      ]
     },
     {
       "id": "sequelize/sequelize",
@@ -582,7 +916,22 @@
       "npm": "sequelize",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite, SQL Server, Oracle, Snowflake and Db2, with transactions, relations, eager/lazy loading and read replication.",
+      "best_for": "Existing or conventional Node.js apps needing a mature ORM across many SQL databases.",
+      "not_for": "New TypeScript-first projects wanting strong type inference; its TypeScript support is weaker than newer ORMs.",
+      "keywords": [
+        "orm",
+        "node.js",
+        "sql",
+        "postgres",
+        "mysql",
+        "sqlite",
+        "associations",
+        "transactions",
+        "migrations",
+        "models"
+      ]
     },
     {
       "id": "sqlalchemy/sqlalchemy",
@@ -604,7 +953,22 @@
       "why": "The standard Python ORM; used under FastAPI and Flask apps, with Alembic for migrations.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Python SQL toolkit and Object Relational Mapper giving application developers the full power of SQL, with a Core query layer and ORM; commonly paired with Alembic for migrations.",
+      "best_for": "Python apps (Flask, FastAPI, etc.) needing flexible SQL access or full ORM across databases.",
+      "not_for": "Simple scripts where raw drivers suffice, or beginners wanting minimal concepts; steep learning curve.",
+      "keywords": [
+        "python",
+        "orm",
+        "sql toolkit",
+        "sqlalchemy",
+        "alembic",
+        "postgres",
+        "mysql",
+        "sqlite",
+        "query builder",
+        "data mapper"
+      ]
     },
     {
       "id": "transact-rs/sqlx",
@@ -626,7 +990,21 @@
       "why": "Most popular Rust database crate; checks raw SQL against your schema at build time.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Async pure-Rust SQL toolkit with optional compile-time checked queries and no DSL; supports PostgreSQL, MySQL, MariaDB and SQLite. Not an ORM. MSSQL support removed since 0.7 pending a rewrite.",
+      "best_for": "Rust services wanting async raw SQL with compile-time verification against the schema.",
+      "not_for": "ORM features such as relations or query DSL (see Diesel/SeaORM), or MSSQL/Oracle. Compile-time checks need a live DB or offline data.",
+      "keywords": [
+        "rust",
+        "async",
+        "sql",
+        "compile-time checked",
+        "postgres",
+        "mysql",
+        "sqlite",
+        "not orm",
+        "migrations"
+      ]
     },
     {
       "id": "supabase/supabase",
@@ -651,7 +1029,21 @@
       "why": "Fastest path to a production Postgres backend; open source and self-hostable, with SDKs for many languages.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Postgres development platform offering hosted Postgres, authentication, auto-generated REST and GraphQL APIs, realtime subscriptions, edge functions, file storage and vector/embeddings tools; built from open-source components and self-hostable.",
+      "best_for": "Quickly launching a backend with auth, database, storage and realtime without building each piece.",
+      "not_for": "Teams needing custom infrastructure control or non-Postgres databases; self-hosting is a multi-service setup.",
+      "keywords": [
+        "backend as a service",
+        "postgres",
+        "auth",
+        "realtime",
+        "storage",
+        "edge functions",
+        "firebase alternative",
+        "rest api",
+        "pgvector"
+      ]
     },
     {
       "id": "taosdata/TDengine",
@@ -673,7 +1065,20 @@
       "why": "Time-series DB with built-in caching, stream processing and SQL; designed for billions of IIoT data points.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source time-series database for IoT, connected cars and industrial data, designed for high-cardinality ingestion from billions of sensors with built-in caching, stream processing and SQL.",
+      "best_for": "Large-scale IoT and industrial telemetry storage and real-time analytics.",
+      "not_for": "General-purpose or relational workloads and small metric setups; specialized time-series focus.",
+      "keywords": [
+        "time series",
+        "iot",
+        "industrial",
+        "sensor data",
+        "high cardinality",
+        "stream processing",
+        "sql",
+        "tsdb"
+      ]
     },
     {
       "id": "pingcap/tidb",
@@ -695,7 +1100,20 @@
       "why": "Distributed ACID SQL with HTAP (TiFlash) and vector search; MySQL protocol so existing drivers and ORMs keep working.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Open-source distributed SQL database with MySQL protocol compatibility, ACID distributed transactions via two-phase commit, horizontal and vertical scalability, HTAP and vector search.",
+      "best_for": "Scaling MySQL-style workloads horizontally with strong consistency and mixed OLTP/analytics.",
+      "not_for": "Small single-node apps (MySQL/Postgres is simpler); distributed cluster adds operational overhead.",
+      "keywords": [
+        "distributed sql",
+        "mysql compatible",
+        "htap",
+        "horizontal scaling",
+        "acid",
+        "tikv",
+        "vector search",
+        "newsql"
+      ]
     },
     {
       "id": "tursodatabase/turso",
@@ -720,7 +1138,20 @@
       "why": "Ground-up SQLite rewrite with async I/O, concurrent writes and vector search, keeping file and SQL compatibility.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "In-process SQL database written in Rust, compatible with SQLite file format and SQL, built around a bytecode virtual machine so it can host multiple dialects (SQLite and now a Postgres frontend). Reported to run in production at several organizations.",
+      "best_for": "Embedded databases wanting SQLite compatibility with a modern Rust implementation and newer features.",
+      "not_for": "Conservative deployments needing SQLite's decades of battle-testing; project is a rewrite still maturing.",
+      "keywords": [
+        "sqlite compatible",
+        "rust",
+        "embedded database",
+        "in-process",
+        "libsql",
+        "vdbe",
+        "postgres frontend",
+        "vector search"
+      ]
     },
     {
       "id": "typeorm/typeorm",
@@ -744,7 +1175,22 @@
       "npm": "typeorm",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Decorator-based TypeScript/JavaScript ORM running on Node, browsers, React Native, Electron and more. Supports Active Record and Data Mapper, and more databases than other JS ORMs (Postgres, MySQL, MSSQL, Oracle, MongoDB, SQLite, Spanner, SAP HANA).",
+      "best_for": "Apps (often NestJS) wanting decorator entities, multiple databases and both Active Record and Data Mapper.",
+      "not_for": "Projects wanting best-in-class type safety or fast issue turnaround; known for edge-case bugs and heavy abstractions.",
+      "keywords": [
+        "orm",
+        "typescript",
+        "decorators",
+        "nestjs",
+        "active record",
+        "data mapper",
+        "postgres",
+        "mysql",
+        "migrations",
+        "entities"
+      ]
     },
     {
       "id": "valkey-io/valkey",
@@ -767,7 +1213,20 @@
       "why": "BSD-licensed Linux Foundation fork of Redis, backed by major cloud vendors.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Linux Foundation fork of Redis made before its license change. High-performance key/value data structure server, BSD-licensed, with extensible modules, compatible with Redis clients, and built for Linux, macOS and BSDs.",
+      "best_for": "Redis-compatible caching, queues and pub/sub with a permissive open-source license.",
+      "not_for": "Redis-only modules and newer proprietary Redis features; check parity for your version.",
+      "keywords": [
+        "redis fork",
+        "key-value",
+        "cache",
+        "pub/sub",
+        "bsd license",
+        "in-memory",
+        "linux foundation",
+        "data structures"
+      ]
     }
   ]
 }

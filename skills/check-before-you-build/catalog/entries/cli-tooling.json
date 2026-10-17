@@ -21,7 +21,19 @@
       "why": "Standard Go TUI framework (45k stars) with the Charm ecosystem (Bubbles, Lip Gloss).",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Bubble Tea is a Go framework for building terminal apps based on The Elm Architecture. It supports inline, full-window or mixed TUIs, with a cell-based renderer, color downsampling, declarative views, keyboard and mouse handling and clipboard support.",
+      "best_for": "Building interactive terminal user interfaces (TUIs) in Go, simple or complex; pair with Bubbles for common components.",
+      "not_for": "Go only; assumes familiarity with Go and the Elm-style model/update/view pattern. Not for GUI or web apps.",
+      "keywords": [
+        "go",
+        "tui",
+        "terminal",
+        "cli",
+        "elm architecture",
+        "framework",
+        "interactive"
+      ]
     },
     {
       "id": "chalk/chalk",
@@ -44,7 +56,20 @@
       "npm": "chalk",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Chalk is a Node.js library for styling terminal strings with colors and text styles. It exposes a chainable, composable API (e.g. chalk.blue.bgRed.bold) that supports nesting, 256-color and Truecolor, and auto-detects the terminal's color support. It has no dependencies and does not extend String.prototype.",
+      "best_for": "Adding colors and bold/underline styles to console output in Node.js CLIs and scripts, including custom reusable themes like error or warning styles.",
+      "not_for": "Layout, tables, prompts or full TUIs; it only styles strings. If bundle size is the top concern, smaller coloring packages exist, though the README argues Chalk is usually already in the dependency tree.",
+      "keywords": [
+        "terminal",
+        "colors",
+        "string styling",
+        "ansi",
+        "node.js",
+        "cli",
+        "truecolor",
+        "console"
+      ]
     },
     {
       "id": "bombshell-dev/clack",
@@ -68,7 +93,20 @@
       "npm": "@clack/prompts",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Clack provides interactive prompts for JavaScript command-line tools. It ships two packages: @clack/prompts with opinionated, ready-to-use styled prompt components, and @clack/core with headless, unstyled prompt primitives for building your own.",
+      "best_for": "Node.js CLIs (setup wizards, create-* scaffolders) that need good-looking interactive prompts out of the box, or a headless base to build custom prompt styles.",
+      "not_for": "Argument and flag parsing or full-screen terminal UIs; it covers interactive prompts only. JavaScript/Node only. The repo README is minimal, so details live in the external docs.",
+      "keywords": [
+        "prompts",
+        "interactive",
+        "cli",
+        "javascript",
+        "node.js",
+        "headless",
+        "terminal",
+        "wizard"
+      ]
     },
     {
       "id": "clap-rs/clap",
@@ -90,7 +128,20 @@
       "why": "The de facto Rust argument parser; rich help, completions and validation.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "clap is a command-line argument parser for Rust. You define a parser either declaratively (derive) or procedurally (builder API), and it handles parsing plus the usual features like help output. It is installed with cargo add clap and dual-licensed Apache 2.0 or MIT.",
+      "best_for": "Rust CLI programs that need argument, flag and subcommand parsing, with a choice between derive-style declarations and a builder API.",
+      "not_for": "Interactive prompts or terminal UIs; it only parses command-line arguments. Rust only.",
+      "keywords": [
+        "rust",
+        "cli",
+        "argument parser",
+        "command line",
+        "flags",
+        "subcommands",
+        "derive",
+        "crate"
+      ]
     },
     {
       "id": "pallets/click",
@@ -111,7 +162,20 @@
       "why": "Pallets' CLI library (~18k stars) that Typer and Flask build on.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Click is a Python package for building command-line interfaces by decorating functions with @click.command and @click.option. It supports arbitrary nesting of commands, generates help pages automatically, can prompt for missing values, and supports lazy loading of subcommands at runtime.",
+      "best_for": "Python CLIs of any size, especially multi-level command groups, where decorator-based declarations with sensible defaults are preferred.",
+      "not_for": "Projects that want parameters inferred from type hints (Typer, built on Click, does that) or full-screen terminal UIs. Python only.",
+      "keywords": [
+        "python",
+        "cli",
+        "command line",
+        "decorators",
+        "subcommands",
+        "help generation",
+        "options",
+        "prompts"
+      ]
     },
     {
       "id": "spf13/cobra",
@@ -132,7 +196,21 @@
       "why": "Powers kubectl, Hugo and the GitHub CLI (~45k stars); the Go CLI standard.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Cobra is a Go library for building subcommand-based CLI applications structured as commands, arguments and flags. It provides POSIX-compliant flags, nested subcommands, cascading flags, typo suggestions, automatic help, shell autocomplete and man page generation, plus a cobra-cli generator to scaffold apps. It optionally integrates with viper for configuration.",
+      "best_for": "Go CLIs with git-style subcommands (app server, app fetch) that need generated help, shell completion and man pages; used by Kubernetes, Hugo and GitHub CLI.",
+      "not_for": "Interactive prompts or terminal UIs; it is a command/flag framework only. Go only. Possibly heavier than needed for a single-command tool.",
+      "keywords": [
+        "go",
+        "golang",
+        "cli",
+        "subcommands",
+        "flags",
+        "posix",
+        "shell completion",
+        "man pages",
+        "viper"
+      ]
     },
     {
       "id": "tj/commander.js",
@@ -156,7 +234,20 @@
       "npm": "commander",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Commander.js is a Node.js library for building command-line interfaces. You describe options, arguments and subcommands in code; Commander parses them, reports usage errors (with suggestions for unknown options) and provides an automated, customizable help system. It supports action handlers, stand-alone executable subcommands, lifecycle hooks and TypeScript.",
+      "best_for": "Node.js CLIs that need option and subcommand parsing with built-in help, from a single script to multi-command tools.",
+      "not_for": "Interactive prompts or terminal UIs. It is strict by default and errors on unrecognised options, which may not suit permissive parsing needs. Node.js only.",
+      "keywords": [
+        "node.js",
+        "cli",
+        "command line",
+        "argument parsing",
+        "options",
+        "subcommands",
+        "help",
+        "typescript"
+      ]
     },
     {
       "id": "ArthurSonzogni/FTXUI",
@@ -176,7 +267,20 @@
       "use_for": "Build functional terminal UIs in C++",
       "why": "Leading C++ TUI library with a React-like component model and no dependencies.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "FTXUI is a cross-platform C++ library for terminal user interfaces in a functional, React-inspired style. It is split into screen (low-level rendering), dom (layout and composition) and component (widgets, events, main loop) modules, with keyboard and mouse navigation, UTF-8 and fullwidth character support, animations and drawing. It has no dependencies.",
+      "best_for": "C++ applications needing an interactive terminal UI or rich terminal output, packaged via CMake, Bazel, vcpkg, Conan or a single-header amalgamation.",
+      "not_for": "Non-C++ projects. Linux/macOS are the main target; Windows support is contributor-maintained. Not a command-line argument parser.",
+      "keywords": [
+        "c++",
+        "tui",
+        "terminal",
+        "user interface",
+        "functional",
+        "widgets",
+        "cmake",
+        "cross-platform"
+      ]
     },
     {
       "id": "vadimdemedes/ink",
@@ -200,7 +304,20 @@
       "npm": "ink",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Ink is a React renderer for command-line apps: you build CLI output from React components, and Yoga provides Flexbox layout in the terminal. All React features are supported, and create-ink-app scaffolds JavaScript or TypeScript projects.",
+      "best_for": "Node.js developers who already know React and want component-based, stateful, interactive terminal UIs with Flexbox layout.",
+      "not_for": "Non-JavaScript stacks or minimal CLIs; it requires React and a JSX/Babel or similar transpile setup. Not an argument parser.",
+      "keywords": [
+        "react",
+        "cli",
+        "terminal ui",
+        "components",
+        "flexbox",
+        "yoga",
+        "node.js",
+        "jsx"
+      ]
     },
     {
       "id": "SBoudrias/Inquirer.js",
@@ -223,7 +340,20 @@
       "npm": "@inquirer/prompts",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Inquirer.js is a collection of common interactive command-line prompts for Node.js, published as @inquirer/prompts. Each prompt is an async function taking a prompt config and optional context (custom input/output streams, clearing on done, AbortSignal). It was rewritten from scratch for smaller size and better performance.",
+      "best_for": "Node.js (also Bun and Deno) CLIs that need standard interactive questions such as text input, confirm or select, with async/await usage.",
+      "not_for": "Argument parsing or full-screen TUIs. Many community prompts from the legacy package may not exist in the new API; the old package is maintained but not actively developed.",
+      "keywords": [
+        "prompts",
+        "interactive",
+        "cli",
+        "node.js",
+        "inquirer",
+        "terminal",
+        "questions",
+        "deno"
+      ]
     },
     {
       "id": "charmbracelet/lipgloss",
@@ -245,7 +375,20 @@
       "why": "Companion styling library to Bubble Tea; used across most modern Go CLIs.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Lip Gloss is a Go library of style definitions for terminal layouts, using a declarative, CSS-like API for bold, colors, padding, width and similar properties. It can choose colors at runtime based on the user's terminal and environment. It is designed as a companion to Bubble Tea for building TUI views.",
+      "best_for": "Go TUIs and CLIs, especially Bubble Tea apps, that need styled boxes, colors and layout without handling low-level terminal details.",
+      "not_for": "Event handling or app state; it only styles and lays out output and does not replace Bubble Tea. Go only. v2 changes require migration from v1.",
+      "keywords": [
+        "go",
+        "terminal",
+        "styling",
+        "tui",
+        "layout",
+        "css-like",
+        "bubble tea",
+        "colors"
+      ]
     },
     {
       "id": "oclif/oclif",
@@ -269,7 +412,20 @@
       "npm": "oclif",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "This is the oclif CLI for the Open CLI Framework, used to generate and develop oclif-based CLIs and plugins in Node.js. Running oclif generate scaffolds a new CLI from the hello-world example, and generate:command / generate:hook add pieces. Salesforce CLI and Heroku CLI are listed examples.",
+      "best_for": "Teams building larger, plugin-extensible Node.js/TypeScript CLIs who want scaffolding and framework conventions.",
+      "not_for": "Small single scripts where a lightweight parser suffices. Requires Node 18+ (LTS versions). This repo is the generator CLI; the framework docs live elsewhere.",
+      "keywords": [
+        "oclif",
+        "cli framework",
+        "node.js",
+        "typescript",
+        "generator",
+        "plugins",
+        "scaffolding",
+        "salesforce"
+      ]
     },
     {
       "id": "anomalyco/opentui",
@@ -292,7 +448,20 @@
       "npm": "@opentui/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "OpenTUI is a library for terminal user interfaces with a native core written in Zig and TypeScript bindings, usable directly or through React and Solid renderers. It lays out boxes and text with flexbox and offers selects, inputs and scroll boxes with keyboard and mouse controls, plus sound, images and 3D graphics. Extra packages cover keymaps, QR codes, Three.js and SSH serving.",
+      "best_for": "TypeScript developers building rich terminal apps with React or Solid; OpenCode uses it in production.",
+      "not_for": "Non-TypeScript stacks or simple CLIs that only need argument parsing or prompts. Relies on a native Zig core rather than pure JavaScript.",
+      "keywords": [
+        "tui",
+        "terminal",
+        "typescript",
+        "zig",
+        "react",
+        "solid",
+        "flexbox",
+        "opencode"
+      ]
     },
     {
       "id": "remkop/picocli",
@@ -315,7 +484,20 @@
       "why": "Most capable JVM CLI framework; supports GraalVM native images.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "picocli is a Java library for command-line parsing where you annotate fields with option and parameter names. Implementing Runnable or Callable lets CommandLine.execute parse arguments, handle errors, print usage and version help, and run your logic in one line. Usage help can be customized with ANSI colors via annotations or a Help API.",
+      "best_for": "Java (JVM) command-line applications that want annotation-based option parsing with colored usage help and built-in error handling.",
+      "not_for": "Non-JVM projects or full terminal UIs; it is an argument parser and help generator.",
+      "keywords": [
+        "java",
+        "cli",
+        "command line",
+        "annotations",
+        "argument parsing",
+        "usage help",
+        "ansi colors",
+        "jvm"
+      ]
     },
     {
       "id": "ratatui/ratatui",
@@ -337,7 +519,20 @@
       "why": "The standard Rust TUI library (successor to tui-rs), used by many popular Rust tools.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Ratatui is a Rust crate for building terminal user interfaces such as command-line apps, dashboards and interactive console programs. You draw frames using widgets on a terminal backend (e.g. crossterm), and cargo-generate templates provide a quick start.",
+      "best_for": "Rust developers building interactive TUIs or terminal dashboards who want a flexible widget library with many examples and templates.",
+      "not_for": "Non-Rust projects or simple CLIs that only need argument parsing. The README lists Cursive and iocraft as alternatives for ncurses-based or declarative styles.",
+      "keywords": [
+        "rust",
+        "tui",
+        "terminal",
+        "dashboard",
+        "widgets",
+        "crate",
+        "crossterm",
+        "console"
+      ]
     },
     {
       "id": "Textualize/rich",
@@ -359,7 +554,20 @@
       "why": "Ubiquitous Python terminal formatting library (58k stars); MIT confirmed.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Rich is a Python library for rich text and formatting in the terminal. It adds color and style to output and renders tables, progress bars, markdown, syntax-highlighted code, tracebacks and more through a drop-in print or a Console object. It works on Linux, macOS, Windows and in Jupyter notebooks.",
+      "best_for": "Python scripts and CLIs that want readable, styled output: pretty tables, progress bars, logging, tracebacks and pretty-printed data.",
+      "not_for": "Interactive full-screen apps (Textual, from the same team, covers that) or argument parsing. Requires Python 3.8+; classic Windows terminals are limited to 16 colors.",
+      "keywords": [
+        "python",
+        "terminal",
+        "formatting",
+        "tables",
+        "progress bars",
+        "syntax highlighting",
+        "tracebacks",
+        "markdown"
+      ]
     },
     {
       "id": "tui-cs/Terminal.Gui",
@@ -381,7 +589,20 @@
       "why": "The leading .NET TUI toolkit, with a rich widget set.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Terminal.Gui is a cross-platform .NET toolkit for building terminal UI applications on Windows, macOS and Linux. It provides a layout system, double-buffered rendering, keyboard and mouse support, and built-in views like text editors, buttons, trees, tables, menus and markdown. dotnet new templates scaffold new apps.",
+      "best_for": "C#/.NET developers building sophisticated console applications with windows, forms, tables and menus.",
+      "not_for": "Non-.NET stacks or simple CLIs that only need output styling or argument parsing. v1 to v2 is a breaking migration.",
+      "keywords": [
+        "c#",
+        ".net",
+        "tui",
+        "terminal",
+        "console",
+        "widgets",
+        "cross-platform",
+        "dotnet"
+      ]
     },
     {
       "id": "Textualize/textual",
@@ -403,7 +624,20 @@
       "why": "The most capable Python TUI framework, from the Rich team.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Textual is a Python framework for building user interfaces that run in the terminal or a web browser. It provides widgets (buttons, trees, data tables, inputs, text areas), a flexible layout system, themes, a fuzzy command palette and a testing framework. It is async under the hood but does not force async on you, and textual serve publishes apps to the web.",
+      "best_for": "Python developers building interactive TUI apps or dashboards that may also need to be served in a browser.",
+      "not_for": "Simple styled output (Rich is lighter) or plain argument parsing. Python only.",
+      "keywords": [
+        "python",
+        "tui",
+        "terminal",
+        "framework",
+        "widgets",
+        "web",
+        "async",
+        "textual"
+      ]
     },
     {
       "id": "fastapi/typer",
@@ -425,7 +659,20 @@
       "why": "From the FastAPI author; minimal code, automatic help and completion, built on Click.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Typer is a Python library for building CLI applications from functions using Python type hints, with automatic help and shell completion. It scales from a single typer.run call to trees of commands and subcommand groups. It also includes a typer command that runs scripts as CLIs even if they don't use Typer.",
+      "best_for": "Python CLIs where you want parameters, help and completion derived from type-hinted function signatures with minimal code.",
+      "not_for": "Interactive full-screen TUIs. Python only, and it relies on type hints for declarations.",
+      "keywords": [
+        "python",
+        "cli",
+        "type hints",
+        "subcommands",
+        "shell completion",
+        "help",
+        "typer",
+        "fastapi"
+      ]
     },
     {
       "id": "urfave/cli",
@@ -446,7 +693,20 @@
       "why": "Popular lightweight Go CLI package (~24k stars), alternative to Cobra.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "urfave/cli is a declarative Go package for building command-line tools with commands and subcommands (alias and prefix match), a flexible help system and dynamic shell completion for bash, zsh, fish and powershell. Flags support simple types, slices, time and duration, and can be read from environment variables or files. It depends only on the Go standard library.",
+      "best_for": "Go CLI tools that want declarative command definitions, shell completion and flag values from env vars or config files, with no third-party dependencies.",
+      "not_for": "Interactive prompts or TUIs. Go only. Man/Markdown docs and structured config file input need separate modules (cli-docs, cli-altsrc).",
+      "keywords": [
+        "go",
+        "golang",
+        "cli",
+        "command line",
+        "subcommands",
+        "flags",
+        "shell completion",
+        "declarative"
+      ]
     },
     {
       "id": "yargs/yargs",
@@ -469,7 +729,20 @@
       "npm": "yargs",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Yargs is a Node.js library that parses command-line arguments and generates a help interface. It supports commands, grouped options, a dynamically generated help menu and Bash/Zsh completion scripts, and can also run in the browser. Type definitions come via @types/yargs.",
+      "best_for": "Node.js CLIs that need flexible argument parsing with commands, option groups, generated help and shell completion.",
+      "not_for": "Interactive prompts or terminal UIs. TypeScript types live in a separate @types package.",
+      "keywords": [
+        "node.js",
+        "cli",
+        "argument parsing",
+        "options",
+        "commands",
+        "help",
+        "completion",
+        "javascript"
+      ]
     }
   ]
 }

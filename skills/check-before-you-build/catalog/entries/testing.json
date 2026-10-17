@@ -22,7 +22,20 @@
       "why": "Standard open-source mobile test automation (~22k stars), clients in many languages.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source WebDriver-based automation framework for native, hybrid, mobile web and desktop apps. Modular with drivers, clients in many languages and plugins.",
+      "best_for": "Cross-platform mobile app testing on iOS and Android with your language of choice.",
+      "not_for": "Slower and more complex to set up than in-framework tools; device/emulator infrastructure required. Not for web-only testing.",
+      "keywords": [
+        "appium",
+        "mobile testing",
+        "ios",
+        "android",
+        "webdriver",
+        "test automation",
+        "native app",
+        "desktop automation"
+      ]
     },
     {
       "id": "avajs/ava",
@@ -46,7 +59,19 @@
       "npm": "ava",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Node.js test runner with a concise API, concurrent test execution and process isolation per file.",
+      "best_for": "Libraries and Node projects wanting fast, minimal tests.",
+      "not_for": "Node only; smaller ecosystem than Jest or Vitest, and no built-in browser or DOM environment.",
+      "keywords": [
+        "ava",
+        "node test runner",
+        "concurrent tests",
+        "javascript testing",
+        "minimal",
+        "unit tests",
+        "assertions"
+      ]
     },
     {
       "id": "teamcapybara/capybara",
@@ -66,7 +91,20 @@
       "use_for": "Acceptance tests for Ruby web apps by simulating users",
       "why": "The standard browser-level testing DSL for Rails apps.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Ruby acceptance-testing library that simulates how a user interacts with a web app. Driver-agnostic, with Rack::Test and Selenium support and no setup for Rails.",
+      "best_for": "Feature and system tests for Rails and Rack apps.",
+      "not_for": "Ruby only; browser tests are slower than unit tests, and WebKit needs an external gem.",
+      "keywords": [
+        "capybara",
+        "ruby",
+        "rails",
+        "acceptance testing",
+        "system tests",
+        "selenium",
+        "integration test",
+        "rack test"
+      ]
     },
     {
       "id": "catchorg/Catch2",
@@ -86,7 +124,20 @@
       "use_for": "Modern C++ unit, TDD and BDD testing",
       "why": "Popular C++ test framework with natural test names and built-in microbenchmarks.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "C++ unit testing framework with natural test names, assertions written as C++ expressions, sections, BDD macros and micro-benchmarking.",
+      "best_for": "C++ projects wanting simple, expressive tests.",
+      "not_for": "C++ only; compile times are heavier than doctest, and it is not a mocking framework.",
+      "keywords": [
+        "catch2",
+        "c++ testing",
+        "unit test",
+        "bdd",
+        "tdd",
+        "microbenchmark",
+        "sections",
+        "test framework"
+      ]
     },
     {
       "id": "cypress-io/cypress",
@@ -110,7 +161,18 @@
       "npm": "cypress",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Cypress is a testing tool for anything that runs in a browser, installed as an npm dev dependency on Mac, Linux or Windows. It is MIT licensed, and the optional Cypress Cloud shows test status and counts.",
+      "best_for": "End-to-end and component testing of web applications in a real browser from a JavaScript project.",
+      "not_for": "Non-browser testing such as native mobile apps or backend unit tests. Cypress Cloud is a separate hosted service.",
+      "keywords": [
+        "e2e testing",
+        "cypress",
+        "browser testing",
+        "javascript",
+        "component testing",
+        "test runner"
+      ]
     },
     {
       "id": "doctest/doctest",
@@ -132,7 +194,19 @@
       "why": "Fastest-compiling feature-rich C++ test framework; tests can live next to production code.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Single-header C++ testing framework that compiles very fast, designed so tests can live inside production code.",
+      "best_for": "C++ projects prioritizing quick compile times and in-code tests.",
+      "not_for": "C++ only; smaller feature set than Catch2 or GoogleTest, and no mocking.",
+      "keywords": [
+        "doctest",
+        "c++ testing",
+        "single header",
+        "fast compile",
+        "unit test",
+        "tdd",
+        "test framework"
+      ]
     },
     {
       "id": "dubzzz/fast-check",
@@ -156,7 +230,20 @@
       "npm": "fast-check",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Property-based testing library for JavaScript and TypeScript that generates random inputs and shrinks failures. Works with Jest, Vitest and others.",
+      "best_for": "Finding edge cases in pure functions and parsers.",
+      "not_for": "Needs well-defined properties; not a test runner and takes time to learn.",
+      "keywords": [
+        "fast-check",
+        "property-based testing",
+        "fuzzing",
+        "quickcheck",
+        "javascript",
+        "typescript",
+        "shrinking",
+        "generative testing"
+      ]
     },
     {
       "id": "google/googletest",
@@ -176,7 +263,19 @@
       "use_for": "Unit testing and mocking for C++",
       "why": "The most widely used C++ test framework, with gMock included.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Google's C++ unit testing and mocking framework with xUnit-style tests, automatic test discovery, rich assertions and gMock included.",
+      "best_for": "C++ projects needing a standard test and mock framework.",
+      "not_for": "C++ only; heavier to build than header-only alternatives and macro-heavy.",
+      "keywords": [
+        "googletest",
+        "gtest",
+        "gmock",
+        "c++ testing",
+        "unit test",
+        "mocking",
+        "xunit"
+      ]
     },
     {
       "id": "HypothesisWorks/hypothesis",
@@ -202,7 +301,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Property-based testing library for Python. You describe input ranges via strategies, and Hypothesis generates cases, including edge cases, and shrinks failures.",
+      "best_for": "Finding edge-case bugs in Python code.",
+      "not_for": "Python only (other languages have separate implementations); needs property thinking and can slow suites.",
+      "keywords": [
+        "hypothesis",
+        "property-based testing",
+        "python",
+        "fuzz testing",
+        "strategies",
+        "pytest",
+        "edge cases",
+        "shrinking"
+      ]
     },
     {
       "id": "jasmine/jasmine",
@@ -223,7 +335,20 @@
       "why": "Long-standing JS test framework, still the default in many Angular projects.",
       "npm": "jasmine",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Behavior-driven development testing framework for JavaScript that runs in browsers and Node without depending on a DOM or other framework.",
+      "best_for": "JS projects needing BDD-style specs, especially Angular apps that use it by default.",
+      "not_for": "Fewer built-ins than Jest (snapshots, module mocking); smaller community today.",
+      "keywords": [
+        "jasmine",
+        "bdd",
+        "javascript testing",
+        "specs",
+        "angular testing",
+        "karma",
+        "node",
+        "test framework"
+      ]
     },
     {
       "id": "jestjs/jest",
@@ -247,7 +372,20 @@
       "npm": "jest",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "JavaScript test framework with built-in mocking, snapshot testing, coverage and a watch mode that runs only related tests.",
+      "best_for": "Unit and integration tests in JS/TS projects, including React.",
+      "not_for": "Slow startup versus Vitest on large suites; ESM support is less seamless; not for browser E2E.",
+      "keywords": [
+        "jest",
+        "unit testing",
+        "snapshot testing",
+        "mocking",
+        "coverage",
+        "javascript testing",
+        "react testing",
+        "watch mode"
+      ]
     },
     {
       "id": "grafana/k6",
@@ -269,7 +407,20 @@
       "why": "Grafana's popular load-testing tool (~32k stars, AGPL-3.0); CI-friendly with thresholds.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Load-testing tool where tests are scripted in JavaScript. Supports configurable load, tests as code, thresholds and CI integration.",
+      "best_for": "Performance and load testing of APIs and sites in CI.",
+      "not_for": "Scripts run in a Go runtime, not Node, so npm modules are limited; AGPL-3.0; not a functional UI test tool.",
+      "keywords": [
+        "k6",
+        "load testing",
+        "performance testing",
+        "stress test",
+        "javascript",
+        "thresholds",
+        "api load",
+        "grafana"
+      ]
     },
     {
       "id": "karatelabs/karate",
@@ -292,7 +443,20 @@
       "why": "Combines API testing, mocks and perf testing in one tool, no Java code required.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source framework combining API testing, mocks, performance testing and UI automation in a readable DSL without writing Java code.",
+      "best_for": "Teams wanting API and integration tests written by QA without coding.",
+      "not_for": "JVM-based; the DSL differs from standard programming languages; v2 is under development with migration notes.",
+      "keywords": [
+        "karate",
+        "api testing",
+        "dsl",
+        "mock server",
+        "performance testing",
+        "ui automation",
+        "bdd",
+        "gherkin"
+      ]
     },
     {
       "id": "keploy/keploy",
@@ -313,7 +477,20 @@
       "use_for": "Generate API and integration tests by recording real traffic",
       "why": "Records calls and dependencies via eBPF to produce replayable tests and mocks.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "API and integration testing tool that records API calls, database queries and streaming events, then replays them as tests and mocks. Uses eBPF to capture traffic at the network layer, code-less and language-agnostic.",
+      "best_for": "Generating regression tests from real traffic for backend services.",
+      "not_for": "Linux/eBPF-based capture setup; replayed tests only cover recorded behavior, and complex nondeterminism needs care.",
+      "keywords": [
+        "keploy",
+        "api testing",
+        "traffic recording",
+        "ebpf",
+        "test generation",
+        "mocks",
+        "integration tests",
+        "record replay"
+      ]
     },
     {
       "id": "web-infra-dev/midscene",
@@ -337,7 +514,20 @@
       "npm": "@midscene/web",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "AI-driven UI automation and testing for web, Android and iOS using natural-language instructions and vision models. Integrates with Playwright and Puppeteer.",
+      "best_for": "Natural-language E2E tests and visual checks, including canvas and native apps.",
+      "not_for": "Needs a vision-capable LLM (cost, latency, nondeterminism); less deterministic than selector-based tests.",
+      "keywords": [
+        "midscene",
+        "ai testing",
+        "natural language",
+        "ui automation",
+        "playwright",
+        "visual assertions",
+        "e2e",
+        "llm"
+      ]
     },
     {
       "id": "mochajs/mocha",
@@ -360,7 +550,20 @@
       "npm": "mocha",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Flexible JavaScript test runner for Node.js and the browser. Pairs with any assertion library.",
+      "best_for": "Node or browser tests where you pick your own assertions and mocks.",
+      "not_for": "Minimal built-ins: no assertions, mocking or snapshots included; Jest or Vitest bundle more.",
+      "keywords": [
+        "mocha",
+        "test runner",
+        "javascript testing",
+        "node",
+        "browser tests",
+        "bdd",
+        "tdd",
+        "chai"
+      ]
     },
     {
       "id": "mswjs/msw",
@@ -384,7 +587,21 @@
       "npm": "msw",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Intercepts requests at the network level (Service Worker in the browser, request interception in Node) and answers them with mocks defined using Express-like route handlers. Supports REST and GraphQL, with status codes, headers, cookies, delays and custom resolvers.",
+      "best_for": "Mocking APIs for unit, integration and E2E tests and for local development with the same handlers, without changing app code. Works for frontend and Node projects calling REST or GraphQL.",
+      "not_for": "Not a mock-server product or a general test runner. Mocks live in your JS/TS process, so it does not help non-JavaScript clients, and it does not replace contract testing against a real backend.",
+      "keywords": [
+        "api mocking",
+        "mock service worker",
+        "mock rest api",
+        "mock graphql",
+        "network interception",
+        "service worker",
+        "test fixtures",
+        "fetch mock",
+        "msw"
+      ]
     },
     {
       "id": "mockery/mockery",
@@ -403,7 +620,21 @@
       "use_for": "Flexible mock objects for PHP tests",
       "why": "Standard PHP mocking library used with PHPUnit and Pest.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "PHP mock object framework with a readable DSL for defining expected calls, arguments and return values. Integrates with PHPUnit, PHPSpec or any test framework and is positioned as an alternative to PHPUnit's built-in mock objects.",
+      "best_for": "PHP unit tests that need expressive test doubles, partial mocks or expectations on interactions, especially in Laravel or Symfony projects using PHPUnit or Pest.",
+      "not_for": "PHP only, and only provides test doubles, not a test runner. If simple PHPUnit mocks or Prophecy already suffice, an extra dependency adds little.",
+      "keywords": [
+        "php mock",
+        "mock objects",
+        "test doubles",
+        "phpunit",
+        "unit testing",
+        "php testing",
+        "mocking framework",
+        "spies",
+        "expectations"
+      ]
     },
     {
       "id": "mockito/mockito",
@@ -423,7 +654,21 @@
       "use_for": "Mock objects for Java unit tests",
       "why": "The most popular Java mocking framework.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Java mocking framework for creating mocks and spies, stubbing return values and verifying interactions in unit tests. Version 5 uses the inline mockmaker by default and requires Java 11; only the current major version is supported.",
+      "best_for": "Java and Kotlin-on-JVM unit tests with JUnit or TestNG where collaborators need stubbing and interaction verification.",
+      "not_for": "JVM only and not a test runner or assertion library. Projects stuck on Java 8 need an older Mockito line, and heavy mocking can make tests brittle compared to using real fakes.",
+      "keywords": [
+        "java mock",
+        "mocking framework",
+        "unit testing",
+        "junit",
+        "stubbing",
+        "spy",
+        "verify interactions",
+        "test doubles",
+        "jvm testing"
+      ]
     },
     {
       "id": "pestphp/pest",
@@ -443,7 +688,20 @@
       "use_for": "Expressive PHP testing built on PHPUnit",
       "why": "Modern PHP test framework popular in the Laravel community.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "PHP testing framework built on top of PHPUnit with a concise, expressive syntax and a plugin ecosystem. README itself is thin and points to pestphp.com for docs; v5 is announced and it is pitched for PHP developers and AI agents.",
+      "best_for": "PHP and especially Laravel projects that want readable tests with less boilerplate while keeping PHPUnit compatibility.",
+      "not_for": "PHP only and depends on PHPUnit underneath. Teams that prefer class-based xUnit style or want zero extra layers may stay with plain PHPUnit.",
+      "keywords": [
+        "php testing",
+        "pest",
+        "phpunit",
+        "laravel testing",
+        "unit tests",
+        "test framework",
+        "expressive tests",
+        "php test runner"
+      ]
     },
     {
       "id": "sebastianbergmann/phpunit",
@@ -462,7 +720,20 @@
       "use_for": "Unit testing for PHP",
       "why": "The standard PHP testing framework underlying Laravel, Symfony and Pest.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Programmer-oriented PHP testing framework following the xUnit architecture. It is the base test runner used by most PHP frameworks and tools such as Pest.",
+      "best_for": "Unit and integration testing in any PHP project, including Laravel and Symfony, where a standard, well-supported runner is wanted.",
+      "not_for": "PHP only. Syntax is more verbose than Pest; it is not for browser or E2E testing and has no built-in mocking beyond its own test doubles.",
+      "keywords": [
+        "phpunit",
+        "php unit testing",
+        "xunit",
+        "php test runner",
+        "tdd",
+        "php testing",
+        "assertions",
+        "code coverage"
+      ]
     },
     {
       "id": "microsoft/playwright",
@@ -489,7 +760,22 @@
       "npm": "@playwright/test",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Browser automation and end-to-end testing framework for Chromium, Firefox and WebKit with bindings for several languages. Offers auto-waiting, tracing, codegen, and (per the README) a playwright-cli and accessibility-tree snapshots that let AI agents drive pages.",
+      "best_for": "Cross-browser E2E tests, web scraping and browser automation, including agent-driven browsing, in Node, Python, Java or .NET projects.",
+      "not_for": "Heavy for pure unit or component tests and downloads browser binaries. For simple HTTP API testing a lighter tool suffices; browsers are fixed to the bundled engines, not arbitrary real devices.",
+      "keywords": [
+        "e2e testing",
+        "browser automation",
+        "cross-browser",
+        "chromium",
+        "webkit",
+        "firefox",
+        "headless browser",
+        "test generator",
+        "tracing",
+        "web testing"
+      ]
     },
     {
       "id": "pytest-dev/pytest",
@@ -511,7 +797,19 @@
       "why": "The de facto Python test framework with 1,000+ plugins.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "pytest is a Python testing framework that lets you write tests with plain assert statements and get detailed assertion introspection on failure. It auto-discovers test modules and functions, has modular fixtures, runs unittest suites, and has 1300+ external plugins.",
+      "best_for": "Unit, functional and integration testing of Python 3.10+ (or PyPy3) applications and libraries.",
+      "not_for": "Non-Python codebases, or browser end-to-end testing on its own (plugins are needed for that).",
+      "keywords": [
+        "testing",
+        "pytest",
+        "python",
+        "fixtures",
+        "unit tests",
+        "plugins",
+        "test discovery"
+      ]
     },
     {
       "id": "testing-library/react-testing-library",
@@ -535,7 +833,21 @@
       "npm": "@testing-library/react",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Utilities for rendering React components to the DOM and querying them the way users do (by role, label, text) rather than by implementation details. Works with hooks and class components and sits on top of DOM Testing Library.",
+      "best_for": "Component and integration tests for React apps run under Jest or Vitest with jsdom, focused on user-visible behavior.",
+      "not_for": "React DOM only; it is not a test runner and does not test in a real browser or cover visual regressions. Use other Testing Library flavors for Vue or Svelte, or Playwright for E2E.",
+      "keywords": [
+        "react testing",
+        "component testing",
+        "dom testing library",
+        "user events",
+        "jest",
+        "vitest",
+        "render",
+        "accessibility queries",
+        "frontend tests"
+      ]
     },
     {
       "id": "robotframework/robotframework",
@@ -555,7 +867,22 @@
       "use_for": "Keyword-driven acceptance testing and RPA",
       "why": "Mature generic automation framework with a large library ecosystem (Browser, Selenium, Appium).",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Generic automation framework for acceptance testing, ATDD and RPA using a plain-text, keyword-driven syntax. Implemented in Python and extended through libraries such as Browser, Selenium and Appium maintained as separate projects.",
+      "best_for": "Acceptance and end-to-end testing by mixed technical and non-technical teams, or RPA tasks, where readable keyword-based test cases are valued.",
+      "not_for": "Keyword syntax is a different paradigm from code-first test frameworks and adds overhead for small unit tests. Most capabilities require installing separate libraries.",
+      "keywords": [
+        "acceptance testing",
+        "atdd",
+        "rpa",
+        "keyword driven",
+        "robot framework",
+        "bdd",
+        "test automation",
+        "selenium",
+        "appium",
+        "python"
+      ]
     },
     {
       "id": "seleniumbase/SeleniumBase",
@@ -577,7 +904,21 @@
       "why": "Batteries-included Python E2E framework with recorder, dashboards and CDP mode.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python framework combining Selenium, pytest and extras for browser automation, scraping and testing. Includes a recorder, dashboard, reports, UC and CDP modes with stealth options to bypass bot detection.",
+      "best_for": "Python teams wanting quick E2E tests or automation scripts with built-in waits, screenshots, reports, and stealth browsing for scraping.",
+      "not_for": "Python only and Selenium-based; Playwright may be preferable for modern multi-browser testing. Stealth and CAPTCHA-bypass features may conflict with sites' terms of use.",
+      "keywords": [
+        "selenium",
+        "python e2e testing",
+        "web automation",
+        "web scraping",
+        "stealth",
+        "undetected chromedriver",
+        "pytest",
+        "recorder",
+        "test reports"
+      ]
     },
     {
       "id": "sinonjs/sinon",
@@ -601,7 +942,21 @@
       "npm": "sinon",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Standalone, framework-agnostic library of test spies, stubs, mocks and fake timers for JavaScript. Avoids global pollution and embeds with any test framework.",
+      "best_for": "JavaScript or TypeScript tests (Mocha, Jest, Node test runner) needing spies, stubs or fake timers independent of the runner.",
+      "not_for": "Jest and Vitest already ship built-in mocking, so Sinon is redundant there. It does not provide a test runner, assertions or network-level request mocking.",
+      "keywords": [
+        "spies",
+        "stubs",
+        "mocks",
+        "fake timers",
+        "javascript testing",
+        "test doubles",
+        "mocha",
+        "sinon",
+        "unit tests"
+      ]
     },
     {
       "id": "testcontainers/testcontainers-java",
@@ -623,7 +978,21 @@
       "why": "The original Testcontainers (~9k stars); ports exist for Node, Go, Python, .NET.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Java library that starts throwaway Docker containers (databases, browsers, any image) for JUnit tests, giving integration tests real dependencies. Ports exist for other languages.",
+      "best_for": "Integration tests on JVM projects that need a real Postgres, Kafka, Redis or other service instead of mocks or in-memory substitutes.",
+      "not_for": "Requires a Docker-compatible runtime on dev machines and CI, and containers slow test startup versus mocks. For other languages use the matching Testcontainers port.",
+      "keywords": [
+        "integration testing",
+        "docker",
+        "throwaway containers",
+        "junit",
+        "database testing",
+        "testcontainers",
+        "java",
+        "real dependencies",
+        "ci"
+      ]
     },
     {
       "id": "stretchr/testify",
@@ -644,7 +1013,21 @@
       "why": "Most-used Go testing toolkit (~26k stars).",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Go toolkit adding assert and require packages, mocking, and test-suite helpers on top of the standard testing package. The repo is maintained at v1 with no breaking changes accepted.",
+      "best_for": "Go projects that want concise assertions, simple mocks and suite structure without a heavier BDD framework.",
+      "not_for": "Mocks are hand-written or need mockery for generation, and v1 is frozen so API changes are unlikely. Teams favouring only the stdlib or go-cmp may not need it.",
+      "keywords": [
+        "go testing",
+        "assertions",
+        "golang",
+        "mock",
+        "test suite",
+        "require",
+        "assert",
+        "unit tests",
+        "tdd"
+      ]
     },
     {
       "id": "vitest-dev/vitest",
@@ -668,7 +1051,21 @@
       "npm": "vitest",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Test runner built on Vite that reuses the app's Vite config and plugins. Offers a Jest-compatible API, snapshots, built-in coverage, watch mode like HMR, jsdom/happy-dom, browser mode for component tests, and TypeScript/ESM out of the box.",
+      "best_for": "Unit and component testing of Vite-based and modern TypeScript/ESM projects across React, Vue, Svelte and others.",
+      "not_for": "Requires recent Vite (6.4+) and Node (22.12+). Large legacy Jest suites may need migration effort, and it is not an E2E browser automation tool.",
+      "keywords": [
+        "vite testing",
+        "jest alternative",
+        "unit testing",
+        "component testing",
+        "typescript tests",
+        "snapshot",
+        "coverage",
+        "browser mode",
+        "esm"
+      ]
     }
   ]
 }

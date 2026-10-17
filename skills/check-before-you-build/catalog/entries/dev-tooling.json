@@ -23,7 +23,21 @@
       "why": "Fast tree-sitter based tool for writing custom lint rules and codemods with pattern syntax.",
       "npm": "@ast-grep/cli",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "CLI tool for structural code search, linting and rewriting based on ASTs (tree-sitter). Patterns are written as ordinary code with $NAME wildcards matching AST nodes; supports many languages and has an online playground.",
+      "best_for": "Writing custom lint rules, codemods and refactors that text grep or regex cannot do reliably.",
+      "not_for": "Type-aware or semantic analysis (it is syntax-only), or plain text search.",
+      "keywords": [
+        "structural search",
+        "ast",
+        "codemod",
+        "lint rules",
+        "tree-sitter",
+        "refactoring",
+        "rewrite",
+        "grep",
+        "pattern matching"
+      ]
     },
     {
       "id": "biomejs/biome",
@@ -47,7 +61,19 @@
       "npm": "@biomejs/biome",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Biome is a single toolchain that formats and lints web project code, with commands like biome format, lint and check that can apply safe fixes. It works with sane defaults and no configuration, does not require Node.js, and has first-class LSP support.",
+      "best_for": "Replacing separate formatter and linter tools in JavaScript/TypeScript and web projects with one fast, low-config tool.",
+      "not_for": "Language coverage is limited to the main web development languages; not a linter for Python, Go and similar. Not a type checker.",
+      "keywords": [
+        "linter",
+        "formatter",
+        "javascript",
+        "typescript",
+        "lsp",
+        "web development",
+        "code quality"
+      ]
     },
     {
       "id": "oven-sh/bun",
@@ -75,7 +101,20 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "All-in-one JavaScript/TypeScript toolkit shipping as one executable: a Node-compatible runtime (JavaScriptCore, written in Rust), bundler, test runner, script runner and package manager with built-in TypeScript and JSX.",
+      "best_for": "Fast startup, simple tooling and replacing several Node tools with one binary.",
+      "not_for": "Projects needing complete Node compatibility guarantees or conservative stability.",
+      "keywords": [
+        "javascript runtime",
+        "bundler",
+        "test runner",
+        "package manager",
+        "node alternative",
+        "typescript",
+        "bun",
+        "jsx"
+      ]
     },
     {
       "id": "changesets/changesets",
@@ -99,7 +138,20 @@
       "npm": "@changesets/cli",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Tool to manage versioning and changelogs with a focus on monorepos: contributors add small changeset files declaring how changes should be released, and it updates package versions, changelogs and publishes. This branch is Changesets v3 development.",
+      "best_for": "Releasing multi-package JS monorepos, coordinating dependent packages and changelogs in CI.",
+      "not_for": "Single-package repos wanting commit-message driven releases (see semantic-release); requires contributors to add changeset files.",
+      "keywords": [
+        "versioning",
+        "changelog",
+        "monorepo",
+        "release",
+        "publish",
+        "npm",
+        "github actions",
+        "semver"
+      ]
     },
     {
       "id": "rust-lang/rust-clippy",
@@ -119,7 +171,20 @@
       "why": "The official Rust linter shipped with rustup, 700+ lints.",
       "official": true,
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Official Rust linter with 800+ lints in categories (correctness, suspicious, style, complexity, perf, pedantic...) each with a default level you can configure. Ships with rustup.",
+      "best_for": "Catching mistakes and non-idiomatic Rust in local checks and CI.",
+      "not_for": "Non-Rust code, or formatting (use rustfmt); pedantic lints can be noisy.",
+      "keywords": [
+        "rust",
+        "linter",
+        "clippy",
+        "lints",
+        "cargo clippy",
+        "code quality",
+        "idiomatic",
+        "ci"
+      ]
     },
     {
       "id": "conventional-changelog/commitlint",
@@ -141,7 +206,20 @@
       "why": "Standard commit-message linter, pairs with husky and changelog/release tooling.",
       "npm": "@commitlint/cli",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Checks that commit messages follow the Conventional Commits format (type(scope): subject), with shareable configs via npm, commitizen-friendly and tie-in with conventional-changelog; commonly run via husky.",
+      "best_for": "Enforcing commit message conventions for automated changelogs and releases.",
+      "not_for": "Teams without a conventional commit convention; it only lints messages.",
+      "keywords": [
+        "commit messages",
+        "conventional commits",
+        "lint",
+        "husky",
+        "changelog",
+        "git hooks",
+        "semantic release",
+        "commitizen"
+      ]
     },
     {
       "id": "evanw/esbuild",
@@ -166,7 +244,21 @@
       "npm": "esbuild",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Extremely fast JavaScript and CSS bundler and minifier with built-in TypeScript and JSX, ESM and CommonJS bundling, tree shaking, source maps, local server, watch mode and plugins; CLI, JS and Go APIs.",
+      "best_for": "Fast builds, library bundling and as the engine behind other tools.",
+      "not_for": "Type checking (it strips types only), advanced code splitting/HMR needs, or large plugin ecosystems like webpack's.",
+      "keywords": [
+        "bundler",
+        "minifier",
+        "typescript",
+        "jsx",
+        "tree shaking",
+        "source maps",
+        "build tool",
+        "javascript",
+        "css"
+      ]
     },
     {
       "id": "eslint/eslint",
@@ -191,7 +283,21 @@
       "npm": "eslint",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Pluggable linter for ECMAScript/JavaScript that analyzes code via an AST to find bugs and style issues; every rule is configurable or a plugin, using the Espree parser. Largest plugin and rule ecosystem.",
+      "best_for": "Linting JS and TS projects with customizable rules and framework plugins.",
+      "not_for": "Formatting or very fast linting at scale (see Biome/oxlint); config can be complex.",
+      "keywords": [
+        "linter",
+        "javascript",
+        "typescript",
+        "plugins",
+        "rules",
+        "ast",
+        "code quality",
+        "static analysis",
+        "espree"
+      ]
     },
     {
       "id": "golangci/golangci-lint",
@@ -211,7 +317,20 @@
       "use_for": "Run dozens of Go linters fast in one tool",
       "why": "The de facto Go lint runner bundling 100+ linters with caching and CI integration.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Fast Go linters runner that runs 100+ linters in parallel with caching, YAML configuration and IDE and CI integrations.",
+      "best_for": "Standardizing Go code quality checks locally and in CI with one tool.",
+      "not_for": "Non-Go code, or if you only need go vet; many linters means config tuning.",
+      "keywords": [
+        "go",
+        "golang",
+        "linter",
+        "linters runner",
+        "ci",
+        "static analysis",
+        "golangci",
+        "yaml config"
+      ]
     },
     {
       "id": "hadolint/hadolint",
@@ -231,7 +350,20 @@
       "use_for": "Lint Dockerfiles and the shell inside them",
       "why": "Standard Dockerfile linter applying best-practice rules plus ShellCheck on RUN steps.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Dockerfile linter written in Haskell that parses the Dockerfile into an AST, applies best-practice rules and uses ShellCheck for the shell code in RUN instructions. GPL-3 licensed; online version available.",
+      "best_for": "Checking Dockerfiles for best practices in CI and editors.",
+      "not_for": "Linting image contents or compose files; GPL-3 license; Dockerfile syntax only.",
+      "keywords": [
+        "dockerfile",
+        "linter",
+        "docker",
+        "best practices",
+        "shellcheck",
+        "ci",
+        "container",
+        "haskell"
+      ]
     },
     {
       "id": "typicode/husky",
@@ -256,7 +388,20 @@
       "stable_reason": "Tiny, feature-complete Git hooks manager; core behaviour unchanged since v9",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Manages Git hooks for JavaScript projects: installs hooks via a small script so commands like linters or tests run on pre-commit, pre-push and other Git events. Tiny and dependency-free, configured with plain shell scripts in a .husky folder.",
+      "best_for": "JS/TS projects that want lint, format or test checks before commits or pushes, typically paired with lint-staged.",
+      "not_for": "Not a linter itself and not language-agnostic; for Python or polyglot repos use pre-commit. Hooks can be bypassed locally, so keep CI checks too.",
+      "keywords": [
+        "git hooks",
+        "pre-commit",
+        "pre-push",
+        "husky",
+        "commit hooks",
+        "lint before commit",
+        "npm prepare",
+        "commitlint"
+      ]
     },
     {
       "id": "webpro-nl/knip",
@@ -280,7 +425,19 @@
       "npm": "knip",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Knip finds and fixes unused dependencies, exports and files in JavaScript and TypeScript projects. It is distributed as npm packages including a config generator, a language server and an MCP server, plus VS Code and Open VSX extensions.",
+      "best_for": "Cleaning up dead code, unused exports and unneeded npm dependencies in JS/TS repos, including in CI.",
+      "not_for": "JavaScript and TypeScript only. Detects unused code; it is not a general linter or formatter.",
+      "keywords": [
+        "unused dependencies",
+        "dead code",
+        "unused exports",
+        "javascript",
+        "typescript",
+        "cleanup",
+        "mcp"
+      ]
     },
     {
       "id": "lerna/lerna",
@@ -302,7 +459,19 @@
       "why": "Long-standing monorepo publishing tool, now maintained by Nx with task caching.",
       "npm": "lerna",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Lerna is a build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository. Stewardship of the project moved to Nx (Nrwl), and it is documented at lerna.js.org.",
+      "best_for": "Versioning and publishing many npm packages from one monorepo.",
+      "not_for": "Now stewarded by Nx, which overlaps heavily; for broader task orchestration and caching Nx itself may be the better choice. JS/TS only.",
+      "keywords": [
+        "monorepo",
+        "publishing",
+        "npm packages",
+        "versioning",
+        "javascript",
+        "typescript",
+        "nx"
+      ]
     },
     {
       "id": "lint-staged/lint-staged",
@@ -324,7 +493,19 @@
       "why": "Ubiquitous pre-commit companion to husky that keeps hooks fast by touching only staged files.",
       "npm": "lint-staged",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "lint-staged runs arbitrary shell tasks such as formatters and linters against only the files staged in Git, filtered by glob patterns. It backs up the original state, passes the staged file list to each command, and supports function-based configs in package.json or .lintstagedrc files.",
+      "best_for": "Speeding up pre-commit checks by running Prettier, ESLint or similar only on staged files.",
+      "not_for": "Does not install Git hooks itself (requires further setup, typically with husky). Only checks staged changes, not the whole project.",
+      "keywords": [
+        "staged files",
+        "git",
+        "pre-commit",
+        "linting",
+        "formatting",
+        "glob",
+        "husky"
+      ]
     },
     {
       "id": "python/mypy",
@@ -349,7 +530,18 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Mypy is a static type checker for Python that checks code annotated with type hints to ensure variables and functions are used correctly. It relies on typeshed for library stubs and has documentation and a type hints cheat sheet.",
+      "best_for": "Adding static type checking to Python codebases that use type hints, locally or in CI.",
+      "not_for": "Python only, and only helps where type hints exist. Checks types; it does not format or lint style.",
+      "keywords": [
+        "type checker",
+        "python",
+        "static typing",
+        "type hints",
+        "typeshed",
+        "static analysis"
+      ]
     },
     {
       "id": "nrwl/nx",
@@ -375,7 +567,19 @@
       "npm": "nx",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Nx is a monorepo solution for TypeScript and polyglot codebases, built in Rust and extensible via TypeScript. It caches task outputs, runs only affected tasks, offers plugins for tools like Vite, Jest, Gradle, Maven, .NET and Go, and has an integrated CI solution with remote caching and task distribution.",
+      "best_for": "Monorepos that need caching, affected-only runs and distributed CI, especially JS/TS with other languages mixed in.",
+      "not_for": "Remote caching, task distribution and self-healing CI depend on connecting Nx's CI offering. Adds tooling overhead for small single-package repos.",
+      "keywords": [
+        "monorepo",
+        "build system",
+        "caching",
+        "typescript",
+        "ci",
+        "polyglot",
+        "affected"
+      ]
     },
     {
       "id": "oxc-project/oxc",
@@ -400,7 +604,20 @@
       "npm": "oxlint",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Oxc (the Oxidation Compiler) is a collection of high-performance JavaScript and TypeScript tools written in Rust: a parser, transformer, minifier and resolver, plus the Oxlint linter and Oxfmt formatter. It powers Rolldown, Vite's bundler.",
+      "best_for": "Fast linting with oxlint, or building JS/TS tooling on top of Rust parsing, transformation, minification and module resolution.",
+      "not_for": "JavaScript/TypeScript only. Lower-level components are aimed at tool builders, not end-user apps.",
+      "keywords": [
+        "javascript",
+        "typescript",
+        "rust",
+        "parser",
+        "linter",
+        "minifier",
+        "oxlint",
+        "formatter"
+      ]
     },
     {
       "id": "parcel-bundler/parcel",
@@ -422,7 +639,19 @@
       "why": "Mature zero-configuration bundler with a Rust core, HMR and built-in transforms.",
       "npm": "parcel",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Parcel is a zero configuration build tool for the web that handles HTML, CSS, JavaScript and assets like images and fonts out of the box. It has a dev server with hot reloading, a Rust-based compiler with caching, and automatic production optimization like tree-shaking, minification and code splitting.",
+      "best_for": "Building web apps or libraries quickly without writing bundler configuration.",
+      "not_for": "Less suited when you need fine-grained bundler control or webpack plugin compatibility. Web build tool only.",
+      "keywords": [
+        "bundler",
+        "build tool",
+        "zero config",
+        "web",
+        "hot reloading",
+        "rust",
+        "tree-shaking"
+      ]
     },
     {
       "id": "pre-commit/pre-commit",
@@ -446,7 +675,18 @@
       "why": "Standard language-agnostic hook manager with a huge library of ready hooks.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "pre-commit is a framework for managing and maintaining multi-language Git pre-commit hooks. Hooks are configured per repository and the framework handles installing and running them; full docs live at pre-commit.com.",
+      "best_for": "Repos mixing several languages (Python and others) that want shared, versioned pre-commit hooks.",
+      "not_for": "The README itself is minimal; details are on pre-commit.com. It manages hooks rather than providing linters itself.",
+      "keywords": [
+        "pre-commit",
+        "git hooks",
+        "multi-language",
+        "linting",
+        "python",
+        "code quality"
+      ]
     },
     {
       "id": "prettier/prettier",
@@ -471,7 +711,19 @@
       "npm": "prettier",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Prettier is an opinionated code formatter that parses code and re-prints it with its own rules, taking maximum line length into account. It supports JavaScript plus CSS, SCSS, Less, HTML, Vue, Angular, GraphQL, Markdown and YAML, and runs on save in editors, in pre-commit hooks or in CI.",
+      "best_for": "Enforcing one consistent code style across a team without style debates in code review.",
+      "not_for": "Deliberately opinionated with limited options. Only formats; it does not catch bugs like a linter.",
+      "keywords": [
+        "formatter",
+        "code style",
+        "javascript",
+        "css",
+        "markdown",
+        "opinionated",
+        "pre-commit"
+      ]
     },
     {
       "id": "rolldown/rolldown",
@@ -497,7 +749,19 @@
       "npm": "rolldown",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Rolldown is a JavaScript/TypeScript bundler written in Rust, intended to serve as the future bundler used in Vite. It provides Rollup-compatible APIs and plugin interface, with a scope closer to esbuild.",
+      "best_for": "Fast bundling with Rollup-compatible plugins, or projects tracking Vite's future bundler.",
+      "not_for": "Positioned as Vite's future bundler and still evolving; check maturity against Rollup or esbuild for production. JS/TS bundling only.",
+      "keywords": [
+        "bundler",
+        "rust",
+        "rollup",
+        "vite",
+        "javascript",
+        "typescript",
+        "esbuild"
+      ]
     },
     {
       "id": "rollup/rollup",
@@ -522,7 +786,19 @@
       "npm": "rollup",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Rollup is a module bundler for JavaScript that compiles small modules into larger libraries or applications using standard ES modules. It runs via a CLI with an optional config file or a JavaScript API, and can output optimized ES modules or formats like CommonJS, AMD and IIFE.",
+      "best_for": "Bundling JavaScript libraries into ESM and other module formats with tree-shaken output.",
+      "not_for": "No built-in dev server or zero-config asset pipeline; app-level tooling usually comes from Vite or plugins. JavaScript bundling only.",
+      "keywords": [
+        "bundler",
+        "es modules",
+        "javascript",
+        "library",
+        "commonjs",
+        "tree-shaking",
+        "cli"
+      ]
     },
     {
       "id": "web-infra-dev/rspack",
@@ -547,7 +823,19 @@
       "npm": "@rspack/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Rspack is a Rust-based bundler for the web that modernizes the webpack API so it can replace webpack. It is compatible with webpack plugins and loaders, supports Module Federation, has incremental HMR and built-in production optimizations, and is part of the Rstack toolchain.",
+      "best_for": "Migrating an existing webpack project to faster builds while keeping its plugins and loaders.",
+      "not_for": "Follows webpack's config model, so it is not zero-config. Web bundler only.",
+      "keywords": [
+        "bundler",
+        "webpack",
+        "rust",
+        "module federation",
+        "hmr",
+        "javascript",
+        "rstack"
+      ]
     },
     {
       "id": "rubocop/rubocop",
@@ -567,7 +855,19 @@
       "use_for": "Lint and auto-format Ruby code",
       "why": "The standard Ruby static analyzer and formatter with a large plugin ecosystem.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "RuboCop is a Ruby static code analyzer (linter) and code formatter that enforces the community Ruby Style Guide and can automatically fix many problems. It is highly configurable, includes a built-in LSP server for editors, runs on MRI 2.7+ and JRuby 9.4+, and analyzes code targeting Ruby 2.0+.",
+      "best_for": "Linting and auto-formatting Ruby projects to the community style guide, in editors or CI.",
+      "not_for": "Ruby only. Default rules are opinionated and often need configuration tuning for existing codebases.",
+      "keywords": [
+        "ruby",
+        "linter",
+        "formatter",
+        "static analysis",
+        "style guide",
+        "lsp",
+        "autocorrect"
+      ]
     },
     {
       "id": "astral-sh/ruff",
@@ -589,7 +889,19 @@
       "why": "Replaces Flake8, isort, Black and more; the fastest-growing Python linter (50k stars).",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Ruff is a Python linter and code formatter written in Rust that aims to be orders of magnitude faster than existing tools. It has over 900 built-in rules, auto-fixes, caching, pyproject.toml support and editor integrations, and can replace Flake8 plus plugins, Black, isort, pydocstyle, pyupgrade and autoflake.",
+      "best_for": "Fast linting and formatting of Python code, especially replacing several separate tools with one.",
+      "not_for": "Python only. Not a type checker; pair with mypy or ty for type checking.",
+      "keywords": [
+        "python",
+        "linter",
+        "formatter",
+        "rust",
+        "flake8",
+        "black",
+        "isort"
+      ]
     },
     {
       "id": "koalaman/shellcheck",
@@ -610,7 +922,19 @@
       "use_for": "Lint shell scripts for bugs and pitfalls",
       "why": "The standard static analyzer for sh/bash; integrated into nearly every editor and CI linter.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "ShellCheck is a static analysis tool that gives warnings and suggestions for bash/sh shell scripts, pointing out syntax issues, semantic problems and subtle pitfalls. It runs on shellcheck.net, in the terminal, in editors such as Vim, Emacs and VS Code, and in CI using exit codes.",
+      "best_for": "Catching bugs and pitfalls in bash/sh scripts locally, in editors or as a CI check.",
+      "not_for": "Only for bash/sh family shell scripts. Licensed under GPLv3, which matters if you embed or redistribute it.",
+      "keywords": [
+        "shell",
+        "bash",
+        "static analysis",
+        "linter",
+        "sh",
+        "scripts",
+        "ci"
+      ]
     },
     {
       "id": "stylelint/stylelint",
@@ -631,7 +955,21 @@
       "why": "The standard CSS linter with 100+ rules and a large plugin/config ecosystem.",
       "npm": "stylelint",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "CSS linter with over 100 built-in rules that catches errors such as malformed grid areas, duplicate selectors and misspelled properties, and enforces conventions like naming patterns and units. It auto-fixes problems where possible, supports plugins, custom syntaxes, formatters and shareable configs, and can parse SCSS, Sass, Less and embedded styles in HTML, Markdown and CSS-in-JS.",
+      "best_for": "Linting CSS and CSS-like languages (SCSS, Less, CSS-in-JS) in a project or CI, with configurable rules, shareable configs and custom plugin rules.",
+      "not_for": "Code formatting; the README recommends pairing it with a pretty printer like Prettier. Not a linter for JavaScript or other non-style languages.",
+      "keywords": [
+        "css",
+        "linter",
+        "scss",
+        "less",
+        "css-in-js",
+        "stylelint",
+        "autofix",
+        "plugins",
+        "shareable config"
+      ]
     },
     {
       "id": "super-linter/super-linter",
@@ -651,7 +989,20 @@
       "use_for": "Run many language linters in one GitHub Action or container",
       "why": "Bundles 50+ linters into a single CI step for polyglot repos.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Ready-to-run collection of linters and code analyzers for many languages, run in parallel and reported as console output and GitHub Actions status checks. It can also run outside GitHub Actions and has a fix mode that applies linting and formatting fixes, for example committing and pushing them to a branch.",
+      "best_for": "Adding multi-language linting and formatting checks to a repository with one GitHub Actions workflow, including optional automated fix commits. MIT licensed.",
+      "not_for": "Projects that only need one language's linter configured in depth; it ships as a large container bundling many tools, and is centered on GitHub Actions workflows.",
+      "keywords": [
+        "linter",
+        "github actions",
+        "code analysis",
+        "formatting",
+        "ci",
+        "multi-language",
+        "fix mode",
+        "status checks"
+      ]
     },
     {
       "id": "swc-project/swc",
@@ -677,7 +1028,20 @@
       "npm": "@swc/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "SWC (Speedy Web Compiler) is a TypeScript/JavaScript compiler written in Rust, usable both as a Rust library (crates, starting from the parser) and from JavaScript via npm packages with native addons. The README points to the website for a comparison with Babel and benchmarks.",
+      "best_for": "Fast TypeScript/JavaScript transpilation as a Babel alternative, either through its npm packages or embedded in Rust tooling via its crates.",
+      "not_for": "Type checking or a full bundler setup; it is a compiler. Rust users must keep all SWC crates on matching latest versions, and native addons cover a defined set of targets.",
+      "keywords": [
+        "swc",
+        "compiler",
+        "typescript",
+        "javascript",
+        "rust",
+        "transpiler",
+        "babel alternative",
+        "parser"
+      ]
     },
     {
       "id": "realm/SwiftLint",
@@ -697,7 +1061,20 @@
       "use_for": "Enforce Swift style and conventions",
       "why": "The standard Swift linter used across iOS/macOS projects, with autocorrect and Xcode integration.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Command-line tool that enforces Swift style and conventions based on community style guides, with rules mostly built on SwiftSyntax and some using Clang and SourceKit for type information. Run swiftlint in a directory to lint Swift files recursively; it supports lint and analyze subcommands and Xcode build-phase input files.",
+      "best_for": "Enforcing consistent Swift style in iOS/macOS projects, locally or in Xcode build phases and CI.",
+      "not_for": "Languages other than Swift. Maintained by volunteers in their free time and not a commercial product, so support is best-effort.",
+      "keywords": [
+        "swift",
+        "linter",
+        "swiftlint",
+        "xcode",
+        "ios",
+        "style guide",
+        "swiftsyntax",
+        "cli"
+      ]
     },
     {
       "id": "egoist/tsup",
@@ -719,7 +1096,20 @@
       "why": "Popular esbuild-powered library bundler emitting ESM/CJS and .d.ts with minimal config.",
       "npm": "tsup",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Zero-config bundler for TypeScript libraries powered by esbuild. Run tsup on one or more entry files and it writes bundles to ./dist; it handles .js, .json, .mjs, .ts and .tsx, with experimental CSS support.",
+      "best_for": "Existing projects already using tsup to bundle a small TypeScript library or CLI with minimal configuration.",
+      "not_for": "New projects: the README warns it is no longer actively maintained and recommends tsdown instead. CSS support is experimental.",
+      "keywords": [
+        "tsup",
+        "bundler",
+        "typescript",
+        "esbuild",
+        "library",
+        "zero config",
+        "unmaintained",
+        "tsdown"
+      ]
     },
     {
       "id": "vercel/turborepo",
@@ -743,7 +1133,20 @@
       "npm": "turbo",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Turborepo is a build system from Vercel that describes itself as the build system for coding agents; it runs and caches tasks across JavaScript/TypeScript monorepos. The README itself is minimal and directs users to turborepo.dev for setup and documentation.",
+      "best_for": "Orchestrating and caching builds, tests and lints across packages in a JavaScript/TypeScript monorepo.",
+      "not_for": "Single-package projects with no task orchestration needs. The repository README contains almost no technical detail; consult turborepo.dev before relying on specific features.",
+      "keywords": [
+        "turborepo",
+        "monorepo",
+        "build system",
+        "task runner",
+        "caching",
+        "javascript",
+        "typescript",
+        "vercel"
+      ]
     },
     {
       "id": "typescript-eslint/typescript-eslint",
@@ -766,7 +1169,19 @@
       "npm": "typescript-eslint",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Monorepo for typescript-eslint, the tooling that brings static analysis to JavaScript and TypeScript through ESLint. The README only links to typescript-eslint.io for documentation of released and canary versions.",
+      "best_for": "Linting TypeScript code with ESLint, including TypeScript-aware rules, in projects already using ESLint.",
+      "not_for": "Code formatting or type checking in place of tsc. The repository README carries no usage details; setup is documented on typescript-eslint.io.",
+      "keywords": [
+        "typescript",
+        "eslint",
+        "linter",
+        "static analysis",
+        "javascript",
+        "monorepo",
+        "typescript-eslint"
+      ]
     },
     {
       "id": "astral-sh/uv",
@@ -789,7 +1204,21 @@
       "why": "Rust-based Python package and project manager (~91k stars) replacing pip, pip-tools, venv and pyenv.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python package and project manager written in Rust that aims to replace pip, pip-tools, pipx, poetry, pyenv, twine and virtualenv. It manages project dependencies with a universal lockfile and Cargo-style workspaces, installs Python versions, runs scripts with inline metadata, runs tools, and offers a pip-compatible interface with a global deduplicating cache.",
+      "best_for": "Python projects wanting one fast tool for dependencies, virtual environments, lockfiles, Python versions, tool installs and publishing, on macOS, Linux or Windows.",
+      "not_for": "Non-Python ecosystems. Teams standardized on conda environments or another manager's lockfile format would need to migrate.",
+      "keywords": [
+        "python",
+        "package manager",
+        "pip",
+        "virtualenv",
+        "lockfile",
+        "poetry alternative",
+        "rust",
+        "workspaces",
+        "python versions"
+      ]
     },
     {
       "id": "vitejs/vite",
@@ -814,7 +1243,21 @@
       "npm": "vite",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Frontend build tool made of two parts: a dev server built on native ES modules with fast Hot Module Replacement, and a build command that bundles code with Rolldown into optimized static assets. It is extensible through a typed Plugin API and JavaScript API.",
+      "best_for": "Developing and building modern web frontends (SPAs, libraries, framework apps) that want instant dev server start, HMR and a plugin ecosystem.",
+      "not_for": "Backend or non-web builds. Apps relying on webpack-specific loaders or plugins need migration work.",
+      "keywords": [
+        "vite",
+        "build tool",
+        "dev server",
+        "hmr",
+        "bundler",
+        "rolldown",
+        "frontend",
+        "es modules",
+        "plugins"
+      ]
     },
     {
       "id": "webpack/webpack",
@@ -839,7 +1282,20 @@
       "npm": "webpack",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Module bundler that bundles JavaScript for the browser and can transform or package other assets. It handles ES Modules, CommonJS and AMD, produces single bundles or async-loaded chunks, preprocesses files through loaders (e.g. TypeScript, images) and is extended through a modular plugin system.",
+      "best_for": "Complex or existing applications that need fine-grained bundling control, code splitting, loaders and a mature plugin ecosystem.",
+      "not_for": "Projects wanting a zero-config, fast dev experience out of the box. Targets ES5-compliant browsers (no IE8 and below); older browsers need a Promise polyfill for import().",
+      "keywords": [
+        "webpack",
+        "bundler",
+        "javascript",
+        "code splitting",
+        "loaders",
+        "plugins",
+        "commonjs",
+        "es modules"
+      ]
     },
     {
       "id": "webpack/webpack-bundle-analyzer",
@@ -862,7 +1318,20 @@
       "why": "Go-to treemap analyzer for finding bundle bloat in webpack and Rspack builds.",
       "npm": "webpack-bundle-analyzer",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Webpack plugin and CLI that visualizes the contents and size of webpack output bundles as an interactive zoomable treemap. It parses minified bundles to get real module sizes and can serve the report over HTTP or write a static HTML or JSON report from a stats file.",
+      "best_for": "Finding which modules make webpack bundles large and spotting modules included by mistake, as a dev dependency or one-off CLI run on a stats JSON file.",
+      "not_for": "Bundles produced by tools other than webpack, unless they emit webpack-compatible stats. It reports on sizes but does not optimize anything itself.",
+      "keywords": [
+        "webpack",
+        "bundle analyzer",
+        "bundle size",
+        "treemap",
+        "visualization",
+        "stats",
+        "plugin",
+        "cli"
+      ]
     }
   ]
 }

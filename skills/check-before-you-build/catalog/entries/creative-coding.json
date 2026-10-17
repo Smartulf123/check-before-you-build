@@ -20,7 +20,20 @@
       "why": "Popular generative-art workflow with hot reload, exports and print-size output",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "canvas-sketch is a collection of tools and modules for creating generative art in JavaScript in the browser. Its CLI scaffolds and serves sketches, exports high-resolution PNGs at print dimensions (e.g. A4 at 300 DPI) with Cmd/Ctrl+S, supports templates such as Three.js, and can build sketches into a shareable HTML site.",
+      "best_for": "Generative artists making print-ready or high-resolution canvas artwork in JavaScript with a quick sketch-and-export workflow.",
+      "not_for": "Anyone wanting a GUI tool or a polished, fully documented framework; the roadmap lists API docs, GUI controls and tests as outstanding.",
+      "keywords": [
+        "generative art",
+        "canvas",
+        "javascript",
+        "creative coding",
+        "cli",
+        "png export",
+        "print",
+        "three.js"
+      ]
     },
     {
       "id": "css-doodle/css-doodle",
@@ -43,7 +56,19 @@
       "npm": "css-doodle",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "css-doodle is a web component for generative visual art written in CSS. You write CSS rules for a grid of cells, mixed with randomness and math functions, to draw patterns, backgrounds, icons and decorations; companion tools include a playground, an SVG playground and the cssd CLI for image/video export.",
+      "best_for": "Generating decorative patterns, backgrounds or generative art on web pages using CSS syntax with a single custom element.",
+      "not_for": "Pixel/shader-level graphics, 3D, or heavy interactive animation where canvas or WebGL tools are better suited.",
+      "keywords": [
+        "css",
+        "web component",
+        "generative art",
+        "creative coding",
+        "patterns",
+        "backgrounds",
+        "svg"
+      ]
     },
     {
       "id": "patriciogonzalezvivo/glslViewer",
@@ -67,7 +92,20 @@
       "why": "From the author of The Book of Shaders; renders 2D/3D shaders, exports frames and runs headless.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "glslViewer is a console-based OpenGL sandbox that displays 2D and 3D GLSL fragment and vertex shaders without a UI. It hot-reloads files, loads textures, video, audio and models (PLY, OBJ, GLTF), accepts uniforms and commands via stdin or OSC, and can render headless and export images or PNG sequences.",
+      "best_for": "Live-coding and previewing GLSL shaders from the terminal or a script, including headless rendering and driving it via OSC or a Python wrapper.",
+      "not_for": "Users wanting a graphical shader editor or a high-level creative coding framework; it is built from source per platform.",
+      "keywords": [
+        "glsl",
+        "shaders",
+        "opengl",
+        "hot reload",
+        "headless rendering",
+        "osc",
+        "cli",
+        "3d"
+      ]
     },
     {
       "id": "hydra-synth/hydra",
@@ -91,7 +129,20 @@
       "npm": "hydra-synth",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Hydra is a browser-based environment for live-coding visuals, inspired by analog modular synthesizers. It chains coordinate and color transform functions over multiple framebuffers and can stream and mix video between connected browsers; the synth engine is also available as the hydra-synth npm module.",
+      "best_for": "Live visuals performances, VJ-style sketches and networked collaborative visuals coded in the browser.",
+      "not_for": "Production apps or broad browser support; the README says it is experimental and only works on Chrome/Chromium with WebGL.",
+      "keywords": [
+        "live coding",
+        "visuals",
+        "webgl",
+        "video synth",
+        "browser",
+        "vj",
+        "creative coding",
+        "streaming"
+      ]
     },
     {
       "id": "nannou-org/nannou",
@@ -117,7 +168,19 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "nannou is an open-source creative-coding toolkit for Rust, inspired by Processing, openFrameworks and Cinder. It is built on the Bevy game engine and exposes its sketch/app API and Draw interface as Bevy plugins, with examples including ports of Generative Design and Nature of Code.",
+      "best_for": "Artists and developers who want to write creative-coding sketches or installations in Rust, or add a Processing-style draw API to a Bevy app.",
+      "not_for": "Beginners wanting a browser-based or non-Rust tool; the README says it is still early days, and first builds can be slow.",
+      "keywords": [
+        "creative coding",
+        "rust",
+        "bevy",
+        "generative art",
+        "processing",
+        "graphics",
+        "toolkit"
+      ]
     },
     {
       "id": "openframeworks/openFrameworks",
@@ -139,7 +202,19 @@
       "why": "Long-running C++ toolkit for artists with addons for OpenCV, audio, Kinect and more; MIT licensed (verified).",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "openFrameworks is a C++ toolkit for creative coding. It ships as a folder of core libraries, addons, examples and an apps directory for your projects, and builds on Windows, Linux (including ARM), macOS and Emscripten.",
+      "best_for": "Creative coders building native, performance-sensitive interactive art or installations in C++ across desktop platforms.",
+      "not_for": "Those who want a scripting or browser-first workflow; it requires C++ and per-platform setup (nightly releases avoid submodule cloning).",
+      "keywords": [
+        "creative coding",
+        "c++",
+        "toolkit",
+        "addons",
+        "interactive art",
+        "cross-platform",
+        "graphics"
+      ]
     },
     {
       "id": "processing/p5.js",
@@ -162,7 +237,20 @@
       "npm": "p5",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "p5.js is a free, open-source JavaScript library for accessible creative coding in the browser, using setup() and draw() sketch functions. It provides drawing tools and supports audio-visual, interactive and generative work, with a web editor, extensive documentation and community libraries.",
+      "best_for": "Beginners, artists, designers and educators making interactive or generative sketches for the web with a Processing-style API.",
+      "not_for": "Native or high-performance desktop graphics, or large production web apps; the project also does not accept fully AI-generated contributions.",
+      "keywords": [
+        "creative coding",
+        "javascript",
+        "canvas",
+        "generative art",
+        "processing",
+        "interactive",
+        "education",
+        "sketch"
+      ]
     },
     {
       "id": "paper-design/shaders",
@@ -185,7 +273,20 @@
       "npm": "@paper-design/shaders",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Zero-dependency HTML canvas shaders published as a vanilla package and a React package (@paper-design/shaders-react), with components such as MeshGradient and DotOrbit. Shaders can be animated or static and are configured through props like colors, distortion, swirl and speed; they can also be designed visually in Paper and exported as code.",
+      "best_for": "Adding lightweight animated shader textures, gradients or masked backgrounds to a website or React app without pulling in a 3D engine.",
+      "not_for": "Still on 0.0.x versioning with breaking changes expected, so dependencies must be pinned. A set of ready-made background effects, not a general WebGL or 3D rendering framework.",
+      "keywords": [
+        "shaders",
+        "webgl",
+        "canvas",
+        "mesh gradient",
+        "react",
+        "background",
+        "animation",
+        "paper"
+      ]
     },
     {
       "id": "williamngan/pts",
@@ -208,7 +309,19 @@
       "npm": "pts",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Pts is a TypeScript and JavaScript library for visualization and creative coding, built around primitives like Pt, Group, Line and CanvasSpace. It ships as an ESM-first npm package with a CommonJS entry, or as a browser script exposing globalThis.Pts, with starter kits and React integrations.",
+      "best_for": "Creative coding, generative art and interactive canvas visualizations in JS/TS where you want geometric primitives and a drawing space abstraction.",
+      "not_for": "Not a charting or dashboard library; you build visuals from points and shapes yourself. Canvas-oriented, not a 3D or game engine.",
+      "keywords": [
+        "creative coding",
+        "visualization",
+        "canvas",
+        "typescript",
+        "generative art",
+        "geometry",
+        "react"
+      ]
     },
     {
       "id": "sepandhaghighi/samila",
@@ -230,7 +343,20 @@
       "why": "Simple Python generator built on matplotlib; seeds make pieces reproducible and easy to export.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python generative art generator. Each image plots many thousand points whose positions come from two user-supplied (or random) functions with random parameters, then projects them (e.g. polar) with matplotlib. A seed makes results reproducible.",
+      "best_for": "Making reproducible generative art images from Python scripts, quick experiments with function-based point plots, exporting images or configs.",
+      "not_for": "Interactive or real-time visuals, 3D, shader work, or JS/browser art. Output is static matplotlib point plots only.",
+      "keywords": [
+        "generative art",
+        "python",
+        "matplotlib",
+        "seed",
+        "reproducible",
+        "art generator",
+        "projection",
+        "procedural images"
+      ]
     },
     {
       "id": "thi-ng/umbrella",
@@ -252,7 +378,21 @@
       "why": "Huge, well-documented toolkit for computational design and generative art in TS",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Monorepo of 200+ TypeScript packages for computational design: geometry, color, vectors/matrices, random numbers, reactive streams, WebGL/GPGPU, DSLs, data structures and file formats. Designed as composable functional libraries rather than a framework. Development has moved to Codeberg; GitHub is a read-only mirror.",
+      "best_for": "Generative art and creative coding in TypeScript where you want to pick individual composable packages (geometry, color, streams, WebGL).",
+      "not_for": "Developers wanting one batteries-included framework or a gentle learning curve. Huge surface area; the GitHub repo is a mirror, active work is on Codeberg.",
+      "keywords": [
+        "generative art",
+        "typescript",
+        "geometry",
+        "color",
+        "webgl",
+        "reactive streams",
+        "creative coding",
+        "vector math",
+        "monorepo"
+      ]
     },
     {
       "id": "fand/vfx-js",
@@ -275,7 +415,21 @@
       "npm": "@vfx-js/core",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "JavaScript library that applies WebGL shader effects to DOM elements such as images, videos and text. You call vfx.add(element, {shader}) with a built-in shader name or compose prebuilt effects from @vfx-js/effects (bloom, pixelate); React bindings are in @vfx-js/react.",
+      "best_for": "Adding glitch, bloom, pixelate or custom GLSL effects to images, video or text on a regular web page with a few lines of code.",
+      "not_for": "Full 3D scenes or game rendering (use three.js), or non-web targets. It is a DOM-overlay effects layer only.",
+      "keywords": [
+        "webgl",
+        "shader",
+        "glsl",
+        "image effects",
+        "video effects",
+        "glitch",
+        "bloom",
+        "dom",
+        "react"
+      ]
     }
   ]
 }

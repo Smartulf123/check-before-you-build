@@ -20,7 +20,20 @@
       "use_for": "Deployable starter for a virtual town of AI characters",
       "why": "MIT starter kit from a16z for agent simulations with a Convex backend; easy to customize.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Deployable starter kit for a virtual town where AI characters live, chat and socialize, inspired by the Generative Agents paper. Uses a Convex backend with shared global state, transactions and a simulation engine.",
+      "best_for": "Building agent-simulation or multiplayer AI-character experiments with a ready backend, from hobby projects to larger games.",
+      "not_for": "A starter and demo rather than a framework; tied to Convex for the backend and requires an LLM provider. Not suited for production agent orchestration use cases.",
+      "keywords": [
+        "ai agents",
+        "simulation",
+        "generative agents",
+        "virtual town",
+        "convex",
+        "llm characters",
+        "multiplayer",
+        "starter kit"
+      ]
     },
     {
       "id": "ant-design/ant-design-pro",
@@ -45,7 +58,21 @@
       ],
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Ant Design React boilerplate for enterprise admin apps. Includes layouts, auth flows, TypeScript, block templates and many ready pages, built on Umi.",
+      "best_for": "Starting an enterprise back-office or admin dashboard in React with Ant Design components.",
+      "not_for": "Locked to the Ant Design/Umi ecosystem and its visual style. Heavy for small projects, and it is frontend-only with no backend included.",
+      "keywords": [
+        "admin dashboard",
+        "react",
+        "ant design",
+        "umi",
+        "back office",
+        "enterprise",
+        "boilerplate",
+        "typescript",
+        "rbac"
+      ]
     },
     {
       "id": "aspnetboilerplate/aspnetboilerplate",
@@ -67,7 +94,20 @@
       "use_for": "Starting point for ASP.NET Core apps with DDD, multi-tenancy and auth",
       "why": "Mature .NET application template and framework behind ABP; MIT.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "General purpose application framework and template for ASP.NET Core, with DDD layering, multi-tenancy, authorization and modular design. Underlies ASP.NET Zero.",
+      "best_for": "Maintaining existing ABP-based .NET apps that already depend on it.",
+      "not_for": "Support officially ends May 2026; the README recommends migrating to ABP Framework for new projects. .NET only.",
+      "keywords": [
+        "asp.net core",
+        "ddd",
+        "multi-tenancy",
+        "boilerplate",
+        "abp",
+        "dotnet",
+        "application framework",
+        "authorization"
+      ]
     },
     {
       "id": "alan2207/bulletproof-react",
@@ -88,7 +128,20 @@
       "why": "Widely referenced React architecture with example apps for Vite, Next.js and React Router",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Opinionated architecture guide for scalable React apps, with a project structure, practices and sample applications for Vite, Next.js (app and pages) and React Router.",
+      "best_for": "Learning or copying a feature-based React folder structure and conventions for a growing production app.",
+      "not_for": "A reference/example repo, not an installable library or CLI scaffold. Opinions (library choices, structure) may not fit every team.",
+      "keywords": [
+        "react architecture",
+        "project structure",
+        "best practices",
+        "scalable react",
+        "vite",
+        "nextjs",
+        "feature folders",
+        "example app"
+      ]
     },
     {
       "id": "chibat/chrome-extension-typescript-starter",
@@ -113,7 +166,20 @@
       ],
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Minimal starter for a Chrome extension written in TypeScript, with an npm build and watch setup. Includes an options page, a content script, a badge counter and a background script.",
+      "best_for": "Quickly bootstrapping a simple TypeScript Chrome extension with no framework.",
+      "not_for": "Bare-bones: no UI framework or bundler extras, and the manifest version may be dated; check before use. Chrome-focused only.",
+      "keywords": [
+        "chrome extension",
+        "typescript",
+        "starter",
+        "content script",
+        "background script",
+        "popup",
+        "options page",
+        "browser extension"
+      ]
     },
     {
       "id": "drivendataorg/cookiecutter-data-science",
@@ -134,7 +200,19 @@
       "why": "Widely adopted, opinionated layout for reproducible data science projects",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Python tool that generates a standardized, flexible project structure for data science work, installed as the cookiecutter-data-science package. v2 differs from v1 and extends cookiecutter functionality.",
+      "best_for": "Starting reproducible data science or ML projects with a consistent layout for data, notebooks and code.",
+      "not_for": "Only a scaffold with a folder convention; it provides no pipeline, experiment tracking or deployment tooling. Opinionated structure may not suit all teams.",
+      "keywords": [
+        "data science",
+        "project template",
+        "cookiecutter",
+        "reproducible",
+        "ml project structure",
+        "notebooks",
+        "python scaffold"
+      ]
     },
     {
       "id": "cookiecutter/cookiecutter-django",
@@ -160,7 +238,20 @@
       ],
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Cookiecutter template that generates a production-ready Django project with Docker, 12-factor settings, authentication and Celery, plus multiple deployment options.",
+      "best_for": "Starting a new Django project with sensible, secure defaults and Docker deployment already configured.",
+      "not_for": "Python/Django only and fairly opinionated; generates many files and configs you may need to strip for small prototypes.",
+      "keywords": [
+        "django",
+        "cookiecutter",
+        "boilerplate",
+        "docker",
+        "celery",
+        "12-factor",
+        "project template",
+        "production ready"
+      ]
     },
     {
       "id": "electron-react-boilerplate/electron-react-boilerplate",
@@ -185,7 +276,20 @@
       ],
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Electron plus React and TypeScript template with hot reload, packaging for production and auto-update support preconfigured.",
+      "best_for": "Starting a cross-platform desktop app using Electron with React.",
+      "not_for": "Electron's large footprint; README is sparse and defers to external docs. Not for mobile or web-only apps, and React/webpack choices are fixed.",
+      "keywords": [
+        "electron",
+        "react",
+        "typescript",
+        "desktop app",
+        "boilerplate",
+        "hot reload",
+        "auto update",
+        "packaging"
+      ]
     },
     {
       "id": "fastapi/full-stack-fastapi-template",
@@ -208,7 +312,21 @@
       "why": "Official FastAPI template with auth, tests and deploy setup out of the box",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Official full-stack template with a FastAPI backend, SQLModel and PostgreSQL, a React frontend (TypeScript, Vite, Tailwind, shadcn/ui) with an auto-generated client, Docker Compose and CI.",
+      "best_for": "Starting a Python API plus React web app with auth, tests and deploy setup already wired up.",
+      "not_for": "Opinionated stack (FastAPI, Postgres, React); heavy for tiny projects or non-React frontends. Not a multi-tenant SaaS kit.",
+      "keywords": [
+        "fastapi",
+        "react",
+        "sqlmodel",
+        "postgres",
+        "docker compose",
+        "full stack",
+        "template",
+        "jwt auth",
+        "openapi client"
+      ]
     },
     {
       "id": "go-admin-team/go-admin",
@@ -230,7 +348,21 @@
       "use_for": "Gin + Vue admin starter with RBAC and code generation",
       "why": "Popular Go admin scaffold with permissions, menus and code generator; MIT.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Admin system scaffold with a Go (Gin) backend and Vue frontend (Element UI, Arco Design or Ant Design). Provides RESTful APIs, permission management, menus and a code generator, initialized by editing database configuration.",
+      "best_for": "Building Go-based back-office apps with role-based access and quick CRUD code generation.",
+      "not_for": "Go/Gin and Vue only; documentation is largely geared to Chinese-speaking users. Heavy if you only need an API.",
+      "keywords": [
+        "go admin",
+        "gin",
+        "vue",
+        "rbac",
+        "code generator",
+        "admin panel",
+        "permissions",
+        "restful api",
+        "scaffold"
+      ]
     },
     {
       "id": "sahat/hackathon-starter",
@@ -251,7 +383,21 @@
       "use_for": "Node.js/Express boilerplate with auth and API integrations",
       "why": "Ready OAuth logins, account management and many API examples; ideal for fast prototypes.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Node.js and Express boilerplate with ready-made OAuth sign-ins, account management and many API integration examples, aimed at quickly starting prototypes.",
+      "best_for": "Hackathons and quick prototypes needing social login and sample API integrations.",
+      "not_for": "Server-rendered Express app with many unused example features; not a modern production architecture and needs stripping down for serious projects.",
+      "keywords": [
+        "node.js",
+        "express",
+        "boilerplate",
+        "oauth",
+        "passport",
+        "authentication",
+        "hackathon",
+        "api examples",
+        "prototype"
+      ]
     },
     {
       "id": "h5bp/html5-boilerplate",
@@ -271,7 +417,19 @@
       "use_for": "Front-end template for fast, robust static websites",
       "why": "Long-standing baseline template for web projects (57k stars), maintained by H5BP.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Long-running front-end template for fast, robust static sites and web apps. Provides sensible defaults and configuration without imposing a framework or development philosophy.",
+      "best_for": "Starting plain HTML/CSS/JS sites with good baseline defaults and no framework.",
+      "not_for": "Not a component framework or build system; modern framework starters (Vite, Next.js) cover app development better.",
+      "keywords": [
+        "html5",
+        "boilerplate",
+        "static site",
+        "front-end template",
+        "normalize",
+        "web performance",
+        "vanilla javascript"
+      ]
     },
     {
       "id": "zeon-studio/hugoplate",
@@ -297,7 +455,21 @@
       ],
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Hugo and Tailwind CSS v4 starter for blogs and marketing sites. Includes multi-authors, search, dark mode, tags and categories, similar posts, contact form, multilingual support and Netlify config.",
+      "best_for": "Static marketing sites or blogs built with Hugo that need SEO and multilingual features out of the box.",
+      "not_for": "Hugo/Tailwind static site only; no dynamic backend or app features. Customizing means working within the template's structure.",
+      "keywords": [
+        "hugo",
+        "tailwind css",
+        "static site",
+        "blog template",
+        "multilingual",
+        "seo",
+        "dark mode",
+        "netlify",
+        "starter"
+      ]
     },
     {
       "id": "infinitered/ignite",
@@ -324,7 +496,20 @@
         "date": "2026-10-17"
       },
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "React Native boilerplate with a CLI and generators, maintained since 2016. Sets up an Expo-based app with a recommended structure and tooling.",
+      "best_for": "Starting a React Native/Expo app with an opinionated structure and code generators.",
+      "not_for": "Opinionated stack choices (including state and navigation) may not match yours; mobile React Native only.",
+      "keywords": [
+        "react native",
+        "expo",
+        "boilerplate",
+        "cli",
+        "generators",
+        "mobile app",
+        "typescript",
+        "starter"
+      ]
     },
     {
       "id": "jhipster/generator-jhipster",
@@ -348,7 +533,21 @@
       "use_for": "Generate Spring Boot + Angular/React/Vue apps and microservices",
       "why": "Widely used generator for full-stack Java apps with auth, CI and deploy configs; Apache-2.0.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Yeoman-based generator that scaffolds Spring Boot backends with Angular, React or Vue frontends, and microservices, including auth, CI and deployment configuration.",
+      "best_for": "Java teams wanting a generated full-stack app or microservices architecture with conventions already set.",
+      "not_for": "Heavy and opinionated Java/Spring stack with a learning curve; generated code is large and hard to diverge from. Not for lightweight projects.",
+      "keywords": [
+        "jhipster",
+        "spring boot",
+        "angular",
+        "react",
+        "vue",
+        "microservices",
+        "generator",
+        "java",
+        "full stack"
+      ]
     },
     {
       "id": "n8n-io/self-hosted-ai-starter-kit",
@@ -374,7 +573,21 @@
       ],
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Docker Compose template that bundles self-hosted n8n with Ollama (local LLMs), Qdrant (vector store) and Postgres for building local AI workflows with low-code tooling.",
+      "best_for": "Quickly spinning up a private local AI workflow environment with RAG-style components.",
+      "not_for": "A starter for local experimentation, not a hardened production deployment. Local models need adequate GPU/CPU resources, and n8n has its own license terms.",
+      "keywords": [
+        "n8n",
+        "ollama",
+        "qdrant",
+        "docker compose",
+        "self-hosted ai",
+        "local llm",
+        "workflow automation",
+        "rag",
+        "low-code"
+      ]
     },
     {
       "id": "brocoders/nestjs-boilerplate",
@@ -399,7 +612,22 @@
       ],
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "NestJS REST API boilerplate with TypeORM or Mongoose, seeding, email/social auth (Apple, Facebook, Google), roles, i18n, file uploads (local or S3), mailing, Swagger, tests, Docker and CI.",
+      "best_for": "Starting a NestJS backend with auth, database, mailing and file uploads already in place.",
+      "not_for": "NestJS/TypeScript only; includes many features you may need to strip. Backend only, with no frontend.",
+      "keywords": [
+        "nestjs",
+        "rest api",
+        "boilerplate",
+        "typeorm",
+        "mongoose",
+        "jwt auth",
+        "swagger",
+        "docker",
+        "i18n",
+        "file upload"
+      ]
     },
     {
       "id": "Kiranism/next-shadcn-dashboard-starter",
@@ -421,7 +649,20 @@
       "why": "Popular Next.js admin starter with data tables, forms and kanban ready to extend",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Free MIT admin dashboard starter with Next.js 16, shadcn/ui, Tailwind v4 and TypeScript. Includes working data tables, forms, auth, organizations and billing, with a cleanup script to remove unneeded parts.",
+      "best_for": "Starting an admin panel or SaaS dashboard on Next.js with real functional tables and forms.",
+      "not_for": "Next.js and shadcn only; not a full SaaS backend by itself, and some features may rely on third-party services such as Clerk.",
+      "keywords": [
+        "nextjs",
+        "shadcn ui",
+        "admin dashboard",
+        "data tables",
+        "tailwind",
+        "typescript",
+        "starter",
+        "kanban"
+      ]
     },
     {
       "id": "vercel/next-forge",
@@ -446,7 +687,21 @@
       ],
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Turborepo template for production Next.js SaaS apps. An opinionated monorepo that integrates auth, billing, analytics, docs and other services with minimal configuration.",
+      "best_for": "Launching a SaaS on Next.js that needs a full monorepo with integrated third-party services.",
+      "not_for": "Heavy and opinionated; many bundled services and packages are overkill for small apps. Tied to Next.js and its chosen vendors.",
+      "keywords": [
+        "next.js",
+        "turborepo",
+        "saas",
+        "monorepo",
+        "boilerplate",
+        "auth",
+        "billing",
+        "starter",
+        "production"
+      ]
     },
     {
       "id": "ixartz/Next-js-Boilerplate",
@@ -471,7 +726,22 @@
       ],
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Next.js 16 App Router boilerplate with Tailwind v4 and TypeScript, plus Clerk auth, DrizzleORM (Postgres, SQLite, MySQL), Vitest, Playwright, Storybook, Sentry, i18n and linting tooling.",
+      "best_for": "Starting a Next.js app with strong developer-experience defaults for testing and linting.",
+      "not_for": "Opinionated stack tied to specific vendors (Clerk, Sentry, etc.); lots of tooling to remove for small projects. Not a SaaS kit with billing.",
+      "keywords": [
+        "next.js",
+        "boilerplate",
+        "tailwind",
+        "typescript",
+        "drizzle orm",
+        "clerk",
+        "vitest",
+        "playwright",
+        "storybook",
+        "i18n"
+      ]
     },
     {
       "id": "Blazity/next-enterprise",
@@ -492,7 +762,21 @@
       "why": "Well-maintained production setup for larger Next.js teams",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Production-oriented Next.js boilerplate for larger teams, with testing, CI, Storybook, observability and infrastructure provisioning options such as AWS (ECS, VPC, CloudFront).",
+      "best_for": "Enterprise or larger-team Next.js projects needing CI, testing, observability and cloud infrastructure scaffolding.",
+      "not_for": "Too heavy for small or solo projects; opinionated infra setup (e.g. AWS) you may need to adapt or remove.",
+      "keywords": [
+        "next.js",
+        "enterprise",
+        "boilerplate",
+        "aws",
+        "storybook",
+        "ci",
+        "observability",
+        "terraform",
+        "testing"
+      ]
     },
     {
       "id": "obytes/react-native-template-obytes",
@@ -517,7 +801,21 @@
       ],
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Expo React Native template with TypeScript, TailwindCSS (NativeWind), expo-router, React Query, TanStack Form, i18n, Husky and lint-staged.",
+      "best_for": "Starting a production-minded Expo app with a modern, opinionated stack.",
+      "not_for": "Opinionated library choices; mobile React Native only. May lag Expo upgrades if you need the newest SDK.",
+      "keywords": [
+        "expo",
+        "react native",
+        "template",
+        "nativewind",
+        "expo router",
+        "react query",
+        "i18n",
+        "typescript",
+        "mobile starter"
+      ]
     },
     {
       "id": "wasp-lang/open-saas",
@@ -544,7 +842,21 @@
       ],
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Free SaaS starter built on Wasp (React, Node.js, Prisma). Includes auth, payments (Stripe/Polar), email, admin dashboard, AI examples and docs, and is set up to work with AI coding tools.",
+      "best_for": "Launching a full SaaS quickly with auth, payments and an admin dashboard already wired.",
+      "not_for": "Requires adopting the Wasp framework, which is less common than plain Next.js. Stack is fixed to React, Node and Prisma.",
+      "keywords": [
+        "saas boilerplate",
+        "wasp",
+        "stripe",
+        "auth",
+        "admin dashboard",
+        "react",
+        "prisma",
+        "ai examples",
+        "payments"
+      ]
     },
     {
       "id": "kriasoft/react-starter-kit",
@@ -566,7 +878,21 @@
       "use_for": "React + Bun + tRPC + Tailwind starter deployable to Cloudflare Workers",
       "why": "Modern, maintained full-stack React template with Stripe and edge deployment.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Full-stack monorepo template for SaaS with React 19, tRPC, Drizzle ORM and Neon Postgres, deployed as three Cloudflare Workers. Includes Better Auth (OTP, passkeys, Google OAuth, organizations) and Stripe subscriptions.",
+      "best_for": "Edge-deployed, end-to-end type-safe SaaS on Cloudflare.",
+      "not_for": "Targets Cloudflare Workers and Bun specifically; not for traditional Node hosting or other frontend frameworks.",
+      "keywords": [
+        "react 19",
+        "trpc",
+        "cloudflare workers",
+        "drizzle",
+        "better auth",
+        "stripe",
+        "monorepo",
+        "saas template",
+        "tanstack router"
+      ]
     },
     {
       "id": "ixartz/SaaS-Boilerplate",
@@ -588,7 +914,21 @@
       "why": "Feature-complete multi-tenant SaaS starter with Drizzle, shadcn/ui and full testing setup",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Next.js and Tailwind SaaS template with shadcn/ui. Provides authentication, multi-tenancy with teams, roles and permissions, Drizzle DB, i18n, landing page, dashboard, Sentry, tests and user impersonation.",
+      "best_for": "Building a multi-tenant SaaS on Next.js that needs teams, roles and billing basics.",
+      "not_for": "Next.js and its chosen services only; sizeable codebase to learn. Some features rely on third-party vendors such as Clerk.",
+      "keywords": [
+        "saas boilerplate",
+        "next.js",
+        "multi-tenancy",
+        "roles permissions",
+        "teams",
+        "drizzle",
+        "shadcn ui",
+        "i18n",
+        "impersonation"
+      ]
     },
     {
       "id": "satnaing/shadcn-admin",
@@ -610,7 +950,20 @@
       "why": "Popular polished admin UI starter with many ready pages",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Admin dashboard UI built with shadcn/ui, Vite and TanStack Router. Features light/dark mode, responsive and accessible design, sidebar, global search command, 10+ pages and RTL support.",
+      "best_for": "Reusing a polished dashboard UI for an admin panel in a Vite React app.",
+      "not_for": "The README says it is not a starter template; it is a UI collection without backend, data layer or auth logic of its own.",
+      "keywords": [
+        "shadcn ui",
+        "admin dashboard",
+        "vite",
+        "tanstack router",
+        "react",
+        "dashboard template",
+        "dark mode",
+        "rtl"
+      ]
     },
     {
       "id": "vercel/chatbot",
@@ -636,7 +989,21 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Vercel's reference chatbot template built with Next.js App Router and the AI SDK. Supports multiple model providers via the AI Gateway, streaming, chat persistence, auth and artifacts.",
+      "best_for": "Starting an AI chat app with streaming, history and auth on Next.js.",
+      "not_for": "Tied to Next.js, Vercel's AI SDK and a database/auth setup; heavier than needed for a simple chat widget.",
+      "keywords": [
+        "ai chatbot",
+        "next.js",
+        "ai sdk",
+        "streaming",
+        "llm chat",
+        "template",
+        "vercel",
+        "artifacts",
+        "chat persistence"
+      ]
     },
     {
       "id": "yournextstore/yournextstore",
@@ -661,7 +1028,20 @@
       ],
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source Next.js e-commerce template that uses Stripe as the product catalog and for checkout, billing and subscriptions. Ships AGENTS.md and a typed Commerce Kit SDK for AI coding tools.",
+      "best_for": "Small to medium storefronts where Stripe products are the catalog and you want no separate commerce backend.",
+      "not_for": "Stripe-only and Next.js-only; lacks the inventory, multi-warehouse and admin depth of full commerce platforms.",
+      "keywords": [
+        "ecommerce",
+        "next.js",
+        "stripe",
+        "storefront",
+        "checkout",
+        "commerce",
+        "template",
+        "subscriptions"
+      ]
     }
   ]
 }

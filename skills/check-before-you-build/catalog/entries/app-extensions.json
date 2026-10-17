@@ -20,7 +20,20 @@
       "why": "Canonical reference code from the Chrome team for each extension API",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official Chrome team repository of sample extensions. Contains api-samples (one API each) and functional-samples (multi-API, full-featured extensions), plus archived MV2 and deprecated Chrome Apps material.",
+      "best_for": "Learning how to use specific Chrome extension APIs with Manifest V3 reference code.",
+      "not_for": "A build framework or boilerplate; these are standalone samples, not tooling. Chrome Apps content is deprecated.",
+      "keywords": [
+        "chrome extension",
+        "manifest v3",
+        "chrome extension api",
+        "service worker",
+        "content script",
+        "side panel",
+        "extension samples",
+        "mv3"
+      ]
     },
     {
       "id": "crxjs/chrome-extension-tools",
@@ -43,7 +56,20 @@
       "npm": "@crxjs/vite-plugin",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Vite plugin for building Chrome (and cross-browser) extensions using manifest.json as the entry point. Provides HMR including for content scripts, static asset imports, automatic web_accessible_resources and full use of Vite plugins; scaffold with npm create crxjs.",
+      "best_for": "Teams who want plain Vite plus a manifest with HMR for Manifest V3 extensions.",
+      "not_for": "Opinionated frameworks with built-in messaging, storage and publishing (WXT, Plasmo). MV2 support lives in a separate rollup-plugin.",
+      "keywords": [
+        "vite plugin",
+        "chrome extension",
+        "hmr",
+        "manifest v3",
+        "content script",
+        "crxjs",
+        "extension build",
+        "web extension"
+      ]
     },
     {
       "id": "extension-js/extension.js",
@@ -66,7 +92,20 @@
       "why": "Framework-agnostic extension tooling with many templates; MIT.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Zero-config tooling to scaffold, develop and build cross-browser extensions. Aims to fix browser-specific quirks and missing content-script hot reload, with many templates and framework-agnostic setup.",
+      "best_for": "Starting cross-browser extensions quickly with templates and a ready dev/build pipeline.",
+      "not_for": "Projects tied to Vite plugin ecosystems or needing the larger communities around WXT/Plasmo; check maturity before betting on it.",
+      "keywords": [
+        "browser extension",
+        "cross-browser",
+        "scaffold",
+        "hot reload",
+        "manifest v3",
+        "extension templates",
+        "build tool",
+        "firefox extension"
+      ]
     },
     {
       "id": "JetBrains/intellij-platform-plugin-template",
@@ -88,7 +127,19 @@
       "why": "Official JetBrains starter with Gradle setup, CI and publishing preconfigured",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official JetBrains template repository for starting IntelliJ Platform plugins. Pre-configures the Gradle project scaffold, CI, publishing and links to documentation.",
+      "best_for": "Starting a plugin for IntelliJ IDEA or other JetBrains IDEs with recommended structure, CI and publishing already set.",
+      "not_for": "Non-JetBrains editors, or ones who want scaffolding via a CLI generator; this is a GitHub template repo for Kotlin/Java plugin projects.",
+      "keywords": [
+        "intellij plugin",
+        "jetbrains plugin",
+        "gradle",
+        "ide plugin",
+        "plugin template",
+        "kotlin plugin",
+        "intellij platform"
+      ]
     },
     {
       "id": "obsidianmd/obsidian-api",
@@ -111,7 +162,19 @@
       "npm": "obsidian",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official TypeScript type definitions for the Obsidian plugin API, with documentation in TSDoc comments. Describes plugin structure including manifest.json fields and main.js.",
+      "best_for": "Writing typed Obsidian plugins; every plugin depends on it for the API surface.",
+      "not_for": "A starter project (use obsidian-sample-plugin) or non-Obsidian note apps; it contains only type declarations, not implementation.",
+      "keywords": [
+        "obsidian plugin",
+        "obsidian api",
+        "typescript definitions",
+        "plugin development",
+        "obsidian.d.ts",
+        "manifest.json",
+        "note taking plugin"
+      ]
     },
     {
       "id": "obsidianmd/obsidian-sample-plugin",
@@ -134,7 +197,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Official template for Obsidian community plugins in TypeScript. Demonstrates a ribbon icon, a command opening a modal, a settings tab, a global click event and a registered interval.",
+      "best_for": "Starting a new Obsidian community plugin with the standard build and structure.",
+      "not_for": "Any non-Obsidian target; it is a minimal demo to adapt, not a framework or feature-rich scaffold.",
+      "keywords": [
+        "obsidian plugin",
+        "plugin template",
+        "typescript",
+        "community plugin",
+        "modal",
+        "settings tab",
+        "ribbon icon",
+        "obsidian"
+      ]
     },
     {
       "id": "PlasmoHQ/plasmo",
@@ -156,7 +232,21 @@
       "npm": "plasmo",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Framework for building browser extensions with React and TypeScript, described as batteries-included with built-in messaging, storage and store publishing. No README content was provided; details rely on general knowledge.",
+      "best_for": "React/TypeScript browser extensions where you want integrated messaging, storage and automated store submission.",
+      "not_for": "Maintenance-sensitive projects: check current activity, as WXT is often considered the more actively developed alternative. Opinionated and framework-driven.",
+      "keywords": [
+        "browser extension",
+        "react",
+        "typescript",
+        "extension framework",
+        "messaging",
+        "storage",
+        "bpp",
+        "chrome extension",
+        "manifest v3"
+      ]
     },
     {
       "id": "raycast/extensions",
@@ -179,7 +269,19 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Monorepo of all extensions in the Raycast Store, plus documentation and examples for extending Raycast using React and the Raycast API. Contribution and acceptable-use guidelines apply when submitting.",
+      "best_for": "Writing and publishing a Raycast extension, using existing store extensions as references.",
+      "not_for": "Anything outside Raycast (macOS/Windows launcher); not a general framework. Publishing requires following store guidelines and review.",
+      "keywords": [
+        "raycast",
+        "raycast extension",
+        "launcher",
+        "react extension",
+        "macos productivity",
+        "extension store",
+        "raycast api"
+      ]
     },
     {
       "id": "lisonge/vite-plugin-monkey",
@@ -201,7 +303,20 @@
       "npm": "vite-plugin-monkey",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Vite plugin for building userscripts for Tampermonkey, Violentmonkey, Greasemonkey and ScriptCat. Injects metadata, auto-configures @grant from used GM APIs, supports @require/@resource externals, ESM GM imports with types, TypeScript and top-level await.",
+      "best_for": "Userscript projects wanting Vite, TypeScript and frameworks with dev-server workflow.",
+      "not_for": "Full browser extensions with manifests (use WXT/CRXJS) or tiny one-file scripts that do not need a build step.",
+      "keywords": [
+        "userscript",
+        "tampermonkey",
+        "violentmonkey",
+        "greasemonkey",
+        "vite plugin",
+        "gm api",
+        "userscript bundler",
+        "typescript"
+      ]
     },
     {
       "id": "microsoft/vscode-extension-samples",
@@ -224,7 +339,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Microsoft's official collection of self-contained sample extensions, each demonstrating one VS Code API or contribution point with explanation, usage gif and code. Run any sample with F5 after npm install.",
+      "best_for": "Learning how to implement specific VS Code extension features by example.",
+      "not_for": "A project scaffold or build tool (use yo code); samples are reference code to copy from, not a library.",
+      "keywords": [
+        "vscode extension",
+        "extension samples",
+        "vscode api",
+        "contribution points",
+        "webview",
+        "language server",
+        "tree view",
+        "commands"
+      ]
     },
     {
       "id": "microsoft/vscode-vsce",
@@ -251,7 +379,19 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official command-line tool (@vscode/vsce) for packaging VS Code extensions into .vsix files and publishing them to the Marketplace. Also exposes a small library API. Requires Node 22+.",
+      "best_for": "Packaging and publishing VS Code extensions from CLI or CI.",
+      "not_for": "Writing extensions or publishing to the Open VSX registry (use ovsx). It is only the packaging and publish step.",
+      "keywords": [
+        "vsce",
+        "vsix",
+        "publish extension",
+        "vscode marketplace",
+        "package extension",
+        "extension manager",
+        "vscode"
+      ]
     },
     {
       "id": "mozilla/web-ext",
@@ -274,7 +414,20 @@
       "npm": "web-ext",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Mozilla's command-line tool to run, lint, build and sign WebExtensions. Runs extensions in Firefox (including Firefox for Android via adb) and has a programmatic API.",
+      "best_for": "Developing, testing and publishing Firefox extensions; auto-reload and linting for WebExtensions.",
+      "not_for": "A full build/bundling framework; it does not bundle your code. Focused on Firefox, with Chromium support secondary.",
+      "keywords": [
+        "web-ext",
+        "firefox extension",
+        "webextension",
+        "addon signing",
+        "lint extension",
+        "run extension",
+        "firefox android",
+        "amo"
+      ]
     },
     {
       "id": "wxt-dev/wxt",
@@ -297,7 +450,20 @@
       "npm": "wxt",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Next-gen web extension framework, described as Nuxt for web extensions. Built on Vite with HMR, file-based entrypoints, auto-imports, TypeScript, a module system, bundle analysis and automated publishing; supports all browsers, MV2 and MV3, and any UI framework.",
+      "best_for": "New cross-browser extensions with React, Vue or Svelte that want a modern dev experience and automated publishing.",
+      "not_for": "Tiny scripts or userscripts, or teams wanting just a Vite plugin with minimal conventions (CRXJS). Adds framework conventions to learn.",
+      "keywords": [
+        "web extension",
+        "browser extension",
+        "vite",
+        "hmr",
+        "cross-browser",
+        "manifest v3",
+        "file-based entrypoints",
+        "chrome extension framework"
+      ]
     },
     {
       "id": "microsoft/vscode-generator-code",
@@ -325,7 +491,19 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Yeoman generator (yo code) that scaffolds VS Code extensions, themes, language support and more. Creates a base folder structure, package.json, assets and launch.json for debugging.",
+      "best_for": "Starting a new VS Code extension or theme with the official templates.",
+      "not_for": "Ongoing build or packaging needs, or non-VS Code editors; it is a one-time scaffold that depends on Yeoman.",
+      "keywords": [
+        "yo code",
+        "vscode extension",
+        "yeoman generator",
+        "scaffold",
+        "vscode theme",
+        "language support",
+        "extension template"
+      ]
     }
   ]
 }

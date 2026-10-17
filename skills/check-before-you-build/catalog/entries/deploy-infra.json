@@ -22,7 +22,21 @@
       "why": "The most widely used agentless config-management tool, with a huge collection ecosystem for servers, cloud and network.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Agentless IT automation: describes infrastructure and deployments in human-readable YAML playbooks executed over SSH, managing many machines in parallel. Modules can be written in any language; no bootstrap software needed on targets.",
+      "best_for": "Configuring servers, deploying applications and network automation without installing agents.",
+      "not_for": "Immutable-infra or declarative resource provisioning (use Terraform/OpenTofu); large-scale runs can be slow.",
+      "keywords": [
+        "configuration management",
+        "playbooks",
+        "yaml",
+        "ssh",
+        "agentless",
+        "automation",
+        "provisioning",
+        "deployment",
+        "idempotent"
+      ]
     },
     {
       "id": "argoproj/argo-cd",
@@ -43,7 +57,21 @@
       "why": "CNCF-graduated GitOps tool that syncs clusters from Git with a strong UI",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Declarative GitOps continuous delivery tool for Kubernetes that syncs applications from Git-stored definitions, with a web UI. CNCF graduated project.",
+      "best_for": "Kubernetes teams practicing GitOps who want auditable, automated deployments and drift detection.",
+      "not_for": "Non-Kubernetes deployments or CI build pipelines; it only handles delivery to clusters.",
+      "keywords": [
+        "gitops",
+        "kubernetes",
+        "continuous delivery",
+        "cd",
+        "declarative",
+        "sync",
+        "cncf",
+        "helm",
+        "drift"
+      ]
     },
     {
       "id": "aws/aws-cdk",
@@ -72,7 +100,20 @@
       "official": true,
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Official AWS framework for defining cloud infrastructure in programming languages (TypeScript, Python, Java, .NET, Go) and deploying it through CloudFormation, with high-level constructs encoding best practices.",
+      "best_for": "AWS-only infrastructure defined in real programming languages with reusable constructs.",
+      "not_for": "Multi-cloud setups, or avoiding CloudFormation limits and deploy speed.",
+      "keywords": [
+        "aws",
+        "infrastructure as code",
+        "cloudformation",
+        "constructs",
+        "typescript",
+        "python",
+        "cdk",
+        "iac"
+      ]
     },
     {
       "id": "caddyserver/caddy",
@@ -93,7 +134,20 @@
       "why": "Automatic TLS by default and a one-line reverse-proxy config; very popular for self-hosted deploys",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Extensible web server and reverse proxy with automatic HTTPS by default (Let's Encrypt, ZeroSSL, internal CA). Configured with a Caddyfile or JSON, with a dynamic JSON API and config adapters.",
+      "best_for": "Self-hosted sites and services needing simple reverse proxy config with automatic TLS certificates.",
+      "not_for": "Highly specialized proxy features or very large ecosystems of nginx modules.",
+      "keywords": [
+        "reverse proxy",
+        "automatic https",
+        "web server",
+        "caddyfile",
+        "tls",
+        "lets encrypt",
+        "load balancer",
+        "http/3"
+      ]
     },
     {
       "id": "capistrano/capistrano",
@@ -113,7 +167,20 @@
       "use_for": "Scripted multi-server deployments over SSH",
       "why": "The classic SSH deployment tool for Rails and beyond; large plugin ecosystem, MIT.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Ruby-based deployment automation framework that runs scripted multi-server deployments over SSH via the cap command (e.g. cap production deploy). Written in Ruby but usable for any language; extended via plugins.",
+      "best_for": "Classic SSH-based deploys to your own servers, especially Rails apps.",
+      "not_for": "Container or Kubernetes workflows, or teams without Ruby; the SSH/release-directory model is dated.",
+      "keywords": [
+        "deployment",
+        "ssh",
+        "ruby",
+        "rails",
+        "multi-server",
+        "rake",
+        "cap deploy",
+        "automation"
+      ]
     },
     {
       "id": "caprover/caprover",
@@ -136,7 +203,20 @@
       "why": "Docker Swarm + nginx PaaS with automatic HTTPS and multi-node clustering; Apache-2.0.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Self-hosted app and database deployment platform using Docker, nginx, Let's Encrypt and NetData, with a web GUI and CLI. One-click apps; supports multi-node clustering, and apps keep working if CapRover is removed.",
+      "best_for": "Easy self-hosted PaaS on your own VPS for Node, Python, PHP, Ruby, Go apps and databases.",
+      "not_for": "Complex orchestration or Kubernetes-scale needs; Docker Swarm based.",
+      "keywords": [
+        "paas",
+        "self-hosted",
+        "docker swarm",
+        "nginx",
+        "lets encrypt",
+        "one-click apps",
+        "deployment",
+        "heroku alternative"
+      ]
     },
     {
       "id": "coollabsio/coolify",
@@ -159,7 +239,20 @@
       "why": "The most popular self-hosted PaaS: git push deploys, one-click databases and services, SSL and backups on any VPS.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Self-hostable platform to deploy applications, databases and services on your own servers over SSH, as an alternative to Heroku, Netlify and Vercel. Provides git-based deploys, one-click services, SSL and backups; works on VPS, bare metal or Raspberry Pi.",
+      "best_for": "Hosting apps and databases on your own VPS with a Vercel/Heroku-like workflow.",
+      "not_for": "Large multi-region production fleets needing enterprise orchestration; you are responsible for server upkeep.",
+      "keywords": [
+        "self-hosted paas",
+        "heroku alternative",
+        "vercel alternative",
+        "docker",
+        "deployment",
+        "ssl",
+        "database backups",
+        "git push deploy"
+      ]
     },
     {
       "id": "crossplane/crossplane",
@@ -182,7 +275,20 @@
       "why": "CNCF project that turns Kubernetes into a universal control plane with composable, self-service infrastructure APIs.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Framework for building cloud-native control planes without writing code: manages cloud resources through Kubernetes APIs and lets platform teams define composable, self-service infrastructure APIs. CNCF project.",
+      "best_for": "Platform engineering teams building internal developer platforms on top of Kubernetes.",
+      "not_for": "Small teams without Kubernetes, or simple IaC needs (Terraform/OpenTofu/Pulumi are lighter).",
+      "keywords": [
+        "kubernetes",
+        "control plane",
+        "platform engineering",
+        "composition",
+        "infrastructure",
+        "cncf",
+        "declarative",
+        "cloud resources"
+      ]
     },
     {
       "id": "deployphp/deployer",
@@ -202,7 +308,21 @@
       "use_for": "Zero-downtime deployments for PHP apps with framework recipes",
       "why": "De facto PHP deploy tool with ready recipes for Laravel, Symfony, WordPress; MIT.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "PHP deployment tool with built-in provisioning, zero-downtime deployments and ready-to-use recipes for popular frameworks such as Laravel, Symfony and WordPress. MIT licensed.",
+      "best_for": "Deploying PHP apps to servers over SSH with minimal configuration.",
+      "not_for": "Container/Kubernetes pipelines or non-PHP-centric teams.",
+      "keywords": [
+        "php",
+        "deployment",
+        "zero downtime",
+        "laravel",
+        "symfony",
+        "wordpress",
+        "recipes",
+        "provisioning",
+        "ssh"
+      ]
     },
     {
       "id": "DNSControl/dnscontrol",
@@ -224,7 +344,21 @@
       "why": "Maintained by Stack Overflow engineers; JS-based config with support for dozens of DNS providers and registrars.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Infrastructure as Code for DNS: a JavaScript-compatible config language and provider plug-ins (Route 53, Cloudflare, Gandi and dozens more) to push the same records to multiple providers. Written in Go.",
+      "best_for": "Managing DNS records as code in version control and deploying from CI across providers.",
+      "not_for": "Dynamic or API-driven records at runtime, or teams wanting a GUI; config-file driven.",
+      "keywords": [
+        "dns",
+        "infrastructure as code",
+        "cloudflare",
+        "route53",
+        "records",
+        "registrar",
+        "multi-provider",
+        "dnsconfig.js",
+        "ci"
+      ]
     },
     {
       "id": "docker/compose",
@@ -245,7 +379,20 @@
       "why": "The default way to describe and run multi-service apps locally and on single servers",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Tool for defining and running multi-container applications on Docker using the Compose file format; a single command (docker compose up) starts the whole stack.",
+      "best_for": "Local development and single-host deployments of multi-service apps.",
+      "not_for": "Multi-node orchestration or autoscaling (use Kubernetes/Swarm). Not a production cluster manager.",
+      "keywords": [
+        "docker",
+        "compose",
+        "multi-container",
+        "yaml",
+        "docker compose up",
+        "local development",
+        "services",
+        "containers"
+      ]
     },
     {
       "id": "dokku/dokku",
@@ -268,7 +415,20 @@
       "why": "Small, battle-tested Docker PaaS with buildpack support and a plugin ecosystem; minimal moving parts.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Docker-powered mini-Heroku: a small PaaS that turns a single server into a git-push deployment target with buildpack support and plugins. Requires a fresh Ubuntu or Debian VM and an SSH key.",
+      "best_for": "Heroku-style deploys on one VPS with minimal moving parts.",
+      "not_for": "Multi-server clusters or UI-driven management (single-host focus, CLI based).",
+      "keywords": [
+        "paas",
+        "heroku alternative",
+        "git push",
+        "docker",
+        "buildpacks",
+        "self-hosted",
+        "plugins",
+        "single server"
+      ]
     },
     {
       "id": "Dokploy/dokploy",
@@ -294,7 +454,20 @@
       },
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Free self-hostable PaaS to deploy applications and databases (MySQL, PostgreSQL, MongoDB, MariaDB, libsql, Redis) using Docker and Traefik, with native Docker Compose, backups and multi-server support. Apache-2.0 except the /proprietary directory.",
+      "best_for": "Self-hosted Vercel/Heroku-like deployment with a dashboard, Compose support and backups.",
+      "not_for": "Teams requiring fully permissive licensing across all code or Kubernetes-native tooling.",
+      "keywords": [
+        "self-hosted paas",
+        "docker compose",
+        "traefik",
+        "deployment",
+        "backups",
+        "heroku alternative",
+        "databases",
+        "dashboard"
+      ]
     },
     {
       "id": "helm/helm",
@@ -315,7 +488,20 @@
       "why": "CNCF standard for packaging Kubernetes apps; thousands of community charts",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Package manager for Kubernetes: bundles pre-configured Kubernetes resources as versioned Charts for installing, upgrading and sharing apps and managing releases. Helm v4 is on main; v3 is in support mode.",
+      "best_for": "Packaging and installing apps on Kubernetes, using community charts, templating manifests.",
+      "not_for": "Non-Kubernetes deployment, or teams that dislike Go templating (consider Kustomize).",
+      "keywords": [
+        "kubernetes",
+        "charts",
+        "package manager",
+        "templating",
+        "releases",
+        "helm",
+        "manifests",
+        "cncf"
+      ]
     },
     {
       "id": "infracost/infracost",
@@ -336,7 +522,21 @@
       "use_for": "Show cloud cost estimates for Terraform changes in PRs and CI",
       "why": "Standard tool for shift-left cloud cost checks on IaC pull requests; Apache-2.0.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Cloud cost estimation for Terraform, Terragrunt, CloudFormation and AWS CDK that shows cost estimates and FinOps best practices in terminals, editors, AI coding agents and pull requests before changes deploy.",
+      "best_for": "Shift-left FinOps: cost diffs on infrastructure pull requests and CI.",
+      "not_for": "Runtime cost monitoring of live usage; the repo is a front door after the 2.0 refactor into separate repositories.",
+      "keywords": [
+        "cost estimation",
+        "finops",
+        "terraform",
+        "cloud cost",
+        "pull request",
+        "ci",
+        "aws cdk",
+        "cloudformation",
+        "infracost"
+      ]
     },
     {
       "id": "basecamp/kamal",
@@ -358,7 +558,21 @@
       "why": "From 37signals; no Kubernetes or PaaS required, handles proxying, rolling deploys and accessories with one config file.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Deploys containerized web apps to servers over SSH with zero downtime using kamal-proxy to switch requests between containers. Works across multiple servers (via SSHKit); built for Rails but works with any Docker app. By 37signals.",
+      "best_for": "Simple Docker deploys to VPS or bare metal without Kubernetes.",
+      "not_for": "Autoscaling or Kubernetes-style orchestration; no built-in cluster scheduling.",
+      "keywords": [
+        "deployment",
+        "docker",
+        "ssh",
+        "zero downtime",
+        "rails",
+        "kamal-proxy",
+        "37signals",
+        "bare metal",
+        "vps"
+      ]
     },
     {
       "id": "kubernetes/kubernetes",
@@ -379,7 +593,21 @@
       "why": "The industry-standard container orchestrator; the base most modern infra tooling targets",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Open-source container orchestration system for deploying, scaling and managing containerized applications across hosts. Originating from Google's Borg experience; hosted by the CNCF.",
+      "best_for": "Large-scale, multi-service containerized production with scheduling, scaling and self-healing.",
+      "not_for": "Small apps or teams without ops capacity; the complexity is heavy. Simpler options include Compose, Kamal or Dokku.",
+      "keywords": [
+        "kubernetes",
+        "k8s",
+        "container orchestration",
+        "scaling",
+        "cncf",
+        "pods",
+        "deployment",
+        "cluster",
+        "microservices"
+      ]
     },
     {
       "id": "kubernetes-sigs/kubespray",
@@ -399,7 +627,20 @@
       "use_for": "Deploy production-ready Kubernetes clusters with Ansible",
       "why": "Official Kubernetes SIG project for provisioning HA clusters on bare metal or any cloud.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Ansible-based deployment of production-ready, highly available Kubernetes clusters on AWS, GCE, Azure, OpenStack, vSphere, Oracle Cloud (experimental) or bare metal, with composable choices like network plugin.",
+      "best_for": "Provisioning self-managed Kubernetes clusters on bare metal or any cloud.",
+      "not_for": "Managed Kubernetes (EKS/GKE/AKS) users or small setups; self-managed cluster operations remain on you.",
+      "keywords": [
+        "kubernetes",
+        "ansible",
+        "cluster deployment",
+        "bare metal",
+        "high availability",
+        "kubespray",
+        "self-managed",
+        "provisioning"
+      ]
     },
     {
       "id": "opentofu/opentofu",
@@ -421,7 +662,20 @@
       "why": "Linux Foundation fork of Terraform (MPL-2.0); drop-in compatible with existing modules and providers.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Linux Foundation open-source fork of Terraform for infrastructure as code using HCL, execution plans and the Terraform provider ecosystem. MPL-2.0 licensed.",
+      "best_for": "Terraform-compatible IaC under a fully open license.",
+      "not_for": "Teams requiring HashiCorp-only features or support; use real programming languages instead via Pulumi/CDK.",
+      "keywords": [
+        "infrastructure as code",
+        "terraform fork",
+        "hcl",
+        "providers",
+        "plan",
+        "iac",
+        "opentofu",
+        "state"
+      ]
     },
     {
       "id": "pulumi/pulumi",
@@ -447,7 +701,21 @@
       "why": "Real programming languages for IaC across AWS, Azure, GCP and Kubernetes, with state management and testing.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Infrastructure as code using general-purpose languages (TypeScript, Python, Go, C#, Java) across AWS, Azure, GCP, Kubernetes and 300+ providers, with state management, testing and an Automation API for embedding IaC.",
+      "best_for": "IaC for teams preferring real languages, loops and testing over a DSL.",
+      "not_for": "Teams standardized on HCL/Terraform modules; state is managed in Pulumi Cloud or a self-hosted backend.",
+      "keywords": [
+        "infrastructure as code",
+        "typescript",
+        "python",
+        "automation api",
+        "multi-cloud",
+        "kubernetes",
+        "iac",
+        "state",
+        "providers"
+      ]
     },
     {
       "id": "saltstack/salt",
@@ -467,7 +735,20 @@
       "use_for": "Event-driven configuration management and remote execution at scale",
       "why": "Mature infra automation alternative to Ansible with a fast event bus; Apache-2.0.",
       "added": "2026-10-17",
-      "last_reviewed": "2026-10-17"
+      "last_reviewed": "2026-10-17",
+      "summary": "Event-driven configuration management and remote execution tool with a fast message bus for managing systems at scale. Apache-2.0.",
+      "best_for": "Managing large server fleets with fast remote execution and event-driven automation.",
+      "not_for": "Agentless simplicity (Ansible) or small setups; typically needs master/minion agents.",
+      "keywords": [
+        "configuration management",
+        "remote execution",
+        "event-driven",
+        "minion",
+        "salt",
+        "infrastructure automation",
+        "states",
+        "python"
+      ]
     },
     {
       "id": "anomalyco/sst",
@@ -490,7 +771,21 @@
       "npm": "sst",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "TypeScript-first framework for building and deploying full-stack apps (Next.js, Astro, APIs) on your own infrastructure, mainly AWS and Cloudflare, built on Pulumi/Terraform providers. CLI installed via npm or script.",
+      "best_for": "Deploying full-stack JS apps to AWS or Cloudflare with infrastructure defined in TypeScript.",
+      "not_for": "Teams not using AWS or Cloudflare, or wanting plain Terraform; opinionated framework.",
+      "keywords": [
+        "sst",
+        "aws",
+        "cloudflare",
+        "typescript",
+        "infrastructure as code",
+        "nextjs",
+        "serverless",
+        "deployment",
+        "full-stack"
+      ]
     },
     {
       "id": "gruntwork-io/terragrunt",
@@ -511,7 +806,19 @@
       "why": "The standard wrapper for large OpenTofu/Terraform codebases: shared config, dependencies, stacks",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Terragrunt is an orchestration tool that wraps Infrastructure as Code written in OpenTofu or Terraform so it can scale across many modules and environments. Gruntwork maintains it and offers commercial support and a Terragrunt Scale product alongside the open-source tool.",
+      "best_for": "Teams managing many OpenTofu/Terraform modules and environments who want orchestration on top of their existing IaC.",
+      "not_for": "Only useful with OpenTofu/Terraform; not a standalone provisioning tool. Some offerings (Terragrunt Scale, commercial support) are paid.",
+      "keywords": [
+        "terraform",
+        "opentofu",
+        "infrastructure as code",
+        "orchestration",
+        "iac",
+        "devops",
+        "gruntwork"
+      ]
     },
     {
       "id": "traefik/traefik",
@@ -532,7 +839,20 @@
       "why": "Auto-configures routes from Docker/Kubernetes labels; the common edge proxy for self-hosting",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Cloud-native HTTP reverse proxy and load balancer that configures itself dynamically from Docker, Swarm, Kubernetes, Consul, Etcd, ECS and more, with Let's Encrypt support and a web UI.",
+      "best_for": "Edge proxy for containerized services where routes should be discovered automatically from labels.",
+      "not_for": "Static-site hosting or simple one-site setups where Caddy or nginx is easier. Major version migrations require care.",
+      "keywords": [
+        "reverse proxy",
+        "load balancer",
+        "docker labels",
+        "kubernetes ingress",
+        "lets encrypt",
+        "service discovery",
+        "microservices",
+        "edge router"
+      ]
     },
     {
       "id": "psviderski/uncloud",
@@ -554,7 +874,20 @@
       "why": "Lightweight decentralized clustering with a Docker Compose workflow, WireGuard mesh and built-in ingress.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Lightweight clustering and container orchestration tool that deploys web apps across cloud VMs and bare metal using a Docker Compose workflow. Builds a WireGuard mesh, with service discovery, load balancing, HTTPS ingress, and no central control plane.",
+      "best_for": "Running containers across a few machines without Kubernetes or Swarm.",
+      "not_for": "Large clusters, advanced scheduling or Kubernetes ecosystem needs; a young project.",
+      "keywords": [
+        "container orchestration",
+        "docker compose",
+        "wireguard",
+        "self-hosted",
+        "multi-machine",
+        "ingress",
+        "service discovery",
+        "no kubernetes"
+      ]
     }
   ]
 }

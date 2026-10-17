@@ -22,7 +22,20 @@
       "why": "CNCF-backed standard for running dedicated game servers on Kubernetes, originally from Google and Ubisoft.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Kubernetes library with custom controller and CRDs (GameServers, Fleets) to host, run and autoscale dedicated game servers.",
+      "best_for": "Running dedicated multiplayer game servers at scale on Kubernetes.",
+      "not_for": "Requires Kubernetes expertise; overkill for small games or non-Kubernetes hosting.",
+      "keywords": [
+        "agones",
+        "kubernetes",
+        "game servers",
+        "dedicated server",
+        "fleets",
+        "autoscaling",
+        "multiplayer",
+        "crd"
+      ]
     },
     {
       "id": "boardgameio/boardgame.io",
@@ -46,7 +59,20 @@
       "npm": "boardgame.io",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "JavaScript engine for turn-based games: you write pure move functions and it provides state management, multiplayer sync, lobby and storage without networking code.",
+      "best_for": "Turn-based board or card games with online multiplayer in JS.",
+      "not_for": "Not for real-time action games; JavaScript only.",
+      "keywords": [
+        "boardgame",
+        "turn-based",
+        "multiplayer",
+        "game engine",
+        "javascript",
+        "lobby",
+        "state management",
+        "card game"
+      ]
     },
     {
       "id": "colyseus/colyseus",
@@ -69,7 +95,20 @@
       "npm": "colyseus",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Authoritative multiplayer framework for Node.js with automatic delta-compressed state sync, room-based matchmaking, and SDKs for major engines and platforms.",
+      "best_for": "Real-time authoritative multiplayer servers in Node.js with Unity, Godot, JS or other clients.",
+      "not_for": "Server-authoritative design needs hosting and scaling work; not peer-to-peer.",
+      "keywords": [
+        "colyseus",
+        "multiplayer",
+        "node.js",
+        "state sync",
+        "matchmaking",
+        "rooms",
+        "websocket",
+        "game server"
+      ]
     },
     {
       "id": "ValveSoftware/GameNetworkingSockets",
@@ -91,7 +130,20 @@
       "why": "Valve's Steam networking layer (~10k stars, BSD-3); fragmentation, encryption, P2P.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Valve's C++ transport layer for games: connection-oriented, message-based API with reliable and unreliable messages, fragmentation and encryption over UDP.",
+      "best_for": "C++ games needing a robust reliable/unreliable UDP transport with encryption.",
+      "not_for": "C++ library with a build setup; transport only, no game-state sync or matchmaking.",
+      "keywords": [
+        "udp",
+        "c++",
+        "game networking",
+        "reliable messages",
+        "encryption",
+        "valve",
+        "steam",
+        "transport"
+      ]
     },
     {
       "id": "skywind3000/kcp",
@@ -115,7 +167,19 @@
       "stable_reason": "Small, complete ARQ protocol implementation in C; protocol is fixed and widely ported",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Small ARQ protocol implementation (C) that adds reliability on top of UDP with lower latency than TCP at the cost of more bandwidth.",
+      "best_for": "Latency-sensitive transports like games or real-time tunnels needing reliable UDP.",
+      "not_for": "Protocol only: you supply the UDP I/O, encryption and connection handling.",
+      "keywords": [
+        "kcp",
+        "arq",
+        "udp",
+        "reliable udp",
+        "low latency",
+        "game networking",
+        "protocol"
+      ]
     },
     {
       "id": "RevenantX/LiteNetLib",
@@ -137,7 +201,20 @@
       "why": "Popular C# reliable UDP library (~3.6k stars) used by many Unity netcode stacks.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Lightweight reliable UDP networking library for .NET Standard 2.1 (Unity, Godot, Mono) with reliable, ordered and unreliable channels, NAT punch-through and low overhead.",
+      "best_for": "C#/Unity/Godot games needing a small, flexible UDP transport.",
+      "not_for": "Transport layer only; you design replication and game logic yourself. Master branch can be unstable.",
+      "keywords": [
+        "litenetlib",
+        "udp",
+        "c#",
+        "unity",
+        "reliable udp",
+        "nat punch",
+        "networking",
+        "dotnet"
+      ]
     },
     {
       "id": "Cysharp/MagicOnion",
@@ -159,7 +236,20 @@
       "why": "Cysharp's C# RPC/real-time framework (~4.5k stars) for Unity and .NET servers.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "gRPC-based RPC and real-time framework for .NET and Unity with shared C# interfaces, offering bi-directional streaming similar to SignalR.",
+      "best_for": "Unity or .NET game backends where client and server share C# interface contracts.",
+      "not_for": "Tied to .NET/C# and gRPC over HTTP/2; not for non-.NET clients.",
+      "keywords": [
+        "magiconion",
+        "grpc",
+        "unity",
+        "dotnet",
+        "rpc",
+        "realtime",
+        "streaming",
+        "c#"
+      ]
     },
     {
       "id": "johanhelsing/matchbox",
@@ -181,7 +271,20 @@
       "why": "Rust WebRTC P2P networking (~1.2k stars) with signaling server; common with GGRS rollback.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Rust peer-to-peer WebRTC networking for native and wasm, providing unordered unreliable and reliable data channels via a signalling server, with Bevy/GGRS integration.",
+      "best_for": "Browser or native Rust multiplayer games (especially Bevy rollback) over P2P.",
+      "not_for": "Rust-focused; WebRTC P2P needs a signalling server and TURN for tough NATs.",
+      "keywords": [
+        "webrtc",
+        "p2p",
+        "rust",
+        "bevy",
+        "wasm",
+        "ggrs",
+        "matchmaking",
+        "unreliable channels"
+      ]
     },
     {
       "id": "MirrorNetworking/Mirror",
@@ -203,7 +306,20 @@
       "why": "The most widely used open-source Unity networking library (MIT), with many transports.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "High-level multiplayer networking library for Unity (successor of UNET) with client-server architecture, remote calls, state synchronization and multiple transports.",
+      "best_for": "Unity multiplayer games of many genres wanting a mature open-source netcode.",
+      "not_for": "Unity-only; you still run dedicated or host servers and handle scaling.",
+      "keywords": [
+        "mirror",
+        "unity",
+        "multiplayer",
+        "netcode",
+        "unet",
+        "syncvar",
+        "networking",
+        "c#"
+      ]
     },
     {
       "id": "heroiclabs/nakama",
@@ -226,7 +342,20 @@
       "why": "Most complete open-source game backend, with client SDKs for Unity, Unreal, Godot and JS.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": true
+      "featured": true,
+      "summary": "Open-source game and app server with user accounts, storage, social graph, chat, realtime and turn-based multiplayer, matchmaking, leaderboards and server scripting.",
+      "best_for": "Games needing a full backend (auth, matchmaking, leaderboards, chat) without writing one.",
+      "not_for": "You host and operate it (or use paid Heroic Cloud); server-side logic needs Lua/Go/TS modules.",
+      "keywords": [
+        "nakama",
+        "game backend",
+        "matchmaking",
+        "leaderboards",
+        "chat",
+        "realtime multiplayer",
+        "accounts",
+        "server"
+      ]
     },
     {
       "id": "foxssake/netfox",
@@ -248,7 +377,20 @@
       "why": "Leading Godot networking addon, with client-side prediction and lag compensation built in.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Godot addons for online games: consistent network time, interpolation, rollback netcode with client-side prediction and server reconciliation, plus noray connectivity.",
+      "best_for": "Godot 4 multiplayer games needing responsive, lag-compensated movement.",
+      "not_for": "Godot-only; add-ons for timing and prediction, not a matchmaking or backend service.",
+      "keywords": [
+        "godot",
+        "netfox",
+        "rollback",
+        "netcode",
+        "prediction",
+        "interpolation",
+        "multiplayer",
+        "lag compensation"
+      ]
     },
     {
       "id": "googleforgames/open-match",
@@ -271,7 +413,19 @@
       "why": "Flexible matchmaking framework from Google that pairs with Agones; Apache-2.0 confirmed.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Open-source matchmaking framework that lets game developers define custom match logic while handling scale concerns, built for Kubernetes.",
+      "best_for": "Studios writing custom, scalable matchmakers for multiplayer games.",
+      "not_for": "Framework requiring Kubernetes and your own matchmaking functions; not a drop-in lobby service.",
+      "keywords": [
+        "matchmaking",
+        "open match",
+        "kubernetes",
+        "multiplayer",
+        "game backend",
+        "scalable",
+        "framework"
+      ]
     },
     {
       "id": "partykit/partykit",
@@ -295,7 +449,20 @@
       "npm": "partykit",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Platform for realtime multiplayer apps and games using room-based servers on Cloudflare Durable Objects. The README notes development moved to cloudflare/partykit.",
+      "best_for": "Collaborative or multiplayer web apps wanting rooms and websockets with little ops.",
+      "not_for": "Repo says active development continues at cloudflare/partykit; tied to Cloudflare's edge platform.",
+      "keywords": [
+        "partykit",
+        "realtime",
+        "multiplayer",
+        "durable objects",
+        "websocket",
+        "cloudflare",
+        "collaboration",
+        "rooms"
+      ]
     },
     {
       "id": "topfreegames/pitaya",
@@ -317,7 +484,20 @@
       "why": "Production-proven at Wildlife Studios; built-in clustering, RPC and client libraries for iOS, Android, Unity.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Go framework for scalable, clustered game servers with client SDKs, service discovery and RPC between server types.",
+      "best_for": "Go backends for large multiplayer or mobile games needing clustered server roles.",
+      "not_for": "Go only and requires infrastructure such as etcd/NATS; overkill for small games.",
+      "keywords": [
+        "pitaya",
+        "go",
+        "game server",
+        "cluster",
+        "rpc",
+        "multiplayer",
+        "scalable",
+        "backend"
+      ]
     },
     {
       "id": "EmbarkStudios/quilkin",
@@ -340,7 +520,20 @@
       "why": "Built by Embark and Google for large-scale game traffic; adds security, routing and metrics.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Non-transparent UDP proxy for dedicated game server fleets that adds security, access control, telemetry and metrics without modifying clients or servers.",
+      "best_for": "Large dedicated server deployments (often Agones) needing routing, filtering and observability.",
+      "not_for": "Operational infrastructure for fleets; irrelevant for small games or P2P.",
+      "keywords": [
+        "quilkin",
+        "udp proxy",
+        "game servers",
+        "agones",
+        "telemetry",
+        "access control",
+        "rust",
+        "networking"
+      ]
     },
     {
       "id": "RiptideNetworking/Riptide",
@@ -362,7 +555,20 @@
       "why": "Easy-to-use C# networking library (~1.3k stars, MIT) with Unity integration.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Lightweight message-based C# networking library for Unity and .NET that handles connections and message transport while leaving game logic and data design to you.",
+      "best_for": "Developers wanting a small, simple netcode foundation for Unity or console .NET.",
+      "not_for": "Low-level: no built-in state sync, prediction or matchmaking.",
+      "keywords": [
+        "riptide",
+        "c#",
+        "unity",
+        "networking",
+        "udp",
+        "messages",
+        "multiplayer",
+        "dotnet"
+      ]
     },
     {
       "id": "rivet-dev/rivet",
@@ -386,7 +592,20 @@
       "why": "Open-source stateful actor platform (~6k stars, Apache-2.0) for realtime and game backends.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "Orchestrator for agentic and realtime workloads built on durable Actors with state, SQLite, queues and realtime connections, self-hostable or managed.",
+      "best_for": "Stateful multiplayer, realtime or agent backends needing per-entity durable processes.",
+      "not_for": "The README now focuses on agentic workloads; Actor model needs adoption and has self-host/managed trade-offs.",
+      "keywords": [
+        "rivet",
+        "actors",
+        "durable state",
+        "realtime",
+        "multiplayer",
+        "orchestrator",
+        "agents",
+        "self-hosted"
+      ]
     },
     {
       "id": "mas-bandwidth/yojimbo",
@@ -408,7 +627,20 @@
       "why": "Glenn Fiedler's netcode library (~2.7k stars, BSD-3) for dedicated-server action games.",
       "added": "2026-10-17",
       "last_reviewed": "2026-10-17",
-      "featured": false
+      "featured": false,
+      "summary": "C++ client/server network library for competitive action games, with encryption, connect tokens, reliable-ordered messages and packet-level security.",
+      "best_for": "C++ engines networking fast-paced multiplayer games like shooters.",
+      "not_for": "C++ only; designed for client/server and not for P2P or high-level replication.",
+      "keywords": [
+        "yojimbo",
+        "c++",
+        "client server",
+        "fps",
+        "netcode",
+        "encryption",
+        "reliable messages",
+        "game networking"
+      ]
     }
   ]
 }
