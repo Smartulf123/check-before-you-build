@@ -1,0 +1,20 @@
+{
+  "name": "check-before-you-build",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Agent skill that checks whether an idea already exists and recommends repos to build it with.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/catalog-validate.mjs",
+    "eval": "node evals/check-eval.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smartulf123/check-before-you-build.git"
+  }
+}

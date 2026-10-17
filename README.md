@@ -86,7 +86,7 @@ Or as a Claude Code plugin:
 ## Roadmap
 
 - [x] Research and spec
-- [ ] Source verification and repo skeleton
+- [x] Source verification and repo skeleton ([findings](docs/sources-findings.md))
 - [ ] Helper scripts (GitHub, npm, PyPI, MCP registry, skills.sh, HN)
 - [ ] End-to-end quick mode
 - [ ] Demand, gaps and building blocks

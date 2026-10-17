@@ -11,7 +11,7 @@
 1. **Build in thin vertical slices.** Get a rough end-to-end `/check` working early (Milestone 2), then deepen it. Don't perfect one phase in isolation.
 2. **Facts from scripts, reasoning from the agent.** Every number comes from a script. The agent never invents data.
 3. **Test against reality.** The evaluation set (SPEC §18) runs after every milestone from M3 on.
-4. **No dependencies.** Node ≥ 18 built-ins only. That keeps install friction at zero.
+4. **No dependencies.** Node ≥ 20 built-ins only. That keeps install friction at zero.
 5. **Small commits, clear messages.** Each milestone ends in a working, committed state.
 
 ## Timeline overview

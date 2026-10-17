@@ -1,6 +1,7 @@
 # check-before-you-build — Specification
 
-> **Status:** Draft v0.2 · 2026-10-17 · for review
+> **Status:** Draft v0.3 · 2026-10-17 · for review
+> **v0.3:** sources verified in M0. §7 rewritten with real endpoints and query-writing rules (§7.1); Smithery added; Glama deferred; open questions 1–3 resolved
 > **v0.2:** added build purposes (fun / for me / launch) and friendlier verdict labels: §4.1, §6.1, §6.6, §6.8, §9.7, §11.1, §13.1, §18, §19
 > **One-liner:** An open-source agent skill that answers *"Is this worth building — and what can I build it with?"* with hard, cited evidence in a few minutes.
 
@@ -211,8 +212,8 @@ Each phase lists its **inputs**, **steps**, **outputs** and **rules**. Quick, st
 1. **Catalog lookup**: `catalog.mjs search --categories … --terms …`. Catalog entries that match the *whole idea*, not just one component, are competitor candidates.
 2. **GitHub search**: `github.mjs search` for each search term. Collect name, description, stars, pushed_at, license, archived flag, topics and URL. Deduplicate.
 3. **Registry searches**, chosen by form factor:
-   - skill/plugin → `skills.mjs search`, `plugins.mjs search`
-   - mcp → `mcp.mjs search`
+   - skill/plugin → `skills.mjs search` (skills.sh), `plugins.mjs search` (official marketplace)
+   - mcp → `mcp.mjs search` (Smithery first, then the official registry as a presence check)
    - library/cli (JS) → `npm.mjs search`
    - library/cli (Python) → web search `site:pypi.org`, then `pypi.mjs info` for metadata
    - always → web search for commercial products (`"<concept>" tool`, `"<concept>" alternative`)
@@ -332,22 +333,38 @@ The purpose (§4.1) controls how the result is presented, not the underlying com
 
 ## 7. Sources
 
-All v1 sources are **free and need no API key**. Endpoints marked *(verify)* are confirmed in Milestone 0 of the implementation plan before code depends on them.
+All v1 sources are **free and need no API key**. Every source below was **verified with real requests on 2026-10-17**. Details, examples and quirks are in [sources-findings.md](sources-findings.md).
 
-| Source | Purpose | Access method | Rate limits / notes |
-|---|---|---|---|
-| **GitHub repos** | Competitors, building blocks | `gh search repos <q> --json …` if `gh` is installed and authenticated; otherwise REST `GET https://api.github.com/search/repositories?q=` | Search API: ~10 req/min unauthenticated, ~30 req/min authenticated |
-| **GitHub repo details** | Live stats, license, archived | `GET /repos/{owner}/{repo}` | Core API: 60/h unauthenticated, 5,000/h authenticated |
-| **GitHub issues** | Unmet demand, weaknesses | `GET /search/issues?q=repo:{o}/{r}+is:issue+is:open&sort=reactions-+1` | Counts against the search limit |
-| **skills.sh** | Existing agent skills, installs | *(verify)* site search / skill pages, or `npx skills find` if available | No official API known; must be polite and cached |
-| **Claude plugin marketplaces** | Existing plugins | *(verify)* fetch marketplace manifest files of known marketplaces from GitHub | Static files |
-| **Official MCP registry** | Existing MCP servers | *(verify)* `GET https://registry.modelcontextprotocol.io/v0/servers?search=` | Public |
-| **Other MCP directories** | Smithery, Glama, mcp.so | *(verify)* API vs. web search fallback | Some need keys; fall back to web search |
-| **npm** | JS packages, downloads | `GET https://registry.npmjs.org/-/v1/search?text=&size=` and `GET https://api.npmjs.org/downloads/point/last-week/<pkg>` | Public |
-| **PyPI** | Python packages | No search API → web search `site:pypi.org`; metadata via `GET https://pypi.org/pypi/<pkg>/json` | Public |
-| **Hacker News** | Demand, launches | `GET https://hn.algolia.com/api/v1/search?query=&tags=story` and `search_by_date` | Public |
-| **Web** | Commercial products, demand | The agent's built-in web search / fetch tools | Varies by agent |
-| **Catalog** | Curated repos | Local files, `catalog.mjs` | Offline |
+| Source | Purpose | Access method | Popularity signal | Notes |
+|---|---|---|---|---|
+| **GitHub repos** | Competitors, building blocks | REST `GET https://api.github.com/search/repositories?q=` (token from `gh auth token` when available) | stars | 10 searches/min unauthenticated · 30/min authenticated |
+| **GitHub repo details** | Live stats, license, archived | `GET /repos/{owner}/{repo}` | stars | 60/h unauthenticated · 5,000/h authenticated; 404 = missing |
+| **GitHub issues** | Unmet demand, weaknesses | `GET /search/issues?q=repo:{o}/{r}+is:issue+is:open&sort=reactions-+1` | 👍 | Shares the search limit |
+| **skills.sh** | Existing agent skills | `GET https://skills.sh/api/search?q=` (undocumented) | installs | Semantic search for multi-word queries; ≤ 100 results; no descriptions |
+| **Official Claude plugin marketplace** | Existing plugins | Download `anthropics/claude-plugins-official/.claude-plugin/marketplace.json` once, match locally | — | ~315 plugins with name, description, category |
+| **Community plugins** | Existing plugins | Covered by GitHub repo search + skills.sh | stars / installs | ~42k marketplace files exist; too many to index |
+| **Smithery** | Existing MCP servers (primary) | `GET https://registry.smithery.ai/servers?q=&pageSize=` | useCount | No key needed; description-aware search |
+| **Official MCP registry** | Existing MCP servers (presence check) | `GET https://registry.modelcontextprotocol.io/v0.1/servers?search=&version=latest` | — | Matches **server names only**, single keywords |
+| **npm** | JS packages | `GET https://registry.npmjs.org/-/v1/search?text=&size=` (includes downloads) | weekly downloads | Ranking is popularity-weighted; the agent must judge relevance |
+| **PyPI** | Python packages | Discovery via web search `site:pypi.org`; metadata via `GET https://pypi.org/pypi/<pkg>/json` | — | No search API |
+| **Hacker News** | Demand, launches | `GET https://hn.algolia.com/api/v1/search?query=&tags=story` (+ `search_by_date`, `show_hn`, `ask_hn`) | points | No key |
+| **Web** | Commercial products, demand, mcp.so | The agent's built-in web search / fetch tools | — | Varies by agent |
+| **Catalog** | Curated repos | Local files, `catalog.mjs` | live GitHub stats | Offline-capable |
+
+**Deferred:** Glama (requires an API key and per-page attribution).
+
+### 7.1 Query-writing rules (from M0 findings)
+
+The quality of results depends heavily on how queries are written. The skill instructs the agent to:
+
+1. **Use 2–4 core keywords, unquoted.** Natural-language phrases ("design tokens from url") return junk or nothing, and quoted phrases are exact matches.
+2. **Search by function, not by guessed product name.** For example, "designlang" lives at `Manavarya09/design-extract`.
+3. **Run several varied queries** per idea (synonyms, jargon, the problem as well as the solution).
+4. **Add `stars:>20`** to GitHub searches by default, to drop spam and keyword-stuffed repos.
+5. **Add 1–2 `topic:<slug>` queries** for the idea's category.
+6. **Never use `in:readme`.** It's far too broad.
+7. **Official MCP registry:** single-word name queries only. Use Smithery for descriptive searches.
+8. **Don't trust registry ordering.** npm and skills.sh rank by popularity, so the agent judges relevance.
 
 **Not built in (v1):** Reddit (public API closing in 2026), X (paid API), Instagram/TikTok/LinkedIn (no realistic legal access). See §15.
 
@@ -478,6 +495,7 @@ For each competitor *c*:
   - GitHub stars: `min(1, log10(stars + 1) / 4)` (10k stars → 1.0)
   - skills.sh installs: `min(1, log10(installs + 1) / 4.5)`
   - npm weekly downloads: `min(1, log10(downloads + 1) / 5)`
+  - Smithery useCount: `min(1, log10(uses + 1) / 4)`
   - commercial product with evidence of traction: 0.7; without: 0.4
 
 ```
@@ -689,7 +707,7 @@ check-before-you-build/
 
 ### 12.1 Script conventions
 
-- **Node ≥ 18**, ES modules (`.mjs`), **no npm dependencies** (built-in `fetch`, `node:fs`, `node:test`).
+- **Node ≥ 20**, ES modules (`.mjs`), **no npm dependencies** (built-in `fetch`, `node:fs`, `node:test`).
 - Every script prints **JSON to stdout**, logs to stderr, and exits non-zero on failure.
 - A shared `lib/http.mjs` handles retries with exponential backoff, rate-limit headers and a polite User-Agent.
 - A shared `lib/cache.mjs` caches responses for the duration of one check (in `check-reports/.cache/`) to avoid duplicate calls.
@@ -813,7 +831,7 @@ check-before-you-build/
 | Codex / OpenCode | via the skills CLI (`--agent codex`, `--agent opencode`) |
 | Manual | copy `skills/check-before-you-build/` into the agent's skills folder |
 
-Requirements: Node ≥ 18. Recommended: `gh` CLI authenticated, for higher GitHub limits.
+Requirements: Node ≥ 20. Recommended: `gh` CLI authenticated, for higher GitHub limits.
 
 **Sub-agents:** in Claude Code, the supply, demand and building-blocks phases run as three parallel sub-agents using the briefs in `references/subagents.md`. Agents without sub-agents run the phases sequentially, with the same outputs.
 
@@ -884,7 +902,7 @@ Cases 7–8 also check the wording rule (§9.7): the report never contains "don'
 | Hallucinated or wrong repos in reports | Public embarrassment, lost trust | Never-from-memory rule; `verify.mjs`; only verified items cited |
 | Wrong "doesn't exist" verdict | Users build duplicates | Confidence levels; "absence of evidence" wording; multiple sources; catalog |
 | GitHub rate limits | Thin results | Use `gh` auth; caching; budgets; graceful degradation |
-| skills.sh / registries change format (no official API) | A source breaks | Isolated per-source scripts; failure marked in report; quick fix path |
+| skills.sh / registries change format (skills.sh's `/api/search` is undocumented) | A source breaks | Isolated per-source scripts; failure marked in report; recorded fixtures make breakage visible in tests; quick fix path |
 | Catalog goes stale | Bad recommendations | Live stats; weekly health check; removal criteria |
 | Maintainer burnout on weekly updates | Catalog decays | Scout/health tooling to keep it at 30–60 min/week; community PRs |
 | Competitors add the same feature (last30days, startup-skill) | Gap closes | Ship fast; differentiate on catalog + registry coverage + evidence quality |
@@ -893,9 +911,9 @@ Cases 7–8 also check the wording rule (§9.7): the report never contains "don'
 
 ## 21. Open questions
 
-1. **skills.sh access method**: is there a stable search endpoint, or must we use web search plus page fetches? *(Milestone 0)*
-2. **MCP registry API**: confirm the current endpoint and query parameters. *(Milestone 0)*
-3. **Plugin marketplaces**: which marketplaces to index, and where their manifest files live. *(Milestone 0)*
+1. ~~skills.sh access method~~: resolved in M0. Use `/api/search` (undocumented); see sources-findings.md.
+2. ~~MCP registry API~~: resolved in M0. Use the official registry for name-only checks and Smithery as the primary MCP source.
+3. ~~Plugin marketplaces~~: resolved in M0. Use the official marketplace file; community plugins come via GitHub + skills.sh.
 4. **Control case #6**: pick a genuine open-space idea for the eval set. *(Milestone 6)*
 5. **Slash command name**: `/check` may collide with other skills. Alternatives: `/cbyb`, `/prebuild`. *(Milestone 2)*
 6. **Card design**: visual style and branding. *(Milestone 5)*
