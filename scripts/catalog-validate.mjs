@@ -81,7 +81,7 @@ async function main() {
           result.errors.push(`${e.id}: fails quality rules: ${check.evaluation.reasons.join('; ')}`);
         }
         if (check.renamed) result.warnings.push(`${e.id}: renamed to ${check.full_name}`);
-        live.push({ id: e.id, tier: check.evaluation.tier, freshness: check.evaluation.freshness });
+        live.push({ id: e.id, pass: check.evaluation.pass, freshness: check.evaluation.freshness });
       }
     }
   }

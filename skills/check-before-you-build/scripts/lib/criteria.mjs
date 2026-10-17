@@ -50,7 +50,7 @@ export function adoptionLevel(signals = {}, { official = false } = {}) {
  * @param {object} input  { signals: {stars, forks, pushed_at, license, archived, installs, downloads_weekly, uses},
  *                          contributors, official, stable, stable_reason,
  *                          license_verified: { license, note, date } }
- * @returns {{ pass, tier, freshness, reasons: string[], warnings: string[] }}
+ * @returns {{ pass, maintainer_pick, freshness, days_since_push, reasons: string[], warnings: string[] }}
  */
 export function evaluate(input, now = Date.now()) {
   const s = input.signals || {};
@@ -118,17 +118,20 @@ export function evaluate(input, now = Date.now()) {
     fail('fake_stars', 'possible fake stars (very few forks and contributors for the star count)');
   }
 
+  // A single quality gate: in or out. No tiers; the agent weighs fit and the raw signals itself
+  // (decided 2026-10-17: tiers labelled ~90% of entries "top" and carried little information).
   const pass = reasons.length === 0;
   const maintainerPick = pass && waived.size > 0;
-  let tier = null;
-  if (pass) {
-    const fresh = days !== null && days <= RULES.freshness_days.fresh;
-    const topAdoption = adoption === 'top' || adoption === 'top-if-fresh';
-    tier = !isStable && fresh && topAdoption ? 'top' : 'solid';
-    if (freshness === 'ok') warnings.push('last push 3–6 months ago');
-  }
-  return { pass, tier, maintainer_pick: maintainerPick, freshness, days_since_push: days === null ? null : Math.round(days), reasons, warnings };
+  if (pass && freshness === 'ok') warnings.push('last push 3–6 months ago');
+  return { pass, maintainer_pick: maintainerPick, freshness, days_since_push: days === null ? null : Math.round(days), reasons, warnings };
 }
 
-export const TIER_LABEL = { top: '⭐ Top choice', solid: '✅ Solid' };
+export const PASS_LABEL = '✅ Passes';
 export const MAINTAINER_PICK_LABEL = '👤 Maintainer pick (exception)';
+
+/** Short status label for maintainer reports. */
+export function statusLabel(evaluation) {
+  if (!evaluation) return '(unchecked)';
+  if (!evaluation.pass) return `❌ ${evaluation.reasons[0]}`;
+  return evaluation.maintainer_pick ? MAINTAINER_PICK_LABEL : PASS_LABEL;
+}

@@ -63,6 +63,12 @@ hn.mjs search <keywords...> [--limit 20] [--tags story|show_hn|ask_hn|comment] [
 ```
 `url` is the HN discussion; `link` is the submitted URL.
 
+### readme.mjs
+```
+readme.mjs get <owner/repo> [<owner/repo> ...] [--max-chars 5000] [--full]
+```
+Fetches READMEs from raw.githubusercontent.com (**no GitHub API calls**), follows monorepo README links, and condenses them to the intro plus feature, usage, limitation and comparison sections (install guides, badges, images and long code blocks are dropped). Pass several repos per call. Use `--full` only when the condensed version leaves a key question open.
+
 ### score.mjs
 ```
 score.mjs <evidence.json> [--dry-run] [--now YYYY-MM-DD]

@@ -2,7 +2,7 @@
 
 In Claude Code, after phase 1, launch these three in parallel. Give each one the `idea` object from phase 1, the mode budget, and the absolute path of this skill's `scripts/` folder. Each returns **only** a JSON fragment. The main agent merges the fragments into `evidence.json`, then runs phases 4, 6 and 7.
 
-Shared rules for every sub-agent: cite nothing from memory, use the scripts, record failed sources, keep the budget.
+Shared rules for every sub-agent: cite nothing from memory, use the scripts, record failed sources, keep the budget, and **read the README (`readme.mjs get`) of every repo before you classify or recommend it**. Reading READMEs is the main reason to use sub-agents: it keeps the main agent's context small.
 
 ## 1. Supply agent
 

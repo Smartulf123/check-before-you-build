@@ -35,6 +35,14 @@ test('search filters by category and ranks keyword hits', () => {
   assert.equal(byWords[0].from_catalog, true);
 });
 
+test('search matches README-derived keywords and summaries, and returns them', () => {
+  const rich = [{ ...entries[2], keywords: ['ssr', 'server components'], summary: 'Hybrid static and server rendering.', best_for: 'Production React apps', not_for: 'Tiny static pages' }];
+  const out = catalog.searchEntries(rich, { keywords: ['server components'] });
+  assert.equal(out[0].name, 'Next.js');
+  assert.equal(out[0].not_for, 'Tiny static pages');
+  assert.equal(catalog.searchEntries(rich, { keywords: ['hybrid rendering'] }).length, 1);
+});
+
 test('search filters by kind and drops non-matching keywords', () => {
   assert.deepEqual(catalog.searchEntries(entries, { kinds: ['skill'] }).map((r) => r.name), ['HyperFrames']);
   assert.equal(catalog.searchEntries(entries, { keywords: ['payments'] }).length, 0);

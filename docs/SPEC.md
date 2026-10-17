@@ -394,22 +394,17 @@ A `catalog/.cache/stats.json` snapshot (refreshed by the weekly health check) is
 
 The **same rules apply to every entry**, including the maintainer's own favourites. They are implemented once in `scripts/lib/criteria.mjs` and used by `catalog-add`, `catalog-validate`, `health` and `scout`. They are re-checked live, so an entry that stops qualifying stops being recommended.
 
-**Tiers:**
+**One quality gate, no tiers.** An entry is in or out. There are no "top/solid" labels (removed 2026-10-17: they marked ~90% of entries "top" and told users little). The agent judges fit against the user's needs using the entry's description, the raw signals (stars, last push, license) and the README. `featured` (§ Size, below) is the only ranking, and it is hand-curated.
 
-| Tier | Requirement | Shown as |
-|---|---|---|
-| ⭐ **Top choice** | ≥ 3,000 stars (or the alternative top signal below) **and** pushed ≤ 90 days ago | "Top choice" |
-| ✅ **Solid** | ≥ 1,000 stars (or an alternative signal) **and** pushed ≤ 6 months ago | "Solid" |
-| ❌ Excluded | anything else | — |
+**Adoption** (any one is enough):
 
-**Alternative adoption signals** (any one replaces the star requirement):
-
-| Signal | Solid | Top choice |
-|---|---|---|
-| skills.sh installs | ≥ 5,000 | ≥ 50,000 |
-| npm weekly downloads | ≥ 50,000 | ≥ 500,000 |
-| Smithery uses | ≥ 1,000 | ≥ 10,000 |
-| Official vendor repo (`official: true`, e.g. Stripe's or Supabase's own) | ✔ | ✔ if pushed ≤ 90 days |
+| Signal | Minimum |
+|---|---|
+| GitHub stars | ≥ 1,000 |
+| skills.sh installs | ≥ 5,000 |
+| npm weekly downloads | ≥ 50,000 |
+| Smithery uses | ≥ 1,000 |
+| Official vendor repo (`official: true`, e.g. Stripe's or Supabase's own) | ✔ |
 
 **Freshness** (last push):
 
@@ -420,7 +415,7 @@ The **same rules apply to every entry**, including the maintainer's own favourit
 | ≤ 6 months | 🟡 OK (noted in reports) |
 | > 6 months | ❌ excluded |
 
-**Exception, finished libraries:** an entry marked `stable: true`, with ≥ 5,000 stars and a written `stable_reason`, may go up to **18 months** without a push. It is always tier ✅, never ⭐.
+**Exception, finished libraries:** an entry marked `stable: true`, with ≥ 5,000 stars and a written `stable_reason`, may go up to **18 months** without a push.
 
 **Hard requirements (all entries):**
 

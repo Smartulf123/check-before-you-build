@@ -17,7 +17,8 @@ The agent reasons. The scripts in `scripts/` fetch facts. Numbers always come fr
 4. **Every demand item and gap needs a URL.** No source, no claim.
 5. **Stay within the mode budget** (table below). Report thin or failed sources honestly. Absence of evidence is not evidence of absence.
 6. **Answer in the user's language** (detected from the idea, or `--lang`). Keep repo names, numbers and URLs as-is.
-7. **Read-only.** Never star, fork, open issues, post or install anything.
+7. **Read the README before recommending.** Never recommend, rank or reject a repo as a building block or name it as a closest competitor without reading its README in this run (`readme.mjs get`). Stored descriptions are for *finding* candidates; READMEs are for *choosing*. Read a broad shortlist (see the mode table), not just the final picks. `readme.mjs` uses raw.githubusercontent.com, so it costs no GitHub API calls.
+8. **Read-only.** Never star, fork, open issues, post or install anything.
 
 ## Invocation
 
@@ -50,6 +51,7 @@ Each script prints **one JSON object**: `{ "ok": true, ... }` or `{ "ok": false,
 | `mcp.mjs search <keywords>` | MCP servers (Smithery + official registry) |
 | `npm.mjs search` · `info <pkg>` · `pypi.mjs info <pkg>` | Packages |
 | `hn.mjs search <keywords> [--tags show_hn]` | Hacker News demand and launches |
+| `readme.mjs get <owner/repo> [...]` | Condensed READMEs (intro, features, usage, limitations); no API calls |
 | `score.mjs <evidence.json>` | Scores and verdict (required) |
 
 ## Workflow
@@ -76,6 +78,8 @@ In Claude Code, run phases 2, 3 and 5 as **three parallel sub-agents** using the
 | Demand | competitor adoption only | HN + web | HN + web + issues of top 5 |
 | Competitor issue mining | none | top 3 | top 5 |
 | Building blocks | catalog only | catalog + live | catalog + live, more candidates |
+| READMEs read (per component) | top 5 | top 10 | top 15 |
+| READMEs read (competitors) | all direct | all direct + partial | all direct + partial |
 
 Purpose adjusts this further: `fun` and `me` skip demand; `fun` also skips gaps and emphasises 💡 learn examples.
 

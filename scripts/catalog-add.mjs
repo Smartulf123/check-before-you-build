@@ -87,7 +87,7 @@ async function main() {
     file.entries.push(entry);
     await writeCategoryFile(flags.category, file);
   }
-  out({ ok: true, written: Boolean(flags.write), tier: check.evaluation.tier, freshness: check.evaluation.freshness, warnings: check.evaluation.warnings, signals: { ...check.signals, contributors: check.contributors }, entry });
+  out({ ok: true, written: Boolean(flags.write), maintainer_pick: check.evaluation.maintainer_pick, freshness: check.evaluation.freshness, warnings: check.evaluation.warnings, signals: { ...check.signals, contributors: check.contributors }, entry });
 }
 
 if (process.argv[1] && process.argv[1].endsWith('catalog-add.mjs')) main();

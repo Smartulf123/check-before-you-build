@@ -107,6 +107,29 @@ export async function fetchJson(url, { headers = {}, retries = 2, timeoutMs = 15
   throw lastError;
 }
 
+/** Fetch a URL as text (cached). Returns { status, text }; 404 resolves with text null. */
+export async function fetchText(url, { headers = {}, timeoutMs = 15_000, cache = true } = {}) {
+  if (cache) {
+    const hit = await readCache(url);
+    if (hit) return hit;
+  }
+  let res;
+  try {
+    res = await globalThis.fetch(url, { headers: { 'User-Agent': USER_AGENT, ...headers }, signal: AbortSignal.timeout(timeoutMs) });
+  } catch (err) {
+    throw new HttpError(`network error: ${err.message}`, { url });
+  }
+  if (res.status === 404) {
+    const result = { status: 404, text: null };
+    if (cache) await writeCache(url, result);
+    return result;
+  }
+  if (!res.ok) throw new HttpError(`HTTP ${res.status} from ${new URL(url).host}`, { status: res.status, url });
+  const result = { status: res.status, text: await res.text() };
+  if (cache) await writeCache(url, result);
+  return result;
+}
+
 /** HEAD-style reachability check used by verification. Falls back to GET when HEAD is refused. */
 export async function checkUrl(url, { timeoutMs = 10_000 } = {}) {
   for (const method of ['HEAD', 'GET']) {

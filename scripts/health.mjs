@@ -4,7 +4,7 @@
 // Usage: node scripts/health.mjs [--report health-report.md]
 import { mkdir, writeFile } from 'node:fs/promises';
 import { parseArgs } from '../skills/check-before-you-build/scripts/lib/cli.mjs';
-import { TIER_LABEL } from '../skills/check-before-you-build/scripts/lib/criteria.mjs';
+import { statusLabel } from '../skills/check-before-you-build/scripts/lib/criteria.mjs';
 import { CATALOG_DIR, readAllCategoryFiles } from './lib/catalog-files.mjs';
 import { checkRepoPatient as checkRepo } from './lib/repo-check.mjs';
 
@@ -33,9 +33,9 @@ export function renderReport(rows, generatedAt) {
     for (const r of warned) lines.push(`| ${r.id} | ${r.warnings.join('; ')} |`);
     lines.push('');
   }
-  lines.push('## All entries', '', '| Entry | Category | Tier | Stars | Last push | Contributors |', '|---|---|---|---|---|---|');
+  lines.push('## All entries', '', '| Entry | Category | Status | Stars | Last push | Contributors |', '|---|---|---|---|---|---|');
   for (const r of rows) {
-    lines.push(`| ${r.id} | ${r.category} | ${r.pass ? TIER_LABEL[r.tier] : '❌'} | ${r.stars ?? '–'} | ${r.days_since_push ?? '–'} d | ${r.contributors ?? '–'} |`);
+    lines.push(`| ${r.id} | ${r.category} | ${statusLabel({ pass: r.pass, maintainer_pick: r.maintainer_pick, reasons: r.reasons })} | ${r.stars ?? '–'} | ${r.days_since_push ?? '–'} d | ${r.contributors ?? '–'} |`);
   }
   return lines.join('\n') + '\n';
 }
@@ -55,7 +55,7 @@ async function main() {
         id: e.id,
         category: data.category,
         pass: ev.pass,
-        tier: ev.tier,
+        maintainer_pick: ev.maintainer_pick,
         reasons: ev.reasons,
         warnings: ev.warnings,
         renamed: check.renamed,
@@ -64,7 +64,7 @@ async function main() {
         days_since_push: ev.days_since_push,
         contributors: check.contributors,
       });
-      if (check.found) snapshot.repos[e.id] = { ...check.signals, contributors: check.contributors, tier: ev.tier, pass: ev.pass };
+      if (check.found) snapshot.repos[e.id] = { ...check.signals, contributors: check.contributors, pass: ev.pass, ...(ev.maintainer_pick ? { maintainer_pick: true } : {}) };
     }
   }
 

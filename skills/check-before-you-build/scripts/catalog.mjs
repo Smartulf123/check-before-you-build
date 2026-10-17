@@ -52,8 +52,8 @@ export function searchEntries(entries, { keywords = [], categories = [], kinds =
     .filter((e) => !categories.length || categories.includes(e.category) || (e.subcategories || []).some((s) => categories.includes(s)))
     .filter((e) => !kinds.length || (e.kinds || []).some((k) => kinds.includes(k)))
     .map((e) => {
-      const strong = tokenize(`${e.name} ${(e.tags || []).join(' ')}`);
-      const weak = tokenize(`${e.use_for} ${e.why}`);
+      const strong = tokenize(`${e.name} ${(e.tags || []).join(' ')} ${(e.keywords || []).join(' ')}`);
+      const weak = tokenize(`${e.use_for} ${e.why} ${e.summary || ''} ${e.best_for || ''}`);
       const score = terms.reduce((sum, t) => sum + (strong.includes(t) ? 2 : 0) + (weak.includes(t) ? 1 : 0), 0);
       return { e, score };
     })
@@ -75,6 +75,9 @@ export function toResult(e) {
     tags: e.tags || [],
     use_for: e.use_for,
     why: e.why,
+    ...(e.summary ? { summary: e.summary } : {}),
+    ...(e.best_for ? { best_for: e.best_for } : {}),
+    ...(e.not_for ? { not_for: e.not_for } : {}),
     featured: Boolean(e.featured),
     ...(e.license_verified ? { license_verified: e.license_verified } : {}),
     alternatives: e.alternatives || [],

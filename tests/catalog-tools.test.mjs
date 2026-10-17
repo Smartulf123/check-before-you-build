@@ -96,9 +96,9 @@ test('mapLimit keeps order and never exceeds the concurrency limit', async () =>
 });
 
 test('reports render tables', () => {
-  const s = scoutReport({ testing: [{ full_name: 'a/b', url: 'u', signals: { stars: 2000, pushed_at: '2026-10-01' }, description: 'x | y', evaluation: { pass: true, tier: 'solid' } }] }, '2026-10-17T00:00:00Z');
-  assert.match(s, /\| \[a\/b\]\(u\) \| 2000 \| 2026-10-01 \| ✅ Solid \| x \/ y \|/);
-  const h = healthReport([{ id: 'a/b', category: 'testing', pass: false, tier: null, reasons: ['archived'], warnings: [], stars: 10, days_since_push: 400, contributors: 1 }], '2026-10-17T00:00:00Z');
+  const s = scoutReport({ testing: [{ full_name: 'a/b', url: 'u', signals: { stars: 2000, pushed_at: '2026-10-01' }, description: 'x | y', evaluation: { pass: true, reasons: [], warnings: [] } }] }, '2026-10-17T00:00:00Z');
+  assert.match(s, /\| \[a\/b\]\(u\) \| 2000 \| 2026-10-01 \| ✅ Passes \| x \/ y \|/);
+  const h = healthReport([{ id: 'a/b', category: 'testing', pass: false, reasons: ['archived'], warnings: [], stars: 10, days_since_push: 400, contributors: 1 }], '2026-10-17T00:00:00Z');
   assert.match(h, /❌ 1 failing/);
   assert.match(h, /archived/);
 });

@@ -10,7 +10,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { intFlag, parseArgs } from '../skills/check-before-you-build/scripts/lib/cli.mjs';
 import { searchRepos } from '../skills/check-before-you-build/scripts/github.mjs';
-import { RULES, TIER_LABEL } from '../skills/check-before-you-build/scripts/lib/criteria.mjs';
+import { RULES, statusLabel } from '../skills/check-before-you-build/scripts/lib/criteria.mjs';
 import { readAllCategoryFiles, readCategories } from './lib/catalog-files.mjs';
 import { checkRepo } from './lib/repo-check.mjs';
 
@@ -59,9 +59,9 @@ export function renderReport(byCategory, generatedAt) {
       lines.push('_No new candidates._', '');
       continue;
     }
-    lines.push('| Repo | Stars | Last push | Tier | Description |', '|---|---|---|---|---|');
+    lines.push('| Repo | Stars | Last push | Status | Description |', '|---|---|---|---|---|');
     for (const c of candidates) {
-      const tier = c.evaluation ? (c.evaluation.pass ? TIER_LABEL[c.evaluation.tier] : `❌ ${c.evaluation.reasons[0]}`) : '(unchecked)';
+      const tier = statusLabel(c.evaluation);
       lines.push(`| [${c.full_name}](${c.url}) | ${c.signals.stars} | ${(c.signals.pushed_at || '').slice(0, 10)} | ${tier} | ${(c.description || '').replace(/\|/g, '/').slice(0, 100)} |`);
     }
     lines.push('');
@@ -112,7 +112,7 @@ async function main() {
           c.contributors = check.contributors;
           c.evaluation = check.evaluation;
         } catch (err) {
-          c.evaluation = { pass: false, tier: null, reasons: [`check failed: ${err.message}`], warnings: [] };
+          c.evaluation = { pass: false, reasons: [`check failed: ${err.message}`], warnings: [] };
         }
       });
     }

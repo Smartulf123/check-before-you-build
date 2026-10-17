@@ -13,18 +13,15 @@ const repo = (signals = {}, extra = {}) => ({
   ...extra,
 });
 
-test('top choice: ≥ 3,000 stars and pushed ≤ 90 days', () => {
+test("passes the quality gate: enough stars, fresh, licensed, enough contributors", () => {
   const r = evaluate(repo(), NOW);
   assert.equal(r.pass, true);
-  assert.equal(r.tier, 'top');
-  assert.equal(r.freshness, 'very fresh');
-});
-
-test('solid: ≥ 1,000 stars, or top stars but 3–6 months old', () => {
-  assert.equal(evaluate(repo({ stars: 1500, forks: 100 }), NOW).tier, 'solid');
+  assert.equal(r.tier, undefined); // no tiers any more
+  assert.equal(r.freshness, "very fresh");
+  assert.equal(evaluate(repo({ stars: 1500, forks: 100 }), NOW).pass, true);
   const older = evaluate(repo({ pushed_at: daysAgo(120) }), NOW);
-  assert.equal(older.tier, 'solid');
-  assert.ok(older.warnings.some((w) => w.includes('3–6 months')));
+  assert.equal(older.pass, true);
+  assert.ok(older.warnings.some((w) => w.includes("3–6 months")));
 });
 
 test('excluded: too few stars, too old, archived, no license, few contributors', () => {
@@ -42,18 +39,16 @@ test('alternative signals replace stars', () => {
   assert.equal(adoptionLevel({ stars: 10 }), null);
   const skill = evaluate(repo({ stars: 246, forks: 34, installs: 130285 }), NOW);
   assert.equal(skill.pass, true);
-  assert.equal(skill.tier, 'top');
 });
 
-test('official vendor repos qualify; top only when fresh', () => {
-  assert.equal(evaluate(repo({ stars: 300, forks: 40 }, { official: true }), NOW).tier, 'top');
-  assert.equal(evaluate(repo({ stars: 300, forks: 40, pushed_at: daysAgo(150) }, { official: true }), NOW).tier, 'solid');
+test("official vendor repos pass the adoption rule regardless of stars", () => {
+  assert.equal(evaluate(repo({ stars: 300, forks: 40 }, { official: true }), NOW).pass, true);
+  assert.equal(evaluate(repo({ stars: 300, forks: 40 }), NOW).pass, false);
 });
 
-test('stable exception: ≥ 5,000 stars + reason, up to 18 months, never top', () => {
+test("stable exception: ≥ 5,000 stars + reason, up to 18 months", () => {
   const ok = evaluate(repo({ stars: 9000, pushed_at: daysAgo(400) }, { stable: true, stable_reason: 'feature complete' }), NOW);
   assert.equal(ok.pass, true);
-  assert.equal(ok.tier, 'solid');
   const tooSmall = evaluate(repo({ stars: 2000, forks: 200, pushed_at: daysAgo(400) }, { stable: true, stable_reason: 'x' }), NOW);
   assert.equal(tooSmall.pass, false);
   const noReason = evaluate(repo({ stars: 9000, pushed_at: daysAgo(400) }, { stable: true }), NOW);

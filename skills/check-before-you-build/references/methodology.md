@@ -39,12 +39,13 @@ Ask one clarifying question only if no meaningful keywords can be derived (e.g. 
    - library / cli (Python) → web search `site:pypi.org <keywords>`, then `pypi.mjs info <pkg>`
    - any → web search for commercial products: `<concept> tool`, `<concept> alternative`, `<concept> app`
 4. Deduplicate: the same project often appears as a GitHub repo, an npm package and a skill. Merge them under the GitHub id and keep each source's signal in `other_signals`.
-5. Classify every candidate:
+5. **Read the READMEs** of the strongest candidates before classifying them: `readme.mjs get <owner/repo> <owner/repo> …` (several at once). Classify direct/partial matches from what the README says the project does, not from its name or one-line description. Budget: see the mode table in SKILL.md.
+6. Classify every candidate:
    - `direct`: does essentially the same job for the same user
    - `partial`: big overlap but differs in form, scope or audience
    - `adjacent`: related, a building block or neighbour
    Give `match_reason` (one line) for every direct/partial match. Estimate `coverage_pct` (0–100) for direct matches: how much of the idea this project already delivers.
-6. Keep at most 15 competitors by relevance × popularity. **Always keep every direct match.** Set `candidates_evaluated` to the total number looked at.
+7. Keep at most 15 competitors by relevance × popularity. **Always keep every direct match.** Set `candidates_evaluated` to the total number looked at, and `readme_read: true` on each competitor whose README you read.
 
 **Judge relevance yourself.** npm and skills.sh rank by popularity, and GitHub search returns spam. Read descriptions. Fetch a README with web fetch when unsure.
 
@@ -72,10 +73,11 @@ Competitor adoption is added automatically by `score.mjs`. Don't list it as a de
 1. Catalog first: `catalog.mjs search <component keywords> --categories <slug>`. Catalog entries come with stats from the weekly snapshot (`stats_source`) and are already quality-checked, so **don't spend GitHub calls on them**. Prefer `featured` entries.
 2. Live search only for components the catalog doesn't cover well: `github.mjs search`, `npm.mjs search`.
 3. Get live stats only for candidates **outside** the catalog (`github.mjs repo`, `npm.mjs info`).
-4. Rank by fit → maintenance → adoption → license.
-5. One recommendation type per block: `use` 🧱 · `fork` 🍴 · `learn` 💡 · `contribute` 🤝.
-6. License classes: permissive (MIT, Apache-2.0, BSD, ISC, MPL-2.0) → any type. Copyleft (GPL/AGPL/LGPL) → use/learn/contribute; fork only with a warning. None → learn only ("no license: you have no right to copy this code"). Other → learn only.
-7. 2–4 blocks per component, at most 12 in total. For `fun`, include more 💡 learn examples (well-documented projects worth reading).
+4. **Read the README of every shortlisted candidate** (top 5 / 10 / 15 per component by mode, catalog entries included): `readme.mjs get a/b c/d …`. Use the catalog's `summary`, `best_for` and `not_for` fields to build the shortlist, and the README to confirm the fit: does it do what this idea needs, in the user's stack, and without the limitation that would rule it out? Drop candidates the README shows don't fit, even if they're featured. Set `readme_read: true` on each block you recommend.
+5. Rank by fit → maintenance → adoption → license.
+6. One recommendation type per block: `use` 🧱 · `fork` 🍴 · `learn` 💡 · `contribute` 🤝.
+7. License classes: permissive (MIT, Apache-2.0, BSD, ISC, MPL-2.0) → any type. Copyleft (GPL/AGPL/LGPL) → use/learn/contribute; fork only with a warning. None → learn only ("no license: you have no right to copy this code"). Other → learn only.
+8. 2–4 blocks per component, at most 12 in total. For `fun`, include more 💡 learn examples (well-documented projects worth reading).
 
 ## Phase 6: Score
 
