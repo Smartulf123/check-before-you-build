@@ -17,7 +17,7 @@ Most idea validators give you an opinion about market size. This one shows you *
 - **Does it already exist?** Real repos, skills, MCP servers and packages, with live stars, last-commit dates and licenses. The agent reads their READMEs before judging them.
 - **Does anyone want it?** Hacker News threads, feature requests on competitors' issue trackers and questions on the web, each with a link.
 - **Where's the gap?** What existing projects lack, backed by evidence.
-- **What should I build it with?** A curated catalog of 1,170 quality-checked repos tells you what to 🧱 use, 🍴 fork, 💡 learn from or 🤝 contribute to.
+- **What should I build it with?** A curated catalog of 1,174 quality-checked repos tells you what to 🧱 use, 🍴 fork, 💡 learn from or 🤝 contribute to.
 
 ## Install
 
@@ -52,7 +52,23 @@ Modes: `--quick` (catalog and GitHub only), standard (default) and `--deep` (mor
 
 ## What you get
 
-EXAMPLE_OUTPUT
+A real run, for *"A Spotify Wrapped style yearly recap for AI coding agents like Claude Code and Codex, made from local session logs, to share on social media"*:
+
+```
+🤝 YOU COULD JOIN AN EXISTING PROJECT   (confidence: high)
+Saturation 9.8/10 · Demand 6.9/10 · Gap 5/10
+
+Closest existing: tokscale (5.7k ⭐, updated today, MIT) already has a
+`wrapped` command for Claude Code and Codex logs, but its card is about tokens and cost.
+Also: coding-wrapped, cc-wrapped, claude-code-wrapped, a /wrapped skill (all small)
+Open gap: storytelling recaps (archetypes, habits, what you built) exist only in tiny,
+mostly Claude-only projects; the PNG ones haven't been updated since December 2025.
+Building blocks: 🧱 Satori · 🧱 resvg-js · 🧱 Ink · 🤝 tokscale · 💡 ccusage, cc-wrapped
+Fact-check: 34/34 items verified · 32 candidates evaluated
+
+Next step: propose a story-mode Wrapped to tokscale, or build your own
+local-only, Codex-first version before December.
+```
 
 Every run writes three files to `check-reports/<date>-<slug>/`:
 
@@ -99,7 +115,7 @@ Rules and formulas: [scoring.md](skills/check-before-you-build/references/scorin
 
 ## The catalog
 
-1,170 repos in 50 building-block categories across 20 domains, from web frameworks and AI agents to audio, 3D printing and games. Every entry:
+1,174 repos in 50 building-block categories across 20 domains, from web frameworks and AI agents to audio, 3D printing and games. Every entry:
 
 - passes one quality gate: adoption (for example 1,000+ stars), a commit in the last 6 months (18 for stable, widely used projects), a real license, 3+ contributors and a fake-star check
 - has a summary, best-for and not-for written from its README, and checked against it
@@ -121,7 +137,7 @@ The skill is tested end to end by fresh agents on a fixed set of ideas, graded o
 ## Roadmap
 
 - [x] Fact scripts, rule-based scoring, fact-checking, verdict card
-- [x] Catalog: 1,170 repos with README-based descriptions
+- [x] Catalog: 1,174 repos with README-based descriptions
 - [x] v1.0.0
 - [ ] Weekly catalog updates in CI
 - [ ] More sources (Product Hunt, VS Code marketplace, crates.io)
