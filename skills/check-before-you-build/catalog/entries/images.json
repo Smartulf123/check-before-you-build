@@ -555,6 +555,66 @@
       ]
     },
     {
+      "id": "thx/resvg-js",
+      "name": "resvg-js",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "svg",
+        "png",
+        "rendering",
+        "wasm"
+      ],
+      "use_for": "Fast SVG to PNG rendering in Node.js, Deno or WebAssembly.",
+      "why": "Rust-powered, prebuilt binaries, custom fonts; pairs with Satori.",
+      "npm": "@resvg/resvg-js",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "High-performance SVG renderer powered by Rust resvg, with a Node.js backend (prebuilt, no node-gyp) and a WebAssembly backend. Converts SVG to PNG with cropping, scaling and custom fonts.",
+      "best_for": "Turning SVG (for example Satori output) into PNG quickly in Node, Deno or the browser.",
+      "not_for": "Editing or authoring SVG, or raster image processing beyond rendering.",
+      "keywords": [
+        "svg to png",
+        "render",
+        "wasm",
+        "rust",
+        "fonts",
+        "image generation"
+      ]
+    },
+    {
+      "id": "vercel/satori",
+      "name": "Satori",
+      "category": "images",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "og-image",
+        "social-cards",
+        "svg",
+        "jsx"
+      ],
+      "use_for": "Render JSX/HTML and CSS to SVG for Open Graph images and social cards.",
+      "why": "Vercel's OG-image engine; works without a browser.",
+      "npm": "satori",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Converts JSX/HTML and CSS to SVG without a browser, handling layout, fonts and typography. Used for Open Graph images and social cards; pair it with a rasterizer such as resvg or sharp for PNG.",
+      "best_for": "Generating social cards, OG images and shareable graphics from components.",
+      "not_for": "Full CSS or interactive React (only a subset of CSS and stateless JSX is supported; fonts must be supplied).",
+      "keywords": [
+        "og image",
+        "social card",
+        "svg",
+        "jsx",
+        "share image",
+        "open graph"
+      ]
+    },
+    {
       "id": "scikit-image/scikit-image",
       "name": "scikit-image",
       "category": "images",

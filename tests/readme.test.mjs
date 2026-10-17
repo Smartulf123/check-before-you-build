@@ -88,6 +88,15 @@ test('sub-paths read a skill or plugin folder inside a bigger repo', async () =>
   assert.ok(calls.every((u) => u.startsWith('https://raw.githubusercontent.com/openai/skills/HEAD/')));
 });
 
+test('a sub-path without its own README falls back to the repo README with a warning', async () => {
+  globalThis.fetch = async (url) =>
+    String(url).endsWith('/HEAD/README.md') ? new Response('# Marketplace\n\nMany plugins.', { status: 200 }) : new Response('nf', { status: 404 });
+  const r = await readme.getReadme('anthropics/claude-plugins-official/plugins/session-report');
+  assert.equal(r.found, true);
+  assert.equal(r.fallback, 'repo-root');
+  assert.match(r.warning, /not of the folder/);
+});
+
 test('getReadme tries README variants on raw.githubusercontent.com', async () => {
   const calls = [];
   globalThis.fetch = async (url) => {

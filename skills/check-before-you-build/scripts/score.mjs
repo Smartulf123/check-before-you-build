@@ -65,7 +65,16 @@ export function saturation(competitors, now) {
   return { coverage: round1(coverage), score: round1(10 * (1 - Math.exp(-coverage))) };
 }
 
-export function demandWeight(item) {
+const OLD_DEMAND_DAYS = 3 * 365;
+
+export function demandWeight(item, now = Date.now()) {
+  // Demand from years ago says little about today: items older than 3 years count a third.
+  const t = Date.parse(item.date ?? '');
+  const age = Number.isNaN(t) ? 1 : (now - t) / 86400000 > OLD_DEMAND_DAYS ? 1 / 3 : 1;
+  return round1(age * baseDemandWeight(item));
+}
+
+function baseDemandWeight(item) {
   if (item.type === 'hn_story') return (item.points ?? 0) >= 50 ? 1.5 : 0.3;
   if (item.type === 'github_issue') {
     // An issue nobody reacted to is one person's wish, not demand (tuned after the M6 eval runs).
@@ -75,8 +84,8 @@ export function demandWeight(item) {
   return 1.0; // request, forum, web, blog: an explicit request or complaint
 }
 
-export function demand(items, competitors) {
-  const fromItems = usable(items).reduce((sum, d) => sum + demandWeight(d), 0);
+export function demand(items, competitors, now = Date.now()) {
+  const fromItems = usable(items).reduce((sum, d) => sum + demandWeight(d, now), 0);
   const strongAdoption = usable(competitors).filter((c) => c.match === 'direct' && popularity(c) >= 0.8).length;
   const D = fromItems + 2.0 * Math.min(strongAdoption, 2);
   return { raw: round1(D), score: round1(10 * (1 - Math.exp(-D / 4))) };
@@ -196,7 +205,7 @@ export function scoreEvidence(evidence, now = Date.now()) {
   }
   const competitors = evidence.competitors || [];
   const sat = saturation(competitors, now);
-  const dem = demand(evidence.demand || [], competitors);
+  const dem = demand(evidence.demand || [], competitors, now);
   const g = gap(evidence, now);
   const verdict = decideVerdict({ sat: sat.score, dem: dem.score, gapScore: g.score, competitors, now });
   return {

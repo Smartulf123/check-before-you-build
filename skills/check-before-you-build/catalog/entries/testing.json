@@ -74,6 +74,36 @@
       ]
     },
     {
+      "id": "dequelabs/axe-core",
+      "name": "axe-core",
+      "category": "testing",
+      "kinds": [
+        "library"
+      ],
+      "tags": [
+        "accessibility",
+        "a11y",
+        "wcag",
+        "testing"
+      ],
+      "use_for": "Automated accessibility (WCAG) testing of web pages and HTML UIs.",
+      "why": "The standard accessibility engine; many audit tools and MCP servers are built on it.",
+      "npm": "axe-core",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Accessibility testing engine for websites and HTML-based UIs. Runs in the browser or in any test setup (Playwright, Puppeteer, Selenium, Jest) and reports WCAG violations with rule ids and affected nodes.",
+      "best_for": "Automated WCAG checks inside your own tests, audit tools or agent workflows.",
+      "not_for": "Full compliance on its own: automated rules catch only part of WCAG, so manual testing is still needed.",
+      "keywords": [
+        "accessibility",
+        "a11y",
+        "wcag",
+        "audit",
+        "testing",
+        "universal design"
+      ]
+    },
+    {
       "id": "teamcapybara/capybara",
       "name": "Capybara",
       "category": "testing",
@@ -668,6 +698,37 @@
         "verify interactions",
         "test doubles",
         "jvm testing"
+      ]
+    },
+    {
+      "id": "pa11y/pa11y",
+      "name": "Pa11y",
+      "category": "testing",
+      "kinds": [
+        "library",
+        "cli"
+      ],
+      "tags": [
+        "accessibility",
+        "a11y",
+        "wcag",
+        "cli"
+      ],
+      "use_for": "Accessibility tests of URLs from the command line or Node.js.",
+      "why": "Simple, long-running a11y test runner for many URLs and CI.",
+      "npm": "pa11y",
+      "added": "2026-10-17",
+      "last_reviewed": "2026-10-17",
+      "summary": "Automated accessibility testing from the command line or Node.js: point it at a URL (or many) and get the issues back, with support for scripted actions such as logging in first.",
+      "best_for": "Quick a11y checks of live URLs and CI runs over many pages.",
+      "not_for": "Projects that need a permissive license to vendor the code (LGPL-3.0), or deep manual audits.",
+      "keywords": [
+        "accessibility",
+        "a11y",
+        "wcag",
+        "cli",
+        "url scan",
+        "ci"
       ]
     },
     {

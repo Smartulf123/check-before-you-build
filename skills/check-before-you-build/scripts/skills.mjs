@@ -14,6 +14,8 @@ export function mapSkill(s) {
     url: `https://skills.sh/${s.id}`,
     source: 'skills.sh',
     github: s.source || null,
+    // ready-made argument for `readme.mjs get` (the skill folder inside its repo)
+    readme: s.source && String(s.id).startsWith(`${s.source}/`) ? s.id : s.source || null,
     signals: { installs: s.installs ?? 0 },
   };
 }

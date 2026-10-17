@@ -26,8 +26,10 @@
       ],
       "expected_verdicts": [
         "DROP",
-        "BUILD_WITH_ANGLE"
-      ]
+        "BUILD_WITH_ANGLE",
+        "CONTRIBUTE"
+      ],
+      "notes": "CONTRIBUTE added 2026-10-17: tokscale (5.7k stars, active, MIT) ships a wrapped command, confirmed from its README during the M6 rerun."
     },
     {
       "id": "3-social-research",

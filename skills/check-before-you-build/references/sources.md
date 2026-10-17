@@ -36,7 +36,7 @@ Limits: 30 searches/min with a token (from `gh auth token` or `GITHUB_TOKEN`), 1
 ```
 skills.mjs search <keywords...> [--limit 30]
 ```
-Signal: `signals.installs`. No descriptions. Use the name and `github` repo, and fetch the repo when unsure. The endpoint is undocumented: a failure means the source failed, not that no skills exist.
+Signal: `signals.installs`. No descriptions: read the skill itself with `readme.mjs get <readme>` (the `readme` field is the skill folder inside its repo). The endpoint is undocumented: a failure means the source failed, not that no skills exist.
 
 ### plugins.mjs
 ```

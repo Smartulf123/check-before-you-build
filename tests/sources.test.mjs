@@ -155,3 +155,9 @@ test('hn: builds date filters and maps hits', async () => {
   assert.equal(out.results[0].url, 'https://news.ycombinator.com/item?id=42');
   assert.equal(out.results[0].date, '2026-05-02');
 });
+
+test('skills.sh results carry a readme path for the skill folder', async () => {
+  const { mapSkill } = await load('skills.mjs');
+  assert.equal(mapSkill({ id: 'flutter/agent-plugins/a11y-audit', name: 'a11y-audit', source: 'flutter/agent-plugins', installs: 5 }).readme, 'flutter/agent-plugins/a11y-audit');
+  assert.equal(mapSkill({ id: 'x', name: 'x', source: 'a/b' }).readme, 'a/b');
+});

@@ -47,3 +47,16 @@ test('search filters by kind and drops non-matching keywords', () => {
   assert.deepEqual(catalog.searchEntries(entries, { kinds: ['skill'] }).map((r) => r.name), ['HyperFrames']);
   assert.equal(catalog.searchEntries(entries, { keywords: ['payments'] }).length, 0);
 });
+
+test('relevance outranks featured; featured only breaks ties', async () => {
+  const { searchEntries } = await load('catalog.mjs');
+  const entries = [
+    { id: 'a/featured', name: 'big', featured: true, tags: [], use_for: 'audit things', why: '' },
+    { id: 'b/match', name: 'axe', tags: ['wcag', 'accessibility', 'audit'], use_for: 'wcag accessibility audit', why: '' },
+    { id: 'c/tie', name: 'c', featured: true, tags: [], use_for: 'wcag', why: '' },
+    { id: 'd/tie', name: 'd', tags: [], use_for: 'wcag', why: '' },
+  ];
+  const ids = searchEntries(entries, { keywords: ['wcag', 'accessibility', 'audit'] }).map((r) => r.id);
+  assert.equal(ids[0], 'github:b/match');
+  assert.ok(ids.indexOf('github:c/tie') < ids.indexOf('github:d/tie'));
+});

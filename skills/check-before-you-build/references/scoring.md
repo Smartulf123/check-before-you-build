@@ -29,7 +29,7 @@
 - **popularity** (0–1): each signal is normalised on its own scale (stars `log10(n+1)/4` · installs `/4.5` · npm weekly downloads `/5` · Smithery uses `/4`), and the **strongest** across `signals` and `other_signals` wins. Raw numbers are never mixed. Commercial products: 0.7 with traction, else 0.4
 - **activity:** archived 0 · pushed ≤ 90 days 1.0 · ≤ 365 days 0.6 · older 0.2 · unknown 0.6
 - **saturation** = `10 × (1 − e^(−Σ match_weight × activity × popularity))`, with match weights direct 1.0 · partial 0.5 · adjacent 0.1
-- **demand** = `10 × (1 − e^(−D/4))`. D sums: request/forum/web 1.0 · GitHub issue 0.3 (0.6 with ≥ 1 👍, 1.5 with ≥ 10 👍) · HN story 0.3 (1.5 with ≥ 50 points) · plus 2.0 for each direct competitor with popularity ≥ 0.8 (max 2)
+- **demand** = `10 × (1 − e^(−D/4))`. D sums: request/forum/web 1.0 · GitHub issue 0.3 (0.6 with ≥ 1 👍, 1.5 with ≥ 10 👍) · HN story 0.3 (1.5 with ≥ 50 points) · items dated more than 3 years ago count a third · plus 2.0 for each direct competitor with popularity ≥ 0.8 (max 2)
 - Items with `verified: false` are ignored.
 
 ## Verdict rules (first match wins)

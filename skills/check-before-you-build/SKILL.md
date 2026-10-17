@@ -68,7 +68,7 @@ Follow `references/methodology.md` for the full detail of each phase.
 6. **Check facts, then score:** write `evidence.json` (schema in `references/evidence-schema.md`) and run `verify.mjs evidence.json`. It drops repos and links that don't exist, fixes renames and drifted numbers, uses the snapshot for catalog entries (no GitHub calls), and lists shortlisted repos whose README you haven't read: read those, then verify again. Then run `score.mjs evidence.json` once.
 7. **Write:** `report.md` from `references/report-template.md` (if you can't write files, print the report in the chat), run `card.mjs evidence.json`, and print the chat summary.
 
-In Claude Code, run phases 2, 3 and 5 as **three parallel sub-agents** using the briefs in `references/subagents.md`. Elsewhere, run them in sequence.
+In Claude Code, run phases 2, 3 and 5 as **three parallel sub-agents** using the briefs in `references/subagents.md`. Elsewhere, or if you are already running as a sub-agent, run them in sequence.
 
 ## Mode budgets
 

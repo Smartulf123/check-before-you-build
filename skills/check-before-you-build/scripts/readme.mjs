@@ -140,12 +140,15 @@ export async function getReadme(id, { maxChars = 5000, full = false } = {}) {
     found = await fetchCandidate(fullName, file);
     if (found) break;
   }
+  let fallback = false;
   if (!found && sub) {
-    // fall back to the repo README when the folder has none
+    // fall back to the repo README when the folder has none, and say so: the repo README
+    // describes the host repo (often a marketplace), not the skill or plugin itself.
     for (const file of CANDIDATES) {
       found = await fetchCandidate(fullName, file);
       if (found) break;
     }
+    fallback = Boolean(found);
   }
   // A tiny root README (contributor notes, a pointer) often has a fuller sibling in .github/.
   if (!sub && found && found.text.length < 800 && !found.url.includes("/.github/")) {
@@ -154,9 +157,10 @@ export async function getReadme(id, { maxChars = 5000, full = false } = {}) {
   }
   if (!found) return { id: `github:${id}`, found: false };
   const { url, text } = found;
-  if (full) return { id: `github:${id}`, found: true, source_url: url, chars_original: text.length, excerpt: text };
+  const note = fallback ? { fallback: 'repo-root', warning: `no README in ${sub}; this is the README of ${fullName}, not of the folder` } : {};
+  if (full) return { id: `github:${id}`, found: true, source_url: url, chars_original: text.length, ...note, excerpt: text };
   const { text: excerpt, headings } = condense(text, maxChars);
-  return { id: `github:${id}`, found: true, source_url: url, chars_original: text.length, excerpt, headings };
+  return { id: `github:${id}`, found: true, source_url: url, chars_original: text.length, ...note, excerpt, headings };
 }
 
 if (isMain(import.meta.url)) {

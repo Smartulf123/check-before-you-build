@@ -58,7 +58,9 @@ export function searchEntries(entries, { keywords = [], categories = [], kinds =
       return { e, score };
     })
     .filter((x) => !terms.length || x.score > 0)
-    .sort((a, b) => Number(Boolean(b.e.featured)) - Number(Boolean(a.e.featured)) || b.score - a.score)
+    // relevance first; featured only breaks ties (a featured repo matching one word must not
+    // outrank a non-featured repo that matches the whole query)
+    .sort((a, b) => b.score - a.score || Number(Boolean(b.e.featured)) - Number(Boolean(a.e.featured)))
     .slice(0, limit)
     .map(({ e, score }) => ({ ...toResult(e), match_score: score }));
 }

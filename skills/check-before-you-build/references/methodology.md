@@ -10,7 +10,7 @@ Building something that already exists is fine. The skill informs, it never forb
 |---|---|---|
 | `fun` | "for fun", "to learn", "practice", "side project", "hobby" | No verdict shown. Skip demand and gaps. Emphasise projects to learn from and building blocks. |
 | `me` | "for myself", "my own use", "for my team", "personal tool" | No verdict shown. Skip demand; short gaps. Hint at existing tools that might save time. |
-| `launch` | "launch", "publish", "users", "sell", "viral", "startup", "open source it" | Full verdict with friendly label. |
+| `launch` | "launch", "publish", "users", "sell", "viral", "startup", "open source it", "share on social media", "get stars" | Full verdict with friendly label. |
 
 Priority: `--for` flag → inferred from the text → default `launch`. Record `purpose_source` as `explicit`, `inferred` or `default`. With `default`, end the summary with: *"Just building for fun, to learn or for yourself? Ignore the verdict, and the building blocks below are for you."*
 
@@ -60,8 +60,8 @@ Ask one clarifying question only if no meaningful keywords can be derived (e.g. 
 
 1. `hn.mjs search <keywords>` for the concept, and `--tags show_hn` for similar launches (points show how launches performed).
 2. `github.mjs issues <owner/repo>` for the top 3 (standard) or 5 (deep) direct/partial competitors. Feature requests and complaints are unmet demand. Titles matter even with few 👍.
-3. Web search: "how do I …", "is there a tool that …", forum and blog posts asking for this.
-4. Each item: `type` (`hn_story` | `github_issue` | `request` | `forum` | `web`), `title`, `url`, `date`, engagement (`points`, `reactions_plus1`, `comments`; leave a field out when it's unknown, don't guess), and a verbatim `quote` of at most 25 words when there is one. An issue with no 👍 counts for little; prefer evidence that several people want the thing.
+3. Web search: "how do I …", "is there a tool that …", forum and blog posts asking for this. A demand item must show people wanting, asking for or complaining about something. Background pages (laws, statistics, news about a market) are context: mention them in the report, but don't add them to `demand`.
+4. Each item: `type` (`hn_story` for anything on HN, including Ask HN | `github_issue` | `request` | `forum` | `web`), `date` (items over 3 years old count a third), `title`, `url`, `date`, engagement (`points`, `reactions_plus1`, `comments`; leave a field out when it's unknown, don't guess), and a verbatim `quote` of at most 25 words when there is one. An issue with no 👍 counts for little; prefer evidence that several people want the thing.
 
 Competitor adoption is added automatically by `score.mjs`. Don't list it as a demand item.
 

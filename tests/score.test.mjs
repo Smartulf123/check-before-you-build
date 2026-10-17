@@ -193,3 +193,10 @@ test('display never tells the user not to build', () => {
     }
   }
 });
+
+test('demand older than three years counts a third', () => {
+  const now = Date.parse('2026-10-17');
+  assert.equal(s.demandWeight({ type: 'hn_story', points: 74, date: '2013-06-20' }, now), 0.5);
+  assert.equal(s.demandWeight({ type: 'hn_story', points: 74, date: '2025-06-20' }, now), 1.5);
+  assert.equal(s.demandWeight({ type: 'request' }, now), 1);
+});
