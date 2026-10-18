@@ -30,8 +30,8 @@ const repoOf = (item) => {
   return m ? m[1] : null;
 };
 
-/** Items that have a README to read: GitHub repos, or packages/skills that link one. */
-const hasReadme = (item) => Boolean(repoOf(item) || item.github);
+/** Items that have a README or SKILL.md to read: GitHub repos, skills, or packages that link a repo. */
+const hasReadme = (item) => Boolean(repoOf(item) || item.github || String(item.id || '').startsWith('skills:'));
 
 /** Compare numeric signals; replace drifted values and return the corrections made. */
 export function correctDrift(item, live, fields = ['stars', 'installs', 'downloads_weekly', 'uses']) {

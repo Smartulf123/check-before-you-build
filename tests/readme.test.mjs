@@ -144,3 +144,9 @@ test('detectLicense recognises common licenses from their text', () => {
   assert.equal(readme.detectLicense('GNU AFFERO GENERAL PUBLIC LICENSE Version 3'), 'AGPL-3.0');
   assert.equal(readme.detectLicense('Redistribution and use in source and binary forms ... Neither the name of'), 'BSD-3-Clause');
 });
+
+test('an MIT text edited to forbid commercial use is reported as custom-restricted', () => {
+  const edited = 'MIT License\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software, to use it for non-commercial purposes only.';
+  assert.equal(readme.detectLicense(edited), 'custom-restricted');
+  assert.equal(readme.detectLicense('PolyForm Noncommercial License 1.0.0'), 'custom-restricted');
+});

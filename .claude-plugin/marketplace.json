@@ -11,7 +11,7 @@
       "name": "check-before-you-build",
       "source": "./",
       "description": "Check whether an idea already exists and what to build it with: cited verdict, demand evidence and a curated catalog of 1,170 building-block repos.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "license": "MIT",
       "keywords": ["idea-validation", "research", "github", "agent-skills", "mcp", "building-blocks", "vibe-coding"]
     }

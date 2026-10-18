@@ -24,7 +24,7 @@
   },
   "competitors": [                          // ✱ array (may be empty)
     {
-      "id": "github:owner/repo",            // ✱ source-prefixed id
+      "id": "github:owner/repo",            // ✱ source-prefixed id: github:owner/repo, skills:owner/repo/skill, npm:name, smithery:name, plugin:name, commercial:short-name
       "name": "designlang",
       "url": "https://github.com/owner/repo", // ✱
       "source": "github",                   // github | skills.sh | smithery | mcp-registry | npm | pypi | claude-plugins-official | commercial | catalog

@@ -12,7 +12,8 @@ const USAGE = `readme.mjs <command>
   get <owner/repo> [<owner/repo> ...] [--max-chars 5000] [--full]
       condensed README per repo (raw.githubusercontent.com; one core API call only for deeply nested skill folders)
   license <owner/repo> [<owner/repo> ...]
-      read the license file and detect common licenses (for NOASSERTION or missing licenses)`;
+      read the license file and detect common licenses (for NOASSERTION or missing licenses);
+      "custom-restricted" means standard text with added limits such as non-commercial: treat as Other`;
 
 const CANDIDATES = ['README.md', 'readme.md', 'Readme.md', 'README.MD', 'README.rst', 'README.markdown', 'README.asciidoc', 'README.adoc', 'README.txt', 'README', '.github/README.md', 'docs/README.md'];
 
@@ -195,6 +196,11 @@ const LICENSE_FILES = ['LICENSE', 'LICENSE.md', 'LICENSE.txt', 'LICENCE', 'LICEN
 /** Recognise common licenses from their text. Returns an SPDX id or null. */
 export function detectLicense(text) {
   const t = String(text || '').replace(/\s+/g, ' ');
+  // Standard text edited with extra restrictions (for example MIT rewritten as "non-commercial
+  // only") is not that license anymore. Report it as custom so it is never treated as permissive.
+  if (/non-?commercial|not for commercial|commercial use is (not permitted|prohibited|forbidden)|commons clause|polyform|non-ai|may not be used to train|source[- ]available|business source license/i.test(t)) {
+    return 'custom-restricted';
+  }
   if (/GNU AFFERO GENERAL PUBLIC LICENSE/i.test(t)) return 'AGPL-3.0';
   if (/GNU LESSER GENERAL PUBLIC LICENSE/i.test(t)) return /Version 2\.1/i.test(t) ? 'LGPL-2.1' : 'LGPL-3.0';
   if (/GNU GENERAL PUBLIC LICENSE/i.test(t)) return /Version 2,/i.test(t) ? 'GPL-2.0' : 'GPL-3.0';

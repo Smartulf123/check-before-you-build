@@ -112,3 +112,10 @@ test('products worth studying are link-checked and labelled, never dropped', asy
   assert.equal(evidence.inspiration[1].verified, true);
   assert.equal(evidence.inspiration[1].link_status, 'unreachable');
 });
+
+test('recommended skills whose SKILL.md was not read are flagged', async () => {
+  mockFetch([['skills.sh', { status: 200 }]]);
+  const evidence = { competitors: [], building_blocks: [{ id: 'skills:shadcn-ui/ui/shadcn', url: 'https://skills.sh/shadcn-ui/ui/shadcn', layer: 'agent skill' }] };
+  const { log } = await verifyEvidence(evidence);
+  assert.deepEqual(log.readme_missing, ['skills:shadcn-ui/ui/shadcn']);
+});

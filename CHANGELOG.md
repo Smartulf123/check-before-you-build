@@ -2,6 +2,16 @@
 
 All notable changes, including weekly catalog updates, are recorded here.
 
+## v1.2.0: 2026-10-18
+
+Changes from the second real-world test.
+
+- **Skills for your coding agent.** Every report now recommends 3 to 6 agent skills matched to the stack: a design skill when there is a user interface, the official skill for each framework or service, and at most one workflow skill. The skills are read before they are recommended, and `verify.mjs` flags any that were not.
+- **Products worth studying.** Up to three real apps or websites that do the idea well, with what to look at and how to study it (design extractors for websites, REA for desktop and Android apps, screenshots for iOS). Links are checked; unreachable ones are labelled.
+- **No build plan.** The report ends with a short next step and points to planning skills such as brainstorming, so it stays focused and shorter.
+- **Cleaner writing.** A plain header sentence instead of a dotted status line, no "·" separators, and stars and license in their own columns.
+- **Fix: edited licenses.** `readme.mjs license` reported MIT for MIT text rewritten as "non-commercial only". Such licenses are now reported as `custom-restricted`.
+
 ## v1.1.0: 2026-10-18
 
 Changes from the first real-world test (a personal health tracker website).
