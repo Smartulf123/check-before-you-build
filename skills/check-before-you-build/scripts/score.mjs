@@ -124,8 +124,13 @@ export function decideVerdict({ sat, gapScore, competitors, now }) {
 
 const isFailed = (status) => status === 'failed' || (status && typeof status === 'object' && status.failed);
 
+/** Sources the skill relies on. Extra sources an agent tries (Reddit, Google Play, …) don't lower confidence. */
+export const CORE_SOURCES = ['catalog', 'github', 'skills', 'plugins', 'mcp', 'npm', 'pypi', 'hn', 'web'];
+
 export function confidence(evidence) {
-  const statuses = Object.values(evidence.sources_status || {});
+  const statuses = Object.entries(evidence.sources_status || {})
+    .filter(([key]) => CORE_SOURCES.includes(key))
+    .map(([, status]) => status);
   const failedSources = statuses.filter(isFailed).length;
   const candidates = evidence.candidates_evaluated ?? (evidence.competitors || []).length;
   const v = evidence.verification;

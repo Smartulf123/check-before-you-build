@@ -30,6 +30,7 @@
 - **activity:** archived 0 · pushed ≤ 90 days 1.0 · ≤ 365 days 0.6 · older 0.2 · unknown 0.6
 - **saturation** = `10 × (1 − e^(−Σ match_weight × activity × popularity))`, with match weights direct 1.0 · partial 0.5 · adjacent 0.1
 - Items with `verified: false` are ignored.
+- Confidence counts failures only among the built-in sources (catalog, github, skills, plugins, mcp, npm, pypi, hn, web), not extra sources an agent tried.
 - Demand is not scored. A skill can't measure it reliably from public posts, so the report shows market signals and tells the user how to test demand with real people.
 
 ## Verdict rules (first match wins)

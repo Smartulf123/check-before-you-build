@@ -187,3 +187,10 @@ test('extreme saturation with only minor gaps is already well covered, even with
   assert.equal(s.decideVerdict({ sat: 10, dem: 9.8, gapScore: 4, competitors: [leader], now }).code, 'DROP');
   assert.equal(s.decideVerdict({ sat: 8.5, dem: 9.8, gapScore: 4, competitors: [leader], now }).code, 'CONTRIBUTE');
 });
+
+test('failed extra sources (Reddit, Google Play) do not lower confidence; core failures do', () => {
+  const many = Array.from({ length: 12 }, (_, i) => comp({ id: `github:a/${i}` }));
+  const base = { competitors: many, verification: { checked: 55, passed: 54 } };
+  assert.equal(s.confidence(evidence({ ...base, sources_status: { github: 'ok', web: 'ok', reddit: 'failed', google_play: 'failed' } })), 'high');
+  assert.equal(s.confidence(evidence({ ...base, sources_status: { github: 'failed', npm: 'failed' } })), 'low');
+});

@@ -130,6 +130,7 @@ The writing rules for reports are adapted from [Humanizer](https://github.com/bl
 - [x] v1.0.0
 - [x] v1.1: recommended stack per layer, parallel research, plain-language writing
 - [x] v1.2: agent skills and products worth studying in every report
+- [x] v1.3: market signals instead of a demand score, two research agents
 - [ ] Weekly catalog updates in CI
 - [ ] More sources (Product Hunt, VS Code marketplace, crates.io)
 - [ ] Watch mode: re-check an idea later and see what changed

@@ -2,11 +2,12 @@
 
 All notable changes, including weekly catalog updates, are recorded here.
 
-## Unreleased
+## v1.3.0: 2026-10-18
 
 - **Demand is no longer scored.** A skill can't measure demand reliably from public posts, and the score looked more precise than it was. The demand research agent and the demand score are gone; checks run two research agents instead of three.
 - **Market signals instead.** For launches, the supply agent collects how the existing products are doing (traction such as ratings and how similar launches went), what their users complain about, and what people use instead. Complaints feed the gaps. The report tells the user to test demand with real people.
 - **Verdict rules** now use saturation, gap and the state of the closest competitors (six rules instead of seven). "Open space" now reads "little exists yet". All eight eval cases keep their verdicts.
+- **Confidence** counts failures only among the built-in sources. Extra sources an agent tries (Reddit, Google Play) are reported but no longer drop confidence to low.
 - **Report fixes:** the verdict and scores no longer run together on one line, and the stack table's popularity column always names its unit.
 
 ## v1.2.0: 2026-10-18

@@ -99,7 +99,7 @@ Cover the whole stack, not only the features that make the idea special.
 
 ## Phase 6: Check facts, then score
 
-Write `evidence.json` following `evidence-schema.md`. Set `rate_limited: true` if a rate limit cut any search short even after retrying (a pause that recovered doesn't count). Then:
+Write `evidence.json` following `evidence-schema.md`. Set `rate_limited: true` if a rate limit cut any search short even after retrying (a pause that recovered doesn't count). In `sources_status`, use the built-in source names (catalog, github, skills, plugins, mcp, npm, pypi, hn, web); extra sources you tried, such as Reddit or Google Play, can be recorded too, but only built-in failures lower confidence. Mention thin extra sources in "Method and coverage". Then:
 
 ```
 node <skill-dir>/scripts/verify.mjs check-reports/<dir>/evidence.json
