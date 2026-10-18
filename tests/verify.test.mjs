@@ -38,7 +38,7 @@ test('fake repos are dropped, renames updated, catalog entries use the snapshot 
       { id: 'github:vercel/next.js', url: 'https://github.com/vercel/next.js', match: 'adjacent', signals: {} },
     ],
     building_blocks: [{ id: 'github:microsoft/playwright', url: 'https://github.com/microsoft/playwright', from_catalog: true, readme_read: true, signals: {} }],
-    demand: [
+    market_signals: [
       { type: 'hn_story', url: 'https://news.ycombinator.com/item?id=1' },
       { type: 'request', url: 'https://example.com/thread' },
     ],
@@ -59,17 +59,17 @@ test('fake repos are dropped, renames updated, catalog entries use the snapshot 
   assert.deepEqual(log.readme_missing, []);
 });
 
-test('dead demand links are dropped; unreachable product sites are kept and labelled', async () => {
+test('dead market-signal links are dropped; unreachable product sites are kept and labelled', async () => {
   mockFetch([
     ['dead.example', { status: 404 }],
     ['product.example', { status: 503 }],
   ]);
   const evidence = {
     competitors: [{ id: 'commercial:acme', url: 'https://product.example', source: 'commercial', match: 'direct', readme_read: true }],
-    demand: [{ type: 'web', url: 'https://dead.example/post' }],
+    market_signals: [{ type: 'web', url: 'https://dead.example/post' }],
   };
   const { log } = await verifyEvidence(evidence);
-  assert.equal(evidence.demand[0].verified, false);
+  assert.equal(evidence.market_signals[0].verified, false);
   assert.equal(evidence.competitors[0].verified, true);
   assert.equal(evidence.competitors[0].link_status, 'unreachable');
   assert.equal(log.labelled.length, 1);

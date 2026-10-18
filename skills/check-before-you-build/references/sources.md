@@ -85,4 +85,4 @@ Add every source you used to `sources_status` in `evidence.json`: `"ok"`, `"skip
 
 ## Not used
 
-Reddit, X, Instagram, TikTok and LinkedIn are not built in (closed, paid or against their terms). If the environment already provides tools for them, they may be used as extra demand evidence, but never required.
+Reddit, X, Instagram, TikTok and LinkedIn are not built in (closed, paid or against their terms). If the environment already provides tools for them, they may be used as extra market signals, but never required.

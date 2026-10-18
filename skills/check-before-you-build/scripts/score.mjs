@@ -10,7 +10,7 @@ const MATCH_WEIGHT = { direct: 1.0, partial: 0.5, adjacent: 0.1 };
 const round1 = (x) => Math.round(x * 10) / 10;
 
 export const LABELS = {
-  BUILD: 'Verdict: open space, worth building',
+  BUILD: 'Verdict: open space, little exists yet',
   BUILD_WITH_ANGLE: 'Verdict: build it with a clear angle',
   CONTRIBUTE: 'Verdict: consider joining an existing project',
   FORK: 'Verdict: consider reviving an abandoned project',
@@ -65,32 +65,6 @@ export function saturation(competitors, now) {
   return { coverage: round1(coverage), score: round1(10 * (1 - Math.exp(-coverage))) };
 }
 
-const OLD_DEMAND_DAYS = 3 * 365;
-
-export function demandWeight(item, now = Date.now()) {
-  // Demand from years ago says little about today: items older than 3 years count a third.
-  const t = Date.parse(item.date ?? '');
-  const age = Number.isNaN(t) ? 1 : (now - t) / 86400000 > OLD_DEMAND_DAYS ? 1 / 3 : 1;
-  return round1(age * baseDemandWeight(item));
-}
-
-function baseDemandWeight(item) {
-  if (item.type === 'hn_story') return (item.points ?? 0) >= 50 ? 1.5 : 0.3;
-  if (item.type === 'github_issue') {
-    // An issue nobody reacted to is one person's wish, not demand (tuned after the M6 eval runs).
-    const plus1 = item.reactions_plus1 ?? 0;
-    return plus1 >= 10 ? 1.5 : plus1 >= 1 ? 0.6 : 0.3;
-  }
-  return 1.0; // request, forum, web, blog: an explicit request or complaint
-}
-
-export function demand(items, competitors, now = Date.now()) {
-  const fromItems = usable(items).reduce((sum, d) => sum + demandWeight(d, now), 0);
-  const strongAdoption = usable(competitors).filter((c) => c.match === 'direct' && popularity(c) >= 0.8).length;
-  const D = fromItems + 2.0 * Math.min(strongAdoption, 2);
-  return { raw: round1(D), score: round1(10 * (1 - Math.exp(-D / 4))) };
-}
-
 /**
  * Model-scored gap, capped by the evidence so the verdict doesn't hinge on gut feel:
  * no evidenced gap → ≤ 2 · one → ≤ 6 · two or three → ≤ 8 · four+, or no active direct competitor → ≤ 10.
@@ -114,13 +88,16 @@ export function gap(evidence, now = Date.now()) {
 /** A project worth joining or reviving needs real adoption (≈ 250+ stars or equivalent). */
 export const MIN_ADOPTION_TO_JOIN = 0.6;
 
-export function decideVerdict({ sat, dem, gapScore, competitors, now }) {
+/**
+ * Verdict from supply and gaps only. Demand is not scored: a skill can't measure it reliably from
+ * public posts, so the report tells the user how to test it with real people instead.
+ */
+export function decideVerdict({ sat, gapScore, competitors, now }) {
   const direct = usable(competitors).filter((c) => c.match === 'direct');
   const permissive = (c) => licenseClass(c.signals?.license) === 'permissive';
 
-  if (dem < 3) return { code: 'DROP', rule: 1, reason: 'Little evidence that people want this.' };
   // In an extremely saturated space, minor gaps (rubric 3–4: polish, small features) don't open it up.
-  if ((sat >= 7 && gapScore < 3) || (sat >= 9 && gapScore < 5)) return { code: 'DROP', rule: 2, reason: 'Well covered by existing projects, with no clear open angle.' };
+  if ((sat >= 7 && gapScore < 3) || (sat >= 9 && gapScore < 5)) return { code: 'DROP', rule: 1, reason: 'Well covered by existing projects, with no clear open angle.' };
 
   const joinable = direct.find((c) => {
     const days = daysSincePush(c, now);
@@ -129,20 +106,20 @@ export function decideVerdict({ sat, dem, gapScore, competitors, now }) {
       (c.coverage_pct ?? 0) >= 80 && popularity(c) >= MIN_ADOPTION_TO_JOIN
     );
   });
-  if (joinable) return { code: 'CONTRIBUTE', rule: 3, reason: `${joinable.name} is active and already covers most of the idea.`, target: joinable.id };
+  if (joinable) return { code: 'CONTRIBUTE', rule: 2, reason: `${joinable.name} is active and already covers most of the idea.`, target: joinable.id };
 
   const best = [...direct].sort((a, b) => popularity(b) - popularity(a))[0];
   if (best) {
     const days = daysSincePush(best, now);
     const inactive = best.signals?.archived || (days !== null && days > 365);
     if (inactive && permissive(best) && (best.coverage_pct ?? 60) >= 60 && popularity(best) >= MIN_ADOPTION_TO_JOIN) {
-      return { code: 'FORK', rule: 4, reason: `${best.name} fits well but is no longer maintained.`, target: best.id };
+      return { code: 'FORK', rule: 3, reason: `${best.name} fits well but is no longer maintained.`, target: best.id };
     }
   }
 
-  if (sat < 4 && dem >= 4) return { code: 'BUILD', rule: 5, reason: 'Little existing coverage, and there is demand.' };
-  if (gapScore >= 5) return { code: 'BUILD_WITH_ANGLE', rule: 6, reason: 'Existing projects cover the idea, but an evidenced gap is open.' };
-  return { code: 'UNCLEAR', rule: 7, reason: 'The evidence is mixed. See what to research next.' };
+  if (sat < 4) return { code: 'BUILD', rule: 4, reason: 'Little exists yet. Test with real users whether people want it.' };
+  if (gapScore >= 5) return { code: 'BUILD_WITH_ANGLE', rule: 5, reason: 'Existing projects cover the idea, but an evidenced gap is open.' };
+  return { code: 'UNCLEAR', rule: 6, reason: 'The evidence is mixed. See what to research next.' };
 }
 
 const isFailed = (status) => status === 'failed' || (status && typeof status === 'object' && status.failed);
@@ -182,14 +159,14 @@ export function validateEvidence(e) {
   if (!e.idea?.text) errors.push('idea.text is required');
   if (!['fun', 'me', 'launch'].includes(e.idea?.purpose)) errors.push('idea.purpose must be fun | me | launch');
   if (!Array.isArray(e.competitors)) errors.push('competitors must be an array');
-  if (e.demand !== undefined && !Array.isArray(e.demand)) errors.push('demand must be an array');
+  if (e.market_signals !== undefined && !Array.isArray(e.market_signals)) errors.push('market_signals must be an array');
   (e.competitors || []).forEach((c, i) => {
     if (!c.id || !c.url) errors.push(`competitors[${i}] needs id and url`);
     if (!(c.match in MATCH_WEIGHT)) errors.push(`competitors[${i}].match must be direct | partial | adjacent`);
     if ((c.match === 'direct' || c.match === 'partial') && !c.match_reason) errors.push(`competitors[${i}] needs match_reason`);
   });
-  (e.demand || []).forEach((d, i) => {
-    if (!d.url) errors.push(`demand[${i}] needs a url`);
+  (e.market_signals || []).forEach((m, i) => {
+    if (!m.url) errors.push(`market_signals[${i}] needs a url`);
   });
   (e.gaps || []).forEach((g, i) => {
     if (!g.statement) errors.push(`gaps[${i}] needs a statement`);
@@ -206,22 +183,21 @@ export function scoreEvidence(evidence, now = Date.now()) {
   }
   const competitors = evidence.competitors || [];
   const sat = saturation(competitors, now);
-  const dem = demand(evidence.demand || [], competitors, now);
   const g = gap(evidence, now);
   const purpose = evidence.idea.purpose;
-  // Fun and personal projects skip demand research, so a verdict would be meaningless: none is computed.
+  // Fun and personal projects get no verdict, only a hint.
   if (purpose !== 'launch') {
     return {
-      scores: { saturation: sat.score, demand: null, gap: null },
+      scores: { saturation: sat.score, gap: null },
       score_details: { coverage: sat.coverage },
       verdict: { code: null, rule: null, reason: 'No verdict for fun or personal projects.', confidence: confidence(evidence) },
       display: display(null, purpose, sat.score),
     };
   }
-  const verdict = decideVerdict({ sat: sat.score, dem: dem.score, gapScore: g.score, competitors, now });
+  const verdict = decideVerdict({ sat: sat.score, gapScore: g.score, competitors, now });
   return {
-    scores: { saturation: sat.score, demand: dem.score, gap: g.score },
-    score_details: { coverage: sat.coverage, demand_raw: dem.raw, evidenced_gaps: g.evidenced_gaps, gap_cap: g.cap },
+    scores: { saturation: sat.score, gap: g.score },
+    score_details: { coverage: sat.coverage, evidenced_gaps: g.evidenced_gaps, gap_cap: g.cap },
     verdict: { ...verdict, label: LABELS[verdict.code], confidence: confidence(evidence) },
     display: display(verdict.code, purpose, sat.score),
   };

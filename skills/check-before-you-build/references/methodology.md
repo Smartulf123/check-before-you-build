@@ -8,8 +8,8 @@ Building something that already exists is fine. The skill informs, it never forb
 
 | Purpose | Signals in the idea text | Effect |
 |---|---|---|
-| `fun` | "for fun", "to learn", "practice", "side project", "hobby" | No verdict shown. Skip demand and gaps. Emphasise projects to learn from and building blocks. |
-| `me` | "for myself", "my own use", "which I can use", "just for me", "for my team", "personal tool" | No verdict shown. Skip demand; short gaps. Hint at existing tools that might save time. |
+| `fun` | "for fun", "to learn", "practice", "side project", "hobby" | No verdict shown. Skip market signals and gaps. Emphasise projects to learn from and building blocks. |
+| `me` | "for myself", "my own use", "which I can use", "just for me", "for my team", "personal tool" | No verdict shown. Skip market signals; short gaps. Hint at existing tools that might save time. |
 | `launch` | "launch", "publish", "users", "sell", "viral", "startup", "open source it", "share on social media", "get stars" | Full verdict with friendly label. |
 
 Priority: `--for` flag → inferred from the text → default `launch`. Record `purpose_source` as `explicit`, `inferred` or `default`. With `default`, end the summary with: *"Just building for fun, to learn or for yourself? Ignore the verdict, and the building blocks below are for you."*
@@ -62,20 +62,21 @@ Ask one clarifying question only if no meaningful keywords can be derived (e.g. 
 
 **Judge relevance yourself.** npm and skills.sh rank by popularity, and GitHub search returns spam. Read descriptions. Fetch a README with web fetch when unsure.
 
-## Phase 3: Demand (launch only)
+## Phase 3: Market signals (launch only)
 
-1. `hn.mjs search <keywords>` for the concept, and `--tags show_hn` for similar launches (points show how launches performed). Count a launch as demand only when it is the same concept; a launch of a broader tool (a general research agent for a social-research idea) is context, not demand.
-2. `github.mjs issues <owner/repo>` for the top 3 (standard) or 5 (deep) direct/partial competitors. Feature requests and complaints are unmet demand. Titles matter even with few thumbs-up reactions.
-3. Web search: "how do I …", "is there a tool that …", forum and blog posts asking for this. A demand item must show people wanting, asking for or complaining about something. Background pages (laws, statistics, news about a market) are context: mention them in the report, but don't add them to `demand`.
-4. Each item: `type` (`hn_story` for anything on HN, including Ask HN | `github_issue` | `request` | `forum` | `web`), `date` (items over 3 years old count a third), `title`, `url`, engagement (`points`, `reactions_plus1`, `comments`; leave a field out when it's unknown, don't guess), and a verbatim `quote` of at most 25 words when there is one. An issue with no thumbs-up counts for little; prefer evidence that several people want the thing.
+Demand is not scored: a skill can't measure it reliably from public posts. Instead, collect three kinds of market signal that say how the existing products are doing. The supply agent gathers them while it researches competitors.
 
-Competitor adoption is added automatically by `score.mjs`. Don't list it as a demand item.
+1. **Traction.** How the closest products are doing: stars, installs, app-store ratings and rating counts, and how same-concept launches performed (`hn.mjs search <keywords> --tags show_hn`; points show how a launch went). "Five apps, none with more than 2 ratings" and "one leader with 22k ratings" are very different markets.
+2. **Complaints.** What users say is missing or annoying in the existing products: `github.mjs issues <owner/repo>` for the top 3 (standard) or 5 (deep) direct and partial competitors (the thumbs-up count shows how many share it), and app-store reviews or forum posts found by web search. These become evidence for gaps.
+3. **Substitutes.** What people use instead of a dedicated tool (a spreadsheet, a general AI chat app, a feature inside a bigger product). A strong free substitute is often the main risk.
+
+Each signal: `type` (`traction` | `complaint` | `substitute`), `title`, `url`, `date` when known, a short `note`, and a verbatim `quote` of at most 25 words when there is one. Background pages (laws, statistics, market news) are context: mention them in the report if useful, but don't add them as signals. Whether people want the idea is for the user to test with real people; the report's next step says how.
 
 ## Phase 4: Gaps
 
 - launch: full. me: short ("what existing tools lack, if you want it your way"). fun: skip.
 - Collect weaknesses of the top competitors from READMEs (limitations sections), open issues and complaints.
-- Unmet requests: demand items that no direct competitor satisfies.
+- Complaints from the market signals that no direct competitor solves.
 - Stale competitors: archived, or no push in over 12 months.
 - Write 1–4 gap statements. Each needs `evidence` (URLs) and `checked` (where you confirmed the competitors lack it, e.g. "competitor-a README", "competitor-b issues").
 - "Better UX" is not a gap unless users complain about the UX.
@@ -105,14 +106,14 @@ node <skill-dir>/scripts/verify.mjs check-reports/<dir>/evidence.json
 node <skill-dir>/scripts/score.mjs  check-reports/<dir>/evidence.json
 ```
 
-Verify first: it drops what doesn't exist and refreshes the numbers that scoring uses (details in phase 7). If verify lists `readme_missing`, read those READMEs, set `readme_read: true`, and run verify again before scoring. `score.mjs` validates the file, computes saturation, demand and gap, applies verdict rules 1–7 and writes the result back. If it reports `ValidationError`, fix the evidence and run it again. Never write the verdict yourself.
+Verify first: it drops what doesn't exist and refreshes the numbers that scoring uses (details in phase 7). If verify lists `readme_missing`, read those READMEs, set `readme_read: true`, and run verify again before scoring. `score.mjs` validates the file, computes saturation and gap, applies verdict rules 1–6 and writes the result back. If it reports `ValidationError`, fix the evidence and run it again. Never write the verdict yourself.
 
 ## Phase 7: Write
 
 What `verify.mjs` (run in phase 6) does:
 - verifies catalog entries from the weekly snapshot (no GitHub calls)
 - re-fetches every other GitHub repo (`github:` ids) and npm package: missing → `verified: false`; renamed → id and URL updated; numbers refreshed, with > 10 % drift logged as corrections. Skills, plugins and MCP servers that live inside a bigger repo keep their own signals (they never inherit the host repo's stars).
-- checks demand and product URLs: dead demand links are dropped, unreachable product sites are kept with `link_status: "unreachable"`
+- checks market-signal and product URLs: dead signal links are dropped, unreachable product sites are kept with `link_status: "unreachable"`
 - writes `verification: { checked, passed, corrected, dropped }` into the file
 - lists `readme_missing` for shortlisted items that have a README you haven't read
 

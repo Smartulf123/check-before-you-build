@@ -1,6 +1,6 @@
 # Sub-agent briefs
 
-In Claude Code, right after phase 1, start these sub-agents **in a single message** with the Agent tool so they run at the same time: supply and building blocks always, demand only for the `launch` purpose. Give each one:
+In Claude Code, right after phase 1, start these two sub-agents **in a single message** with the Agent tool so they run at the same time. Give each one:
 
 - the `idea` object from phase 1 (including `search_terms`, `components`, `layers`, `look_and_feel` and `references`),
 - the mode and its budget from SKILL.md,
@@ -17,18 +17,12 @@ Shared rules for every sub-agent: cite nothing from memory, use the scripts, rec
 > Follow `references/methodology.md` phase 2 and the query rules in `references/sources.md`. Search with the user's words and with the related words of the domain (a health tracker is also a fitness, workout, nutrition and sleep tracker).
 > Run catalog, GitHub (keyword sets + topic searches), and the registries that fit the form factors (skills.sh, plugins, MCP, npm, PyPI via web search), plus a web search for commercial products.
 > For purpose `me` or `fun`, always include the best-known mainstream apps and the most popular self-hosted project in the space.
+> For purpose `launch`, also collect the market signals (methodology phase 3): traction of the closest products, complaints in their issues and reviews, and substitutes people use instead.
 > Also pick up to 3 real products worth studying (methodology phase 5, step 5) from what you found, with what to look at and how to study it.
 > Deduplicate, classify each candidate (direct/partial/adjacent with match_reason; coverage_pct for direct), and keep at most 15 (always every direct match).
-> Return JSON: `{ "competitors": [...], "inspiration": [...], "candidates_evaluated": n, "sources_status": {...}, "rate_limited": bool }`.
+> Return JSON: `{ "competitors": [...], "market_signals": [...], "inspiration": [...], "candidates_evaluated": n, "sources_status": {...}, "rate_limited": bool }`.
 
-## 2. Demand agent (launch purpose only)
-
-> You are the demand researcher for check-before-you-build. Find evidence that people want this, and what they complain about in existing tools.
-> Follow `references/methodology.md` phase 3. Use `hn.mjs` (stories and show_hn), web search for requests and questions, and once the supply agent's top competitors are known (or from your own quick `github.mjs search`), `github.mjs issues` for the top 3–5.
-> Every item needs a URL. Quotes must be verbatim and at most 25 words.
-> Return JSON: `{ "demand": [...], "competitor_issues": { "owner/repo": [...] }, "sources_status": {...} }`.
-
-## 3. Building-blocks agent
+## 2. Building-blocks agent
 
 > You are the building-blocks researcher for check-before-you-build. Cover the whole stack.
 > Follow `references/methodology.md` phase 5:
@@ -41,5 +35,5 @@ Shared rules for every sub-agent: cite nothing from memory, use the scripts, rec
 
 ## Merging
 - Merge `sources_status` (a failure in any agent wins over "ok" for that source).
-- Use `competitor_issues` in phase 4 (gaps).
+- Use the complaint signals in phase 4 (gaps).
 - If a sub-agent fails completely, run its phase yourself at quick-mode budget and lower confidence.

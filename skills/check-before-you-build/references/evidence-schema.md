@@ -40,17 +40,14 @@
     }
   ],
   "candidates_evaluated": 34,
-  "demand": [
+  "market_signals": [                      // launch only (methodology phase 3)
     {
-      "type": "hn_story",                   // hn_story | github_issue | request | forum | web
+      "type": "traction",                   // traction | complaint | substitute
       "title": "…",
       "url": "https://news.ycombinator.com/item?id=…", // ✱
       "date": "2026-05-02",
-      "points": 120,
-      "reactions_plus1": 0,
-      "comments": 30,
-      "quote": "≤ 25 words, verbatim",
-      "verified": true
+      "note": "7 same-concept Show HN launches, 1 to 3 points each",
+      "quote": "≤ 25 words, verbatim, when there is one"
     }
   ],
   "gaps": [

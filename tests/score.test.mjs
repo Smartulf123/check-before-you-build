@@ -21,15 +21,12 @@ const comp = (over = {}) => ({
 const evidence = (over = {}) => ({
   idea: { text: 'an idea', purpose: 'launch' },
   competitors: [],
-  demand: [],
   gaps: [],
   gap_score: 0,
   sources_status: { github: 'ok', npm: 'ok' },
   ...over,
 });
 
-const hnHit = (points) => ({ type: 'hn_story', url: 'https://news.ycombinator.com/item?id=1', points });
-const request = () => ({ type: 'request', url: 'https://example.com/q' });
 
 test('popularity uses one signal per source', () => {
   assert.equal(s.popularity({ signals: { stars: 9999 } }), 1);
@@ -57,51 +54,48 @@ test('saturation sanity examples from SPEC §9.1', () => {
   assert.equal(s.saturation([comp({ verified: false })], NOW).score, 0);
 });
 
-test('rule 1: no demand → DROP', () => {
+test('nothing exists yet → open space (rule 4); demand is not scored', () => {
   const r = s.scoreEvidence(evidence(), NOW);
+  assert.equal(r.verdict.code, 'BUILD');
+  assert.equal(r.verdict.rule, 4);
+  assert.equal(r.scores.demand, undefined);
+});
+
+test('rule 1: saturated and no gap → DROP', () => {
+  const e = evidence({ competitors: [comp(), comp({ id: 'github:c/d', coverage_pct: 50 })], gap_score: 2 });
+  const r = s.scoreEvidence(e, NOW);
   assert.equal(r.verdict.code, 'DROP');
   assert.equal(r.verdict.rule, 1);
 });
 
-test('rule 2: saturated and no gap → DROP', () => {
-  const e = evidence({ competitors: [comp(), comp({ id: 'github:c/d', coverage_pct: 50 })], gap_score: 2 });
-  const r = s.scoreEvidence(e, NOW);
-  assert.equal(r.verdict.code, 'DROP');
-  assert.equal(r.verdict.rule, 2);
-});
-
-test('rule 3: active permissive project covering ≥ 80% → CONTRIBUTE', () => {
+test('rule 2: active permissive project covering ≥ 80% → CONTRIBUTE', () => {
   const e = evidence({
     competitors: [comp({ coverage_pct: 85 })],
-    demand: [request(), request()],
     gaps: [{ statement: 'g', evidence: ['https://x'] }],
     gap_score: 5,
   });
   assert.equal(s.scoreEvidence(e, NOW).verdict.code, 'CONTRIBUTE');
 });
 
-test('rule 4: best direct project abandoned and permissive → FORK', () => {
+test('rule 3: best direct project abandoned and permissive → FORK', () => {
   const e = evidence({
     competitors: [comp({ coverage_pct: 70, signals: { pushed_at: daysAgo(700), stars: 2000 } })],
-    demand: [request(), request(), hnHit(120)],
     gaps: [{ statement: 'g', evidence: ['https://x'] }],
     gap_score: 6,
   });
   assert.equal(s.scoreEvidence(e, NOW).verdict.code, 'FORK');
 });
 
-test('rule 5: little coverage with demand → BUILD', () => {
+test('rule 4: little coverage → BUILD', () => {
   const e = evidence({
     competitors: [comp({ match: 'adjacent', signals: { stars: 100 } })],
-    demand: [request(), request(), request(), hnHit(80)],
   });
   assert.equal(s.scoreEvidence(e, NOW).verdict.code, 'BUILD');
 });
 
-test('rule 6: saturated but evidenced gap → BUILD_WITH_ANGLE', () => {
+test('rule 5: saturated but evidenced gap → BUILD_WITH_ANGLE', () => {
   const e = evidence({
     competitors: [comp({ coverage_pct: 60 }), comp({ id: 'github:c/d', coverage_pct: 50 })],
-    demand: [request()],
     gaps: [{ statement: 'nobody verifies output', evidence: ['https://x'] }],
     gap_score: 6,
   });
@@ -110,10 +104,9 @@ test('rule 6: saturated but evidenced gap → BUILD_WITH_ANGLE', () => {
   assert.equal(r.display.headline, s.LABELS.BUILD_WITH_ANGLE);
 });
 
-test('rule 7: mixed evidence → UNCLEAR', () => {
+test('rule 6: mixed evidence → UNCLEAR', () => {
   const e = evidence({
-    competitors: [comp({ match: 'partial', signals: { stars: 800 } })],
-    demand: [request(), request()],
+    competitors: [comp({ match: 'partial' }), comp({ id: 'github:c/d', match: 'partial' })],
     gap_score: 4,
     gaps: [{ statement: 'small', evidence: ['https://x'] }],
   });
@@ -134,17 +127,10 @@ test('gap is capped by the amount of evidence', () => {
   assert.equal(s.gapCap(0, false), 2);
 });
 
-test('issues without reactions count little as demand', () => {
-  assert.equal(s.demandWeight({ type: 'github_issue', reactions_plus1: 0 }), 0.3);
-  assert.equal(s.demandWeight({ type: 'github_issue', reactions_plus1: 3 }), 0.6);
-  assert.equal(s.demandWeight({ type: 'github_issue', reactions_plus1: 12 }), 1.5);
-});
-
 test('CONTRIBUTE and FORK need a target with real adoption', () => {
   const tinyActive = comp({ coverage_pct: 90, signals: { stars: 12 } });
   const e = evidence({
     competitors: [tinyActive, comp({ id: 'github:c/d', signals: { stars: 15 } })],
-    demand: [request(), request(), request()],
     gaps: [{ statement: 'g', evidence: ['u'] }],
     gap_score: 6,
   });
@@ -152,7 +138,6 @@ test('CONTRIBUTE and FORK need a target with real adoption', () => {
   assert.notEqual(r.verdict.code, 'CONTRIBUTE');
   const tinyStale = evidence({
     competitors: [comp({ coverage_pct: 80, signals: { stars: 20, pushed_at: daysAgo(700) } })],
-    demand: [request(), request(), request()],
     gaps: [{ statement: 'g', evidence: ['u'] }],
     gap_score: 6,
   });
@@ -176,14 +161,14 @@ test('fun and personal projects get no verdict, only a hint', () => {
   assert.match(me.display.hint, /save you time/);
   assert.equal(fun.verdict.code, null);
   assert.equal(me.verdict.code, null);
-  assert.equal(me.scores.demand, null);
+  assert.equal(me.scores.gap, null);
 });
 
 test('validation rejects incomplete evidence', () => {
-  const errors = s.validateEvidence({ idea: { text: 'x', purpose: 'maybe' }, competitors: [{ id: 'a', url: 'u', match: 'direct' }], demand: [{}] });
+  const errors = s.validateEvidence({ idea: { text: 'x', purpose: 'maybe' }, competitors: [{ id: 'a', url: 'u', match: 'direct' }], market_signals: [{}] });
   assert.ok(errors.some((e) => e.includes('purpose')));
   assert.ok(errors.some((e) => e.includes('match_reason')));
-  assert.ok(errors.some((e) => e.includes('demand[0]')));
+  assert.ok(errors.some((e) => e.includes('market_signals[0]')));
   assert.throws(() => s.scoreEvidence({ idea: {} }, NOW), /invalid evidence/);
 });
 
@@ -194,13 +179,6 @@ test('display never tells the user not to build', () => {
       assert.doesNotMatch(`${d.headline} ${d.hint || ''}`, /don't build|shouldn't/i);
     }
   }
-});
-
-test('demand older than three years counts a third', () => {
-  const now = Date.parse('2026-10-17');
-  assert.equal(s.demandWeight({ type: 'hn_story', points: 74, date: '2013-06-20' }, now), 0.5);
-  assert.equal(s.demandWeight({ type: 'hn_story', points: 74, date: '2025-06-20' }, now), 1.5);
-  assert.equal(s.demandWeight({ type: 'request' }, now), 1);
 });
 
 test('extreme saturation with only minor gaps is already well covered, even with a joinable project', () => {

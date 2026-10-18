@@ -3,7 +3,7 @@
 // - Catalog entries: verified from the weekly snapshot (no GitHub calls).
 // - Other GitHub repos: re-fetched; missing → dropped, renamed → updated, numbers refreshed.
 // - npm packages: re-fetched; missing → dropped.
-// - Demand items and commercial products: URL checked; dead demand links dropped, dead product sites labelled.
+// - Market signals and commercial products: URL checked; dead signal links dropped, dead product sites labelled.
 // Numbers that drift > 10 % from the live value are corrected and logged.
 // Usage: node verify.mjs <evidence.json> [--dry-run]
 import { readFile, writeFile } from 'node:fs/promises';
@@ -142,7 +142,7 @@ export async function verifyEvidence(evidence, { snapshot = null, catalogIds = n
     if (p.verified === false) continue;
     await verifyUrlItem(p, { dropDead: false });
   }
-  for (const d of evidence.demand || []) {
+  for (const d of evidence.market_signals || []) {
     if (d.verified === false) continue;
     // HN items come straight from the Algolia API; their discussion URLs are stable.
     if (/news\.ycombinator\.com\/item\?id=/.test(d.url || '')) {

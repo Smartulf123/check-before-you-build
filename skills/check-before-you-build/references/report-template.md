@@ -9,7 +9,9 @@ Checked on <date written out, e.g. 18 October 2026>, <purpose in words: "for you
 
 ## Summary
 **<display.headline>**
-<!-- launch --> Saturation <x>/10, demand <y>/10, gap <z>/10.
+
+<!-- launch --> Saturation <x>/10, gap <y>/10.
+
 <2–4 sentences: the reason for the verdict (launch) or the hint (me / fun), the closest existing project, and the recommended stack in one line.>
 
 ## What already exists
@@ -20,10 +22,13 @@ Checked on <date written out, e.g. 18 October 2026>, <purpose in words: "for you
 
 At most 10 rows. Order by match (direct, partial, adjacent), then by popularity. For `me` and `fun`, include the mainstream apps and the most popular self-hosted option. Write "maintainer pick" in the last column for catalog entries with an exception. Use the catalog's `not_for` to say why a strong project still leaves room.
 
-## Demand *(launch)*
-- Hacker News: [title](url), 120 points, May 2026. "short quote"
-- GitHub issue: [#123 title](url), 14 thumbs-up
-- Web: [title](url). "short quote"
+## Market signals *(launch)*
+How the existing products are doing, in 3–6 bullets: traction (ratings, stars, how similar launches went), the main complaints, and substitutes people use instead.
+- Traction: <e.g. five App Store apps, none with more than 2 ratings; seven Show HN launches with 1 to 3 points>. [link](url)
+- Complaint: [title](url). "short quote"
+- Substitute: <what people use instead and why it matters>. [link](url)
+
+Whether people want this is for you to test with real users; the next step says how.
 
 ## Gaps *(launch: full, me: short)*
 1. <gap statement>. Evidence: [link](url). Checked: <where>.
@@ -31,9 +36,11 @@ At most 10 rows. Order by match (direct, partial, adjacent), then by popularity.
 ## Recommended stack
 One row per layer from phase 1, in build order. Picks should work together.
 
-| Layer | Top pick | Stars | License | Alternative | Why it fits this project |
+| Layer | Top pick | Popularity | License | Alternative | Why it fits this project |
 |---|---|---|---|---|---|
-| Frontend framework | [Next.js](url) | 143k | MIT | [SvelteKit](url) | <one line from the README, tied to this idea> |
+| Frontend framework | [Next.js](url) | 143k stars | MIT | [SvelteKit](url) | <one line from the README, tied to this idea> |
+
+In the Popularity column, always name the unit (stars, installs, weekly downloads) and use the main project's numbers, not a small SDK repo's.
 
 After the table, one line per layer only where there is something to watch out for (from `not_for` or the README).
 
@@ -91,7 +98,7 @@ Plain text, no emojis, no "·" separators, at most 8 lines:
 
 ```
 <display.headline> (confidence: <confidence>)
-Saturation x/10, demand y/10, gap z/10                (launch only)
+Saturation x/10, gap y/10                             (launch only)
 Closest existing: <name>, <popularity>, updated <when>, <license>
 Open gap: <top gap>                                   (launch / me)
 Recommended stack: <pick>, <pick>, <pick>, <pick>

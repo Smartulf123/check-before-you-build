@@ -25,6 +25,8 @@ A case passes when every `must_find` project appears among the competitors, the 
 
 Every run also passed the fact-check: all cited repos, packages and links existed, with 0 corrections and 0 drops across the runs.
 
+After v1.2 the demand score was removed (market signals replaced it, and the verdict uses saturation and gap only). All eight cases were re-scored from their saved evidence with the new rules: same verdicts, 8 of 8 pass.
+
 ## What the runs changed
 
 Wave 1 (cases 1–4, before tuning) passed 2 of 4. The failures and the fixes:

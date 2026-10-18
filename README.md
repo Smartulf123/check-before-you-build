@@ -2,7 +2,7 @@
 
 Is this worth building, and what can I build it with?
 
-check-before-you-build is an open-source agent skill. Describe an idea and it searches GitHub, skills.sh, Claude plugin marketplaces, MCP registries, npm, PyPI and Hacker News, then writes a report: what already exists, whether people want it, where the gap is, a recommended stack, agent skills for your coding agent, and real products worth studying.
+check-before-you-build is an open-source agent skill. Describe an idea and it searches GitHub, skills.sh, Claude plugin marketplaces, MCP registries, npm, PyPI and Hacker News, then writes a report: what already exists, how those products are doing, where the gap is, a recommended stack, agent skills for your coding agent, and real products worth studying.
 
 ## Why
 
@@ -11,7 +11,7 @@ Building is cheap now. Spending a weekend or a month on something that already e
 Most idea validators give an opinion about market size. This one collects evidence and links every claim:
 
 - **Existing projects.** Repos, skills, MCP servers, packages and apps, with live stars, last-commit dates and licenses. The agent reads each README before judging it.
-- **Demand.** Hacker News threads, feature requests on competitors' issue trackers and questions on the web.
+- **Market signals.** How the existing products are doing (ratings, stars, how similar launches went), what their users complain about, and what people use instead. Demand itself isn't scored: no skill can measure it reliably from public posts, so the report tells you how to test it with real people.
 - **Gaps.** What the existing projects lack, with a link for each gap.
 - **What to build it with.** A catalog of 1,907 quality-checked repos supplies a top pick and an alternative for every layer of the stack, plus repos to fork, learn from or contribute to, and the agent skills that help your coding agent use them.
 
@@ -44,7 +44,7 @@ Does this already exist? A CLI that turns my time logs into invoices.
 /check-before-you-build A fancy portfolio website with scroll animations --for me
 ```
 
-Modes are `--quick` (catalog and GitHub only), standard (the default) and `--deep` (more queries and issue mining). Set the purpose with `--for fun`, `--for me` or `--for launch`, or let the skill infer it from your wording. In Claude Code, a standard check starts three sub-agents in parallel and takes a few minutes.
+Modes are `--quick` (catalog and GitHub only), standard (the default) and `--deep` (more queries and issue mining). Set the purpose with `--for fun`, `--for me` or `--for launch`, or let the skill infer it from your wording. In Claude Code, a check starts two research agents in parallel and takes about 10 to 15 minutes.
 
 ## What you get
 
@@ -57,7 +57,7 @@ The report has these sections:
 
 1. **Summary.** The verdict (for launches) or a short hint (for personal and learning projects), the closest existing project and the recommended path.
 2. **What already exists.** A table ordered by how closely each project matches, then by popularity.
-3. **Demand and gaps,** each item with a link.
+3. **Market signals and gaps,** each item with a link.
 4. **Recommended stack.** One row per layer (framework, UI, styling, database, auth, hosting and so on) with a top pick, an alternative and why it fits.
 5. **Skills for your coding agent.** A design skill when there is a user interface, and the official skill for each framework or service in the stack.
 6. **Building blocks for the features** that make the idea special, plus look-and-feel picks when you ask for something fancy.
@@ -75,12 +75,12 @@ Building something that already exists is how most people learn, so the skill ne
 |---|---|
 | `--for fun` | No verdict. Projects worth learning from and the stack to build with. |
 | `--for me` | No verdict. Existing tools that might save you time, including the mainstream apps, then the stack. |
-| `--for launch` | The full verdict with demand, gaps and how to stand out. |
+| `--for launch` | The full verdict with market signals, gaps and how to stand out. |
 
 ## How it works
 
 1. **Understand** the idea: summary, project type, search terms from several angles (your words, related words, developer jargon, the problem, bigger tools that might include it), the stack layers the project type needs, and any style or reference apps you mention.
-2. **Research** in parallel: existing projects, demand, and building blocks for every layer and feature.
+2. **Research** in parallel with two agents: existing projects and market signals, and building blocks for every layer and feature.
 3. **Gaps**: what existing projects lack, each with evidence.
 4. **Fact-check, then score.** Every cited repo, package and link is checked again; fake or renamed repos are dropped or fixed. Fixed rules then compute the verdict from the evidence. The model never writes it.
 5. **Write** the report.
@@ -91,11 +91,11 @@ The agent does the reasoning. Small, dependency-free Node scripts fetch the fact
 
 | Verdict | Meaning |
 |---|---|
-| Open space, worth building | Little supply and real demand |
+| Open space, little exists yet | Little supply; test demand with real users |
 | Build it with a clear angle | It exists, but there is an evidenced gap |
 | Consider joining an existing project | An active, adopted, permissive project already does most of it |
 | Consider reviving an abandoned project | The leader is archived or inactive and can be forked |
-| Already well covered | Saturated with no gap, or no sign of demand |
+| Already well covered | Saturated with no evidenced gap |
 | Mixed signals | The evidence doesn't point one way |
 
 Rules and formulas: [scoring.md](skills/check-before-you-build/references/scoring.md).
