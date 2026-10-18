@@ -2,22 +2,11 @@
 
 Is this worth building, and what can I build it with?
 
-check-before-you-build is an open-source agent skill. Describe an idea and it searches GitHub, skills.sh, Claude plugin marketplaces, MCP registries, npm, PyPI and Hacker News, then writes a report: what already exists, how those products are doing, where the gap is, a recommended stack, agent skills for your coding agent, and real products worth studying.
-
-## Why
-
-Building is cheap now. Spending a weekend or a month on something that already exists, or that nobody wants, is still expensive.
-
-Most idea validators give an opinion about market size. This one collects evidence and links every claim:
-
-- **Existing projects.** Repos, skills, MCP servers, packages and apps, with live stars, last-commit dates and licenses. The agent reads each README before judging it.
-- **Market signals.** How the existing products are doing (ratings, stars, how similar launches went), what their users complain about, and what people use instead. Demand itself isn't scored: no skill can measure it reliably from public posts, so the report tells you how to test it with real people.
-- **Gaps.** What the existing projects lack, with a link for each gap.
-- **What to build it with.** A catalog of 1,907 quality-checked repos supplies a top pick and an alternative for every layer of the stack, plus repos to fork, learn from or contribute to, and the agent skills that help your coding agent use them.
+Describe an idea to your coding agent and get a report back: what already exists, how those products are doing, where the gap is, what to build it with, which agent skills help, and which real products are worth studying. Every repo, link and number in the report is checked before you see it.
 
 ## Install
 
-With the open [skills](https://skills.sh) CLI (Claude Code, Codex, OpenCode, Cursor and others):
+With the [skills](https://skills.sh) CLI (Claude Code, Codex, OpenCode, Cursor and other agents):
 
 ```bash
 npx skills add Smartulf123/check-before-you-build
@@ -30,114 +19,80 @@ Or as a Claude Code plugin:
 /plugin install check-before-you-build@check-before-you-build
 ```
 
-You need Node 20 or newer. An authenticated [`gh`](https://cli.github.com/) CLI is strongly recommended: GitHub allows 10 searches a minute without it and 30 with it. No paid API keys.
+You need Node 20 or newer. A logged-in [GitHub CLI](https://cli.github.com/) (`gh auth login`) is strongly recommended, because GitHub allows far more searches with it. No paid API keys.
 
 ## Use
 
-Describe what you're about to build:
+Describe what you want to build, in your own words and your own language:
 
 ```
-Does this already exist? A CLI that turns my time logs into invoices.
+/check-before-you-build A mobile app that turns a photo of my fridge into recipe ideas. I want to launch it.
 ```
 
 ```
-/check-before-you-build A fancy portfolio website with scroll animations --for me
+/check-before-you-build A website for myself that tracks my sleep, weight and workouts.
 ```
 
-Modes are `--quick` (catalog and GitHub only), standard (the default) and `--deep` (more queries and issue mining). Set the purpose with `--for fun`, `--for me` or `--for launch`, or let the skill infer it from your wording. In Claude Code, a check starts two research agents in parallel and takes about 10 to 15 minutes.
+Or just ask: "Does this already exist? A CLI that turns my time logs into invoices."
+
+A check takes about 10 to 15 minutes. Add `--quick` for a faster, lighter check or `--deep` for a more thorough one.
 
 ## What you get
 
-Each run writes two files to `check-reports/<date>-<slug>/`:
+A `report.md` file in `check-reports/`, written in plain language:
 
-- `report.md`, the full report
-- `evidence.json`, everything collected, with scores and the fact-check log
+- **Summary:** the verdict, the closest existing product and the angle the evidence supports
+- **What already exists:** the closest projects and apps, with stars or ratings, last update and license
+- **Market signals** (for launches): how the existing products are doing, what their users complain about, and what people use instead
+- **Gaps:** what the existing products lack, each with a link
+- **Recommended stack:** a top pick and an alternative for every part of the project, from framework to hosting
+- **Skills for your coding agent:** the skills that help your agent build with that stack
+- **Building blocks** for the features that make your idea special, and look-and-feel picks when you ask for something fancy
+- **Products worth studying:** real apps and websites that do it well, what to look at in each, and how to study them
+- **Next step:** the one thing to do first
 
-The report has these sections:
+An excerpt from a real check of the fridge-photo app:
 
-1. **Summary.** The verdict (for launches) or a short hint (for personal and learning projects), the closest existing project and the recommended path.
-2. **What already exists.** A table ordered by how closely each project matches, then by popularity.
-3. **Market signals and gaps,** each item with a link.
-4. **Recommended stack.** One row per layer (framework, UI, styling, database, auth, hosting and so on) with a top pick, an alternative and why it fits.
-5. **Skills for your coding agent.** A design skill when there is a user interface, and the official skill for each framework or service in the stack.
-6. **Building blocks for the features** that make the idea special, plus look-and-feel picks when you ask for something fancy.
-7. **Products worth studying.** Up to three real apps or websites that do it well, what to look at in each, and how to study them (design extractors for websites, REA for desktop and Android apps).
-8. **Next step,** in a line or two. For a step-by-step plan, hand the report to a planning skill such as [brainstorming](https://github.com/obra/superpowers).
-9. **Sources.** Every link used. The full search and fact-check log is in `evidence.json`.
+> **Verdict: build it with a clear angle.** At least six iPhone apps already turn a fridge photo into recipes, but the best has 10 App Store ratings, and similar launches on Hacker News scored 1 to 3 points. The real competition is free: SuperCook (22K ratings, no photo) and asking ChatGPT with a photo. The angle the evidence supports: free first scans on iPhone and Android, and a fridge the app remembers between photos.
 
-The report is written in your language, in plain prose.
+## Building for fun, for yourself, or for a launch
 
-### Building for fun or for yourself
+Building something that already exists is how most people learn, so the report never tells you not to build. It adapts to why you're building:
 
-Building something that already exists is how most people learn, so the skill never tells you not to build. Tell it why you're building and the report adapts:
-
-| Purpose | What you get |
+| You say | You get |
 |---|---|
-| `--for fun` | No verdict. Projects worth learning from and the stack to build with. |
-| `--for me` | No verdict. Existing tools that might save you time, including the mainstream apps, then the stack. |
-| `--for launch` | The full verdict with market signals, gaps and how to stand out. |
+| "just for fun", "to learn" | No verdict. Projects worth learning from and what to build with. |
+| "for myself", "for my team" | No verdict. Existing tools that might save you time, then what to build with. |
+| "I want to launch it" | A verdict, market signals, gaps and how to stand out. |
 
-## How it works
+You can also set it directly with `--for fun`, `--for me` or `--for launch`.
 
-1. **Understand** the idea: summary, project type, search terms from several angles (your words, related words, developer jargon, the problem, bigger tools that might include it), the stack layers the project type needs, and any style or reference apps you mention.
-2. **Research** in parallel with two agents: existing projects and market signals, and building blocks for every layer and feature.
-3. **Gaps**: what existing projects lack, each with evidence.
-4. **Fact-check, then score.** Every cited repo, package and link is checked again; fake or renamed repos are dropped or fixed. Fixed rules then compute the verdict from the evidence. The model never writes it.
-5. **Write** the report.
-
-The agent does the reasoning. Small, dependency-free Node scripts fetch the facts, so numbers come from APIs, not from model memory.
-
-### Verdicts
+## Verdicts
 
 | Verdict | Meaning |
 |---|---|
-| Open space, little exists yet | Little supply; test demand with real users |
-| Build it with a clear angle | It exists, but there is an evidenced gap |
-| Consider joining an existing project | An active, adopted, permissive project already does most of it |
-| Consider reviving an abandoned project | The leader is archived or inactive and can be forked |
-| Already well covered | Saturated with no evidenced gap |
+| Open space, little exists yet | Hardly anything does this; test with real users whether people want it |
+| Build it with a clear angle | It exists, but there's an evidenced gap you can own |
+| Consider joining an existing project | An active, open-source project already does most of it |
+| Consider reviving an abandoned project | The best project is abandoned and can be forked |
+| Already well covered | Crowded, with no clear gap |
 | Mixed signals | The evidence doesn't point one way |
 
-Rules and formulas: [scoring.md](skills/check-before-you-build/references/scoring.md).
+## Where it looks
 
-## The catalog
+- GitHub, plus a built-in catalog of 1,900+ quality-checked repos
+- npm and PyPI packages
+- App stores and product websites through web search
+- Hacker News launches
+- skills.sh, Claude plugins and MCP registries, when your idea is itself an agent tool
 
-1,907 repos in 62 building-block categories across 20 domains, from web frameworks to audio, 3D printing and games, with separate categories for coding agents, agent workbenches, agent memory, personal assistants and agent skills by topic. Every entry:
+## Privacy
 
-- passes one quality gate: adoption (for example 1,000+ stars), a commit in the last 6 months (18 for stable, widely used projects), a real license, 3+ contributors and a fake-star check
-- has a summary, best-for and not-for written from its README and checked against it
-- costs you no GitHub API calls, because stats come from a weekly snapshot
-
-Suggest a missing repo by opening an issue.
-
-## Evaluation
-
-Fresh agents run the skill end to end on a fixed set of ideas. A run is graded on whether it finds the known competitors and lands on a sensible verdict. Results are in [evals/RESULTS.md](evals/RESULTS.md).
-
-## Principles
-
-- **Evidence over opinion.** Every claim links to a source.
-- **Free.** No paid API keys.
-- **Local and read-only.** No telemetry, no posting, no scraping of login-walled platforms. Your idea is sent only to the public search APIs listed above.
-- **Portable.** Uses the open Agent Skills format, so it runs in Claude Code, Codex, OpenCode and other agents.
-
-The writing rules for reports are adapted from [Humanizer](https://github.com/blader/humanizer) (MIT).
-
-## Roadmap
-
-- [x] Fact scripts, rule-based scoring and fact-checking
-- [x] Catalog of 1,907 repos with README-based descriptions
-- [x] v1.0.0
-- [x] v1.1: recommended stack per layer, parallel research, plain-language writing
-- [x] v1.2: agent skills and products worth studying in every report
-- [x] v1.3: market signals instead of a demand score, two research agents
-- [ ] Weekly catalog updates in CI
-- [ ] More sources (Product Hunt, VS Code marketplace, crates.io)
-- [ ] Watch mode: re-check an idea later and see what changed
+The skill only reads public sources. It never posts, stars, forks or installs anything, and it has no telemetry. Your idea is sent only to the public search services listed above.
 
 ## Contributing
 
-Issues and pull requests are welcome: missing repos for the catalog, sources that should be searched, or a verdict you think was wrong (attach the `evidence.json`). Run the tests with `npm test`.
+Suggestions are welcome: a repo missing from the catalog, a source worth searching, or a verdict you think was wrong (attach the `evidence.json` from your check). Open an issue or a pull request. Run the tests with `npm test`.
 
 ## License
 

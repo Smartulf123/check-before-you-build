@@ -1,6 +1,6 @@
 ---
 name: check-before-you-build
-description: Checks whether a software idea already exists and what to build it with, before the user starts building. Searches GitHub, skills.sh, Claude plugins, MCP registries, npm/PyPI and Hacker News, and returns a cited verdict plus reusable repos. Use when the user asks "does this already exist?", "should I build X?", "is anyone doing X?", "what can I build X with?", "check this idea", or describes a project they are about to start and wants to know what's out there.
+description: Checks whether a software idea already exists and what to build it with, before the user starts building. Searches GitHub, a curated catalog, app stores, npm/PyPI, Hacker News and, for agent tools, skills.sh, Claude plugins and MCP registries, then writes a fact-checked report: what exists, gaps, a recommended stack, agent skills and real products worth studying. Use when the user asks "does this already exist?", "should I build X?", "is anyone doing X?", "what can I build X with?", "check this idea", or describes a project they are about to start and wants to know what's out there.
 ---
 
 # check-before-you-build
