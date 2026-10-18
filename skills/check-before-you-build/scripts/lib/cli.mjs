@@ -1,7 +1,9 @@
 // Tiny CLI helpers shared by every script: argument parsing and the JSON output contract.
 // Contract: stdout gets exactly one JSON object. Success → { ok: true, ... }, exit 0.
 // Failure → { ok: false, error: { type, message, ... } }, exit 1.
-import { pathToFileURL } from 'node:url';
+import { realpathSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 /** Parse argv into { _: [positionals], flags: { name: value|true } }. */
 export function parseArgs(argv) {
@@ -35,8 +37,21 @@ export function errorObject(err) {
 }
 
 /** True when the module at `metaUrl` is the script being executed directly. */
+/**
+ * True when this module is the script being run. Both sides are resolved through realpath:
+ * installed skills are often a symlink or junction (~/.claude/skills/<name> → the repo), and Node
+ * reports the real path in import.meta.url but the link path in process.argv[1].
+ */
 export function isMain(metaUrl) {
-  return process.argv[1] && metaUrl === pathToFileURL(process.argv[1]).href;
+  if (!process.argv[1]) return false;
+  const real = (p) => {
+    try {
+      return realpathSync(p);
+    } catch {
+      return resolve(p);
+    }
+  };
+  return real(fileURLToPath(metaUrl)).toLowerCase() === real(process.argv[1]).toLowerCase();
 }
 
 /** Run a command handler and print the JSON result. */

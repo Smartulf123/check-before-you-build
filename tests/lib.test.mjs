@@ -52,3 +52,23 @@ test('fetchJson throws HttpError with status on a client error', async () => {
   mockFetch([['example.test', { status: 401, json: { message: 'nope' } }]]);
   await assert.rejects(fetchJson('https://example.test/y'), (err) => err.name === 'HttpError' && err.status === 401);
 });
+
+test('scripts run when the skill folder is a symlink or junction (installed skills)', async () => {
+  const { mkdtempSync, symlinkSync, rmSync, unlinkSync, rmdirSync } = await import('node:fs');
+  const { tmpdir } = await import('node:os');
+  const { join } = await import('node:path');
+  const { execFileSync } = await import('node:child_process');
+  const { fileURLToPath } = await import('node:url');
+  const scripts = fileURLToPath(new URL('../skills/check-before-you-build/scripts/', import.meta.url));
+  const dir = mkdtempSync(join(tmpdir(), 'cbyb-link-'));
+  const link = join(dir, 'scripts');
+  symlinkSync(scripts, link, 'junction');
+  try {
+    const out = execFileSync(process.execPath, [join(link, 'catalog.mjs'), 'categories'], { encoding: 'utf8' });
+    assert.equal(JSON.parse(out).ok, true);
+  } finally {
+    // remove the link itself first so a recursive delete can never reach the real folder
+    try { unlinkSync(link); } catch { rmdirSync(link); }
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
