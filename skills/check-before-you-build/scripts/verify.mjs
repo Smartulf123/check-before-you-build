@@ -137,6 +137,11 @@ export async function verifyEvidence(evidence, { snapshot = null, catalogIds = n
     const shortlisted = c.match === 'direct' || c.match === 'partial';
     if (c.verified !== false && shortlisted && hasReadme(c) && !c.readme_read) log.readme_missing.push(c.id);
   }
+  // products worth studying are real sites or store pages: keep them, label unreachable ones
+  for (const p of evidence.inspiration || []) {
+    if (p.verified === false) continue;
+    await verifyUrlItem(p, { dropDead: false });
+  }
   for (const d of evidence.demand || []) {
     if (d.verified === false) continue;
     // HN items come straight from the Algolia API; their discussion URLs are stable.

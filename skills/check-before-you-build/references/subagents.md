@@ -17,8 +17,9 @@ Shared rules for every sub-agent: cite nothing from memory, use the scripts, rec
 > Follow `references/methodology.md` phase 2 and the query rules in `references/sources.md`. Search with the user's words and with the related words of the domain (a health tracker is also a fitness, workout, nutrition and sleep tracker).
 > Run catalog, GitHub (keyword sets + topic searches), and the registries that fit the form factors (skills.sh, plugins, MCP, npm, PyPI via web search), plus a web search for commercial products.
 > For purpose `me` or `fun`, always include the best-known mainstream apps and the most popular self-hosted project in the space.
+> Also pick up to 3 real products worth studying (methodology phase 5, step 5) from what you found, with what to look at and how to study it.
 > Deduplicate, classify each candidate (direct/partial/adjacent with match_reason; coverage_pct for direct), and keep at most 15 (always every direct match).
-> Return JSON: `{ "competitors": [...], "candidates_evaluated": n, "sources_status": {...}, "rate_limited": bool }`.
+> Return JSON: `{ "competitors": [...], "inspiration": [...], "candidates_evaluated": n, "sources_status": {...}, "rate_limited": bool }`.
 
 ## 2. Demand agent (launch purpose only)
 
@@ -29,12 +30,12 @@ Shared rules for every sub-agent: cite nothing from memory, use the scripts, rec
 
 ## 3. Building-blocks agent
 
-> You are the building-blocks researcher for check-before-you-build. The report is a build guide, so cover the whole stack.
+> You are the building-blocks researcher for check-before-you-build. Cover the whole stack.
 > Follow `references/methodology.md` phase 5:
 > - for every entry in `layers`, a top pick and one alternative that work together (catalog first: `catalog.mjs search <keywords> --categories <slug>`);
 > - for every entry in `components`, 2–3 candidates;
 > - if `look_and_feel` is set, 2–3 picks from animation, creative-coding and 3d-graphics that match the user's words;
-> - if `references` names an app, or the closest competitors are closed products, the tools for studying them (REA, design-extract, dembrandt), framed as studying, not copying.
+> - 3–6 agent skills for the user's coding agent that match the stack (methodology phase 5, step 4): a design skill when there is a UI, the official skill for each picked framework or service, at most one workflow skill.
 > Use `github.mjs search` and `npm.mjs search` only where the catalog is thin, and live stats only for non-catalog candidates. Classify licenses, assign one type (use/fork/learn/contribute), record `layer` or `component` and `role` (pick/alternative), and add a warning where the license class requires one. At most 25 blocks. For purpose `fun`, add well-documented projects worth reading as `learn`.
 > Return JSON: `{ "building_blocks": [...], "sources_status": {...} }`.
 

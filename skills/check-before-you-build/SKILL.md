@@ -60,10 +60,10 @@ Each script prints **one JSON object**: `{ "ok": true, ... }` or `{ "ok": false,
 Follow `references/methodology.md` for the full detail of each phase.
 
 1. **Understand** the idea: summary, form factors, target user, **purpose**, search terms from five angles plus related words, 2–6 components, the **stack layers** the project type needs (`catalog.mjs domains`), a **look-and-feel** layer when the user asks for a fancy, premium or animated result, and any **reference apps** the user names. Ask one clarifying question only if nothing searchable can be derived.
-2. **Research in parallel.** In Claude Code, start **three sub-agents in one message** with the Agent tool, using the briefs in `references/subagents.md`: supply (existing projects), demand (launch only; skip it for fun and me) and building blocks (every layer and component). Pass each one the `idea` object from step 1, the mode and the absolute path of this skill's `scripts/` folder, then wait for all of them and merge their JSON. Only if you have no sub-agent tool, or you are already a sub-agent, do phases 2, 3 and 5 of the methodology yourself, in that order.
+2. **Research in parallel.** In Claude Code, start **three sub-agents in one message** with the Agent tool, using the briefs in `references/subagents.md`: supply (existing projects), demand (launch only; skip it for fun and me) and building blocks (every layer and component, plus agent skills). Pass each one the `idea` object from step 1, the mode and the absolute path of this skill's `scripts/` folder, then wait for all of them and merge their JSON. Only if you have no sub-agent tool, or you are already a sub-agent, do phases 2, 3 and 5 of the methodology yourself, in that order.
 3. **Gaps** (launch: full · me: short · fun: skip): evidenced weaknesses and unmet requests.
 4. **Check facts, then score:** write `evidence.json` (schema in `references/evidence-schema.md`) and run `verify.mjs evidence.json`. It drops repos and links that don't exist, fixes renames and drifted numbers, uses the snapshot for catalog entries (no GitHub calls), and lists shortlisted repos whose README you haven't read: read those, then verify again. Then run `score.mjs evidence.json` once.
-5. **Write** `report.md` from `references/report-template.md`, following `references/writing.md` (plain language, no emojis). It is the one complete deliverable: a build guide the user can follow. If you can't write files, print the report in the chat. Then print the short chat summary.
+5. **Write** `report.md` from `references/report-template.md`, following `references/writing.md` (plain language, no emojis). It is the one deliverable: what exists, the recommended stack, skills for the user's coding agent and products worth studying. It is not a build plan. If you can't write files, print the report in the chat. Then print the short chat summary.
 
 ## Mode budgets
 
@@ -84,7 +84,7 @@ Purpose adjusts this further: `fun` and `me` skip demand; `fun` also skips gaps 
 
 Write to `check-reports/<YYYY-MM-DD>-<idea-slug>/` in the current working directory:
 
-- `report.md`: the full report and build guide (`references/report-template.md`)
+- `report.md`: the full report (`references/report-template.md`)
 - `evidence.json`: everything collected, plus the verification and scores written by `verify.mjs` and `score.mjs`
 
-Then print the chat summary from the template: the headline, the closest existing project, the recommended stack in one line, the next step and the path to the report.
+Then print the chat summary from the template: the headline, the closest existing project, the recommended stack and agent skills in one line each, the next step and the path to the report.

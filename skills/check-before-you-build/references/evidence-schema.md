@@ -74,6 +74,10 @@
       "verified": true
     }
   ],
+  "inspiration": [                         // up to 3 real products worth studying
+    { "name": "Oura", "url": "https://ouraring.com", "kind": "ios-app",   // website | ios-app | android-app | desktop-app
+      "look_at": "the morning readiness screen", "study_with": "use it and screenshot the flow" }
+  ],
   "sources_status": { "catalog": "ok", "github": "ok", "skills": "ok", "plugins": "skipped", "mcp": "ok", "npm": "ok", "hn": "ok", "web": "ok" },
   "rate_limited": false,
   "verification": { "checked": 31, "passed": 29, "corrected": 3, "dropped": 2, "verified_at": "…" }  // written by verify.mjs

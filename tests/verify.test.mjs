@@ -97,3 +97,18 @@ test('recommended repos without a read README are flagged', async () => {
   const { log } = await verifyEvidence(evidence, { catalogIds: new Set(['a/b', 'c/d']) });
   assert.deepEqual(log.readme_missing.sort(), ['github:a/b', 'github:c/d']);
 });
+
+test('products worth studying are link-checked and labelled, never dropped', async () => {
+  mockFetch([['oura.example', { status: 200 }], ['gone.example', { status: 404 }]]);
+  const evidence = {
+    competitors: [],
+    inspiration: [
+      { name: 'Oura', url: 'https://oura.example', kind: 'ios-app' },
+      { name: 'Gone', url: 'https://gone.example', kind: 'website' },
+    ],
+  };
+  await verifyEvidence(evidence);
+  assert.equal(evidence.inspiration[0].verified, true);
+  assert.equal(evidence.inspiration[1].verified, true);
+  assert.equal(evidence.inspiration[1].link_status, 'unreachable');
+});

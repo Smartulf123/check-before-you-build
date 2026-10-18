@@ -2,7 +2,7 @@
 
 Is this worth building, and what can I build it with?
 
-check-before-you-build is an open-source agent skill. Describe an idea and it searches GitHub, skills.sh, Claude plugin marketplaces, MCP registries, npm, PyPI and Hacker News, then writes a report: what already exists, whether people want it, where the gap is, and a recommended stack with a step-by-step build plan.
+check-before-you-build is an open-source agent skill. Describe an idea and it searches GitHub, skills.sh, Claude plugin marketplaces, MCP registries, npm, PyPI and Hacker News, then writes a report: what already exists, whether people want it, where the gap is, a recommended stack, agent skills for your coding agent, and real products worth studying.
 
 ## Why
 
@@ -13,7 +13,7 @@ Most idea validators give an opinion about market size. This one collects eviden
 - **Existing projects.** Repos, skills, MCP servers, packages and apps, with live stars, last-commit dates and licenses. The agent reads each README before judging it.
 - **Demand.** Hacker News threads, feature requests on competitors' issue trackers and questions on the web.
 - **Gaps.** What the existing projects lack, with a link for each gap.
-- **What to build it with.** A catalog of 1,907 quality-checked repos supplies a top pick and an alternative for every layer of the stack, plus repos to fork, learn from or contribute to.
+- **What to build it with.** A catalog of 1,907 quality-checked repos supplies a top pick and an alternative for every layer of the stack, plus repos to fork, learn from or contribute to, and the agent skills that help your coding agent use them.
 
 ## Install
 
@@ -50,7 +50,7 @@ Modes are `--quick` (catalog and GitHub only), standard (the default) and `--dee
 
 Each run writes two files to `check-reports/<date>-<slug>/`:
 
-- `report.md`, the full report and build guide
+- `report.md`, the full report
 - `evidence.json`, everything collected, with scores and the fact-check log
 
 The report has these sections:
@@ -59,9 +59,11 @@ The report has these sections:
 2. **What already exists.** A table ordered by how closely each project matches, then by popularity.
 3. **Demand and gaps,** each item with a link.
 4. **Recommended stack.** One row per layer (framework, UI, styling, database, auth, hosting and so on) with a top pick, an alternative and why it fits.
-5. **Building blocks for the features** that make the idea special, plus look-and-feel picks when you ask for something fancy, and tools for studying a closed competitor.
-6. **Build plan.** Numbered steps from setup to going online, each tied to the stack above.
-7. **Method and sources.** What was searched, what was fact-checked and every link used.
+5. **Skills for your coding agent.** A design skill when there is a user interface, and the official skill for each framework or service in the stack.
+6. **Building blocks for the features** that make the idea special, plus look-and-feel picks when you ask for something fancy.
+7. **Products worth studying.** Up to three real apps or websites that do it well, what to look at in each, and how to study them (design extractors for websites, REA for desktop and Android apps).
+8. **Next step,** in a line or two. For a step-by-step plan, hand the report to a planning skill such as [brainstorming](https://github.com/obra/superpowers).
+9. **Method and sources.** What was searched, what was fact-checked and every link used.
 
 The report is written in your language, in plain prose.
 
@@ -71,8 +73,8 @@ Building something that already exists is how most people learn, so the skill ne
 
 | Purpose | What you get |
 |---|---|
-| `--for fun` | No verdict. Projects worth learning from, the stack and a learning path. |
-| `--for me` | No verdict. Existing tools that might save you time, including the mainstream apps, then the stack and a build plan. |
+| `--for fun` | No verdict. Projects worth learning from and the stack to build with. |
+| `--for me` | No verdict. Existing tools that might save you time, including the mainstream apps, then the stack. |
 | `--for launch` | The full verdict with demand, gaps and how to stand out. |
 
 ## How it works
@@ -126,7 +128,8 @@ The writing rules for reports are adapted from [Humanizer](https://github.com/bl
 - [x] Fact scripts, rule-based scoring and fact-checking
 - [x] Catalog of 1,907 repos with README-based descriptions
 - [x] v1.0.0
-- [x] v1.1: reports as full build guides, parallel research, plain-language writing
+- [x] v1.1: recommended stack per layer, parallel research, plain-language writing
+- [x] v1.2: agent skills and products worth studying in every report
 - [ ] Weekly catalog updates in CI
 - [ ] More sources (Product Hunt, VS Code marketplace, crates.io)
 - [ ] Watch mode: re-check an idea later and see what changed

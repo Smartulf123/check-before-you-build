@@ -5,6 +5,7 @@ The reader is a builder deciding what to do next. Write for that one person, in 
 ## Always
 
 - **No emojis**, anywhere: not in headings, labels, tables or the chat summary. Use words ("Use", "Fork", "Learn from", "Contribute", "stars", "installs").
+- **No "·" separators.** Use commas, separate table columns, or short sentences.
 - **No em or en dashes as connectors.** Use a period, comma, colon or parentheses. Hyphens inside words, numbers, code and URLs are fine.
 - **Facts first.** Start each section with the most useful fact, not with a run-up ("Let's look at", "Here's what you need to know").
 - **Every sentence adds something.** Cut sentences that only repeat or announce the previous one.
