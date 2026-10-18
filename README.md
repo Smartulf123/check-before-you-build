@@ -4,9 +4,9 @@ Is this worth building, and what can I build it with?
 
 Describe an idea to your coding agent and get a report back: what already exists, how those products are doing, where the gap is, what to build it with, which agent skills help, and which real products are worth studying. Every repo, link and number in the report is checked before you see it.
 
-[![check-before-you-build in 35 seconds](media/promo-preview.webp)](media/promo.mp4)
+[![check-before-you-build in 35 seconds](media/promo-preview.webp)](https://smartulf123.github.io/check-before-you-build/)
 
-[Watch it with sound (35 seconds)](media/promo.mp4)
+[Watch it with sound (35 seconds)](https://smartulf123.github.io/check-before-you-build/)
 
 ## Install
 
