@@ -2,7 +2,7 @@
 
 All notable changes, including weekly catalog updates, are recorded here.
 
-## Unreleased
+## v1.3.1: 2026-10-18
 
 - **Shorter report.** "What would change the verdict" and "Method and coverage" are removed. The angle the evidence supports moves into the summary, caveats appear next to the claim they affect, and the full search and fact-check log stays in `evidence.json`.
 

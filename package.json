@@ -1,6 +1,6 @@
 {
   "name": "check-before-you-build",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "private": true,
   "description": "Agent skill that checks whether an idea already exists and recommends repos to build it with.",
   "type": "module",
