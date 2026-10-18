@@ -63,7 +63,7 @@ The report has these sections:
 6. **Building blocks for the features** that make the idea special, plus look-and-feel picks when you ask for something fancy.
 7. **Products worth studying.** Up to three real apps or websites that do it well, what to look at in each, and how to study them (design extractors for websites, REA for desktop and Android apps).
 8. **Next step,** in a line or two. For a step-by-step plan, hand the report to a planning skill such as [brainstorming](https://github.com/obra/superpowers).
-9. **Method and sources.** What was searched, what was fact-checked and every link used.
+9. **Sources.** Every link used. The full search and fact-check log is in `evidence.json`.
 
 The report is written in your language, in plain prose.
 

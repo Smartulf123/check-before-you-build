@@ -99,7 +99,7 @@ Cover the whole stack, not only the features that make the idea special.
 
 ## Phase 6: Check facts, then score
 
-Write `evidence.json` following `evidence-schema.md`. Set `rate_limited: true` if a rate limit cut any search short even after retrying (a pause that recovered doesn't count). In `sources_status`, use the built-in source names (catalog, github, skills, plugins, mcp, npm, pypi, hn, web); extra sources you tried, such as Reddit or Google Play, can be recorded too, but only built-in failures lower confidence. Mention thin extra sources in "Method and coverage". Then:
+Write `evidence.json` following `evidence-schema.md`. Set `rate_limited: true` if a rate limit cut any search short even after retrying (a pause that recovered doesn't count). In `sources_status`, use the built-in source names (catalog, github, skills, plugins, mcp, npm, pypi, hn, web); extra sources you tried, such as Reddit or Google Play, can be recorded too, but only built-in failures lower confidence. Mention a thin source in the report only where it affects a claim. Then:
 
 ```
 node <skill-dir>/scripts/verify.mjs check-reports/<dir>/evidence.json
@@ -118,5 +118,5 @@ What `verify.mjs` (run in phase 6) does:
 - lists `readme_missing` for shortlisted items that have a README you haven't read
 
 Then:
-1. Write `report.md` from `report-template.md`, following `writing.md`, using only items with `verified !== false`. Mention any corrections or dropped items in "Method and coverage". If your environment doesn't let you write files, print the full report in the chat instead.
+1. Write `report.md` from `report-template.md`, following `writing.md`, using only items with `verified !== false`. Leave dropped items out; there is no method section, and the details stay in `evidence.json`. If your environment doesn't let you write files, print the full report in the chat instead.
 2. Print the chat summary from the template, with the path to the report.

@@ -1,6 +1,6 @@
 # Report template
 
-`report.md` is the one deliverable. It answers two questions: what already exists, and what to build it with (repos, agent skills and real products worth studying). It is not a build plan; planning skills such as brainstorming do that well. Write it in the user's language and follow `writing.md`: plain language, no emojis, no dashes as connectors, and no "·" separators. Use only items with `verified !== false`. Sections marked *(launch)* appear only for the `launch` purpose; leave out any section that has nothing in it. Keep it short enough to read in a few minutes.
+`report.md` is the one deliverable. It answers two questions: what already exists, and what to build it with (repos, agent skills and real products worth studying). It is not a build plan; planning skills such as brainstorming do that well. Write it in the user's language and follow `writing.md`: plain language, no emojis, no dashes as connectors, and no "·" separators. Use only items with `verified !== false`. There is no method section: when a source was thin or a link unreachable, say so in one short clause next to the claim it affects (for example "the Play Store search was thin, so confirm this yourself"). The full details stay in `evidence.json`. Sections marked *(launch)* appear only for the `launch` purpose; leave out any section that has nothing in it. Keep it short enough to read in a few minutes.
 
 ```markdown
 # <Short idea title>
@@ -12,7 +12,7 @@ Checked on <date written out, e.g. 18 October 2026>, <purpose in words: "for you
 
 <!-- launch --> Saturation <x>/10, gap <y>/10.
 
-<2–4 sentences: the reason for the verdict (launch) or the hint (me / fun), the closest existing project, and the recommended stack in one line.>
+<2–4 sentences: the reason for the verdict (launch) or the hint (me / fun), the closest existing project, and the recommended stack in one line. For launch, end with the angle the evidence supports in one sentence, and the verdict's way forward where it applies (already well covered: how to stand out; join an existing project: how to differ if you build your own).>
 
 ## What already exists
 <!-- launch: "What already exists", me: "Tools that might save you time", fun: "Projects to learn from" -->
@@ -70,23 +70,7 @@ Up to 3 real apps or websites, found in this run, that do the idea or a key part
 End with one line: learn the patterns and make them your own; code, images, icons and a look-alike design stay the owner's, and many apps' terms forbid reverse engineering.
 
 ## Next step
-1–2 lines: the one thing to do first (for `me` and `fun`: try the closest existing tool for an evening; otherwise: start from the stack above). If the user wants a step-by-step plan, suggest a planning skill such as [brainstorming](https://github.com/obra/superpowers).
-
-## What would change the verdict *(launch)*
-- …
-
-<!-- verdict-specific way forward, one short paragraph -->
-<!-- DROP: "If you build it anyway, here's how to stand out: …" -->
-<!-- CONTRIBUTE: "If you'd rather build your own, here's how to differ: …" -->
-<!-- FORK: "Or start fresh with the stack above." -->
-
-## Method and coverage
-- Mode: <mode>. Confidence: <confidence>.
-- Sources: <list with ok, failed or skipped>
-- Candidates evaluated: <n>. READMEs read: <n>. Fact-checked: <passed> of <checked> (corrected <c>, dropped <d>).
-- Catalog stats as of <snapshot date>; other numbers fetched live.
-- <dropped or corrected items, if any, one line each>
-- <notes on rate limits or thin results; suggest `gh auth login` if unauthenticated>
+1–2 lines: the one thing to do first. For `me` and `fun`: try the closest existing tool for an evening. For `launch`: the cheapest test with real people that would show whether they want it (for example ten users trying a rough prototype and whether they come back), then start from the stack above. If the user wants a step-by-step plan, suggest a planning skill such as [brainstorming](https://github.com/obra/superpowers).
 
 ## Sources
 <every link used, one per line>

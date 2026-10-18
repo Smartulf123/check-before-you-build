@@ -2,6 +2,10 @@
 
 All notable changes, including weekly catalog updates, are recorded here.
 
+## Unreleased
+
+- **Shorter report.** "What would change the verdict" and "Method and coverage" are removed. The angle the evidence supports moves into the summary, caveats appear next to the claim they affect, and the full search and fact-check log stays in `evidence.json`.
+
 ## v1.3.0: 2026-10-18
 
 - **Demand is no longer scored.** A skill can't measure demand reliably from public posts, and the score looked more precise than it was. The demand research agent and the demand score are gone; checks run two research agents instead of three.
