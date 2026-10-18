@@ -4,6 +4,10 @@ Is this worth building, and what can I build it with?
 
 Describe an idea to your coding agent and get a report back: what already exists, how those products are doing, where the gap is, what to build it with, which agent skills help, and which real products are worth studying. Every repo, link and number in the report is checked before you see it.
 
+[![Watch the 35-second video](media/promo-poster.jpg)](media/promo.mp4)
+
+[Watch the 35-second video](media/promo.mp4)
+
 ## Install
 
 With the [skills](https://skills.sh) CLI (Claude Code, Codex, OpenCode, Cursor and other agents):
