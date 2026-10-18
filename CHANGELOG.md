@@ -2,7 +2,7 @@
 
 All notable changes, including weekly catalog updates, are recorded here.
 
-## v1.1.0: 2026-10-17
+## v1.1.0: 2026-10-18
 
 Changes from the first real-world test (a personal health tracker website).
 
@@ -12,6 +12,9 @@ Changes from the first real-world test (a personal health tracker website).
 - **Better coverage for personal and learning projects.** Mainstream apps and the most popular self-hosted option are always listed; tables are ordered by match, then popularity. Search terms include related words (a health tracker is also a fitness and nutrition tracker), which would have found wger.
 - **Look and feel.** Requests for a fancy, premium or animated result add picks from animation, creative coding and 3D (for example Scrollcraft).
 - **Study the competition.** When the closest competitor is closed or the user names a reference app, the report suggests REA and the design extractors for studying it.
+- **Fix: scripts no longer exit silently when the skill is installed as a link.** Skills are often installed as a symlink or junction; every script compared the link path with the real path and quietly did nothing. Both paths are now resolved first, with a regression test.
+- **No verdict for fun and personal projects.** Previously a meaningless verdict was computed and stored behind the scenes.
+- **License check.** `readme.mjs license` reads a repo's license file and detects common licenses when GitHub reports none. Free licenses that allow commercial use (such as GSAP's) may be recommended for use.
 
 ## v1.0.0: 2026-10-17
 
